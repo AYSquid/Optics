@@ -1,0 +1,5 @@
+(function(){
+var theme='blue';try{theme=new URLSearchParams(location.search).get('theme')||localStorage.getItem('gopt.theme.v1')||'blue';}catch(e){}
+function apply(v){theme=['blue','lavender','green','green-solid','rhine'].indexOf(v)>=0?v:'blue';document.documentElement.dataset.theme=theme;var label=document.getElementById('theme-current');if(label)label.textContent={blue:'浅蓝 · 白',lavender:'浅紫 · 白',green:'浅绿','green-solid':'浅绿 · 纯色',rhine:'莱茵生命'}[theme];try{localStorage.setItem('gopt.theme.v1',theme);}catch(e){}document.querySelectorAll('[data-set-theme]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.setTheme===theme);});}
+apply(theme);document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[data-set-theme]').forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.setTheme);var menu=document.querySelector('.theme-menu');if(menu)menu.open=false;var u=new URL(location.href);u.searchParams.set('theme',theme);history.replaceState(null,'',u);});});apply(theme);});
+})();

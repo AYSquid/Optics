@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>工程光学刷题</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20stroke%3D%22%23506f60%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20viewBox%3D%220%200%2064%2056%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20class%3D%22prism-body%22%20d%3D%22M27%207L44%2043H10Z%22%2F%3E%3Cpath%20class%3D%22prism-input%22%20d%3D%22M3%2025H18.5%22%2F%3E%3Cpath%20class%3D%22prism-inner%22%20d%3D%22M18.5%2025L36.68%2027.5M18.5%2025L37.39%2029M18.5%2025L38.1%2030.5%22%2F%3E%3Cpath%20class%3D%22prism-ray%20prism-ray-one%22%20d%3D%22M36.68%2027.5L60%2034%22%2F%3E%3Cpath%20class%3D%22prism-ray%20prism-ray-two%22%20d%3D%22M37.39%2029L59%2040%22%2F%3E%3Cpath%20class%3D%22prism-ray%20prism-ray-three%22%20d%3D%22M38.1%2030.5L56%2046%22%2F%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="themes.css">
+<script src="themes.js"></script>
+</head>
+<body>
+<noscript><p class="boot-error">本页面需要启用 JavaScript 才能使用。</p></noscript>
+
+<div id="boot" class="boot">
+  <div class="boot-inner">
+    <div class="boot-title">工程光学刷题</div>
+    <div id="boot-msg" class="boot-msg">正在载入题库…</div>
+    <pre id="boot-detail" class="boot-detail" hidden></pre>
+  </div>
+</div>
+
+<div id="app" class="app" hidden>
+  <aside id="sidebar" class="sidebar">
+    <div class="brand">
+      <span class="brand-mark"><svg viewBox="0 0 64 56" fill="none" aria-hidden="true"><path class="prism-body" d="M27 7L44 43H10Z"/><path class="prism-input" d="M3 25H18.5"/><path class="prism-inner" d="M18.5 25L36.68 27.5M18.5 25L37.39 29M18.5 25L38.1 30.5"/><path class="prism-ray prism-ray-one" d="M36.68 27.5L60 34"/><path class="prism-ray prism-ray-two" d="M37.39 29L59 40"/><path class="prism-ray prism-ray-three" d="M38.1 30.5L56 46"/></svg></span>
+      <span class="brand-text">工程光学<span class="brand-sub">OPTICS / STUDY ROOM</span></span>
+    </div>
+
+    <nav class="module-nav" aria-label="学习模块"><button id="module-bank" type="button">章节题库</button><button id="module-exams" type="button">历年真题</button></nav>
+    <details class="theme-menu"><summary>主题配色 <span id="theme-current">浅蓝 · 白</span></summary><div class="theme-picker" role="group" aria-label="页面配色"><button data-set-theme="blue" type="button">浅蓝 · 白</button><button data-set-theme="lavender" type="button">浅紫 · 白</button><button data-set-theme="green" type="button">浅绿</button><button data-set-theme="green-solid" type="button">浅绿 · 纯色</button><button data-set-theme="rhine" type="button">莱茵生命</button></div></details>
+    <div class="side-block">
+      <div class="side-label">学习状态 · 当前分类</div>
+      <div id="status-filter" class="filter-group" role="group" aria-label="学习状态筛选"></div>
+    </div>
+
+    <div class="side-block side-scope">
+      <div class="side-label">章节与知识点</div>
+      <div id="tree" class="tree" role="navigation" aria-label="章节与知识点目录"></div>
+    </div>
+
+    <div class="sidebar-signature"><span class="live-dot"></span> 专注一道题，理解一个知识点</div>
+    <div id="store-note" class="store-note" hidden></div>
+  </aside>
+
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <main class="main">
+    <header class="topbar">
+      <button id="nav-toggle" class="btn btn-ghost nav-toggle" type="button" aria-expanded="false" aria-controls="sidebar">目录</button>
+      <div class="crumb-wrap"><div class="page-eyebrow">PRACTICE / 章节练习</div>
+        <div id="crumb" class="crumb">—</div>
+        <div id="crumb-sub" class="crumb-sub"></div>
+      </div>
+      <div class="topbar-right">
+        <div id="progress" class="progress">—</div>
+      </div>
+    </header>
+
+    <div id="notice" class="notice" role="status" hidden></div>
+
+    <div id="scroller" class="scroller">
+      <section id="exam-home" hidden></section>
+      <div id="empty" class="empty" hidden></div>
+      <article id="card" class="card" hidden>
+        <div id="qmeta" class="qmeta"></div>
+        <div id="qbadges" class="qbadges"></div>
+        <div id="stem" class="stem"></div>
+        <div id="options" class="options"></div>
+        <div id="stem-figs" class="figures"></div>
+
+        <section id="answer-region" class="region region-answer" hidden aria-labelledby="answer-h">
+          <h2 id="answer-h" class="region-title">答案</h2>
+          <div id="answer-body" class="region-body"></div>
+        </section>
+
+        <section id="analysis-region" class="region region-analysis" hidden aria-labelledby="analysis-h">
+          <h2 id="analysis-h" class="region-title">解析</h2>
+          <div id="analysis-body" class="region-body"></div>
+          <div id="analysis-figs" class="figures"></div>
+          <section id="kp-region" class="kp" aria-labelledby="kp-h">
+            <h3 id="kp-h" class="kp-title">本题考查的知识点</h3>
+            <div id="kp-body" class="kp-body"></div>
+          </section>
+        </section>
+
+        <div id="review-note" class="review-note" hidden></div>
+        <div class="card-tail"></div>
+      </article>
+    </div>
+
+    <nav class="question-nav" aria-label="题目翻页">        <span class="pager">
+          <button id="btn-prev" class="btn btn-ghost" type="button">上一题</button>
+          <label class="jump">
+            <span class="jump-label">跳到</span>
+            <input id="jump-input" class="jump-input" type="text" inputmode="numeric" autocomplete="off" aria-label="输入当前列表中的题号">
+            <span id="jump-total" class="jump-total">/ 0</span>
+          </label>
+          <button id="btn-jump" class="btn btn-ghost" type="button">跳转</button>
+          <button id="btn-next" class="btn btn-ghost" type="button">下一题</button>
+          <button id="btn-next-section" class="btn btn-outline" type="button" hidden>下一节</button>
+        </span></nav>
+    <footer class="actionbar">
+      <div class="actionbar-left">
+        <button id="btn-answer" class="btn btn-outline" type="button" aria-expanded="false" aria-controls="answer-region">查看答案</button>
+        <button id="btn-analysis" class="btn btn-outline" type="button" aria-expanded="false" aria-controls="analysis-region">查看解析</button>
+
+      </div>
+      <div class="actionbar-right">
+        <span class="status-label">学习状态</span>
+        <span id="status-buttons" class="status-buttons" role="group" aria-label="学习状态标记"></span>
+      </div>
+    </footer>
+  </main>
+
+  <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="图片放大查看">
+    <button id="lightbox-close" class="lightbox-close" type="button">关闭</button>
+    <img id="lightbox-img" class="lightbox-img" alt="">
+    <div id="lightbox-cap" class="lightbox-cap"></div>
+  </div>
+</div>
+
+<script src="vendor/katex/katex.min.js"></script>
+<script src="app.js"></script>
+<script src="exams.js"></script>
+</body>
+</html>
