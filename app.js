@@ -125,6 +125,7 @@ function saveState() {
   if (!store.writable) return false;
   try {
     window.localStorage.setItem(STORE_KEY, JSON.stringify(store.state));
+    if(window.OpticsCloud) OpticsCloud.capture();
     return true;
   } catch (e) {
     if (!store.isError) {
@@ -1032,6 +1033,7 @@ function normalizeState() {
 }
 
 function start() {
+  if(window.OpticsCloud){ STORE_KEY=OpticsCloud.localKey('gopt.state.v1'); PREFS_KEY=OpticsCloud.localKey('gopt.prefs.v1'); STORE_CORRUPT_KEY=STORE_KEY+'.corrupt'; }
   loadStore();
   normalizeState();
   ui.scope = store.prefs.scope;
@@ -1080,6 +1082,7 @@ function boot() {
       if (!DATA.questions.length) throw new Error('题库为空');
       initExams(got['data/past-exams.json']);
       start();
+      if(window.OpticsCloud) OpticsCloud.attach();
       document.title = '工程光学刷题（' + DATA.questions.length + ' 题）';
     } catch (e) {
       fatal('题库数据解析失败。', String(e && e.stack ? e.stack : e));
@@ -1087,5 +1090,6 @@ function boot() {
   }
 }
 
-if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
-else boot();
+function bootWithCloud(){ if(window.OpticsCloud) OpticsCloud.ready.then(boot).catch(boot); else boot(); }
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bootWithCloud);
+else bootWithCloud();

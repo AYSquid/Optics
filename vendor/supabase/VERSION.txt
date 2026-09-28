@@ -1,0 +1,2 @@
+@supabase/supabase-js 2.117.2
+Source: npm / jsdelivr
