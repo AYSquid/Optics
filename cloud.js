@@ -175,7 +175,7 @@
     const email=byId('cloud-email').value.trim();
     const {error}=await client.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+location.pathname}});
     if(error)throw error;
-    message('登录邮件已发送。请在这台设备打开邮件中的链接，登录后会自动同步。若邮件提供验证码，也可在下方输入。');
+    message('登录邮件已发送。请把邮件验证码输入下方，登录当前设备；或在当前设备打开邮件链接。手机打开链接不会让电脑自动登录。');
    }catch(err){message(friendly(err),true);}finally{setTimeout(()=>{btn.disabled=false;},60000);}
   };
   byId('cloud-verify').onclick=async()=>{
@@ -199,6 +199,7 @@
   if(user)sync();
   window.addEventListener('online',sync);
   window.addEventListener('focus',()=>{if(user)sync();});
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')sync();});
   window.addEventListener('storage',e=>{if(user&&e.key===cacheKey()&&!running){try{records=read(cacheKey(),records);apply();updatePanel();}catch(err){message('无法读取其他标签页的记录',true);}}});
   setInterval(()=>{if(document.visibilityState==='visible')sync();},60000);
  }
