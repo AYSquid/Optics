@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="app.css">
 <link rel="stylesheet" href="themes.css">
 <link rel="stylesheet" href="cloud.css">
+<link rel="stylesheet" href="home.css">
 <script src="themes.js"></script>
 </head>
 <body>
@@ -29,9 +30,10 @@
       <span class="brand-text">工程光学<span class="brand-sub">OPTICS / STUDY ROOM</span></span>
     </div>
 
+    <button id="home-return" class="home-return" type="button">← 学习首页</button>
     <nav class="module-nav" aria-label="学习模块"><button id="module-bank" type="button">章节题库</button><button id="module-exams" type="button">历年真题</button></nav>
     <details class="theme-menu"><summary>主题配色 <span id="theme-current">浅蓝 · 白</span></summary><div class="theme-picker" role="group" aria-label="页面配色"><button data-set-theme="blue" type="button">浅蓝 · 白</button><button data-set-theme="lavender" type="button">浅紫 · 白</button><button data-set-theme="green" type="button">浅绿</button><button data-set-theme="green-solid" type="button">浅绿 · 纯色</button><button data-set-theme="rhine" type="button">莱茵生命</button></div></details>
-    <button id="cloud-open" class="cloud-entry" type="button"><span>账户与同步</span><small id="cloud-short">本地模式</small></button>
+    <button id="cloud-open" class="cloud-entry" type="button"><span>云端记录</span><small id="cloud-short">本地模式</small></button>
     <div class="side-block">
       <div class="side-label">学习状态 · 当前分类</div>
       <div id="status-filter" class="filter-group" role="group" aria-label="学习状态筛选"></div>
@@ -124,35 +126,34 @@
 </div>
 
 <dialog id="cloud-dialog" class="cloud-dialog" aria-labelledby="cloud-title">
- <div class="cloud-head"><h2 id="cloud-title">账户与同步</h2><button id="cloud-close" type="button" aria-label="关闭账户与同步">关闭</button></div>
- <p>在电脑和手机之间同步学习状态、真题选项与试卷位置。</p>
+ <div class="cloud-head"><h2 id="cloud-title">云端记录</h2><button id="cloud-close" type="button" aria-label="关闭云端记录">关闭</button></div>
+ <p>一个个人学习空间，电脑和手机共享同一份进度。</p>
  <div id="cloud-message" class="cloud-message" role="status" aria-live="polite">正在准备…</div>
  <form id="cloud-login">
-  <h3>1 · 输入邮箱</h3><label for="cloud-email">电脑和手机请使用同一个邮箱</label><input id="cloud-email" type="email" autocomplete="email" required placeholder="请输入你的邮箱">
-  <div class="cloud-row"><button id="cloud-send" class="cloud-primary" type="submit">发送登录邮件</button></div>
-  <p class="cloud-hint">打开邮件中的登录链接即可。个人项目默认发信服务可能仅允许 Supabase 项目团队邮箱；其他邮箱需要配置 SMTP。</p>
-  <h3>2 · 在这台设备完成登录</h3><p class="cloud-hint">在手机上收邮件也可以：把邮件验证码填到下面，就能登录当前电脑。直接点邮件链接，只会登录打开链接的浏览器。</p><label for="cloud-otp">邮件验证码</label><input id="cloud-otp" inputmode="numeric" autocomplete="one-time-code" placeholder="输入邮件中的验证码"><div class="cloud-row"><button id="cloud-verify" class="cloud-primary" type="button">验证并登录当前设备</button></div><p class="cloud-hint">如果邮件只有链接，请在当前设备的浏览器打开链接；新版邮件模板设置好后会同时提供验证码。</p>
+  <label for="cloud-key">个人同步密钥</label><input id="cloud-key" type="password" autocomplete="off" spellcheck="false" required placeholder="首次使用，在这里粘贴同步密钥">
+  <div class="cloud-row"><button id="cloud-connect" class="cloud-primary" type="submit">连接个人空间</button></div>
+  <p class="cloud-hint">每台设备只需连接一次，之后自动同步，无需邮箱登录。请妥善保管密钥，持有它的人可以访问此空间。</p>
  </form>
  <section id="cloud-account" hidden>
-  <p>本设备已登录：<strong id="cloud-email-label"></strong></p><p class="cloud-hint">另一台设备也需登录同一个邮箱。切回网页会自动同步，也可点击“立即同步”。</p>
-  <div class="cloud-row"><button id="cloud-sync-now" class="cloud-primary" type="button">立即同步</button><button id="cloud-signout" type="button">退出账号</button></div>
+  <p>已配置：<strong id="cloud-email-label"></strong></p>
+  <div class="cloud-row"><button id="cloud-sync-now" class="cloud-primary" type="button">立即同步</button><button id="cloud-signout" type="button">断开此设备</button></div>
   <div id="cloud-conflicts" class="cloud-conflict" hidden><p id="cloud-conflict-count"></p><details><summary>查看冲突记录</summary><ul id="cloud-conflict-list"></ul></details><div class="cloud-row"><button id="cloud-use-remote" type="button">保留云端版本</button><button id="cloud-use-local" type="button">保留本机版本</button></div></div>
-  <h3>迁移登录前的记录</h3><p class="cloud-hint">只合并当前网址、当前浏览器中未登录时的记录。已有云端记录优先；原本地记录仍然保留。</p>
-  <button id="cloud-guest-import" type="button">合并本机旧记录</button>
+  <h3>迁移原本机记录</h3><p class="cloud-hint">将此网址下未连接云端时的记录合并进个人空间，不覆盖已有云端标记。</p><button id="cloud-guest-import" type="button">合并本机旧记录</button>
  </section>
  <hr class="cloud-separator"><h3>记录备份与迁移</h3>
- <p class="cloud-hint">本地网址和线上网址的浏览器数据彼此独立：先在原网址导出，再到新网址登录并导入。导入只补充缺少的记录，不覆盖已有标记。</p>
- <div class="cloud-row"><button id="cloud-export" type="button">导出记录备份</button></div>
- <label for="cloud-import-file">导入记录备份（JSON）</label><input id="cloud-import-file" type="file" accept="application/json,.json">
- <p class="cloud-hint">断网时继续保存在本机，联网后自动重试。主题和当前章节筛选仅保存在本设备。</p>
+ <p class="cloud-hint">原电脑本地网址的记录可先导出，再到线上导入。导入只补充缺少的记录。</p>
+ <div class="cloud-row"><button id="cloud-export" type="button">导出记录备份</button></div><label for="cloud-import-file">导入记录备份（JSON）</label><input id="cloud-import-file" type="file" accept="application/json,.json">
+ <p class="cloud-hint">离线改动先保存在本机，恢复连接后补传。遇到冲突时保留双方记录，由你选择。</p>
 </dialog>
 <script src="cloud-config.js"></script>
-<script src="vendor/supabase/supabase.js"></script>
 <script src="sync-model.js"></script>
 <script src="cloud.js"></script>
 
 <script src="vendor/katex/katex.min.js"></script>
 <script src="app.js"></script>
 <script src="exams.js"></script>
+<script src="vendor/rhine/lottie.min.js"></script>
+<script src="vendor/rhine/rhine-logo-animation-data.js"></script>
+<script src="home.js"></script>
 </body>
 </html>

@@ -243,6 +243,13 @@ function renderBlocks(blocks, into) {
   (blocks || []).forEach(function (b) {
     if (!b) return;
     if (b.k === 'm') { into.appendChild(mathNode(b.x, true)); return; }
+    if (b.k === 'table') {
+      var wrap=el('div','source-table-wrap'),table=el('table','source-table'),head=el('tr');
+      (b.headers||[]).forEach(function(v){var th=el('th');renderInline(v,th);head.appendChild(th);});
+      var thead=el('thead');thead.appendChild(head);table.appendChild(thead);var tbody=el('tbody');
+      (b.rows||[]).forEach(function(row){var tr=el('tr');row.forEach(function(v){var td=el('td');renderInline(v,td);tr.appendChild(td);});tbody.appendChild(tr);});
+      table.appendChild(tbody);wrap.appendChild(table);into.appendChild(wrap);return;
+    }
     if (b.k === 'ul' || b.k === 'ol') {
       var list = el(b.k === 'ul' ? 'ul' : 'ol');
       (b.items || []).forEach(function (it) {
@@ -1083,6 +1090,7 @@ function boot() {
       initExams(got['data/past-exams.json']);
       start();
       if(window.OpticsCloud) OpticsCloud.attach();
+      if(window.OpticsHome) OpticsHome.attach();
       document.title = '工程光学刷题（' + DATA.questions.length + ' 题）';
     } catch (e) {
       fatal('题库数据解析失败。', String(e && e.stack ? e.stack : e));

@@ -463,3 +463,5 @@ button:focus-visible,summary:focus-visible{outline:2px solid #7faf9b;outline-off
 .badge{font-size:11px;}
 .sidebar-signature{color:hsla(var(--theme-hue), 21.6%, 60.0%, 1.000);}
 @media(max-width:560px){.qmeta{font-size:11px;}.badge{font-size:10px;}.actionbar .btn{min-height:42px;}.actionbar .status-buttons .btn{min-height:38px;}}
+
+.source-table-wrap{overflow-x:auto;margin:16px 0}.source-table{border-collapse:collapse;width:100%;font-size:.95em}.source-table th,.source-table td{border:1px solid var(--border,#dce4df);padding:10px 14px;text-align:left;min-width:100px}.source-table th{background:var(--surface-2,#f4f6f5)}

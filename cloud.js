@@ -1,13 +1,13 @@
-/* Supabase sync: account-scoped local cache, durable outbox and explicit conflicts. */
+/* Supabase sync: private-space-scoped local cache, durable outbox and explicit conflicts. */
 (function(){
  'use strict';
  const cfg=window.OPTICS_CLOUD_CONFIG, model=window.OpticsSyncModel;
- let client=null, user=null, attached=false, applying=false, running=false, timer=null;
+ let client=null, user=null, privateKey='', cloudConnected=false, attached=false, applying=false, running=false, timer=null;
  let records={}, baseline={}, storageFailed=false, initError='', generation=0;
  const byId=id=>document.getElementById(id);
  const uuid=()=>crypto.randomUUID();
  const validStatuses=['known','unknown','shaky'];
- const localKey=base=>user?base+'.user.'+user.id:base;
+ const localKey=base=>user?base+'.space.'+user.id:base;
  const cacheKey=()=>localKey('gopt.cloud.records.v1');
  const pending=()=>Object.values(records).filter(r=>r.pending).length;
  const conflicts=()=>Object.entries(records).filter(([,r])=>r.conflict&&r.pending);
@@ -19,12 +19,13 @@
  }
  function message(text,error=false){
   if(byId('cloud-message')){byId('cloud-message').textContent=text;byId('cloud-message').dataset.error=String(error);}
-  if(byId('cloud-short'))byId('cloud-short').textContent=error?'需处理':user?(pending()?'待同步 '+pending():'已登录'):'本地模式';
+  if(byId('cloud-short'))byId('cloud-short').textContent=error?'需处理':user?(pending()?'待同步 '+pending():cloudConnected?'已连接':'待连接'):'本地模式';
+  window.dispatchEvent(new Event('optics:sync-status'));
  }
  function updatePanel(){
   if(!byId('cloud-dialog'))return;
   byId('cloud-login').hidden=!!user;byId('cloud-account').hidden=!user;
-  byId('cloud-email-label').textContent=user?user.email:'';
+  byId('cloud-email-label').textContent=user?'个人学习空间':'';
   byId('cloud-sync-now').disabled=!user||running;
   byId('cloud-guest-import').disabled=!user||running;
   const items=conflicts();byId('cloud-conflicts').hidden=!items.length;
@@ -42,8 +43,8 @@
  function valid(key,value){
   if(!/^(status|mark|choice|position):[A-Za-z0-9_.:-]+$/.test(key)||key.length>240)return false;
   const at=key.indexOf(':'),type=key.slice(0,at),id=key.slice(at+1);
-  if(type==='status')return DATA.questions.some(q=>(q.statusKey||q.id)===id)&&(value===null||validStatuses.includes(value));
-  if(type==='mark')return !!EXAMS.byOccurrence[id]&&EXAMS.byOccurrence[id].playable!==false&&(value===null||validStatuses.includes(value));
+  if(type==='status')return (DATA.questions.some(q=>(q.statusKey||q.id)===id)||Object.values(EXAMS.canonical||{}).some(q=>(q.statusKey||q.id)===id))&&(value===null||validStatuses.includes(value));
+  if(type==='mark')return !!EXAMS.byOccurrence[id]&&(value===null||validStatuses.includes(value));
   if(type==='choice')return !!DATA.byId[id]&&(value===null||DATA.byId[id].options.some(o=>o.key===value));
   const year=EXAMS.years.find(y=>y.id===id);
   return !!year&&(value===null||year.occurrenceIds.includes(value));
@@ -61,6 +62,7 @@
    if(changed){persist();message('已保存到本机，等待同步');updatePanel();schedule();}
   }
   baseline=next;
+  window.dispatchEvent(new Event('optics:progress'));
  }
  function apply(){
   if(!attached||!user)return;
@@ -83,6 +85,7 @@
    if(!currentId){ui.answerOpen=false;ui.analysisOpen=false;}
    render();byId('scroller').scrollTop=scroll;
    baseline=snapshot();
+   window.dispatchEvent(new Event('optics:progress'));
   }finally{applying=false;}
  }
  function schedule(){clearTimeout(timer);timer=setTimeout(sync,900);}
@@ -100,9 +103,10 @@
    records=read(cacheKey(),records);
    const changes=Object.values(records).filter(r=>r.pending&&!r.conflict).map(r=>({...r.pending}));
    const sent=Object.fromEntries(changes.map(c=>[c.key,c]));
-   const {data,error}=await client.rpc('optics_sync',{changes});
+   const {data,error}=await client.rpc('optics_personal_sync',{access_key:privateKey,changes});
    if(error)throw error;
    if(gen!==generation)return;
+   cloudConnected=true;
    if(!data||!Array.isArray(data.rows)||!Array.isArray(data.acknowledged)||!Array.isArray(data.conflicts))throw Error('云端返回格式异常');
    records=read(cacheKey(),records); // preserve edits made while request was in flight
    model.reconcile(records,data,sent);
@@ -111,12 +115,13 @@
    message(conflicts().length?'发现同步冲突，请在下方选择保留的记录。':pending()?'仍有本机改动，继续同步…':'已同步 · '+new Date().toLocaleTimeString('zh-CN'));
    if(pending()&&!conflicts().length)schedule();
    return true;
-  }catch(e){message(friendly(e),true);}
+  }catch(e){cloudConnected=false;message(friendly(e),true);}
   finally{running=false;updatePanel();}
  }
  function friendly(e){
   const m=String(e?.message||e);
-  if(/optics_sync|PGRST202|schema cache/i.test(m)||e?.code==='PGRST202')return '云端数据库尚未初始化。请先在 Supabase SQL Editor 执行 setup.sql，然后点“立即同步”。本地记录已保留。';
+  if(/optics_personal_sync|PGRST202|schema cache/i.test(m)||e?.code==='PGRST202')return '云端数据库尚未初始化。请先在 Supabase SQL Editor 执行 personal-space.sql，然后点“立即同步”。本地记录已保留。';
+  if(/Invalid sync key/i.test(m))return '同步密钥不正确，请使用“个人云端连接信息.txt”中的完整密钥。';
   if(/Email address not authorized|email_address_not_authorized|sending emails/i.test(m))return 'Supabase 默认发信服务仅支持项目团队邮箱。请使用注册 Supabase 的邮箱，或为项目配置自定义 SMTP。';
   if(/rate limit|too many|security purposes/i.test(m))return '请求过于频繁，请稍后再试（邮件通常至少间隔 60 秒）。';
   if(/fetch|network|timeout|abort/i.test(m))return '连接云端失败；记录仍在本机。检查网络后点“立即同步”。';
@@ -169,24 +174,19 @@
   byId('cloud-use-local').onclick=()=>resolveConflicts(true);
   byId('cloud-use-remote').onclick=()=>resolveConflicts(false);
   byId('cloud-login').onsubmit=async e=>{
-   e.preventDefault();if(!client){message(initError||'登录服务未就绪，请刷新重试。',true);return;}
-   const btn=byId('cloud-send');btn.disabled=true;
+   e.preventDefault();const btn=byId('cloud-connect');btn.disabled=true;
    try{
-    const email=byId('cloud-email').value.trim();
-    const {error}=await client.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+location.pathname}});
+    const key=byId('cloud-key').value.trim();
+    if(!/^[A-Za-z0-9_-]{40,100}$/.test(key))throw Error('请粘贴完整的个人同步密钥');
+    const {error}=await client.rpc('optics_personal_sync',{access_key:key,changes:[]});
     if(error)throw error;
-    message('登录邮件已发送。请把邮件验证码输入下方，登录当前设备；或在当前设备打开邮件链接。手机打开链接不会让电脑自动登录。');
-   }catch(err){message(friendly(err),true);}finally{setTimeout(()=>{btn.disabled=false;},60000);}
+    localStorage.setItem('gopt.personal.key.v1',key);
+    attached=false;clearTimeout(timer);location.reload();
+   }catch(err){message(friendly(err),true);}finally{btn.disabled=false;}
   };
-  byId('cloud-verify').onclick=async()=>{
-   if(!client)return;
-   const btn=byId('cloud-verify');btn.disabled=true;
-   try{const {error}=await client.auth.verifyOtp({email:byId('cloud-email').value.trim(),token:byId('cloud-otp').value.trim(),type:'email'});if(error)throw error;}
-   catch(e){message(friendly(e),true);}finally{btn.disabled=false;}
-  };
-  byId('cloud-signout').onclick=async()=>{
-   if(pending()||running){message('请先完成同步或处理冲突，再退出账号。可先导出备份。',true);return;}
-   const {error}=await client.auth.signOut({scope:'local'});if(error)message(friendly(error),true);
+  byId('cloud-signout').onclick=()=>{
+   if(pending()||running){message('请先完成同步或处理冲突，再断开连接。可先导出备份。',true);return;}
+   localStorage.removeItem('gopt.personal.key.v1');attached=false;clearTimeout(timer);location.reload();
   };
  }
  function attach(){
@@ -195,7 +195,7 @@
   catch(e){storageFailed=true;message('同步缓存无法读取，已停止同步以保留原始数据。请导出备份后联系维护者。',true);}
   baseline=snapshot();
   if(user&&!storageFailed)apply();
-  updatePanel();if(!storageFailed)message(initError|| (user?'已登录，正在读取云端记录…':'本地模式 · 登录后可在多设备间同步。'),!!initError);
+  updatePanel();if(!storageFailed)message(initError|| (user?'正在连接个人云端空间…':'本地模式 · 输入同步密钥后自动连接，无需邮箱账号。'),!!initError);
   if(user)sync();
   window.addEventListener('online',sync);
   window.addEventListener('focus',()=>{if(user)sync();});
@@ -204,22 +204,19 @@
   setInterval(()=>{if(document.visibilityState==='visible')sync();},60000);
  }
  async function init(){
-  if(!cfg?.url||!cfg?.publishableKey||!window.supabase){initError='云端配置或登录组件未加载；本地刷题仍可使用。';return;}
+  client={rpc:async(name,body)=>{
+   try{
+    const res=await fetch(cfg.url+'/rest/v1/rpc/'+name,{method:'POST',headers:{apikey:cfg.publishableKey,'Content-Type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(15000)});
+    const data=await res.json();if(!res.ok)return {error:data};return {data,error:null};
+   }catch(error){return {error};}
+  }};
   try{
-   client=window.supabase.createClient(cfg.url,cfg.publishableKey,{
-    auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true,storageKey:'optics.auth.v1'},
-    global:{fetch:(url,options={})=>fetch(url,{...options,signal:options.signal||AbortSignal.timeout(15000)})}
-   });
-   const {data,error}=await client.auth.getSession();if(error)throw error;user=data.session?.user||null;
-   client.auth.onAuthStateChange((event,session)=>{
-    const next=session?.user||null;
-    if((next?.id||null)!==(user?.id||null)){
-     generation++;user=next;
-     // Reload to switch *all* app persistence keys and wipe previous account's view.
-     if(attached){attached=false;clearTimeout(timer);setTimeout(()=>location.reload(),0);}
-    }
-   });
-  }catch(e){initError=friendly(e);}
+   privateKey=localStorage.getItem('gopt.personal.key.v1')||'';
+   if(privateKey){
+    const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(privateKey));
+    user={id:Array.from(new Uint8Array(digest)).map(x=>x.toString(16).padStart(2,'0')).join('').slice(0,24)};
+   }
+  }catch(e){initError='浏览器无法保存连接信息，当前使用本地模式。';}
  }
- window.OpticsCloud={ready:init(),localKey,attach,capture,isApplying:()=>applying};
+ window.OpticsCloud={ready:init(),localKey,attach,capture,isApplying:()=>applying,summary:()=>({configured:!!user,connected:cloudConnected,pending:pending()})};
 })();
