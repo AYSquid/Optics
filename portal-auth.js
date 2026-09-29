@@ -55,12 +55,22 @@ window.addEventListener('message',e=>{
  if(e.data?.type==='optics-auth-error'){busy=false;const b=document.querySelector('.login-button');if(b)b.disabled=false;error(['用户名或密码错误','退出失败，请重试'].includes(e.data.message)?e.data.message:'认证失败，请重试');}
  if(e.data?.type==='optics-auth-state'&&e.data.authenticated===true){
   authenticated=true;
-  // A verified parent session alone enables the existing welcome animation.
-  document.documentElement.classList.add('session-restoring');
+  // Fresh login: keep the current scene alive and let it transition naturally.
+  // session-restoring is reserved for ?resume=1 only.
+  document.documentElement.classList.remove('session-restoring');
+  document.documentElement.classList.add('auth-completing');
+  window.dispatchEvent(new CustomEvent('optics:authenticated'));
   let attempts=0;const timer=setInterval(()=>{
-   if(document.querySelector('.optics-links.is-ready')){clearInterval(timer);document.documentElement.classList.remove('session-restoring');return;}
+   if(document.querySelector('.optics-links.is-ready')){
+    clearInterval(timer);
+    document.documentElement.classList.remove('auth-completing');
+    return;
+   }
    const b=document.querySelector('.login-button');if(b)b.click();
-   if(++attempts>120)clearInterval(timer);
+   if(++attempts>120){
+    clearInterval(timer);
+    document.documentElement.classList.remove('auth-completing');
+   }
   },250);
  }
 });
