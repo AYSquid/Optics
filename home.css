@@ -1,2 +1,10 @@
-/* The supplied entry is isolated from quiz theme styles. */
+/* The login iframe is isolated from all quiz themes. */
 #rhine-portal{position:fixed;inset:0;width:100%;height:100%;height:100dvh;border:0;z-index:500;background:#fdfcf6}body.portal-open{overflow:hidden}
+.sidebar .home-return{appearance:none;align-self:flex-start;flex:none;width:auto;margin:10px 20px 14px;padding:4px 0;border:0;background:transparent;box-shadow:none;color:var(--soft);font:inherit;font-size:12px;cursor:pointer;transition:color .18s ease}
+.sidebar .home-return:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.sidebar .home-return:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+
+.sidebar-account{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:none;margin:0 18px;padding:12px 0 8px;border-top:1px solid var(--edge);font-size:11px;color:var(--soft)}
+.sidebar-account span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar-account button{appearance:none;flex:none;border:0;padding:3px 0;background:transparent;color:var(--soft);font:inherit;cursor:pointer}
+.sidebar-account button:hover{color:var(--ink);text-decoration:underline;text-underline-offset:3px}

@@ -465,3 +465,21 @@ button:focus-visible,summary:focus-visible{outline:2px solid #7faf9b;outline-off
 @media(max-width:560px){.qmeta{font-size:11px;}.badge{font-size:10px;}.actionbar .btn{min-height:42px;}.actionbar .status-buttons .btn{min-height:38px;}}
 
 .source-table-wrap{overflow-x:auto;margin:16px 0}.source-table{border-collapse:collapse;width:100%;font-size:.95em}.source-table th,.source-table td{border:1px solid var(--border,#dce4df);padding:10px 14px;text-align:left;min-width:100px}.source-table th{background:var(--surface-2,#f4f6f5)}
+
+
+/* 原始资料不完整的题：题干前的说明条。
+   真题模块（exams.js）与章节练习（app.js）共用同一个提示，此前一直没有样式。 */
+.exam-warning {
+  margin: 0 0 18px;
+  padding: 11px 14px;
+  border: 1px solid hsla(38, 62%, 62%, .45);
+  border-left: 3px solid hsla(38, 62%, 50%, .95);
+  border-radius: 6px;
+  background: hsla(38, 70%, 96%, 1);
+  color: hsla(34, 55%, 30%, 1);
+  font-size: 13px;
+  line-height: 1.7;
+}
+@media (max-width: 560px) {
+  .exam-warning { font-size: 12px; padding: 9px 11px; margin-bottom: 14px; }
+}

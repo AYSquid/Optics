@@ -1,8 +1,8 @@
 /* Supabase sync: private-space-scoped local cache, durable outbox and explicit conflicts. */
 (function(){
  'use strict';
- const cfg=window.OPTICS_CLOUD_CONFIG, model=window.OpticsSyncModel;
- let client=null, user=null, privateKey='', cloudConnected=false, attached=false, applying=false, running=false, timer=null;
+ const model=window.OpticsSyncModel;
+ let client=null, user=null, cloudConnected=false, attached=false, applying=false, running=false, timer=null;
  let records={}, baseline={}, storageFailed=false, initError='', generation=0;
  const byId=id=>document.getElementById(id);
  const uuid=()=>crypto.randomUUID();
@@ -25,7 +25,8 @@
  function updatePanel(){
   if(!byId('cloud-dialog'))return;
   byId('cloud-login').hidden=!!user;byId('cloud-account').hidden=!user;
-  byId('cloud-email-label').textContent=user?'个人学习空间':'';
+  byId('cloud-email-label').textContent=user?window.OpticsAuth.displayName:'';
+  if(byId('account-display'))byId('account-display').textContent=user?window.OpticsAuth.displayName:'';
   byId('cloud-sync-now').disabled=!user||running;
   byId('cloud-guest-import').disabled=!user||running;
   const items=conflicts();byId('cloud-conflicts').hidden=!items.length;
@@ -103,7 +104,7 @@
    records=read(cacheKey(),records);
    const changes=Object.values(records).filter(r=>r.pending&&!r.conflict).map(r=>({...r.pending}));
    const sent=Object.fromEntries(changes.map(c=>[c.key,c]));
-   const {data,error}=await client.rpc('optics_personal_sync',{access_key:privateKey,changes});
+   const {data,error}=await client.rpc('optics_sync',{changes});
    if(error)throw error;
    if(gen!==generation)return;
    cloudConnected=true;
@@ -120,12 +121,10 @@
  }
  function friendly(e){
   const m=String(e?.message||e);
-  if(/optics_personal_sync|PGRST202|schema cache/i.test(m)||e?.code==='PGRST202')return '云端数据库尚未初始化。请先在 Supabase SQL Editor 执行 personal-space.sql，然后点“立即同步”。本地记录已保留。';
-  if(/Invalid sync key/i.test(m))return '同步密钥不正确，请使用“个人云端连接信息.txt”中的完整密钥。';
-  if(/Email address not authorized|email_address_not_authorized|sending emails/i.test(m))return 'Supabase 默认发信服务仅支持项目团队邮箱。请使用注册 Supabase 的邮箱，或为项目配置自定义 SMTP。';
+  if(/optics_sync|PGRST202|schema cache/i.test(m)||e?.code==='PGRST202')return '云端数据库尚未初始化。请先在 Supabase SQL Editor 执行 setup.sql，然后点“立即同步”。本地记录已保留。';
   if(/rate limit|too many|security purposes/i.test(m))return '请求过于频繁，请稍后再试（邮件通常至少间隔 60 秒）。';
   if(/fetch|network|timeout|abort/i.test(m))return '连接云端失败；记录仍在本机。检查网络后点“立即同步”。';
-  return '操作未完成：'+m;
+  return '操作未完成，请重试；本地记录已保留。';
  }
  function download(){
   const data={format:'optics-progress/v1',exportedAt:new Date().toISOString(),records:user&&!storageFailed?Object.entries(records).map(([key,r])=>({key,value:model.visible(r)})):Object.entries(snapshot()).map(([key,value])=>({key,value}))};
@@ -173,21 +172,11 @@
   byId('cloud-sync-now').onclick=sync;
   byId('cloud-use-local').onclick=()=>resolveConflicts(true);
   byId('cloud-use-remote').onclick=()=>resolveConflicts(false);
-  byId('cloud-login').onsubmit=async e=>{
-   e.preventDefault();const btn=byId('cloud-connect');btn.disabled=true;
-   try{
-    const key=byId('cloud-key').value.trim();
-    if(!/^[A-Za-z0-9_-]{40,100}$/.test(key))throw Error('请粘贴完整的个人同步密钥');
-    const {error}=await client.rpc('optics_personal_sync',{access_key:key,changes:[]});
-    if(error)throw error;
-    localStorage.setItem('gopt.personal.key.v1',key);
-    attached=false;clearTimeout(timer);location.reload();
-   }catch(err){message(friendly(err),true);}finally{btn.disabled=false;}
+  const signOut=async()=>{
+   try{await window.OpticsAuth.signOut();}catch(_error){message('退出失败，请重试。',true);byId('cloud-dialog').showModal();}
   };
-  byId('cloud-signout').onclick=()=>{
-   if(pending()||running){message('请先完成同步或处理冲突，再断开连接。可先导出备份。',true);return;}
-   localStorage.removeItem('gopt.personal.key.v1');attached=false;clearTimeout(timer);location.reload();
-  };
+  byId('cloud-signout').onclick=signOut;
+  if(byId('account-signout'))byId('account-signout').onclick=signOut;
  }
  function attach(){
   attached=true;bindUI();
@@ -195,7 +184,7 @@
   catch(e){storageFailed=true;message('同步缓存无法读取，已停止同步以保留原始数据。请导出备份后联系维护者。',true);}
   baseline=snapshot();
   if(user&&!storageFailed)apply();
-  updatePanel();if(!storageFailed)message(initError|| (user?'正在连接个人云端空间…':'本地模式 · 输入同步密钥后自动连接，无需邮箱账号。'),!!initError);
+  updatePanel();if(!storageFailed)message(initError|| (user?'正在连接个人云端空间…':'请先登录学习系统。'),!!initError);
   if(user)sync();
   window.addEventListener('online',sync);
   window.addEventListener('focus',()=>{if(user)sync();});
@@ -204,19 +193,14 @@
   setInterval(()=>{if(document.visibilityState==='visible')sync();},60000);
  }
  async function init(){
-  client={rpc:async(name,body)=>{
-   try{
-    const res=await fetch(cfg.url+'/rest/v1/rpc/'+name,{method:'POST',headers:{apikey:cfg.publishableKey,'Content-Type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(15000)});
-    const data=await res.json();if(!res.ok)return {error:data};return {data,error:null};
-   }catch(error){return {error};}
-  }};
-  try{
-   privateKey=localStorage.getItem('gopt.personal.key.v1')||'';
-   if(privateKey){
-    const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(privateKey));
-    user={id:Array.from(new Uint8Array(digest)).map(x=>x.toString(16).padStart(2,'0')).join('').slice(0,24)};
-   }
-  }catch(e){initError='浏览器无法保存连接信息，当前使用本地模式。';}
+  await window.OpticsAuth.ready;
+  client=window.OpticsAuth.client;user=window.OpticsAuth.user;
+  window.OpticsAuth.subscribe(next=>{
+   if(next?.user?.id===user?.id)return;
+   // Stop in-flight responses from applying to a different identity.
+   generation++;attached=false;clearTimeout(timer);cloudConnected=false;
+   user=next?.user||null;records={};baseline={};
+  });
  }
  window.OpticsCloud={ready:init(),localKey,attach,capture,isApplying:()=>applying,summary:()=>({configured:!!user,connected:cloudConnected,pending:pending()})};
 })();

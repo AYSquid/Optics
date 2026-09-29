@@ -552,6 +552,7 @@ function render() {
   source.appendChild(el('summary', null, '题目来源'));
   source.appendChild(el('div', null, q.sourceLabel + '／' + (q.origin && q.origin.file ? q.origin.file : '—') +
     (q.origin && q.origin.line ? ' 第 ' + q.origin.line + ' 行' : '')));
+  if (q.origin && q.origin.reference) { var refDiv = el('div'); renderInline(q.origin.reference, refDiv); source.appendChild(refDiv); }
   meta.appendChild(source);
 
   var badges = $('qbadges');
@@ -570,6 +571,16 @@ function render() {
   var stem = $('stem');
   clear(stem);
   renderBlocks(q.stem, stem);
+  // 原始资料不完整的题（如缺选项、缺题图）：给出明确说明。
+  // 这类题在真题模块里也有同样提示；章节练习里补上，避免点了选项没反应却不知原因。
+  if (q.playable === false) {
+    stem.insertBefore(
+      el('div', 'exam-warning',
+        '原始资料' + (q.completeness === 'needs_image' ? '缺少题图' : '不完整') +
+        '，本题暂不支持在线作答。保留原题号与原文，等待补全。'),
+      stem.firstChild
+    );
+  }
 
   // 选项
   var opts = $('options');
@@ -1098,6 +1109,10 @@ function boot() {
   }
 }
 
-function bootWithCloud(){ if(window.OpticsCloud) OpticsCloud.ready.then(boot).catch(boot); else boot(); }
+function bootWithCloud(){
+  if(window.OpticsAuth){
+    OpticsAuth.ready.then(()=>{OpticsHome.initialize();if(OpticsAuth.user)OpticsCloud.ready.then(boot);});
+  }else fatal('认证服务未加载。','请刷新页面后重试。');
+}
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bootWithCloud);
 else bootWithCloud();

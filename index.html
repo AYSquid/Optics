@@ -30,9 +30,9 @@
       <span class="brand-text">工程光学<span class="brand-sub">OPTICS / STUDY ROOM</span></span>
     </div>
 
-    <button id="home-return" class="home-return" type="button">← 学习首页</button>
+    <button id="home-return" class="home-return" type="button" title="返回学习首页">← 学习首页</button>
     <nav class="module-nav" aria-label="学习模块"><button id="module-bank" type="button">章节题库</button><button id="module-exams" type="button">历年真题</button></nav>
-    <details class="theme-menu"><summary>主题配色 <span id="theme-current">浅蓝 · 白</span></summary><div class="theme-picker" role="group" aria-label="页面配色"><button data-set-theme="blue" type="button">浅蓝 · 白</button><button data-set-theme="lavender" type="button">浅紫 · 白</button><button data-set-theme="green" type="button">浅绿</button><button data-set-theme="green-solid" type="button">浅绿 · 纯色</button><button data-set-theme="rhine" type="button">莱茵生命</button></div></details>
+    <details class="theme-menu"><summary>主题配色 <span id="theme-current">浅蓝 · 白</span></summary><div class="theme-picker" role="group" aria-label="页面配色"><button data-set-theme="blue" type="button">浅蓝 · 白</button><button data-set-theme="lavender" type="button">浅紫 · 白</button><button data-set-theme="green" type="button">浅绿</button><button data-set-theme="green-solid" type="button">浅绿 · 纯色</button><button data-set-theme="rhine" type="button">莱茵生命</button><button data-set-theme="rhine-terminal" type="button">认证终端</button></div></details>
     <button id="cloud-open" class="cloud-entry" type="button"><span>云端记录</span><small id="cloud-short">本地模式</small></button>
     <div class="side-block">
       <div class="side-label">学习状态 · 当前分类</div>
@@ -44,6 +44,7 @@
       <div id="tree" class="tree" role="navigation" aria-label="章节与知识点目录"></div>
     </div>
 
+    <div class="sidebar-account"><span id="account-display">Doc. Muelsyse</span><button id="account-signout" type="button">退出登录</button></div>
     <div class="sidebar-signature"><span class="live-dot"></span> 专注一道题，理解一个知识点</div>
     <div id="store-note" class="store-note" hidden></div>
   </aside>
@@ -129,14 +130,10 @@
  <div class="cloud-head"><h2 id="cloud-title">云端记录</h2><button id="cloud-close" type="button" aria-label="关闭云端记录">关闭</button></div>
  <p>一个个人学习空间，电脑和手机共享同一份进度。</p>
  <div id="cloud-message" class="cloud-message" role="status" aria-live="polite">正在准备…</div>
- <form id="cloud-login">
-  <label for="cloud-key">个人同步密钥</label><input id="cloud-key" type="password" autocomplete="off" spellcheck="false" required placeholder="首次使用，在这里粘贴同步密钥">
-  <div class="cloud-row"><button id="cloud-connect" class="cloud-primary" type="submit">连接个人空间</button></div>
-  <p class="cloud-hint">每台设备只需连接一次，之后自动同步，无需邮箱登录。请妥善保管密钥，持有它的人可以访问此空间。</p>
- </form>
+ <p id="cloud-login" hidden>请先登录学习系统。</p>
  <section id="cloud-account" hidden>
-  <p>已配置：<strong id="cloud-email-label"></strong></p>
-  <div class="cloud-row"><button id="cloud-sync-now" class="cloud-primary" type="button">立即同步</button><button id="cloud-signout" type="button">断开此设备</button></div>
+  <p>当前用户：<strong id="cloud-email-label"></strong></p>
+  <div class="cloud-row"><button id="cloud-sync-now" class="cloud-primary" type="button">立即同步</button><button id="cloud-signout" type="button">退出登录</button></div>
   <div id="cloud-conflicts" class="cloud-conflict" hidden><p id="cloud-conflict-count"></p><details><summary>查看冲突记录</summary><ul id="cloud-conflict-list"></ul></details><div class="cloud-row"><button id="cloud-use-remote" type="button">保留云端版本</button><button id="cloud-use-local" type="button">保留本机版本</button></div></div>
   <h3>迁移原本机记录</h3><p class="cloud-hint">将此网址下未连接云端时的记录合并进个人空间，不覆盖已有云端标记。</p><button id="cloud-guest-import" type="button">合并本机旧记录</button>
  </section>
@@ -146,6 +143,8 @@
  <p class="cloud-hint">离线改动先保存在本机，恢复连接后补传。遇到冲突时保留双方记录，由你选择。</p>
 </dialog>
 <script src="cloud-config.js"></script>
+<script src="vendor/supabase/supabase.js"></script>
+<script src="auth.js"></script>
 <script src="sync-model.js"></script>
 <script src="cloud.js"></script>
 

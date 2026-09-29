@@ -140,3 +140,73 @@ html:is([data-theme="green"],[data-theme="rhine"]) .topbar{background:rgba(248,2
 html:is([data-theme="green"],[data-theme="rhine"]) .year-card{content-visibility:auto;contain-intrinsic-size:auto 290px}
 html:is([data-theme="green"],[data-theme="rhine"]) .sidebar{box-shadow:2px 0 10px #354e4006}
 @media(max-width:900px),(prefers-reduced-motion:reduce){html:is([data-theme="green"],[data-theme="rhine"]) .topbar{backdrop-filter:none;-webkit-backdrop-filter:none;background:#f4f7ee}}
+
+/* RHINE TERMINAL: authentication typography, Rhine sage palette, static frosted surfaces. */
+html[data-theme="rhine-terminal"]{
+ --theme-hue:156;--bg:#edf0e8;--panel:#fdfcf6;--surface:#f9faf4;--surface-2:#e5eadf;--terminal-surface:#edf0e8;
+ --accent:#35473d;--accent-hover:#26382f;--signal:#e57d43;--button-bg:#e57d43;--button-hover:#ee915b;--button-text:#302218;--tint:#e7edde;--edge:#ccd5c7;--ink:#26332e;--soft:#5d7063;
+ --line:#d0d8cb;--border:#d0d8cb;--line-strong:#a4b39e;
+ --text:#26332e;--text-soft:#5d7063;--text-dim:#65776c;
+ --blue:#35473d;--blue-dark:#26382f;--blue-soft:#e7edde;--blue-line:#ccd5c7;
+ --green:#47634e;--green-soft:#e8eee2;--red:#874c40;--red-soft:#f2e6e2;
+ --amber:#79683f;--amber-soft:#f1ecdf;--shadow:0 10px 30px #293c2c12;
+ --glass:rgba(247,249,240,.90);--glass-card:linear-gradient(115deg,rgba(255,255,250,.90),rgba(244,248,237,.82));--glass-edge:rgba(255,255,248,.90);
+}
+html[data-theme="rhine-terminal"] body{background:radial-gradient(ellipse at 94% 4%,#ecd8bd88,transparent 46%),radial-gradient(ellipse at 18% 94%,#b8ccc080,transparent 54%),#edf0e8;background-attachment:scroll}
+html[data-theme="rhine-terminal"] :is(.main,.topbar,.question-nav){background:transparent;color:var(--ink)}
+html[data-theme="rhine-terminal"] .main{position:relative;isolation:isolate}
+html[data-theme="rhine-terminal"] .main:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(#52695c0b 1px,transparent 1px),linear-gradient(90deg,#52695c0b 1px,transparent 1px);background-size:44px 44px}
+html[data-theme="rhine-terminal"] .main:after{content:"";position:absolute;left:auto;right:clamp(48px,4vw,64px);top:auto;bottom:clamp(130px,19vh,210px);transform:none;width:clamp(280px,36vw,480px);aspect-ratio:850/375;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='20 25 850 375'><g fill='none' stroke='%233b5142' stroke-width='40' stroke-linejoin='round' stroke-linecap='butt' stroke-opacity='.20'><path d='M335.26,327.76C275.26,390.26,178,381,121.5,351.5S25.94,250.4,38.5,176C49.64,110,105,56.5,161.5,41.5c37-9.82,112.5-8,153,31.5S525,293.5,560,328s118.5,66.5,188,30.5c52.72-27.31,84.34-60,98-120C858.61,183.11,838,131,813,99S748,42,694.5,37C654.375,33.25,617.34,46.09,589.1,64.35'/><path d='M564,84L335.26,327.76'/><path d='M151,216 L251,216 M201,166 L201,266'/><path d='M580,214 L698,214'/></g></svg>") center/contain no-repeat;z-index:-1;pointer-events:none}
+html[data-theme="rhine-terminal"] :is(.sidebar,.topbar,.actionbar,.question-nav){background:var(--glass);backdrop-filter:none;-webkit-backdrop-filter:none;border-color:var(--glass-edge);box-shadow:none}
+html[data-theme="rhine-terminal"] :is(.card,.year-card){background:var(--glass-card);backdrop-filter:none;-webkit-backdrop-filter:none;border:1px solid var(--glass-edge);box-shadow:0 5px 18px #293c2c08,inset 0 1px 0 #fff}
+html[data-theme="rhine-terminal"] .cloud-dialog{background:linear-gradient(125deg,#fdfdf7,#f0f4e9);backdrop-filter:none;-webkit-backdrop-filter:none;border:1px solid var(--glass-edge);border-radius:2px;box-shadow:var(--shadow)}
+html[data-theme="rhine-terminal"] .cloud-dialog::backdrop{background:#dfddd780}
+html[data-theme="rhine-terminal"] .card:before{background:var(--signal);opacity:.85}
+html[data-theme="rhine-terminal"] :is(.stem,.region-body,.crumb,.option-text){color:var(--ink)}
+html[data-theme="rhine-terminal"] :is(.qmeta,.crumb-sub,.tree-kn-btn,.tree-src,.tree-count,.side-label,.sidebar-signature,.progress,.source-detail,.status-label){color:var(--soft)}
+html[data-theme="rhine-terminal"] :is(.page-eyebrow,.brand-sub){font-family:"Roboto Mono",Consolas,monospace;letter-spacing:.05em}
+html[data-theme="rhine-terminal"] :is(.brand-mark,.option-key,.badge,.kp,.cloud-message,.cloud-entry){background:var(--tint);border-color:var(--edge);color:var(--ink);box-shadow:none}
+html[data-theme="rhine-terminal"] :is(.brand-mark .prism-ray-one,.brand-mark .prism-ray-two,.brand-mark .prism-ray-three){stroke:#5d7063!important}
+html[data-theme="rhine-terminal"] :is(.region-title,.kp-title,.page-eyebrow){color:var(--ink)!important}
+html[data-theme="rhine-terminal"] :is(.region-title:before,.live-dot){background:var(--signal)}
+html[data-theme="rhine-terminal"] :is(.option,.module-nav button,.exam-year-nav button,.theme-menu summary,.jump-input,.cloud-dialog input:not([type=file]),.theme-picker button){background:var(--surface);border-color:var(--edge);color:var(--ink);transition:background-color .18s ease,border-color .18s ease}
+html[data-theme="rhine-terminal"] :is(.option:hover,.module-nav button:hover,.theme-picker button:hover,.exam-year-nav button:hover){background:var(--tint);border-color:var(--line-strong)}
+html[data-theme="rhine-terminal"] :is(.module-nav button[aria-pressed="true"],.exam-year-nav button[aria-current="page"],.filter-btn[aria-pressed="true"],#btn-answer,.cloud-primary){background:var(--button-bg);color:var(--button-text);border-color:#c8793d;box-shadow:none}
+html[data-theme="rhine-terminal"] .option[aria-pressed="true"]{background:#f5e3ce;color:var(--ink);border-color:#c8793d;box-shadow:inset 3px 0 var(--signal)}
+html[data-theme="rhine-terminal"] .option[aria-pressed="true"] .option-text{color:var(--ink)}
+html[data-theme="rhine-terminal"] .option[aria-pressed="true"] .option-key{background:var(--button-bg);color:var(--button-text)}
+html[data-theme="rhine-terminal"] :is(#btn-answer:hover,.cloud-primary:hover){background:var(--button-hover);color:var(--button-text);filter:none}
+html[data-theme="rhine-terminal"] :is(.tree-btn.is-current,.btn-outline,.year-card button,.theme-picker button[aria-pressed="true"]){background:var(--tint);color:var(--ink);border-color:var(--line-strong)}
+html[data-theme="rhine-terminal"] .tree-btn.is-current{box-shadow:inset 3px 0 var(--signal)}
+html[data-theme="rhine-terminal"] :is(.btn-ghost,.pager .btn,.nav-toggle){background:transparent;color:var(--ink)}
+html[data-theme="rhine-terminal"] :is(.btn-ghost:hover,.pager .btn:hover){background:var(--tint);color:var(--ink)}
+html[data-theme="rhine-terminal"] .btn-outline[aria-expanded="true"]{background:#e3ead9;box-shadow:inset 0 0 0 1px #a4b39e}
+html[data-theme="rhine-terminal"] .theme-menu .theme-picker{background:linear-gradient(125deg,#fdfdf7,#f0f4e9);backdrop-filter:none;-webkit-backdrop-filter:none;border-color:var(--glass-edge);box-shadow:var(--shadow)}
+html[data-theme="rhine-terminal"] .btn-ok[aria-pressed="true"]{background:var(--green-soft);color:var(--green);border-color:var(--green)}
+html[data-theme="rhine-terminal"] .btn-bad[aria-pressed="true"]{background:var(--red-soft);color:var(--red);border-color:var(--red)}
+html[data-theme="rhine-terminal"] .btn-mid[aria-pressed="true"]{background:var(--amber-soft);color:var(--amber);border-color:var(--amber)}
+html[data-theme="rhine-terminal"] :is(.notice,.exam-warning){background:var(--amber-soft);color:var(--amber);border-color:var(--amber)}
+html[data-theme="rhine-terminal"] .cloud-message[data-error=true]{background:var(--red-soft);color:var(--red)}
+html[data-theme="rhine-terminal"] .cloud-conflict{border-color:var(--amber)}
+html[data-theme="rhine-terminal"] :is(.sidebar,.scroller,.cloud-dialog){scrollbar-color:#a4b39e #e7edde}
+.theme-picker button[data-set-theme="rhine-terminal"]:before{background:linear-gradient(135deg,#35473d 55%,#d7dfc9 55%)}
+
+html[data-theme="rhine-terminal"] .filter-btn:not([aria-pressed="true"]){background:var(--tint);color:var(--soft)}
+html[data-theme="rhine-terminal"] :is(.brand-sub,.tree-caret,.kp-label,.kp-src,.status-buttons .btn:not([aria-pressed="true"])){color:var(--soft)}
+html[data-theme="rhine-terminal"] :is(.side-block,.tree-children,.sidebar-signature,.progress,.kp-src){border-color:var(--edge)}
+html[data-theme="rhine-terminal"] .tree{scrollbar-color:#a4b39e transparent}
+html[data-theme="rhine-terminal"] :is(.tree-btn:hover,.source-detail div){background:var(--tint)}
+html[data-theme="rhine-terminal"] .qmeta>.sep{color:var(--line-strong)}
+@supports not (backdrop-filter:blur(1px)){html[data-theme="rhine-terminal"] :is(.sidebar,.topbar,.actionbar,.question-nav,.card,.year-card){background:#f6f5ef}}
+@media(max-width:900px){html[data-theme="rhine-terminal"] .sidebar{background:#eff3e9;backdrop-filter:none;-webkit-backdrop-filter:none}}
+
+/* Blur only the small stationary header; never resample a scrolling question or menu. */
+html[data-theme="rhine-terminal"] .topbar{background:rgba(247,249,240,.86);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+html[data-theme="rhine-terminal"] .theme-menu[open]{z-index:30}
+html[data-theme="rhine-terminal"] .year-card{content-visibility:auto;contain-intrinsic-size:auto 290px}
+@media(max-width:900px),(prefers-reduced-motion:reduce){
+ html[data-theme="rhine-terminal"] .topbar{background:#f3f6ed;backdrop-filter:none;-webkit-backdrop-filter:none}
+ html[data-theme="rhine-terminal"] .main:after{width:260px;right:12px;bottom:170px;opacity:.65}
+}
+/* Avoid simultaneous color interpolation on hundreds of controls during theme changes. */
+html.theme-switching *,html.theme-switching *:before,html.theme-switching *:after{transition:none!important}
