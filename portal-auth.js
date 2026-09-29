@@ -46,7 +46,7 @@ if(resume){
      loginAdvanced=true;loginAt=performance.now();
      try{b.click();}catch(e){}
     }
-   }else if(!completeAdvanced&&performance.now()-loginAt>1100){
+   }else if(!completeAdvanced&&performance.now()-loginAt>1500){
     const c=document.querySelector('#completeButton');
     if(c){completeAdvanced=true;try{c.click();}catch(e){}}
    }
