@@ -4,7 +4,8 @@ if(parent===window){location.replace('./index.html#/login');return;}
 const parentOrigin=new URL(location.href).origin;
 // Never trust a referrer to select where credentials are sent.
 if(document.referrer&&new URL(document.referrer).origin!==parentOrigin)return;
-let authenticated=false,busy=false,formReady=false;
+const resume=new URLSearchParams(location.search).has('resume');
+let authenticated=resume,busy=false,formReady=false;
 const send=(action,extra={})=>parent.postMessage({type:'optics-portal',action,...extra},parentOrigin);
 function error(text){if(authenticated){const status=document.getElementById('optics-status');if(status){status.textContent=text;status.setAttribute('role','alert');return;}}let p=document.getElementById('auth-message');if(!p){p=document.createElement('p');p.id='auth-message';p.setAttribute('role','alert');p.style.cssText='color:#874c40;font:12px/1.5 sans-serif;margin:8px 0 0';document.querySelector('#login-form')?.append(p);}p.textContent=text;}
 function submit(){
@@ -31,6 +32,22 @@ function prepare(){
  });
  form.querySelectorAll('a').forEach(a=>{a.setAttribute('aria-disabled','true');a.tabIndex=-1;});
  send('auth-state');
+}
+// resume：父页面已确认登录且本会话看过开场，直接推进到主页，避免重播与卡死。
+if(resume){
+ document.documentElement.classList.add('session-restoring','session-resume');
+ let tries=0;
+ const tick=function(){
+  try{
+   if(document.querySelector('.optics-links.is-ready')){document.documentElement.classList.remove('session-restoring');return;}
+   const b=document.querySelector('.login-button');
+   if(b){try{b.click();}catch(e){}}
+   else if(tries>40){const c=document.querySelector('#completeButton');if(c){try{c.click();}catch(e){}}}   // 兜底：按钮迟迟不出现就直接完成
+  }catch(e){}
+  if(++tries<150){setTimeout(tick,100);}
+  else{document.documentElement.classList.remove('session-restoring');}   // 15 秒兜底，绝不永久卡住
+ };
+ tick();
 }
 new MutationObserver(prepare).observe(document.documentElement,{childList:true,subtree:true});
 window.addEventListener('message',e=>{

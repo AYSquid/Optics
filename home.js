@@ -2,11 +2,22 @@
 (function(){'use strict';
 let ready=false,frame=null,initialized=false,signingIn=false;
 const auth=()=>window.OpticsAuth;
+// 本次会话是否已看过开场动画（沿用旧版的 sessionStorage 记忆）
+function introSeen(){try{return !!sessionStorage.getItem('optics.entry.seen.v3');}catch(e){return false;}}
 function update(){if(!frame||!auth().user||!ready)return;const counts={known:0,unknown:0,shaky:0};DATA.questions.forEach(q=>{const k=getStatus(q.statusKey||q.id);if(k in counts)counts[k]++;});const cloud=window.OpticsCloud?.summary()||{};
 const state=cloud.connected?(cloud.pending?'云端待同步 '+cloud.pending+' 条':'云端已同步'):'云端待连接';
 frame.contentWindow?.postMessage({type:'optics-summary',text:auth().displayName+' · 题库 '+DATA.questions.length+' 题 · 会做 '+counts.known+' · 不熟练 '+counts.shaky+' · 不会做 '+counts.unknown+' ｜ '+state},'*');}
 function reply(message){frame?.contentWindow?.postMessage(message,'*');}
-function mount(){if(frame)frame.remove();frame=document.createElement('iframe');frame.id='rhine-portal';frame.title='RHINE LAB · 学习系统';frame.setAttribute('sandbox','allow-scripts allow-forms');frame.src='rhine-lab.html';document.body.append(frame);}
+function mount(replay){
+ if(frame){frame.remove();frame=null;}
+ const resume=!!(auth().user&&introSeen()&&!replay);
+ frame=document.createElement('iframe');
+ frame.id='rhine-portal';
+ frame.title='RHINE LAB · 学习系统';
+ frame.setAttribute('sandbox','allow-scripts allow-forms');
+ frame.src='rhine-lab.html'+(resume?'?resume=1':'');
+ document.body.append(frame);
+}
 function route(){
  const signed=!!auth().user;
  if(!signed&&location.hash!=='#/login')history.replaceState(null,'',location.pathname+location.search+'#/login');
@@ -14,7 +25,8 @@ function route(){
  const home=!signed||location.hash==='#/home';
  $('app').hidden=home||!ready;$('app').inert=home||!ready;
  document.body.classList.toggle('portal-open',home);
- if(home){if(!frame)mount();}else if(frame){frame.remove();frame=null;}
+ if(home){if(!frame)mount();else frame.hidden=false;}
+ else if(frame){frame.hidden=true;}   // 复用 iframe：返回主页时不重建，避免重播/卡死
 }
 function initialize(){if(initialized)return;initialized=true;
  let activeUser=auth().user?.id;
@@ -37,7 +49,7 @@ function initialize(){if(initialized)return;initialized=true;
   }
   if(!auth().user)return;
   if(!ready&&['cloud','bank','exams','resume'].includes(action))return;
-  switch(action){case 'ready':update();break;case 'replay':mount();break;case 'logout':try{await auth().signOut();}catch(_error){reply({type:'optics-auth-error',message:'退出失败，请重试'});}break;case 'cloud':$('cloud-open').click();break;case 'bank':location.hash='/bank';openBank();route();break;case 'exams':location.hash='/exams';openExamHome();route();break;case 'resume':if(ui.scope.type==='exams')openBank();location.hash=ui.scope.type==='exam'?'/year/'+ui.scope.paperId:'/resume';route();break;}
+  switch(action){case 'ready':try{sessionStorage.setItem('optics.entry.seen.v3','1');}catch(e){}update();break;case 'replay':mount(true);break;case 'logout':try{await auth().signOut();}catch(_error){reply({type:'optics-auth-error',message:'退出失败，请重试'});}break;case 'cloud':$('cloud-open').click();break;case 'bank':location.hash='/bank';openBank();route();break;case 'exams':location.hash='/exams';openExamHome();route();break;case 'resume':if(ui.scope.type==='exams')openBank();location.hash=ui.scope.type==='exam'?'/year/'+ui.scope.paperId:'/resume';route();break;}
  });
  window.addEventListener('hashchange',route);window.addEventListener('optics:progress',update);window.addEventListener('optics:sync-status',update);route();
 }
