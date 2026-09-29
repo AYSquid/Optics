@@ -36,16 +36,23 @@ function prepare(){
 // resume：父页面已确认登录且本会话看过开场，直接推进到主页，避免重播与卡死。
 if(resume){
  document.documentElement.classList.add('session-restoring','session-resume');
- let tries=0;
+ let tries=0,loginAdvanced=false,completeAdvanced=false,loginAt=0;
  const tick=function(){
   try{
    if(document.querySelector('.optics-links.is-ready')){document.documentElement.classList.remove('session-restoring');return;}
-   const b=document.querySelector('.login-button');
-   if(b){try{b.click();}catch(e){}}
-   else if(tries>40){const c=document.querySelector('#completeButton');if(c){try{c.click();}catch(e){}}}   // 兜底：按钮迟迟不出现就直接完成
+   if(!loginAdvanced){
+    const b=document.querySelector('.login-button');
+    if(b){
+     loginAdvanced=true;loginAt=performance.now();
+     try{b.click();}catch(e){}
+    }
+   }else if(!completeAdvanced&&performance.now()-loginAt>2200){
+    const c=document.querySelector('#completeButton');
+    if(c){completeAdvanced=true;try{c.click();}catch(e){}}
+   }
   }catch(e){}
-  if(++tries<150){setTimeout(tick,100);}
-  else{document.documentElement.classList.remove('session-restoring');}   // 15 秒兜底，绝不永久卡住
+  if(++tries<180){setTimeout(tick,100);}
+  else{document.documentElement.classList.remove('session-restoring');}
  };
  tick();
 }
@@ -55,23 +62,30 @@ window.addEventListener('message',e=>{
  if(e.data?.type==='optics-auth-error'){busy=false;const b=document.querySelector('.login-button');if(b)b.disabled=false;error(['用户名或密码错误','退出失败，请重试'].includes(e.data.message)?e.data.message:'认证失败，请重试');}
  if(e.data?.type==='optics-auth-state'&&e.data.authenticated===true){
   authenticated=true;
-  // Fresh login: keep the current scene alive and let it transition naturally.
-  // session-restoring is reserved for ?resume=1 only.
+  // Fresh login: keep the current scene alive. The original LOGIN handler
+  // is invoked exactly once; repeatedly clicking it restarts continueLoading().
   document.documentElement.classList.remove('session-restoring');
   document.documentElement.classList.add('auth-completing');
   window.dispatchEvent(new CustomEvent('optics:authenticated'));
-  let attempts=0;const timer=setInterval(()=>{
-   if(document.querySelector('.optics-links.is-ready')){
-    clearInterval(timer);
-    document.documentElement.classList.remove('auth-completing');
+  let attempts=0,clicked=false;
+  const advanceOnce=function(){
+   if(clicked)return;
+   const b=document.querySelector('.login-button');
+   if(b){
+    clicked=true;
+    try{b.click();}catch(e){}
     return;
    }
-   const b=document.querySelector('.login-button');if(b)b.click();
-   if(++attempts>120){
-    clearInterval(timer);
+   if(++attempts<100)setTimeout(advanceOnce,100);
+  };
+  advanceOnce();
+  const cleanup=setInterval(()=>{
+   if(document.querySelector('.optics-links.is-ready')){
+    clearInterval(cleanup);
     document.documentElement.classList.remove('auth-completing');
    }
   },250);
+  setTimeout(()=>{clearInterval(cleanup);document.documentElement.classList.remove('auth-completing');},20000);
  }
 });
 })();
