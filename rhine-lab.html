@@ -358,21 +358,10 @@ html.optics-home-logo-collides .rhine-welcome-screen .logo-section{
     mb.style.setProperty('transform', t, 'important');
   }
 
-  /* ---------- C. 点 LOGIN 后自动推进到下一阶段 ----------
-     流程：点 LOGIN -> logo 转一个周期 -> 自动触发原来的“模拟加载完成”
-     （该按钮已隐藏，这里直接调用它的 click）。 */
-  function readTrailLen() {
-    var el = document.querySelector('.icon_path_trail_extra');
-    if (!el) return null;
-    var v = parseFloat((el.style.strokeDasharray || '').split(',')[0]);
-    return isNaN(v) ? null : v;
-  }
-  function readTrailOffset() {
-    var el = document.querySelector('.icon_path_trail');
-    if (!el) return null;
-    var v = parseFloat(el.style.strokeDashoffset || '');
-    return isNaN(v) ? null : v;
-  }
+  /* ---------- C. 认证后缺口绕行 ----------
+     参考 RhineLabUI 的 boot-logo-tracks：黑色主体长度保持不变，
+     只移动固定缺口的相位。运动采用慢起 -> 中段加速 -> 慢收的参考轨迹，
+     一整圈结束并回到右上角后，再触发原来的 completeButton 离场。 */
 
   function markLoggedIn() {
     if (loggedIn) return;
@@ -380,25 +369,82 @@ html.optics-home-logo-collides .rhine-welcome-screen .logo-section{
     layoutLogo();
   }
 
-  var cycleArmed = false;
-  var advanced = false, cycleStartedAt = 0, completeAttempts = 0;
-  var initialTrailOffset = null, cycleMotionSeen = false;
+  var advanced = false, completeAttempts = 0;
+  var notchRaf = 0, notchStarted = false;
+  var NOTCH_ORBIT_MS = 2640;
+  var NOTCH_VISIBLE = 97;       // 97% 黑色主体
+  var NOTCH_START = 89;         // 对应原 targetStart=89,targetEnd=186 的右上缺口
 
-  window.addEventListener('optics:authenticated', function () {
-    document.documentElement.classList.remove('optics-loader-retracted');
-    markLoggedIn();
-    cycleArmed = true;
-    advanced = false;
-    cycleStartedAt = performance.now();
-    initialTrailOffset = readTrailOffset();
-    cycleMotionSeen = false;
-    completeAttempts = 0;
+  // Reference movingCut frames 420..486, normalized to a full lap.
+  var refFrames = [420,425,430,435,440,450,455,460,465,470,475,480,485,486];
+  var refCuts   = [0.1835,0.184,0.1885,0.2,0.2205,0.2925,0.3485,0.421,0.5095,0.614,0.722,0.827,0.9195,0.9365];
+  var refKeys = refFrames.map(function (f, i) {
+    return [(f - 420) / 66, (refCuts[i] - 0.1835) / (0.9365 - 0.1835)];
   });
+
+  function monotoneTrack(keys, x) {
+    if (x <= keys[0][0]) return keys[0][1];
+    var last = keys.length - 1;
+    if (x >= keys[last][0]) return keys[last][1];
+
+    function slope(i) {
+      return (keys[i + 1][1] - keys[i][1]) / (keys[i + 1][0] - keys[i][0]);
+    }
+    function tangent(i) {
+      if (i === 0) return slope(0);
+      if (i === last) return slope(last - 1);
+      var a = slope(i - 1), b = slope(i);
+      if (a * b <= 0) return 0;
+      var h0 = keys[i][0] - keys[i - 1][0];
+      var h1 = keys[i + 1][0] - keys[i][0];
+      var w0 = 2 * h1 + h0, w1 = h1 + 2 * h0;
+      return (w0 + w1) / (w0 / a + w1 / b);
+    }
+
+    var i = 0;
+    while (x > keys[i + 1][0]) i++;
+    var h = keys[i + 1][0] - keys[i][0];
+    var p = (x - keys[i][0]) / h;
+    return (2*p*p*p - 3*p*p + 1) * keys[i][1]
+      + (p*p*p - 2*p*p + p) * h * tangent(i)
+      + (-2*p*p*p + 3*p*p) * keys[i + 1][1]
+      + (p*p*p - p*p) * h * tangent(i + 1);
+  }
+
+  function drawNotch(startPct) {
+    var main = document.querySelector('#loader .icon_path_trail');
+    var extra = document.querySelector('#loader .icon_path_trail_extra');
+    if (!main || !extra || !main.getTotalLength) return false;
+
+    var L = main.getTotalLength();
+    if (!L) return false;
+
+    var s = ((startPct % 100) + 100) % 100;
+    var e = s + NOTCH_VISIBLE;
+
+    if (e <= 100) {
+      main.style.strokeDasharray = (L * NOTCH_VISIBLE / 100) + ' ' + L;
+      main.style.strokeDashoffset = String(-L * s / 100);
+      extra.style.strokeDasharray = '0 ' + L;
+      extra.style.strokeDashoffset = '0';
+    } else {
+      var mainLen = L * (100 - s) / 100;
+      var extraLen = L * (e - 100) / 100;
+      main.style.strokeDasharray = mainLen + ' ' + L;
+      main.style.strokeDashoffset = String(-L * s / 100);
+      extra.style.strokeDasharray = extraLen + ' ' + L;
+      extra.style.strokeDashoffset = '0';
+    }
+    return true;
+  }
 
   function goNext() {
     if (advanced) return;
     var btn = document.querySelector('#completeButton');
-    if (!btn) return; // 按钮还没挂载就继续等，不能提前把 advanced 锁死。
+    if (!btn) {
+      setTimeout(goNext, 50);
+      return;
+    }
     advanced = true;
     completeAttempts++;
     try { btn.click(); } catch (e) { advanced = false; return; }
@@ -409,33 +455,50 @@ html.optics-home-logo-collides .rhine-welcome-screen .logo-section{
       }
     }, 780);
 
-    // 如果原按钮因为瞬时状态没接住，最多补点两次；绝不循环重启 LOGIN。
     setTimeout(function () {
       if (!document.querySelector('.rhine-welcome-screen') && completeAttempts < 3) {
         advanced = false;
+        goNext();
       }
     }, 2000);
   }
 
-  function tryAdvance() {
-    if (advanced || !cycleArmed || !loggedIn) return;
-    if (!cycleStartedAt) cycleStartedAt = performance.now();
-
-    var elapsed = performance.now() - cycleStartedAt;
-    var offset = readTrailOffset();
-
-    if (offset !== null && initialTrailOffset !== null && Math.abs(offset - initialTrailOffset) > 20) {
-      cycleMotionSeen = true;
+  function startNotchOrbit() {
+    if (notchStarted) return;
+    if (!drawNotch(NOTCH_START)) {
+      setTimeout(startNotchOrbit, 50);
+      return;
     }
 
-    // cycleDistance=100：原生 continueLoading() 在 1600ms 内让缺口沿路径完整绕一圈。
-    // 加 100ms 余量，确保缺口已经回到右上角再触发离场。
-    var cycleDone = cycleMotionSeen && elapsed >= 1700;
+    notchStarted = true;
+    advanced = false;
+    completeAttempts = 0;
+    var startedAt = performance.now();
 
-    // 后台标签页或浏览器冻结时的兜底；正常前台不会走这里。
-    var timedOut = elapsed > 5200;
-    if (cycleDone || timedOut) goNext();
+    function frame(now) {
+      var t = Math.min(1, (now - startedAt) / NOTCH_ORBIT_MS);
+      var motion = monotoneTrack(refKeys, t);
+      drawNotch(NOTCH_START + motion * 100);
+
+      if (t < 1) {
+        notchRaf = requestAnimationFrame(frame);
+      } else {
+        drawNotch(NOTCH_START); // 精确回到右上角原始缺口
+        notchRaf = 0;
+        setTimeout(goNext, 120);
+      }
+    }
+    notchRaf = requestAnimationFrame(frame);
   }
+
+  window.addEventListener('optics:authenticated', function () {
+    document.documentElement.classList.remove('optics-loader-retracted');
+    markLoggedIn();
+    if (notchRaf) cancelAnimationFrame(notchRaf);
+    notchRaf = 0;
+    notchStarted = false;
+    startNotchOrbit();
+  });
 
   /* ---------- D. 入场停留：推迟登录面板淡入 ----------
      入场动画 1800ms、showLoginAt 在 75%(约 1350ms)，导致左上角标识刚显形
@@ -542,7 +605,7 @@ html.optics-home-logo-collides .rhine-welcome-screen .logo-section{
     layoutLogo();
     window.addEventListener('resize', layoutLogo);
     window.addEventListener('orientationchange', layoutLogo);
-    setInterval(function () { layoutLogo(); tryAdvance(); }, 120);
+    setInterval(function () { layoutLogo(); }, 120);
     syncBlur();
     setInterval(syncBlur, 200);
   }
