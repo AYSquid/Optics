@@ -377,15 +377,14 @@ html.optics-home-logo-collides .rhine-welcome-screen .logo-section{
   var cycleArmed = false;
   var advanced = false, sawLow = false, cycleStartedAt = 0, completeAttempts = 0;
 
-  var authNearCycleEnd = false;
+  var sawEndAfterAuth = false;
   window.addEventListener('optics:authenticated', function () {
     document.documentElement.classList.remove('optics-loader-retracted');
     markLoggedIn();
     cycleArmed = true;
     advanced = false;
-    var currentLen = readTrailLen();
-    sawLow = (currentLen !== null && currentLen < 800);
-    authNearCycleEnd = (currentLen !== null && currentLen > 1900);
+    sawLow = false;
+    sawEndAfterAuth = false;
     cycleStartedAt = performance.now();
     completeAttempts = 0;
   });
@@ -418,16 +417,14 @@ html.optics-home-logo-collides .rhine-welcome-screen .logo-section{
 
     var elapsed = performance.now() - cycleStartedAt;
     var len = readTrailLen();
-    if (len !== null && len < 800) sawLow = true;
 
-    // 认证发生在本轮尾部时，不再强迫它重跑一整圈；
-    // 否则等当前循环自然经过起点并再次到达尾部。
-    var cycleDone =
-      (authNearCycleEnd && elapsed > 220) ||
-      (len !== null && sawLow && len > 1900);
+    // 认证后必须至少经历一个完整的“尾部 -> 起点 -> 尾部”循环。
+    if (len !== null && len > 1900 && !sawLow) sawEndAfterAuth = true;
+    if (len !== null && len < 800 && sawEndAfterAuth) sawLow = true;
+    var cycleDone = (len !== null && sawLow && len > 1900);
 
-    // 首次认证只保留短兜底，避免等待循环 pause 把进入时间拖得很长。
-    var timedOut = elapsed > 1800;
+    // 仅作异常兜底；正常情况下由完整周期检测触发。
+    var timedOut = elapsed > 5200;
     if (cycleDone || timedOut) goNext();
   }
 
