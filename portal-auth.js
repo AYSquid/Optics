@@ -5,7 +5,7 @@ const parentOrigin=new URL(location.href).origin;
 // Never trust a referrer to select where credentials are sent.
 if(document.referrer&&new URL(document.referrer).origin!==parentOrigin)return;
 const resume=new URLSearchParams(location.search).has('resume');
-let authenticated=resume,busy=false,formReady=false;
+let authenticated=resume,busy=false,formReady=false,authHandled=false;
 const send=(action,extra={})=>parent.postMessage({type:'optics-portal',action,...extra},parentOrigin);
 function error(text){if(authenticated){const status=document.getElementById('optics-status');if(status){status.textContent=text;status.setAttribute('role','alert');return;}}let p=document.getElementById('auth-message');if(!p){p=document.createElement('p');p.id='auth-message';p.setAttribute('role','alert');p.style.cssText='color:#874c40;font:12px/1.5 sans-serif;margin:8px 0 0';document.querySelector('#login-form')?.append(p);}p.textContent=text;}
 function submit(){
@@ -33,54 +33,38 @@ function prepare(){
  form.querySelectorAll('a').forEach(a=>{a.setAttribute('aria-disabled','true');a.tabIndex=-1;});
  send('auth-state');
 }
-// resume：父页面已确认登录且本会话看过开场，直接推进到主页，避免重播与卡死。
+// resume：父页面已确认登录且本会话看过开场。
 if(resume){
  document.documentElement.classList.add('session-restoring','session-resume');
- let tries=0,loginAdvanced=false,completeAdvanced=false,loginAt=0;
- const tick=function(){
-  try{
-   if(document.querySelector('.optics-links.is-ready')){document.documentElement.classList.remove('session-restoring');return;}
-   if(!loginAdvanced){
-    const b=document.querySelector('.login-button');
-    if(b){
-     loginAdvanced=true;loginAt=performance.now();
-     try{b.click();}catch(e){}
-    }
-   }else if(!completeAdvanced&&performance.now()-loginAt>1750){
-    const c=document.querySelector('#completeButton');
-    if(c){completeAdvanced=true;try{c.click();}catch(e){}}
-   }
-  }catch(e){}
-  if(++tries<180){setTimeout(tick,100);}
-  else{document.documentElement.classList.remove('session-restoring');}
- };
- tick();
 }
 new MutationObserver(prepare).observe(document.documentElement,{childList:true,subtree:true});
 window.addEventListener('message',e=>{
  if(e.source!==parent||e.origin!==parentOrigin)return;
  if(e.data?.type==='optics-auth-error'){busy=false;const b=document.querySelector('.login-button');if(b)b.disabled=false;error(['用户名或密码错误','退出失败，请重试'].includes(e.data.message)?e.data.message:'认证失败，请重试');}
  if(e.data?.type==='optics-auth-state'&&e.data.authenticated===true){
+  if(authHandled)return;
+  authHandled=true;
   authenticated=true;
-  document.documentElement.classList.remove('session-restoring');
-  document.documentElement.classList.add('auth-completing');
 
-  // Authentication intercepted the original LOGIN click, so start the site's
-  // native continueLoading() exactly once now. This is the visible notch orbit.
-  const b=document.querySelector('.login-button');
-  if(b){
-   b.disabled=false;
-   try{b.click();}catch(e){}
+  if(resume){
+   document.documentElement.classList.add('session-restoring','session-resume');
+  }else{
+   document.documentElement.classList.remove('session-restoring');
+   document.documentElement.classList.add('auth-completing');
   }
-  window.dispatchEvent(new CustomEvent('optics:authenticated'));
+
+  window.dispatchEvent(new CustomEvent('optics:authenticated',{detail:{resume}}));
 
   const cleanup=setInterval(()=>{
    if(document.querySelector('.optics-links.is-ready')){
     clearInterval(cleanup);
-    document.documentElement.classList.remove('auth-completing');
+    document.documentElement.classList.remove('auth-completing','session-restoring');
    }
   },250);
-  setTimeout(()=>{clearInterval(cleanup);document.documentElement.classList.remove('auth-completing');},20000);
+  setTimeout(()=>{
+   clearInterval(cleanup);
+   document.documentElement.classList.remove('auth-completing','session-restoring');
+  },20000);
  }
 });
 })();
