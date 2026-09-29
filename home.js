@@ -31,10 +31,18 @@ function route(){
 function initialize(){if(initialized)return;initialized=true;
  let activeUser=auth().user?.id;
  auth().subscribe(()=>{
-  if(auth().user?.id===activeUser){update();return;}
-  activeUser=auth().user?.id;
+  const nextUserId=auth().user?.id;
+  if(nextUserId===activeUser){update();return;}
+  const previousUserId=activeUser;
+  activeUser=nextUserId;
+  // A login initiated by this portal must keep the iframe alive so the
+  // left-to-center logo transition can finish continuously.
+  if(signingIn&&!previousUserId&&nextUserId){
+   history.replaceState(null,'',location.pathname+location.search+'#/home');
+   route();update();return;
+  }
   if(!auth().user){document.querySelectorAll('dialog[open]').forEach(d=>d.close());$('app').hidden=true;$('app').inert=true;}
-  // Reinitialize all per-user stores atomically, including changes from another tab.
+  // Cross-tab account changes / sign-out still reinitialize per-user stores.
   location.hash=auth().user?'/home':'/login';location.reload();
  });
  window.addEventListener('message',async e=>{
@@ -43,7 +51,11 @@ function initialize(){if(initialized)return;initialized=true;
   if(action==='auth-state'){reply({type:'optics-auth-state',authenticated:!!auth().user,displayName:auth().displayName});return;}
   if(action==='login'){
    if(signingIn||auth().user)return;signingIn=true;
-   try{if(typeof e.data.password!=='string'||!e.data.password)throw Error('请输入密码');await auth().signIn(e.data.password);}
+   try{
+    if(typeof e.data.password!=='string'||!e.data.password)throw Error('请输入密码');
+    await auth().signIn(e.data.password);
+    reply({type:'optics-auth-state',authenticated:true,displayName:auth().displayName});
+   }
    catch(error){reply({type:'optics-auth-error',message:error.message==='用户名或密码错误'?'用户名或密码错误':'认证失败，请重试'});}
    finally{signingIn=false;}return;
   }
