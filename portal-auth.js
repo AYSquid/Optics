@@ -46,7 +46,7 @@ if(resume){
      loginAdvanced=true;loginAt=performance.now();
      try{b.click();}catch(e){}
     }
-   }else if(!completeAdvanced&&performance.now()-loginAt>1500){
+   }else if(!completeAdvanced&&performance.now()-loginAt>1100){
     const c=document.querySelector('#completeButton');
     if(c){completeAdvanced=true;try{c.click();}catch(e){}}
    }
@@ -62,23 +62,11 @@ window.addEventListener('message',e=>{
  if(e.data?.type==='optics-auth-error'){busy=false;const b=document.querySelector('.login-button');if(b)b.disabled=false;error(['用户名或密码错误','退出失败，请重试'].includes(e.data.message)?e.data.message:'认证失败，请重试');}
  if(e.data?.type==='optics-auth-state'&&e.data.authenticated===true){
   authenticated=true;
-  // Fresh login: keep the current scene alive. The original LOGIN handler
-  // is invoked exactly once; repeatedly clicking it restarts continueLoading().
+  // Fresh login: the loader is already cycling while the password form is open.
+  // Do not click LOGIN again here, or continueLoading() restarts and adds a full extra cycle.
   document.documentElement.classList.remove('session-restoring');
   document.documentElement.classList.add('auth-completing');
   window.dispatchEvent(new CustomEvent('optics:authenticated'));
-  let attempts=0,clicked=false;
-  const advanceOnce=function(){
-   if(clicked)return;
-   const b=document.querySelector('.login-button');
-   if(b){
-    clicked=true;
-    try{b.click();}catch(e){}
-    return;
-   }
-   if(++attempts<100)setTimeout(advanceOnce,100);
-  };
-  advanceOnce();
   const cleanup=setInterval(()=>{
    if(document.querySelector('.optics-links.is-ready')){
     clearInterval(cleanup);
