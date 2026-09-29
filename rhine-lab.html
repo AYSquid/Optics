@@ -263,6 +263,21 @@ body{background-color:#fdfcf6;margin:0;padding:0;width:100%;height:100%;display:
    而欢迎页会重新建一个同名的标识 —— 两代位置差 10px，交接时就会动一下。
    这里统一固定为最终位置。 */
 .corner-text{transform:none!important}
+/* 左上角标识跨 login -> welcome 使用持久层，避免 Vue 换节点时出现约 1 秒空档。 */
+.optics-corner-persistent{
+  position:fixed;top:75px;left:25px;z-index:1500;
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+  width:250px;opacity:1!important;transform:none!important;
+  pointer-events:none;
+}
+html.optics-corner-pinned .corner-text{visibility:hidden!important;opacity:0!important}
+@media(max-width:1440px){.optics-corner-persistent{width:220px}}
+@media(max-width:1200px){.optics-corner-persistent{top:50px;left:20px;width:190px}}
+@media(max-width:880px){.optics-corner-persistent{top:20px;left:14px;width:178px}}
+@media(max-width:560px){.optics-corner-persistent{top:12px;left:10px;width:156px}}
+/* welcome 一出现就让旧 login loader 退场，禁止两代 Logo 同屏。 */
+html.optics-welcome-active #loader,
+html.optics-welcome-active .rhine-login-screen{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
   .optics-replay{right:10px;top:12px;font-size:10px;padding:6px}   /* 避开左上角标识 */  .rhine-welcome-screen .content-wrapper{padding-top:66px;padding-bottom:252px}  .welcome-title{font-size:clamp(17px,6vw,24px)}  .welcome-lab{font-size:clamp(13px,4.6vw,20px)}  .welcome-database{font-size:clamp(10px,3.2vw,15px)}  .logo-section{width:clamp(96px,30vw,160px);height:clamp(96px,30vw,160px)}  .rhine-welcome-screen .whole_icon{transform:scale(.22)!important}}@media (max-width: 380px){  .welcome-title{font-size:clamp(15px,5.6vw,20px)}  .welcome-lab{font-size:clamp(11px,4.2vw,16px);padding:3px 8px}  .welcome-database{font-size:clamp(9px,3vw,13px);letter-spacing:.06em}  .corner-text-main{font-size:14px}
   .corner-text-mid{font-size:7px}
   .corner-text-sub-a,.corner-text-sub-b{font-size:9px}}</style><style id="optics-short-viewport">@media (max-height: 760px){ .logo-section{width:clamp(120px,20vh,220px)!important;height:clamp(120px,20vh,220px)!important} .welcome-title{font-size:clamp(22px,3.2vh,38px)} .welcome-lab{font-size:clamp(18px,2.8vh,32px)} .welcome-database{font-size:clamp(14px,2vh,24px)} }</style></head>
@@ -338,33 +353,44 @@ body{background-color:#fdfcf6;margin:0;padding:0;width:100%;height:100%;display:
     layoutLogo();
   }
 
-  // Only a verified auth response may move the logo back to center.
-  window.addEventListener('optics:authenticated', markLoggedIn);
+  var cycleArmed = false;
+  var advanced = false, sawLow = false, cycleStartedAt = 0, completeAttempts = 0;
 
-  var loginClicked = false;
-  document.addEventListener('click', function (e) {
-    var t = e.target;
-    if (t && t.closest && t.closest('.login-button')) loginClicked = true;
-  }, true);
-  document.addEventListener('submit', function (e) {
-    if (e.target && e.target.id === 'login-form') loginClicked = true;
-  }, true);
+  window.addEventListener('optics:authenticated', function () {
+    markLoggedIn();
+    cycleArmed = true;
+    advanced = false;
+    sawLow = false;
+    cycleStartedAt = performance.now();
+    completeAttempts = 0;
+  });
 
-  var advanced = false, sawLow = false, clickedAt = 0;
   function goNext() {
-    advanced = true;
+    if (advanced) return;
     var btn = document.querySelector('#completeButton');
-    if (btn) setTimeout(function () { try { btn.click(); } catch (e) {} }, 260);
+    if (!btn) return; // 按钮还没挂载就继续等，不能提前把 advanced 锁死。
+    advanced = true;
+    completeAttempts++;
+    try { btn.click(); } catch (e) { advanced = false; return; }
+
+    // 如果原按钮因为瞬时状态没接住，最多补点两次；绝不循环重启 LOGIN。
+    setTimeout(function () {
+      if (!document.querySelector('.rhine-welcome-screen') && completeAttempts < 3) {
+        advanced = false;
+      }
+    }, 4000);
   }
+
   function tryAdvance() {
-    if (advanced || !loginClicked) return;
-    if (!clickedAt) clickedAt = performance.now();
+    if (advanced || !cycleArmed || !loggedIn) return;
+    if (!cycleStartedAt) cycleStartedAt = performance.now();
+
     var len = readTrailLen();
-    if (len !== null && len < 800) sawLow = true;   // 新一轮开始
+    if (len !== null && len < 800) sawLow = true;   // 捕获认证后的新一轮起点
     var cycleDone = (len !== null && sawLow && len > 1900);
-    // 兜底：标签页在后台时 rAF 会被暂停、描边不动，这里按时间放行，
-    // 避免页面永远停在开场动画上。
-    var timedOut = (performance.now() - clickedAt) > 6000;
+
+    // 后台标签页 rAF 可能冻结。8 秒仅作为故障兜底，不是正常推进条件。
+    var timedOut = (performance.now() - cycleStartedAt) > 8000;
     if (cycleDone || timedOut) goNext();
   }
 
@@ -378,6 +404,66 @@ body{background-color:#fdfcf6;margin:0;padding:0;width:100%;height:100%;display:
     style.textContent = '';   /* 不再推迟登录面板 */
     document.head.appendChild(style);
     setTimeout(function () { var el = document.getElementById('optics-login-delay'); if (el) el.remove(); }, 6500);
+  })();
+
+  /* ---------- E. login -> welcome 无缝交接 ----------
+     1) 左上角标识在第一代节点完全显形后克隆到独立持久层；
+     2) welcome 根节点出现的同一帧隐藏旧 #loader，杜绝 Logo 叠影。 */
+  (function () {
+    var cornerPinned = false;
+
+    function pinCorner() {
+      if (cornerPinned) return;
+      var list = Array.from(document.querySelectorAll('.corner-text'));
+      var source = list.find(function (el) {
+        if (el.classList.contains('optics-corner-persistent')) return false;
+        var outer = parseFloat(getComputedStyle(el).opacity) || 0;
+        if (outer < 0.9) return false;
+        var parts = Array.from(el.children);
+        return parts.every(function (p) {
+          return (parseFloat(getComputedStyle(p).opacity) || 0) > 0.75;
+        });
+      });
+      if (!source) return;
+
+      var clone = source.cloneNode(true);
+      clone.classList.remove('corner-text');
+      clone.classList.add('optics-corner-persistent');
+      clone.removeAttribute('style');
+      clone.querySelectorAll('*').forEach(function (el) {
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+        el.style.transition = 'none';
+      });
+      document.body.appendChild(clone);
+      document.documentElement.classList.add('optics-corner-pinned');
+      cornerPinned = true;
+    }
+
+    function syncWelcomeState() {
+      var active = !!document.querySelector('.rhine-welcome-screen');
+      document.documentElement.classList.toggle('optics-welcome-active', active);
+    }
+
+    var observer = new MutationObserver(function () {
+      pinCorner();
+      syncWelcomeState();
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+
+    setInterval(function () {
+      pinCorner();
+      syncWelcomeState();
+    }, 100);
+
+    document.addEventListener('click', function (e) {
+      var replay = e.target && e.target.closest && e.target.closest('.optics-replay');
+      if (!replay) return;
+      var pinned = document.querySelector('.optics-corner-persistent');
+      if (pinned) pinned.remove();
+      document.documentElement.classList.remove('optics-corner-pinned','optics-welcome-active');
+      cornerPinned = false;
+    }, true);
   })();
 
   /* ---------- F. 启动 ---------- */
