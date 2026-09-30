@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="lonetrail.css?v=lonetrail-default-20260930">
 <link rel="stylesheet" href="cloud.css">
 <link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="sidebar-scroll.css?v=20260930-native">
+<script src="sidebar-scroll.js?v=20260930-native" defer></script>
 <script src="themes.js?v=lonetrail-default-20260930"></script>
 <script src="terminal-header.js?v=lonetrail-default-20260930" defer></script>
 </head>
@@ -37,19 +39,21 @@
     <nav class="module-nav" aria-label="学习模块"><button id="module-bank" type="button">章节题库</button><button id="module-exams" type="button">历年真题</button></nav>
     <details class="theme-menu"><summary>主题配色 <span id="theme-current">孤星</span></summary><div class="theme-picker" role="group" aria-label="页面配色"><button data-set-theme="lonetrail" type="button">孤星</button><button data-set-theme="blue" type="button">浅蓝 · 白</button><button data-set-theme="lavender" type="button">浅紫 · 白</button><button data-set-theme="green" type="button">浅绿</button><button data-set-theme="green-solid" type="button">浅绿 · 纯色</button><button data-set-theme="rhine" type="button">莱茵生命</button><button data-set-theme="rhine-terminal" type="button">认证终端</button></div></details>
     <button id="cloud-open" class="cloud-entry" type="button"><span>云端记录</span><small id="cloud-short">本地模式</small></button>
-    <div class="side-block">
+    <div class="side-block sidebar-status">
       <div class="side-label">学习状态 · 当前分类</div>
       <div id="status-filter" class="filter-group" role="group" aria-label="学习状态筛选"></div>
     </div>
 
     <div class="side-block side-scope">
       <div class="side-label">章节与知识点</div>
+      <div class="sidebar-chapter-scroll" tabindex="0" aria-label="滚动章节与知识点">
       <div id="tree" class="tree" role="navigation" aria-label="章节与知识点目录"></div>
-    </div>
 
     <div class="sidebar-account"><span id="account-display">Doc. Muelsyse</span><button id="account-signout" type="button">退出登录</button></div>
     <div class="sidebar-signature"><span class="live-dot"></span> 专注一道题，理解一个知识点</div>
     <div id="store-note" class="store-note" hidden></div>
+      </div>
+    </div>
     </div>
   </aside>
 

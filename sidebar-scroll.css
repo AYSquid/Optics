@@ -1,0 +1,11 @@
+/* Scroll introductory controls away, then retain study filters above the directory. */
+#sidebar{overflow:hidden}
+#sidebar .sidebar-scroll{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;scrollbar-width:thin}
+#sidebar .sidebar-scroll>.sidebar-status{position:sticky;top:0;z-index:3;flex:0 0 auto;background:var(--panel,#fff)}
+html[data-theme="lonetrail"] #sidebar .sidebar-status{background:#F1E7D2}
+html[data-theme="rhine-terminal"] #sidebar .sidebar-status{background:#282b26}
+#sidebar .side-scope{height:auto;min-height:0;flex:0 0 auto;overflow:visible;padding-bottom:0}
+#sidebar .side-scope>.side-label{flex:0 0 auto}
+#sidebar .sidebar-chapter-scroll{flex:0 0 auto;min-height:0;overflow:visible;outline-offset:-2px;padding-bottom:8px}
+#sidebar .sidebar-chapter-scroll .tree{overflow:visible;flex:none}
+#sidebar .sidebar-scroll{-webkit-overflow-scrolling:touch;scroll-behavior:auto}
