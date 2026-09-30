@@ -1123,7 +1123,17 @@ function boot() {
 
 function bootWithCloud(){
   if(window.OpticsAuth){
-    OpticsAuth.ready.then(()=>{OpticsHome.initialize();if(OpticsAuth.user)OpticsCloud.ready.then(boot);});
+    OpticsAuth.ready.then(()=>{
+      OpticsHome.initialize();
+      var bootStarted = false;
+      function bootForSignedInUser() {
+        if (!OpticsAuth.user || bootStarted) return;
+        bootStarted = true;
+        OpticsCloud.ready.then(boot);
+      }
+      OpticsAuth.subscribe(bootForSignedInUser);
+      bootForSignedInUser();
+    });
   }else fatal('认证服务未加载。','请刷新页面后重试。');
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bootWithCloud);
