@@ -21,10 +21,12 @@ html[data-theme="lonetrail"] .sidebar{
   --blue-dark:#923d20;--blue-soft:#ebdec6;--blue-line:#b68e60;
   background:#f5eddc;border-right-color:#b8a98d;box-shadow:4px 0 20px #18181812;
 }
-html[data-theme="lonetrail"] .brand{background:#181818;border-color:#181818}
+html[data-theme="lonetrail"] .sidebar{overflow:hidden;border-right:0}
+html[data-theme="lonetrail"] .sidebar-scroll{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#aa9270 #ece2ce;border-right:1px solid #b8a98d}
+html[data-theme="lonetrail"] .brand{background:#181818;border-color:#181818;height:var(--study-header-height,120px);min-height:0;flex:0 0 var(--study-header-height,120px);padding-top:0;padding-bottom:0}
 html[data-theme="lonetrail"] .brand-text{color:#fff5e4;font-weight:900;letter-spacing:.05em}
 html[data-theme="lonetrail"] .brand-sub{color:#d3c6ac}
-html[data-theme="lonetrail"] .brand:after{left:0;right:0;height:5px}
+html[data-theme="lonetrail"] .brand:after{left:0;right:0;bottom:0;height:5px}
 html[data-theme="lonetrail"] .brand-mark{border-color:#6d6454;background:#25231f;border-radius:0;box-shadow:none}
 html[data-theme="lonetrail"] .brand-mark :is(.prism-body,.prism-inner,.prism-input){stroke:#f5eddc!important}
 html[data-theme="lonetrail"] .sidebar :is(.home-return,.sidebar-account button){color:#514c43}
