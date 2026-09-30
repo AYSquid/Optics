@@ -12,9 +12,10 @@
 <link rel="stylesheet" href="cloud.css">
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="sidebar-scroll.css?v=20260930-native">
+<link rel="stylesheet" href="question-notes.css?v=20260930">
 <script src="sidebar-scroll.js?v=20260930-native" defer></script>
 <script src="themes.js?v=lonetrail-default-20260930"></script>
-<script src="terminal-header.js?v=lonetrail-default-20260930" defer></script>
+<script src="terminal-header.js?v=notes-title-20260930" defer></script>
 </head>
 <body>
 <noscript><p class="boot-error">本页面需要启用 JavaScript 才能使用。</p></noscript>
@@ -39,6 +40,7 @@
     <nav class="module-nav" aria-label="学习模块"><button id="module-bank" type="button">章节题库</button><button id="module-exams" type="button">历年真题</button></nav>
     <details class="theme-menu"><summary>主题配色 <span id="theme-current">孤星</span></summary><div class="theme-picker" role="group" aria-label="页面配色"><button data-set-theme="lonetrail" type="button">孤星</button><button data-set-theme="blue" type="button">浅蓝 · 白</button><button data-set-theme="lavender" type="button">浅紫 · 白</button><button data-set-theme="green" type="button">浅绿</button><button data-set-theme="green-solid" type="button">浅绿 · 纯色</button><button data-set-theme="rhine" type="button">莱茵生命</button><button data-set-theme="rhine-terminal" type="button">认证终端</button></div></details>
     <button id="cloud-open" class="cloud-entry" type="button"><span>云端记录</span><small id="cloud-short">本地模式</small></button>
+    <button id="notes-library-open" class="cloud-entry notes-entry" type="button" aria-haspopup="dialog" aria-controls="question-notes-dialog"><span>题目笔记</span><small id="notes-count">—</small></button>
     <div class="side-block sidebar-status">
       <div class="side-label">学习状态 · 当前分类</div>
       <div id="status-filter" class="filter-group" role="group" aria-label="学习状态筛选"></div>
@@ -119,6 +121,7 @@
       <div class="actionbar-left">
         <button id="btn-answer" class="btn btn-outline" type="button" aria-expanded="false" aria-controls="answer-region">查看答案</button>
         <button id="btn-analysis" class="btn btn-outline" type="button" aria-expanded="false" aria-controls="analysis-region">查看解析</button>
+        <button id="btn-question-note" class="btn btn-outline" type="button" aria-haspopup="dialog" aria-controls="question-notes-dialog" disabled>题目笔记<span class="note-record-dot" hidden aria-label="已记录"></span></button>
 
       </div>
       <div class="actionbar-right">
@@ -161,5 +164,6 @@
 <script src="app.js?v=login-entry-20260930"></script>
 <script src="exams.js?v=chapter-nav-20260930"></script>
 <script src="home.js?v=email-login-20260930"></script>
+<script src="question-notes.js?v=20260930"></script>
 </body>
 </html>

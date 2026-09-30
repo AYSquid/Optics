@@ -55,7 +55,30 @@
     updateMeter();
 
     const compact = window.matchMedia('(max-width: 900px)');
+    const chapterTitle = document.getElementById('crumb');
+    const chapterHeading = chapterTitle.closest('.crumb-wrap');
+    function openDirectoryFromTitle() {
+      if (compact.matches && !app.classList.contains('nav-open')) document.getElementById('nav-toggle').click();
+    }
+    chapterHeading.addEventListener('click', openDirectoryFromTitle);
+    chapterTitle.addEventListener('keydown', event => {
+      if (compact.matches && (event.key === 'Enter' || event.key === ' ')) {
+        event.preventDefault();event.stopPropagation();openDirectoryFromTitle();
+      }
+    });
+    function syncTitleAccessibility() {
+      if (compact.matches) {
+        chapterTitle.setAttribute('role', 'button');chapterTitle.tabIndex=0;
+        chapterTitle.setAttribute('aria-controls', 'sidebar');
+        chapterTitle.setAttribute('aria-expanded', String(app.classList.contains('nav-open')));
+        chapterTitle.title='打开章节目录';
+      } else {
+        ['role','tabindex','aria-controls','aria-expanded','title'].forEach(name=>chapterTitle.removeAttribute(name));
+      }
+    }
+    new MutationObserver(syncTitleAccessibility).observe(app,{attributes:true,attributeFilter:['class']});
     function syncLayout() {
+      syncTitleAccessibility();
       const enabled = document.documentElement.dataset.theme === 'lonetrail';
       if (enabled) {
         if (!panel.isConnected) app.prepend(panel);
