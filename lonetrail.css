@@ -21,12 +21,12 @@ html[data-theme="lonetrail"] .sidebar{
   --blue-dark:#923d20;--blue-soft:#ebdec6;--blue-line:#b68e60;
   background:#f5eddc;border-right-color:#b8a98d;box-shadow:4px 0 20px #18181812;
 }
-html[data-theme="lonetrail"] .brand{background:#f5eddc;border-color:#c8b99e}
-html[data-theme="lonetrail"] .brand-text{color:#181818;font-weight:900;letter-spacing:.05em}
-html[data-theme="lonetrail"] .brand-sub{color:#382719}
+html[data-theme="lonetrail"] .brand{background:#181818;border-color:#181818}
+html[data-theme="lonetrail"] .brand-text{color:#fff5e4;font-weight:900;letter-spacing:.05em}
+html[data-theme="lonetrail"] .brand-sub{color:#d3c6ac}
 html[data-theme="lonetrail"] .brand:after{left:0;right:0;height:5px}
-html[data-theme="lonetrail"] .brand-mark{border-color:#a75e34;background:#eedac0;border-radius:0;box-shadow:3px 3px 0 #a75e3418}
-html[data-theme="lonetrail"] .brand-mark :is(.prism-body,.prism-inner,.prism-input){stroke:#181818!important}
+html[data-theme="lonetrail"] .brand-mark{border-color:#6d6454;background:#25231f;border-radius:0;box-shadow:none}
+html[data-theme="lonetrail"] .brand-mark :is(.prism-body,.prism-inner,.prism-input){stroke:#f5eddc!important}
 html[data-theme="lonetrail"] .sidebar :is(.home-return,.sidebar-account button){color:#514c43}
 html[data-theme="lonetrail"] .sidebar :is(.side-label,.tree-src,.sidebar-signature,.sidebar-account){color:#61574a}
 html[data-theme="lonetrail"] .sidebar :is(.tree-btn,.tree-kn-btn){color:#28241e}
