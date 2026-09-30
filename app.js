@@ -345,6 +345,13 @@ function reselect(opts) {
     ui.index = at >= 0 ? at : 0;
   } else {
     ui.index = 0;
+    if (opts.preferReview) {
+      var reviewAt = ui.matchIds.findIndex(function (id) {
+        var status = getStatus(statusKeyOf(DATA.byId[id]));
+        return status === 'unknown' || status === 'shaky';
+      });
+      if (reviewAt >= 0) ui.index = reviewAt;
+    }
   }
   ui.answerOpen = false;
   ui.analysisOpen = false;
@@ -502,6 +509,7 @@ function render() {
   renderStatusButtons();
   renderStoreNote();
   renderNotice();
+  renderStudyScopeNavigation();
 
   var q = currentQuestion();
   var card = $('card');
@@ -626,11 +634,6 @@ function render() {
   // 翻页按钮边界
   $('btn-prev').disabled = !hasNeighbor(-1);
   $('btn-next').disabled = !hasNeighbor(1);
-  var nextSection = $('btn-next-section');
-  nextSection.hidden = ui.scope.type !== 'chapter' && ui.scope.type !== 'kn';
-  nextSection.disabled = !nextStudyScope();
-  nextSection.onclick = goNextStudyScope;
-  nextSection.title = '进入下一个有符合当前筛选条件题目的小节';
   $('jump-input').style.borderColor = '';
   $('jump-input').classList.remove('is-error');
   $('jump-input').title = '输入当前列表中的题号';
@@ -813,7 +816,7 @@ function setScope(scope) {
   ui.scope = scope;
   if (scope.type !== 'all') ui.openChapters[scope.chapterId] = true;
   savePrefs();
-  reselect({});
+  reselect({ preferReview: scope.type === 'chapter' || scope.type === 'kn' });
   closeNav();
 }
 
@@ -826,8 +829,8 @@ function setStatusFilter(f) {
 /* 位置比较：按 scopeIds 中的出现次序判断前后关系 */
 function scopePos(id) { return ui.scopeIds.indexOf(id); }
 
-// Resolve the next nonempty section using the same chapter/topic order as the sidebar.
-function nextStudyScope() {
+// Resolve a nonempty section using the same chapter/topic order as the sidebar.
+function adjacentStudyScope(dir) {
   if (ui.scope.type !== 'chapter' && ui.scope.type !== 'kn') return null;
   var scopes = [];
   DATA.chapters.forEach(function(ch) {
@@ -835,17 +838,26 @@ function nextStudyScope() {
     else ch.knowledge.forEach(function(kn) { scopes.push({type:'kn',chapterId:ch.id,knId:kn.id}); });
   });
   var at = scopes.findIndex(function(s) { return s.chapterId === ui.scope.chapterId && (s.type === 'chapter' || s.knId === ui.scope.knId); });
-  for (var i=at+1; at>=0 && i<scopes.length; i++) {
+  for (var i=at+dir; at>=0 && i>=0 && i<scopes.length; i+=dir) {
     var s=scopes[i], kn=s.type==='kn'?findKn(s.chapterId,s.knId):null;
     var found=DATA.questions.some(function(q) { return q.chapterId===s.chapterId && (!kn || kn.questionIds.indexOf(q.id)>=0) && matchesFilter(q.id,ui.statusFilter); });
     if(found) return s;
   }
   return null;
 }
-function goNextStudyScope() {
-  var s=nextStudyScope(); if(!s) return false;
+function goStudyScope(dir) {
+  var s=adjacentStudyScope(dir); if(!s) return false;
   clearTimeout(jumpErrTimer); $('jump-input').style.borderColor=''; $('jump-input').title=''; $('jump-input').classList.remove('is-error');
   setScope(s); return true;
+}
+function renderStudyScopeNavigation() {
+  [-1, 1].forEach(function (dir) {
+    var button = $(dir < 0 ? 'btn-prev-section' : 'btn-next-section');
+    button.hidden = ui.scope.type !== 'chapter' && ui.scope.type !== 'kn';
+    button.disabled = !adjacentStudyScope(dir);
+    button.onclick = function () { goStudyScope(dir); };
+    button.title = '进入' + (dir < 0 ? '上' : '下') + '一个有符合当前筛选条件题目的小节';
+  });
 }
 
 function hasNeighbor(dir) {

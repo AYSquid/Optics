@@ -5,6 +5,9 @@ const parentOrigin=new URL(location.href).origin;
 // Never trust a referrer to select where credentials are sent.
 if(document.referrer&&new URL(document.referrer).origin!==parentOrigin)return;
 const resume=new URLSearchParams(location.search).has('resume');
+// Presentation hint from the host; authentication still requires its reply.
+const restoredSession=new URLSearchParams(location.search).get('authenticated')==='1'||resume;
+if(restoredSession)document.documentElement.classList.add('session-authenticated');
 let authenticated=resume,busy=false,formReady=false,authHandled=false;
 const send=(action,extra={})=>parent.postMessage({type:'optics-portal',action,...extra},parentOrigin);
 function error(text){if(authenticated){const status=document.getElementById('optics-status');if(status){status.textContent=text;status.setAttribute('role','alert');return;}}let p=document.getElementById('auth-message');if(!p){p=document.createElement('p');p.id='auth-message';p.setAttribute('role','alert');p.style.cssText='color:#874c40;font:12px/1.5 sans-serif;margin:8px 0 0';document.querySelector('#login-form')?.append(p);}p.textContent=text;}

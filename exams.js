@@ -37,9 +37,7 @@ var baseTree=renderTree;renderTree=function(){
 };
 var baseRender=render;render=function(){
  var home=ui.scope.type==='exams',isExam=home||ui.scope.type==='exam';
- $('btn-next-section').hidden = ui.scope.type !== 'chapter' && ui.scope.type !== 'kn';
- $('btn-next-section').disabled = !nextStudyScope();
- $('btn-next-section').onclick = goNextStudyScope;
+ renderStudyScopeNavigation();
  $('status-filter').closest('.side-block').hidden=home;
  $('module-bank').setAttribute('aria-pressed',!isExam);$('module-exams').setAttribute('aria-pressed',isExam);
  document.querySelector('.page-eyebrow').textContent=isExam?'PAST PAPERS / 历年真题':'PRACTICE / 章节练习';

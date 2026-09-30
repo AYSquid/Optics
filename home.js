@@ -15,7 +15,10 @@ function mount(replay){
  frame.id='rhine-portal';
  frame.title='RHINE LAB · 学习系统';
  frame.setAttribute('sandbox','allow-scripts allow-forms');
- frame.src='rhine-lab.html'+(resume?'?resume=1':'');
+ const params=new URLSearchParams();
+ if(auth().user)params.set('authenticated','1');
+ if(resume)params.set('resume','1');
+ frame.src='rhine-lab.html'+(params.size?'?'+params:'');
  document.body.append(frame);
 }
 function route(){
