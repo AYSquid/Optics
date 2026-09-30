@@ -14,9 +14,11 @@ function error(text){if(authenticated){const status=document.getElementById('opt
 function submit(){
  if(busy)return;
  const input=document.querySelector('input[type="password"]');
+ const username=document.querySelector('#login-form input:not([type="password"])');
+ if(!username?.value.trim()){error('请输入邮箱或用户名');username?.focus();return;}
  if(!input?.value){error('请输入密码');input?.focus();return;}
  busy=true;const button=document.querySelector('.login-button');if(button)button.disabled=true;
- error('正在认证…');send('login',{password:input.value});
+ error('正在认证…');send('login',{password:input.value,email:username.value.trim()});
  input.value='';input.dispatchEvent(new Event('input',{bubbles:true}));
 }
 document.addEventListener('click',e=>{
@@ -31,7 +33,7 @@ function prepare(){
  const inputs=form.querySelectorAll('input');
  inputs.forEach(input=>{
   if(input.type==='password'){input.readOnly=false;input.value='';input.removeAttribute('value');input.autocomplete='current-password';input.required=true;input.setAttribute('aria-label','密码');input.dispatchEvent(new Event('input',{bubbles:true}));}
-  else{input.value='Doc. Muelsyse';input.readOnly=true;input.autocomplete='username';input.setAttribute('aria-label','用户名');}
+  else{input.value='Doc. Muelsyse';input.readOnly=false;input.autocomplete='username';input.required=true;input.setAttribute('aria-label','用户名或邮箱');input.placeholder='Doc. Muelsyse 或邮箱';}
  });
  form.querySelectorAll('a').forEach(a=>{a.setAttribute('aria-disabled','true');a.tabIndex=-1;});
  send('auth-state');
@@ -43,7 +45,7 @@ if(resume){
 new MutationObserver(prepare).observe(document.documentElement,{childList:true,subtree:true});
 window.addEventListener('message',e=>{
  if(e.source!==parent||e.origin!==parentOrigin)return;
- if(e.data?.type==='optics-auth-error'){busy=false;const b=document.querySelector('.login-button');if(b)b.disabled=false;error(['用户名或密码错误','退出失败，请重试'].includes(e.data.message)?e.data.message:'认证失败，请重试');}
+ if(e.data?.type==='optics-auth-error'){busy=false;const b=document.querySelector('.login-button');if(b)b.disabled=false;error(['用户名或密码错误','退出失败，请重试','请输入邮箱或用户名','请输入有效的邮箱地址'].includes(e.data.message)?e.data.message:'认证失败，请重试');}
  if(e.data?.type==='optics-auth-state'&&e.data.authenticated===true){
   if(authHandled)return;
   authHandled=true;

@@ -56,10 +56,10 @@ function initialize(){if(initialized)return;initialized=true;
    if(signingIn||auth().user)return;signingIn=true;
    try{
     if(typeof e.data.password!=='string'||!e.data.password)throw Error('请输入密码');
-    await auth().signIn(e.data.password);
+    await auth().signIn(e.data.password,e.data.email);
     reply({type:'optics-auth-state',authenticated:true,displayName:auth().displayName});
    }
-   catch(error){reply({type:'optics-auth-error',message:error.message==='用户名或密码错误'?'用户名或密码错误':'认证失败，请重试'});}
+   catch(error){reply({type:'optics-auth-error',message:['用户名或密码错误','请输入邮箱或用户名','请输入有效的邮箱地址'].includes(error.message)?error.message:'认证失败，请重试'});}
    finally{signingIn=false;}return;
   }
   if(!auth().user)return;

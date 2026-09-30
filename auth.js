@@ -11,13 +11,17 @@ function publish(next){
 }
 const api={
  get client(){return client;},get user(){return session?.user||null;},
- get displayName(){return session?.user?.user_metadata?.display_name??'Doc. Muelsyse';},
+ get displayName(){return session?.user?.user_metadata?.display_name||(session?.user?.email&&session.user.email!==INTERNAL_AUTH_EMAIL?session.user.email:'Doc. Muelsyse');},
  get initialized(){return initialized;},
  subscribe(fn){listeners.add(fn);return()=>listeners.delete(fn);},
- async signIn(password){
+ async signIn(password,username='Doc. Muelsyse'){
   await api.ready;
   if(!client)throw Error('认证服务暂不可用，请刷新后重试');
-  const {data,error}=await client.auth.signInWithPassword({email:INTERNAL_AUTH_EMAIL,password});
+  if(typeof username!=='string'||!username.trim())throw Error('请输入邮箱或用户名');
+  const name=username.trim();
+  const email=name.toLowerCase()==='doc. muelsyse'||name==='缪尔赛思'?INTERNAL_AUTH_EMAIL:name;
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))throw Error('请输入有效的邮箱地址');
+  const {data,error}=await client.auth.signInWithPassword({email,password});
   if(error||!data?.session)throw Error(error?.status===400?'用户名或密码错误':'认证失败，请重试');
   publish(data.session);return data.user;
  },
