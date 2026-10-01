@@ -30,5 +30,12 @@
 .electronic-immersive-controls .btn{padding:7px 10px;font-size:11px;min-height:34px}
 .electronic-immersive-page{font-size:11px;min-width:42px;text-align:center;color:var(--soft,var(--text-soft))}
 .electronic-immersive .electronic-reader-viewport{padding-bottom:75px}
+.electronic-reader-pages{position:relative;display:flex;flex-direction:column;align-items:center;gap:20px;min-width:100%;width:max-content}
+.electronic-reader-pages .electronic-reader-sheet{margin:0}
+.electronic-page-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#716a5e;font-size:12px;pointer-events:none}
+.electronic-page-info{font-size:11px;color:var(--soft,var(--text-soft));margin-right:8px;white-space:nowrap}
+.electronic-zoom-label{display:flex;gap:4px;align-items:center;font-size:11px;white-space:nowrap}
+.electronic-zoom-label input{width:48px;padding:5px 3px;min-height:32px;border:1px solid var(--edge,var(--line));border-radius:var(--radius-sm,7px);background:var(--surface,var(--panel));color:var(--ink,var(--text));font:inherit;text-align:center;appearance:textfield}
+.electronic-zoom-label input::-webkit-inner-spin-button{appearance:none}
 html[data-theme="lonetrail"] .electronic-reader-head{position:relative}html[data-theme="lonetrail"] .electronic-reader-head::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#A52D2C 0 33.333%,#E3A53B 33.333% 66.666%,#8CB8A9 66.666% 100%)}
 @media(max-width:600px){.electronic-reader-head{padding:12px;gap:8px;flex-wrap:wrap}.electronic-reader-titles{order:3;flex:1 1 100%}.electronic-reader-head>button:last-child{margin-left:auto}.electronic-reader-titles h2{font-size:14px}.electronic-reader-toolbar{padding:8px 12px;gap:5px}.electronic-reader-toolbar .btn{padding:6px 8px;min-height:34px}.electronic-reader-toolbar a{flex:0 0 auto}.electronic-reader-viewport{padding:8px}.electronic-reader-message{padding:10px 12px}}

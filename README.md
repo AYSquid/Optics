@@ -7,7 +7,7 @@
 - 个人云端记录：使用Supabase私有空间，每台设备输入同一同步密钥一次，无需邮箱登录。密钥由站点所有者私下保存，不在此仓库。
 - 支持离线记录、冲突处理与JSON备份迁移。
 - 电子笔记：左侧打开章节列表，12份章节PDF按原版《几何光学》《物理光学》拆分。点击章节后才加载PDF，返回保留刷题位置、选项、筛选和答案展开状态；光学仪器对应现有八个小节，可直达相关页。
-- PDF阅读器支持翻页、输入页码、适宽、放大缩小、下载和沉浸模式；沉浸时收起顶栏与侧栏，保留浮动翻页/退出按钮，Esc可恢复界面；PDF.js 6.3.289随站点提供，采用Apache-2.0许可，见vendor/pdfjs/LICENSE。章节页码和来源摘要见data/electronic-notes.json。
+- PDF阅读器支持整章连续下滑、25%–400%直接输入缩放、Ctrl＋滚轮双向缩放、适宽、下载和沉浸模式；沉浸时收起顶栏与侧栏，保留浮动缩放/退出按钮，Esc可恢复界面；PDF.js 6.3.289随站点提供，采用Apache-2.0许可，见vendor/pdfjs/LICENSE。章节页码和来源摘要见data/electronic-notes.json。
 - 首页/入场/授权视觉改编自[ZuoDev1/Index-Main-Web](https://github.com/ZuoDev1/Index-Main-Web)，保留原作者署名，接入光学学习模块。明日方舟及莱茵生命相关标识归权利方所有；非官方网站。
 - 运行时依赖随仓库提供。Lottie-web使用MIT许可；详见vendor/rhine。
 
