@@ -5,7 +5,7 @@
  const node=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
  const button=(text,fn,cls='btn btn-outline')=>{const b=node('button',cls,text);b.type='button';b.onclick=fn;return b;};
  let catalogPromise=null,pdfPromise=null,chapter=null,pdf=null,loadTask=null,renderTask=null,textTask=null;
- let active=false,revision=0,renderRevision=0,pageNumber=1,zoom=1,resizeTimer,lastFocus,listFocus;
+ let active=false,immersive=false,revision=0,renderRevision=0,pageNumber=1,zoom=1,resizeTimer,lastFocus,listFocus;
  const positions=new Map();
  const dialog=node('dialog','question-notes-dialog electronic-notes-dialog');dialog.id='electronic-notes-dialog';dialog.setAttribute('aria-labelledby','electronic-notes-title');
  const listHead=node('div','notes-head'),listTitle=node('h2',null,'电子笔记');listTitle.id='electronic-notes-title';
@@ -14,7 +14,7 @@
  const reader=node('section','electronic-reader');reader.id='electronic-reader';reader.hidden=true;reader.setAttribute('aria-labelledby','electronic-reader-title');
  const heading=node('div','electronic-reader-head'),back=button('← 返回刷题',closeReader),titles=node('div','electronic-reader-titles');
  const title=node('h2',null,'电子笔记');title.id='electronic-reader-title';const detail=node('p','electronic-reader-detail');titles.append(title,detail);
- const directory=button('章节列表',openLibrary);heading.append(back,titles,directory);
+ const directory=button('章节列表',openLibrary),immerse=button('沉浸模式',()=>setImmersive(true));immerse.id='electronic-immersive-open';immerse.setAttribute('aria-pressed','false');heading.append(back,titles,directory,immerse);
  const toolbar=node('div','electronic-reader-toolbar');toolbar.setAttribute('aria-label','PDF 阅读控制');
  const prev=button('上一页',()=>turn(-1)),next=button('下一页',()=>turn(1)),pageLabel=node('label','electronic-page-jump','第 '),pageInput=node('input'),total=node('span');
  pageInput.id='electronic-page-input';pageInput.type='number';pageInput.min='1';pageInput.inputMode='numeric';pageInput.setAttribute('aria-label','PDF 页码');pageLabel.append(pageInput,total);
@@ -24,7 +24,10 @@
  const message=node('div','electronic-reader-message');message.id='electronic-reader-message';message.setAttribute('role','status');message.setAttribute('aria-live','polite');
  const viewport=node('div','electronic-reader-viewport');viewport.tabIndex=0;viewport.setAttribute('aria-label','PDF 内容，放大后可横向滚动');
  const sheet=node('div','electronic-reader-sheet'),canvas=node('canvas'),textLayer=node('div','textLayer');sheet.append(canvas,textLayer);sheet.hidden=true;viewport.append(sheet);
- reader.append(heading,toolbar,message,viewport);main.append(reader);
+ const floating=node('div','electronic-immersive-controls');floating.hidden=true;floating.setAttribute('aria-label','沉浸阅读控制');
+ const floatPrev=button('←',()=>turn(-1)),floatNext=button('→',()=>turn(1)),floatPage=node('span','electronic-immersive-page'),exitImmersive=button('退出沉浸',()=>setImmersive(false));
+ floatPrev.setAttribute('aria-label','PDF 上一页');floatNext.setAttribute('aria-label','PDF 下一页');exitImmersive.id='electronic-immersive-close';floating.append(floatPrev,floatPage,floatNext,exitImmersive);
+ reader.append(heading,toolbar,message,viewport,floating);main.append(reader);
  function catalog(){
   if(!catalogPromise)catalogPromise=fetch('data/electronic-notes.json').then(r=>{if(!r.ok)throw Error('目录加载失败');return r.json();}).catch(e=>{catalogPromise=null;throw e;});
   return catalogPromise;
@@ -68,6 +71,13 @@
   pageInput.value=String(pageNumber);pageInput.max=String(pdf?.numPages||chapter?.pages||1);total.textContent=' / '+(pdf?.numPages||chapter?.pages||'—')+' 页';
   prev.disabled=!pdf||pageNumber<=1;next.disabled=!pdf||pageNumber>=pdf.numPages;pageInput.disabled=!pdf;
   minus.disabled=!pdf||zoom<=.75;plus.disabled=!pdf||zoom>=3;fit.disabled=!pdf;scale.textContent=Math.round(zoom*100)+'%';
+  floatPrev.disabled=prev.disabled;floatNext.disabled=next.disabled;floatPage.textContent=pageNumber+' / '+(pdf?.numPages||chapter?.pages||'—');
+ }
+ function setImmersive(value){
+  if(!active)return;immersive=!!value;app.classList.toggle('electronic-immersive',immersive);floating.hidden=!immersive;
+  immerse.setAttribute('aria-pressed',String(immersive));
+  (immersive?exitImmersive:immerse).focus({preventScroll:true});
+  // The ResizeObserver re-fits the same PDF page without fetching a new chapter.
  }
  async function openChapter(c,startPage){
   remember();if(!active)lastFocus=$('electronic-notes-open');
@@ -92,7 +102,8 @@
   try{
    const page=await doc.getPage(number);if(token!==renderRevision||!active)return;
    const base=page.getViewport({scale:1}),padding=window.innerWidth<=560?16:40;
-   const factor=Math.max(.1,(viewport.clientWidth-padding)/base.width)*zoom,v=page.getViewport({scale:factor});
+   const available=Math.min(viewport.clientWidth-padding,immersive&&innerWidth>900?1100:Infinity);
+   const factor=Math.max(.1,available/base.width)*zoom,v=page.getViewport({scale:factor});
    // Cap pixel density for large zooms; CSS size stays accurate on desktop/mobile.
    const density=Math.min(window.devicePixelRatio||1,2,4096/Math.max(v.width,v.height));
    const fresh=document.createElement('canvas');fresh.width=Math.ceil(v.width*density);fresh.height=Math.ceil(v.height*density);
@@ -112,14 +123,14 @@
  pageInput.addEventListener('change',()=>{const n=Number(pageInput.value);if(pdf&&Number.isInteger(n)&&n>=1&&n<=pdf.numPages){pageNumber=n;draw();}else reflect();});
  pageInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();pageInput.dispatchEvent(new Event('change'));}});
  function closeReader(){
-  if(!active)return;remember();active=false;revision++;dispose();reader.hidden=true;app.classList.remove('electronic-reading');
+  if(!active)return;remember();if(immersive)setImmersive(false);active=false;revision++;dispose();reader.hidden=true;app.classList.remove('electronic-reading');
   $('scroller').inert=false;main.querySelector('.question-nav').inert=false;main.querySelector('.actionbar').inert=false;
   lastFocus?.focus({preventScroll:true});
  }
  // Practice shortcuts must not turn a hidden question while reading.
  document.addEventListener('keydown',e=>{
   if(!active||dialog.open||e.target.closest('dialog'))return;
-  if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();closeReader();return;}
+  if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();if(immersive)setImmersive(false);else closeReader();return;}
   if(['ArrowLeft','ArrowRight','PageUp','PageDown'].includes(e.key)&&!e.target.matches('input,textarea,select,[contenteditable]')&&!e.ctrlKey&&!e.metaKey&&!e.altKey){e.preventDefault();e.stopImmediatePropagation();turn(['ArrowLeft','PageUp'].includes(e.key)?-1:1);}
  },true);
  // Explicit practice navigation exits the reader, then follows its existing handler.

@@ -22,5 +22,13 @@
 .electronic-reader-sheet .textLayer> :not(.markedContent),.electronic-reader-sheet .textLayer .markedContent span:not(.markedContent){z-index:1;--font-height:0;--scale-x:1;--rotate:0;font-size:calc(var(--text-scale-factor) * var(--font-height));transform:rotate(var(--rotate)) scaleX(var(--scale-x)) scale(var(--min-font-size-inv))}
 .electronic-reader-sheet .textLayer .markedContent{display:contents}.electronic-reader-sheet .textLayer ::selection{background:#8cb8a955;color:transparent}
 .electronic-reader :is(button,input,a):focus-visible,.electronic-section-links button:focus-visible{outline:2px solid var(--accent,var(--blue));outline-offset:2px}
+.app.electronic-immersive{display:flex!important}
+.electronic-immersive>:is(.sidebar,.terminal-header),.electronic-immersive .main>.topbar,.electronic-immersive :is(.electronic-reader-head,.electronic-reader-toolbar){display:none!important}
+.electronic-immersive .main{width:100%;flex:1 1 auto}
+.electronic-immersive-controls[hidden]{display:none!important}
+.electronic-immersive-controls{position:absolute;bottom:max(12px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:6px 8px;background:var(--surface,var(--panel));border:1px solid var(--edge,var(--line));border-radius:var(--radius-sm,7px);box-shadow:var(--shadow);z-index:4;white-space:nowrap}
+.electronic-immersive-controls .btn{padding:7px 10px;font-size:11px;min-height:34px}
+.electronic-immersive-page{font-size:11px;min-width:42px;text-align:center;color:var(--soft,var(--text-soft))}
+.electronic-immersive .electronic-reader-viewport{padding-bottom:75px}
 html[data-theme="lonetrail"] .electronic-reader-head{position:relative}html[data-theme="lonetrail"] .electronic-reader-head::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#A52D2C 0 33.333%,#E3A53B 33.333% 66.666%,#8CB8A9 66.666% 100%)}
 @media(max-width:600px){.electronic-reader-head{padding:12px;gap:8px;flex-wrap:wrap}.electronic-reader-titles{order:3;flex:1 1 100%}.electronic-reader-head>button:last-child{margin-left:auto}.electronic-reader-titles h2{font-size:14px}.electronic-reader-toolbar{padding:8px 12px;gap:5px}.electronic-reader-toolbar .btn{padding:6px 8px;min-height:34px}.electronic-reader-toolbar a{flex:0 0 auto}.electronic-reader-viewport{padding:8px}.electronic-reader-message{padding:10px 12px}}
