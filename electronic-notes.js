@@ -67,7 +67,7 @@
  function cancelRendering(){layoutRevision++;observer?.disconnect();observer=null;queue.clear();for(const t of tasks.values()){t.render?.cancel();t.layer?.cancel();}tasks.clear();}
  function dispose(){cancelRendering();const old=loadTask;loadTask=null;pdf=null;pageViews=[];layoutSignature=null;pages.replaceChildren();if(old)old.destroy().catch(()=>{});}
  function showMessage(text,error=false){message.replaceChildren(node('span',null,text));message.dataset.error=String(error);message.hidden=!text;}
- function reflect(){pageInfo.textContent=`第 ${pageNumber} / ${pdf?.numPages||chapter?.pages||'—'} 页 · 连续阅读`;if(document.activeElement!==scaleInput)scaleInput.value=String(Math.round(zoom*100));scaleInput.disabled=!pdf;minus.disabled=floatMinus.disabled=!pdf||zoom<=.25;plus.disabled=floatPlus.disabled=!pdf||zoom>=4;fit.disabled=!pdf;floatPage.textContent=pageNumber+' / '+(pdf?.numPages||chapter?.pages||'—')+' · '+Math.round(zoom*100)+'%';}
+ function reflect(){viewport.classList.toggle('electronic-pan-enabled',zoom>1);pageInfo.textContent=`第 ${pageNumber} / ${pdf?.numPages||chapter?.pages||'—'} 页 · 连续阅读`;if(document.activeElement!==scaleInput)scaleInput.value=String(Math.round(zoom*100));scaleInput.disabled=!pdf;minus.disabled=floatMinus.disabled=!pdf||zoom<=.25;plus.disabled=floatPlus.disabled=!pdf||zoom>=4;fit.disabled=!pdf;floatPage.textContent=pageNumber+' / '+(pdf?.numPages||chapter?.pages||'—')+' · '+Math.round(zoom*100)+'%';}
  function setImmersive(value){if(!active)return;pendingAnchor=anchor();immersive=!!value;app.classList.toggle('electronic-immersive',immersive);floating.hidden=!immersive;immerse.setAttribute('aria-pressed',String(immersive));(immersive?exitImmersive:immerse).focus({preventScroll:true});}
  async function openChapter(c,startPage){
   remember();if(!active)lastFocus=$('electronic-notes-open');if(dialog.open)dialog.close();closeDirectory();dispose();const token=++revision;
@@ -105,6 +105,25 @@
   finally{if(tasks.get(view.number)===record)tasks.delete(view.number);if(token===layoutRevision){evictDistant();pump();}}
  }
  function evictDistant(){const bounds=viewport.getBoundingClientRect();for(const v of pageViews){const r=v.element.getBoundingClientRect();if((r.bottom<bounds.top-700||r.top>bounds.bottom+700)&&!tasks.has(v.number)&&v.element.dataset.rendered==='true'){v.element.removeAttribute('data-rendered');v.element.removeAttribute('data-text-ready');v.element.replaceChildren(node('span','electronic-page-placeholder','第 '+v.number+' 页'));}}}
+ // On enlarged pages, a finger drag pans both axes instead of selecting PDF text.
+ let touchPan=null;
+ viewport.addEventListener('touchstart',e=>{
+  touchPan=null;
+  if(!active||!pdf||zoom<=1||e.touches.length!==1)return;
+  const t=e.touches[0];touchPan={id:t.identifier,x:t.clientX,y:t.clientY,left:viewport.scrollLeft,top:viewport.scrollTop};
+ },{passive:true});
+ viewport.addEventListener('touchmove',e=>{
+  if(!touchPan)return;
+  if(e.touches.length!==1){touchPan=null;return;}
+  const t=e.touches[0];if(t.identifier!==touchPan.id)return;
+  const dx=touchPan.x-t.clientX,dy=touchPan.y-t.clientY;
+  if(Math.abs(dx)+Math.abs(dy)<4)return;
+  if(e.cancelable)e.preventDefault();
+  viewport.scrollLeft=touchPan.left+dx;viewport.scrollTop=touchPan.top+dy;
+ },{passive:false});
+ const endTouchPan=()=>{touchPan=null;};
+ viewport.addEventListener('touchend',endTouchPan,{passive:true});
+ viewport.addEventListener('touchcancel',endTouchPan,{passive:true});
  let scrollFrame=0;
  viewport.addEventListener('scroll',()=>{if(scrollFrame)return;scrollFrame=requestAnimationFrame(()=>{scrollFrame=0;if(!active||!pdf)return;pageNumber=anchor().page;reflect();evictDistant();const v=pageViews[pageNumber-1];if(v&&v.element.dataset.rendered!=='true'){queue.add(pageNumber);pump();}});},{passive:true});
  function setZoom(value){if(!pdf)return;const a=anchor(),next=Math.max(.25,Math.min(4,Math.round(value*100)/100));if(next===zoom){reflect();return;}zoom=next;layoutPages(a);}
