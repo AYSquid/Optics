@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "description": "按原 PDF 章节拆分，保留原版文字、公式和图示。",
+  "sources": [
+    {
+      "name": "几何光学.pdf",
+      "pages": 70,
+      "sha256": "2a4bb5a578f2a6a82ab4175d4722acac46503850985f2d864f76ee7496eef105"
+    },
+    {
+      "name": "物理光学.pdf",
+      "pages": 79,
+      "sha256": "ee76a70387af6e21b7d7b519c34ef6c91cd04b6a5f1a78e02b84e02fcce22a09"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "geom-ch1",
+      "title": "几何光学基本定律与成像概念",
+      "label": "第一章",
+      "group": "几何光学",
+      "source": "几何光学.pdf",
+      "sourceStart": 2,
+      "sourceEnd": 7,
+      "pages": 6,
+      "bytes": 637006,
+      "url": "assets/notes/geom-ch1.pdf",
+      "sha256": "d1c7605f4dccd7982364ca215ead16b730490945438ce380af149a0b281059de",
+      "relatedChapters": [
+        {
+          "id": "geom-ch1",
+          "label": "第一章 几何光学基本定律与成像概念",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "geom-ch2",
+      "title": "理想光学系统",
+      "label": "第二章",
+      "group": "几何光学",
+      "source": "几何光学.pdf",
+      "sourceStart": 8,
+      "sourceEnd": 14,
+      "pages": 7,
+      "bytes": 751064,
+      "url": "assets/notes/geom-ch2.pdf",
+      "sha256": "c8fb448ea43689a9264cefeb085906e78b21f97b9fb5905fd69fecabdcf96135",
+      "relatedChapters": [
+        {
+          "id": "geom-ch2",
+          "label": "第二章 理想光学系统",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "geom-ch3",
+      "title": "平面镜、平板、反射棱镜与光学材料",
+      "label": "第三章",
+      "group": "几何光学",
+      "source": "几何光学.pdf",
+      "sourceStart": 15,
+      "sourceEnd": 19,
+      "pages": 5,
+      "bytes": 731465,
+      "url": "assets/notes/geom-ch3.pdf",
+      "sha256": "9bcdaba2f23423bd2de160b3117baa5cbb39697841585fa8cf9dd7a0dc578b1a",
+      "relatedChapters": [
+        {
+          "id": "geom-ch3",
+          "label": "第三章 平面镜、平板、反射棱镜与光学材料",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "geom-ch4",
+      "title": "光阑与景深",
+      "label": "第四章",
+      "group": "几何光学",
+      "source": "几何光学.pdf",
+      "sourceStart": 20,
+      "sourceEnd": 24,
+      "pages": 5,
+      "bytes": 601163,
+      "url": "assets/notes/geom-ch4.pdf",
+      "sha256": "181a21e3478141333c96a705706ec98c1b6ee29a8bd3ccfdcdde527e39ccab5d",
+      "relatedChapters": [
+        {
+          "id": "geom-ch4",
+          "label": "第四章 光阑与景深",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "geom-ch5",
+      "title": "光度学与色度学基础",
+      "label": "第五章",
+      "group": "几何光学",
+      "source": "几何光学.pdf",
+      "sourceStart": 25,
+      "sourceEnd": 29,
+      "pages": 5,
+      "bytes": 624144,
+      "url": "assets/notes/geom-ch5.pdf",
+      "sha256": "bf1c9216f8a2fefde6fb9b94d261c1e5be2317188e60e8e076923edfc3216082",
+      "relatedChapters": [
+        {
+          "id": "geom-ch5",
+          "label": "第五章 光度学与色度学基础",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "geom-ch6",
+      "title": "像差基础",
+      "label": "第六章",
+      "group": "几何光学",
+      "source": "几何光学.pdf",
+      "sourceStart": 30,
+      "sourceEnd": 34,
+      "pages": 5,
+      "bytes": 630375,
+      "url": "assets/notes/geom-ch6.pdf",
+      "sha256": "d35ef776d6fbf48d750c101cc266ee0bb2a292d79601f8257331ab25d00bb0b0",
+      "relatedChapters": [
+        {
+          "id": "geom-ch6",
+          "label": "第六章 像差基础",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "instruments",
+      "title": "光学仪器",
+      "label": "光学仪器",
+      "group": "光学仪器",
+      "source": "几何光学.pdf",
+      "sourceStart": 35,
+      "sourceEnd": 70,
+      "pages": 36,
+      "bytes": 1796320,
+      "url": "assets/notes/instruments.pdf",
+      "sha256": "11749000bf9dae32cc2d0858990a7193fe79a69ccabf4084b1abcde8b0ca9980",
+      "relatedChapters": [
+        {
+          "id": "inst-c2",
+          "label": "第 2 节 选填题：知识点–原题–解析–答案–公式",
+          "page": 15
+        },
+        {
+          "id": "inst-c3",
+          "label": "第 3 节 人眼、眼镜与双目视觉大题",
+          "page": 22
+        },
+        {
+          "id": "inst-c4",
+          "label": "第 4 节 放大镜、瞳与渐晕大题",
+          "page": 24
+        },
+        {
+          "id": "inst-c5",
+          "label": "第 5 节 显微镜综合大题",
+          "page": 26
+        },
+        {
+          "id": "inst-c6",
+          "label": "第 6 节 双薄透镜摄影物镜与主平面大题",
+          "page": 28
+        },
+        {
+          "id": "inst-c7",
+          "label": "第 7 节 曝光、等效焦距与景深大题",
+          "page": 30
+        },
+        {
+          "id": "inst-c10",
+          "label": "第 10 节 普通望远镜综合大题",
+          "page": 33
+        },
+        {
+          "id": "inst-c11",
+          "label": "第 11 节 带场镜、转像组的望远镜大题",
+          "page": 35
+        }
+      ]
+    },
+    {
+      "id": "phys-ch9",
+      "title": "光的电磁理论",
+      "label": "第九章",
+      "group": "物理光学",
+      "source": "物理光学.pdf",
+      "sourceStart": 1,
+      "sourceEnd": 16,
+      "pages": 16,
+      "bytes": 1358603,
+      "url": "assets/notes/phys-ch9.pdf",
+      "sha256": "649437bf07116aff733515fa9b4fa2cece82d46d7fc8f48fb6a041660bdc2a21",
+      "relatedChapters": [
+        {
+          "id": "phys-ch9",
+          "label": "第九章 光的电磁理论",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "phys-ch10",
+      "title": "光的干涉",
+      "label": "第十章",
+      "group": "物理光学",
+      "source": "物理光学.pdf",
+      "sourceStart": 17,
+      "sourceEnd": 31,
+      "pages": 15,
+      "bytes": 4166612,
+      "url": "assets/notes/phys-ch10.pdf",
+      "sha256": "e9594b84db733576541bb90034baf562819291168cd7ba2f647fddb42bf917db",
+      "relatedChapters": [
+        {
+          "id": "phys-ch10",
+          "label": "第十章 光的干涉",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "phys-ch11",
+      "title": "光的衍射与光栅",
+      "label": "第十一章",
+      "group": "物理光学",
+      "source": "物理光学.pdf",
+      "sourceStart": 32,
+      "sourceEnd": 45,
+      "pages": 14,
+      "bytes": 719358,
+      "url": "assets/notes/phys-ch11.pdf",
+      "sha256": "a15199b1dc56edb453490ce67bd3bd10219cb3f2ae56dee0466bab614d84e64c",
+      "relatedChapters": [
+        {
+          "id": "phys-ch11",
+          "label": "第十一章 光的衍射与光栅",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "phys-ch12",
+      "title": "傅里叶光学",
+      "label": "第十二章",
+      "group": "物理光学",
+      "source": "物理光学.pdf",
+      "sourceStart": 46,
+      "sourceEnd": 58,
+      "pages": 13,
+      "bytes": 206900,
+      "url": "assets/notes/phys-ch12.pdf",
+      "sha256": "858936542f2404e49ffac5b01139d830f5c63bd190c8269de9734a7e42b275a5",
+      "relatedChapters": [
+        {
+          "id": "phys-ch12",
+          "label": "第十二章 傅里叶光学",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "phys-ch13",
+      "title": "偏振与晶体光学",
+      "label": "第十三章",
+      "group": "物理光学",
+      "source": "物理光学.pdf",
+      "sourceStart": 59,
+      "sourceEnd": 79,
+      "pages": 21,
+      "bytes": 401522,
+      "url": "assets/notes/phys-ch13.pdf",
+      "sha256": "704a3bd63098a17dd9200a442329c2f6f9660d244511c483b85aeb853628f41c",
+      "relatedChapters": [
+        {
+          "id": "phys-ch13",
+          "label": "第十三章 偏振与晶体光学",
+          "page": 1
+        }
+      ]
+    }
+  ]
+}
