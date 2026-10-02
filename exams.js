@@ -46,7 +46,7 @@ var baseRender=render;render=function(){
  if(home){renderTree();renderFilterBar();renderStoreNote();$('card').hidden=true;$('empty').hidden=true;$('notice').hidden=true;$('crumb').textContent='浙江大学 · 841 工程光学基础';$('crumb-sub').textContent='保留原卷题序，逐题练习';$('progress').textContent=EXAMS.years.length+' 份年份资料 · '+EXAMS.occurrences.length+' 条原题';renderExamHome();return;}
  baseRender();var q=currentQuestion();if(!q)return;
  if(q.occurrenceId){if(!window.OpticsCloud||!OpticsCloud.isApplying()){examProgress.positions[ui.scope.paperId]=q.id;persistExam();}$('crumb-sub').textContent=q.section+' · 原题 '+q.number+' · '+q.typeName;}
- if(q.playable===false){var note=el('div','exam-warning','原始资料'+(q.completeness==='needs_image'?'缺少题图':'不完整')+'，本题暂不支持在线作答。保留原题号与原文，等待补全。');$('stem').prepend(note);$('options').querySelectorAll('button').forEach(function(b){b.disabled=true;});$('status-buttons').querySelectorAll('button').forEach(function(b){b.disabled=true;});}
+ if(q.playable===false){if(!$('stem').querySelector('.exam-warning')){var note=el('div','exam-warning','原始资料'+(q.completeness==='needs_image'?'缺少题图':'不完整')+'，本题暂不支持在线作答。保留原题号与原文，等待补全。');$('stem').prepend(note);}$('options').querySelectorAll('button').forEach(function(b){b.disabled=true;});$('status-buttons').querySelectorAll('button').forEach(function(b){b.disabled=true;});}
 };
 function renderExamHome(){
  var root=$('exam-home');clear(root);var intro=el('div','exam-intro');intro.appendChild(el('h1',null,'循着年份，回到考场。'));intro.appendChild(el('p',null,'按原题顺序练习，分别记录每份试卷的进度。部分年份为回忆版，缺失题目会原位保留；已补入修订稿参考答案与解析；有疑点的答案另行标注，暂不自动判分。'));root.appendChild(intro);

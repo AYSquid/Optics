@@ -489,3 +489,8 @@ button:focus-visible,summary:focus-visible{outline:2px solid #7faf9b;outline-off
 @media (max-width: 560px) {
   .exam-warning { font-size: 12px; padding: 9px 11px; margin-bottom: 14px; }
 }
+
+/* Transparent source redraws follow the current paper surface. */
+html[data-theme] .figure.is-audit-diagram,html .figure.is-audit-diagram{background:transparent;border:0;box-shadow:none;max-width:100%;width:min(100%,760px);margin:0;padding:0}
+html .figure.is-audit-diagram img{width:100%;height:auto;border-radius:0}
+.lightbox-img.is-audit-diagram{background:var(--panel,var(--bg));padding:16px;box-sizing:border-box;border-radius:0}

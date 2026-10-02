@@ -219,8 +219,11 @@ function mathNode(tex, display) {
   return wrap;
 }
 
+function isAuditDiagram(src) { return /(?:^|\/)assets\/audit-diagrams\/[^?#]+\.svg(?:[?#]|$)/.test(src || ''); }
+
 function figureNode(src, alt) {
   var fig = el('figure', 'figure');
+  if (isAuditDiagram(src)) fig.classList.add('is-audit-diagram');
   var img = el('img');
   img.src = src;
   img.alt = alt || '题目配图';
@@ -584,7 +587,7 @@ function render() {
   if (q.playable === false) {
     stem.insertBefore(
       el('div', 'exam-warning',
-        '原始资料' + (q.completeness === 'needs_image' ? '缺少题图' : '不完整') +
+        '原始资料' + (q.completeness === 'needs_image' && !(q.stemImages || []).length ? '缺少题图' : '仍待核对') +
         '，本题暂不支持在线作答。保留原题号与原文，等待补全。'),
       stem.firstChild
     );
@@ -967,6 +970,7 @@ function changeStatus(val) {
 }
 
 function openLightbox(src, alt) {
+  $('lightbox-img').classList.toggle('is-audit-diagram', isAuditDiagram(src));
   $('lightbox-img').src = src;
   $('lightbox-img').alt = alt || '';
   $('lightbox-cap').textContent = alt || '';
