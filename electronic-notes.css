@@ -40,4 +40,4 @@
 html[data-theme="lonetrail"] .electronic-reader-head{position:relative}html[data-theme="lonetrail"] .electronic-reader-head::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#A52D2C 0 33.333%,#E3A53B 33.333% 66.666%,#8CB8A9 66.666% 100%)}
 @media(max-width:600px){.electronic-reader-head{padding:12px;gap:8px;flex-wrap:wrap}.electronic-reader-titles{order:3;flex:1 1 100%}.electronic-reader-head>button:last-child{margin-left:auto}.electronic-reader-titles h2{font-size:14px}.electronic-reader-toolbar{padding:8px 12px;gap:5px}.electronic-reader-toolbar .btn{padding:6px 8px;min-height:34px}.electronic-reader-toolbar a{flex:0 0 auto}.electronic-reader-viewport{padding:8px}.electronic-reader-message{padding:10px 12px}}
 
-@media(pointer:coarse){.electronic-reader-viewport.electronic-pan-enabled{touch-action:pinch-zoom}.electronic-pan-enabled .textLayer{user-select:none;-webkit-user-select:none}}
+@media(pointer:coarse){.electronic-reader-viewport.electronic-pan-enabled{touch-action:pan-x pan-y pinch-zoom}.electronic-pan-enabled .textLayer{user-select:none;-webkit-user-select:none}}

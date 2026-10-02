@@ -109,7 +109,9 @@
  let touchPan=null;
  viewport.addEventListener('touchstart',e=>{
   touchPan=null;
-  if(!active||!pdf||zoom<=1||e.touches.length!==1)return;
+  // A browser pinch enlarges the visual viewport separately from PDF zoom.
+  // Let the browser pan that viewport; custom overflow panning is only for PDF zoom.
+  if(!active||!pdf||zoom<=1||(window.visualViewport?.scale||1)>1.01||e.touches.length!==1)return;
   const t=e.touches[0];touchPan={id:t.identifier,x:t.clientX,y:t.clientY,left:viewport.scrollLeft,top:viewport.scrollTop};
  },{passive:true});
  viewport.addEventListener('touchmove',e=>{
