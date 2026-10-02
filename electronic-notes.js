@@ -42,11 +42,11 @@
   try{
    const data=await catalog();if(!dialog.open)return;
    listBody.replaceChildren(node('p','notes-description','按原 PDF 章节整理 · 打开章节后加载 · 返回保留刷题位置'));
-   for(const group of ['几何光学','光学仪器','物理光学']){
+   for(const group of ['几何光学','物理光学']){
     const section=node('section','electronic-notes-group'),h=node('h3',null,group),list=node('div','notes-list');section.append(h,list);
-    data.chapters.filter(c=>c.group===group).forEach(c=>{
+    data.chapters.filter(c=>c.group===group||(group==='几何光学'&&c.group==='光学仪器')).forEach(c=>{
      const item=button('',()=>openChapter(c),'notes-list-item electronic-note-chapter');item.dataset.chapter=c.id;
-     item.append(node('strong',null,(c.id==='instruments'?'':c.label+' ')+c.title),node('div','notes-meta',`${c.pages} 页 · ${c.source} · 原 PDF 第 ${c.sourceStart}–${c.sourceEnd} 页`));
+     item.append(node('strong',null,c.id==='instruments'?'光学仪器专题':c.label+' '+c.title),node('div','notes-meta',`${c.pages} 页 · ${c.source} · 原 PDF 第 ${c.sourceStart}–${c.sourceEnd} 页`));
      if(c.id==='instruments')item.append(node('div','notes-preview','包含人眼、放大镜、显微镜、摄影系统与望远镜；对应现有八个练习小节。'));
      list.append(item);
      if(c.id==='instruments'){

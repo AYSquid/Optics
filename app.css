@@ -126,6 +126,8 @@ button { font-family: inherit; font-size: inherit; }
 .tree-kn-btn { font-size: 14px; color: var(--text-soft); font-weight: 400; }
 .tree-kn-btn:hover, .tree-chap-btn:hover, .tree-root-btn:hover { background: hsla(var(--theme-hue), 26.3%, 96.3%, 1.000); }
 .tree-src { font-size: 11.5px; color: var(--text-dim); padding: 8px 8px 2px; letter-spacing: .3px; }
+.tree-instrument-section { margin-top: 12px; }
+.tree-subsection-title { margin: 0; padding: 12px 8px 8px; font-size: 13px; font-weight: 700; color: var(--text); border-top: 1px solid var(--line); }
 .tree-btn.is-current { background: var(--blue-soft); color: var(--blue-dark); font-weight: 700; }
 .tree-btn.is-current .tree-count { border-color: var(--blue-line); }
 

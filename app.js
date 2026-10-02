@@ -364,6 +364,16 @@ function reselect(opts) {
 
 /* ============================================================ 渲染：目录 */
 
+function orderedStudyChapters() {
+  // Instruments belong to geometry in the directory; retain all original IDs.
+  var ranks = { geom: 0, inst: 1, phys: 2 };
+  return DATA.chapters.slice().sort(function (a, b) {
+    var ar = Object.prototype.hasOwnProperty.call(ranks, a.source) ? ranks[a.source] : 3;
+    var br = Object.prototype.hasOwnProperty.call(ranks, b.source) ? ranks[b.source] : 3;
+    return ar - br;
+  });
+}
+
 function renderTree() {
   var tree = $('tree');
   clear(tree);
@@ -379,12 +389,24 @@ function renderTree() {
   rootNode.appendChild(rootBtn);
   tree.appendChild(rootNode);
 
-  var lastSource = '';
-  DATA.chapters.forEach(function (ch) {
+  var lastSource = '', group = tree, geometryGroup = null;
+  orderedStudyChapters().forEach(function (ch) {
     if (ch.source !== lastSource) {
       lastSource = ch.source;
       var srcName = (DATA.sources.filter(function (s) { return s.id === ch.source; })[0] || {}).name || ch.source;
-      tree.appendChild(el('div', 'tree-src', srcName));
+      if (ch.source === 'inst') {
+        group = el('section', 'tree-instrument-section');
+        group.setAttribute('aria-label', '光学仪器专题');
+        group.appendChild(el('h3', 'tree-subsection-title', '光学仪器专题'));
+        (geometryGroup || tree).appendChild(group);
+      } else {
+        group = el('section', 'tree-source-group');
+        group.setAttribute('data-source', ch.source);
+        if (ch.source === 'geom') { geometryGroup = group; srcName = '几何光学'; }
+        group.setAttribute('aria-label', srcName);
+        group.appendChild(el('div', 'tree-src', srcName));
+        tree.appendChild(group);
+      }
     }
     var node = el('div', 'tree-node');
     // Ordinary navigation buttons remain keyboard accessible without incomplete tree ARIA.
@@ -443,7 +465,7 @@ function renderTree() {
     row.appendChild(btn);
     node.appendChild(row);
     node.appendChild(kids);
-    tree.appendChild(node);
+    group.appendChild(node);
   });
 }
 
@@ -892,7 +914,7 @@ function scopePos(id) { return ui.scopeIds.indexOf(id); }
 function adjacentStudyScope(dir) {
   if (ui.scope.type !== 'chapter' && ui.scope.type !== 'kn') return null;
   var scopes = [];
-  DATA.chapters.forEach(function(ch) {
+  orderedStudyChapters().forEach(function(ch) {
     if (ui.scope.type === 'chapter') scopes.push({type:'chapter',chapterId:ch.id});
     else ch.knowledge.forEach(function(kn) { scopes.push({type:'kn',chapterId:ch.id,knId:kn.id}); });
   });

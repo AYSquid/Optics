@@ -41,7 +41,8 @@ html[data-theme="lonetrail"] .terminal-header::before{content:"";position:absolu
 html[data-theme="lonetrail"] .terminal-header::after{content:"";position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--lt-rail);pointer-events:none}
 html[data-theme="lonetrail"] .brand{height:92px;min-height:92px;padding:0 20px;gap:12px;background:var(--lt-ink);border:0;color:var(--lt-paper)}
 html[data-theme="lonetrail"] .terminal-header .brand{background:transparent;border-right:1px solid var(--lt-console-rule)}
-html[data-theme="lonetrail"] .terminal-header :is(.brand,.topbar)::after{display:none}
+html[data-theme="lonetrail"] .terminal-header .topbar::after{display:none}
+html[data-theme="lonetrail"] :is(.terminal-header,.sidebar)>.brand::after{content:"";display:block;position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--lt-rail);pointer-events:none;z-index:2}
 html[data-theme="lonetrail"] .brand-mark{width:45px!important;height:45px!important;flex:0 0 45px!important;background:transparent;border:0!important;border-radius:0;box-shadow:none}
 html[data-theme="lonetrail"] .brand-mark svg{width:45px;height:42px}
 html[data-theme="lonetrail"] .brand-mark :is(.prism-body,.prism-inner,.prism-input){stroke:var(--lt-paper)!important}
@@ -89,8 +90,8 @@ html[data-theme="lonetrail"] #electronic-notes-open{box-shadow:inset 3px 0 var(-
 html[data-theme="lonetrail"] .sidebar :is(.theme-menu summary,.cloud-entry):hover{background:var(--lt-paper-3);box-shadow:inset 5px 0 var(--lt-teal)}
 html[data-theme="lonetrail"] #notes-library-open:hover{box-shadow:inset 5px 0 var(--lt-amber)}
 html[data-theme="lonetrail"] #electronic-notes-open:hover{box-shadow:inset 5px 0 var(--lt-red)}
-html[data-theme="lonetrail"] .cloud-entry small{display:none}
-html[data-theme="lonetrail"] .cloud-entry>span{font-family:"Microsoft YaHei","SimHei",sans-serif;font-weight:700}
+html[data-theme="lonetrail"] .cloud-entry small{display:inline;flex-shrink:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#415E52;font:700 12px/1.5 "Microsoft YaHei","SimHei",sans-serif;text-shadow:0 0 3px #8CB8A966}
+html[data-theme="lonetrail"] .cloud-entry>span{font-family:"Microsoft YaHei","SimHei",sans-serif;font-weight:700;font-size:13px;text-shadow:0 0 3px #E3A53B38}
 html[data-theme="lonetrail"] .sidebar .theme-menu summary span{color:var(--lt-rust)}
 html[data-theme="lonetrail"] .theme-menu .theme-picker{background:var(--lt-paper-2);border-color:var(--lt-line);border-radius:0;box-shadow:none}
 html[data-theme="lonetrail"] .theme-picker button{border-radius:0;background:var(--lt-paper-2);color:var(--lt-ink);border-color:var(--lt-line)}
@@ -128,7 +129,7 @@ html[data-theme="lonetrail"] :is(.sidebar-scroll,.sidebar-chapter-scroll)::-webk
 
 /* 卡片 — registered paper document with a 5% mission seal. */
 html[data-theme="lonetrail"] :is(.card,.year-card,.empty){background:var(--lt-paper-2);border:1px solid var(--lt-line);border-radius:0;box-shadow:none;backdrop-filter:none}
-html[data-theme="lonetrail"] .card{min-height:100%;padding:30px 36px 52px;isolation:isolate;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke='%23302D27' opacity='.05'%3E%3Ccircle cx='70' cy='70' r='61'/%3E%3Ccircle cx='70' cy='70' r='52'/%3E%3Cpath d='M70 29L79 61L111 70L79 79L70 111L61 79L29 70L61 61Z'/%3E%3Cpath d='M70 4V15M70 125V136M4 70H15M125 70H136'/%3E%3C/g%3E%3C/svg%3E");background-size:120px;background-position:right 24px top 26px;background-repeat:no-repeat}
+html[data-theme="lonetrail"] .card{display:flex;flex-direction:column;min-height:100%;padding:30px 36px 52px;isolation:isolate;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke='%23302D27' opacity='.05'%3E%3Ccircle cx='70' cy='70' r='61'/%3E%3Ccircle cx='70' cy='70' r='52'/%3E%3Cpath d='M70 29L79 61L111 70L79 79L70 111L61 79L29 70L61 61Z'/%3E%3Cpath d='M70 4V15M70 125V136M4 70H15M125 70H136'/%3E%3C/g%3E%3C/svg%3E");background-size:120px;background-position:right 24px top 26px;background-repeat:no-repeat}
 html[data-theme="lonetrail"] .card::before{content:"";left:0;right:0;top:0;width:auto;height:3px;opacity:1;border-radius:0;background:var(--lt-rail)}
 html[data-theme="lonetrail"] .card::after{content:"";position:absolute;inset:9px;pointer-events:none;background:linear-gradient(var(--lt-line),var(--lt-line)) left top/10px 1px,linear-gradient(var(--lt-line),var(--lt-line)) left top/1px 10px,linear-gradient(var(--lt-line),var(--lt-line)) right top/10px 1px,linear-gradient(var(--lt-line),var(--lt-line)) right top/1px 10px,linear-gradient(var(--lt-line),var(--lt-line)) left bottom/10px 1px,linear-gradient(var(--lt-line),var(--lt-line)) left bottom/1px 10px,linear-gradient(var(--lt-line),var(--lt-line)) right bottom/10px 1px,linear-gradient(var(--lt-line),var(--lt-line)) right bottom/1px 10px;background-repeat:no-repeat}
 html[data-theme="lonetrail"] .qmeta{background:var(--lt-archive);color:var(--lt-ink);font:12px/1.8 var(--lt-mono);padding:9px 12px 9px 18px;border:1px solid var(--lt-line);box-shadow:inset 4px 0 var(--lt-ink),inset 8px 0 var(--lt-orange);gap:10px}
@@ -173,7 +174,7 @@ html[data-theme="lonetrail"] .figures img{cursor:zoom-in;border-radius:0}
 html[data-theme="lonetrail"] .figure figcaption{font:10px/1.7 var(--lt-mono);color:var(--lt-muted)}
 html[data-theme="lonetrail"] .figure figcaption::before{content:"FIG. " counter(lt-figure,decimal-leading-zero) " / ";color:var(--lt-rust)}
 
-html[data-theme="lonetrail"] .card-tail{position:relative;left:auto;right:auto;bottom:auto;height:auto;min-height:24px;margin-top:30px;padding-top:8px;border-top:1px solid var(--lt-rule);background:repeating-linear-gradient(90deg,var(--lt-line) 0 1px,transparent 1px 12px) left top/120px 4px no-repeat;text-align:right}
+html[data-theme="lonetrail"] .card-tail{position:relative;left:auto;right:auto;bottom:auto;height:auto;min-height:24px;margin-top:auto;padding-top:8px;border-top:1px solid var(--lt-rule);background:repeating-linear-gradient(90deg,var(--lt-line) 0 1px,transparent 1px 12px) left top/120px 4px no-repeat;text-align:right}
 html[data-theme="lonetrail"] .card-tail::before{content:"END OF RECORD / OPTICS";font:8px/1.4 var(--lt-mono);letter-spacing:.1em;color:var(--lt-muted)}
 /* 翻页 */
 html[data-theme="lonetrail"] .question-nav{background:var(--lt-paper);border-top:1px solid var(--lt-line);padding:8px 24px}
@@ -234,13 +235,12 @@ html[data-theme="lonetrail"] .cloud-dialog{padding:0 24px 24px}
 html[data-theme="lonetrail"] .cloud-head{margin:0 -24px 20px;padding:20px 24px;position:relative;background:var(--lt-ink);color:var(--lt-paper)}
 html[data-theme="lonetrail"] .question-notes-dialog .notes-head{background:var(--lt-ink);color:var(--lt-paper);border:0}
 html[data-theme="lonetrail"] :is(#question-notes-dialog,#electronic-notes-dialog) .notes-head::before,html[data-theme="lonetrail"] .cloud-head::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--lt-rail)}
-html[data-theme="lonetrail"] :is(.cloud-dialog,.question-notes-dialog)::backdrop{background:#1816128C;backdrop-filter:blur(2px)}
+html[data-theme="lonetrail"] :is(.cloud-dialog,.question-notes-dialog)::backdrop{background:rgb(48 45 39 / .48);backdrop-filter:none;-webkit-backdrop-filter:none;animation:none;transform:none}
 html[data-theme="lonetrail"] #question-notes-dialog{background:transparent;border:0;overflow:visible}
 html[data-theme="lonetrail"] #question-notes-dialog .notes-panel{box-sizing:border-box;max-height:inherit;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;background:var(--lt-paper-2);border:1px solid var(--lt-line)}
 html[data-theme="lonetrail"] #question-notes-dialog[data-view="current"] .notes-panel{height:min(640px,calc(100dvh - 36px))}
-html[data-theme="lonetrail"] #question-notes-dialog::backdrop{background:rgb(48 45 39 / .48);backdrop-filter:none;-webkit-backdrop-filter:none;animation:none;transform:none}
 /* A quiet background keeps focus on the notes without expensive blur sampling. */
-html[data-theme="lonetrail"]:has(#question-notes-dialog[open]) #app :is(.live-dot,.terminal-header,.sidebar-scroll,.card,.question-meter-current,.region,.prism-ray),html[data-theme="lonetrail"]:has(#question-notes-dialog[open]) #app .terminal-header::before{animation-play-state:paused!important}
+html[data-theme="lonetrail"]:has(:is(#question-notes-dialog,#cloud-dialog,#electronic-notes-dialog)[open]) #app :is(.live-dot,.terminal-header,.sidebar-scroll,.card,.question-meter-current,.region,.prism-ray),html[data-theme="lonetrail"]:has(:is(#question-notes-dialog,#cloud-dialog,#electronic-notes-dialog)[open]) #app .terminal-header::before{animation-play-state:paused!important}
 html[data-theme="lonetrail"] :is(.cloud-dialog p,.cloud-hint,.notes-body p){color:var(--lt-muted)}
 html[data-theme="lonetrail"] :is(.cloud-dialog button,.notes-list-item,.notes-original,.notes-content,.notes-textarea,.notes-confirm,.notes-body .btn){border-radius:0;border-color:var(--lt-line);background:var(--lt-paper);color:var(--lt-ink)}
 html[data-theme="lonetrail"] .cloud-head button{background:transparent;color:var(--lt-paper);border-color:var(--lt-console-rule)}
@@ -323,3 +323,5 @@ html[data-theme="lonetrail"] .card.lt-question-change{animation:lt-document-ente
 html[data-theme="lonetrail"] .question-meter-current.lt-digit-change{animation:lt-digit .25s ease-out both}
 html[data-theme="lonetrail"].theme-switching *,html[data-theme="lonetrail"].theme-switching *::before,html[data-theme="lonetrail"].theme-switching *::after{transition:none!important;animation:none!important}
 @media(prefers-reduced-motion:reduce){html[data-theme="lonetrail"] *,html[data-theme="lonetrail"] *::before,html[data-theme="lonetrail"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+html[data-theme="lonetrail"] .tree-subsection-title{color:var(--lt-ink);border-color:var(--lt-line);font:700 13px/1.7 var(--lt-title-font);box-shadow:inset 2px 0 var(--lt-orange);padding-left:12px}
