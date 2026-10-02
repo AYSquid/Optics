@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 450" role="img" aria-labelledby="title desc">
+<title id="title">2018 均匀加宽增益曲线的四幅选项图</title><desc id="desc">依原扫描图作定性重绘：A 窄峰超过阈值，B 中央局部凹陷，C 无凹陷的单峰在阈值处钳制，D 双峰与中央烧孔。坐标未给定数值。</desc>
+<style>path,line{fill:none;stroke:#302D27;stroke-width:1.05;vector-effect:non-scaling-stroke;stroke-linejoin:round}text{fill:#302D27;font-family:Microsoft YaHei,Segoe UI,sans-serif;font-size:16px}.threshold{stroke:#587E71;stroke-dasharray:5 4}.curve{stroke:#A35F35;stroke-width:1.15}</style>
+<defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3L0 6"/></marker></defs>
+<text x="360" y="25" text-anchor="middle">增益 g — 频率 ν（原图定性重绘，坐标未给数值）</text>
+<g transform="translate(35 45)">
+<path d="M0 135H285M140 155V5" marker-end="url(#arrow)"/><line x1="15" y1="78" x2="275" y2="78" class="threshold"/>
+<path d="M15 132C90 131 111 119 125 72C132 28 148 28 155 72C169 119 190 131 275 132" class="curve"/>
+<text x="150" y="14">g</text><text x="285" y="152">ν</text><text x="18" y="70">gₜₕ</text><text x="140" y="185" text-anchor="middle">A</text>
+</g>
+<g transform="translate(400 45)">
+<path d="M0 135H285M140 155V5" marker-end="url(#arrow)"/><line x1="15" y1="78" x2="275" y2="78" class="threshold"/>
+<path d="M15 132C85 130 104 117 118 73C129 31 135 46 140 62C146 45 151 32 162 73C177 117 195 130 275 132" class="curve"/>
+<text x="150" y="14">g</text><text x="285" y="152">ν</text><text x="18" y="70">gₜₕ</text><text x="140" y="185" text-anchor="middle">B</text>
+</g>
+<g transform="translate(35 240)">
+<path d="M0 135H285M140 155V5" marker-end="url(#arrow)"/><line x1="15" y1="78" x2="275" y2="78" class="threshold"/>
+<path d="M15 132C72 130 91 116 111 91C128 74 151 74 169 91C189 116 208 130 275 132" class="curve"/>
+<text x="150" y="14">g</text><text x="285" y="152">ν</text><text x="18" y="70">gₜₕ</text><text x="140" y="185" text-anchor="middle">C</text>
+</g>
+<g transform="translate(400 240)">
+<path d="M0 135H285M140 155V5" marker-end="url(#arrow)"/><line x1="15" y1="78" x2="275" y2="78" class="threshold"/>
+<path d="M15 132C78 130 105 100 114 58C122 30 130 87 140 88C150 87 158 30 166 58C175 100 201 130 275 132" class="curve"/>
+<text x="150" y="14">g</text><text x="285" y="152">ν</text><text x="18" y="70">gₜₕ</text><text x="140" y="185" text-anchor="middle">D</text>
+</g>
+</svg>
