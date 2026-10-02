@@ -25824,25 +25824,53 @@
     "formulas": [],
     "pitfalls": []
    },
-   "stemImages": [],
-   "analysisImages": [],
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/prism-2021-source.svg",
+     "alt": "2021 棱镜与透镜系统给定光路（按原图投影复绘；P 为题干指定像方焦面）"
+    }
+   ],
+   "analysisImages": [
+    {
+     "src": "assets/audit-diagrams/prism-2021-axes.svg",
+     "alt": "2021 坐标答案：先追踪棱镜，再计入透镜实像倒像"
+    }
+   ],
    "topicAssignment": "keyword_review_pending",
    "type": "calc",
    "stem": [
     {
      "k": "p",
      "x": "已知透镜和棱镜组合而成的系统如下，入射的坐标系已画出，P 平面是透镜的像方焦面，也是本次观察时成像的位置，试画出 a 空间和 P 处的坐标系。"
-    },
-    {
-     "k": "p",
-     "x": "【原题含图，图像未转录；请查看原照片 IMG_20260927_145729.jpg。】"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "playable": false,
-   "completeness": "needs_image",
+   "answer": [
+    {
+     "k": "p",
+     "x": "a：$x_a$ 向右上，$y_a$ 指向纸外（$\\odot$），$z_a$ 向右下。P：$x_P$ 向左上，$y_P$ 指向纸内（$\\otimes$），$z_P$ 向右上。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "先区分普通实体边与屋脊标记。本图第一棱镜沿原光路反射两次，第二个截顶直角棱镜反射一次；第一棱镜上方的横向实体边不构成双线屋脊面。"
+    },
+    {
+     "k": "p",
+     "x": "取 $z$ 始终沿光轴。到a累计两次普通反射、无屋脊，垂直主截面的 $y$ 仍指向纸外，手性仍为右手系。$z_a$ 向右下，据 $x_a\\times y_a=z_a$ 得 $x_a$ 向右上。"
+    },
+    {
+     "k": "p",
+     "x": "第二棱镜后累计三次普通反射，$y$ 仍向纸外，但手性变为左手系；沿出射右上方向，透镜前的 $x$ 因而指向右下。"
+    },
+    {
+     "k": "p",
+     "x": "P 是透镜的像方焦面，本题观察的是透镜所成的实像。物镜横向放大率为负，两个横轴一起反向：$x_P$ 向左上、$y_P$ 向纸内；$z_P$ 仍沿出射光向右上。同时反转两个横轴不改变手性。"
+    }
+   ],
+   "playable": true,
+   "completeness": "complete",
    "answerAvailability": "not_provided",
    "review": {
     "needsCheck": true,
@@ -37852,8 +37880,18 @@
     "formulas": [],
     "pitfalls": []
    },
-   "stemImages": [],
-   "analysisImages": [],
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/prism-2025-source.svg",
+     "alt": "2025 三棱镜系统给定光路（按原图投影复绘；原图未给入射坐标轴）"
+    }
+   ],
+   "analysisImages": [
+    {
+     "src": "assets/audit-diagrams/prism-2025-axes.svg",
+     "alt": "2025 坐标答案：示范采用入射x向左、y向纸外、z向上的约定"
+    }
+   ],
    "topicAssignment": "keyword_review_pending",
    "type": "calc",
    "stem": [
@@ -37862,37 +37900,45 @@
      "x": "如图，分别写出 a 处和 b 处的坐标系。"
     },
     {
-     "k": "p",
-     "x": "【原题含图，图像未转录。】"
-    },
-    {
      "k": "note",
      "x": "原卷印作“a 出和 b 出”。"
     },
     {
      "k": "note",
      "x": "原图：IMG_20260923_104412.jpg"
+    },
+    {
+     "k": "note",
+     "x": "原图未标入射坐标轴；本解示范约定入射x向左、y向纸外、z向上，并给出a、b之间不依赖此选取的相对关系。"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "来源仅给坐标标签：a处$(x',y',z')$，b处$(x'',y'',z'')$。具体轴向需对照未转录的答案图。"
+     "x": "a 与 b 的坐标系相同。采用入射 $x$ 向左、$y$ 指向纸外、$z$ 向上的约定：两处均为 $x$ 向上、$y$ 指向纸外（$\\odot$）、$z$ 向右。原图未标入射轴；本答案明确所选坐标约定。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "入射坐标系为 (x, y, z)；**a 处**为 $(x', y', z')$；**b 处**为 $(x'', y'', z'')$——按棱镜逐次反射递推坐标轴取向。"
+     "x": "原照片没有给入射坐标轴。为使画法可复核，本解明确选择一个右手系：入射 $z$ 向上、$x$ 向左、$y$ 指向纸外；不把此约定当成原卷印出的条件。"
     },
     {
-     "k": "note",
-     "x": "参考来源：电子版_修订/2025_答案.md:42。按用户修订稿导入，未作为官方标准答案认证。"
+     "k": "p",
+     "x": "按图示光路，三个棱镜在主截面中分别反射2次、3次和1次，未画双线屋脊标记。第一棱镜使光轴由向上转成向右；累计偶数次反射且 $y$ 不变，因此a处 $x$ 向上、$y$ 向纸外、$z$ 向右。"
+    },
+    {
+     "k": "p",
+     "x": "中间三次反射使横向 $x$ 相对光轴翻转；末端截顶棱镜再反射一次，又翻转一次。a到b共4次普通反射，入射与出射光轴平行且同向，两个横向坐标恢复。因此b坐标与a相同。"
+    },
+    {
+     "k": "p",
+     "x": "若采用另一个入射横轴约定，须从该约定同步追踪；“a与b相同”这一相对结论保持不变。图中投影斜线不能直接当作实际空间面角来计算。"
     }
    ],
-   "playable": false,
-   "completeness": "needs_image",
+   "playable": true,
+   "completeness": "complete",
    "answerAvailability": "reference_provided",
    "review": {
     "needsCheck": true,
@@ -41563,25 +41609,57 @@
     "formulas": [],
     "pitfalls": []
    },
-   "stemImages": [],
-   "analysisImages": [],
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/prism-2026-source.svg",
+     "alt": "2026 三棱镜系统给定光路（按原图投影复绘；不含题面旁手写答案）"
+    }
+   ],
+   "analysisImages": [
+    {
+     "src": "assets/audit-diagrams/prism-2026-axes.svg",
+     "alt": "2026 坐标答案：a累计5次反射一组屋脊；b累计9次反射两组屋脊"
+    }
+   ],
    "topicAssignment": "keyword_review_pending",
    "type": "calc",
    "stem": [
     {
      "k": "p",
      "x": "求 a 和 b 处的坐标。"
-    },
-    {
-     "k": "p",
-     "x": "【原题含图，图像未转录；请查看原照片 IMG_20260923_104353.jpg。】"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "playable": false,
-   "completeness": "needs_image",
+   "answer": [
+    {
+     "k": "p",
+     "x": "a：$x_a$ 向左上，$y_a$ 指向纸内（$\\otimes$），$z_a$ 向右上。b：$x_b$ 向右，$y_b$ 指向纸外（$\\odot$），$z_b$ 向上。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "按用户确认及笔记的图示约定，两道平行横杠表示屋脊反射面。屋脊两面共反射两次；相对于主截面中画出的一次反射，应增加一次实际反射，不能误加两次。"
+    },
+    {
+     "k": "p",
+     "x": "第一棱镜为两次普通反射。中间棱镜的入射光越过两束光的交叉点，先到双线屋脊面（实际两次反射），再到另一侧普通面（一次反射）后出射；中间共3次实际反射。交叉点没有反射面，不在那里折返。"
+    },
+    {
+     "k": "p",
+     "x": "因此到a累计 $2+3=5$ 次反射、一组屋脊。$y_a$ 反向指向纸内，手性因总反射为奇数变成左手系。$z_a$ 沿光路向右上，由 $x_a\\times y_a=-z_a$ 得 $x_a$ 向左上。"
+    },
+    {
+     "k": "p",
+     "x": "末端棱镜的主截面光路有3次反射，其中双线面替换成屋脊两次反射，故实际为4次。到b累计 $2+3+4=9$ 次反射、两组屋脊；$y_b$ 恢复向纸外，手性仍为左手系。沿图示 $z_b$ 向上，得到 $x_b$ 向右。"
+    },
+    {
+     "k": "p",
+     "x": "核对：$x_a\\times y_a=-z_a$、$x_b\\times y_b=-z_b$ 均成立。仅凭“每个屋脊有两次反射”而忽略棱镜中的其他普通反射，会把本题误判成右手系。"
+    }
+   ],
+   "playable": true,
+   "completeness": "complete",
    "answerAvailability": "not_provided",
    "review": {
     "needsCheck": true,
