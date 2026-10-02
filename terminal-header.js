@@ -41,6 +41,31 @@
     meter.append(label, value);
     progress.after(meter);
 
+    // Lone Trail v2: presentation-only registration label and short readout cues.
+    const coordinates = document.createElement('span');
+    coordinates.className = 'lt-coord';
+    coordinates.setAttribute('aria-hidden', 'true');
+    coordinates.textContent = 'LONE TRAIL / ORBIT 09';
+    coordinates.hidden = true;
+    topbar.insertBefore(coordinates, topbar.querySelector('.topbar-right'));
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const presentationTimers = new Map();
+    function cue(element, className, duration) {
+      if (!element || reduceMotion.matches || document.documentElement.dataset.theme !== 'lonetrail' || document.documentElement.classList.contains('theme-switching')) return;
+      clearTimeout(presentationTimers.get(element));
+      element.classList.remove(className);
+      void element.offsetWidth;
+      element.classList.add(className);
+      presentationTimers.set(element, setTimeout(() => { element.classList.remove(className); presentationTimers.delete(element); }, duration));
+    }
+    let previousNumber = '';
+    new MutationObserver(() => {
+      if (current.textContent !== previousNumber) { previousNumber = current.textContent; cue(current, 'lt-digit-change', 260); }
+    }).observe(current, {childList:true, characterData:true, subtree:true});
+    const stem = document.getElementById('stem');
+    new MutationObserver(() => cue(document.getElementById('card'), 'lt-question-change', 190))
+      .observe(stem, {childList:true});
+
     function updateMeter() {
       const text = progress.textContent;
       const match = text.match(/第\s*(\d+)\s*题\s*\/\s*共\s*(\d+)\s*题/);
@@ -49,6 +74,7 @@
       label.textContent = match || /^共\s*0\s*题/.test(text) ? 'QUESTION' : 'ARCHIVE';
       current.textContent = match ? match[1].padStart(3, '0') : /^共\s*0\s*题/.test(text) ? '000' : text;
       total.textContent = match ? ' / ' + match[2] : /^共\s*0\s*题/.test(text) ? ' / 0' : '';
+      coordinates.textContent = match ? 'LONE TRAIL / ORBIT ' + match[1].padStart(2, '0') : 'LONE TRAIL / ARCHIVE';
       meter.classList.toggle('question-meter-summary', !match && !/^共\s*0\s*题/.test(text));
     }
     new MutationObserver(updateMeter).observe(progress, {childList:true, characterData:true, subtree:true});
@@ -91,6 +117,8 @@
         panel.remove();
       }
       subtitle.textContent = enabled ? 'OPTICS / STUDY SYSTEM' : originalSubtitle;
+      terminal.textContent = enabled ? 'TERMINAL / 01 · LONE TRAIL' : 'TERMINAL / 01';
+      coordinates.hidden = !enabled;
     }
     compact.addEventListener('change', syncLayout);
     new MutationObserver(syncLayout).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});

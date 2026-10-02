@@ -173,7 +173,8 @@ var ui = {
   keepCurrent: false,      // 当前题已被改成不符合筛选，但暂时保留供继续阅读
   answerOpen: false,
   analysisOpen: false,
-  choicePick: {},          // 题目 ID -> 已选项，仅本次会话记忆
+  choicePick: {},          // 当前题本次作答；切题后清空，重新进入时不透露答案
+  choiceQuestionId: null,
   openChapters: {}
 };
 
@@ -393,7 +394,12 @@ function renderTree() {
     var btn = el('button', 'tree-chap-btn tree-btn');
     btn.type = 'button';
     var caret = el('span', 'tree-caret', '▶');
-    btn.appendChild(caret);
+    var row = el('div', 'tree-chapter-row');
+    var expand = el('button', 'tree-expand');
+    expand.type = 'button';
+    expand.appendChild(caret);
+    expand.setAttribute('aria-label', (open ? '收起' : '展开') + ch.num + ' ' + ch.title + '的知识点');
+    expand.setAttribute('aria-expanded', open ? 'true' : 'false');
     btn.title = ch.num + ' ' + ch.title;
     btn.appendChild(el('span', 'tree-name', ch.num + ' ' + ch.title));
     var matchCount = DATA.questions.filter(function (q) {
@@ -401,9 +407,11 @@ function renderTree() {
     }).length;
     btn.appendChild(countBadge(ch.count, matchCount));
     if (ui.scope.type === 'chapter' && ui.scope.chapterId === ch.id) btn.classList.add('is-current');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    row.classList.toggle('is-current', btn.classList.contains('is-current'));
 
     var kids = el('div', 'tree-children');
+    kids.id = 'chapter-topics-' + ch.id;
+    expand.setAttribute('aria-controls', kids.id);
     kids.setAttribute('aria-label', ch.title + '的知识点');
     ch.knowledge.forEach(function (k) {
       var kb = el('button', 'tree-kn-btn tree-btn');
@@ -419,21 +427,21 @@ function renderTree() {
       kids.appendChild(kb);
     });
 
-    btn.addEventListener('click', function () {
+    expand.addEventListener('click', function () {
       var isOpen = node.getAttribute('data-open') === '1';
       node.setAttribute('data-open', isOpen ? '0' : '1');
-      btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      expand.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      expand.setAttribute('aria-label', (isOpen ? '展开' : '收起') + ch.num + ' ' + ch.title + '的知识点');
       ui.openChapters[ch.id] = !isOpen;
       savePrefs();
-      if (isOpen) {
-        setScope({ type: 'chapter', chapterId: ch.id });
-        ui.openChapters[ch.id] = false; savePrefs(); renderTree();
-      } else {
-        setScope({ type: 'chapter', chapterId: ch.id });
-      }
+    });
+    btn.addEventListener('click', function () {
+      setScope({ type: 'chapter', chapterId: ch.id }, { keepExpansion: true });
     });
 
-    node.appendChild(btn);
+    row.appendChild(expand);
+    row.appendChild(btn);
+    node.appendChild(row);
     node.appendChild(kids);
     tree.appendChild(node);
   });
@@ -506,6 +514,13 @@ function currentQuestion() {
   return DATA.byId[id] || null;
 }
 
+function resetChoiceForQuestion(q) {
+  var nextId = q ? q.id : null;
+  if (ui.choiceQuestionId === nextId) return;
+  ui.choicePick = {};
+  ui.choiceQuestionId = nextId;
+}
+
 function render() {
   renderFilterBar();
   renderTree();
@@ -515,6 +530,7 @@ function render() {
   renderStudyScopeNavigation();
 
   var q = currentQuestion();
+  resetChoiceForQuestion(q);
   var card = $('card');
   var empty = $('empty');
 
@@ -603,6 +619,7 @@ function render() {
     q.options.forEach(function (o) {
       var b = el('button', 'option');
       b.type = 'button';
+      b.setAttribute('data-option-key', o.key);
       b.setAttribute('aria-pressed', picked === o.key ? 'true' : 'false');
       b.appendChild(el('span', 'option-key', o.key));
       var t = el('span', 'option-text');
@@ -612,12 +629,15 @@ function render() {
         if(q.playable === false) return;
         ui.choicePick[q.id] = (ui.choicePick[q.id] === o.key) ? '' : o.key;
         if(q.occurrenceId) saveExamChoice(q);
-        opts.querySelectorAll('.option').forEach(function (x) {
-          x.setAttribute('aria-pressed', x === b && ui.choicePick[q.id] === o.key ? 'true' : 'false');
-        });
+        applyChoiceFeedback(q, opts);
       });
       opts.appendChild(b);
     });
+    var result = el('span', 'choice-feedback-live');
+    result.setAttribute('role', 'status');
+    result.setAttribute('aria-live', 'polite');
+    opts.appendChild(result);
+    applyChoiceFeedback(q, opts);
   } else {
     opts.className = 'options';
   }
@@ -641,6 +661,42 @@ function render() {
   $('jump-input').classList.remove('is-error');
   $('jump-input').title = '输入当前列表中的题号';
   $('scroller').scrollTop = 0;
+}
+
+/* Only grade an explicit answer key; pending/absent answers stay ungraded. */
+function choiceAnswerKeys(q) {
+  if (!q || q.playable === false || (q.review && q.review.needsCheck)) return [];
+  var paragraph = (q.answer || []).find(function (block) { return block.k === 'p'; });
+  if (!paragraph) return [];
+  var raw = String(paragraph.x || '').trim();
+  var marked = raw.match(/^\*\*([A-H](?:[A-H]|\s*[、,，和及与]\s*[A-H])*)\*\*/i);
+  var text = marked ? marked[1] : raw.replace(/[*`]/g, '').trim();
+  // Commas can introduce explanatory text (e.g. "D，F 数为 5.6").
+  // Treat them as a key separator only inside a bold key or a terminated key list.
+  var match = text.match(/^(?:(?:正确答案|正确选项|答案)\s*[:：]?\s*|选(?:择)?\s*)?([A-H](?:[A-H]|\s*[、,，和及与]\s*[A-H])*)(?=$|[。；;:：.()（）])/i) ||
+    text.match(/^(?:(?:正确答案|正确选项|答案)\s*[:：]?\s*|选(?:择)?\s*)?([A-H](?:[A-H]|\s*[、和及与]\s*[A-H])*)(?=$|[\s。；;:：,，.()（）]|为|项)/i);
+  if (!match) return [];
+  var keys = match[1].toUpperCase().match(/[A-H]/g);
+  var available = (q.options || []).map(function (option) { return String(option.key).toUpperCase(); });
+  if (!keys.every(function (key) { return available.indexOf(key) >= 0; })) return [];
+  return keys.filter(function (key, index) { return keys.indexOf(key) === index; });
+}
+
+function applyChoiceFeedback(q, opts) {
+  var picked = ui.choicePick[q.id] || '';
+  var keys = choiceAnswerKeys(q);
+  var wrong = picked && keys.length && keys.indexOf(String(picked).toUpperCase()) < 0;
+  opts.querySelectorAll('.option').forEach(function (button) {
+    var key = button.getAttribute('data-option-key');
+    var selected = key === picked;
+    var correct = keys.indexOf(String(key).toUpperCase()) >= 0;
+    var verdict = picked && keys.length && correct && (selected || wrong) ? 'correct' : wrong && selected ? 'wrong' : '';
+    button.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    button.setAttribute('data-verdict', verdict);
+    button.title = verdict === 'correct' ? '正确答案' : verdict === 'wrong' ? '选择错误' : '';
+  });
+  var live = opts.querySelector('.choice-feedback-live');
+  if (live) live.textContent = !picked ? '' : !keys.length ? '本题答案尚待核对，暂不判定正误。' : wrong ? '选择错误。正确选项为 ' + keys.join('、') + '。' : keys.length > 1 ? '所选选项正确。本题有多个正确选项。' : '选择正确。';
 }
 
 function currentKnNames(q) {
@@ -815,9 +871,9 @@ function renderNotice() {
 
 /* ============================================================ 交互动作 */
 
-function setScope(scope) {
+function setScope(scope, opts) {
   ui.scope = scope;
-  if (scope.type !== 'all') ui.openChapters[scope.chapterId] = true;
+  if (scope.type !== 'all' && !(opts && opts.keepExpansion)) ui.openChapters[scope.chapterId] = true;
   savePrefs();
   reselect({ preferReview: scope.type === 'chapter' || scope.type === 'kn' });
   closeNav();

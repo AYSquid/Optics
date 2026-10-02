@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 886 411" fill="none">
+  <!-- Same path and 97% / 3% notch at phase 89 as rhine-lab.html; static. -->
+  <g stroke="#864523">
+    <path pathLength="100" stroke-width="72" stroke-dasharray="97 3" stroke-dashoffset="-89" d="M335.26,327.76C275.26,390.26,178,381,121.5,351.5S25.94,250.4,38.5,176C49.64,110,105,56.5,161.5,41.5c37-9.82,112.5-8,153,31.5S525,293.5,560,328s118.5,66.5,188,30.5c52.72-27.31,84.34-60,98-120C858.61,183.11,838,131,813,99S748,42,694.5,37,593,56.5,564,84Z"/>
+    <path stroke-width="44" d="M603,204h134M212.5,271V137M146,204h134"/>
+  </g>
+</svg>

@@ -7,12 +7,14 @@
  const FIELDS='id,user_id,question_id,content,created_at,updated_at',PAGE=50;
  let uid=null,generation=0,count=null,countRequest=0,cache=new Map(),pending=new Map(),drafts=new Map();
  let library=[],listOffset=0,listMore=false,libraryLoaded=false,loadingList=false;
- let current=null,mode='list',editing=false,busy=false,viewRevision=0,lastFocus=null,toastTimer;
- const dialog=document.createElement('dialog');dialog.id='question-notes-dialog';dialog.className='question-notes-dialog';dialog.setAttribute('aria-labelledby','notes-title');
+ let current=null,mode='list',editing=false,busy=false,viewRevision=0,lastFocus=null,toastTimer,entryRevision=0;
+ const dialog=document.createElement('dialog');dialog.id='question-notes-dialog';dialog.className='question-notes-dialog';dialog.setAttribute('aria-labelledby','notes-title');dialog.setAttribute('autofocus','');
  const head=document.createElement('div');head.className='notes-head';
  const title=document.createElement('h2');title.id='notes-title';title.textContent='题目笔记';
  const close=document.createElement('button');close.type='button';close.className='notes-close';close.textContent='×';close.setAttribute('aria-label','关闭题目笔记');
- head.append(title,close);const body=document.createElement('div');body.className='notes-body';dialog.append(head,body);document.body.append(dialog);
+ head.append(title,close);const body=document.createElement('div');body.className='notes-body';
+ // Keep the native dialog/backdrop stationary; animate its separate visual panel.
+ const panel=document.createElement('div');panel.className='notes-panel';panel.append(head,body);dialog.append(panel);document.body.append(dialog);
  const toastNode=document.createElement('div');toastNode.className='notes-toast';toastNode.hidden=true;toastNode.setAttribute('role','status');document.body.append(toastNode);
  const node=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
  function button(text,cls,fn){const b=node('button',cls||'btn btn-outline',text);b.type='button';b.onclick=fn;return b;}
@@ -64,7 +66,18 @@
   const base=drafts.has(key)?drafts.get(key).base:saved;
   if(text===(saved?.content||''))drafts.delete(key);else drafts.set(key,{text,base});
  }
- function show(){if(dialog.open)return;lastFocus=document.activeElement;dialog.showModal();}
+ function show(){
+  dialog.dataset.view=mode==='current'?'current':'library';
+  if(dialog.open)return;
+  lastFocus=document.activeElement;
+  const revision=++entryRevision;
+  dialog.dataset.entering='pending';dialog.showModal();
+  // Give the stationary background a paint before animating the panel.
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   if(dialog.open&&revision===entryRevision)dialog.dataset.entering='ready';
+  }));
+ }
+ dialog.addEventListener('close',()=>{if(!dialog.open){entryRevision++;delete dialog.dataset.entering;}});
  function closeModal(){rememberDraft();const hasDraft=current&&drafts.has(draftKey(current.id));dialog.close();viewRevision++;current=null;lastFocus?.focus({preventScroll:true});if(hasDraft)toast('未保存文字已保留，重新打开这道题可继续编辑（刷新页面会清除草稿）。');}
  close.onclick=closeModal;dialog.addEventListener('cancel',e=>{e.preventDefault();closeModal();});
  dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeModal();});
@@ -75,20 +88,27 @@
  function readError(error,retry){body.replaceChildren(node('p','notes-description',friendly(error)),button('重新加载','btn btn-outline',retry));}
  async function openCurrent(){const q=activeQuestion();if(!q||!uid)return;mode='current';await openDetail(q.id,true);}
  async function openDetail(id,edit){
-  rememberDraft();const q=question(id);current={id,q};editing=edit;show();setHead(mode!=='current');const revision=++viewRevision;
-  loading('正在读取云端笔记…');
+  rememberDraft();const q=question(id);current={id,q};editing=edit;setHead(mode!=='current');const revision=++viewRevision;
+  loading('正在读取云端笔记…');show();
   try{const row=await readNote(id,true);if(revision!==viewRevision||!dialog.open)return;current={id,q};renderDetail(row,edit);}
   catch(e){if(revision===viewRevision&&dialog.open)readError(e,()=>openDetail(id,edit));}
  }
  function original(q){
   const section=node('section','notes-original');let into=section;
-  if(mode==='current'){const d=node('details');d.append(node('summary',null,'查看原题'));section.append(d);into=d;}else into.append(node('h3',null,'原题'));
-  if(!q){into.append(node('p',null,'对应题目资料暂不可用；笔记仍可查看与编辑。'));return section;}
+  if(mode==='current'){
+   const d=node('details');d.append(node('summary',null,'查看原题'));section.append(d);
+   // Closed original questions do not need KaTeX layout or image decoding yet.
+   let rendered=false;
+   d.addEventListener('toggle',()=>{if(d.open&&!rendered){rendered=true;renderOriginal(q,d);}});
+  }else{into.append(node('h3',null,'原题'));renderOriginal(q,into);}
+  return section;
+ }
+ function renderOriginal(q,into){
+  if(!q){into.append(node('p',null,'对应题目资料暂不可用；笔记仍可查看与编辑。'));return;}
   const stem=node('div','notes-stem');renderBlocks(q.stem,stem);into.append(stem);
   if(q.options?.length){const options=node('div','notes-options');q.options.forEach(o=>{const item=node('div','notes-option');item.append(node('strong',null,o.key));const text=node('span');renderInline(o.x,text);item.append(text);options.append(item);});into.append(options);}
   const images=q.stemImages?.length?q.stemImages:(q.occurrenceId?EXAMS.byOccurrence[q.occurrenceId]?.sourceImages||[]:[]);
-  images.forEach(im=>{const fig=node('figure');const img=node('img');img.src=im.src;img.alt=im.alt||im.caption||'原题图片';img.loading='lazy';fig.append(img);if(im.caption)fig.append(node('figcaption',null,im.caption));into.append(fig);});
-  return section;
+  images.forEach(im=>{const fig=node('figure');const img=node('img');img.src=im.src;img.alt=im.alt||im.caption||'原题图片';img.loading='lazy';img.decoding='async';fig.append(img);if(im.caption)fig.append(node('figcaption',null,im.caption));into.append(fig);});
  }
  function renderDetail(row,edit){
   if(!current)return;editing=edit;body.replaceChildren();const q=current.q,id=current.id,draft=drafts.get(draftKey(id));
@@ -102,7 +122,8 @@
   const feedback=node('p','notes-message');feedback.id='notes-message';feedback.setAttribute('role','status');feedback.setAttribute('aria-live','polite');body.append(feedback);
   if(draft)message('已恢复本次页面中未保存的草稿；尚未保存到云端。');
   if(row)body.append(node('p','notes-meta','最后保存：'+formatDate(row.updated_at)));
-  dialog.scrollTop=0;if(edit)byId('notes-text').focus({preventScroll:true});
+  dialog.scrollTop=0;panel.scrollTop=0;
+  if(edit){const input=byId('notes-text');requestAnimationFrame(()=>{if(dialog.open&&input.isConnected&&(document.activeElement===dialog||document.activeElement===close||document.activeElement===document.body))input.focus({preventScroll:true});});}
  }
  async function save(){
   if(busy||!current||!editing)return;

@@ -258,6 +258,19 @@ button { font-family: inherit; font-size: inherit; }
 }
 .card-tail { height: 8px; }
 
+/* Separate chapter selection and disclosure into native keyboard buttons. */
+.tree-chapter-row { display: flex; align-items: stretch; }
+.tree-chapter-row > .tree-chap-btn { flex: 1; min-width: 0; width: auto; padding-left: 0; }
+.tree-expand { flex: 0 0 28px; display: flex; align-items: center; justify-content: center; padding: 0; border: 0; background: transparent; color: var(--text); cursor: pointer; }
+.tree-expand .tree-caret { margin: 0; }
+.tree-node[data-open="1"] > .tree-chapter-row .tree-caret { transform: rotate(90deg); }
+.tree-expand:focus-visible { outline: 2px solid var(--blue); outline-offset: -2px; }
+.choice-feedback-live { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.options .option[data-verdict="correct"] { background: #e8f1e9; border-color: #477256; box-shadow: inset 2px 0 #477256; }
+.options .option[data-verdict="wrong"] { background: #f9e8e6; border-color: #a52d2c; box-shadow: inset 2px 0 #a52d2c; }
+.options .option[data-verdict="correct"] .option-key { background: #477256; border-color: #477256; color: #fff; }
+.options .option[data-verdict="wrong"] .option-key { background: #a52d2c; border-color: #a52d2c; color: #fff; }
+
 /* --------------------------------------------------------------------- 图片 */
 .figures { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
 .figure {
