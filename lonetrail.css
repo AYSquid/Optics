@@ -90,8 +90,11 @@ html[data-theme="lonetrail"] #electronic-notes-open{box-shadow:inset 3px 0 var(-
 html[data-theme="lonetrail"] .sidebar :is(.theme-menu summary,.cloud-entry):hover{background:var(--lt-paper-3);box-shadow:inset 5px 0 var(--lt-teal)}
 html[data-theme="lonetrail"] #notes-library-open:hover{box-shadow:inset 5px 0 var(--lt-amber)}
 html[data-theme="lonetrail"] #electronic-notes-open:hover{box-shadow:inset 5px 0 var(--lt-red)}
-html[data-theme="lonetrail"] .cloud-entry small{display:inline;flex-shrink:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#415E52;font:700 12px/1.5 "Microsoft YaHei","SimHei",sans-serif;text-shadow:0 0 3px #8CB8A966}
-html[data-theme="lonetrail"] .cloud-entry>span{font-family:"Microsoft YaHei","SimHei",sans-serif;font-weight:700;font-size:13px;text-shadow:0 0 3px #E3A53B38}
+html[data-theme="lonetrail"] .sidebar .cloud-entry{display:grid;grid-template-columns:minmax(0,1fr) 80px;align-items:center;gap:8px;min-height:44px}
+html[data-theme="lonetrail"] .cloud-entry small{display:block;justify-self:stretch;text-align:center;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#415E52;font:700 12px/1.5 "Microsoft YaHei","SimHei",sans-serif;text-shadow:0 0 3px #8CB8A966}
+html[data-theme="lonetrail"] .cloud-entry>span{min-width:0;text-align:left;font-family:"Microsoft YaHei","SimHei",sans-serif;font-weight:700;font-size:13px;line-height:1.5;text-shadow:0 0 3px #E3A53B38}
+html[data-theme="lonetrail"] #cloud-short{color:var(--lt-red);text-shadow:0 0 3px #A52D2C38}
+html[data-theme="lonetrail"] #cloud-short[data-sync-state="synced"]{color:#08733A;text-shadow:0 0 3px #32C87355}
 html[data-theme="lonetrail"] .sidebar .theme-menu summary span{color:var(--lt-rust)}
 html[data-theme="lonetrail"] .theme-menu .theme-picker{background:var(--lt-paper-2);border-color:var(--lt-line);border-radius:0;box-shadow:none}
 html[data-theme="lonetrail"] .theme-picker button{border-radius:0;background:var(--lt-paper-2);color:var(--lt-ink);border-color:var(--lt-line)}

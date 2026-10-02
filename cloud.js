@@ -3,7 +3,7 @@
  'use strict';
  const model=window.OpticsSyncModel;
  let client=null, user=null, cloudConnected=false, attached=false, applying=false, running=false, timer=null;
- let records={}, baseline={}, storageFailed=false, initError='', generation=0;
+ let records={}, baseline={}, storageFailed=false, statusError=false, initError='', generation=0;
  const byId=id=>document.getElementById(id);
  const uuid=()=>crypto.randomUUID();
  const validStatuses=['known','unknown','shaky'];
@@ -17,10 +17,19 @@
   try{localStorage.setItem(cacheKey(),JSON.stringify(records));storageFailed=false;return true;}
   catch(e){storageFailed=true;message('本地记录缓存无法写入，请先导出备份。为防止丢失，已暂停云端同步。',true);return false;}
  }
- function message(text,error=false){
-  if(byId('cloud-message')){byId('cloud-message').textContent=text;byId('cloud-message').dataset.error=String(error);}
-  if(byId('cloud-short'))byId('cloud-short').textContent=error?'需处理':user?(pending()?'待同步 '+pending():cloudConnected?'已连接':'待连接'):'本地模式';
+ function reflectSyncStatus(){
+  const label=byId('cloud-short');
+  if(!label)return;
+  const count=pending();
+  const state=statusError||storageFailed?'error':!user?'local':navigator.onLine===false?'offline':count?'pending':cloudConnected?'synced':running?'syncing':'disconnected';
+  label.dataset.syncState=state;
+  label.textContent=state==='error'?'需处理':state==='local'?'本地模式':state==='offline'?'未连接':state==='pending'?'待同步 '+count:state==='synced'?'已连接':state==='syncing'?'同步中':'待连接';
   window.dispatchEvent(new Event('optics:sync-status'));
+ }
+ function message(text,error=false){
+  statusError=error;
+  if(byId('cloud-message')){byId('cloud-message').textContent=text;byId('cloud-message').dataset.error=String(error);}
+  reflectSyncStatus();
  }
  function updatePanel(){
   if(!byId('cloud-dialog'))return;
@@ -117,7 +126,7 @@
    if(pending()&&!conflicts().length)schedule();
    return true;
   }catch(e){cloudConnected=false;message(friendly(e),true);}
-  finally{running=false;updatePanel();}
+  finally{running=false;updatePanel();reflectSyncStatus();}
  }
  function friendly(e){
   const m=String(e?.message||e);
@@ -187,9 +196,10 @@
   updatePanel();if(!storageFailed)message(initError|| (user?'正在连接个人云端空间…':'请先登录学习系统。'),!!initError);
   if(user)sync();
   window.addEventListener('online',sync);
+  window.addEventListener('offline',reflectSyncStatus);
   window.addEventListener('focus',()=>{if(user)sync();});
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')sync();});
-  window.addEventListener('storage',e=>{if(user&&e.key===cacheKey()&&!running){try{records=read(cacheKey(),records);apply();updatePanel();}catch(err){message('无法读取其他标签页的记录',true);}}});
+  window.addEventListener('storage',e=>{if(user&&e.key===cacheKey()&&!running){try{records=read(cacheKey(),records);apply();updatePanel();reflectSyncStatus();}catch(err){message('无法读取其他标签页的记录',true);}}});
   setInterval(()=>{if(document.visibilityState==='visible')sync();},60000);
  }
  async function init(){
@@ -199,7 +209,8 @@
    if(next?.user?.id===user?.id)return;
    // Stop in-flight responses from applying to a different identity.
    generation++;attached=false;clearTimeout(timer);cloudConnected=false;
-   user=next?.user||null;records={};baseline={};
+   user=next?.user||null;records={};baseline={};statusError=false;
+   reflectSyncStatus();
   });
  }
  window.OpticsCloud={ready:init(),localKey,attach,capture,isApplying:()=>applying,summary:()=>({configured:!!user,connected:cloudConnected,pending:pending()})};
