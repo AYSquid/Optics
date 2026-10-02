@@ -6596,20 +6596,28 @@
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "**解**："
-    },
-    {
-     "k": "p",
-     "x": "1) 光线沿刻槽面法线入射：2d·sin γ = 2λ ⇒ **λ = 1.5 μm**；"
-    },
-    {
-     "k": "p",
-     "x": "2) 光线沿栅面法线入射：d·sin 2γ = 3λ ⇒ **λ = 866 nm**。"
-    },
-    {
      "k": "note",
-     "x": "参考来源：电子版_修订/2018_答案.md:65。按用户修订稿导入，未作为官方标准答案认证。"
+     "x": "题给30°已按用户确认保留为衍射角；原题没有示意图，未说明对应哪一种入射方式。答案区保留历史参考，本轮未确认其为唯一答案。下面列出同一光栅、固定槽面倾角下的两套条件解，不能混用。"
+    },
+    {
+     "k": "p",
+     "x": "取反射光栅约定，$m\\lambda=d(\\sin i+\\sin\\beta)$，闪耀条件 $\\theta_B=(i+\\beta)/2$；两问属于同一光栅，所以 $\\theta_B$ 固定。"
+    },
+    {
+     "k": "p",
+     "x": "A分支：第一问 $i_1=\\theta_B$ 且 $\\beta_1=30^\\circ$，于是 $\\theta_B=30^\\circ$。用 $m=2,d=1.5\\,\\mu\\mathrm{m}$ 得 $\\lambda_1=d/m=0.75\\,\\mu\\mathrm{m}$。第二问 $i_2=0$，故 $\\beta_2=2\\theta_B=60^\\circ$，$\\lambda_2=d\\sin60^\\circ/3=\\sqrt3/4\\,\\mu\\mathrm{m}$。"
+    },
+    {
+     "k": "p",
+     "x": "B分支：第二问 $i_2=0,\\beta_2=30^\\circ$，于是 $\\theta_B=15^\\circ$。第一问 $i_1=\\beta_1=15^\\circ$，$\\lambda_1=d(2\\sin15^\\circ)/2=3(\\sqrt6-\\sqrt2)/8\\,\\mu\\mathrm{m}$。第二问 $\\lambda_2=d\\sin30^\\circ/3=0.25\\,\\mu\\mathrm{m}$。"
+    },
+    {
+     "k": "p",
+     "x": "两个分支都遵守同一闪耀角，但数值不同；原题未指定30°的对应配置，故不能唯一判定。"
+    },
+    {
+     "k": "p",
+     "x": "数值对照：A分支为 $0.750\\,\\mu\\mathrm m$ 与 $\\sqrt3/4\\,\\mu\\mathrm m\\approx0.433\\,\\mu\\mathrm m$；B分支为 $3(\\sqrt6-\\sqrt2)/8\\,\\mu\\mathrm m\\approx0.388\\,\\mu\\mathrm m$ 与 $0.250\\,\\mu\\mathrm m$。"
     }
    ],
    "answerAvailability": "reference_provided",
@@ -19791,20 +19799,28 @@
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "**解**："
-    },
-    {
-     "k": "p",
-     "x": "(1) 2d·sin γ = m₁λ ⇒ **λ₁ = 1 μm**"
-    },
-    {
-     "k": "p",
-     "x": "(2) d·sin 2γ = 3λ ⇒ **λ = 0.289 μm**"
-    },
-    {
      "k": "note",
-     "x": "参考来源：电子版_修订/2024_答案.md:80。按用户修订稿导入，未作为官方标准答案认证。"
+     "x": "题给30°已按用户确认保留为衍射角；原题没有示意图，未说明对应哪一种入射方式。答案区保留历史参考，本轮未确认其为唯一答案。下面列出同一光栅、固定槽面倾角下的两套条件解，不能混用。"
+    },
+    {
+     "k": "p",
+     "x": "采用反射光栅关系 $m\\lambda=d(\\sin i+\\sin\\beta)$ 和闪耀条件 $\\theta_B=(i+\\beta)/2$。同一闪耀光栅在两个入射方式下的 $\\theta_B$ 不变。"
+    },
+    {
+     "k": "p",
+     "x": "A分支：第一问 $i_1=\\theta_B,\\beta_1=30^\\circ$，故 $\\theta_B=30^\\circ$，$\\lambda_1=1(\\sin30^\\circ+\\sin30^\\circ)/1=1\\,\\mu\\mathrm{m}$。第二问 $i_2=0,\\beta_2=60^\\circ$，$\\lambda_2=1\\sin60^\\circ/3=\\sqrt3/6\\,\\mu\\mathrm{m}$。"
+    },
+    {
+     "k": "p",
+     "x": "B分支：第二问 $i_2=0,\\beta_2=30^\\circ$，故 $\\theta_B=15^\\circ$。第一问 $i_1=\\beta_1=15^\\circ$，$\\lambda_1=2\\sin15^\\circ\\,\\mu\\mathrm{m}=(\\sqrt6-\\sqrt2)/2\\,\\mu\\mathrm{m}$。第二问 $\\lambda_2=\\sin30^\\circ/3=1/6\\,\\mu\\mathrm{m}$。"
+    },
+    {
+     "k": "p",
+     "x": "原图没有提供将30°绑定到其中一问的线索；A、B分别采用一套自洽且固定θ_B的同一光栅条件，故保留歧义。"
+    },
+    {
+     "k": "p",
+     "x": "数值对照：A分支为 $1.000\\,\\mu\\mathrm m$ 与 $\\sqrt3/6\\,\\mu\\mathrm m\\approx0.289\\,\\mu\\mathrm m$；B分支为 $(\\sqrt6-\\sqrt2)/2\\,\\mu\\mathrm m\\approx0.518\\,\\mu\\mathrm m$ 与 $1/6\\,\\mu\\mathrm m\\approx0.167\\,\\mu\\mathrm m$。"
     }
    ],
    "answerAvailability": "reference_provided",
@@ -33920,20 +33936,28 @@
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "**解**："
-    },
-    {
-     "k": "p",
-     "x": "1) 光线沿刻槽面法线入射：$2d\\cdot \\sin \\gamma  = 2\\lambda$ ⇒ **$\\lambda  = 1.5 \\mu\\mathrm{m}$**；"
-    },
-    {
-     "k": "p",
-     "x": "2) 光线沿栅面法线入射：$d\\cdot \\sin 2\\gamma  = 3\\lambda$ ⇒ **$\\lambda  = 866 \\,\\mathrm{nm}$**。"
-    },
-    {
      "k": "note",
-     "x": "参考来源：电子版_修订/2018_答案.md:65。按用户修订稿导入，未作为官方标准答案认证。"
+     "x": "题给30°已按用户确认保留为衍射角；原题没有示意图，未说明对应哪一种入射方式。答案区保留历史参考，本轮未确认其为唯一答案。下面列出同一光栅、固定槽面倾角下的两套条件解，不能混用。"
+    },
+    {
+     "k": "p",
+     "x": "取反射光栅约定，$m\\lambda=d(\\sin i+\\sin\\beta)$，闪耀条件 $\\theta_B=(i+\\beta)/2$；两问属于同一光栅，所以 $\\theta_B$ 固定。"
+    },
+    {
+     "k": "p",
+     "x": "A分支：第一问 $i_1=\\theta_B$ 且 $\\beta_1=30^\\circ$，于是 $\\theta_B=30^\\circ$。用 $m=2,d=1.5\\,\\mu\\mathrm{m}$ 得 $\\lambda_1=d/m=0.75\\,\\mu\\mathrm{m}$。第二问 $i_2=0$，故 $\\beta_2=2\\theta_B=60^\\circ$，$\\lambda_2=d\\sin60^\\circ/3=\\sqrt3/4\\,\\mu\\mathrm{m}$。"
+    },
+    {
+     "k": "p",
+     "x": "B分支：第二问 $i_2=0,\\beta_2=30^\\circ$，于是 $\\theta_B=15^\\circ$。第一问 $i_1=\\beta_1=15^\\circ$，$\\lambda_1=d(2\\sin15^\\circ)/2=3(\\sqrt6-\\sqrt2)/8\\,\\mu\\mathrm{m}$。第二问 $\\lambda_2=d\\sin30^\\circ/3=0.25\\,\\mu\\mathrm{m}$。"
+    },
+    {
+     "k": "p",
+     "x": "两个分支都遵守同一闪耀角，但数值不同；原题未指定30°的对应配置，故不能唯一判定。"
+    },
+    {
+     "k": "p",
+     "x": "数值对照：A分支为 $0.750\\,\\mu\\mathrm m$ 与 $\\sqrt3/4\\,\\mu\\mathrm m\\approx0.433\\,\\mu\\mathrm m$；B分支为 $3(\\sqrt6-\\sqrt2)/8\\,\\mu\\mathrm m\\approx0.388\\,\\mu\\mathrm m$ 与 $0.250\\,\\mu\\mathrm m$。"
     }
    ],
    "completeness": "complete",
@@ -50391,20 +50415,28 @@
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "**解**："
-    },
-    {
-     "k": "p",
-     "x": "(1) $2d\\cdot \\sin \\gamma  = m_{1}\\lambda$ ⇒ **$\\lambda _{1} = 1 \\mu\\mathrm{m}$**"
-    },
-    {
-     "k": "p",
-     "x": "(2) $d\\cdot \\sin 2\\gamma  = 3\\lambda$ ⇒ **$\\lambda  = 0.289 \\mu\\mathrm{m}$**"
-    },
-    {
      "k": "note",
-     "x": "参考来源：电子版_修订/2024_答案.md:80。按用户修订稿导入，未作为官方标准答案认证。"
+     "x": "题给30°已按用户确认保留为衍射角；原题没有示意图，未说明对应哪一种入射方式。答案区保留历史参考，本轮未确认其为唯一答案。下面列出同一光栅、固定槽面倾角下的两套条件解，不能混用。"
+    },
+    {
+     "k": "p",
+     "x": "采用反射光栅关系 $m\\lambda=d(\\sin i+\\sin\\beta)$ 和闪耀条件 $\\theta_B=(i+\\beta)/2$。同一闪耀光栅在两个入射方式下的 $\\theta_B$ 不变。"
+    },
+    {
+     "k": "p",
+     "x": "A分支：第一问 $i_1=\\theta_B,\\beta_1=30^\\circ$，故 $\\theta_B=30^\\circ$，$\\lambda_1=1(\\sin30^\\circ+\\sin30^\\circ)/1=1\\,\\mu\\mathrm{m}$。第二问 $i_2=0,\\beta_2=60^\\circ$，$\\lambda_2=1\\sin60^\\circ/3=\\sqrt3/6\\,\\mu\\mathrm{m}$。"
+    },
+    {
+     "k": "p",
+     "x": "B分支：第二问 $i_2=0,\\beta_2=30^\\circ$，故 $\\theta_B=15^\\circ$。第一问 $i_1=\\beta_1=15^\\circ$，$\\lambda_1=2\\sin15^\\circ\\,\\mu\\mathrm{m}=(\\sqrt6-\\sqrt2)/2\\,\\mu\\mathrm{m}$。第二问 $\\lambda_2=\\sin30^\\circ/3=1/6\\,\\mu\\mathrm{m}$。"
+    },
+    {
+     "k": "p",
+     "x": "原图没有提供将30°绑定到其中一问的线索；A、B分别采用一套自洽且固定θ_B的同一光栅条件，故保留歧义。"
+    },
+    {
+     "k": "p",
+     "x": "数值对照：A分支为 $1.000\\,\\mu\\mathrm m$ 与 $\\sqrt3/6\\,\\mu\\mathrm m\\approx0.289\\,\\mu\\mathrm m$；B分支为 $(\\sqrt6-\\sqrt2)/2\\,\\mu\\mathrm m\\approx0.518\\,\\mu\\mathrm m$ 与 $1/6\\,\\mu\\mathrm m\\approx0.167\\,\\mu\\mathrm m$。"
     }
    ],
    "completeness": "complete",
