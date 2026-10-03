@@ -1,1 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 735 270" role="img" aria-labelledby="title"><title id="title">偏振选通式电光调Q腔的原题元件顺序</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 8L8-2M6 10L10 6" stroke="#302d27" stroke-width=".7" opacity=".45"/></pattern></defs><style>path,line,rect,circle,ellipse{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}text{fill:#302d27;stroke:none;font:16px 'Microsoft YaHei','Segoe UI',sans-serif}.small{font-size:13px}</style><path d="M45 127L685 127" stroke-dasharray="5 5" opacity=".55"/><path d="M58 67L58 187"/><rect x="136" y="108" width="112" height="38"/><rect x="325" y="86" width="52" height="82"/><rect x="460" y="105" width="67" height="44"/><path d="M616 80Q634 127 616 174M632 80Q650 127 632 174"/><text x="58" y="230" text-anchor="middle">输出镜</text><text x="192" y="230" text-anchor="middle">增益介质</text><text x="351" y="230" text-anchor="middle">偏振器</text><text x="494" y="230" text-anchor="middle">电光晶体</text><text x="627" y="230" text-anchor="middle">反射镜</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="355" viewBox="0 0 900 355" role="img" aria-labelledby="title description">
+<title id="title">2017 / 偏振选通式电光调 Q 腔</title><desc id="description">示意位置不代表原题数值；透明背景，可编辑路径与文字。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="45" class="heading" text-anchor="start">2017 / 偏振选通式电光调 Q 腔</text>
+<path class="line " d="M65,190 L837,190" stroke-dasharray="5 6"/>
+<path class="line " d="M 95 122 Q 112 190 95 258" />
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<path class="line " d="M83,122 L83,258"/>
+<path class="line " d="M 240 164 L340 164 A12 26 0 0 1 340 216 L240 216 A12 26 0 0 1 240 164" />
+<path class="line " d="M 240 164 A12 26 0 0 1 240 216" />
+<path class="line " d="M438,145 L496,145 L496,235 L438,235 L438,145"/>
+<path class="line " d="M438,145 L451,132 L509,132 L496,145"/>
+<path class="line " d="M509,132 L509,222 L496,235"/>
+<path class="line " d="M590,161 L652,161 L652,219 L590,219 L590,161"/>
+<path class="line " d="M590,161 L603,148 L665,148 L652,161"/>
+<path class="line " d="M665,148 L665,206 L652,219"/>
+<path class="line " d="M 772 123 Q 750 190 772 257" />
+<path class="line " d="M786,123 L786,257"/>
+<text x="91" y="99" class="note" text-anchor="middle">输出镜</text>
+<text x="286" y="288" class="note" text-anchor="middle">增益介质</text>
+<text x="468" y="99" class="note" text-anchor="middle">偏振器</text>
+<text x="623" y="288" class="note" text-anchor="middle">电光晶体</text>
+<text x="781" y="99" class="note" text-anchor="middle">反射镜</text>
+<text x="40" y="338" class="note" text-anchor="start">位相延迟按单程定义；光在腔内往返两次通过晶体。</text>
+</svg>

@@ -1,1 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 325" role="img" aria-labelledby="title"><title id="title">2021 坐标答案：先追踪棱镜，再计入透镜实像倒像</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker></defs><style>path,circle{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}.edge{opacity:.6}.dot{fill:#302d27;stroke:none}text{fill:#302d27;font:18px 'Microsoft YaHei','Segoe UI',sans-serif;stroke:none}</style><text x="26" y="30">2021 / 坐标方向</text><text x="37" y="70">a</text><path d="M132,145L170.89087296526012,106.10912703473988" marker-end="url(#arrow)"/><path d="M132,145L177.9619407771256,190.9619407771256" marker-end="url(#arrow)"/><text x="174.3761543394987" y="97.6238456605013">x′</text><text x="182.1543289325507" y="205.1543289325507">z′</text><circle cx="132" cy="145" r="8"/><path d="M128,141L136,149"/><path d="M128,149L136,141"/><text x="102" y="169">y′</text><text x="297" y="70">P</text><path d="M392,145L353.1091270347399,106.10912703473988" marker-end="url(#arrow)"/><path d="M392,145L437.9619407771256,99.03805922287441" marker-end="url(#arrow)"/><text x="339.62384566050133" y="97.6238456605013">x″</text><text x="442.1543289325507" y="94.84567106744929">z″</text><circle cx="392" cy="145" r="8"/><circle cx="392" cy="145" r="1.8" class="dot"/><text x="362" y="169">y″</text><text x="26" y="266">⊙ 指向纸外；⊗ 指向纸内；z 沿出射光</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="930" viewBox="0 0 900 930" role="img" aria-labelledby="title description">
+<title id="title">2021 棱镜—物镜系统：坐标解图</title><desc id="description">保留入射坐标、a、物镜和像面 P；第一棱镜上部双线按屋脊。a 为右上、纸内、右下；P 为左上、纸外、右上。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="44" class="heading" text-anchor="start">2021  /  坐标与成像</text>
+<g id="original-geometry">
+<path class="line " d="M235,450 L245,150 L380,100 L475,205 L235,450"/>
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<path class="line " d="M244,192 L418,142"/>
+<path class="line " d="M500,370 L545,280 L625,280 L675,370 L500,370"/>
+<path class="line ray" d="M195,345 L338,345" marker-end="url(#arrow)"/>
+<path class="line ray" d="M338,345 L342,114" marker-end="url(#arrow)"/>
+<path class="line ray" d="M342,114 L585,370" marker-end="url(#arrow)"/>
+<path class="line ray" d="M585,370 L835,145" marker-end="url(#arrow)"/>
+<path class="line ray" d="M712,176 L784,256" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path class="line " d="M794,100 L876,190"/>
+<text x="465" y="244" class="math" text-anchor="start">a</text>
+<text x="866" y="98" class="math" text-anchor="start">P</text>
+<path class="line ray" d="M80,345 L80,283" marker-end="url(#arrow)"/>
+<text x="80" y="268" class="math" text-anchor="middle">x</text>
+<path class="line ray" d="M80,345 L142,345" marker-end="url(#arrow)"/>
+<text x="166" y="354" class="math" text-anchor="middle">z</text>
+<circle class="line " cx="80" cy="345" r="9"/>
+<circle class="line " cx="80" cy="345" r="2.2" style="fill:#302D27;stroke:none"/>
+<text x="55" y="379" class="math" text-anchor="middle">y</text>
+</g>
+<g id="reflection-labels">
+<text x="279" y="382" class="number" text-anchor="start">R1</text>
+<text x="355" y="77" class="number" text-anchor="start">R2–3</text>
+<text x="558" y="414" class="number" text-anchor="start">R4</text>
+<text x="732" y="294" class="note" text-anchor="start">物镜</text>
+</g>
+<text x="35" y="496" class="note" text-anchor="start">P 为题干指定的像方焦面、成像位置。</text>
+<path class="line " d="M35,528 L865,528" stroke-dasharray="5 6"/>
+<text x="65" y="580" class="heading result" text-anchor="start">a  ·  3 次反射</text>
+<text x="490" y="580" class="heading result" text-anchor="start">P  ·  实像横向反号</text>
+<path class="line answer" d="M230,704 L280.912,653.088" marker-end="url(#answer-arrow)"/>
+<text x="297.882" y="645.118" class="math result" text-anchor="middle">x</text>
+<path class="line answer" d="M230,704 L280.912,754.912" marker-end="url(#answer-arrow)"/>
+<text x="297.882" y="780.882" class="math result" text-anchor="middle">z</text>
+<circle class="line answer" cx="230" cy="704" r="9"/>
+<path class="line answer" d="M226,700 L234,708"/>
+<path class="line answer" d="M226,708 L234,700"/>
+<text x="205" y="738" class="math result" text-anchor="middle">y</text>
+<path class="line answer" d="M662,704 L611.088,653.088" marker-end="url(#answer-arrow)"/>
+<text x="594.118" y="645.118" class="math result" text-anchor="middle">x</text>
+<path class="line answer" d="M662,704 L712.912,653.088" marker-end="url(#answer-arrow)"/>
+<text x="729.882" y="645.118" class="math result" text-anchor="middle">z</text>
+<circle class="line answer" cx="662" cy="704" r="9"/>
+<circle class="line " cx="662" cy="704" r="2.2" style="fill:#346D68;stroke:none"/>
+<text x="637" y="738" class="math result" text-anchor="middle">y</text>
+<text x="64" y="831" class="note" text-anchor="start">透镜前：x 右下、y 纸内；成实像后两者反向。</text>
+<text x="64" y="882" class="note" text-anchor="start">⊙ 纸外    ⊗ 纸内    z 沿光传播方向</text>
+</svg>

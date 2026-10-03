@@ -1,1 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 325" role="img" aria-labelledby="title"><title id="title">2025 三棱镜系统给定光路（按原图投影复绘；原图未给入射坐标轴）</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker></defs><style>path,circle{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}.edge{opacity:.6}.dot{fill:#302d27;stroke:none}text{fill:#302d27;font:18px 'Microsoft YaHei','Segoe UI',sans-serif;stroke:none}</style><path d="M43,145L81,80L175,101L184,239L95,239L43,145"/><path d="M66,105L179,129" class="edge"/><path d="M122,300L122,88" marker-end="url(#arrow)"/><path d="M122,88L70,177" marker-end="url(#arrow)"/><path d="M70,177L309,146" marker-end="url(#arrow)"/><text x="198" y="151">a</text><path d="M230,184L258,90L392,34L489,66L365,127L230,184"/><path d="M246,129L423,45" class="edge"/><path d="M309,146L278,94" marker-end="url(#arrow)"/><path d="M278,94L365,127" marker-end="url(#arrow)"/><path d="M365,127L560,146" marker-end="url(#arrow)"/><path d="M459,161L525,91L614,76L684,133L459,161"/><path d="M560,146L658,111" marker-end="url(#arrow)"/><path d="M658,111L747,103" marker-end="url(#arrow)"/><text x="694" y="88">b</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="433" viewBox="0 0 900 433" role="img" aria-labelledby="title description">
+<title id="title">2025 三棱镜系统：题图</title><desc id="description">原题无入射坐标轴。保留光路及 a、b 标签，不添加入射坐标。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="44" class="heading" text-anchor="start">2025  /  题图</text>
+<g id="original-geometry">
+<path class="line " d="M45,216 L94,132 L195,158 L209,285 L111,285 L45,216"/>
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<path class="line " d="M78,162 L198,193"/>
+<path class="line " d="M257,260 L291,144 L438,82 L550,118 L257,260"/>
+<path class="line " d="M280,192 L480,96"/>
+<path class="line " d="M510,235 L585,152 L683,139 L760,211 L510,235"/>
+<path class="line ray" d="M140,345 L140,144" marker-end="url(#arrow)"/>
+<path class="line ray" d="M140,144 L80,251" marker-end="url(#arrow)"/>
+<path class="line ray" d="M80,251 L344,218" marker-end="url(#arrow)"/>
+<path class="line ray" d="M344,218 L314,134" marker-end="url(#arrow)"/>
+<path class="line ray" d="M314,134 L411,185" marker-end="url(#arrow)"/>
+<path class="line ray" d="M411,185 L625,225" marker-end="url(#arrow)"/>
+<path class="line ray" d="M625,225 L729,182" marker-end="url(#arrow)"/>
+<path class="line ray" d="M729,182 L859,166" marker-end="url(#arrow)"/>
+<text x="225" y="204" class="math" text-anchor="start">a</text>
+<text x="802" y="143" class="math" text-anchor="start">b</text>
+</g>
+<text x="35" y="399" class="note" text-anchor="start">原题未给入射坐标轴。</text>
+</svg>

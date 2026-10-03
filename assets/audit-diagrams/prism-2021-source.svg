@@ -1,1 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 370" role="img" aria-labelledby="title"><title id="title">2021 棱镜与透镜系统给定光路（按原图投影复绘；P 为题干指定像方焦面）</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker></defs><style>path,circle{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}.edge{opacity:.6}.dot{fill:#302d27;stroke:none}text{fill:#302d27;font:18px 'Microsoft YaHei','Segoe UI',sans-serif;stroke:none}</style><path d="M70,228L70,171" marker-end="url(#arrow)"/><path d="M70,228L140,228" marker-end="url(#arrow)"/><circle cx="70" cy="228" r="8"/><circle cx="70" cy="228" r="1.9" class="dot"/><text x="46" y="248">y</text><text x="66" y="161">x</text><text x="149" y="233">z</text><path d="M205,328L216,106L316,70L380,128L205,328"/><path d="M214,139L345,98" class="edge"/><path d="M176,242L277,242" marker-end="url(#arrow)"/><path d="M277,242L285,82" marker-end="url(#arrow)"/><path d="M285,82L430,278" marker-end="url(#arrow)"/><path d="M371,278L411,209L465,209L507,278L371,278"/><path d="M430,278L565,166" marker-end="url(#arrow)"/><text x="381" y="184">a</text><path d="M531,136L616,241"/><path d="M562,169L609,130" marker-end="url(#arrow)"/><text x="615" y="126">P</text><text x="535" y="300">透镜</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="515" viewBox="0 0 900 515" role="img" aria-labelledby="title description">
+<title id="title">2021 棱镜—物镜系统：题图</title><desc id="description">保留入射坐标、a、物镜和像面 P；第一棱镜上部双线按屋脊。不含待求坐标。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="44" class="heading" text-anchor="start">2021  /  题图</text>
+<g id="original-geometry">
+<path class="line " d="M235,450 L245,150 L380,100 L475,205 L235,450"/>
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<path class="line " d="M244,192 L418,142"/>
+<path class="line " d="M500,370 L545,280 L625,280 L675,370 L500,370"/>
+<path class="line ray" d="M195,345 L338,345" marker-end="url(#arrow)"/>
+<path class="line ray" d="M338,345 L342,114" marker-end="url(#arrow)"/>
+<path class="line ray" d="M342,114 L585,370" marker-end="url(#arrow)"/>
+<path class="line ray" d="M585,370 L835,145" marker-end="url(#arrow)"/>
+<path class="line ray" d="M712,176 L784,256" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path class="line " d="M794,100 L876,190"/>
+<text x="465" y="244" class="math" text-anchor="start">a</text>
+<text x="866" y="98" class="math" text-anchor="start">P</text>
+<path class="line ray" d="M80,345 L80,283" marker-end="url(#arrow)"/>
+<text x="80" y="268" class="math" text-anchor="middle">x</text>
+<path class="line ray" d="M80,345 L142,345" marker-end="url(#arrow)"/>
+<text x="166" y="354" class="math" text-anchor="middle">z</text>
+<circle class="line " cx="80" cy="345" r="9"/>
+<circle class="line " cx="80" cy="345" r="2.2" style="fill:#302D27;stroke:none"/>
+<text x="55" y="379" class="math" text-anchor="middle">y</text>
+</g>
+<text x="35" y="496" class="note" text-anchor="start">P 为题干指定的像方焦面、成像位置。</text>
+</svg>

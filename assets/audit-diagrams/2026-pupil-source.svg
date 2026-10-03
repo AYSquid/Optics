@@ -1,1 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 715 285" role="img" aria-labelledby="title"><title id="title">原题两透镜、光阑中心和 A 到 A′ 的给定光线</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 8L8-2M6 10L10 6" stroke="#302d27" stroke-width=".7" opacity=".45"/></pattern></defs><style>path,line,rect,circle,ellipse{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}text{fill:#302d27;stroke:none;font:16px 'Microsoft YaHei','Segoe UI',sans-serif}.small{font-size:13px}</style><path d="M45 170L680 170" stroke-dasharray="5 5" opacity=".55"/><circle cx="95" cy="170" r="2.5" style="fill:#302d27"/><text x="95" y="157" text-anchor="middle">A</text><circle cx="95" cy="245" r="2.5" style="fill:#302d27"/><text x="81" y="245" text-anchor="middle">B</text><path d="M245 48L245 246"/><text x="245" y="30" text-anchor="middle">L₁</text><path d="M475 48L475 246"/><text x="475" y="30" text-anchor="middle">L₂</text><circle cx="650" cy="170" r="2.5" style="fill:#302d27"/><text x="650" y="196" text-anchor="middle">A′</text><circle cx="400" cy="170" r="2.5" style="fill:#302d27"/><text x="400" y="196" text-anchor="middle">Q</text><path d="M95 170L245 100"/><path d="M245 100L475 78"/><path d="M475 78L650 170" marker-end="url(#arrow)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="465" viewBox="0 0 900 465" role="img" aria-labelledby="title description">
+<title id="title">2026 / 给定成像光线</title><desc id="description">示意位置不代表原题数值；透明背景，可编辑路径与文字。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="45" class="heading" text-anchor="start">2026 / 给定成像光线</text>
+<path class="line " d="M40,265 L865,265" stroke-dasharray="5 6"/>
+<path class="line " d="M430,139 L430,391"/>
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<text x="430" y="119" class="math" text-anchor="middle">L₁</text>
+<path class="line " d="M622,139 L622,391"/>
+<text x="622" y="119" class="math" text-anchor="middle">L₂</text>
+<circle class="line " cx="310" cy="265" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="310" y="249" class="math" text-anchor="middle">A</text>
+<circle class="line " cx="310" cy="331" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="310" y="361" class="math" text-anchor="middle">B</text>
+<circle class="line " cx="762" cy="265" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="762" y="295" class="math" text-anchor="middle">A′</text>
+<circle class="line " cx="526" cy="265" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="526" y="295" class="math" text-anchor="middle">Q</text>
+<path class="line ray" d="M310,265 L310,331"/>
+<path class="line ray" d="M310,292.72 L310,303.28" marker-end="url(#arrow)"/>
+<path class="line ray" d="M310,265 L430,215.5 L622,195.7 L762,265"/>
+<path class="line ray" d="M680.8,224.806 L703.2,235.894" marker-end="url(#arrow)"/>
+<text x="40" y="440" class="note" text-anchor="start">原题只给 Q 中心；上边缘位置尚未画出。</text>
+</svg>

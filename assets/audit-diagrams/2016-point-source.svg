@@ -1,1 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 315" role="img" aria-labelledby="title"><title id="title">点光源、正透镜与紧贴的衍射屏</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 8L8-2M6 10L10 6" stroke="#302d27" stroke-width=".7" opacity=".45"/></pattern></defs><style>path,line,rect,circle,ellipse{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}text{fill:#302d27;stroke:none;font:16px 'Microsoft YaHei','Segoe UI',sans-serif}.small{font-size:13px}</style><path d="M40 150L640 150" stroke-dasharray="5 5" opacity=".55"/><circle cx="85" cy="150" r="2.5" style="fill:#302d27"/><text x="85" y="132" text-anchor="middle">S</text><path d="M350 48L350 246"/><text x="350" y="30" text-anchor="middle">f′ = 50 mm</text><path d="M345 56L350 48L355 56M345 238L350 246L355 238"/><path d="M360 65L360 235"/><text x="385" y="61" text-anchor="start">t(x,y)</text><path d="M85 267L350 267"/><path d="M85 259L85 275"/><path d="M350 259L350 275"/><text x="217" y="291" text-anchor="middle">80 mm（题面单位已校正）</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title description">
+<title id="title">2016 / 点光源、透镜与衍射屏</title><desc id="description">示意位置不代表原题数值；透明背景，可编辑路径与文字。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="45" class="heading" text-anchor="start">2016 / 点光源、透镜与衍射屏</text>
+<path class="line " d="M55,225 L855,225" stroke-dasharray="5 6"/>
+<circle class="line " cx="170" cy="225" r="2.4" style="fill:#302D27;stroke:none"/>
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<text x="170" y="262" class="math" text-anchor="middle">S</text>
+<path class="line " d="M 475 105 Q 437 225 475 345 Q 513 225 475 105" />
+<path class="line " d="M512,105 L512,345"/>
+<path class="line ray" d="M170,225 L454,140"/>
+<path class="line ray" d="M289.28,189.3 L334.72,175.7" marker-end="url(#arrow)"/>
+<path class="line ray" d="M170,225 L454,310"/>
+<path class="line ray" d="M289.28,260.7 L334.72,274.3" marker-end="url(#arrow)"/>
+<path class="line " d="M170,373 L475,373" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path class="line " d="M170,364 L170,382"/>
+<path class="line " d="M475,364 L475,382"/>
+<text x="322.5" y="409" class="note" text-anchor="middle">80 mm</text>
+<text x="448" y="84" class="note" text-anchor="middle">f = 50 mm</text>
+<text x="550" y="151" class="note" text-anchor="start">衍射屏</text>
+<text x="550" y="194" class="math" text-anchor="start">t(x, y)</text>
+<text x="550" y="322" class="note" text-anchor="start">紧贴透镜后表面</text>
+</svg>

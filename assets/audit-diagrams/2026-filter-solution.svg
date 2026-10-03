@@ -1,1 +1,182 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 745 288" role="img" aria-labelledby="title"><title id="title">频谱面滤波器：斜线区不通光</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 8L8-2M6 10L10 6" stroke="#302d27" stroke-width=".7" opacity=".45"/></pattern></defs><style>path,line,rect,circle,ellipse{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}text{fill:#302d27;stroke:none;font:16px 'Microsoft YaHei','Segoe UI',sans-serif}.small{font-size:13px}</style><path d="M40 154L695 154" marker-end="url(#arrow)"/><text x="700" y="158" text-anchor="start">u</text><rect x="68" y="56" width="74" height="130" style="fill:url(#hatch)"/><rect x="588" y="56" width="74" height="130" style="fill:url(#hatch)"/><circle cx="105" cy="154" r="2.5" style="fill:#302d27"/><text x="105" y="212" text-anchor="middle">−1/d</text><text x="105" y="39" text-anchor="middle">遮挡</text><circle cx="235" cy="154" r="2.5" style="fill:#302d27"/><text x="235" y="212" text-anchor="middle">−1/(2d)</text><text x="235" y="39" text-anchor="middle">透过</text><circle cx="365" cy="154" r="2.5" style="fill:#302d27"/><text x="365" y="212" text-anchor="middle">0</text><text x="365" y="39" text-anchor="middle">透过</text><circle cx="495" cy="154" r="2.5" style="fill:#302d27"/><text x="495" y="212" text-anchor="middle">1/(2d)</text><text x="495" y="39" text-anchor="middle">透过</text><circle cx="625" cy="154" r="2.5" style="fill:#302d27"/><text x="625" y="212" text-anchor="middle">1/d</text><text x="625" y="39" text-anchor="middle">遮挡</text><text x="365" y="264" text-anchor="middle">透过 0、±1/(2d)；遮挡 ±1/d</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="790" viewBox="0 0 900 790" role="img" aria-labelledby="title description">
+<title id="title">2026 / 频谱与空间滤波器</title><desc id="description">示意位置不代表原题数值；透明背景，可编辑路径与文字。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="45" class="heading" text-anchor="start">2026 / 频谱与空间滤波器</text>
+<text x="40" y="99" class="note" text-anchor="start">频谱线的振幅（入射振幅 3）</text>
+<path class="line " d="M80,270 L835,270" marker-end="url(#arrow)"/>
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<text x="845" y="278" class="math" text-anchor="start">νₓ</text>
+<path class="line ray" d="M170,270 L170,210" marker-end="url(#arrow)"/>
+<text x="170" y="192" class="note" text-anchor="middle">0.5</text>
+<text x="170" y="308" class="note" text-anchor="middle">−1/d</text>
+<path class="line ray" d="M310,270 L310,210" marker-end="url(#arrow)"/>
+<text x="310" y="192" class="note" text-anchor="middle">0.5</text>
+<text x="310" y="308" class="note" text-anchor="middle">−1/(2d)</text>
+<path class="line ray" d="M450,270 L450,150" marker-end="url(#arrow)"/>
+<text x="450" y="132" class="note" text-anchor="middle">1</text>
+<text x="450" y="308" class="note" text-anchor="middle">0</text>
+<path class="line ray" d="M590,270 L590,210" marker-end="url(#arrow)"/>
+<text x="590" y="192" class="note" text-anchor="middle">0.5</text>
+<text x="590" y="308" class="note" text-anchor="middle">1/(2d)</text>
+<path class="line ray" d="M730,270 L730,210" marker-end="url(#arrow)"/>
+<text x="730" y="192" class="note" text-anchor="middle">0.5</text>
+<text x="730" y="308" class="note" text-anchor="middle">1/d</text>
+<text x="40" y="385" class="note" text-anchor="start">滤波器：保留 0、±1/(2d)，阻挡 ±1/d</text>
+<path class="line " d="M90,430 L283,430 L283,555 L90,555 L90,430"/>
+<defs><clipPath id="h90"><path d="M90 430H283V555H90Z"/></clipPath></defs>
+<g clip-path="url(#h90)">
+<path class="line " d="M-40,555 L85,430"/>
+<path class="line " d="M-25,555 L100,430"/>
+<path class="line " d="M-10,555 L115,430"/>
+<path class="line " d="M5,555 L130,430"/>
+<path class="line " d="M20,555 L145,430"/>
+<path class="line " d="M35,555 L160,430"/>
+<path class="line " d="M50,555 L175,430"/>
+<path class="line " d="M65,555 L190,430"/>
+<path class="line " d="M80,555 L205,430"/>
+<path class="line " d="M95,555 L220,430"/>
+<path class="line " d="M110,555 L235,430"/>
+<path class="line " d="M125,555 L250,430"/>
+<path class="line " d="M140,555 L265,430"/>
+<path class="line " d="M155,555 L280,430"/>
+<path class="line " d="M170,555 L295,430"/>
+<path class="line " d="M185,555 L310,430"/>
+<path class="line " d="M200,555 L325,430"/>
+<path class="line " d="M215,555 L340,430"/>
+<path class="line " d="M230,555 L355,430"/>
+<path class="line " d="M245,555 L370,430"/>
+<path class="line " d="M260,555 L385,430"/>
+<path class="line " d="M275,555 L400,430"/>
+<path class="line " d="M290,555 L415,430"/>
+<path class="line " d="M305,555 L430,430"/>
+<path class="line " d="M320,555 L445,430"/>
+<path class="line " d="M335,555 L460,430"/>
+<path class="line " d="M350,555 L475,430"/>
+<path class="line " d="M365,555 L490,430"/>
+<path class="line " d="M380,555 L505,430"/>
+<path class="line " d="M395,555 L520,430"/>
+<path class="line " d="M410,555 L535,430"/>
+</g>
+<path class="line " d="M337,430 L423,430 L423,555 L337,555 L337,430"/>
+<defs><clipPath id="h337"><path d="M337 430H423V555H337Z"/></clipPath></defs>
+<g clip-path="url(#h337)">
+<path class="line " d="M207,555 L332,430"/>
+<path class="line " d="M222,555 L347,430"/>
+<path class="line " d="M237,555 L362,430"/>
+<path class="line " d="M252,555 L377,430"/>
+<path class="line " d="M267,555 L392,430"/>
+<path class="line " d="M282,555 L407,430"/>
+<path class="line " d="M297,555 L422,430"/>
+<path class="line " d="M312,555 L437,430"/>
+<path class="line " d="M327,555 L452,430"/>
+<path class="line " d="M342,555 L467,430"/>
+<path class="line " d="M357,555 L482,430"/>
+<path class="line " d="M372,555 L497,430"/>
+<path class="line " d="M387,555 L512,430"/>
+<path class="line " d="M402,555 L527,430"/>
+<path class="line " d="M417,555 L542,430"/>
+<path class="line " d="M432,555 L557,430"/>
+<path class="line " d="M447,555 L572,430"/>
+<path class="line " d="M462,555 L587,430"/>
+<path class="line " d="M477,555 L602,430"/>
+<path class="line " d="M492,555 L617,430"/>
+<path class="line " d="M507,555 L632,430"/>
+<path class="line " d="M522,555 L647,430"/>
+<path class="line " d="M537,555 L662,430"/>
+<path class="line " d="M552,555 L677,430"/>
+</g>
+<path class="line " d="M477,430 L563,430 L563,555 L477,555 L477,430"/>
+<defs><clipPath id="h477"><path d="M477 430H563V555H477Z"/></clipPath></defs>
+<g clip-path="url(#h477)">
+<path class="line " d="M347,555 L472,430"/>
+<path class="line " d="M362,555 L487,430"/>
+<path class="line " d="M377,555 L502,430"/>
+<path class="line " d="M392,555 L517,430"/>
+<path class="line " d="M407,555 L532,430"/>
+<path class="line " d="M422,555 L547,430"/>
+<path class="line " d="M437,555 L562,430"/>
+<path class="line " d="M452,555 L577,430"/>
+<path class="line " d="M467,555 L592,430"/>
+<path class="line " d="M482,555 L607,430"/>
+<path class="line " d="M497,555 L622,430"/>
+<path class="line " d="M512,555 L637,430"/>
+<path class="line " d="M527,555 L652,430"/>
+<path class="line " d="M542,555 L667,430"/>
+<path class="line " d="M557,555 L682,430"/>
+<path class="line " d="M572,555 L697,430"/>
+<path class="line " d="M587,555 L712,430"/>
+<path class="line " d="M602,555 L727,430"/>
+<path class="line " d="M617,555 L742,430"/>
+<path class="line " d="M632,555 L757,430"/>
+<path class="line " d="M647,555 L772,430"/>
+<path class="line " d="M662,555 L787,430"/>
+<path class="line " d="M677,555 L802,430"/>
+<path class="line " d="M692,555 L817,430"/>
+</g>
+<path class="line " d="M617,430 L810,430 L810,555 L617,555 L617,430"/>
+<defs><clipPath id="h617"><path d="M617 430H810V555H617Z"/></clipPath></defs>
+<g clip-path="url(#h617)">
+<path class="line " d="M487,555 L612,430"/>
+<path class="line " d="M502,555 L627,430"/>
+<path class="line " d="M517,555 L642,430"/>
+<path class="line " d="M532,555 L657,430"/>
+<path class="line " d="M547,555 L672,430"/>
+<path class="line " d="M562,555 L687,430"/>
+<path class="line " d="M577,555 L702,430"/>
+<path class="line " d="M592,555 L717,430"/>
+<path class="line " d="M607,555 L732,430"/>
+<path class="line " d="M622,555 L747,430"/>
+<path class="line " d="M637,555 L762,430"/>
+<path class="line " d="M652,555 L777,430"/>
+<path class="line " d="M667,555 L792,430"/>
+<path class="line " d="M682,555 L807,430"/>
+<path class="line " d="M697,555 L822,430"/>
+<path class="line " d="M712,555 L837,430"/>
+<path class="line " d="M727,555 L852,430"/>
+<path class="line " d="M742,555 L867,430"/>
+<path class="line " d="M757,555 L882,430"/>
+<path class="line " d="M772,555 L897,430"/>
+<path class="line " d="M787,555 L912,430"/>
+<path class="line " d="M802,555 L927,430"/>
+<path class="line " d="M817,555 L942,430"/>
+<path class="line " d="M832,555 L957,430"/>
+<path class="line " d="M847,555 L972,430"/>
+<path class="line " d="M862,555 L987,430"/>
+<path class="line " d="M877,555 L1002,430"/>
+<path class="line " d="M892,555 L1017,430"/>
+<path class="line " d="M907,555 L1032,430"/>
+<path class="line " d="M922,555 L1047,430"/>
+<path class="line " d="M937,555 L1062,430"/>
+</g>
+<path class="line answer" d="M310,413 L310,575" marker-end="url(#answer-arrow)"/>
+<text x="310" y="612" class="note" text-anchor="middle">−1/(2d)</text>
+<path class="line answer" d="M450,413 L450,575" marker-end="url(#answer-arrow)"/>
+<text x="450" y="612" class="note" text-anchor="middle">0</text>
+<path class="line answer" d="M590,413 L590,575" marker-end="url(#answer-arrow)"/>
+<text x="590" y="612" class="note" text-anchor="middle">1/(2d)</text>
+<text x="40" y="685" class="note" text-anchor="start">斜线区域不透光；窗口宽度仅作示意。</text>
+<text x="40" y="728" class="note" text-anchor="start">三条透过谱线的复振幅保持不变：E = 1 + cos(πx′/d)。</text>
+</svg>

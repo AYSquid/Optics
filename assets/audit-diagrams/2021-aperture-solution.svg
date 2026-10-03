@@ -1,1 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 610" role="img" aria-labelledby="title"><title id="title">2021 焦面孔阑：像面、负透镜焦点、主光线及上边缘光线</title><defs><marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3L0 6" style="fill:none;stroke:context-stroke;stroke-width:.9"/></marker></defs><style>path,line,circle{fill:none;stroke:#302D27;stroke-width:1.05;vector-effect:non-scaling-stroke;stroke-linejoin:round}text{fill:#302D27;stroke:none;font-family:Microsoft YaHei,Segoe UI,sans-serif}</style><text x="25.000" y="30.000" text-anchor="start" style="font-size:16px;fill:#302D27">① 轴上光线定像面；向后延长得到 L₁ 的虚焦点</text><path d="M60.000 155.000L765.000 155.000" style="stroke:#302D27" stroke-dasharray="5 4" opacity=".65"/><path d="M300.000 80.000L300.000 260.000" style="stroke:#302D27"/><text x="300.000" y="67.000" text-anchor="middle" style="font-size:15px;fill:#302D27">L₁</text><path d="M540.000 80.000L540.000 260.000" style="stroke:#302D27"/><text x="540.000" y="67.000" text-anchor="middle" style="font-size:15px;fill:#302D27">L₂</text><path d="M420.000 85.000L420.000 125.000" style="stroke:#302D27"/><path d="M420.000 185.000L420.000 255.000" style="stroke:#302D27"/><circle cx="420.000" cy="125.000" r="2.3" style="fill:#302D27"/><text x="443.000" y="115.000" text-anchor="middle" style="font-size:15px;fill:#302D27">P₁</text><circle cx="420.000" cy="155.000" r="2.3" style="fill:#302D27"/><text x="420.000" y="179.000" text-anchor="middle" style="font-size:15px;fill:#302D27">P = F₂</text><path d="M708.000 90.000L708.000 220.000" style="stroke:#302D27" stroke-dasharray="5 4" opacity=".65"/><circle cx="708.000" cy="155.000" r="2.3" style="fill:#302D27"/><text x="723.000" y="180.000" text-anchor="middle" style="font-size:15px;fill:#302D27">A′</text><path d="M120.000 137.000L300.000 137.000L540.000 113.000L708.000 155.000" style="stroke:#9E5732" marker-end="url(#arr)"/><path d="M120.000 155.000L300.000 137.000" style="stroke:#9E5732" stroke-dasharray="5 4" opacity=".65"/><circle cx="120.000" cy="155.000" r="2.3" style="fill:#302D27"/><text x="120.000" y="180.000" text-anchor="middle" style="font-size:15px;fill:#302D27">F₁′</text><circle cx="708.000" cy="125.000" r="2.3" style="fill:#302D27"/><text x="725.000" y="117.000" text-anchor="middle" style="font-size:15px;fill:#302D27">B′</text><path d="M708.000 155.000L708.000 125.000" style="stroke:#302D27" marker-end="url(#arr)"/><text x="25.000" y="305.000" text-anchor="start" style="font-size:16px;fill:#302D27">② 孔阑在 F₂：主光线出射平行光轴；边缘光线同到 B′</text><path d="M60.000 450.000L765.000 450.000" style="stroke:#302D27" stroke-dasharray="5 4" opacity=".65"/><path d="M300.000 375.000L300.000 555.000" style="stroke:#302D27"/><text x="300.000" y="362.000" text-anchor="middle" style="font-size:15px;fill:#302D27">L₁</text><path d="M540.000 375.000L540.000 555.000" style="stroke:#302D27"/><text x="540.000" y="362.000" text-anchor="middle" style="font-size:15px;fill:#302D27">L₂</text><path d="M420.000 380.000L420.000 420.000" style="stroke:#302D27"/><path d="M420.000 480.000L420.000 550.000" style="stroke:#302D27"/><circle cx="420.000" cy="420.000" r="2.3" style="fill:#302D27"/><text x="443.000" y="410.000" text-anchor="middle" style="font-size:15px;fill:#302D27">P₁</text><circle cx="420.000" cy="450.000" r="2.3" style="fill:#302D27"/><text x="420.000" y="474.000" text-anchor="middle" style="font-size:15px;fill:#302D27">P = F₂</text><path d="M708.000 385.000L708.000 515.000" style="stroke:#302D27" stroke-dasharray="5 4" opacity=".65"/><circle cx="708.000" cy="450.000" r="2.3" style="fill:#302D27"/><text x="723.000" y="475.000" text-anchor="middle" style="font-size:15px;fill:#302D27">A′</text><path d="M120.000 555.000L300.000 480.000L420.000 450.000L540.000 420.000L708.000 420.000" style="stroke:#2D6B70" marker-end="url(#arr)"/><path d="M120.000 537.000L300.000 462.000L420.000 420.000L540.000 378.000L708.000 420.000" style="stroke:#A35F35" marker-end="url(#arr)"/><circle cx="708.000" cy="420.000" r="2.3" style="fill:#302D27"/><text x="725.000" y="412.000" text-anchor="middle" style="font-size:15px;fill:#302D27">B′</text><path d="M708.000 450.000L708.000 420.000" style="stroke:#302D27"/><text x="410.000" y="585.000" text-anchor="middle" style="font-size:13px;fill:#302D27">青蓝：主光线穿 P；橙褐：上边缘光线穿 P₁。虚线仅为辅助延长。</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1040" viewBox="0 0 900 1040" role="img" aria-labelledby="title description">
+<title id="title">2021 / 焦面孔阑：完整作图</title><desc id="description">示意位置不代表原题数值；透明背景，可编辑路径与文字。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="45" class="heading" text-anchor="start">2021 / 焦面孔阑：完整作图</text>
+<path class="line " d="M40,245 L865,245" stroke-dasharray="5 6"/>
+<path class="line " d="M330,125 L330,365"/>
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<text x="330" y="105" class="math" text-anchor="middle">L₁</text>
+<path class="line " d="M606,125 L606,365"/>
+<text x="606" y="105" class="math" text-anchor="middle">L₂</text>
+<path class="line " d="M468,135 L468,205"/>
+<path class="line " d="M468,285 L468,355"/>
+<circle class="line " cx="468" cy="245" r="2.4" style="fill:#302D27;stroke:none"/>
+<circle class="line " cx="468" cy="205" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="494" y="193" class="math" text-anchor="middle">P₁</text>
+<text x="494.45" y="309" class="math" text-anchor="start">P₂</text>
+<text x="387.5" y="335" class="note" text-anchor="middle">P = F₂</text>
+<path class="line secondary" d="M123,221 L330,221 L606,189 L799.2,245"/>
+<path class="line secondary" d="M687.144,212.52 L718.056,221.48" marker-end="url(#arrow)"/>
+<path class="line secondary" d="M123,245 L330,221" stroke-dasharray="5 6"/>
+<circle class="line " cx="123" cy="245" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="123" y="275" class="math" text-anchor="middle">F₁′</text>
+<circle class="line " cx="799.2" cy="245" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="819.2" y="275" class="math" text-anchor="middle">A′</text>
+<path class="line answer" d="M799.2,245 L799.2,205"/>
+<path class="line answer" d="M799.2,228.2 L799.2,221.8" marker-end="url(#answer-arrow)"/>
+<circle class="line " cx="799.2" cy="205" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="824.2" y="195" class="math" text-anchor="middle">B′</text>
+<text x="40" y="424" class="note" text-anchor="start">① 反向延长定 F₁′；轴上光线交轴定像面。</text>
+<path class="line " d="M35,462 L865,462" stroke-dasharray="5 6"/>
+<path class="line " d="M40,720 L865,720" stroke-dasharray="5 6"/>
+<path class="line " d="M330,600 L330,840"/>
+<text x="330" y="580" class="math" text-anchor="middle">L₁</text>
+<path class="line " d="M606,600 L606,840"/>
+<text x="606" y="580" class="math" text-anchor="middle">L₂</text>
+<path class="line " d="M468,610 L468,680"/>
+<path class="line " d="M468,760 L468,830"/>
+<circle class="line " cx="468" cy="720" r="2.4" style="fill:#302D27;stroke:none"/>
+<circle class="line " cx="468" cy="680" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="494" y="668" class="math" text-anchor="middle">P₁</text>
+<text x="494.45" y="784" class="math" text-anchor="start">P₂</text>
+<text x="387.5" y="810" class="note" text-anchor="middle">P = F₂</text>
+<path class="line answer" d="M123,860 L330,760 L468,720 L606,680 L799.2,680"/>
+<path class="line answer" d="M687.144,680 L718.056,680" marker-end="url(#answer-arrow)"/>
+<path class="line secondary" d="M123,836 L330,736 L468,680 L606,624 L799.2,680"/>
+<path class="line secondary" d="M687.144,647.52 L718.056,656.48" marker-end="url(#arrow)"/>
+<path class="line answer" d="M799.2,720 L799.2,680"/>
+<path class="line answer" d="M799.2,703.2 L799.2,696.8" marker-end="url(#answer-arrow)"/>
+<circle class="line " cx="799.2" cy="720" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="819.2" y="750" class="math" text-anchor="middle">A′</text>
+<circle class="line " cx="799.2" cy="680" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="824.2" y="668" class="math" text-anchor="middle">B′</text>
+<text x="40" y="922" class="note" text-anchor="start">② 绿色主光线穿 P，出射平行光轴。</text>
+<text x="40" y="965" class="note" text-anchor="start">棕色上边缘光线穿 P₁；两束平行入射光同到 B′。</text>
+</svg>

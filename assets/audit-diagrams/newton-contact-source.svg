@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290" role="img" aria-labelledby="title"><title id="title">球面工件与样板形成的牛顿环空气隙</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 8L8-2M6 10L10 6" stroke="#302d27" stroke-width=".7" opacity=".45"/></pattern></defs><style>path,line,rect,circle,ellipse{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}text{fill:#302d27;stroke:none;font:16px 'Microsoft YaHei','Segoe UI',sans-serif}.small{font-size:13px}</style><path d="M110 55H530V140Q320 260 110 140Z"/><path d="M110 165Q320 235 530 165V245H110Z"/><path d="M110 27L530 27"/><path d="M110 19L110 35"/><path d="M530 19L530 35"/><text x="320" y="20" text-anchor="middle">Φ</text><path d="M320 70L320 275" stroke-dasharray="5 5" opacity=".55"/><text x="302" y="224" text-anchor="middle">O</text><path d="M429 69L474 168" marker-end="url(#arrow)"/><text x="429" y="59" text-anchor="middle">R</text><path d="M486 59L520 168" marker-end="url(#arrow)"/><text x="486" y="49" text-anchor="middle">R₀</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" role="img" aria-labelledby="title description">
+<title id="title">牛顿环 / 球面工件与样板</title><desc id="description">示意位置不代表原题数值；透明背景，可编辑路径与文字。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="45" class="heading" text-anchor="start">牛顿环 / 球面工件与样板</text>
+<path class="line " d="M 180 145 L720 145 L720 215 Q450 385 180 215 Z" />
+<path class="line " d="M 180 265 Q450 335 720 265 L720 355 L180 355 Z" />
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<path class="line " d="M450,157 L450,393" stroke-dasharray="5 6"/>
+<circle class="line " cx="450" cy="300" r="2.4" style="fill:#302D27;stroke:none"/>
+<text x="428" y="335" class="math" text-anchor="middle">O</text>
+<path class="line " d="M180,100 L720,100" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path class="line " d="M180,91 L180,109"/>
+<path class="line " d="M720,91 L720,109"/>
+<text x="450" y="136" class="note" text-anchor="middle">Φ</text>
+<text x="547" y="185" class="math" text-anchor="start">R</text>
+<path class="line " d="M560,194 L632,259" marker-end="url(#arrow)"/>
+<text x="657" y="206" class="math" text-anchor="start">R₀</text>
+<path class="line " d="M682,216 L685,273" marker-end="url(#arrow)"/>
+<text x="45" y="430" class="note" text-anchor="start">R &lt; R₀；空气隙在中心接触，厚度未按比例绘制。</text>
+</svg>

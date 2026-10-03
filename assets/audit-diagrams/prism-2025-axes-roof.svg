@@ -1,1 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 325" role="img" aria-labelledby="title"><title id="title">2025 坐标答案：示范采用入射x向左、y向纸外、z向上的约定</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker></defs><style>path,circle{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}.edge{opacity:.6}.dot{fill:#302d27;stroke:none}text{fill:#302d27;font:18px 'Microsoft YaHei','Segoe UI',sans-serif;stroke:none}</style><text x="26" y="30">2025 / 坐标方向</text><text x="37" y="70">a</text><path d="M132,145L132,90" marker-end="url(#arrow)"/><path d="M132,145L197,145" marker-end="url(#arrow)"/><text x="127" y="78">x′</text><text x="205" y="150">z′</text><circle cx="132" cy="145" r="8"/><path d="M128,141L136,149"/><path d="M128,149L136,141"/><text x="102" y="169">y′</text><text x="297" y="70">b</text><path d="M392,145L392,90" marker-end="url(#arrow)"/><path d="M392,145L457,145" marker-end="url(#arrow)"/><text x="387" y="78">x″</text><text x="465" y="150">z″</text><circle cx="392" cy="145" r="8"/><path d="M388,141L396,149"/><path d="M388,149L396,141"/><text x="362" y="169">y″</text><text x="26" y="266">⊙ 指向纸外；⊗ 指向纸内；z 沿出射光</text><text x="26" y="302">入射约定：x 向左，y 向纸外，z 向上</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1240" viewBox="0 0 900 1240" role="img" aria-labelledby="title description">
+<title id="title">2025 三棱镜系统：条件解图</title><desc id="description">原题无入射坐标轴。自选 x 左、y 纸外、z 上。中间双线按屋脊且 T 为出射折射时，a 上内右，b 下外右；其他读法见核对报告。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="44" class="heading" text-anchor="start">2025  /  条件解图</text>
+<g id="original-geometry">
+<path class="line " d="M45,216 L94,132 L195,158 L209,285 L111,285 L45,216"/>
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<path class="line " d="M78,162 L198,193"/>
+<path class="line " d="M257,260 L291,144 L438,82 L550,118 L257,260"/>
+<path class="line " d="M280,192 L480,96"/>
+<path class="line " d="M510,235 L585,152 L683,139 L760,211 L510,235"/>
+<path class="line ray" d="M140,345 L140,144" marker-end="url(#arrow)"/>
+<path class="line ray" d="M140,144 L80,251" marker-end="url(#arrow)"/>
+<path class="line ray" d="M80,251 L344,218" marker-end="url(#arrow)"/>
+<path class="line ray" d="M344,218 L314,134" marker-end="url(#arrow)"/>
+<path class="line ray" d="M314,134 L411,185" marker-end="url(#arrow)"/>
+<path class="line ray" d="M411,185 L625,225" marker-end="url(#arrow)"/>
+<path class="line ray" d="M625,225 L729,182" marker-end="url(#arrow)"/>
+<path class="line ray" d="M729,182 L859,166" marker-end="url(#arrow)"/>
+<text x="225" y="204" class="math" text-anchor="start">a</text>
+<text x="802" y="143" class="math" text-anchor="start">b</text>
+</g>
+<g id="reflection-labels">
+<text x="95" y="111" class="number" text-anchor="start">R1–2</text>
+<text x="38" y="307" class="number" text-anchor="start">R3</text>
+<text x="317" y="256" class="number" text-anchor="start">R4</text>
+<text x="352" y="119" class="number" text-anchor="start">R5–6*</text>
+<text x="606" y="269" class="number" text-anchor="start">R7*</text>
+<text x="412" y="219" class="number" text-anchor="start">T*</text>
+</g>
+<text x="35" y="399" class="note" text-anchor="start">原题未给入射坐标轴。</text>
+<path class="line " d="M35,426 L865,426" stroke-dasharray="5 6"/>
+<text x="40" y="475" class="heading result" text-anchor="start">自选入射：x ←，y ⊙，z ↑</text>
+<text x="40" y="520" class="note caution" text-anchor="start">* 主图编号条件：中间双线为屋脊，T 为折射。</text>
+<text x="65" y="584" class="heading result" text-anchor="start">a  ·  3 次反射</text>
+<text x="500" y="584" class="heading result" text-anchor="start">b  ·  7 次反射*</text>
+<path class="line answer" d="M220,708 L220,640" marker-end="url(#answer-arrow)"/>
+<text x="220" y="625" class="math result" text-anchor="middle">x</text>
+<path class="line answer" d="M220,708 L288,708" marker-end="url(#answer-arrow)"/>
+<text x="312" y="717" class="math result" text-anchor="middle">z</text>
+<circle class="line answer" cx="220" cy="708" r="9"/>
+<path class="line answer" d="M216,704 L224,712"/>
+<path class="line answer" d="M216,712 L224,704"/>
+<text x="195" y="742" class="math result" text-anchor="middle">y</text>
+<path class="line answer" d="M652,708 L652,776" marker-end="url(#answer-arrow)"/>
+<text x="652" y="809" class="math result" text-anchor="middle">x</text>
+<path class="line answer" d="M652,708 L720,708" marker-end="url(#answer-arrow)"/>
+<text x="744" y="717" class="math result" text-anchor="middle">z</text>
+<circle class="line answer" cx="652" cy="708" r="9"/>
+<circle class="line " cx="652" cy="708" r="2.2" style="fill:#346D68;stroke:none"/>
+<text x="627" y="742" class="math result" text-anchor="middle">y</text>
+<text x="55" y="862" class="note result" text-anchor="start">该条件下：x_b = −x_a，y_b = −y_a，z_b = z_a。</text>
+<path class="line " d="M35,894 L865,894" stroke-dasharray="5 6"/>
+<text x="40" y="943" class="heading caution" text-anchor="start">另一读法：中间为 3 次普通反射</text>
+<text x="40" y="990" class="note" text-anchor="start">若细线是透视边，并另有第 3 个反射面：</text>
+<text x="40" y="1035" class="note" text-anchor="start">b 与 a 同向，即 x ↑、y ⊗、z →。</text>
+<text x="40" y="1094" class="note caution" text-anchor="start">照片不足以唯一确定中间面的三维结构。</text>
+<text x="40" y="1140" class="note" text-anchor="start">不能仅凭反射次数相同，认定坐标相同。</text>
+<text x="40" y="1194" class="note" text-anchor="start">其余条件组合、所缺证据见中文核对报告。</text>
+</svg>

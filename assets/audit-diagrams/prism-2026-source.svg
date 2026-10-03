@@ -1,1 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 595" role="img" aria-labelledby="title"><title id="title">2026 原题复绘：保留连续光路，两处双线屋脊面</title><defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#302d27" stroke-width=".9"/></marker></defs><style>path,circle{fill:none;stroke:#302d27;stroke-width:1.15;vector-effect:non-scaling-stroke;stroke-linejoin:round}.edge{opacity:.6}.dot{fill:#302d27;stroke:none}text{fill:#302d27;font:18px 'Microsoft YaHei','Segoe UI',sans-serif;stroke:none}</style><path d="M150,244L150,189" marker-end="url(#arrow)"/><path d="M150,244L215,244" marker-end="url(#arrow)"/><text x="145" y="177">x</text><text x="223" y="249">z</text><circle cx="150" cy="244" r="8"/><circle cx="150" cy="244" r="1.8" class="dot"/><text x="120" y="268">y</text><path d="M276,317L291,164L368,127L444,157L276,317"/><path d="M291,164L345,143" class="edge"/><path d="M244,244L359,243" marker-end="url(#arrow)"/><path d="M359,243L345,143" marker-end="url(#arrow)"/><path d="M345,143L545,407" marker-end="url(#arrow)"/><path d="M399,323L485,267L586,368L453,529L399,323"/><path d="M453,529L568,353L586,368" class="edge"/><path d="M545,407L417,402" marker-end="url(#arrow)"/><path d="M417,402L575,238" marker-end="url(#arrow)"/><text x="600" y="298">a</text><path d="M566,132L669,260L745,139L566,132"/><path d="M669,260L687,263L761,139L745,139" class="edge"/><path d="M575,238L680,139" marker-end="url(#arrow)"/><path d="M680,139L703,216" marker-end="url(#arrow)"/><path d="M703,216L630,215" marker-end="url(#arrow)"/><path d="M630,215L675,73" marker-end="url(#arrow)"/><text x="695" y="89">b</text><text x="35" y="568">双线面为屋脊面；光线交叉处不是反射点</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="630" viewBox="0 0 900 630" role="img" aria-labelledby="title description">
+<title id="title">2026 三棱镜系统：题图</title><desc id="description">两条斜光线在中间棱镜内部直接相交，不在交点反射。保留入射坐标和 a、b。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
+<marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
+</defs>
+<style>
+.line {fill:none;stroke:#302D27;stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ray {stroke-width:1.5}
+.answer {stroke:#346D68;stroke-width:1.5}
+text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+.math {font-family:'DejaVu Sans',sans-serif;font-style:italic;font-size:30px}
+.heading {font-size:30px;font-weight:600}
+.note {font-size:25px}
+.number {font-size:25px;fill:#346D68}
+.result {fill:#346D68}
+.caution {fill:#976333}
+</style>
+<text x="35" y="44" class="heading" text-anchor="start">2026  /  题图</text>
+<g id="original-geometry">
+<path class="line " d="M248,315 L263,161 L343,125 L420,156 L248,315"/>
+<style>
+ .secondary{stroke:#976333;stroke-width:1.5}
+ @media (prefers-color-scheme:dark){
+ .line{stroke:#E8DCC3}text{fill:#E8DCC3}.answer{stroke:#9CCBBB}.result,.number{fill:#9CCBBB}
+ .secondary{stroke:#DDB587}.caution{fill:#DDB587}
+ #arrow path{stroke:#E8DCC3}#answer-arrow path{stroke:#9CCBBB}
+ circle[style]{fill:#E8DCC3!important}
+ }
+ </style>
+<path class="line " d="M380,327 L470,268 L575,374 L438,542 L380,327"/>
+<path class="line " d="M433,520 L558,357"/>
+<path class="line " d="M548,130 L658,266 L758,135 L548,130"/>
+<path class="line " d="M644,249 L739,135"/>
+<path class="line ray" d="M209,242 L326,242" marker-end="url(#arrow)"/>
+<path class="line ray" d="M326,242 L321,135" marker-end="url(#arrow)"/>
+<path class="line ray" d="M321,135 L535,423" marker-end="url(#arrow)"/>
+<path class="line ray" d="M535,423 L398,414" marker-end="url(#arrow)"/>
+<path class="line ray" d="M398,414 L670,133" marker-end="url(#arrow)"/>
+<path class="line ray" d="M670,133 L704,206" marker-end="url(#arrow)"/>
+<path class="line ray" d="M704,206 L620,219" marker-end="url(#arrow)"/>
+<path class="line ray" d="M620,219 L675,52" marker-end="url(#arrow)"/>
+<text x="568" y="305" class="math" text-anchor="start">a</text>
+<text x="704" y="67" class="math" text-anchor="start">b</text>
+<path class="line ray" d="M90,242 L90,183" marker-end="url(#arrow)"/>
+<text x="90" y="168" class="math" text-anchor="middle">x</text>
+<path class="line ray" d="M90,242 L149,242" marker-end="url(#arrow)"/>
+<text x="173" y="251" class="math" text-anchor="middle">z</text>
+<circle class="line " cx="90" cy="242" r="9"/>
+<circle class="line " cx="90" cy="242" r="2.2" style="fill:#302D27;stroke:none"/>
+<text x="65" y="276" class="math" text-anchor="middle">y</text>
+</g>
+<text x="35" y="602" class="note" text-anchor="start">中间光线相交处没有反射面。</text>
+</svg>

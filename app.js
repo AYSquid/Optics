@@ -221,12 +221,13 @@ function mathNode(tex, display) {
 }
 
 function isAuditDiagram(src) { return /(?:^|\/)assets\/audit-diagrams\/[^?#]+\.svg(?:[?#]|$)/.test(src || ''); }
+function figureAssetUrl(src) { return isAuditDiagram(src) ? src + (src.indexOf('?') < 0 ? '?' : '&') + 'v=svg-redraw-20261003-09a2a00' : src; }
 
 function figureNode(src, alt) {
   var fig = el('figure', 'figure');
   if (isAuditDiagram(src)) fig.classList.add('is-audit-diagram');
   var img = el('img');
-  img.src = src;
+  img.src = figureAssetUrl(src);
   img.alt = alt || '题目配图';
   img.loading = 'lazy';
   img.addEventListener('error', function () {
@@ -1049,7 +1050,7 @@ function changeStatus(val) {
 
 function openLightbox(src, alt) {
   $('lightbox-img').classList.toggle('is-audit-diagram', isAuditDiagram(src));
-  $('lightbox-img').src = src;
+  $('lightbox-img').src = figureAssetUrl(src);
   $('lightbox-img').alt = alt || '';
   $('lightbox-cap').textContent = alt || '';
   $('lightbox').hidden = false;
