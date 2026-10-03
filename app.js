@@ -544,6 +544,65 @@ function resetChoiceForQuestion(q) {
   ui.choiceQuestionId = nextId;
 }
 
+// Source/editorial notes belong in the disclosure; physical conditions remain in the exercise.
+function isQuestionAnnotation(block) {
+  return block && block.k === 'note' && /按(?:答案|纸质)|答案依据|依据：|参考来源|纸质|纸解|原(?:卷|照片|图|稿|材料|始材料|始资料|题)|回忆稿|核对|核定|来源|用户.*(?:确认|建议|要求)|主审|照录|按原图保留|印作/.test(block.x || '');
+}
+
+function questionContentBlocks(blocks) {
+  return (blocks || []).filter(function (block) { return !isQuestionAnnotation(block); });
+}
+
+// Keep conclusions, assumptions and explanations in the answer, even when also annotated.
+// Only a standalone bibliography/provenance line belongs solely in the source disclosure.
+function answerContentBlocks(blocks) {
+  return (blocks || []).filter(function (block) {
+    return !(block && block.k === 'note' && /^(?:答案依据|参考来源)[：:]/.test(block.x || ''));
+  });
+}
+
+function questionAnnotations(q) {
+  var notes = [], seen = Object.create(null);
+  function add(text) {
+    if (!text || typeof text !== 'string') return;
+    var key = text.replace(/\s+/g, '').trim();
+    if (!key || seen[key]) return;
+    seen[key] = true;
+    notes.push({ k: 'p', x: text });
+  }
+  ['stem', 'answer', 'analysis'].forEach(function (field) {
+    (q[field] || []).forEach(function (block) { if (isQuestionAnnotation(block)) add(block.x); });
+  });
+  var review = q.review && q.review.notes;
+  (Array.isArray(review) ? review : [review]).forEach(add);
+  return notes;
+}
+
+function renderQuestionSource(q) {
+  var notes = questionAnnotations(q);
+  var source = el('details', 'source-detail');
+  source.dataset.questionId = q.id;
+  source.appendChild(el('summary', null, notes.length ? '题目来源及注解' : '题目来源'));
+  var panel = el('div', 'source-panel');
+  panel.appendChild(el('p', 'source-origin', q.sourceLabel + '／' + (q.origin && q.origin.file ? q.origin.file : '—') +
+    (q.origin && q.origin.line ? ' 第 ' + q.origin.line + ' 行' : '')));
+  if (q.origin && q.origin.reference) {
+    var ref = el('p'); renderInline(q.origin.reference, ref); panel.appendChild(ref);
+  }
+  if (notes.length) {
+    panel.appendChild(el('h4', 'source-heading', '注解'));
+    var body = el('div', 'source-annotations');
+    renderBlocks(notes, body);
+    panel.appendChild(body);
+  }
+  if (q.reconstruction && q.originalText) {
+    panel.appendChild(el('h4', 'source-heading', '原始题目记录'));
+    var original = el('p', 'source-original'); renderInline(q.originalText, original); panel.appendChild(original);
+  }
+  source.appendChild(panel);
+  return source;
+}
+
 function render() {
   renderFilterBar();
   renderTree();
@@ -568,11 +627,12 @@ function render() {
 
   // 顶部信息
   var ch = findChapter(q.chapterId);
+  var displayType = isMultipleChoice(q) ? '多选题' : q.typeName;
   $('crumb').textContent = scopeTitle();
   var knNames = currentKnNames(q);
   $('crumb-sub').textContent = (ch ? ch.num + ' ' + ch.title : '') +
     (knNames.length ? ' · ' + knNames.join('、') : '') +
-    ' · 题型：' + q.typeName;
+    ' · 题型：' + displayType;
 
   var scopeCount = ui.scopeIds.length;
   var matchCount = ui.matchIds.length;
@@ -591,25 +651,28 @@ function render() {
   store.prefs.lastQuestionId = q.id; savePrefs();
   // 元信息与徽标
   var meta = $('qmeta');
+  var previousSource = meta.querySelector('.source-detail');
+  var keepSource = previousSource && previousSource.dataset.questionId === q.id;
+  var sourceOpen = keepSource && previousSource.open;
+  var sourceFocused = keepSource && previousSource.querySelector('summary') === document.activeElement;
   clear(meta);
   meta.appendChild(el('span', null, '原题编号：' + q.number));
   meta.appendChild(el('span', 'sep', '·'));
-  meta.appendChild(el('span', null, q.typeName));
+  meta.appendChild(el('span', null, displayType));
   if (q.name) { meta.appendChild(el('span', 'sep', '·')); meta.appendChild(el('span', null, q.name)); }
   if (q.year) { meta.appendChild(el('span', 'sep', '·')); meta.appendChild(el('span', null, q.year + ' 年题')); }
   meta.appendChild(el('span', 'sep', '·'));
-  var source = el('details', 'source-detail');
-  source.appendChild(el('summary', null, '题目来源'));
-  source.appendChild(el('div', null, q.sourceLabel + '／' + (q.origin && q.origin.file ? q.origin.file : '—') +
-    (q.origin && q.origin.line ? ' 第 ' + q.origin.line + ' 行' : '')));
-  if (q.origin && q.origin.reference) { var refDiv = el('div'); renderInline(q.origin.reference, refDiv); source.appendChild(refDiv); }
+  var source = renderQuestionSource(q);
+  source.open = !!sourceOpen;
   meta.appendChild(source);
+  if (sourceFocused) source.querySelector('summary').focus({ preventScroll: true });
 
   var badges = $('qbadges');
   clear(badges);
-  badges.appendChild(el('span', 'badge b-type b-blue', q.typeName));
+  badges.appendChild(el('span', 'badge b-type b-blue', displayType));
   var st = getStatus(statusKeyOf(q));
   badges.appendChild(el('span', 'badge' + (st ? ' b-amber' : ''), '学习状态：' + (st ? STATUS_NAME[st] : '未标记')));
+  if (isMultipleChoice(q)) badges.appendChild(el('span', 'badge', '可选多个 · 再次点击取消'));
   if (q.statusSharedWith && q.statusSharedWith.length) {
     var sh = el('span', 'badge', '与另一来源的同源题共用状态');
     sh.title = q.statusSharedNote || '';
@@ -620,7 +683,7 @@ function render() {
   // 题干
   var stem = $('stem');
   clear(stem);
-  renderBlocks(q.stem, stem);
+  renderBlocks(questionContentBlocks(q.stem), stem);
   // 原始资料不完整的题（如缺选项、缺题图）：给出明确说明。
   // 这类题在真题模块里也有同样提示；章节练习里补上，避免点了选项没反应却不知原因。
   if (q.playable === false) {
@@ -638,25 +701,33 @@ function render() {
   if (q.options && q.options.length) {
     var longOpt = q.options.some(function (o) { return o.x.length > 26; });
     opts.className = 'options' + (longOpt || q.options.length > 4 ? '' : ' cols-2');
-    var picked = ui.choicePick[q.id] || '';
+    var picked = selectedChoiceKeys(q);
     q.options.forEach(function (o) {
       var b = el('button', 'option');
       b.type = 'button';
       b.setAttribute('data-option-key', o.key);
-      b.setAttribute('aria-pressed', picked === o.key ? 'true' : 'false');
+      b.setAttribute('aria-pressed', picked.indexOf(o.key) >= 0 ? 'true' : 'false');
       b.appendChild(el('span', 'option-key', o.key));
       var t = el('span', 'option-text');
       renderInline(o.x, t);
       b.appendChild(t);
       b.addEventListener('click', function () {
         if(q.playable === false) return;
-        ui.choicePick[q.id] = (ui.choicePick[q.id] === o.key) ? '' : o.key;
+        if (isMultipleChoice(q)) {
+          var next = selectedChoiceKeys(q);
+          var index = next.indexOf(o.key);
+          if (index >= 0) next.splice(index, 1); else next.push(o.key);
+          // Keep the existing string storage format, including compatibility with cloud records.
+          ui.choicePick[q.id] = next.sort().join('');
+        } else {
+          ui.choicePick[q.id] = (ui.choicePick[q.id] === o.key) ? '' : o.key;
+        }
         if(q.occurrenceId) saveExamChoice(q);
         applyChoiceFeedback(q, opts);
       });
       opts.appendChild(b);
     });
-    var result = el('span', 'choice-feedback-live');
+    var result = el('span', 'choice-feedback-live' + (isMultipleChoice(q) ? ' is-multiple' : ''));
     result.setAttribute('role', 'status');
     result.setAttribute('aria-live', 'polite');
     opts.appendChild(result);
@@ -674,8 +745,6 @@ function render() {
 
   // 答案区 / 解析区（默认完全隐藏，且不创建内容）
   applyRegions(q);
-
-  // 具体核对说明可能含结果，只能随解析显示。
 
   // 翻页按钮边界
   $('btn-prev').disabled = !hasNeighbor(-1);
@@ -705,21 +774,39 @@ function choiceAnswerKeys(q) {
   return keys.filter(function (key, index) { return keys.indexOf(key) === index; });
 }
 
+function isMultipleChoice(q) {
+  return !!q && (/多选/.test(q.typeName || '') || q.selectionMode === 'multiple' || choiceAnswerKeys(q).length > 1);
+}
+
+function validChoiceSelection(q, value) {
+  if (!q || typeof value !== 'string' || !/^[A-H]+$/.test(value)) return false;
+  var keys = value.split('');
+  var available = (q.options || []).map(function (option) { return option.key; });
+  return (keys.length === 1 || isMultipleChoice(q)) && keys.every(function (key, index) {
+    return available.indexOf(key) >= 0 && keys.indexOf(key) === index;
+  });
+}
+
+function selectedChoiceKeys(q) {
+  var value = ui.choicePick[q.id];
+  return validChoiceSelection(q, value) ? value.split('') : [];
+}
+
 function applyChoiceFeedback(q, opts) {
-  var picked = ui.choicePick[q.id] || '';
+  var picked = selectedChoiceKeys(q);
   var keys = choiceAnswerKeys(q);
-  var wrong = picked && keys.length && keys.indexOf(String(picked).toUpperCase()) < 0;
+  var wrong = keys.length && picked.some(function (key) { return keys.indexOf(key) < 0; });
   opts.querySelectorAll('.option').forEach(function (button) {
     var key = button.getAttribute('data-option-key');
-    var selected = key === picked;
+    var selected = picked.indexOf(key) >= 0;
     var correct = keys.indexOf(String(key).toUpperCase()) >= 0;
-    var verdict = picked && keys.length && correct && (selected || wrong) ? 'correct' : wrong && selected ? 'wrong' : '';
+    var verdict = picked.length && keys.length && correct && (selected || wrong) ? 'correct' : wrong && selected ? 'wrong' : '';
     button.setAttribute('aria-pressed', selected ? 'true' : 'false');
     button.setAttribute('data-verdict', verdict);
     button.title = verdict === 'correct' ? '正确答案' : verdict === 'wrong' ? '选择错误' : '';
   });
   var live = opts.querySelector('.choice-feedback-live');
-  if (live) live.textContent = !picked ? '' : !keys.length ? '本题答案尚待核对，暂不判定正误。' : wrong ? '选择错误。正确选项为 ' + keys.join('、') + '。' : keys.length > 1 ? '所选选项正确。本题有多个正确选项。' : '选择正确。';
+  if (live) live.textContent = !picked.length ? '' : !keys.length ? '本题答案尚待核对，暂不判定正误。' : wrong ? '所选包含错误选项。正确选项为 ' + keys.join('、') + '。' : keys.length > 1 ? picked.length === keys.length ? '已选全，回答正确。' : '已选选项正确，尚未选全。' : '选择正确。';
 }
 
 function currentKnNames(q) {
@@ -732,8 +819,8 @@ function currentKnNames(q) {
 function applyRegions(q) {
   if (!q) { ui.answerOpen = false; ui.analysisOpen = false; }
   var rn = $('review-note');
-  rn.hidden = !(q && ui.analysisOpen && q.review && q.review.notes);
-  rn.textContent = rn.hidden ? '' : '核对说明：' + q.review.notes;
+  rn.hidden = true;
+  rn.textContent = '';
   var aBtn = $('btn-answer'), sBtn = $('btn-analysis');
   var aReg = $('answer-region'), sReg = $('analysis-region');
 
@@ -741,7 +828,8 @@ function applyRegions(q) {
     aReg.hidden = false;
     var ab = $('answer-body');
     clear(ab);
-    if (q.answer && q.answer.length) renderBlocks(q.answer, ab);
+    var answerBlocks = answerContentBlocks(q.answer);
+    if (answerBlocks.length) renderBlocks(answerBlocks, ab);
     else ab.appendChild(el('p', null, '原始资料未提供单独答案，当前尚未补充核验答案。'));
     aBtn.textContent = '隐藏答案';
     aBtn.setAttribute('aria-expanded', 'true');
@@ -756,7 +844,8 @@ function applyRegions(q) {
     sReg.hidden = false;
     var sb = $('analysis-body');
     clear(sb);
-    if (q.analysis && q.analysis.length) renderBlocks(q.analysis, sb);
+    var analysisBlocks = answerContentBlocks(q.analysis);
+    if (analysisBlocks.length) renderBlocks(analysisBlocks, sb);
     else sb.appendChild(el('p', null, '本条目的原资料中没有提供解析。'));
     var fw = $('analysis-figs');
     clear(fw);

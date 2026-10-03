@@ -55,7 +55,7 @@
   const at=key.indexOf(':'),type=key.slice(0,at),id=key.slice(at+1);
   if(type==='status')return (DATA.questions.some(q=>(q.statusKey||q.id)===id)||Object.values(EXAMS.canonical||{}).some(q=>(q.statusKey||q.id)===id))&&(value===null||validStatuses.includes(value));
   if(type==='mark')return !!EXAMS.byOccurrence[id]&&(value===null||validStatuses.includes(value));
-  if(type==='choice')return !!DATA.byId[id]&&(value===null||DATA.byId[id].options.some(o=>o.key===value));
+  if(type==='choice')return !!DATA.byId[id]&&(value===null||validChoiceSelection(DATA.byId[id],value));
   const year=EXAMS.years.find(y=>y.id===id);
   return !!year&&(value===null||year.occurrenceIds.includes(value));
  }

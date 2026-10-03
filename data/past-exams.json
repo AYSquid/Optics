@@ -57,9 +57,9 @@
     "blank": 5,
     "calc": 8
    },
-   "playableCount": 37,
-   "incompleteCount": 6,
-   "answerCount": 42
+   "playableCount": 41,
+   "incompleteCount": 2,
+   "answerCount": 43
   },
   {
    "year": 2017,
@@ -110,9 +110,9 @@
     "blank": 10,
     "calc": 6
    },
-   "playableCount": 14,
-   "incompleteCount": 22,
-   "answerCount": 0
+   "playableCount": 15,
+   "incompleteCount": 21,
+   "answerCount": 12
   },
   {
    "year": 2018,
@@ -129,7 +129,6 @@
     "exam-2018-da48bee9a54c4440",
     "exam-2018-aa8b40169aa7b78e",
     "exam-2018-68a470a8e72d592d",
-    "exam-2018-c728f597026db83c",
     "exam-2018-205247028d846679",
     "exam-2018-6b12bcc9ca291714",
     "exam-2018-bf81e6c5f3860341",
@@ -143,25 +142,23 @@
     "exam-2018-30e4ee70a0ad83e9",
     "exam-2018-66698583063ca4c4",
     "exam-2018-95a583d60fa63953",
-    "exam-2018-94dae7b2c58f52d5",
     "exam-2018-416da88ac3a13a08",
     "exam-2018-598557e48918459a",
     "exam-2018-245a9004210f1efe",
     "exam-2018-d68679299862b42a",
-    "exam-2018-04caaa7d6a7ded38",
     "exam-2018-a50e0176cb973094"
    ],
-   "count": 32,
+   "count": 29,
    "sourceNote": "电子版_修订；题目和参考答案按来源分别导入。",
    "requiresReview": true,
    "typeCounts": {
-    "choice": 19,
-    "blank": 7,
-    "calc": 6
+    "choice": 18,
+    "blank": 6,
+    "calc": 5
    },
-   "playableCount": 17,
-   "incompleteCount": 15,
-   "answerCount": 19
+   "playableCount": 23,
+   "incompleteCount": 6,
+   "answerCount": 28
   },
   {
    "year": 2019,
@@ -189,13 +186,13 @@
    ],
    "count": 19,
    "sourceNote": "电子版_修订；题目和参考答案按来源分别导入。",
-   "requiresReview": true,
+   "requiresReview": false,
    "typeCounts": {
     "choice": 14,
     "calc": 5
    },
-   "playableCount": 18,
-   "incompleteCount": 1,
+   "playableCount": 19,
+   "incompleteCount": 0,
    "answerCount": 19
   },
   {
@@ -218,7 +215,6 @@
     "exam-2020-3108da1ef70f1d39",
     "exam-2020-22177251d171f1c7",
     "exam-2020-ff81dfc1064219ff",
-    "exam-2020-2c82c300d8af961a",
     "exam-2020-0fa2c9b0a7fa2b8f",
     "exam-2020-1e2535c1d0e80e98",
     "exam-2020-ed4f5c9b7519f17d",
@@ -234,16 +230,16 @@
     "exam-2020-e31ddb47b6087999",
     "exam-2020-bbb7dfd5ddadb5cf"
    ],
-   "count": 31,
+   "count": 30,
    "sourceNote": "电子版_修订；题目和参考答案按来源分别导入。",
    "requiresReview": true,
    "typeCounts": {
     "choice": 16,
-    "blank": 10,
+    "blank": 9,
     "calc": 5
    },
-   "playableCount": 28,
-   "incompleteCount": 3,
+   "playableCount": 29,
+   "incompleteCount": 1,
    "answerCount": 30
   },
   {
@@ -292,15 +288,15 @@
    ],
    "count": 39,
    "sourceNote": "电子版_修订；题目和参考答案按来源分别导入。",
-   "requiresReview": true,
+   "requiresReview": false,
    "typeCounts": {
     "choice": 23,
     "blank": 6,
     "calc": 10
    },
-   "playableCount": 37,
-   "incompleteCount": 2,
-   "answerCount": 37
+   "playableCount": 39,
+   "incompleteCount": 0,
+   "answerCount": 39
   },
   {
    "year": 2022,
@@ -396,8 +392,8 @@
     "choice": 30,
     "calc": 5
    },
-   "playableCount": 33,
-   "incompleteCount": 2,
+   "playableCount": 34,
+   "incompleteCount": 1,
    "answerCount": 35
   },
   {
@@ -495,8 +491,8 @@
     "choice": 29,
     "calc": 8
    },
-   "playableCount": 33,
-   "incompleteCount": 4,
+   "playableCount": 36,
+   "incompleteCount": 1,
    "answerCount": 37
   },
   {
@@ -548,14 +544,14 @@
    ],
    "count": 42,
    "sourceNote": "电子版_修订；题目和参考答案按来源分别导入。",
-   "requiresReview": true,
+   "requiresReview": false,
    "typeCounts": {
     "choice": 34,
     "calc": 8
    },
-   "playableCount": 38,
-   "incompleteCount": 4,
-   "answerCount": 39
+   "playableCount": 42,
+   "incompleteCount": 0,
+   "answerCount": 42
   }
  ],
  "occurrences": [
@@ -5526,21 +5522,73 @@
    "year": 2018,
    "paperId": "2018",
    "section": "一、选择题",
-   "questionNumber": "10.　引自 2005 年选择第 7 题",
+   "questionNumber": "10. 引自2005年选择第9题",
    "order": 10,
    "type": "choice",
    "stem": [
     {
      "k": "p",
+     "x": "为了观察原子光谱的超精细结构，应首选下列哪个分光系统（　）？"
+    }
+   ],
+   "options": [
+    {
+     "key": "A",
+     "x": "棱镜"
+    },
+    {
+     "key": "B",
+     "x": "典型的F-P干涉仪"
+    },
+    {
+     "key": "C",
+     "x": "典型光栅"
+    }
+   ],
+   "originalText": "**原文**：单轴双折射晶体中，一般情况下（　）\nA. H, D, S 相互垂直　B. H, E, k 相互垂直\nC. H, E, S 相互垂直　D. E, k, S 相互垂直\n\n> 原文见 `往年真题_2005.md`。\n> 回忆稿把题意记成“观察超细结构的仪器”，与原题不符，以原卷为准。",
+   "originalHeading": "10. 引自2005年选择第9题",
+   "sourceFile": "电子版_修订/2018.md",
+   "sourceLine": 53,
+   "sourceHash": "a4274a66c4df11a334744d7967b2c272cb0ddddd2fefd6b3b5e37621a55656b0",
+   "completeness": "complete",
+   "playable": true,
+   "sourceImages": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 B：典型的 F-P（法布里–珀罗）干涉仪。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "原子光谱超精细结构的谱线间隔很小，需要很高的分辨本领。F-P干涉仪利用多光束干涉产生尖锐的透射峰，分辨本领为 $R=m\\mathcal F$（$m$ 为干涉级次，$\\mathcal F$ 为精细度）。在题目给出的典型分光系统中，应优先选用F-P干涉仪。"
+    },
+    {
+     "k": "note",
+     "x": "原卷B项印为“F-B干涉仪”，依器件名称修正为F-P干涉仪。"
+    }
+   ],
+   "answerAvailability": "review_provided",
+   "questionId": "past-2018-aa8b40169aa7b78e",
+   "revisionKind": "choice",
+   "review": {
+    "needsCheck": false,
+    "notes": "原电子整理错引2005年第7题。依据用户确认和原卷照片，恢复2005年第9题的题干与三个选项，正确答案为B。"
+   }
+  },
+  {
+   "id": "exam-2018-68a470a8e72d592d",
+   "year": 2018,
+   "paperId": "2018",
+   "section": "一、选择题",
+   "questionNumber": "11. 引自2005年选择第7题",
+   "order": 11,
+   "type": "choice",
+   "stem": [
+    {
+     "k": "p",
      "x": "**原文**：单轴双折射晶体中，一般情况下（　）"
-    },
-    {
-     "k": "note",
-     "x": "原文见 `往年真题_2005.md`。"
-    },
-    {
-     "k": "note",
-     "x": "回忆稿把题意记成“观察超细结构的仪器”，与原题不符，以原卷为准。"
     }
    ],
    "options": [
@@ -5561,10 +5609,10 @@
      "x": "E, k, S 相互垂直"
     }
    ],
-   "originalText": "**原文**：单轴双折射晶体中，一般情况下（　）\nA. H, D, S 相互垂直　B. H, E, k 相互垂直\nC. H, E, S 相互垂直　D. E, k, S 相互垂直\n\n> 原文见 `往年真题_2005.md`。\n> 回忆稿把题意记成“观察超细结构的仪器”，与原题不符，以原卷为准。",
-   "originalHeading": "10.　引自 2005 年选择第 7 题",
+   "originalText": "原材料写“同 05 年选择题 7”，并提到 E,H,S 或 D,S,K 互成右手螺旋。\n\n> **核定结果**：这正是 2005 选择 7 的 C、A 两项，与第 10 题同源。回忆稿在此重复引用同一道往年题，无法据此还原成一道独立的新题，故本版把它与第 10 题合并说明。这属于**原始材料自身的问题**，不是录入遗漏。",
+   "originalHeading": "11. 引自2005年选择第7题",
    "sourceFile": "电子版_修订/2018.md",
-   "sourceLine": 53,
+   "sourceLine": 61,
    "sourceHash": "a4274a66c4df11a334744d7967b2c272cb0ddddd2fefd6b3b5e37621a55656b0",
    "completeness": "complete",
    "playable": true,
@@ -5578,85 +5626,15 @@
    "analysis": [
     {
      "k": "p",
-     "x": "由 $\\mathbf S=\\mathbf E\\times\\mathbf H$ 知 $\\mathbf S$ 垂直于 $\\mathbf E,\\mathbf H$；对晶体中的平面本征波还有 $\\mathbf E\\perp\\mathbf H$，所以C正确。各向异性时 $\\mathbf E$ 不必垂直 $\\mathbf k$，且 $\\mathbf D$ 不必垂直 $\\mathbf S$，故其余选项不普遍成立。"
+     "x": "逐项比较：A 要求 $\\mathbf D\\perp\\mathbf S$，在各向异性介质中 $\\mathbf D$ 不必平行 $\\mathbf E$，该垂直关系一般不成立；B 与 D 均要求 $\\mathbf E\\perp\\mathbf k$，非常光一般不满足。C 中 $\\mathbf S=\\mathbf E\\times\\mathbf H$ 保证 $\\mathbf S$ 垂直 $\\mathbf E$、$\\mathbf H$，且平面波场满足 $\\mathbf E\\perp\\mathbf H$。因此只有 C 一般成立。"
     }
    ],
-   "answerAvailability": "not_provided",
-   "questionId": "past-2018-aa8b40169aa7b78e",
-   "revisionKind": "choice",
-   "review": {
-    "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
-  },
-  {
-   "id": "exam-2018-68a470a8e72d592d",
-   "year": 2018,
-   "paperId": "2018",
-   "section": "一、选择题",
-   "questionNumber": "11.",
-   "order": 11,
-   "type": "choice",
-   "stem": [
-    {
-     "k": "p",
-     "x": "原材料写“同 05 年选择题 7”，并提到 E,H,S 或 D,S,K 互成右手螺旋。"
-    },
-    {
-     "k": "note",
-     "x": "**核定结果**：这正是 2005 选择 7 的 C、A 两项，与第 10 题同源。回忆稿在此重复引用同一道往年题，无法据此还原成一道独立的新题，故本版把它与第 10 题合并说明。这属于**原始材料自身的问题**，不是录入遗漏。"
-    }
-   ],
-   "options": [],
-   "originalText": "原材料写“同 05 年选择题 7”，并提到 E,H,S 或 D,S,K 互成右手螺旋。\n\n> **核定结果**：这正是 2005 选择 7 的 C、A 两项，与第 10 题同源。回忆稿在此重复引用同一道往年题，无法据此还原成一道独立的新题，故本版把它与第 10 题合并说明。这属于**原始材料自身的问题**，不是录入遗漏。",
-   "originalHeading": "11.",
-   "sourceFile": "电子版_修订/2018.md",
-   "sourceLine": 61,
-   "sourceHash": "a4274a66c4df11a334744d7967b2c272cb0ddddd2fefd6b3b5e37621a55656b0",
-   "completeness": "partial",
-   "playable": false,
-   "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2018-68a470a8e72d592d",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
-  },
-  {
-   "id": "exam-2018-c728f597026db83c",
-   "year": 2018,
-   "paperId": "2018",
-   "section": "一、选择题",
-   "questionNumber": "12.",
-   "order": 12,
-   "type": "choice",
-   "stem": [
-    {
-     "k": "p",
-     "x": "圆盘衍射，问屏上 P 点是暗点还是亮点，以及该点与圆盘距离、遮挡前后亮度的关系。〔原材料未记下完整题干和选项——**原始材料未提供**；原文另附有答案分析，本版未录入。〕"
-    }
-   ],
-   "options": [],
-   "originalText": "圆盘衍射，问屏上 P 点是暗点还是亮点，以及该点与圆盘距离、遮挡前后亮度的关系。〔原材料未记下完整题干和选项——**原始材料未提供**；原文另附有答案分析，本版未录入。〕",
-   "originalHeading": "12.",
-   "sourceFile": "电子版_修订/2018.md",
-   "sourceLine": 66,
-   "sourceHash": "a4274a66c4df11a334744d7967b2c272cb0ddddd2fefd6b3b5e37621a55656b0",
-   "completeness": "partial",
-   "playable": false,
-   "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
-   "questionId": "past-2018-c728f597026db83c",
-   "revisionKind": "choice",
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": "2018年第10题改为2005年第9题后，第11题恢复为其原引用的2005年第7题。答案与解析按原卷选项核对。"
    }
   },
   {
@@ -6359,43 +6337,6 @@
    }
   },
   {
-   "id": "exam-2018-94dae7b2c58f52d5",
-   "year": 2018,
-   "paperId": "2018",
-   "section": "二、填空题",
-   "questionNumber": "7.",
-   "order": 26,
-   "type": "blank",
-   "stem": [
-    {
-     "k": "p",
-     "x": "原材料仅记“忘了，也是某个气体激光器的知识点”。"
-    },
-    {
-     "k": "note",
-     "x": "**原始材料未提供**。按你的意见保留题号与说明，不臆补。"
-    }
-   ],
-   "options": [],
-   "originalText": "原材料仅记“忘了，也是某个气体激光器的知识点”。\n\n> **原始材料未提供**。按你的意见保留题号与说明，不臆补。",
-   "originalHeading": "7.",
-   "sourceFile": "电子版_修订/2018.md",
-   "sourceLine": 121,
-   "sourceHash": "a4274a66c4df11a334744d7967b2c272cb0ddddd2fefd6b3b5e37621a55656b0",
-   "completeness": "partial",
-   "playable": false,
-   "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
-   "questionId": "past-2018-94dae7b2c58f52d5",
-   "revisionKind": "blank",
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
-  },
-  {
    "id": "exam-2018-416da88ac3a13a08",
    "year": 2018,
    "paperId": "2018",
@@ -6406,30 +6347,22 @@
    "stem": [
     {
      "k": "p",
-     "x": "焦距为 50 mm 的透镜 I 对无穷远物成像，像高 10 mm。在透镜 I 与像面之间插入透镜 II，像高变成 20 mm，工作距离变为 40 mm。求透镜 II 的焦距、两透镜间距。若在 I、II 之间加入孔径光阑 P，且 d₁p = d₂p，相对孔径为 1/4，求孔径光阑的通光孔径、入瞳大小、物方孔径角、无渐晕时 D₁、D₂。"
-    },
-    {
-     "k": "note",
-     "x": "原材料注明该题比原卷少记了两问——**原始材料未提供**。"
+     "x": "焦距为 50 mm 的透镜 I 对无穷远物成像，像高 10 mm。在透镜 I 与像面之间插入透镜 II，像高变成 20 mm，工作距离变为 40 mm。求透镜 II 的焦距、两透镜间距。若在 I、II 之间加入孔径光阑 P，且 $d_{1p}$ = $d_{2p}$，相对孔径为 1/4，求孔径光阑的通光孔径、入瞳大小、物方孔径角、无渐晕时 $D_1$、$D_2$。"
     }
    ],
    "options": [],
-   "originalText": "焦距为 50 mm 的透镜 I 对无穷远物成像，像高 10 mm。在透镜 I 与像面之间插入透镜 II，像高变成 20 mm，工作距离变为 40 mm。求透镜 II 的焦距、两透镜间距。若在 I、II 之间加入孔径光阑 P，且 d₁p = d₂p，相对孔径为 1/4，求孔径光阑的通光孔径、入瞳大小、物方孔径角、无渐晕时 D₁、D₂。\n\n> 原材料注明该题比原卷少记了两问——**原始材料未提供**。",
+   "originalText": "焦距为 50 mm 的透镜 I 对无穷远物成像，像高 10 mm。在透镜 I 与像面之间插入透镜 II，像高变成 20 mm，工作距离变为 40 mm。求透镜 II 的焦距、两透镜间距。若在 I、II 之间加入孔径光阑 P，且 d₁p = d₂p，相对孔径为 1/4，求孔径光阑的通光孔径、入瞳大小、物方孔径角、无渐晕时 D₁、D₂。",
    "originalHeading": "四、几何光学（18 分）",
    "sourceFile": "电子版_修订/2018.md",
    "sourceLine": 128,
    "sourceHash": "a4274a66c4df11a334744d7967b2c272cb0ddddd2fefd6b3b5e37621a55656b0",
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
    "answer": [
     {
-     "k": "note",
-     "x": "本题仍有来源或条件问题；以下区分已确定部分和条件结论，不代表整题已解除待核。"
-    },
-    {
      "k": "p",
-     "x": "对已记录题面：$f_2=-40$mm，$d=30$mm；孔阑口径17.5mm，入瞳直径25mm。物在无穷远，物方孔径角为0；像方孔径全角约14.25°。无渐晕时 $D_1=235/7\\approx33.571$mm，$D_2=130/7\\approx18.571$mm。材料明确少记两问，无法恢复那两问。"
+     "x": "$f_2=-40$mm，$d=30$mm；孔阑口径17.5mm，入瞳直径25mm。物在无穷远，物方孔径角为0；像方孔径全角约14.25°。无渐晕时 $D_1=235/7\\approx33.571$mm，$D_2=130/7\\approx18.571$mm。"
     }
    ],
    "analysis": [
@@ -6460,8 +6393,8 @@
     }
    ],
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": ""
    }
   },
   {
@@ -6668,39 +6601,6 @@
     "answerSource": "IMG_20260928_135433.jpg，计算七",
     "changes": "保持30°为衍射角并明确属第一问；按纸质两波长反解缝距3.0μm，原1.5μm更正。",
     "originalUniquelyRecovered": false
-   }
-  },
-  {
-   "id": "exam-2018-04caaa7d6a7ded38",
-   "year": 2018,
-   "paperId": "2018",
-   "section": "计算题",
-   "questionNumber": "八、衍射（10 分）",
-   "order": 31,
-   "type": "calc",
-   "stem": [
-    {
-     "k": "p",
-     "x": "原材料明确说整题题干已忘，无法转写——**原始材料未提供**。"
-    }
-   ],
-   "options": [],
-   "originalText": "原材料明确说整题题干已忘，无法转写——**原始材料未提供**。",
-   "originalHeading": "八、衍射（10 分）",
-   "sourceFile": "电子版_修订/2018.md",
-   "sourceLine": 144,
-   "sourceHash": "a4274a66c4df11a334744d7967b2c272cb0ddddd2fefd6b3b5e37621a55656b0",
-   "completeness": "partial",
-   "playable": false,
-   "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
-   "questionId": "past-2018-04caaa7d6a7ded38",
-   "revisionKind": "calc",
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
    }
   },
   {
@@ -9350,60 +9250,6 @@
    "review": {
     "needsCheck": false,
     "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
-  },
-  {
-   "id": "exam-2020-2c82c300d8af961a",
-   "year": 2020,
-   "paperId": "2020",
-   "section": "二、填空题（35 分）",
-   "questionNumber": "1—3.",
-   "order": 17,
-   "type": "blank",
-   "stem": [
-    {
-     "k": "p",
-     "x": "原始材料写作：“前三个很简单，是放大倍率，景深，还有像差的题目”，**未给出具体题干与数据**。"
-    }
-   ],
-   "options": [],
-   "originalText": "原始材料写作：“前三个很简单，是放大倍率，景深，还有像差的题目”，**未给出具体题干与数据**。\n\n<!-- 原图：IMG_20260927_145748.jpg -->",
-   "originalHeading": "1—3.",
-   "sourceFile": "电子版_修订/2020.md",
-   "sourceLine": 111,
-   "sourceHash": "15ee199deb2b21bfe08242055a92cf386e2a51812a3a59fd2c5164f69e479960",
-   "completeness": "partial",
-   "playable": false,
-   "sourceImages": [
-    "IMG_20260927_145748.jpg"
-   ],
-   "answer": [],
-   "analysis": [
-    {
-     "k": "p",
-     "x": "原始材料未提供"
-    },
-    {
-     "k": "p",
-     "x": "**原始材料未提供**（原稿只写“前三个很简单，是放大倍率，景深，还有像差的题目”）。"
-    },
-    {
-     "k": "note",
-     "x": "参考来源：电子版_修订/2020_答案.md:28。按用户修订稿导入，未作为官方标准答案认证。"
-    }
-   ],
-   "answerAvailability": "not_provided",
-   "questionId": "past-2020-2c82c300d8af961a",
-   "revisionKind": "blank",
-   "answerSources": [
-    {
-     "file": "电子版_修订/2020_答案.md",
-     "line": 28
-    }
-   ],
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
    }
   },
   {
@@ -32395,11 +32241,89 @@
    "stem": [
     {
      "k": "p",
-     "x": "**原文**：单轴双折射晶体中，一般情况下（　）"
+     "x": "为了观察原子光谱的超精细结构，应首选下列哪个分光系统（　）？"
+    }
+   ],
+   "options": [
+    {
+     "key": "A",
+     "x": "棱镜"
+    },
+    {
+     "key": "B",
+     "x": "典型的F-P干涉仪"
+    },
+    {
+     "key": "C",
+     "x": "典型光栅"
+    }
+   ],
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 B：典型的 F-P（法布里–珀罗）干涉仪。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "原子光谱超精细结构的谱线间隔很小，需要很高的分辨本领。F-P干涉仪利用多光束干涉产生尖锐的透射峰，分辨本领为 $R=m\\mathcal F$（$m$ 为干涉级次，$\\mathcal F$ 为精细度）。在题目给出的典型分光系统中，应优先选用F-P干涉仪。"
     },
     {
      "k": "note",
-     "x": "回忆稿把题意记成“观察超细结构的仪器”，与原题不符，以原卷为准。"
+     "x": "原卷B项印为“F-B干涉仪”，依器件名称修正为F-P干涉仪。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
+   "originalText": "**原文**：单轴双折射晶体中，一般情况下（　）\nA. H, D, S 相互垂直　B. H, E, k 相互垂直\nC. H, E, S 相互垂直　D. E, k, S 相互垂直\n\n> 原文见 `往年真题_2005.md`。\n> 回忆稿把题意记成“观察超细结构的仪器”，与原题不符，以原卷为准。",
+   "answerAvailability": "review_provided",
+   "id": "past-2018-aa8b40169aa7b78e",
+   "canonicalId": "past-2018-aa8b40169aa7b78e",
+   "statusKey": "past-2018-aa8b40169aa7b78e",
+   "sourceType": "past_exam",
+   "sourceLabel": "浙江大学841历年真题",
+   "chapterId": "phys-ch10",
+   "section": "一、选择题",
+   "number": "10. 引自2005年选择第9题",
+   "name": "2018年 一、选择题",
+   "year": 2018,
+   "order": 1362,
+   "typeName": "选择题",
+   "stemImages": [],
+   "analysisImages": [],
+   "knowledge": {
+    "points": [
+     "待人工细分"
+    ],
+    "formulas": [],
+    "pitfalls": []
+   },
+   "topics": [
+    "phys-ch10-k6"
+   ],
+   "topicAssignment": "keyword_review_pending",
+   "origin": {
+    "file": "电子版_修订/2018.md",
+    "line": 53,
+    "reference": "依据用户确认，对应2005年选择第9题；原卷照片：66B0E6A3161AD06870CAC9F3F5CEE6D7.jpg。"
+   },
+   "review": {
+    "needsCheck": false,
+    "notes": "原电子整理错引2005年第7题。依据用户确认和原卷照片，恢复2005年第9题的题干与三个选项，正确答案为B。"
+   },
+   "occurrences": [
+    "exam-2018-aa8b40169aa7b78e"
+   ],
+   "duplicateType": "unique",
+   "examFrequency": 1
+  },
+  {
+   "type": "choice",
+   "stem": [
+    {
+     "k": "p",
+     "x": "**原文**：单轴双折射晶体中，一般情况下（　）"
     }
    ],
    "options": [
@@ -32434,19 +32358,19 @@
    ],
    "completeness": "complete",
    "playable": true,
-   "originalText": "**原文**：单轴双折射晶体中，一般情况下（　）\nA. H, D, S 相互垂直　B. H, E, k 相互垂直\nC. H, E, S 相互垂直　D. E, k, S 相互垂直\n\n> 原文见 `往年真题_2005.md`。\n> 回忆稿把题意记成“观察超细结构的仪器”，与原题不符，以原卷为准。",
-   "answerAvailability": "not_provided",
-   "id": "past-2018-aa8b40169aa7b78e",
-   "canonicalId": "past-2018-aa8b40169aa7b78e",
-   "statusKey": "past-2018-aa8b40169aa7b78e",
+   "originalText": "原材料写“同 05 年选择题 7”，并提到 E,H,S 或 D,S,K 互成右手螺旋。\n\n> **核定结果**：这正是 2005 选择 7 的 C、A 两项，与第 10 题同源。回忆稿在此重复引用同一道往年题，无法据此还原成一道独立的新题，故本版把它与第 10 题合并说明。这属于**原始材料自身的问题**，不是录入遗漏。",
+   "answerAvailability": "review_provided",
+   "id": "past-2018-68a470a8e72d592d",
+   "canonicalId": "past-2018-68a470a8e72d592d",
+   "statusKey": "past-2018-68a470a8e72d592d",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
    "chapterId": "phys-ch13",
    "section": "一、选择题",
-   "number": "10.　引自 2005 年选择第 7 题",
+   "number": "11. 引自2005年选择第7题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1362,
+   "order": 40,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -32463,127 +32387,15 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2018.md",
-    "line": 53,
-    "reference": "原文见 `往年真题_2005.md`。"
+    "line": 61,
+    "reference": "对照2005年选择第7题原卷照片：66B0E6A3161AD06870CAC9F3F5CEE6D7.jpg。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   },
-   "occurrences": [
-    "exam-2018-aa8b40169aa7b78e"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1
-  },
-  {
-   "type": "choice",
-   "stem": [
-    {
-     "k": "p",
-     "x": "原材料写“同 05 年选择题 7”，并提到 E,H,S 或 D,S,K 互成右手螺旋。"
-    },
-    {
-     "k": "note",
-     "x": "**核定结果**：这正是 2005 选择 7 的 C、A 两项，与第 10 题同源。回忆稿在此重复引用同一道往年题，无法据此还原成一道独立的新题，故本版把它与第 10 题合并说明。这属于**原始材料自身的问题**，不是录入遗漏。"
-    }
-   ],
-   "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
-   "originalText": "原材料写“同 05 年选择题 7”，并提到 E,H,S 或 D,S,K 互成右手螺旋。\n\n> **核定结果**：这正是 2005 选择 7 的 C、A 两项，与第 10 题同源。回忆稿在此重复引用同一道往年题，无法据此还原成一道独立的新题，故本版把它与第 10 题合并说明。这属于**原始材料自身的问题**，不是录入遗漏。",
-   "answerAvailability": "not_provided",
-   "id": "past-2018-68a470a8e72d592d",
-   "canonicalId": "past-2018-68a470a8e72d592d",
-   "statusKey": "past-2018-68a470a8e72d592d",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "section": "一、选择题",
-   "number": "11.",
-   "name": "2018年 一、选择题",
-   "year": 2018,
-   "order": 40,
-   "typeName": "选择题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "待人工细分"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "exam-incomplete-k2"
-   ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2018.md",
-    "line": 61
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "notes": "2018年第10题改为2005年第9题后，第11题恢复为其原引用的2005年第7题。答案与解析按原卷选项核对。"
    },
    "occurrences": [
     "exam-2018-68a470a8e72d592d"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1
-  },
-  {
-   "type": "choice",
-   "stem": [
-    {
-     "k": "p",
-     "x": "圆盘衍射，问屏上 P 点是暗点还是亮点，以及该点与圆盘距离、遮挡前后亮度的关系。〔原材料未记下完整题干和选项——**原始材料未提供**；原文另附有答案分析，本版未录入。〕"
-    }
-   ],
-   "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
-   "originalText": "圆盘衍射，问屏上 P 点是暗点还是亮点，以及该点与圆盘距离、遮挡前后亮度的关系。〔原材料未记下完整题干和选项——**原始材料未提供**；原文另附有答案分析，本版未录入。〕",
-   "answerAvailability": "not_provided",
-   "id": "past-2018-c728f597026db83c",
-   "canonicalId": "past-2018-c728f597026db83c",
-   "statusKey": "past-2018-c728f597026db83c",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "section": "一、选择题",
-   "number": "12.",
-   "name": "2018年 一、选择题",
-   "year": 2018,
-   "order": 37,
-   "typeName": "选择题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "菲涅耳衍射与夫琅禾费衍射"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "exam-incomplete-k2"
-   ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2018.md",
-    "line": 66
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   },
-   "occurrences": [
-    "exam-2018-c728f597026db83c"
    ],
    "duplicateType": "unique",
    "examFrequency": 1
@@ -33561,84 +33373,18 @@
    ]
   },
   {
-   "type": "blank",
-   "stem": [
-    {
-     "k": "p",
-     "x": "原材料仅记“忘了，也是某个气体激光器的知识点”。"
-    },
-    {
-     "k": "note",
-     "x": "**原始材料未提供**。按你的意见保留题号与说明，不臆补。"
-    }
-   ],
-   "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
-   "originalText": "原材料仅记“忘了，也是某个气体激光器的知识点”。\n\n> **原始材料未提供**。按你的意见保留题号与说明，不臆补。",
-   "answerAvailability": "not_provided",
-   "id": "past-2018-94dae7b2c58f52d5",
-   "canonicalId": "past-2018-94dae7b2c58f52d5",
-   "statusKey": "past-2018-94dae7b2c58f52d5",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "section": "二、填空题",
-   "number": "7.",
-   "name": "2018年 二、填空题",
-   "year": 2018,
-   "order": 31,
-   "typeName": "填空题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "待人工细分"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "exam-incomplete-k4"
-   ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2018.md",
-    "line": 121
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   },
-   "occurrences": [
-    "exam-2018-94dae7b2c58f52d5"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1
-  },
-  {
    "type": "calc",
    "stem": [
     {
      "k": "p",
      "x": "焦距为 50 mm 的透镜 I 对无穷远物成像，像高 10 mm。在透镜 I 与像面之间插入透镜 II，像高变成 20 mm，工作距离变为 40 mm。求透镜 II 的焦距、两透镜间距。若在 I、II 之间加入孔径光阑 P，且 $d_{1p}$ = $d_{2p}$，相对孔径为 1/4，求孔径光阑的通光孔径、入瞳大小、物方孔径角、无渐晕时 $D_1$、$D_2$。"
-    },
-    {
-     "k": "note",
-     "x": "原材料注明该题比原卷少记了两问——**原始材料未提供**。"
     }
    ],
    "options": [],
    "answer": [
     {
-     "k": "note",
-     "x": "本题仍有来源或条件问题；以下区分已确定部分和条件结论，不代表整题已解除待核。"
-    },
-    {
      "k": "p",
-     "x": "对已记录题面：$f_2=-40$mm，$d=30$mm；孔阑口径17.5mm，入瞳直径25mm。物在无穷远，物方孔径角为0；像方孔径全角约14.25°。无渐晕时 $D_1=235/7\\approx33.571$mm，$D_2=130/7\\approx18.571$mm。材料明确少记两问，无法恢复那两问。"
+     "x": "$f_2=-40$mm，$d=30$mm；孔阑口径17.5mm，入瞳直径25mm。物在无穷远，物方孔径角为0；像方孔径全角约14.25°。无渐晕时 $D_1=235/7\\approx33.571$mm，$D_2=130/7\\approx18.571$mm。"
     }
    ],
    "analysis": [
@@ -33655,16 +33401,16 @@
      "x": "11.31°为物方半视场角 $\\arctan(1/5)$，不是无穷远物点的物方孔径角。"
     }
    ],
-   "completeness": "partial",
-   "playable": false,
-   "originalText": "焦距为 50 mm 的透镜 I 对无穷远物成像，像高 10 mm。在透镜 I 与像面之间插入透镜 II，像高变成 20 mm，工作距离变为 40 mm。求透镜 II 的焦距、两透镜间距。若在 I、II 之间加入孔径光阑 P，且 d₁p = d₂p，相对孔径为 1/4，求孔径光阑的通光孔径、入瞳大小、物方孔径角、无渐晕时 D₁、D₂。\n\n> 原材料注明该题比原卷少记了两问——**原始材料未提供**。",
+   "completeness": "complete",
+   "playable": true,
+   "originalText": "焦距为 50 mm 的透镜 I 对无穷远物成像，像高 10 mm。在透镜 I 与像面之间插入透镜 II，像高变成 20 mm，工作距离变为 40 mm。求透镜 II 的焦距、两透镜间距。若在 I、II 之间加入孔径光阑 P，且 d₁p = d₂p，相对孔径为 1/4，求孔径光阑的通光孔径、入瞳大小、物方孔径角、无渐晕时 D₁、D₂。",
    "answerAvailability": "reference_provided",
    "id": "past-2018-416da88ac3a13a08",
    "canonicalId": "past-2018-416da88ac3a13a08",
    "statusKey": "past-2018-416da88ac3a13a08",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "geom-ch4",
    "section": "计算题",
    "number": "四、几何光学（18 分）",
    "name": "2018年 计算题",
@@ -33681,7 +33427,7 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch4-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
@@ -33689,8 +33435,8 @@
     "line": 128
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": ""
    },
    "occurrences": [
     "exam-2018-416da88ac3a13a08"
@@ -33975,60 +33721,6 @@
     "changes": "保持30°为衍射角并明确属第一问；按纸质两波长反解缝距3.0μm，原1.5μm更正。",
     "originalUniquelyRecovered": false
    }
-  },
-  {
-   "type": "calc",
-   "stem": [
-    {
-     "k": "p",
-     "x": "原材料明确说整题题干已忘，无法转写——**原始材料未提供**。"
-    }
-   ],
-   "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
-   "originalText": "原材料明确说整题题干已忘，无法转写——**原始材料未提供**。",
-   "answerAvailability": "not_provided",
-   "id": "past-2018-04caaa7d6a7ded38",
-   "canonicalId": "past-2018-04caaa7d6a7ded38",
-   "statusKey": "past-2018-04caaa7d6a7ded38",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "section": "计算题",
-   "number": "八、衍射（10 分）",
-   "name": "2018年 计算题",
-   "year": 2018,
-   "order": 32,
-   "typeName": "计算／简答题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "待人工细分"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "exam-incomplete-k4"
-   ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2018.md",
-    "line": 144
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   },
-   "occurrences": [
-    "exam-2018-04caaa7d6a7ded38"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1
   },
   {
    "type": "calc",
@@ -37351,79 +37043,6 @@
     {
      "file": "电子版_修订/2020_答案.md",
      "line": 24
-    }
-   ]
-  },
-  {
-   "type": "blank",
-   "stem": [
-    {
-     "k": "p",
-     "x": "原始材料写作：“前三个很简单，是放大倍率，景深，还有像差的题目”，**未给出具体题干与数据**。"
-    }
-   ],
-   "options": [],
-   "answer": [],
-   "analysis": [
-    {
-     "k": "p",
-     "x": "原始材料未提供"
-    },
-    {
-     "k": "p",
-     "x": "**原始材料未提供**（原稿只写“前三个很简单，是放大倍率，景深，还有像差的题目”）。"
-    },
-    {
-     "k": "note",
-     "x": "参考来源：电子版_修订/2020_答案.md:28。按用户修订稿导入，未作为官方标准答案认证。"
-    }
-   ],
-   "completeness": "partial",
-   "playable": false,
-   "originalText": "原始材料写作：“前三个很简单，是放大倍率，景深，还有像差的题目”，**未给出具体题干与数据**。\n\n<!-- 原图：IMG_20260927_145748.jpg -->",
-   "answerAvailability": "not_provided",
-   "id": "past-2020-2c82c300d8af961a",
-   "canonicalId": "past-2020-2c82c300d8af961a",
-   "statusKey": "past-2020-2c82c300d8af961a",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "section": "二、填空题（35 分）",
-   "number": "1—3.",
-   "name": "2020年 二、填空题（35 分）",
-   "year": 2020,
-   "order": 45,
-   "typeName": "填空题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "景深"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "exam-incomplete-k1"
-   ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2020.md",
-    "line": 111
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   },
-   "occurrences": [
-    "exam-2020-2c82c300d8af961a"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1,
-   "answerSources": [
-    {
-     "file": "电子版_修订/2020_答案.md",
-     "line": 28
     }
    ]
   },

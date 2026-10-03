@@ -11,14 +11,14 @@ function initExams(data){
   DATA.byId[o.id]=Object.assign({},q,{id:o.id,occurrenceId:o.id,canonicalId:o.questionId,statusKey:q.statusKey||o.questionId,stem:o.stem,options:o.options,answer:o.answer||[],analysis:o.analysis||[],answerAvailability:o.answerAvailability,review:o.review||q.review,number:o.questionNumber,year:o.year,section:o.section,order:o.order,playable:o.playable,completeness:o.completeness,typeName:o.revisionKind==='drawing'?'作图题':q.typeName,origin:{file:o.sourceFile,line:o.sourceLine}});
  });
  try{var p=JSON.parse(localStorage.getItem(EXAM_STORE_KEY)||'{}');['positions','marks','choices'].forEach(function(k){if(p[k]&&typeof p[k]==='object'&&!Array.isArray(p[k]))examProgress[k]=p[k];});}catch(e){examWritable=false;}
- Object.keys(examProgress.choices).forEach(function(id){var q=DATA.byId[id],pick=examProgress.choices[id];if(q&&q.options.some(function(o){return o.key===pick;}))ui.choicePick[id]=pick;});
+ Object.keys(examProgress.choices).forEach(function(id){var q=DATA.byId[id],pick=examProgress.choices[id];if(validChoiceSelection(q,pick))ui.choicePick[id]=pick;});
  Object.keys(examProgress.marks).forEach(function(id){if(!EXAMS.byOccurrence[id]||['known','unknown','shaky'].indexOf(examProgress.marks[id])<0)delete examProgress.marks[id];});
  $('module-bank').onclick=function(){location.hash='/bank';openBank();};
  $('module-exams').onclick=function(){location.hash='/exams';openExamHome();};
  window.addEventListener('hashchange',routeExam);
 }
 function persistExam(){if(!examWritable)return;try{localStorage.setItem(EXAM_STORE_KEY,JSON.stringify(examProgress));if(window.OpticsCloud)OpticsCloud.capture();}catch(e){examWritable=false;store.writable=false;store.message='浏览器无法保存学习记录，本次真题进度仅保存在当前页面。';renderStoreNote();}}
-function saveExamChoice(q){examProgress.choices[q.id]=ui.choicePick[q.id];persistExam();}
+function saveExamChoice(q){if(ui.choicePick[q.id])examProgress.choices[q.id]=ui.choicePick[q.id];else delete examProgress.choices[q.id];persistExam();}
 function markExamOccurrence(q,val){if(val)examProgress.marks[q.id]=val;else delete examProgress.marks[q.id];persistExam();}
 function examYear(){return EXAMS.years.find(function(y){return y.id===ui.scope.paperId;});}
 function openBank(){setScope({type:'all'});}
@@ -45,7 +45,7 @@ var baseRender=render;render=function(){
  $('exam-home').hidden=!home;document.querySelector('.actionbar').hidden=home;document.querySelector('.question-nav').hidden=home;
  if(home){renderTree();renderFilterBar();renderStoreNote();$('card').hidden=true;$('empty').hidden=true;$('notice').hidden=true;$('crumb').textContent='浙江大学 · 841 工程光学基础';$('crumb-sub').textContent='保留原卷题序，逐题练习';$('progress').textContent=EXAMS.years.length+' 份年份资料 · '+EXAMS.occurrences.length+' 条原题';renderExamHome();return;}
  baseRender();var q=currentQuestion();if(!q)return;
- if(q.occurrenceId){if(!window.OpticsCloud||!OpticsCloud.isApplying()){examProgress.positions[ui.scope.paperId]=q.id;persistExam();}$('crumb-sub').textContent=q.section+' · 原题 '+q.number+' · '+q.typeName;}
+ if(q.occurrenceId){if(!window.OpticsCloud||!OpticsCloud.isApplying()){examProgress.positions[ui.scope.paperId]=q.id;persistExam();}$('crumb-sub').textContent=q.section+' · 原题 '+q.number+' · '+(isMultipleChoice(q)?'多选题':q.typeName);}
  if(q.playable===false){if(!$('stem').querySelector('.exam-warning')){var note=el('div','exam-warning','原始资料'+(q.completeness==='needs_image'?'缺少题图':'不完整')+'，本题暂不支持在线作答。保留原题号与原文，等待补全。');$('stem').prepend(note);}$('options').querySelectorAll('button').forEach(function(b){b.disabled=true;});$('status-buttons').querySelectorAll('button').forEach(function(b){b.disabled=true;});}
 };
 function renderExamHome(){
