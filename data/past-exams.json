@@ -67,10 +67,7 @@
    "occurrenceIds": [
     "exam-2017-9374b520e3e908e3",
     "exam-2017-9db5584364754809",
-    "exam-2017-670b96b63e7ff1d5",
-    "exam-2017-35cb3be4039cb527",
     "exam-2017-89975e6f0813661b",
-    "exam-2017-89ed0b753e29e332",
     "exam-2017-a987259740457e67",
     "exam-2017-4f4fd9b3f50b869d",
     "exam-2017-da48bee9a54c4440",
@@ -95,6 +92,9 @@
     "exam-2017-f8fff5c3a05ff9d3",
     "exam-2017-6d905c14cd494443",
     "exam-2017-113751e16774ecb7",
+    "exam-2017-21e60e338d90257d",
+    "exam-2017-c8065fe598212224",
+    "exam-2017-26924536f261611f",
     "exam-2017-fb935ddc373ac150",
     "exam-2017-0fac68fcebfda603",
     "exam-2017-80e296673bf6a37e",
@@ -103,16 +103,16 @@
     "exam-2017-df21d6e11c510db9"
    ],
    "count": 36,
-   "sourceNote": "电子版_修订；题目和参考答案按来源分别导入。",
+   "sourceNote": "按2017年分段补拍照片重新识别；11处视觉疑问已由用户确认。保留照片已给出的题号、选项与条件，补入3道画图题及答案解析。",
    "requiresReview": true,
    "typeCounts": {
-    "choice": 20,
+    "choice": 17,
     "blank": 10,
-    "calc": 6
+    "calc": 9
    },
-   "playableCount": 15,
-   "incompleteCount": 21,
-   "answerCount": 12
+   "playableCount": 36,
+   "incompleteCount": 0,
+   "answerCount": 36
   },
   {
    "year": 2018,
@@ -158,7 +158,7 @@
    },
    "playableCount": 23,
    "incompleteCount": 6,
-   "answerCount": 28
+   "answerCount": 29
   },
   {
    "year": 2019,
@@ -3566,7 +3566,7 @@
    "stem": [
     {
      "k": "p",
-     "x": "焦距为 100 mm 的理想光学系统有以下光阑，其孔径大小和光学系统的位置分别对应的是？原材料所记选项："
+     "x": "焦距为100 mm的理想光学系统有以下光阑，其直径大小和光学系统的理论分辨率有关的是（ ）。"
     }
    ],
    "options": [
@@ -3580,26 +3580,47 @@
     },
     {
      "key": "C",
-     "x": "渐晕光阑。〔其余选项缺失。〕"
+     "x": "渐晕光阑"
     }
    ],
-   "originalText": "焦距为 100 mm 的理想光学系统有以下光阑，其孔径大小和光学系统的位置分别对应的是？原材料所记选项：A. 孔径光阑；B. 视场光阑；C. 渐晕光阑。〔其余选项缺失。〕",
+   "originalText": "焦距为100 mm的理想光学系统有以下光阑，其直径大小和光学系统的理论分辨率有关的是（ ）。",
    "originalHeading": "1",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
    "sourceLine": 7,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "eca8fdf242853fb6bc5663753e14ecd94c3625047b7d649b6bf27cd62cbea333",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 A：孔径光阑。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "衍射分辨能力由有效出瞳口径或数值孔径决定。孔径光阑限制轴上光束孔径，因而决定理论分辨率；视场光阑主要限制视场，渐晕光阑限制离轴光束。"
+    },
+    {
+     "k": "m",
+     "x": "\\theta_{\\min}\\simeq1.22\\lambda/D,\\qquad \\delta\\simeq0.61\\lambda/\\mathrm{NA}."
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-9374b520e3e908e3",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "id": "exam-2017-9db5584364754809",
@@ -3612,108 +3633,65 @@
    "stem": [
     {
      "k": "p",
-     "x": "某光学系统总焦距为 24 mm，由两片透镜组成，对远处物体成像，要求工作距离 50 mm。原材料所记选项："
+     "x": "某光学系统焦距为24 mm，由两组薄透镜组合，对远处物体成像，要求工作距离50 mm，则（ ）。"
     }
    ],
    "options": [
     {
      "key": "A",
-     "x": "正透镜与正透镜的距离最大"
+     "x": "正透镜与正透镜的距离变大"
     },
     {
      "key": "B",
-     "x": "正负透镜组合，负透镜放在前面"
+     "x": "正负透镜组合，将正透镜放在前面"
     },
     {
      "key": "C",
-     "x": "负透镜放在后面。〔选项文字可能不完整。〕"
+     "x": "负透镜放在前面"
     }
    ],
-   "originalText": "某光学系统总焦距为 24 mm，由两片透镜组成，对远处物体成像，要求工作距离 50 mm。原材料所记选项：A. 正透镜与正透镜的距离最大；B. 正负透镜组合，负透镜放在前面；C. 负透镜放在后面。〔选项文字可能不完整。〕",
+   "originalText": "某光学系统焦距为24 mm，由两组薄透镜组合，对远处物体成像，要求工作距离50 mm，则（ ）。",
    "originalHeading": "2",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
    "sourceLine": 11,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "1fb8f2522fddcf25cae9904d5c07bdd85eb21e05c52737dc2ef91151bd2d09ff",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 C：负透镜放在前面，正透镜放在后面。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "题目要求后工作距离50 mm大于系统焦距24 mm，属于反远距结构。设两薄透镜间距d>0、前镜焦距f₁、组合焦距F，则物在无穷远时后截距为F(1−d/f₁)。"
+    },
+    {
+     "k": "m",
+     "x": "50=24(1-d/f_1)\\ \\Rightarrow\\ f_1=-\\frac{12}{13}d<0."
+    },
+    {
+     "k": "p",
+     "x": "因此前镜必须为负透镜；后镜取正透镜。两个正透镜不能在通常正间隔下满足该后截距，正镜在前、负镜在后的远距型结构方向相反。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-9db5584364754809",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
-  },
-  {
-   "id": "exam-2017-670b96b63e7ff1d5",
-   "year": 2017,
-   "paperId": "2017",
-   "section": "一、选择题",
-   "questionNumber": "3",
-   "order": 3,
-   "type": "choice",
-   "stem": [
-    {
-     "k": "p",
-     "x": "一个圆，横坐标是 $d,F,c$〔字母按原图，含义未注明〕，其在主透光轴上的像高于纵坐标表示视场的什么？〔手写题干难辨，需核 IMG_20260927_145911.jpg。〕"
-    }
-   ],
-   "options": [],
-   "originalText": "一个圆，横坐标是 $d,F,c$〔字母按原图，含义未注明〕，其在主透光轴上的像高于纵坐标表示视场的什么？〔手写题干难辨，需核 IMG_20260927_145911.jpg。〕",
-   "originalHeading": "3",
-   "sourceFile": "电子版_修订/2017.md",
-   "sourceLine": 15,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
-   "sourceImages": [
-    "IMG_20260927_145911.jpg"
-   ],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
-   "questionId": "past-2017-670b96b63e7ff1d5",
-   "revisionKind": "choice",
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
-  },
-  {
-   "id": "exam-2017-35cb3be4039cb527",
-   "year": 2017,
-   "paperId": "2017",
-   "section": "一、选择题",
-   "questionNumber": "4",
-   "order": 4,
-   "type": "choice",
-   "stem": [
-    {
-     "k": "p",
-     "x": "在有单组透镜转像系统的开普勒望远镜中……〔后半题干未记。〕"
-    }
-   ],
-   "options": [],
-   "originalText": "在有单组透镜转像系统的开普勒望远镜中……〔后半题干未记。〕",
-   "originalHeading": "4",
-   "sourceFile": "电子版_修订/2017.md",
-   "sourceLine": 19,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
-   "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
-   "questionId": "past-2017-35cb3be4039cb527",
-   "revisionKind": "choice",
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "id": "exam-2017-89975e6f0813661b",
@@ -3726,60 +3704,61 @@
    "stem": [
     {
      "k": "p",
-     "x": "显微镜当对细件成像于明视距离处供观察时，其视放大率……〔原材料只有残句及“等于或大于”“趋向于一”等残缺选项；需核原图。〕"
+     "x": "显微镜当对物体成像于明视距离处供观察时，其视觉放大率（ ）。"
     }
    ],
-   "options": [],
-   "originalText": "显微镜当对细件成像于明视距离处供观察时，其视放大率……〔原材料只有残句及“等于或大于”“趋向于一”等残缺选项；需核原图。〕",
+   "options": [
+    {
+     "key": "A",
+     "x": "等于垂轴放大率"
+    },
+    {
+     "key": "B",
+     "x": "轴向放大率"
+    }
+   ],
+   "originalText": "显微镜当对物体成像于明视距离处供观察时，其视觉放大率（ ）。",
    "originalHeading": "5",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
    "sourceLine": 23,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "4758f8a8b20c57ca4e5e337ecd93ad345e10a31c492fffc07e4f1e76da4cc41e",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 A：等于整个显微镜系统的垂轴放大率。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "最终虚像位于明视距离D=250 mm时，裸眼在同一距离观察原物的视角约为y/D，显微镜最终虚像的视角约为y″/D。因此视觉放大率与整个系统的垂轴放大率相等。"
+    },
+    {
+     "k": "m",
+     "x": "\\Gamma=\\frac{y^{\\prime\\prime}/D}{y/D}=\\frac{y^{\\prime\\prime}}{y}=\\beta_{\\rm system}."
+    },
+    {
+     "k": "p",
+     "x": "这里的垂轴放大率是物到最终虚像的倍率，不是显微物镜单独的中间像倍率。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-89975e6f0813661b",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
-  },
-  {
-   "id": "exam-2017-89ed0b753e29e332",
-   "year": 2017,
-   "paperId": "2017",
-   "section": "一、选择题",
-   "questionNumber": "6",
-   "order": 6,
-   "type": "choice",
-   "stem": [
-    {
-     "k": "p",
-     "x": "在以下光学系统中，球差绝对值最小的是？〔选项未记。〕"
-    }
-   ],
-   "options": [],
-   "originalText": "在以下光学系统中，球差绝对值最小的是？〔选项未记。〕",
-   "originalHeading": "6",
-   "sourceFile": "电子版_修订/2017.md",
-   "sourceLine": 27,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
-   "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
-   "questionId": "past-2017-89ed0b753e29e332",
-   "revisionKind": "choice",
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "id": "exam-2017-a987259740457e67",
@@ -3792,40 +3771,61 @@
    "stem": [
     {
      "k": "p",
-     "x": "当入射光沿闪耀角为 $\\gamma$ 的闪耀光栅面法线方向入射时，得到闪耀的衍射角方向为 $\\theta=\\,$？原材料可辨选项："
+     "x": "当入射光沿闪耀角为$\\gamma$的闪耀光栅面法线方向时，得到闪耀的衍射角方向为$\\theta=\\cdots$。"
     }
    ],
    "options": [
     {
      "key": "A",
-     "x": ""
+     "x": "$\\theta=\\gamma$"
     },
     {
      "key": "B",
-     "x": ""
+     "x": "$\\theta=2\\gamma$"
     },
     {
      "key": "C",
-     "x": "。"
+     "x": "$\\theta=4\\gamma$"
     }
    ],
-   "originalText": "当入射光沿闪耀角为 $\\gamma$ 的闪耀光栅面法线方向入射时，得到闪耀的衍射角方向为 $\\theta=\\,$？原材料可辨选项：A. $\\theta=\\gamma$；B. $\\theta=2\\gamma$；C. $\\theta=4\\gamma$。",
+   "originalText": "当入射光沿闪耀角为$\\gamma$的闪耀光栅面法线方向时，得到闪耀的衍射角方向为$\\theta=\\cdots$。",
    "originalHeading": "7",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
    "sourceLine": 31,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "6bb6f9b0fe80c4d2241c227c7d5ce03493fac65adfcc64e43931ce06f59f650b",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 B：$\\theta=2\\gamma$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "闪耀光栅沟槽工作面的法线相对光栅宏观面法线倾斜γ。沿宏观面法线入射时，入射光与沟槽法线夹角为γ，沟槽面的镜面反射方向在法线另一侧同样为γ，因此闪耀方向相对宏观面法线偏转2γ。"
+    },
+    {
+     "k": "m",
+     "x": "\\theta_{\\rm blaze}=2\\gamma."
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-a987259740457e67",
    "revisionKind": "choice",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "id": "exam-2017-4f4fd9b3f50b869d",
@@ -3838,27 +3838,48 @@
    "stem": [
     {
      "k": "p",
-     "x": "在典型的牛顿环装置中，若用平行光垂直照明，当凸透镜与平板间距离减小时，条纹将……〔选项未记。〕"
+     "x": "在典型的牛顿环装置中，若用平行光垂直照明，则当凸透镜与平板间距减少时，条纹将（ ）。"
     }
    ],
    "options": [],
-   "originalText": "在典型的牛顿环装置中，若用平行光垂直照明，当凸透镜与平板间距离减小时，条纹将……〔选项未记。〕",
+   "originalText": "在典型的牛顿环装置中，若用平行光垂直照明，则当凸透镜与平板间距减少时，条纹将（ ）。",
    "originalHeading": "8",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
    "sourceLine": 35,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "1b487bce38fcef076f48fcbfaa3f86638d126835e4e2dce3368500b5b53c16b7",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "牛顿环向外扩展；同级次环的半径增大。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "设透镜与平板间中心空气隙为h，曲率半径为R。反射暗环条件为2h+r²/R=mλ。减小h而保持同一条纹级次m，r²必须增加，故条纹向外扩展。"
+    },
+    {
+     "k": "m",
+     "x": "r_m^2=R(m\\lambda-2h),\\qquad \\Delta h<0\\Rightarrow\\Delta r_m^2>0."
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-4f4fd9b3f50b869d",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "id": "exam-2017-da48bee9a54c4440",
@@ -3871,50 +3892,66 @@
    "stem": [
     {
      "k": "p",
-     "x": "自然光投射到两片相叠的偏振片上（理想偏振片），当透射光强为入射自然光强的 $1/4$ 时，偏振片的透光轴方向夹角为？原材料可辨选项："
+     "x": "自然光投射到两片相叠的偏振片上（理想偏振片），当透射光强为入射自然光强的1/4时，偏振片的透光轴方向夹角为（ ）。"
     }
    ],
    "options": [
     {
      "key": "A",
-     "x": ""
+     "x": "30°"
     },
     {
      "key": "B",
-     "x": ""
+     "x": "60°"
     },
     {
      "key": "C",
-     "x": "〔末项数字需核原图〕。"
+     "x": "33.5°"
     }
    ],
-   "originalText": "自然光投射到两片相叠的偏振片上（理想偏振片），当透射光强为入射自然光强的 $1/4$ 时，偏振片的透光轴方向夹角为？原材料可辨选项：A. $30^\\circ$；B. $60^\\circ$；C. $33.5^\\circ$〔末项数字需核原图〕。",
+   "originalText": "自然光投射到两片相叠的偏振片上（理想偏振片），当透射光强为入射自然光强的1/4时，偏振片的透光轴方向夹角为（ ）。",
    "originalHeading": "9",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
    "sourceLine": 39,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "d49cf60cc2b54274a61508000e111ab2d300f45861d9e89dcd76d6b58fe4c1da",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
    "answer": [
     {
      "k": "p",
-     "x": "$\\theta=45^\\circ$。"
+     "x": "透光轴锐角夹角为 $45^\\circ$；照片中的三个选项均不等于该结果。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "$I_{\\mathrm{out}}=\\frac{I_{\\mathrm{in}}}{2}\\cos^2\\theta=\\frac{I_{\\mathrm{in}}}{4}$，所以 $\\cos^2\\theta=1/2$。"
+     "x": "自然光经过第一片理想偏振片，光强减半；经过第二片遵从马吕斯定律。"
+    },
+    {
+     "k": "m",
+     "x": "I=\\frac{I_0}{2}\\cos^2\\theta=\\frac{I_0}{4}\\Rightarrow\\cos^2\\theta=\\frac12\\Rightarrow\\theta=45^\\circ."
+    },
+    {
+     "k": "p",
+     "x": "30°、60°、33.5°均不满足题设光强比，因此保留原选项，但不指定错误的选项字母。"
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-da48bee9a54c4440",
    "revisionKind": "choice",
    "review": {
     "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "回忆照片给出的选项为30°、60°、33.5°，与题设I/I₀=1/4算得45°不一致；没有纸质答案可据以反解修订，暂不自动判分。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "id": "exam-2017-aa8b40169aa7b78e",
@@ -3927,27 +3964,57 @@
    "stem": [
     {
      "k": "p",
-     "x": "三等边角小圆孔的夫琅禾费衍射图样是？〔原材料未记选项。〕"
+     "x": "三个全同小圆孔的夫琅禾费衍射图样是（ ）。"
     }
    ],
    "options": [],
-   "originalText": "三等边角小圆孔的夫琅禾费衍射图样是？〔原材料未记选项。〕",
+   "originalText": "三个全同小圆孔的夫琅禾费衍射图样是（ ）。",
    "originalHeading": "10",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
    "sourceLine": 43,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "7a6f804b5175c16960fed82ac6341612feda19a3a6ee292951a77c8687ec14e2",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "图样为单个圆孔衍射包络与三孔干涉因子的乘积；具体条纹排列取决于三个孔的位置。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "令三个全同圆孔中心为r₁、r₂、r₃，单孔夫琅禾费场为U₁(q)，则总场是三个平移孔场的相干叠加。"
+    },
+    {
+     "k": "m",
+     "x": "I(\\boldsymbol q)=|U_1(\\boldsymbol q)|^2\\left|\\sum_{j=1}^3e^{-i\\boldsymbol q\\cdot\\boldsymbol r_j}\\right|^2"
+    },
+    {
+     "k": "m",
+     "x": "=I_1(\\boldsymbol q)\\left[3+2\\sum_{j<k}\\cos\\bigl(\\boldsymbol q\\cdot(\\boldsymbol r_j-\\boldsymbol r_k)\\bigr)\\right]."
+    },
+    {
+     "k": "p",
+     "x": "圆孔包络为艾里型包络。照片未提供三孔的中心排列与图形选项，不能唯一选定某一幅图。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-aa8b40169aa7b78e",
    "revisionKind": "choice",
    "review": {
     "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "照片没有三孔排列或图形选项，仅能给出适用于任意三孔位置的一般表达式。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "id": "exam-2017-68a470a8e72d592d",
@@ -3960,32 +4027,32 @@
    "stem": [
     {
      "k": "p",
-     "x": "傅里叶变换相似定理：空域坐标 $(x,y)$ 放大 $N$ 倍，则频率域中坐标 $(u,v)$ 将放大多少？原材料可辨选项："
+     "x": "傅里叶变换相似定理，空域中坐标$(x_1,y_1)$放大$N$倍，则频率域中坐标$(u,v)$将放大（ ）。"
     }
    ],
    "options": [
     {
      "key": "A",
-     "x": "$N$ 倍"
+     "x": "N"
     },
     {
      "key": "B",
-     "x": "$2N$ 倍"
+     "x": "2N"
     },
     {
      "key": "C",
-     "x": "$N^2$ 倍"
+     "x": "N×N"
     },
     {
      "key": "D",
-     "x": "$1/N$ 倍"
+     "x": "1/N"
     }
    ],
-   "originalText": "傅里叶变换相似定理：空域坐标 $(x,y)$ 放大 $N$ 倍，则频率域中坐标 $(u,v)$ 将放大多少？原材料可辨选项：A. $N$；B. $2N$；C. $N\\times N$；D. $1/N$。",
+   "originalText": "傅里叶变换相似定理，空域中坐标$(x_1,y_1)$放大$N$倍，则频率域中坐标$(u,v)$将放大（ ）。",
    "originalHeading": "11",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
    "sourceLine": 47,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "e04ca8a966b70ebd0f0ff9400ab1bfaf64eb9737238132c579d08f64f5f30b4e",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
@@ -3997,17 +4064,29 @@
    ],
    "analysis": [
     {
+     "k": "m",
+     "x": "f(x/N,y/N)\\longleftrightarrow N^2F(Nu,Nv)."
+    },
+    {
      "k": "p",
-     "x": "用二维缩放关系 $f(x/N,y/N)\\longleftrightarrow N^2F(Nu,Nv)$。谱坐标因空域放大而收缩为 $1/N$。"
+     "x": "空域图形放大N倍，谱的位置及宽度缩小为原来的1/N；前面的N²影响谱振幅而不是谱坐标尺度。"
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-68a470a8e72d592d",
    "revisionKind": "choice",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-c728f597026db83c",
@@ -4020,27 +4099,49 @@
    "stem": [
     {
      "k": "p",
-     "x": "布儒斯特角 $\\theta_B$ 入射时……〔后半题干及选项缺失。〕"
+     "x": "布儒斯特角$\\theta_B$入射时（ ）。"
     }
    ],
    "options": [],
-   "originalText": "布儒斯特角 $\\theta_B$ 入射时……〔后半题干及选项缺失。〕",
+   "originalText": "布儒斯特角$\\theta_B$入射时（ ）。",
    "originalHeading": "12",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
    "sourceLine": 51,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "16149e1ef44dd19f5d154d78f879b60df65ad2312bb3648b28432e5f17b835a9",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "布儒斯特角下p偏振反射率为零；自然光的反射光为s线偏振光。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "\\tan\\theta_B=\\frac{n_2}{n_1},\\qquad \\theta_B+\\theta_t=90^\\circ,\\qquad R_p=0."
+    },
+    {
+     "k": "p",
+     "x": "对通常无吸收介质界面，反射光与折射光互相垂直。只有反射光是完全s线偏振；自然光的透射光一般仍同时含s、p分量，不能说透射光也完全线偏振。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-c728f597026db83c",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-205247028d846679",
@@ -4053,27 +4154,65 @@
    "stem": [
     {
      "k": "p",
-     "x": "以直径为 $D$ 的圆孔作为衍射受限系统的出瞳，在相干光照明时其截止频率为 $\\rho_0$。问该系统对频率为 $\\rho=\\rho_0$ 的信号，其光学传递函数 $H(\\rho)$ 的取值为？原材料可辨选项包括 $0$、$0<H(\\rho)<1$、$H(\\rho)>1$，其余缺失。"
+     "x": "以直径为$D$的圆孔作为衍射受限系统的出瞳，在相干光照明时其截止频率为$\\rho_0$，则当非相干照明，该系统对于频率为$\\rho=\\rho_0$的信息，其光学传递函数$H(\\rho)$的取值为（ ）。"
     }
    ],
-   "options": [],
-   "originalText": "以直径为 $D$ 的圆孔作为衍射受限系统的出瞳，在相干光照明时其截止频率为 $\\rho_0$。问该系统对频率为 $\\rho=\\rho_0$ 的信号，其光学传递函数 $H(\\rho)$ 的取值为？原材料可辨选项包括 $0$、$0<H(\\rho)<1$、$H(\\rho)>1$，其余缺失。",
+   "options": [
+    {
+     "key": "C",
+     "x": "$0<H(\\rho)<1$"
+    },
+    {
+     "key": "D",
+     "x": "$H(\\rho)>1$"
+    }
+   ],
+   "originalText": "以直径为$D$的圆孔作为衍射受限系统的出瞳，在相干光照明时其截止频率为$\\rho_0$，则当非相干照明，该系统对于频率为$\\rho=\\rho_0$的信息，其光学传递函数$H(\\rho)$的取值为（ ）。",
    "originalHeading": "13",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "36ED8C0C40E00EC221E35494D8BD1EB1.jpg",
    "sourceLine": 55,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "0f9589cfc0e851ee89dbaf585694e4cd5e651d9f0a7fafb27575a3820259a7c4",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 C：$0<H(\\rho_0)<1$；理想圆孔出瞳下 $H(\\rho_0)=\\frac23-\\frac{\\sqrt3}{2\\pi}\\approx0.3910$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "ρ₀是相干截止频率。对同一无像差圆孔出瞳，非相干截止频率为2ρ₀，因此题目询问的位置只在非相干通带的一半处。"
+    },
+    {
+     "k": "m",
+     "x": "H(\\rho)=\\frac2\\pi\\left[\\arccos\\eta-\\eta\\sqrt{1-\\eta^2}\\right],\\quad\\eta=\\frac{\\rho}{2\\rho_0}."
+    },
+    {
+     "k": "m",
+     "x": "\\eta=\\frac12\\Rightarrow H(\\rho_0)=\\frac23-\\frac{\\sqrt3}{2\\pi}\\approx0.3910."
+    },
+    {
+     "k": "p",
+     "x": "不能把相干截止频率误当成非相干截止频率，进而误判H=0。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-205247028d846679",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-6b12bcc9ca291714",
@@ -4086,27 +4225,52 @@
    "stem": [
     {
      "k": "p",
-     "x": "光波从光密介质进入光疏介质并发生全反射时……〔原材料注明选项与“倏逝波”有关，完整选项缺失。〕"
+     "x": "光波从光密介质进入光疏介质并发生全反射时，（ ）。"
     }
    ],
    "options": [],
-   "originalText": "光波从光密介质进入光疏介质并发生全反射时……〔原材料注明选项与“倏逝波”有关，完整选项缺失。〕",
+   "originalText": "光波从光密介质进入光疏介质并发生全反射时，（ ）。",
    "originalHeading": "14",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "36ED8C0C40E00EC221E35494D8BD1EB1.jpg",
    "sourceLine": 59,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "c2294f7be14eaca634e21073bae71e9c81dee9ef20433500fb6d709ae8a0852b",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "光疏介质中仍存在倏逝电磁场，振幅沿界面法线指数衰减；理想半无限、无吸收介质中没有向深处传播的平均能流。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "全反射并不等于第二介质中的电场、磁场都为零。透射波的法向波矢为虚数，场随离开界面的距离衰减，但沿界面仍具有相位变化。"
+    },
+    {
+     "k": "m",
+     "x": "k_\\perp=i\\kappa,\\qquad E\\propto e^{-\\kappa z},\\qquad \\kappa=\\frac{2\\pi}{\\lambda_0}\\sqrt{n_1^2\\sin^2\\theta_i-n_2^2}."
+    },
+    {
+     "k": "p",
+     "x": "此结论针对普通无吸收、半无限介质；靠近另一高折射率介质时可以出现受抑全反射。原照片只记选项与光电磁场有关，未给实际选项，故不补字母。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-6b12bcc9ca291714",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-bf81e6c5f3860341",
@@ -4119,37 +4283,61 @@
    "stem": [
     {
      "k": "p",
-     "x": "一束自然光经过起偏器，再经过 $1/4$ 波片，一般变成什么偏振光？〔部分选项被涂改，未能确认。〕"
+     "x": "一束自然光经过起偏器，再经过1/4波片，一般为（ ）。"
     }
    ],
-   "options": [],
-   "originalText": "一束自然光经过起偏器，再经过 $1/4$ 波片，一般变成什么偏振光？〔部分选项被涂改，未能确认。〕",
+   "options": [
+    {
+     "key": "A",
+     "x": "圆偏振光"
+    },
+    {
+     "key": "B",
+     "x": "线偏振光"
+    },
+    {
+     "key": "C",
+     "x": "椭圆偏振光"
+    }
+   ],
+   "originalText": "一束自然光经过起偏器，再经过1/4波片，一般为（ ）。",
    "originalHeading": "15",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "36ED8C0C40E00EC221E35494D8BD1EB1.jpg",
    "sourceLine": 63,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "6376c471c4c42921532a6b93217961a755b1bfee077ba72f456d3b7e329a0fa1",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
    "answer": [
     {
      "k": "p",
-     "x": "一般为椭圆偏振；$45^\\circ$ 入射到快慢轴时为圆偏振，沿任一主轴时为线偏振。"
+     "x": "选 C：一般为椭圆偏振光。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "波片相位延迟是 $\\pi/2$；偏振态还取决于入射线偏振相对快慢轴的方位，不能在特殊方位一概称为椭圆偏振。"
+     "x": "起偏器把自然光变为线偏振光；四分之一波片使快、慢轴两分量产生π/2相位差。一般情况下两分量振幅不相等，得到椭圆偏振。"
+    },
+    {
+     "k": "p",
+     "x": "透光轴与波片主轴成45°时两分量等幅，成为圆偏振；沿任一主轴入射时只有一个分量，仍为线偏振。这些是特殊情况。"
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-bf81e6c5f3860341",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-a486bd26b1cc71af",
@@ -4162,27 +4350,52 @@
    "stem": [
     {
      "k": "p",
-     "x": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收影响），若相邻亮条纹对应的光程差为波长整数倍，则……〔题干后半部分缺失。〕"
+     "x": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收影响），若相邻光束之光程差为波长整数倍，则（ ）。"
     }
    ],
    "options": [],
-   "originalText": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收影响），若相邻亮条纹对应的光程差为波长整数倍，则……〔题干后半部分缺失。〕",
+   "originalText": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收影响），若相邻光束之光程差为波长整数倍，则（ ）。",
    "originalHeading": "16",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "36ED8C0C40E00EC221E35494D8BD1EB1.jpg",
    "sourceLine": 67,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "78d56a5f3769dc2ef5aa1be90758c1c841f9bab5030d6e73a73ab349b085c542",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "透射为亮纹（透射极大），反射为暗纹；对两面反射率相同、无吸收的理想平行平板，透射率为1、反射率为0。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "相邻透射光束的相位差为2π的整数倍时，多束透射光相长干涉。不能只看到界面反射率高就认为整体透射率低。"
+    },
+    {
+     "k": "m",
+     "x": "T=\\frac1{1+F\\sin^2(\\delta/2)},\\quad F=\\frac{4R}{(1-R)^2},\\quad\\delta=2\\pi m\\Rightarrow T=1."
+    },
+    {
+     "k": "p",
+     "x": "无吸收时能量守恒给出整体反射率1−T=0；反射率高使峰变窄，不改变理想峰值。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-a486bd26b1cc71af",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-b747e1b3809e13b2",
@@ -4195,27 +4408,48 @@
    "stem": [
     {
      "k": "p",
-     "x": "在 He-Ne 激光器中，若输出两个纵模，则原因可能为？〔选项缺失。〕"
+     "x": "在He-Ne激光器中，若输出了两个纵模，则原因可能为（ ）。"
     }
    ],
    "options": [],
-   "originalText": "在 He-Ne 激光器中，若输出两个纵模，则原因可能为？〔选项缺失。〕",
+   "originalText": "在He-Ne激光器中，若输出了两个纵模，则原因可能为（ ）。",
    "originalHeading": "17",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "36ED8C0C40E00EC221E35494D8BD1EB1.jpg",
    "sourceLine": 71,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "f364ad87ae497dea4cb1f09ae881e6cb7a3dcb1368fa7ae19cbc266fa182f294",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "有两个谐振腔纵模同时落在有效增益带宽内，并满足振荡阈值，模式竞争未抑制其中一个。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "\\nu_q=\\frac{qc}{2L_{\\rm opt}},\\qquad\\Delta\\nu_{\\rm FSR}=\\frac{c}{2L_{\\rm opt}}."
+    },
+    {
+     "k": "p",
+     "x": "腔光程变长会减小纵模间隔，可能让两个模处于净增益大于零的频带。He-Ne激光的非均匀展宽及驻波空间烧孔也可使多个纵模共存。仅凭“两个纵模”不能唯一判断具体哪项器件或参数变化，原照片没有选项。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-b747e1b3809e13b2",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-2be06a95b9235ba9",
@@ -4228,37 +4462,48 @@
    "stem": [
     {
      "k": "p",
-     "x": "在激光谐振腔内部加入一个倾斜（布儒斯特角）的平板玻璃，第一次线偏振光输出的偏振状态及其光学原理是什么？〔原材料只记题意，未记选项。〕"
+     "x": "在一个激光谐振腔内部加入一个倾斜（布儒斯特角）的平板玻璃实现线偏振光的输出，其实现的光学原理（ ）。"
     }
    ],
    "options": [],
-   "originalText": "在激光谐振腔内部加入一个倾斜（布儒斯特角）的平板玻璃，第一次线偏振光输出的偏振状态及其光学原理是什么？〔原材料只记题意，未记选项。〕",
+   "originalText": "在一个激光谐振腔内部加入一个倾斜（布儒斯特角）的平板玻璃实现线偏振光的输出，其实现的光学原理（ ）。",
    "originalHeading": "18",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "36ED8C0C40E00EC221E35494D8BD1EB1.jpg",
    "sourceLine": 75,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "1f2c35a9571e0a2f1e63e98cdbfe3da5a90c6a5f81062aaf6a869c1c39ee7ea0",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
    "answer": [
     {
      "k": "p",
-     "x": "输出为 $p$ 线偏振光（电矢量在入射面内），原因是布儒斯特角下 $p$ 反射损耗消失、$s$ 损耗较大。"
+     "x": "布儒斯特平板使p偏振的反射损耗最小，腔内优先形成p线偏振振荡。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "结论假设平板的入射面、腔几何及偏振选择方向如通常布儒斯特窗腔；不从缺失选项补充其他器件。"
+     "x": "在布儒斯特角入射时p偏振反射率为零，而s偏振仍有反射损耗；经过多次往返，s偏振受到更强抑制。输出电矢量位于平板入射面内。"
+    },
+    {
+     "k": "m",
+     "x": "R_p(\\theta_B)=0,\\qquad R_s(\\theta_B)>0."
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-2be06a95b9235ba9",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-ecb5b6ff81ba0ef5",
@@ -4271,27 +4516,48 @@
    "stem": [
     {
      "k": "p",
-     "x": "激光器达到稳定输出时，若突然将激光器的输出反射镜撤掉，则激光介质的增益系数将怎样变化？〔选项缺失。〕"
+     "x": "当激光器达到稳定输出时，我们突然将激光器的输出反射镜撤掉，则激活介质的增益系数将（ ）。"
     }
    ],
    "options": [],
-   "originalText": "激光器达到稳定输出时，若突然将激光器的输出反射镜撤掉，则激光介质的增益系数将怎样变化？〔选项缺失。〕",
+   "originalText": "当激光器达到稳定输出时，我们突然将激光器的输出反射镜撤掉，则激活介质的增益系数将（ ）。",
    "originalHeading": "19",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "36ED8C0C40E00EC221E35494D8BD1EB1.jpg",
    "sourceLine": 79,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "251cae183288fbb1e093931c928ee86af5564cfa014c9f4985d0940b37029645",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "撤镜后的恢复过程中，增益系数增大，趋向该泵浦条件下的小信号增益；撤镜瞬间不发生突变。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "稳定振荡时，受激辐射消耗粒子数反转，使增益饱和并钳制在腔损耗对应的阈值附近。撤去输出镜破坏反馈后，腔内激光场衰减，受激辐射减弱，继续泵浦使反转粒子数恢复，故增益随后增大。"
+    },
+    {
+     "k": "p",
+     "x": "粒子数不能瞬间跳变，因此应区分撤镜的瞬时值与随后经过暂态的值；常规题目问的是后者。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-ecb5b6ff81ba0ef5",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-9de4cece6d93ed93",
@@ -4304,27 +4570,48 @@
    "stem": [
     {
      "k": "p",
-     "x": "声光效应产生的布拉格衍射中，如果入射光的强度不变而声波频率增加，则……〔题干后半句及选项缺失。〕"
+     "x": "声光效应产生的布拉格衍射，如果入射光的角度不变而声波频率增加，则（ ）。"
     }
    ],
    "options": [],
-   "originalText": "声光效应产生的布拉格衍射中，如果入射光的强度不变而声波频率增加，则……〔题干后半句及选项缺失。〕",
+   "originalText": "声光效应产生的布拉格衍射，如果入射光的角度不变而声波频率增加，则（ ）。",
    "originalHeading": "20",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "36ED8C0C40E00EC221E35494D8BD1EB1.jpg",
    "sourceLine": 83,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "80bb433ee07409270af55f1821a3c78f3c290cc1a63d218e24a37520f8421493",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "布拉格匹配角随声波频率增大；入射角固定在原匹配角时发生失配，原匹配点附近的衍射效率下降。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "\\Lambda=\\frac{v_a}{f_a},\\qquad \\sin\\theta_B=\\frac{\\lambda_0}{2n\\Lambda}=\\frac{\\lambda_0f_a}{2nv_a}."
+    },
+    {
+     "k": "p",
+     "x": "声速、光波长和折射率不变时，声频增大使声栅周期减小，需要更大的布拉格入射角。入射角仍保持原值，就离开匹配条件。衍射方向也随声频变化；没有声功率、相互作用长度等数据，不能给出效率变化的具体数值或声光偏转幅度。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-9de4cece6d93ed93",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "id": "exam-2017-696bb0126554b7a7",
@@ -4337,29 +4624,54 @@
    "stem": [
     {
      "k": "p",
-     "x": "焦距为 100 mm 的透镜，其相对孔径由 $1/5$ 变为 $1/10$，像高由 20 mm 变为 5 mm，其立体成像的眼距为____。能接受人眼的半视场角的正切变为____，景深比原来____（大/小）；如保持入瞳和原来同样的细节视觉，焦距应变为____ mm。〔手写“立体成像”等词需核原图 IMG_20260927_145904.jpg。〕"
+     "x": "焦距为100 mm的透镜当相对孔径由1/5变为1/10，像高由20 mm变为5 mm，其他不变，像面中心的照度变为____，能够接入的半视场角的正切变为____，景深比原来____（大/小），此时如果要接入和原来同样的物方视场，焦距应变为____ mm。"
     }
    ],
    "options": [],
-   "originalText": "焦距为 100 mm 的透镜，其相对孔径由 $1/5$ 变为 $1/10$，像高由 20 mm 变为 5 mm，其立体成像的眼距为____。能接受人眼的半视场角的正切变为____，景深比原来____（大/小）；如保持入瞳和原来同样的细节视觉，焦距应变为____ mm。〔手写“立体成像”等词需核原图 IMG_20260927_145904.jpg。〕",
+   "originalText": "焦距为100 mm的透镜当相对孔径由1/5变为1/10，像高由20 mm变为5 mm，其他不变，像面中心的照度变为____，能够接入的半视场角的正切变为____，景深比原来____（大/小），此时如果要接入和原来同样的物方视场，焦距应变为____ mm。",
    "originalHeading": "1",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0F8D23459369E88446258333B5D02BEF.jpg",
    "sourceLine": 89,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "1f7ec1ad737c9cd1ca378779b466106666d8a388fa42d56a570c6ca6dd02718b",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [
     "IMG_20260927_145904.jpg"
    ],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "依次为原来的 $1/4$、$1/20$（原来的 $1/4$）、大、$25\\,\\mathrm{mm}$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "E_{\\rm center}\\propto(D/f)^2,\\qquad \\frac{E_2}{E_1}=\\left(\\frac{1/10}{1/5}\\right)^2=\\frac14."
+    },
+    {
+     "k": "m",
+     "x": "\\tan w_2=\\frac{5}{100}=\\frac1{20},\\qquad \\tan w_1=\\frac{20}{100}=\\frac15."
+    },
+    {
+     "k": "p",
+     "x": "其余成像条件不变时，减小孔径使允许弥散斑相同条件下的景深增大。若用像高5 mm覆盖原半视场，则新焦距需满足5/f=20/100，得到25 mm。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-696bb0126554b7a7",
    "revisionKind": "blank",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg"
+   ]
   },
   {
    "id": "exam-2017-247e6b2a92ae4de4",
@@ -4372,27 +4684,57 @@
    "stem": [
     {
      "k": "p",
-     "x": "一束平行光从空气垂直通过一块 $n=1.5$ 的平板玻璃，则在不计吸收的情况下，透过玻璃的能量为入射光的____。"
+     "x": "一束平行光从空气垂直通过一块n=1.5的平板玻璃，则在不计吸收的情况下，透过玻璃的能量为入射光的____。"
     }
    ],
    "options": [],
-   "originalText": "一束平行光从空气垂直通过一块 $n=1.5$ 的平板玻璃，则在不计吸收的情况下，透过玻璃的能量为入射光的____。",
+   "originalText": "一束平行光从空气垂直通过一块n=1.5的平板玻璃，则在不计吸收的情况下，透过玻璃的能量为入射光的____。",
    "originalHeading": "2",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0F8D23459369E88446258333B5D02BEF.jpg",
    "sourceLine": 93,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "7dbf3df25ae72cccdad563b2b5ce9ca45695de1c1268015653366ebb79242013",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "通常只计直接透射光：$0.9216$（$92.16\\%$）；若收集全部非相干多次反射透射光，则为 $12/13\\approx0.9231$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "R=\\left(\\frac{1.5-1}{1.5+1}\\right)^2=0.04,\\qquad T_{\\rm direct}=(1-R)^2=0.9216."
+    },
+    {
+     "k": "p",
+     "x": "题目未说明是否计入玻璃内多次往返后的透射束。通常入门题采用两表面直接透射乘积；若按所有非相干透射束的能量求和，则有："
+    },
+    {
+     "k": "m",
+     "x": "T_{\\rm all}=\\frac{(1-R)^2}{1-R^2}=\\frac{1-R}{1+R}=\\frac{12}{13}."
+    },
+    {
+     "k": "p",
+     "x": "若平行光保持相干并发生薄板干涉，透射率还会依赖光学厚度与相位；不能混用三种约定。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-247e6b2a92ae4de4",
    "revisionKind": "blank",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原题未注明多次反射透射光是否计入。答案保留直接透射及全部非相干透射两种约定，不将约定差别隐藏到来源里。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg"
+   ]
   },
   {
    "id": "exam-2017-7144681b90acd983",
@@ -4405,27 +4747,57 @@
    "stem": [
     {
      "k": "p",
-     "x": "透射光栅常数 $d=2.4\\,\\mu\\mathrm m$、缝宽 $a=0.8\\,\\mu\\mathrm m$，单色光垂直入射时，在透镜的焦面上看到____个条纹，它们的衍射级次具体为____。"
+     "x": "透射光栅常数$d=2.4\\,\\mu m$，缝宽$a=0.8\\,\\mu m$，单色光垂直入射时，在透镜的焦面上共看到____个条纹，它们的衍射级次具体为____。"
     }
    ],
    "options": [],
-   "originalText": "透射光栅常数 $d=2.4\\,\\mu\\mathrm m$、缝宽 $a=0.8\\,\\mu\\mathrm m$，单色光垂直入射时，在透镜的焦面上看到____个条纹，它们的衍射级次具体为____。",
+   "originalText": "透射光栅常数$d=2.4\\,\\mu m$，缝宽$a=0.8\\,\\mu m$，单色光垂直入射时，在透镜的焦面上共看到____个条纹，它们的衍射级次具体为____。",
    "originalHeading": "3",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0F8D23459369E88446258333B5D02BEF.jpg",
    "sourceLine": 97,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "0bc7c78b2d763b032d7761ec2f7872c157b260b7e5bbc9885a4ba8e95908cd8f",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "缺级为非零的 $m=\\pm3,\\pm6,\\ldots$；可见级次与总条纹数还需要波长，照片未给出，不能指定唯一数量。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "d\\sin\\theta=m\\lambda,\\qquad a\\sin\\theta=p\\lambda\\ (p\\ne0),\\qquad d/a=3\\Rightarrow m=3p."
+    },
+    {
+     "k": "p",
+     "x": "透镜有限焦面内需满足|m|λ<d；若只按传播级次讨论，极限掠射级次还须单独处理。令M为严格满足Mλ<d的最大非负整数，则："
+    },
+    {
+     "k": "m",
+     "x": "N_{\\rm bright}=1+2\\left(M-\\left\\lfloor\\frac M3\\right\\rfloor\\right),\\qquad M=\\left\\lceil\\frac d\\lambda\\right\\rceil-1."
+    },
+    {
+     "k": "p",
+     "x": "保留零级，去掉正负的非零3倍数级次。缺少λ时，只能写出这些条件和公式。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-7144681b90acd983",
    "revisionKind": "blank",
    "review": {
-    "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "needsCheck": true,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "新照片仍没有单色光波长，无法唯一给出条纹数；未擅自补入常见波长。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg"
+   ]
   },
   {
    "id": "exam-2017-30e4ee70a0ad83e9",
@@ -4438,51 +4810,54 @@
    "stem": [
     {
      "k": "p",
-     "x": "一平面电磁波在均匀介质中传播时电场强度为"
-    },
-    {
-     "k": "p",
-     "x": "$$\\vec E(x,y,z,t)=(E_x\\vec x-\\sqrt3\\,\\vec y+E_z\\vec z)\\,[j(x+\\sqrt3y+\\sqrt5z-6\\times10^8t)\\times10^6]\\ \\mathrm{V/m}.$$"
-    },
-    {
-     "k": "p",
-     "x": "求其传播速度（相速）与该材料的折射率。〔方括号中的指数/指数函数在手写稿中不清楚，公式需核原图 IMG_20260927_145904.jpg。〕"
+     "x": "一平面电磁波在均匀介质中传播时电场强度 $\\vec E(x,y,z,t)=(E_x\\vec x-\\sqrt3\\vec y+\\sqrt5\\vec z)\\exp[i(x+\\sqrt3y+\\sqrt5z-6\\times10^8t)\\times10^6]\\ \\mathrm{V/m}$，那么其传播速度（相速）为____，该均匀介质折射率为____。"
     }
    ],
    "options": [],
-   "originalText": "一平面电磁波在均匀介质中传播时电场强度为\n\n$$\\vec E(x,y,z,t)=(E_x\\vec x-\\sqrt3\\,\\vec y+E_z\\vec z)\\,[j(x+\\sqrt3y+\\sqrt5z-6\\times10^8t)\\times10^6]\\ \\mathrm{V/m}.$$\n\n求其传播速度（相速）与该材料的折射率。〔方括号中的指数/指数函数在手写稿中不清楚，公式需核原图 IMG_20260927_145904.jpg。〕",
+   "originalText": "一平面电磁波在均匀介质中传播时电场强度 $\\vec E(x,y,z,t)=(E_x\\vec x-\\sqrt3\\vec y+\\sqrt5\\vec z)\\exp[i(x+\\sqrt3y+\\sqrt5z-6\\times10^8t)\\times10^6]\\ \\mathrm{V/m}$，那么其传播速度（相速）为____，该均匀介质折射率为____。",
    "originalHeading": "4",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0F8D23459369E88446258333B5D02BEF.jpg",
    "sourceLine": 101,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "22318c262e4e8777ff01df87ae49a8b7424eb7cefe9332e22d7d5baac69a0225",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [
     "IMG_20260927_145904.jpg"
    ],
    "answer": [
     {
      "k": "p",
-     "x": "相速度 $2.0\\times10^8\\,\\mathrm{m/s}$；折射率 $1.5$。"
+     "x": "相速 $2.0\\times10^8\\,\\mathrm{m/s}$，折射率 $1.5$。"
     }
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "由原题复指数相位读出 $\\boldsymbol k=10^6(1,\\sqrt3,\\sqrt5)\\,\\mathrm{rad/m}$，故 $|\\boldsymbol k|=3\\times10^6\\,\\mathrm{rad/m}$；时间系数为 $\\omega=6\\times10^{14}\\,\\mathrm{rad/s}$。"
+     "k": "m",
+     "x": "\\boldsymbol k=10^6(1,\\sqrt3,\\sqrt5)\\,\\mathrm{rad/m},\\quad |\\boldsymbol k|=10^6\\sqrt{1+3+5}=3\\times10^6\\,\\mathrm{rad/m}."
     },
     {
      "k": "m",
-     "x": "v_p=\\frac{\\omega}{|\\boldsymbol k|}=2\\times10^8\\,\\mathrm{m/s},\\qquad n=\\frac{c}{v_p}=\\frac{3\\times10^8}{2\\times10^8}=1.5."
+     "x": "\\omega=6\\times10^{14}\\,\\mathrm{rad/s},\\quad v_p=\\omega/|\\boldsymbol k|=2\\times10^8\\,\\mathrm{m/s},\\quad n=c/v_p=1.5."
+    },
+    {
+     "k": "p",
+     "x": "指数中的10⁶同时乘空间项与时间项。振幅系数不决定相速；若还要求Ex，可由横波条件k·E=0得到Ex−3+5=0，即Ex=−2。"
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-30e4ee70a0ad83e9",
    "revisionKind": "blank",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg"
+   ]
   },
   {
    "id": "exam-2017-66698583063ca4c4",
@@ -4495,15 +4870,15 @@
    "stem": [
     {
      "k": "p",
-     "x": "将一块光栅置于相干成像系统中，若在其频谱面上只允许 $-1$ 和 $+2$ 级频谱通过，则其栅像的空间频率为原来的____倍。"
+     "x": "将一块光栅置于相干成像系统中，若在其频谱面上只允许−1和+2级频谱通过，则其光栅像的空间频率为原来的____倍。"
     }
    ],
    "options": [],
-   "originalText": "将一块光栅置于相干成像系统中，若在其频谱面上只允许 $-1$ 和 $+2$ 级频谱通过，则其栅像的空间频率为原来的____倍。",
+   "originalText": "将一块光栅置于相干成像系统中，若在其频谱面上只允许−1和+2级频谱通过，则其光栅像的空间频率为原来的____倍。",
    "originalHeading": "5",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0F8D23459369E88446258333B5D02BEF.jpg",
    "sourceLine": 109,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "3a53ff5331e891b1d42dfded891475ba508cf91ebff9009731f90680c1028e21",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
@@ -4515,21 +4890,29 @@
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "像面强度交叉项的频率是通过的两级频率位置之差。"
+     "k": "m",
+     "x": "I\\text{的交叉项频率}=|2u_0-(-u_0)|=3u_0."
     },
     {
-     "k": "m",
-     "x": "|(+2u_0)-(-u_0)|=3u_0"
+     "k": "p",
+     "x": "像面干涉条纹由两谱线频率差决定，不是两个级次绝对值的差。"
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-66698583063ca4c4",
    "revisionKind": "blank",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg",
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "id": "exam-2017-95a583d60fa63953",
@@ -4542,15 +4925,15 @@
    "stem": [
     {
      "k": "p",
-     "x": "有一个衍射光栅，第 1 级光谱的分辨本领为 $A$，光栅刻线数由 $N$ 变为 $2N$，新的光栅第 2 级光谱分辨本领为____。"
+     "x": "有一个衍射光栅，第1级光谱的分辨本领为A，光栅刻线数由N变为2N，新的光栅第2级光谱分辨本领为____。"
     }
    ],
    "options": [],
-   "originalText": "有一个衍射光栅，第 1 级光谱的分辨本领为 $A$，光栅刻线数由 $N$ 变为 $2N$，新的光栅第 2 级光谱分辨本领为____。",
+   "originalText": "有一个衍射光栅，第1级光谱的分辨本领为A，光栅刻线数由N变为2N，新的光栅第2级光谱分辨本领为____。",
    "originalHeading": "6",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0F8D23459369E88446258333B5D02BEF.jpg",
    "sourceLine": 113,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "6ee187475476e6fab89eb5eace23b50708a5ceca911f5f71e49d91e0251fdca2",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
@@ -4562,21 +4945,25 @@
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "新、旧分辨本领之比为 (2×2N)/(1×N)=4。"
-    },
-    {
      "k": "m",
-     "x": "\\mathcal R=mN"
+     "x": "\\mathcal R=mN,\\qquad\\frac{\\mathcal R_{\\rm new}}{\\mathcal R_{\\rm old}}=\\frac{2\\cdot2N}{1\\cdot N}=4."
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-95a583d60fa63953",
    "revisionKind": "blank",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg",
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "id": "exam-2017-94dae7b2c58f52d5",
@@ -4589,37 +4976,53 @@
    "stem": [
     {
      "k": "p",
-     "x": "一个激光器谐振腔中，光束每往返一次的光能损耗是 20%，那么激光在增益介质中每往返传播一次的增益 $a$ 是____。"
+     "x": "一个激光器谐振腔中光束回往返一次的光能损耗是20%，那么该激光器稳态工作时，激光在增益介质中的来回往返一次的增益a是____。"
     }
    ],
    "options": [],
-   "originalText": "一个激光器谐振腔中，光束每往返一次的光能损耗是 20%，那么激光在增益介质中每往返传播一次的增益 $a$ 是____。",
+   "originalText": "一个激光器谐振腔中光束回往返一次的光能损耗是20%，那么该激光器稳态工作时，激光在增益介质中的来回往返一次的增益a是____。",
    "originalHeading": "7",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0F8D23459369E88446258333B5D02BEF.jpg",
    "sourceLine": 117,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "0e2ccfce22c4317c8bd13cce00363216df0516456657a4c61960be8d7fd3f5fc",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
    "answer": [
     {
      "k": "p",
-     "x": "往返功率增益因子 $a=1.25$，对应介质提供 $25\\%$ 的相对增幅；含损耗的净往返因子为 $1$。"
+     "x": "往返功率增益因子 $a=1.25$；对应相对增幅 $25\\%$。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "每次往返剩余光能比例是 $1-0.20=0.80$。稳态振荡时，增益介质的往返增益因子 $a$ 乘以腔损耗因子后恰为 1：$0.80a=1$，所以 $a=1.25$。$1.20$ 是把 20% 损耗误当作乘以 $1+0.20$；净往返倍率则是 1，而不是增益介质自身的增益因子。"
+     "x": "稳态时，介质提供的往返增益恰好补偿每次往返20%的损耗。"
+    },
+    {
+     "k": "m",
+     "x": "(1-0.20)a=1\\Rightarrow a=\\frac1{0.8}=1.25."
+    },
+    {
+     "k": "p",
+     "x": "a指增益介质本身的倍率；含损耗后的净往返倍率为1。"
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-94dae7b2c58f52d5",
    "revisionKind": "blank",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg",
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "id": "exam-2017-f8fff5c3a05ff9d3",
@@ -4632,27 +5035,45 @@
    "stem": [
     {
      "k": "p",
-     "x": "写出工作波长：He-Ne 激光器____；CO₂ 激光器____；Ar⁺ 激光器____；Nd:YAG 激光器____。"
+     "x": "请写出下列激光器的工作波长：He-Ne激光器（ ），CO₂激光器（ ），Ar⁺（ ），Nd:YAG（ ）。"
     }
    ],
    "options": [],
-   "originalText": "写出工作波长：He-Ne 激光器____；CO₂ 激光器____；Ar⁺ 激光器____；Nd:YAG 激光器____。",
+   "originalText": "请写出下列激光器的工作波长：He-Ne激光器（ ），CO₂激光器（ ），Ar⁺（ ），Nd:YAG（ ）。",
    "originalHeading": "8",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0F8D23459369E88446258333B5D02BEF.jpg",
    "sourceLine": 121,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "97d1068a76ed33ba4c6ffb87fec8fea575340ce9e5e3484f7290c919363e1c1d",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "He-Ne：$632.8\\,\\mathrm{nm}$；CO$_2$：$10.6\\,\\mu\\mathrm m$；Ar$^+$：$488.0\\,\\mathrm{nm}$、$514.5\\,\\mathrm{nm}$；Nd:YAG：$1064\\,\\mathrm{nm}$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "以上为各类激光器常用工作线；Ar⁺有多条谱线，列出常用蓝、绿两线。Nd:YAG的532 nm为常见倍频输出，不是其基频工作线。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-f8fff5c3a05ff9d3",
    "revisionKind": "blank",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg",
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "id": "exam-2017-6d905c14cd494443",
@@ -4665,37 +5086,48 @@
    "stem": [
     {
      "k": "p",
-     "x": "把某一种半导体材料掺杂成N型和P型半导体，此时N型半导体的费米能级____（升、降、不变），P型半导体的费米能级____（升、降、不变）。当接触形成PN结后，P型材料的导带底____N型材料的导带底。"
+     "x": "把某一种半导体材料掺杂成N型和P型半导体，此时N型半导体的费米能级____（>，<，=）P型半导体的费米能级。当接触形成PN结后，P型材料的导带底部将____（>，<，=）N型材料的导带底部。"
     }
    ],
    "options": [],
-   "originalText": "把某一种半导体材料掺杂成 N 型和 P 型半导体，此时材料的导带能级____（升/降/不变），P 型半导体的费米能级____。连接组成 PN 结后，P 型材料的导带能级与 N 型材料的导带能级之间____。〔原材料在最后一空处截断，需核原图。〕",
+   "originalText": "把某一种半导体材料掺杂成N型和P型半导体，此时N型半导体的费米能级____（>，<，=）P型半导体的费米能级。当接触形成PN结后，P型材料的导带底部将____（>，<，=）N型材料的导带底部。",
    "originalHeading": "9",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0A9084972EF966FAFEDF3431505E7A95.jpg",
    "sourceLine": 125,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
-   "completeness": "partial",
-   "playable": false,
+   "sourceHash": "fb511137229df6da64a21cb744e9bcc938095ab6d7d460148b222d0cd251308f",
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [],
    "answer": [
     {
      "k": "p",
-     "x": "N型费米能级上升；P型费米能级下降；平衡PN结中P侧导带底高于N侧。"
+     "x": "两个空均填 $>$。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "在常规非简并同质半导体模型中，N型掺杂增加电子浓度，费米能级向导带移动；P型掺杂增加空穴浓度，费米能级向价带移动。形成热平衡PN结后费米能级平直，内建电势使P侧导带底比N侧高 $qV_{\\rm bi}$。原题第一空明确问费米能级，旧题库误转录成导带能级，按原照片修复。"
+     "x": "同种半导体形成结之前，N型费米能级更靠近导带，P型费米能级更靠近价带，因此E_FN>E_FP。接触并达到热平衡后，费米能级平齐，而内建电势使P侧导带底高于N侧。"
+    },
+    {
+     "k": "m",
+     "x": "E_{FN}>E_{FP}\\ \\text{（接触前）},\\qquad E_{C,P}-E_{C,N}=qV_{\\rm bi}>0\\ \\text{（热平衡后）}."
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-6d905c14cd494443",
    "revisionKind": "blank",
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   }
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "id": "exam-2017-113751e16774ecb7",
@@ -4708,19 +5140,19 @@
    "stem": [
     {
      "k": "p",
-     "x": "脉冲激光采用调Q。按题图的偏振选通式双程腔，激光器输出脉冲时电光晶体的位相延迟量应为____；无脉冲输出时电光晶体的位相延迟量应为____。"
+     "x": "脉冲激光调Q中，激光器输出脉冲时电光晶体的位相延迟应设为____，无脉冲输出时，电光晶体的位相延迟应设为____。（题10图）"
     },
     {
      "k": "note",
-     "x": "位相延迟按单程电光晶体定义，往返经过晶体两次。"
+     "x": "位相延迟按电光晶体单程定义；腔内光束往返经过晶体两次。"
     }
    ],
    "options": [],
-   "originalText": "脉冲激光调 Q 中，激光器初始时由光的信号输出造成损耗；突然调 Q 输出时，激光器内腔的谐振延迟该为____。〔手写稿此题辨识不稳，需核 IMG_20260927_145904.jpg。〕",
+   "originalText": "脉冲激光调Q中，激光器输出脉冲时电光晶体的位相延迟应设为____，无脉冲输出时，电光晶体的位相延迟应设为____。（题10图）",
    "originalHeading": "10",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "0A9084972EF966FAFEDF3431505E7A95.jpg",
    "sourceLine": 129,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "094ae7d78cf1c292122677c9bf8535e70689ccddc908d5f4a269eb386bb4dd4d",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [
@@ -4729,29 +5161,37 @@
    "answer": [
     {
      "k": "p",
-     "x": "输出脉冲：$0$；无脉冲输出：$\\pi/2$（单程晶体延迟）。"
+     "x": "输出脉冲：$0$；无脉冲输出：$\\pi/2$（均为电光晶体单程位相延迟）。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "无脉冲时双程总延迟为 $\\pi$，在偏振选择器的往返几何中造成 $90^\\circ$ 偏振旋转；输出状态恢复高 Q。"
+     "x": "按题图标准双程电光调Q结构，晶体主轴与选通偏振方向成45°。无输出时，单程π/2的延迟使往返总延迟为π，线偏振旋转90°，被偏振器阻断，腔处于低Q。切到单程0时，往返偏振方向恢复可通过偏振器，形成高Q脉冲输出。"
+    },
+    {
+     "k": "p",
+     "x": "若把所问延迟定义为往返总延迟，阻断态应写π；本题和答案均明确使用单程晶体延迟。"
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-113751e16774ecb7",
    "revisionKind": "blank",
    "review": {
     "needsCheck": false,
     "notes": [
-     "2026-10-02：完整题面已通过答案与解析审查；详细复核依据保存在本地审查记录。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
     ]
    },
    "stemImages": [
     {
-     "src": "assets/audit-diagrams/2017-qswitch-source.svg",
-     "alt": "偏振选通式电光调Q腔的原题元件顺序（按原图复绘，示意位置非精确尺寸）"
+     "src": "assets/audit-diagrams/2017-fill-10-q-switch.svg",
+     "alt": "按新照片重画的偏振选通电光调Q腔元件顺序"
     }
+   ],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
    ]
   },
   {
@@ -4760,32 +5200,74 @@
    "paperId": "2017",
    "section": "四、计算题",
    "questionNumber": "1",
-   "order": 31,
+   "order": 34,
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "设计具有 $-2$ 倍单组透镜转像系统的 10 倍望远镜。物镜到目镜的距离是 300 mm，眼瞳直径 4 mm，物镜为系统入瞳，其大小需和眼瞳匹配；物镜的像方焦面上有场镜，目镜焦距 20 mm，其前焦面上有分划板，系统像方半视场角为 $20^\\circ$。求：（1）物镜、转像透镜和场镜的焦距；（2）物镜、场镜、转像透镜和分划板的通光直径；（3）出瞳距；（4）半渐晕成像时目镜的通光直径。"
+     "x": "设计一个具有−2倍单组透镜转像系统的10倍望远镜，物镜到目镜的距离是300 mm，眼瞳直径是4 mm，物镜为系统的入瞳，其大小要和眼瞳匹配，在物镜的像方焦面上有场镜，目镜的焦距为20 mm，在其前焦面上有分划板，系统的像方半视场角为20度。试求：1）物镜、转像透镜和场镜的焦距；2）物镜、场镜、转像透镜和分划板的通光直径；3）出瞳距；4）半渐晕成像时目镜的通光直径。"
     }
    ],
    "options": [],
-   "originalText": "设计具有 $-2$ 倍单组透镜转像系统的 10 倍望远镜。物镜到目镜的距离是 300 mm，眼瞳直径 4 mm，物镜为系统入瞳，其大小需和眼瞳匹配；物镜的像方焦面上有场镜，目镜焦距 20 mm，其前焦面上有分划板，系统像方半视场角为 $20^\\circ$。求：（1）物镜、转像透镜和场镜的焦距；（2）物镜、场镜、转像透镜和分划板的通光直径；（3）出瞳距；（4）半渐晕成像时目镜的通光直径。",
+   "originalText": "设计一个具有−2倍单组透镜转像系统的10倍望远镜，物镜到目镜的距离是300 mm，眼瞳直径是4 mm，物镜为系统的入瞳，其大小要和眼瞳匹配，在物镜的像方焦面上有场镜，目镜的焦距为20 mm，在其前焦面上有分划板，系统的像方半视场角为20度。试求：1）物镜、转像透镜和场镜的焦距；2）物镜、场镜、转像透镜和分划板的通光直径；3）出瞳距；4）半渐晕成像时目镜的通光直径。",
    "originalHeading": "1",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "B26847B6DA2357C9F4312921316A4BEE.jpg",
    "sourceLine": 135,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "a9b8f888296e3f2490e914077e5afa5fc3e09000c96af1561809b4ee3193fba0",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "焦距：物镜 $100$ mm、转像镜 $40$ mm、场镜 $37.5$ mm。通光直径：物镜 $40$ mm、场镜 $20\\tan20^\\circ\\approx7.279$ mm、转像镜 $24$ mm、分划板 $40\\tan20^\\circ\\approx14.559$ mm。出瞳距 $70/3\\approx23.333$ mm；半渐晕目镜口径 $(140/3)\\tan20^\\circ\\approx16.985$ mm。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "按课程的瞳匹配设计约定，场镜把物镜入瞳成像到转像透镜面。无焦10倍系统且出瞳4 mm给物镜口径40 mm。角放大率的绝对值为2f物/f目=10，所以物镜焦距100 mm。"
+    },
+    {
+     "k": "m",
+     "x": "s+s^\\prime=300-100-20=180,\\quad s^\\prime=2s\\Rightarrow s=60,\\ s^\\prime=120,\\quad f_{\\rm relay}=\\frac{ss^\\prime}{s+s^\\prime}=40\\ \\mathrm{mm}."
+    },
+    {
+     "k": "m",
+     "x": "f_{\\rm field}=\\frac{100\\cdot60}{100+60}=37.5\\ \\mathrm{mm},\\qquad D_{\\rm relay}=40\\frac{60}{100}=24\\ \\mathrm{mm}."
+    },
+    {
+     "k": "p",
+     "x": "物镜、场镜、转像镜、分划板、目镜沿轴的位置依次为0、100、160、280、300 mm。分划板半高y₂=20tan20°，场镜位于第一像面，其半高y₁=y₂/2，因此两处所需口径分别为2y₂、2y₁。"
+    },
+    {
+     "k": "m",
+     "x": "l_{\\rm exit}=\\frac{20\\cdot140}{140-20}=\\frac{70}{3}\\ \\mathrm{mm},\\qquad y_{\\rm chief,eye}=\\frac{140}{120}\\,20\\tan20^\\circ."
+    },
+    {
+     "k": "m",
+     "x": "D_{\\rm eye,half}=2|y_{\\rm chief,eye}|=\\frac{140}{3}\\tan20^\\circ\\approx16.985\\ \\mathrm{mm}."
+    },
+    {
+     "k": "p",
+     "x": "最后一式沿用课程常用的半渐晕近轴口径约定：边缘视场束中心落在目镜边缘。若要求完全无渐晕，目镜口径需再加轴上束直径4 mm，约20.985 mm。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-fb935ddc373ac150",
    "revisionKind": "calc",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "场镜采用课程常规的物镜入瞳与转像镜共轭设计；半渐晕口径采用教材的近轴束中心落边缘约定。题面和解析均保留这一设计假设，不把它冒充独立给出的数值条件。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "B26847B6DA2357C9F4312921316A4BEE.jpg"
+   ]
   },
   {
    "id": "exam-2017-0fac68fcebfda603",
@@ -4793,32 +5275,57 @@
    "paperId": "2017",
    "section": "四、计算题",
    "questionNumber": "2",
-   "order": 32,
+   "order": 35,
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在照相物镜上镀一层光学厚度为 $1.25\\lambda_0$（$\\lambda_0=550\\,\\mathrm{nm}$）的低折射率膜；试求在可见光范围内（380—780 nm）反射率最大的波长，并说明膜所呈现的颜色。"
+     "x": "在照相物镜上镀一层光学厚度为$1.25\\lambda_0$（$\\lambda_0=550\\,\\mathrm{nm}$）的低折射率膜，试求在可见光范围内（380 nm～780 nm）反射比最大的波长，并说明其膜呈现的颜色。"
     }
    ],
    "options": [],
-   "originalText": "在照相物镜上镀一层光学厚度为 $1.25\\lambda_0$（$\\lambda_0=550\\,\\mathrm{nm}$）的低折射率膜；试求在可见光范围内（380—780 nm）反射率最大的波长，并说明膜所呈现的颜色。",
+   "originalText": "在照相物镜上镀一层光学厚度为$1.25\\lambda_0$（$\\lambda_0=550\\,\\mathrm{nm}$）的低折射率膜，试求在可见光范围内（380 nm～780 nm）反射比最大的波长，并说明其膜呈现的颜色。",
    "originalHeading": "2",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "B26847B6DA2357C9F4312921316A4BEE.jpg",
    "sourceLine": 139,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "0b9874a2c1400c1dbda39e82713399b50ba0f23a7c3f3f2703e1ef52c87485f4",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "可见光内反射极大的波长为 $687.5$ nm、$1375/3\\approx458.33$ nm，膜在反射观察下呈紫红／品红倾向。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "通常低折射率增透膜满足n空气<n膜<n玻璃，两界面反射都发生半波损失，额外反射相位差相消。光学厚度nd=1.25×550=687.5 nm，反射相长要求2nd=mλ。"
+    },
+    {
+     "k": "m",
+     "x": "\\lambda_m=\\frac{1375}{m}\\ \\mathrm{nm},\\qquad380\\le\\lambda_m\\le780\\Rightarrow m=2,3."
+    },
+    {
+     "k": "p",
+     "x": "因此反射中红区687.5 nm与蓝区458.33 nm加强，形成紫红／品红色倾向。膜的精确颜色还受照明光谱及折射率对应的反射谱权重影响；不是仅据单一波长断言颜色。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-0fac68fcebfda603",
    "revisionKind": "calc",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "B26847B6DA2357C9F4312921316A4BEE.jpg"
+   ]
   },
   {
    "id": "exam-2017-80e296673bf6a37e",
@@ -4826,32 +5333,67 @@
    "paperId": "2017",
    "section": "四、计算题",
    "questionNumber": "3",
-   "order": 33,
+   "order": 36,
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在光栅夫琅禾费衍射实验中，所用光波 $\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距 $f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间距 $e=1.5\\,\\mathrm{mm}$，且第 4 级亮纹缺级。求光栅缝间距、缝宽以及第 2 级亮纹的相对强度。（衍射角很小，$\\sin\\theta\\approx\\theta$。）"
+     "x": "在光栅夫朗禾费衍射实验中，所用光波$\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距$f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间的距离$e=1.5\\,\\mathrm{mm}$，并且第4级亮纹缺级。求光栅的缝间距和缝宽，以及第2级亮纹的相对强度？（衍射角很小，$\\sin\\theta\\approx\\theta$。）"
     }
    ],
    "options": [],
-   "originalText": "在光栅夫琅禾费衍射实验中，所用光波 $\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距 $f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间距 $e=1.5\\,\\mathrm{mm}$，且第 4 级亮纹缺级。求光栅缝间距、缝宽以及第 2 级亮纹的相对强度。（衍射角很小，$\\sin\\theta\\approx\\theta$。）",
+   "originalText": "在光栅夫朗禾费衍射实验中，所用光波$\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距$f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间的距离$e=1.5\\,\\mathrm{mm}$，并且第4级亮纹缺级。求光栅的缝间距和缝宽，以及第2级亮纹的相对强度？（衍射角很小，$\\sin\\theta\\approx\\theta$。）",
    "originalHeading": "3",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "B26847B6DA2357C9F4312921316A4BEE.jpg",
    "sourceLine": 143,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "3d9cf5f068bf96e06acfed15b08b4426e4a9919b1d7b8450075e154f2ae32e1f",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "光栅常数 $d=0.210933$ mm。按第4级对应单缝第一暗纹的通常约定，缝宽 $a=d/4=0.052733$ mm，第2级相对强度 $I_2/I_0=4/\\pi^2\\approx0.405285$。若未指定对应单缝暗纹的级次，另有 $a=d/2$ 或 $3d/4$，对应相对强度 $0$ 或 $4/(9\\pi^2)\\approx0.045032$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "e\\simeq\\frac{f\\lambda}{d}\\Rightarrow d=\\frac{500\\cdot0.0006328}{1.5}=0.210933\\ \\mathrm{mm}."
+    },
+    {
+     "k": "m",
+     "x": "4\\lambda/d=p\\lambda/a\\Rightarrow a=\\frac p4d,\\quad0<a<d\\Rightarrow p=1,2,3."
+    },
+    {
+     "k": "p",
+     "x": "若明确第4级对应单缝第一暗纹，则p=1、a=d/4。p=2时第2级也缺级；p=3时最小缺级仍为第4级。因此只说“第4级缺级”或“首次缺级为第4级”都不能单独排除p=3，主答案另采用第一单缝零点对应第4级的通常约定。"
+    },
+    {
+     "k": "m",
+     "x": "\\frac{I_2}{I_0}=\\left[\\frac{\\sin(2\\pi a/d)}{2\\pi a/d}\\right]^2."
+    },
+    {
+     "k": "p",
+     "x": "以中央主极大强度为归一化基准；a/d=1/4、1/2、3/4分别代入得到答案的三种结果。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-80e296673bf6a37e",
    "revisionKind": "calc",
    "review": {
-    "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "needsCheck": true,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "用户确认f=500 mm；照片只说第4级缺级，未指定它对应单缝第几个零点。主答案采用单缝第一零点对应第4级的课程惯例，解析保留全部可行缝宽。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "B26847B6DA2357C9F4312921316A4BEE.jpg",
+    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
+   ]
   },
   {
    "id": "exam-2017-fea321798df1563c",
@@ -4859,42 +5401,62 @@
    "paperId": "2017",
    "section": "四、计算题",
    "questionNumber": "4",
-   "order": 34,
+   "order": 37,
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在相干光学处理的 $4f$ 系统中，输入平面上放置振幅透射系数为 $t(x)=\\tfrac12+\\tfrac12\\cos(2\\pi u_0x)$ 的正弦光栅。求：（1）变换平面上的傅里叶频谱；（2）在频谱面上用小圆屏挡住光栅的 $-1$ 级谱后，像面的光强分布及其空间频率。"
+     "x": "在相干光学的处理的4f系统中，在输入平面上放置一振幅透射系数为$t(x)=\\frac12+\\frac12\\cos 2\\pi u_0x$的正弦光栅，求：1）变换平面上的傅里叶频谱；2）在频谱面上用小圆屏挡住光栅的−1级谱，求像面的光强分布及其空间频率。"
     }
    ],
    "options": [],
-   "originalText": "在相干光学处理的 $4f$ 系统中，输入平面上放置振幅透射系数为 $t(x)=\\tfrac12+\\tfrac12\\cos(2\\pi u_0x)$ 的正弦光栅。求：（1）变换平面上的傅里叶频谱；（2）在频谱面上用小圆屏挡住光栅的 $-1$ 级谱后，像面的光强分布及其空间频率。",
+   "originalText": "在相干光学的处理的4f系统中，在输入平面上放置一振幅透射系数为$t(x)=\\frac12+\\frac12\\cos 2\\pi u_0x$的正弦光栅，求：1）变换平面上的傅里叶频谱；2）在频谱面上用小圆屏挡住光栅的−1级谱，求像面的光强分布及其空间频率。",
    "originalHeading": "4",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "B26847B6DA2357C9F4312921316A4BEE.jpg",
    "sourceLine": 147,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "02ea4953ddde5a0b5422a8750445fe79f57f2877d0a8165a9bef67894e4049ef",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
    "answer": [
     {
      "k": "p",
-     "x": "令入射振幅为 $A$。频谱为 $A[\\frac12\\delta(u)+\\frac14\\delta(u-u_0)+\\frac14\\delta(u+u_0)]$；挡负一级后 $I=|A|^2[\\frac5{16}+\\frac14\\cos(2\\pi u_0x^\\prime)]$，强度空间频率为 $u_0$。"
+     "x": "频谱 $A[\\frac12\\delta(u)+\\frac14\\delta(u-u_0)+\\frac14\\delta(u+u_0)]$；挡负一级后 $I(x^\\prime)=|A|^2[\\frac5{16}+\\frac14\\cos(2\\pi u_0x^\\prime)]$，强度空间频率为 $u_0$。"
     }
    ],
    "analysis": [
     {
+     "k": "m",
+     "x": "t(x)=\\frac12+\\frac14e^{i2\\pi u_0x}+\\frac14e^{-i2\\pi u_0x}."
+    },
+    {
      "k": "p",
-     "x": "零级、正负一级的场系数分别为 $A/2,A/4,A/4$。遮挡负一级后，标准4F倒像场为 $A[1/2+\\exp(-\\mathrm i2\\pi u_0x^\\prime)/4]$。取模平方得到所列强度；坐标反转只改变复指数符号，不改变余弦强度。题干未指定入射振幅，单位振幅取 $A=1$。"
+     "x": "零级、正负一级的场系数分别为A/2、A/4、A/4。理想等焦距4f系统按单位倍率倒像处理，挡负一级后："
+    },
+    {
+     "k": "m",
+     "x": "U(x^\\prime)=A\\left[\\frac12+\\frac14e^{-i2\\pi u_0x^\\prime}\\right],\\qquad I=|U|^2=|A|^2\\left[\\frac5{16}+\\frac14\\cos(2\\pi u_0x^\\prime)\\right]."
+    },
+    {
+     "k": "p",
+     "x": "A为输入照明振幅；单位振幅取A=1。倒像改变复指数符号，不改变余弦强度。"
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-fea321798df1563c",
    "revisionKind": "calc",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "B26847B6DA2357C9F4312921316A4BEE.jpg",
+    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
+   ]
   },
   {
    "id": "exam-2017-9aacb6b1a420e699",
@@ -4902,42 +5464,65 @@
    "paperId": "2017",
    "section": "四、计算题",
    "questionNumber": "5",
-   "order": 35,
+   "order": 38,
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "自然光先后垂直通过透光轴与 X 轴成 $45^\\circ$ 的起偏器、快轴在 Y 方向的 $1/4$ 波片、第二块 $1/4$ 波片、透光轴与 X 轴成 $135^\\circ$ 的检偏器，最后到达观察屏。求并用琼斯矩阵验证：（1）第一块 $1/4$ 波片透出的光是什么偏振光；（2）为使观察屏最亮，第二块 $1/4$ 波片的快慢轴应如何放置。"
+     "x": "自然光先后垂直通过透光轴与x轴方向夹角为45°的起偏器，一块快轴在y方向的1/4波片，第二块1/4波片，透光轴与x轴方向夹角为135°的检偏器，然后到达观察屏，解答并分别用琼斯矩阵法加以验证。1）第一块1/4波片透出的光是什么偏振光？2）为使观察屏上最亮，第二块1/4波片的快慢轴应如何放置。"
     }
    ],
    "options": [],
-   "originalText": "自然光先后垂直通过透光轴与 X 轴成 $45^\\circ$ 的起偏器、快轴在 Y 方向的 $1/4$ 波片、第二块 $1/4$ 波片、透光轴与 X 轴成 $135^\\circ$ 的检偏器，最后到达观察屏。求并用琼斯矩阵验证：（1）第一块 $1/4$ 波片透出的光是什么偏振光；（2）为使观察屏最亮，第二块 $1/4$ 波片的快慢轴应如何放置。",
+   "originalText": "自然光先后垂直通过透光轴与x轴方向夹角为45°的起偏器，一块快轴在y方向的1/4波片，第二块1/4波片，透光轴与x轴方向夹角为135°的检偏器，然后到达观察屏，解答并分别用琼斯矩阵法加以验证。1）第一块1/4波片透出的光是什么偏振光？2）为使观察屏上最亮，第二块1/4波片的快慢轴应如何放置。",
    "originalHeading": "5",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "FF3E3B1B174F814D9B7D1D962B65A592.jpg",
    "sourceLine": 151,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "2b91852f36a2e395d238f73b2a6e89bb4fa7105831531f03ecdaf8088b40adbe",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
    "answer": [
     {
      "k": "p",
-     "x": "（1）第一块快轴沿 $y$ 的四分之一波片将 $45^\\circ$ 线偏振光变成圆偏振光（按本文约定为右旋）。 （2）第二块波片快轴也沿 $y$，慢轴沿 $x$；出射为与 $135^\\circ$ 检偏器轴平行的线偏振，屏上最亮。"
+     "x": "第一块四分之一波片输出圆偏振光；第二块快轴沿 $y$、慢轴沿 $x$ 时，屏上最亮，理想输出强度为入射自然光的 $I_0/2$。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "起偏器后的 Jones 矢量为 $(1,1)^T/\\sqrt2$。第一片快轴沿 $y$，$J_y=\\operatorname{diag}(i,1)$（略去全局相位），故出射 $(i,1)^T/\\sqrt2\\sim(1,-i)^T/\\sqrt2$，两正交分量等幅、相差 $-\\pi/2$，为圆偏振。对该态再用快轴沿 $y$ 的四分之一波片，得到 $(-1,1)^T/\\sqrt2$，线偏振方位 $135^\\circ$；检偏器也透过 $135^\\circ$，依马吕斯定律输出达到最大。若第二片快轴沿 $x$，出射线方向为 $45^\\circ$，与检偏器正交，输出为零。"
+     "x": "采用时间因子e⁻ⁱωt，略去全局相位。起偏器后的归一化Jones矢量为(1,1)ᵀ/√2，快轴沿y的波片可用J_y=diag(i,1)表示。"
+    },
+    {
+     "k": "m",
+     "x": "J_y\\frac1{\\sqrt2}\\binom11=\\frac1{\\sqrt2}\\binom i1\\sim\\frac1{\\sqrt2}\\binom1{-i}."
+    },
+    {
+     "k": "p",
+     "x": "两正交分量等幅、相差π/2，因此为圆偏振。旋向名称取决于观察方向约定，不在未规定观察方向时指定左旋或右旋。"
+    },
+    {
+     "k": "m",
+     "x": "J_y^2\\frac1{\\sqrt2}\\binom11=\\frac1{\\sqrt2}\\binom{-1}1."
+    },
+    {
+     "k": "p",
+     "x": "再经过同样快轴沿y的波片，得到135°线偏振，与检偏器轴一致，输出最大。若第二片快轴沿x，则抵消第一片延迟，恢复45°线偏振，与135°检偏器正交，理想输出为零。"
     }
    ],
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-9aacb6b1a420e699",
    "revisionKind": "calc",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
+   ]
   },
   {
    "id": "exam-2017-df21d6e11c510db9",
@@ -4945,32 +5530,57 @@
    "paperId": "2017",
    "section": "四、计算题",
    "questionNumber": "6",
-   "order": 36,
+   "order": 39,
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "激光波长 $\\lambda=500\\,\\mathrm{nm}$，增益系数带宽（大于损耗系数）为 $5\\times10^{-4}\\,\\mathrm{nm}$。若通过调节腔长使激光器只有一个纵模可以振荡，腔长应如何设置？"
+     "x": "设一激光器$\\lambda=500\\,\\mathrm{nm}$，增益系数带宽（大于损耗系数）为$5\\times10^{-4}\\,\\mathrm{nm}$，若通过调节腔长使激光器只有一个纵膜可以振荡，则腔长如何设置？"
     }
    ],
    "options": [],
-   "originalText": "激光波长 $\\lambda=500\\,\\mathrm{nm}$，增益系数带宽（大于损耗系数）为 $5\\times10^{-4}\\,\\mathrm{nm}$。若通过调节腔长使激光器只有一个纵模可以振荡，腔长应如何设置？",
+   "originalText": "设一激光器$\\lambda=500\\,\\mathrm{nm}$，增益系数带宽（大于损耗系数）为$5\\times10^{-4}\\,\\mathrm{nm}$，若通过调节腔长使激光器只有一个纵膜可以振荡，则腔长如何设置？",
    "originalHeading": "6",
-   "sourceFile": "电子版_修订/2017.md",
+   "sourceFile": "FF3E3B1B174F814D9B7D1D962B65A592.jpg",
    "sourceLine": 155,
-   "sourceHash": "a98d62c80185e82858fb1f7ec44af70843a92be5c4c30752403dabefb8dbbe88",
+   "sourceHash": "ff67265bb46254f8bb25778f54404744490bf1ce740ed96e1051ee50fe55159a",
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "空气线性腔的稳妥条件为 $L<250$ mm，并将某一腔模调入有效增益频带。一般应以腔光程 $L_{\\rm opt}<250$ mm 表示。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "\\Delta\\nu_g\\simeq\\frac{c\\Delta\\lambda}{\\lambda^2}=\\frac{3\\times10^8\\cdot5\\times10^{-13}}{(5\\times10^{-7})^2}=6\\times10^8\\ \\mathrm{Hz}."
+    },
+    {
+     "k": "m",
+     "x": "\\Delta\\nu_{\\rm FSR}=\\frac{c}{2L_{\\rm opt}}>\\Delta\\nu_g\\Rightarrow L_{\\rm opt}<\\frac{\\lambda^2}{2\\Delta\\lambda}=0.25\\ \\mathrm m."
+    },
+    {
+     "k": "p",
+     "x": "纵模间隔大于净增益为正的带宽，可保证最多一个纵模落入该频带；还必须把该模调到带内才能有一个模振荡。严格不等号避免带宽边界恰好同时容纳两个模。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2017-df21d6e11c510db9",
    "revisionKind": "calc",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [],
+   "analysisImages": [],
+   "sourcePhotos": [
+    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
+   ]
   },
   {
    "id": "exam-2018-9374b520e3e908e3",
@@ -5353,15 +5963,7 @@
    "stem": [
     {
      "k": "p",
-     "x": "**原文**：（题干开头有字被折痕遮挡）一束光垂直入射到棱镜Ⅰ的直角面上，则（　）"
-    },
-    {
-     "k": "note",
-     "x": "原文见 `往年真题_2007.md`。"
-    },
-    {
-     "k": "note",
-     "x": "2018 回忆稿补记的两个选项为“C. 大部分能量经过元件 II；D. 经过元件 II 后产生彩色条纹”，与原卷选项不一致，一并保留供对照。"
+     "x": "有两个斜面相对、间隔为半波长的相同等腰直角棱镜（图示玻璃折射率 $n=1.5$）。一束光垂直入射到棱镜Ⅰ的直角面上，则（　）。"
     }
    ],
    "options": [
@@ -5382,15 +5984,38 @@
    "completeness": "complete",
    "playable": true,
    "sourceImages": [],
-   "answer": [],
-   "analysis": [],
-   "answerAvailability": "not_provided",
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 B：棱镜Ⅱ中有部分光波透过。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "光在第一棱镜斜面上的入射角为45°，大于玻璃—空气界面的临界角arcsin(1/1.5)≈41.81°。孤立界面会发生全反射，但空气隙只有半波长，倏逝场可以耦合进入第二棱镜，形成受抑全反射，所以透射不为零。"
+    },
+    {
+     "k": "p",
+     "x": "不能把半无限空气介质的全反射结论直接用于有限薄空气隙，也不能据此推断“大部分能量”通过第二棱镜。"
+    }
+   ],
+   "answerAvailability": "review_provided",
    "questionId": "past-2018-a987259740457e67",
    "revisionKind": "choice",
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
-   }
+    "notes": [
+     "E846498A9F8968CF04D7DC48641AD415.jpg为2007年第14题原卷照片，补齐了棱镜形状、n=1.5与半波长空气隙条件。回忆稿另记的C、D不作为原卷选项。"
+    ]
+   },
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/2007-choice-14-prism-gap.svg",
+     "alt": "2007年第14题双棱镜薄空气隙原图重绘，亦为2018年第7题参考图"
+    }
+   ],
+   "analysisImages": []
   },
   {
    "id": "exam-2018-4f4fd9b3f50b869d",
@@ -25441,6 +26066,224 @@
      "2026-10-02：完整题面已通过答案与解析审查；详细复核依据保存在本地审查记录。"
     ]
    }
+  },
+  {
+   "id": "exam-2017-21e60e338d90257d",
+   "year": 2017,
+   "paperId": "2017",
+   "section": "三、画图题",
+   "questionNumber": "1",
+   "order": 31,
+   "type": "calc",
+   "sourceFile": "5BBA430B6EEA38546419A4E79741BEA7.jpg",
+   "sourceLine": 0,
+   "questionId": "past-2017-21e60e338d90257d",
+   "revisionKind": "drawing",
+   "sourceHash": "8a9d415e07b2426f9d71fb7d4c52efa3216a943af68b7e57965da80245e18ed2",
+   "originalText": "以下棱镜系统中已画出入射的右手坐标系，请画出a、b两个空间的坐标系。",
+   "originalHeading": "1",
+   "stem": [
+    {
+     "k": "p",
+     "x": "以下棱镜系统中已画出入射的右手坐标系，请画出a、b两个空间的坐标系。"
+    }
+   ],
+   "options": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "以入射全局 $(x,y,z)$ 为基底：$a$ 段为 $(x,-y,-z)$；$b$ 段为 $(x,z,y)$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "两棱镜均为普通反射棱镜，没有屋脊。按题图第一棱镜内+z→+y→−z的两次反射，第二棱镜使−z→+y的一次反射逐次变换整个坐标系，而不只是改变光轴箭头。"
+    },
+    {
+     "k": "m",
+     "x": "M_a=\\operatorname{diag}(1,-1,-1),\\quad M_{a\\to b}=\\begin{pmatrix}1&0&0\\\\0&0&-1\\\\0&-1&0\\end{pmatrix},\\quad M_b=M_{a\\to b}M_a=\\begin{pmatrix}1&0&0\\\\0&0&1\\\\0&1&0\\end{pmatrix}."
+    },
+    {
+     "k": "p",
+     "x": "a段：x保持原方向，y向上，z向左；b段：x仍保持原方向，y向右，z向下。第一段两次反射仍为右手性，累计三次反射后的b段为左手性；不能为保持右手性额外翻转某轴。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
+   "answerAvailability": "review_provided",
+   "review": {
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-01-prism-coordinates.svg",
+     "alt": "无屋脊的两棱镜系统及入射坐标条件图"
+    }
+   ],
+   "analysisImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-01-prism-solution.svg",
+     "alt": "入射、a段及b段的坐标方向答案"
+    }
+   ],
+   "sourcePhotos": [
+    "5BBA430B6EEA38546419A4E79741BEA7.jpg"
+   ]
+  },
+  {
+   "id": "exam-2017-c8065fe598212224",
+   "year": 2017,
+   "paperId": "2017",
+   "section": "三、画图题",
+   "questionNumber": "2",
+   "order": 32,
+   "type": "calc",
+   "sourceFile": "5BBA430B6EEA38546419A4E79741BEA7.jpg",
+   "sourceLine": 0,
+   "questionId": "past-2017-c8065fe598212224",
+   "revisionKind": "drawing",
+   "sourceHash": "c340bc6f0665ec3061f297952c4f871a98d219e79fa75fafeb3a27073a9d0155",
+   "originalText": "显微物镜和柯拉照明系统中，1）像面上光轴上方0.8视场（能够成像的视场大小按像面大小决定）的子午主光线；2）该视场的通过孔阑下边缘的光线。",
+   "originalHeading": "2",
+   "stem": [
+    {
+     "k": "p",
+     "x": "显微物镜和柯拉照明系统中，1）像面上光轴上方0.8视场（能够成像的视场大小按像面大小决定）的子午主光线；2）该视场的通过孔阑下边缘的光线。"
+    }
+   ],
+   "options": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "子午主光线连接指定像点与孔径光阑中心；边缘光线连接同一像点与孔径光阑下边缘，再向物面和照明系统逆向追迹。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "在A′面取轴上方0.8倍半视场高度的像点。先作像点到物镜后焦面Fo′处孔阑中心的连线；在物镜处依薄透镜规律折转，反向追至物面A，再经聚光镜、前置透镜追至光源。这是子午主光线。"
+    },
+    {
+     "k": "p",
+     "x": "边缘光线改为连接同一像点与Fo′处孔阑下边缘，依次经过同样的元件逆向追迹。两条线在像点A′、物点A及相应J₁视场像点相交；在孔阑处一条过中心，一条过下边缘。"
+    },
+    {
+     "k": "m",
+     "x": "J_1\\longleftrightarrow A\\longleftrightarrow A^\\prime,\\qquad S\\longleftrightarrow J_2\\longleftrightarrow F_o^\\prime."
+    },
+    {
+     "k": "p",
+     "x": "J₁属于视场共轭组，J₂属于光源／孔径共轭组。解析图采用满足薄透镜共轭关系的示意距离，表示作图步骤，不把示意尺寸作为题干条件。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
+   "answerAvailability": "review_provided",
+   "review": {
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-02-kohler-condition.svg",
+     "alt": "柯拉照明条件图，左焦点Fo，右焦点Fo撇"
+    }
+   ],
+   "analysisImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-02-kohler-solution.svg",
+     "alt": "像面0.8视场的子午主光线及通过孔阑下缘的光线"
+    }
+   ],
+   "sourcePhotos": [
+    "5BBA430B6EEA38546419A4E79741BEA7.jpg",
+    "605A61AB41161A3B40B8FD932F212681.jpg"
+   ],
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k4"
+   ],
+   "knowledge": {
+    "points": [
+     "柯拉照明与共轭面作图"
+    ],
+    "formulas": [],
+    "pitfalls": []
+   }
+  },
+  {
+   "id": "exam-2017-26924536f261611f",
+   "year": 2017,
+   "paperId": "2017",
+   "section": "三、画图题",
+   "questionNumber": "3",
+   "order": 33,
+   "type": "calc",
+   "sourceFile": "5BBA430B6EEA38546419A4E79741BEA7.jpg",
+   "sourceLine": 0,
+   "questionId": "past-2017-26924536f261611f",
+   "revisionKind": "drawing",
+   "sourceHash": "519503e0c9709cd43d8a24e1093671e9f8654c7b8f3f9e421a2e6928f2ab3ca8",
+   "originalText": "设光以$\\theta$角从空气入射到负单轴晶体分界面上，请用惠更斯作图法示意画出折射光波中$\\vec S_o,\\vec S_e,\\vec k_o,\\vec k_e$的方向。",
+   "originalHeading": "3",
+   "stem": [
+    {
+     "k": "p",
+     "x": "设光以$\\theta$角从空气入射到负单轴晶体分界面上，请用惠更斯作图法示意画出折射光波中$\\vec S_o,\\vec S_e,\\vec k_o,\\vec k_e$的方向。"
+    }
+   ],
+   "options": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "$\\boldsymbol S_o\\parallel\\boldsymbol k_o$；$\\boldsymbol S_e$ 沿非常光波面触点的半径，$\\boldsymbol k_e$ 垂直该处的切线，两者一般不平行。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "按原图保留左上↔右下的光轴方向。惠更斯作图时，从先到达界面的点作普通光的圆形子波面和非常光的椭圆形子波面；负单轴晶体ne<no，e光射线速度波面在垂直光轴方向伸得更远，沿光轴方向与o光圆相切。"
+    },
+    {
+     "k": "p",
+     "x": "从后到达界面的点分别作两波面的切线，即折射波前。普通光圆的切点半径与波前法线一致，给出So、ko；非常光椭圆的切点半径给出Se，切线法线给出ke。两种波矢的切向分量均与入射波矢相同。"
+    },
+    {
+     "k": "p",
+     "x": "不可把光轴箭头误读为折射光线，也不可把e光波矢直接沿半径画出。解析图中的折射率和角度只用于构造示意，不新增为原题数据。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
+   "answerAvailability": "review_provided",
+   "review": {
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-03-crystal-condition.svg",
+     "alt": "负单轴晶体折射条件图，晶体内斜向双箭头为光轴"
+    }
+   ],
+   "analysisImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-03-huygens-answer.svg",
+     "alt": "负单轴晶体o与e光的惠更斯波面、光线及波矢方向"
+    }
+   ],
+   "sourcePhotos": [
+    "5BBA430B6EEA38546419A4E79741BEA7.jpg",
+    "605A61AB41161A3B40B8FD932F212681.jpg"
+   ]
   }
  ],
  "canonicalQuestions": [
@@ -29348,7 +30191,7 @@
    "stem": [
     {
      "k": "p",
-     "x": "焦距为 100 mm 的理想光学系统有以下光阑，其孔径大小和光学系统的位置分别对应的是？原材料所记选项："
+     "x": "焦距为100 mm的理想光学系统有以下光阑，其直径大小和光学系统的理论分辨率有关的是（ ）。"
     }
    ],
    "options": [
@@ -29362,21 +30205,35 @@
     },
     {
      "key": "C",
-     "x": "渐晕光阑。〔其余选项缺失。〕"
+     "x": "渐晕光阑"
     }
    ],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 A：孔径光阑。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "衍射分辨能力由有效出瞳口径或数值孔径决定。孔径光阑限制轴上光束孔径，因而决定理论分辨率；视场光阑主要限制视场，渐晕光阑限制离轴光束。"
+    },
+    {
+     "k": "m",
+     "x": "\\theta_{\\min}\\simeq1.22\\lambda/D,\\qquad \\delta\\simeq0.61\\lambda/\\mathrm{NA}."
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "焦距为 100 mm 的理想光学系统有以下光阑，其孔径大小和光学系统的位置分别对应的是？原材料所记选项：A. 孔径光阑；B. 视场光阑；C. 渐晕光阑。〔其余选项缺失。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-9374b520e3e908e3",
    "canonicalId": "past-2017-9374b520e3e908e3",
    "statusKey": "past-2017-9374b520e3e908e3",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "geom-ch4",
    "section": "一、选择题",
    "number": "1",
    "name": "2017年 一、选择题",
@@ -29393,57 +30250,81 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch4-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 7
+    "line": 7,
+    "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-9374b520e3e908e3"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "某光学系统总焦距为 24 mm，由两片透镜组成，对远处物体成像，要求工作距离 50 mm。原材料所记选项："
+     "x": "某光学系统焦距为24 mm，由两组薄透镜组合，对远处物体成像，要求工作距离50 mm，则（ ）。"
     }
    ],
    "options": [
     {
      "key": "A",
-     "x": "正透镜与正透镜的距离最大"
+     "x": "正透镜与正透镜的距离变大"
     },
     {
      "key": "B",
-     "x": "正负透镜组合，负透镜放在前面"
+     "x": "正负透镜组合，将正透镜放在前面"
     },
     {
      "key": "C",
-     "x": "负透镜放在后面。〔选项文字可能不完整。〕"
+     "x": "负透镜放在前面"
     }
    ],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 C：负透镜放在前面，正透镜放在后面。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "题目要求后工作距离50 mm大于系统焦距24 mm，属于反远距结构。设两薄透镜间距d>0、前镜焦距f₁、组合焦距F，则物在无穷远时后截距为F(1−d/f₁)。"
+    },
+    {
+     "k": "m",
+     "x": "50=24(1-d/f_1)\\ \\Rightarrow\\ f_1=-\\frac{12}{13}d<0."
+    },
+    {
+     "k": "p",
+     "x": "因此前镜必须为负透镜；后镜取正透镜。两个正透镜不能在通常正间隔下满足该后截距，正镜在前、负镜在后的远距型结构方向相反。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "某光学系统总焦距为 24 mm，由两片透镜组成，对远处物体成像，要求工作距离 50 mm。原材料所记选项：A. 正透镜与正透镜的距离最大；B. 正负透镜组合，负透镜放在前面；C. 负透镜放在后面。〔选项文字可能不完整。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-9db5584364754809",
    "canonicalId": "past-2017-9db5584364754809",
    "statusKey": "past-2017-9db5584364754809",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "geom-ch2",
    "section": "一、选择题",
    "number": "2",
    "name": "2017年 一、选择题",
@@ -29460,152 +30341,77 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch2-k2"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 11
+    "line": 11,
+    "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-9db5584364754809"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "一个圆，横坐标是 $d,F,c$〔字母按原图，含义未注明〕，其在主透光轴上的像高于纵坐标表示视场的什么？〔手写题干难辨，需核 IMG_20260927_145911.jpg。〕"
+     "x": "显微镜当对物体成像于明视距离处供观察时，其视觉放大率（ ）。"
     }
    ],
-   "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
-   "originalText": "一个圆，横坐标是 $d,F,c$〔字母按原图，含义未注明〕，其在主透光轴上的像高于纵坐标表示视场的什么？〔手写题干难辨，需核 IMG_20260927_145911.jpg。〕",
-   "answerAvailability": "not_provided",
-   "id": "past-2017-670b96b63e7ff1d5",
-   "canonicalId": "past-2017-670b96b63e7ff1d5",
-   "statusKey": "past-2017-670b96b63e7ff1d5",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "section": "一、选择题",
-   "number": "3",
-   "name": "2017年 一、选择题",
-   "year": 2017,
-   "order": 28,
-   "typeName": "选择题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "待人工细分"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "exam-incomplete-k1"
+   "options": [
+    {
+     "key": "A",
+     "x": "等于垂轴放大率"
+    },
+    {
+     "key": "B",
+     "x": "轴向放大率"
+    }
    ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2017.md",
-    "line": 15
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   },
-   "occurrences": [
-    "exam-2017-670b96b63e7ff1d5"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1
-  },
-  {
-   "type": "choice",
-   "stem": [
+   "answer": [
     {
      "k": "p",
-     "x": "在有单组透镜转像系统的开普勒望远镜中……〔后半题干未记。〕"
+     "x": "选 A：等于整个显微镜系统的垂轴放大率。"
     }
    ],
-   "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
-   "originalText": "在有单组透镜转像系统的开普勒望远镜中……〔后半题干未记。〕",
-   "answerAvailability": "not_provided",
-   "id": "past-2017-35cb3be4039cb527",
-   "canonicalId": "past-2017-35cb3be4039cb527",
-   "statusKey": "past-2017-35cb3be4039cb527",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "section": "一、选择题",
-   "number": "4",
-   "name": "2017年 一、选择题",
-   "year": 2017,
-   "order": 14,
-   "typeName": "选择题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "无焦系统焦距骨架与倍率"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "exam-incomplete-k3"
-   ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2017.md",
-    "line": 19
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   },
-   "occurrences": [
-    "exam-2017-35cb3be4039cb527"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1
-  },
-  {
-   "type": "choice",
-   "stem": [
+   "analysis": [
     {
      "k": "p",
-     "x": "显微镜当对细件成像于明视距离处供观察时，其视放大率……〔原材料只有残句及“等于或大于”“趋向于一”等残缺选项；需核原图。〕"
+     "x": "最终虚像位于明视距离D=250 mm时，裸眼在同一距离观察原物的视角约为y/D，显微镜最终虚像的视角约为y″/D。因此视觉放大率与整个系统的垂轴放大率相等。"
+    },
+    {
+     "k": "m",
+     "x": "\\Gamma=\\frac{y^{\\prime\\prime}/D}{y/D}=\\frac{y^{\\prime\\prime}}{y}=\\beta_{\\rm system}."
+    },
+    {
+     "k": "p",
+     "x": "这里的垂轴放大率是物到最终虚像的倍率，不是显微物镜单独的中间像倍率。"
     }
    ],
-   "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "显微镜当对细件成像于明视距离处供观察时，其视放大率……〔原材料只有残句及“等于或大于”“趋向于一”等残缺选项；需核原图。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-89975e6f0813661b",
    "canonicalId": "past-2017-89975e6f0813661b",
    "statusKey": "past-2017-89975e6f0813661b",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "inst-c5",
    "section": "一、选择题",
    "number": "5",
    "name": "2017年 一、选择题",
@@ -29622,105 +30428,71 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k3"
+    "inst-c5-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 23
+    "line": 23,
+    "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-89975e6f0813661b"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "在以下光学系统中，球差绝对值最小的是？〔选项未记。〕"
-    }
-   ],
-   "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
-   "originalText": "在以下光学系统中，球差绝对值最小的是？〔选项未记。〕",
-   "answerAvailability": "not_provided",
-   "id": "past-2017-89ed0b753e29e332",
-   "canonicalId": "past-2017-89ed0b753e29e332",
-   "statusKey": "past-2017-89ed0b753e29e332",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "section": "一、选择题",
-   "number": "6",
-   "name": "2017年 一、选择题",
-   "year": 2017,
-   "order": 16,
-   "typeName": "选择题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "球差与正弦条件"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "exam-incomplete-k1"
-   ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2017.md",
-    "line": 27
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
-   },
-   "occurrences": [
-    "exam-2017-89ed0b753e29e332"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1
-  },
-  {
-   "type": "choice",
-   "stem": [
-    {
-     "k": "p",
-     "x": "当入射光沿闪耀角为 $\\gamma$ 的闪耀光栅面法线方向入射时，得到闪耀的衍射角方向为 $\\theta=\\,$？原材料可辨选项："
+     "x": "当入射光沿闪耀角为$\\gamma$的闪耀光栅面法线方向时，得到闪耀的衍射角方向为$\\theta=\\cdots$。"
     }
    ],
    "options": [
     {
      "key": "A",
-     "x": ""
+     "x": "$\\theta=\\gamma$"
     },
     {
      "key": "B",
-     "x": ""
+     "x": "$\\theta=2\\gamma$"
     },
     {
      "key": "C",
-     "x": "。"
+     "x": "$\\theta=4\\gamma$"
     }
    ],
-   "answer": [],
-   "analysis": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 B：$\\theta=2\\gamma$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "闪耀光栅沟槽工作面的法线相对光栅宏观面法线倾斜γ。沿宏观面法线入射时，入射光与沟槽法线夹角为γ，沟槽面的镜面反射方向在法线另一侧同样为γ，因此闪耀方向相对宏观面法线偏转2γ。"
+    },
+    {
+     "k": "m",
+     "x": "\\theta_{\\rm blaze}=2\\gamma."
+    }
+   ],
    "completeness": "complete",
    "playable": true,
    "originalText": "当入射光沿闪耀角为 $\\gamma$ 的闪耀光栅面法线方向入射时，得到闪耀的衍射角方向为 $\\theta=\\,$？原材料可辨选项：A. $\\theta=\\gamma$；B. $\\theta=2\\gamma$；C. $\\theta=4\\gamma$。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-a987259740457e67",
    "canonicalId": "past-2017-a987259740457e67",
    "statusKey": "past-2017-a987259740457e67",
@@ -29737,50 +30509,70 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "闪耀光栅"
+     "多缝干涉与光栅方程"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "phys-ch11-k6"
+    "phys-ch11-k4"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 31
+    "line": 31,
+    "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-a987259740457e67"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "在典型的牛顿环装置中，若用平行光垂直照明，当凸透镜与平板间距离减小时，条纹将……〔选项未记。〕"
+     "x": "在典型的牛顿环装置中，若用平行光垂直照明，则当凸透镜与平板间距减少时，条纹将（ ）。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "牛顿环向外扩展；同级次环的半径增大。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "设透镜与平板间中心空气隙为h，曲率半径为R。反射暗环条件为2h+r²/R=mλ。减小h而保持同一条纹级次m，r²必须增加，故条纹向外扩展。"
+    },
+    {
+     "k": "m",
+     "x": "r_m^2=R(m\\lambda-2h),\\qquad \\Delta h<0\\Rightarrow\\Delta r_m^2>0."
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "在典型的牛顿环装置中，若用平行光垂直照明，当凸透镜与平板间距离减小时，条纹将……〔选项未记。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-4f4fd9b3f50b869d",
    "canonicalId": "past-2017-4f4fd9b3f50b869d",
    "statusKey": "past-2017-4f4fd9b3f50b869d",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch10",
    "section": "一、选择题",
    "number": "8",
    "name": "2017年 一、选择题",
@@ -29797,67 +30589,81 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch10-k4"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 35
+    "line": 35,
+    "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-4f4fd9b3f50b869d"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "自然光投射到两片相叠的偏振片上（理想偏振片），当透射光强为入射自然光强的 $1/4$ 时，偏振片的透光轴方向夹角为？原材料可辨选项："
+     "x": "自然光投射到两片相叠的偏振片上（理想偏振片），当透射光强为入射自然光强的1/4时，偏振片的透光轴方向夹角为（ ）。"
     }
    ],
    "options": [
     {
      "key": "A",
-     "x": ""
+     "x": "30°"
     },
     {
      "key": "B",
-     "x": ""
+     "x": "60°"
     },
     {
      "key": "C",
-     "x": "〔末项数字需核原图〕。"
+     "x": "33.5°"
     }
    ],
    "answer": [
     {
      "k": "p",
-     "x": "$\\theta=45^\\circ$。"
+     "x": "透光轴锐角夹角为 $45^\\circ$；照片中的三个选项均不等于该结果。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "$I_{\\mathrm{out}}=\\frac{I_{\\mathrm{in}}}{2}\\cos^2\\theta=\\frac{I_{\\mathrm{in}}}{4}$，所以 $\\cos^2\\theta=1/2$。"
+     "x": "自然光经过第一片理想偏振片，光强减半；经过第二片遵从马吕斯定律。"
+    },
+    {
+     "k": "m",
+     "x": "I=\\frac{I_0}{2}\\cos^2\\theta=\\frac{I_0}{4}\\Rightarrow\\cos^2\\theta=\\frac12\\Rightarrow\\theta=45^\\circ."
+    },
+    {
+     "k": "p",
+     "x": "30°、60°、33.5°均不满足题设光强比，因此保留原选项，但不指定错误的选项字母。"
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "自然光投射到两片相叠的偏振片上（理想偏振片），当透射光强为入射自然光强的 $1/4$ 时，偏振片的透光轴方向夹角为？原材料可辨选项：A. $30^\\circ$；B. $60^\\circ$；C. $33.5^\\circ$〔末项数字需核原图〕。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-da48bee9a54c4440",
    "canonicalId": "past-2017-da48bee9a54c4440",
    "statusKey": "past-2017-da48bee9a54c4440",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch13",
    "section": "一、选择题",
    "number": "9",
    "name": "2017年 一、选择题",
@@ -29874,44 +30680,73 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch13-k2"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 39
+    "line": 39,
+    "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "回忆照片给出的选项为30°、60°、33.5°，与题设I/I₀=1/4算得45°不一致；没有纸质答案可据以反解修订，暂不自动判分。"
+    ]
    },
    "occurrences": [
     "exam-2017-da48bee9a54c4440"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "三等边角小圆孔的夫琅禾费衍射图样是？〔原材料未记选项。〕"
+     "x": "三个全同小圆孔的夫琅禾费衍射图样是（ ）。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "图样为单个圆孔衍射包络与三孔干涉因子的乘积；具体条纹排列取决于三个孔的位置。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "令三个全同圆孔中心为r₁、r₂、r₃，单孔夫琅禾费场为U₁(q)，则总场是三个平移孔场的相干叠加。"
+    },
+    {
+     "k": "m",
+     "x": "I(\\boldsymbol q)=|U_1(\\boldsymbol q)|^2\\left|\\sum_{j=1}^3e^{-i\\boldsymbol q\\cdot\\boldsymbol r_j}\\right|^2"
+    },
+    {
+     "k": "m",
+     "x": "=I_1(\\boldsymbol q)\\left[3+2\\sum_{j<k}\\cos\\bigl(\\boldsymbol q\\cdot(\\boldsymbol r_j-\\boldsymbol r_k)\\bigr)\\right]."
+    },
+    {
+     "k": "p",
+     "x": "圆孔包络为艾里型包络。照片未提供三孔的中心排列与图形选项，不能唯一选定某一幅图。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "三等边角小圆孔的夫琅禾费衍射图样是？〔原材料未记选项。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-aa8b40169aa7b78e",
    "canonicalId": "past-2017-aa8b40169aa7b78e",
    "statusKey": "past-2017-aa8b40169aa7b78e",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch11",
    "section": "一、选择题",
    "number": "10",
    "name": "2017年 一、选择题",
@@ -29928,47 +30763,54 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch11-k2"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 43
+    "line": 43,
+    "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "照片没有三孔排列或图形选项，仅能给出适用于任意三孔位置的一般表达式。"
+    ]
    },
    "occurrences": [
     "exam-2017-aa8b40169aa7b78e"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "傅里叶变换相似定理：空域坐标 $(x,y)$ 放大 $N$ 倍，则频率域中坐标 $(u,v)$ 将放大多少？原材料可辨选项："
+     "x": "傅里叶变换相似定理，空域中坐标$(x_1,y_1)$放大$N$倍，则频率域中坐标$(u,v)$将放大（ ）。"
     }
    ],
    "options": [
     {
      "key": "A",
-     "x": "$N$ 倍"
+     "x": "N"
     },
     {
      "key": "B",
-     "x": "$2N$ 倍"
+     "x": "2N"
     },
     {
      "key": "C",
-     "x": "$N^2$ 倍"
+     "x": "N×N"
     },
     {
      "key": "D",
-     "x": "$1/N$ 倍"
+     "x": "1/N"
     }
    ],
    "answer": [
@@ -29979,14 +30821,18 @@
    ],
    "analysis": [
     {
+     "k": "m",
+     "x": "f(x/N,y/N)\\longleftrightarrow N^2F(Nu,Nv)."
+    },
+    {
      "k": "p",
-     "x": "用二维缩放关系 $f(x/N,y/N)\\longleftrightarrow N^2F(Nu,Nv)$。谱坐标因空域放大而收缩为 $1/N$。"
+     "x": "空域图形放大N倍，谱的位置及宽度缩小为原来的1/N；前面的N²影响谱振幅而不是谱坐标尺度。"
     }
    ],
    "completeness": "complete",
    "playable": true,
    "originalText": "傅里叶变换相似定理：空域坐标 $(x,y)$ 放大 $N$ 倍，则频率域中坐标 $(u,v)$ 将放大多少？原材料可辨选项：A. $N$；B. $2N$；C. $N\\times N$；D. $1/N$。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-68a470a8e72d592d",
    "canonicalId": "past-2017-68a470a8e72d592d",
    "statusKey": "past-2017-68a470a8e72d592d",
@@ -30003,50 +30849,71 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "空间频率与透镜的傅里叶变换"
+     "傅里叶变换性质"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "phys-ch12-k2"
+    "phys-ch12-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 47
+    "line": 47,
+    "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg、36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-68a470a8e72d592d"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "布儒斯特角 $\\theta_B$ 入射时……〔后半题干及选项缺失。〕"
+     "x": "布儒斯特角$\\theta_B$入射时（ ）。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "布儒斯特角下p偏振反射率为零；自然光的反射光为s线偏振光。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "\\tan\\theta_B=\\frac{n_2}{n_1},\\qquad \\theta_B+\\theta_t=90^\\circ,\\qquad R_p=0."
+    },
+    {
+     "k": "p",
+     "x": "对通常无吸收介质界面，反射光与折射光互相垂直。只有反射光是完全s线偏振；自然光的透射光一般仍同时含s、p分量，不能说透射光也完全线偏振。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "布儒斯特角 $\\theta_B$ 入射时……〔后半题干及选项缺失。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-c728f597026db83c",
    "canonicalId": "past-2017-c728f597026db83c",
    "statusKey": "past-2017-c728f597026db83c",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch9",
    "section": "一、选择题",
    "number": "12",
    "name": "2017年 一、选择题",
@@ -30063,44 +30930,82 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch9-k3"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 51
+    "line": 51,
+    "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg、36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-c728f597026db83c"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "以直径为 $D$ 的圆孔作为衍射受限系统的出瞳，在相干光照明时其截止频率为 $\\rho_0$。问该系统对频率为 $\\rho=\\rho_0$ 的信号，其光学传递函数 $H(\\rho)$ 的取值为？原材料可辨选项包括 $0$、$0<H(\\rho)<1$、$H(\\rho)>1$，其余缺失。"
+     "x": "以直径为$D$的圆孔作为衍射受限系统的出瞳，在相干光照明时其截止频率为$\\rho_0$，则当非相干照明，该系统对于频率为$\\rho=\\rho_0$的信息，其光学传递函数$H(\\rho)$的取值为（ ）。"
     }
    ],
-   "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "options": [
+    {
+     "key": "C",
+     "x": "$0<H(\\rho)<1$"
+    },
+    {
+     "key": "D",
+     "x": "$H(\\rho)>1$"
+    }
+   ],
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 C：$0<H(\\rho_0)<1$；理想圆孔出瞳下 $H(\\rho_0)=\\frac23-\\frac{\\sqrt3}{2\\pi}\\approx0.3910$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "ρ₀是相干截止频率。对同一无像差圆孔出瞳，非相干截止频率为2ρ₀，因此题目询问的位置只在非相干通带的一半处。"
+    },
+    {
+     "k": "m",
+     "x": "H(\\rho)=\\frac2\\pi\\left[\\arccos\\eta-\\eta\\sqrt{1-\\eta^2}\\right],\\quad\\eta=\\frac{\\rho}{2\\rho_0}."
+    },
+    {
+     "k": "m",
+     "x": "\\eta=\\frac12\\Rightarrow H(\\rho_0)=\\frac23-\\frac{\\sqrt3}{2\\pi}\\approx0.3910."
+    },
+    {
+     "k": "p",
+     "x": "不能把相干截止频率误当成非相干截止频率，进而误判H=0。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "以直径为 $D$ 的圆孔作为衍射受限系统的出瞳，在相干光照明时其截止频率为 $\\rho_0$。问该系统对频率为 $\\rho=\\rho_0$ 的信号，其光学传递函数 $H(\\rho)$ 的取值为？原材料可辨选项包括 $0$、$0<H(\\rho)<1$、$H(\\rho)>1$，其余缺失。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-205247028d846679",
    "canonicalId": "past-2017-205247028d846679",
    "statusKey": "past-2017-205247028d846679",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch12",
    "section": "一、选择题",
    "number": "13",
    "name": "2017年 一、选择题",
@@ -30117,44 +31022,68 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch12-k5"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 55
+    "line": 55,
+    "reference": "2017年分段补拍照片：36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-205247028d846679"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "光波从光密介质进入光疏介质并发生全反射时……〔原材料注明选项与“倏逝波”有关，完整选项缺失。〕"
+     "x": "光波从光密介质进入光疏介质并发生全反射时，（ ）。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "光疏介质中仍存在倏逝电磁场，振幅沿界面法线指数衰减；理想半无限、无吸收介质中没有向深处传播的平均能流。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "全反射并不等于第二介质中的电场、磁场都为零。透射波的法向波矢为虚数，场随离开界面的距离衰减，但沿界面仍具有相位变化。"
+    },
+    {
+     "k": "m",
+     "x": "k_\\perp=i\\kappa,\\qquad E\\propto e^{-\\kappa z},\\qquad \\kappa=\\frac{2\\pi}{\\lambda_0}\\sqrt{n_1^2\\sin^2\\theta_i-n_2^2}."
+    },
+    {
+     "k": "p",
+     "x": "此结论针对普通无吸收、半无限介质；靠近另一高折射率介质时可以出现受抑全反射。原照片只记选项与光电磁场有关，未给实际选项，故不补字母。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "光波从光密介质进入光疏介质并发生全反射时……〔原材料注明选项与“倏逝波”有关，完整选项缺失。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-6b12bcc9ca291714",
    "canonicalId": "past-2017-6b12bcc9ca291714",
    "statusKey": "past-2017-6b12bcc9ca291714",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch9",
    "section": "一、选择题",
    "number": "14",
    "name": "2017年 一、选择题",
@@ -30171,54 +31100,77 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch9-k4"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 59
+    "line": 59,
+    "reference": "2017年分段补拍照片：36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-6b12bcc9ca291714"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "一束自然光经过起偏器，再经过 $1/4$ 波片，一般变成什么偏振光？〔部分选项被涂改，未能确认。〕"
+     "x": "一束自然光经过起偏器，再经过1/4波片，一般为（ ）。"
     }
    ],
-   "options": [],
+   "options": [
+    {
+     "key": "A",
+     "x": "圆偏振光"
+    },
+    {
+     "key": "B",
+     "x": "线偏振光"
+    },
+    {
+     "key": "C",
+     "x": "椭圆偏振光"
+    }
+   ],
    "answer": [
     {
      "k": "p",
-     "x": "一般为椭圆偏振；$45^\\circ$ 入射到快慢轴时为圆偏振，沿任一主轴时为线偏振。"
+     "x": "选 C：一般为椭圆偏振光。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "波片相位延迟是 $\\pi/2$；偏振态还取决于入射线偏振相对快慢轴的方位，不能在特殊方位一概称为椭圆偏振。"
+     "x": "起偏器把自然光变为线偏振光；四分之一波片使快、慢轴两分量产生π/2相位差。一般情况下两分量振幅不相等，得到椭圆偏振。"
+    },
+    {
+     "k": "p",
+     "x": "透光轴与波片主轴成45°时两分量等幅，成为圆偏振；沿任一主轴入射时只有一个分量，仍为线偏振。这些是特殊情况。"
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "一束自然光经过起偏器，再经过 $1/4$ 波片，一般变成什么偏振光？〔部分选项被涂改，未能确认。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-bf81e6c5f3860341",
    "canonicalId": "past-2017-bf81e6c5f3860341",
    "statusKey": "past-2017-bf81e6c5f3860341",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch13",
    "section": "一、选择题",
    "number": "15",
    "name": "2017年 一、选择题",
@@ -30235,44 +31187,68 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch13-k3"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 63
+    "line": 63,
+    "reference": "2017年分段补拍照片：36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-bf81e6c5f3860341"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收影响），若相邻亮条纹对应的光程差为波长整数倍，则……〔题干后半部分缺失。〕"
+     "x": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收影响），若相邻光束之光程差为波长整数倍，则（ ）。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "透射为亮纹（透射极大），反射为暗纹；对两面反射率相同、无吸收的理想平行平板，透射率为1、反射率为0。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "相邻透射光束的相位差为2π的整数倍时，多束透射光相长干涉。不能只看到界面反射率高就认为整体透射率低。"
+    },
+    {
+     "k": "m",
+     "x": "T=\\frac1{1+F\\sin^2(\\delta/2)},\\quad F=\\frac{4R}{(1-R)^2},\\quad\\delta=2\\pi m\\Rightarrow T=1."
+    },
+    {
+     "k": "p",
+     "x": "无吸收时能量守恒给出整体反射率1−T=0；反射率高使峰变窄，不改变理想峰值。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收影响），若相邻亮条纹对应的光程差为波长整数倍，则……〔题干后半部分缺失。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-a486bd26b1cc71af",
    "canonicalId": "past-2017-a486bd26b1cc71af",
    "statusKey": "past-2017-a486bd26b1cc71af",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch10",
    "section": "一、选择题",
    "number": "16",
    "name": "2017年 一、选择题",
@@ -30283,50 +31259,70 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "干涉条件与条纹可见度"
+     "多光束干涉与 F–P 腔"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch10-k6"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 67
+    "line": 67,
+    "reference": "2017年分段补拍照片：36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-a486bd26b1cc71af"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "在 He-Ne 激光器中，若输出两个纵模，则原因可能为？〔选项缺失。〕"
+     "x": "在He-Ne激光器中，若输出了两个纵模，则原因可能为（ ）。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "有两个谐振腔纵模同时落在有效增益带宽内，并满足振荡阈值，模式竞争未抑制其中一个。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "\\nu_q=\\frac{qc}{2L_{\\rm opt}},\\qquad\\Delta\\nu_{\\rm FSR}=\\frac{c}{2L_{\\rm opt}}."
+    },
+    {
+     "k": "p",
+     "x": "腔光程变长会减小纵模间隔，可能让两个模处于净增益大于零的频带。He-Ne激光的非均匀展宽及驻波空间烧孔也可使多个纵模共存。仅凭“两个纵模”不能唯一判断具体哪项器件或参数变化，原照片没有选项。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "在 He-Ne 激光器中，若输出两个纵模，则原因可能为？〔选项缺失。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-b747e1b3809e13b2",
    "canonicalId": "past-2017-b747e1b3809e13b2",
    "statusKey": "past-2017-b747e1b3809e13b2",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "exam-outofscope",
    "section": "一、选择题",
    "number": "17",
    "name": "2017年 一、选择题",
@@ -30337,60 +31333,70 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "待人工细分"
+     "超纲题目"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k4"
+    "exam-outofscope-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 71
+    "line": 71,
+    "reference": "2017年分段补拍照片：36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-b747e1b3809e13b2"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "在激光谐振腔内部加入一个倾斜（布儒斯特角）的平板玻璃，第一次线偏振光输出的偏振状态及其光学原理是什么？〔原材料只记题意，未记选项。〕"
+     "x": "在一个激光谐振腔内部加入一个倾斜（布儒斯特角）的平板玻璃实现线偏振光的输出，其实现的光学原理（ ）。"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "输出为 $p$ 线偏振光（电矢量在入射面内），原因是布儒斯特角下 $p$ 反射损耗消失、$s$ 损耗较大。"
+     "x": "布儒斯特平板使p偏振的反射损耗最小，腔内优先形成p线偏振振荡。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "结论假设平板的入射面、腔几何及偏振选择方向如通常布儒斯特窗腔；不从缺失选项补充其他器件。"
+     "x": "在布儒斯特角入射时p偏振反射率为零，而s偏振仍有反射损耗；经过多次往返，s偏振受到更强抑制。输出电矢量位于平板入射面内。"
+    },
+    {
+     "k": "m",
+     "x": "R_p(\\theta_B)=0,\\qquad R_s(\\theta_B)>0."
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "在激光谐振腔内部加入一个倾斜（布儒斯特角）的平板玻璃，第一次线偏振光输出的偏振状态及其光学原理是什么？〔原材料只记题意，未记选项。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-2be06a95b9235ba9",
    "canonicalId": "past-2017-2be06a95b9235ba9",
    "statusKey": "past-2017-2be06a95b9235ba9",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch9",
    "section": "一、选择题",
    "number": "18",
    "name": "2017年 一、选择题",
@@ -30407,44 +31413,64 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch9-k3"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 75
+    "line": 75,
+    "reference": "2017年分段补拍照片：36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-2be06a95b9235ba9"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "激光器达到稳定输出时，若突然将激光器的输出反射镜撤掉，则激光介质的增益系数将怎样变化？〔选项缺失。〕"
+     "x": "当激光器达到稳定输出时，我们突然将激光器的输出反射镜撤掉，则激活介质的增益系数将（ ）。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "撤镜后的恢复过程中，增益系数增大，趋向该泵浦条件下的小信号增益；撤镜瞬间不发生突变。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "稳定振荡时，受激辐射消耗粒子数反转，使增益饱和并钳制在腔损耗对应的阈值附近。撤去输出镜破坏反馈后，腔内激光场衰减，受激辐射减弱，继续泵浦使反转粒子数恢复，故增益随后增大。"
+    },
+    {
+     "k": "p",
+     "x": "粒子数不能瞬间跳变，因此应区分撤镜的瞬时值与随后经过暂态的值；常规题目问的是后者。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "激光器达到稳定输出时，若突然将激光器的输出反射镜撤掉，则激光介质的增益系数将怎样变化？〔选项缺失。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-ecb5b6ff81ba0ef5",
    "canonicalId": "past-2017-ecb5b6ff81ba0ef5",
    "statusKey": "past-2017-ecb5b6ff81ba0ef5",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "exam-outofscope",
    "section": "一、选择题",
    "number": "19",
    "name": "2017年 一、选择题",
@@ -30455,50 +31481,70 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "反射、折射与全反射定律"
+     "超纲题目"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k4"
+    "exam-outofscope-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 79
+    "line": 79,
+    "reference": "2017年分段补拍照片：36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-ecb5b6ff81ba0ef5"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "choice",
    "stem": [
     {
      "k": "p",
-     "x": "声光效应产生的布拉格衍射中，如果入射光的强度不变而声波频率增加，则……〔题干后半句及选项缺失。〕"
+     "x": "声光效应产生的布拉格衍射，如果入射光的角度不变而声波频率增加，则（ ）。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "布拉格匹配角随声波频率增大；入射角固定在原匹配角时发生失配，原匹配点附近的衍射效率下降。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "\\Lambda=\\frac{v_a}{f_a},\\qquad \\sin\\theta_B=\\frac{\\lambda_0}{2n\\Lambda}=\\frac{\\lambda_0f_a}{2nv_a}."
+    },
+    {
+     "k": "p",
+     "x": "声速、光波长和折射率不变时，声频增大使声栅周期减小，需要更大的布拉格入射角。入射角仍保持原值，就离开匹配条件。衍射方向也随声频变化；没有声功率、相互作用长度等数据，不能给出效率变化的具体数值或声光偏转幅度。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "声光效应产生的布拉格衍射中，如果入射光的强度不变而声波频率增加，则……〔题干后半句及选项缺失。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-9de4cece6d93ed93",
    "canonicalId": "past-2017-9de4cece6d93ed93",
    "statusKey": "past-2017-9de4cece6d93ed93",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "exam-outofscope",
    "section": "一、选择题",
    "number": "20",
    "name": "2017年 一、选择题",
@@ -30509,50 +31555,74 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "菲涅耳衍射与夫琅禾费衍射"
+     "超纲题目"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k4"
+    "exam-outofscope-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 83
+    "line": 83,
+    "reference": "2017年分段补拍照片：36ED8C0C40E00EC221E35494D8BD1EB1.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-9de4cece6d93ed93"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "焦距为 100 mm 的透镜，其相对孔径由 $1/5$ 变为 $1/10$，像高由 20 mm 变为 5 mm，其立体成像的眼距为____。能接受人眼的半视场角的正切变为____，景深比原来____（大/小）；如保持入瞳和原来同样的细节视觉，焦距应变为____ mm。〔手写“立体成像”等词需核原图 IMG_20260927_145904.jpg。〕"
+     "x": "焦距为100 mm的透镜当相对孔径由1/5变为1/10，像高由20 mm变为5 mm，其他不变，像面中心的照度变为____，能够接入的半视场角的正切变为____，景深比原来____（大/小），此时如果要接入和原来同样的物方视场，焦距应变为____ mm。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
-   "completeness": "partial",
-   "playable": false,
+   "answer": [
+    {
+     "k": "p",
+     "x": "依次为原来的 $1/4$、$1/20$（原来的 $1/4$）、大、$25\\,\\mathrm{mm}$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "E_{\\rm center}\\propto(D/f)^2,\\qquad \\frac{E_2}{E_1}=\\left(\\frac{1/10}{1/5}\\right)^2=\\frac14."
+    },
+    {
+     "k": "m",
+     "x": "\\tan w_2=\\frac{5}{100}=\\frac1{20},\\qquad \\tan w_1=\\frac{20}{100}=\\frac15."
+    },
+    {
+     "k": "p",
+     "x": "其余成像条件不变时，减小孔径使允许弥散斑相同条件下的景深增大。若用像高5 mm覆盖原半视场，则新焦距需满足5/f=20/100，得到25 mm。"
+    }
+   ],
+   "completeness": "complete",
+   "playable": true,
    "originalText": "焦距为 100 mm 的透镜，其相对孔径由 $1/5$ 变为 $1/10$，像高由 20 mm 变为 5 mm，其立体成像的眼距为____。能接受人眼的半视场角的正切变为____，景深比原来____（大/小）；如保持入瞳和原来同样的细节视觉，焦距应变为____ mm。〔手写“立体成像”等词需核原图 IMG_20260927_145904.jpg。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-696bb0126554b7a7",
    "canonicalId": "past-2017-696bb0126554b7a7",
    "statusKey": "past-2017-696bb0126554b7a7",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "geom-ch4",
    "section": "二、填空题",
    "number": "1",
    "name": "2017年 二、填空题",
@@ -30563,44 +31633,74 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "景深"
+     "景深",
+     "像面照度与 F 数"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch4-k4",
+    "geom-ch5-k3"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 89
+    "line": 89,
+    "reference": "2017年分段补拍照片：0F8D23459369E88446258333B5D02BEF.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-696bb0126554b7a7"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "一束平行光从空气垂直通过一块 $n=1.5$ 的平板玻璃，则在不计吸收的情况下，透过玻璃的能量为入射光的____。"
+     "x": "一束平行光从空气垂直通过一块n=1.5的平板玻璃，则在不计吸收的情况下，透过玻璃的能量为入射光的____。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "通常只计直接透射光：$0.9216$（$92.16\\%$）；若收集全部非相干多次反射透射光，则为 $12/13\\approx0.9231$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "R=\\left(\\frac{1.5-1}{1.5+1}\\right)^2=0.04,\\qquad T_{\\rm direct}=(1-R)^2=0.9216."
+    },
+    {
+     "k": "p",
+     "x": "题目未说明是否计入玻璃内多次往返后的透射束。通常入门题采用两表面直接透射乘积；若按所有非相干透射束的能量求和，则有："
+    },
+    {
+     "k": "m",
+     "x": "T_{\\rm all}=\\frac{(1-R)^2}{1-R^2}=\\frac{1-R}{1+R}=\\frac{12}{13}."
+    },
+    {
+     "k": "p",
+     "x": "若平行光保持相干并发生薄板干涉，透射率还会依赖光学厚度与相位；不能混用三种约定。"
+    }
+   ],
    "completeness": "complete",
    "playable": true,
    "originalText": "一束平行光从空气垂直通过一块 $n=1.5$ 的平板玻璃，则在不计吸收的情况下，透过玻璃的能量为入射光的____。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-247e6b2a92ae4de4",
    "canonicalId": "past-2017-247e6b2a92ae4de4",
    "statusKey": "past-2017-247e6b2a92ae4de4",
@@ -30628,33 +31728,62 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 93
+    "line": 93,
+    "reference": "2017年分段补拍照片：0F8D23459369E88446258333B5D02BEF.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原题未注明多次反射透射光是否计入。答案保留直接透射及全部非相干透射两种约定，不将约定差别隐藏到来源里。"
+    ]
    },
    "occurrences": [
     "exam-2017-247e6b2a92ae4de4"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "透射光栅常数 $d=2.4\\,\\mu\\mathrm m$、缝宽 $a=0.8\\,\\mu\\mathrm m$，单色光垂直入射时，在透镜的焦面上看到____个条纹，它们的衍射级次具体为____。"
+     "x": "透射光栅常数$d=2.4\\,\\mu m$，缝宽$a=0.8\\,\\mu m$，单色光垂直入射时，在透镜的焦面上共看到____个条纹，它们的衍射级次具体为____。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "缺级为非零的 $m=\\pm3,\\pm6,\\ldots$；可见级次与总条纹数还需要波长，照片未给出，不能指定唯一数量。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "d\\sin\\theta=m\\lambda,\\qquad a\\sin\\theta=p\\lambda\\ (p\\ne0),\\qquad d/a=3\\Rightarrow m=3p."
+    },
+    {
+     "k": "p",
+     "x": "透镜有限焦面内需满足|m|λ<d；若只按传播级次讨论，极限掠射级次还须单独处理。令M为严格满足Mλ<d的最大非负整数，则："
+    },
+    {
+     "k": "m",
+     "x": "N_{\\rm bright}=1+2\\left(M-\\left\\lfloor\\frac M3\\right\\rfloor\\right),\\qquad M=\\left\\lceil\\frac d\\lambda\\right\\rceil-1."
+    },
+    {
+     "k": "p",
+     "x": "保留零级，去掉正负的非零3倍数级次。缺少λ时，只能写出这些条件和公式。"
+    }
+   ],
    "completeness": "complete",
    "playable": true,
    "originalText": "透射光栅常数 $d=2.4\\,\\mu\\mathrm m$、缝宽 $a=0.8\\,\\mu\\mathrm m$，单色光垂直入射时，在透镜的焦面上看到____个条纹，它们的衍射级次具体为____。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-7144681b90acd983",
    "canonicalId": "past-2017-7144681b90acd983",
    "statusKey": "past-2017-7144681b90acd983",
@@ -30682,61 +31811,64 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 97
+    "line": 97,
+    "reference": "2017年分段补拍照片：0F8D23459369E88446258333B5D02BEF.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "needsCheck": true,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "新照片仍没有单色光波长，无法唯一给出条纹数；未擅自补入常见波长。"
+    ]
    },
    "occurrences": [
     "exam-2017-7144681b90acd983"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "一平面电磁波在均匀介质中传播时电场强度为"
-    },
-    {
-     "k": "p",
-     "x": "$$\\vec E(x,y,z,t)=(E_x\\vec x-\\sqrt3\\,\\vec y+E_z\\vec z)\\,[j(x+\\sqrt3y+\\sqrt5z-6\\times10^8t)\\times10^6]\\ \\mathrm{V/m}.$$"
-    },
-    {
-     "k": "p",
-     "x": "求其传播速度（相速）与该材料的折射率。〔方括号中的指数/指数函数在手写稿中不清楚，公式需核原图 IMG_20260927_145904.jpg。〕"
+     "x": "一平面电磁波在均匀介质中传播时电场强度 $\\vec E(x,y,z,t)=(E_x\\vec x-\\sqrt3\\vec y+\\sqrt5\\vec z)\\exp[i(x+\\sqrt3y+\\sqrt5z-6\\times10^8t)\\times10^6]\\ \\mathrm{V/m}$，那么其传播速度（相速）为____，该均匀介质折射率为____。"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "相速度 $2.0\\times10^8\\,\\mathrm{m/s}$；折射率 $1.5$。"
+     "x": "相速 $2.0\\times10^8\\,\\mathrm{m/s}$，折射率 $1.5$。"
     }
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "由原题复指数相位读出 $\\boldsymbol k=10^6(1,\\sqrt3,\\sqrt5)\\,\\mathrm{rad/m}$，故 $|\\boldsymbol k|=3\\times10^6\\,\\mathrm{rad/m}$；时间系数为 $\\omega=6\\times10^{14}\\,\\mathrm{rad/s}$。"
+     "k": "m",
+     "x": "\\boldsymbol k=10^6(1,\\sqrt3,\\sqrt5)\\,\\mathrm{rad/m},\\quad |\\boldsymbol k|=10^6\\sqrt{1+3+5}=3\\times10^6\\,\\mathrm{rad/m}."
     },
     {
      "k": "m",
-     "x": "v_p=\\frac{\\omega}{|\\boldsymbol k|}=2\\times10^8\\,\\mathrm{m/s},\\qquad n=\\frac{c}{v_p}=\\frac{3\\times10^8}{2\\times10^8}=1.5."
+     "x": "\\omega=6\\times10^{14}\\,\\mathrm{rad/s},\\quad v_p=\\omega/|\\boldsymbol k|=2\\times10^8\\,\\mathrm{m/s},\\quad n=c/v_p=1.5."
+    },
+    {
+     "k": "p",
+     "x": "指数中的10⁶同时乘空间项与时间项。振幅系数不决定相速；若还要求Ex，可由横波条件k·E=0得到Ex−3+5=0，即Ex=−2。"
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "一平面电磁波在均匀介质中传播时电场强度为\n\n$$\\vec E(x,y,z,t)=(E_x\\vec x-\\sqrt3\\,\\vec y+E_z\\vec z)\\,[j(x+\\sqrt3y+\\sqrt5z-6\\times10^8t)\\times10^6]\\ \\mathrm{V/m}.$$\n\n求其传播速度（相速）与该材料的折射率。〔方括号中的指数/指数函数在手写稿中不清楚，公式需核原图 IMG_20260927_145904.jpg。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-30e4ee70a0ad83e9",
    "canonicalId": "past-2017-30e4ee70a0ad83e9",
    "statusKey": "past-2017-30e4ee70a0ad83e9",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch9",
    "section": "二、填空题",
    "number": "4",
    "name": "2017年 二、填空题",
@@ -30753,29 +31885,35 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch9-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 101
+    "line": 101,
+    "reference": "2017年分段补拍照片：0F8D23459369E88446258333B5D02BEF.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-30e4ee70a0ad83e9"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "将一块光栅置于相干成像系统中，若在其频谱面上只允许 $-1$ 和 $+2$ 级频谱通过，则其栅像的空间频率为原来的____倍。"
+     "x": "将一块光栅置于相干成像系统中，若在其频谱面上只允许−1和+2级频谱通过，则其光栅像的空间频率为原来的____倍。"
     }
    ],
    "options": [],
@@ -30787,18 +31925,18 @@
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "像面强度交叉项的频率是通过的两级频率位置之差。"
+     "k": "m",
+     "x": "I\\text{的交叉项频率}=|2u_0-(-u_0)|=3u_0."
     },
     {
-     "k": "m",
-     "x": "|(+2u_0)-(-u_0)|=3u_0"
+     "k": "p",
+     "x": "像面干涉条纹由两谱线频率差决定，不是两个级次绝对值的差。"
     }
    ],
    "completeness": "complete",
    "playable": true,
    "originalText": "将一块光栅置于相干成像系统中，若在其频谱面上只允许 $-1$ 和 $+2$ 级频谱通过，则其栅像的空间频率为原来的____倍。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-66698583063ca4c4",
    "canonicalId": "past-2017-66698583063ca4c4",
    "statusKey": "past-2017-66698583063ca4c4",
@@ -30815,35 +31953,42 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "空间频率与透镜的傅里叶变换"
+     "阿贝成像与衍射级次"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "phys-ch12-k2"
+    "phys-ch12-k4"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 109
+    "line": 109,
+    "reference": "2017年分段补拍照片：0F8D23459369E88446258333B5D02BEF.jpg、0A9084972EF966FAFEDF3431505E7A95.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-66698583063ca4c4"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg",
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "有一个衍射光栅，第 1 级光谱的分辨本领为 $A$，光栅刻线数由 $N$ 变为 $2N$，新的光栅第 2 级光谱分辨本领为____。"
+     "x": "有一个衍射光栅，第1级光谱的分辨本领为A，光栅刻线数由N变为2N，新的光栅第2级光谱分辨本领为____。"
     }
    ],
    "options": [],
@@ -30855,18 +32000,14 @@
    ],
    "analysis": [
     {
-     "k": "p",
-     "x": "新、旧分辨本领之比为 (2×2N)/(1×N)=4。"
-    },
-    {
      "k": "m",
-     "x": "\\mathcal R=mN"
+     "x": "\\mathcal R=mN,\\qquad\\frac{\\mathcal R_{\\rm new}}{\\mathcal R_{\\rm old}}=\\frac{2\\cdot2N}{1\\cdot N}=4."
     }
    ],
    "completeness": "complete",
    "playable": true,
    "originalText": "有一个衍射光栅，第 1 级光谱的分辨本领为 $A$，光栅刻线数由 $N$ 变为 $2N$，新的光栅第 2 级光谱分辨本领为____。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-95a583d60fa63953",
    "canonicalId": "past-2017-95a583d60fa63953",
    "statusKey": "past-2017-95a583d60fa63953",
@@ -30894,43 +32035,58 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 113
+    "line": 113,
+    "reference": "2017年分段补拍照片：0F8D23459369E88446258333B5D02BEF.jpg、0A9084972EF966FAFEDF3431505E7A95.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-95a583d60fa63953"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg",
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "一个激光器谐振腔中，光束每往返一次的光能损耗是 20%，那么激光在增益介质中每往返传播一次的增益 $a$ 是____。"
+     "x": "一个激光器谐振腔中光束回往返一次的光能损耗是20%，那么该激光器稳态工作时，激光在增益介质中的来回往返一次的增益a是____。"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "往返功率增益因子 $a=1.25$，对应介质提供 $25\\%$ 的相对增幅；含损耗的净往返因子为 $1$。"
+     "x": "往返功率增益因子 $a=1.25$；对应相对增幅 $25\\%$。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "每次往返剩余光能比例是 $1-0.20=0.80$。稳态振荡时，增益介质的往返增益因子 $a$ 乘以腔损耗因子后恰为 1：$0.80a=1$，所以 $a=1.25$。$1.20$ 是把 20% 损耗误当作乘以 $1+0.20$；净往返倍率则是 1，而不是增益介质自身的增益因子。"
+     "x": "稳态时，介质提供的往返增益恰好补偿每次往返20%的损耗。"
+    },
+    {
+     "k": "m",
+     "x": "(1-0.20)a=1\\Rightarrow a=\\frac1{0.8}=1.25."
+    },
+    {
+     "k": "p",
+     "x": "a指增益介质本身的倍率；含损耗后的净往返倍率为1。"
     }
    ],
    "completeness": "complete",
    "playable": true,
    "originalText": "一个激光器谐振腔中，光束每往返一次的光能损耗是 20%，那么激光在增益介质中每往返传播一次的增益 $a$ 是____。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-94dae7b2c58f52d5",
    "canonicalId": "past-2017-94dae7b2c58f52d5",
    "statusKey": "past-2017-94dae7b2c58f52d5",
@@ -30947,7 +32103,7 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "待人工细分"
+     "超纲题目"
     ],
     "formulas": [],
     "pitfalls": []
@@ -30958,33 +32114,50 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 117
+    "line": 117,
+    "reference": "2017年分段补拍照片：0F8D23459369E88446258333B5D02BEF.jpg、0A9084972EF966FAFEDF3431505E7A95.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-94dae7b2c58f52d5"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg",
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "写出工作波长：He-Ne 激光器____；CO$_2$ 激光器____；Ar$^+$ 激光器____；Nd:YAG 激光器____。"
+     "x": "请写出下列激光器的工作波长：He-Ne激光器（ ），CO₂激光器（ ），Ar⁺（ ），Nd:YAG（ ）。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "He-Ne：$632.8\\,\\mathrm{nm}$；CO$_2$：$10.6\\,\\mu\\mathrm m$；Ar$^+$：$488.0\\,\\mathrm{nm}$、$514.5\\,\\mathrm{nm}$；Nd:YAG：$1064\\,\\mathrm{nm}$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "以上为各类激光器常用工作线；Ar⁺有多条谱线，列出常用蓝、绿两线。Nd:YAG的532 nm为常见倍频输出，不是其基频工作线。"
+    }
+   ],
    "completeness": "complete",
    "playable": true,
    "originalText": "写出工作波长：He-Ne 激光器____；CO₂ 激光器____；Ar⁺ 激光器____；Nd:YAG 激光器____。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-f8fff5c3a05ff9d3",
    "canonicalId": "past-2017-f8fff5c3a05ff9d3",
    "statusKey": "past-2017-f8fff5c3a05ff9d3",
@@ -31001,7 +32174,7 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "待人工细分"
+     "超纲题目"
     ],
     "formulas": [],
     "pitfalls": []
@@ -31012,49 +32185,60 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 121
+    "line": 121,
+    "reference": "2017年分段补拍照片：0F8D23459369E88446258333B5D02BEF.jpg、0A9084972EF966FAFEDF3431505E7A95.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-f8fff5c3a05ff9d3"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0F8D23459369E88446258333B5D02BEF.jpg",
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "把某一种半导体材料掺杂成N型和P型半导体，此时N型半导体的费米能级____（升、降、不变），P型半导体的费米能级____（升、降、不变）。当接触形成PN结后，P型材料的导带底____N型材料的导带底。"
+     "x": "把某一种半导体材料掺杂成N型和P型半导体，此时N型半导体的费米能级____（>，<，=）P型半导体的费米能级。当接触形成PN结后，P型材料的导带底部将____（>，<，=）N型材料的导带底部。"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "N型费米能级上升；P型费米能级下降；平衡PN结中P侧导带底高于N侧。"
+     "x": "两个空均填 $>$。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "在常规非简并同质半导体模型中，N型掺杂增加电子浓度，费米能级向导带移动；P型掺杂增加空穴浓度，费米能级向价带移动。形成热平衡PN结后费米能级平直，内建电势使P侧导带底比N侧高 $qV_{\\rm bi}$。原题第一空明确问费米能级，旧题库误转录成导带能级，按原照片修复。"
+     "x": "同种半导体形成结之前，N型费米能级更靠近导带，P型费米能级更靠近价带，因此E_FN>E_FP。接触并达到热平衡后，费米能级平齐，而内建电势使P侧导带底高于N侧。"
+    },
+    {
+     "k": "m",
+     "x": "E_{FN}>E_{FP}\\ \\text{（接触前）},\\qquad E_{C,P}-E_{C,N}=qV_{\\rm bi}>0\\ \\text{（热平衡后）}."
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "把某一种半导体材料掺杂成 N 型和 P 型半导体，此时材料的导带能级____（升/降/不变），P 型半导体的费米能级____。连接组成 PN 结后，P 型材料的导带能级与 N 型材料的导带能级之间____。〔原材料在最后一空处截断，需核原图。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-6d905c14cd494443",
    "canonicalId": "past-2017-6d905c14cd494443",
    "statusKey": "past-2017-6d905c14cd494443",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "exam-outofscope",
    "section": "二、填空题",
    "number": "9",
    "name": "2017年 二、填空题",
@@ -31065,64 +32249,74 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "待人工细分"
+     "超纲题目"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k4"
+    "exam-outofscope-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 125
+    "line": 125,
+    "reference": "2017年分段补拍照片：0A9084972EF966FAFEDF3431505E7A95.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-6d905c14cd494443"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "脉冲激光采用调Q。按题图的偏振选通式双程腔，激光器输出脉冲时电光晶体的位相延迟量应为____；无脉冲输出时电光晶体的位相延迟量应为____。"
+     "x": "脉冲激光调Q中，激光器输出脉冲时电光晶体的位相延迟应设为____，无脉冲输出时，电光晶体的位相延迟应设为____。（题10图）"
     },
     {
      "k": "note",
-     "x": "位相延迟按单程电光晶体定义，往返经过晶体两次。"
+     "x": "位相延迟按电光晶体单程定义；腔内光束往返经过晶体两次。"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "输出脉冲：$0$；无脉冲输出：$\\pi/2$（单程晶体延迟）。"
+     "x": "输出脉冲：$0$；无脉冲输出：$\\pi/2$（均为电光晶体单程位相延迟）。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "无脉冲时双程总延迟为 $\\pi$，在偏振选择器的往返几何中造成 $90^\\circ$ 偏振旋转；输出状态恢复高 Q。"
+     "x": "按题图标准双程电光调Q结构，晶体主轴与选通偏振方向成45°。无输出时，单程π/2的延迟使往返总延迟为π，线偏振旋转90°，被偏振器阻断，腔处于低Q。切到单程0时，往返偏振方向恢复可通过偏振器，形成高Q脉冲输出。"
+    },
+    {
+     "k": "p",
+     "x": "若把所问延迟定义为往返总延迟，阻断态应写π；本题和答案均明确使用单程晶体延迟。"
     }
    ],
    "completeness": "complete",
    "playable": true,
    "originalText": "脉冲激光调 Q 中，激光器初始时由光的信号输出造成损耗；突然调 Q 输出时，激光器内腔的谐振延迟该为____。〔手写稿此题辨识不稳，需核 IMG_20260927_145904.jpg。〕",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-113751e16774ecb7",
    "canonicalId": "past-2017-113751e16774ecb7",
    "statusKey": "past-2017-113751e16774ecb7",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "exam-outofscope",
    "section": "二、填空题",
    "number": "10",
    "name": "2017年 二、填空题",
@@ -31131,53 +32325,91 @@
    "typeName": "填空题",
    "stemImages": [
     {
-     "src": "assets/audit-diagrams/2017-qswitch-source.svg",
-     "alt": "偏振选通式电光调Q腔的原题元件顺序（按原图复绘，示意位置非精确尺寸）"
+     "src": "assets/audit-diagrams/2017-fill-10-q-switch.svg",
+     "alt": "按新照片重画的偏振选通电光调Q腔元件顺序"
     }
    ],
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "待人工细分"
+     "超纲题目"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k4"
+    "exam-outofscope-k1"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 129
+    "line": 129,
+    "reference": "2017年分段补拍照片：0A9084972EF966FAFEDF3431505E7A95.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
     "notes": [
-     "2026-10-02：完整题面已通过答案与解析审查；详细复核依据保存在本地审查记录。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
     ]
    },
    "occurrences": [
     "exam-2017-113751e16774ecb7"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "0A9084972EF966FAFEDF3431505E7A95.jpg"
+   ]
   },
   {
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "设计具有 $-2$ 倍单组透镜转像系统的 10 倍望远镜。物镜到目镜的距离是 300 mm，眼瞳直径 4 mm，物镜为系统入瞳，其大小需和眼瞳匹配；物镜的像方焦面上有场镜，目镜焦距 20 mm，其前焦面上有分划板，系统像方半视场角为 $20^\\circ$。求：（1）物镜、转像透镜和场镜的焦距；（2）物镜、场镜、转像透镜和分划板的通光直径；（3）出瞳距；（4）半渐晕成像时目镜的通光直径。"
+     "x": "设计一个具有−2倍单组透镜转像系统的10倍望远镜，物镜到目镜的距离是300 mm，眼瞳直径是4 mm，物镜为系统的入瞳，其大小要和眼瞳匹配，在物镜的像方焦面上有场镜，目镜的焦距为20 mm，在其前焦面上有分划板，系统的像方半视场角为20度。试求：1）物镜、转像透镜和场镜的焦距；2）物镜、场镜、转像透镜和分划板的通光直径；3）出瞳距；4）半渐晕成像时目镜的通光直径。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "焦距：物镜 $100$ mm、转像镜 $40$ mm、场镜 $37.5$ mm。通光直径：物镜 $40$ mm、场镜 $20\\tan20^\\circ\\approx7.279$ mm、转像镜 $24$ mm、分划板 $40\\tan20^\\circ\\approx14.559$ mm。出瞳距 $70/3\\approx23.333$ mm；半渐晕目镜口径 $(140/3)\\tan20^\\circ\\approx16.985$ mm。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "按课程的瞳匹配设计约定，场镜把物镜入瞳成像到转像透镜面。无焦10倍系统且出瞳4 mm给物镜口径40 mm。角放大率的绝对值为2f物/f目=10，所以物镜焦距100 mm。"
+    },
+    {
+     "k": "m",
+     "x": "s+s^\\prime=300-100-20=180,\\quad s^\\prime=2s\\Rightarrow s=60,\\ s^\\prime=120,\\quad f_{\\rm relay}=\\frac{ss^\\prime}{s+s^\\prime}=40\\ \\mathrm{mm}."
+    },
+    {
+     "k": "m",
+     "x": "f_{\\rm field}=\\frac{100\\cdot60}{100+60}=37.5\\ \\mathrm{mm},\\qquad D_{\\rm relay}=40\\frac{60}{100}=24\\ \\mathrm{mm}."
+    },
+    {
+     "k": "p",
+     "x": "物镜、场镜、转像镜、分划板、目镜沿轴的位置依次为0、100、160、280、300 mm。分划板半高y₂=20tan20°，场镜位于第一像面，其半高y₁=y₂/2，因此两处所需口径分别为2y₂、2y₁。"
+    },
+    {
+     "k": "m",
+     "x": "l_{\\rm exit}=\\frac{20\\cdot140}{140-20}=\\frac{70}{3}\\ \\mathrm{mm},\\qquad y_{\\rm chief,eye}=\\frac{140}{120}\\,20\\tan20^\\circ."
+    },
+    {
+     "k": "m",
+     "x": "D_{\\rm eye,half}=2|y_{\\rm chief,eye}|=\\frac{140}{3}\\tan20^\\circ\\approx16.985\\ \\mathrm{mm}."
+    },
+    {
+     "k": "p",
+     "x": "最后一式沿用课程常用的半渐晕近轴口径约定：边缘视场束中心落在目镜边缘。若要求完全无渐晕，目镜口径需再加轴上束直径4 mm，约20.985 mm。"
+    }
+   ],
    "completeness": "complete",
    "playable": true,
    "originalText": "设计具有 $-2$ 倍单组透镜转像系统的 10 倍望远镜。物镜到目镜的距离是 300 mm，眼瞳直径 4 mm，物镜为系统入瞳，其大小需和眼瞳匹配；物镜的像方焦面上有场镜，目镜焦距 20 mm，其前焦面上有分划板，系统像方半视场角为 $20^\\circ$。求：（1）物镜、转像透镜和场镜的焦距；（2）物镜、场镜、转像透镜和分划板的通光直径；（3）出瞳距；（4）半渐晕成像时目镜的通光直径。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-fb935ddc373ac150",
    "canonicalId": "past-2017-fb935ddc373ac150",
    "statusKey": "past-2017-fb935ddc373ac150",
@@ -31194,44 +32426,73 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "瞳、窗与特征光线"
+     "转像望远镜焦距骨架与瞳匹配",
+     "逐面光线追迹与各面口径",
+     "场镜的作用与瞳共轭"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "inst-c11-k1"
+    "inst-c11-k1",
+    "inst-c11-k2",
+    "inst-c11-k3"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 135
+    "line": 135,
+    "reference": "2017年分段补拍照片：B26847B6DA2357C9F4312921316A4BEE.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "场镜采用课程常规的物镜入瞳与转像镜共轭设计；半渐晕口径采用教材的近轴束中心落边缘约定。题面和解析均保留这一设计假设，不把它冒充独立给出的数值条件。"
+    ]
    },
    "occurrences": [
     "exam-2017-fb935ddc373ac150"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "B26847B6DA2357C9F4312921316A4BEE.jpg"
+   ]
   },
   {
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在照相物镜上镀一层光学厚度为 $1.25\\lambda_0$（$\\lambda_0=550\\,\\mathrm{nm}$）的低折射率膜；试求在可见光范围内（380—780 nm）反射率最大的波长，并说明膜所呈现的颜色。"
+     "x": "在照相物镜上镀一层光学厚度为$1.25\\lambda_0$（$\\lambda_0=550\\,\\mathrm{nm}$）的低折射率膜，试求在可见光范围内（380 nm～780 nm）反射比最大的波长，并说明其膜呈现的颜色。"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "可见光内反射极大的波长为 $687.5$ nm、$1375/3\\approx458.33$ nm，膜在反射观察下呈紫红／品红倾向。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "通常低折射率增透膜满足n空气<n膜<n玻璃，两界面反射都发生半波损失，额外反射相位差相消。光学厚度nd=1.25×550=687.5 nm，反射相长要求2nd=mλ。"
+    },
+    {
+     "k": "m",
+     "x": "\\lambda_m=\\frac{1375}{m}\\ \\mathrm{nm},\\qquad380\\le\\lambda_m\\le780\\Rightarrow m=2,3."
+    },
+    {
+     "k": "p",
+     "x": "因此反射中红区687.5 nm与蓝区458.33 nm加强，形成紫红／品红色倾向。膜的精确颜色还受照明光谱及折射率对应的反射谱权重影响；不是仅据单一波长断言颜色。"
+    }
+   ],
    "completeness": "complete",
    "playable": true,
    "originalText": "在照相物镜上镀一层光学厚度为 $1.25\\lambda_0$（$\\lambda_0=550\\,\\mathrm{nm}$）的低折射率膜；试求在可见光范围内（380—780 nm）反射率最大的波长，并说明膜所呈现的颜色。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-0fac68fcebfda603",
    "canonicalId": "past-2017-0fac68fcebfda603",
    "statusKey": "past-2017-0fac68fcebfda603",
@@ -31248,7 +32509,7 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "反射、折射与全反射定律"
+     "薄膜干涉与增透膜"
     ],
     "formulas": [],
     "pitfalls": []
@@ -31259,33 +32520,65 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 139
+    "line": 139,
+    "reference": "2017年分段补拍照片：B26847B6DA2357C9F4312921316A4BEE.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-0fac68fcebfda603"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "B26847B6DA2357C9F4312921316A4BEE.jpg"
+   ]
   },
   {
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在光栅夫琅禾费衍射实验中，所用光波 $\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距 $f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间距 $e=1.5\\,\\mathrm{mm}$，且第 4 级亮纹缺级。求光栅缝间距、缝宽以及第 2 级亮纹的相对强度。（衍射角很小，$\\sin\\theta\\approx\\theta$。）"
+     "x": "在光栅夫朗禾费衍射实验中，所用光波$\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距$f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间的距离$e=1.5\\,\\mathrm{mm}$，并且第4级亮纹缺级。求光栅的缝间距和缝宽，以及第2级亮纹的相对强度？（衍射角很小，$\\sin\\theta\\approx\\theta$。）"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "光栅常数 $d=0.210933$ mm。按第4级对应单缝第一暗纹的通常约定，缝宽 $a=d/4=0.052733$ mm，第2级相对强度 $I_2/I_0=4/\\pi^2\\approx0.405285$。若未指定对应单缝暗纹的级次，另有 $a=d/2$ 或 $3d/4$，对应相对强度 $0$ 或 $4/(9\\pi^2)\\approx0.045032$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "e\\simeq\\frac{f\\lambda}{d}\\Rightarrow d=\\frac{500\\cdot0.0006328}{1.5}=0.210933\\ \\mathrm{mm}."
+    },
+    {
+     "k": "m",
+     "x": "4\\lambda/d=p\\lambda/a\\Rightarrow a=\\frac p4d,\\quad0<a<d\\Rightarrow p=1,2,3."
+    },
+    {
+     "k": "p",
+     "x": "若明确第4级对应单缝第一暗纹，则p=1、a=d/4。p=2时第2级也缺级；p=3时最小缺级仍为第4级。因此只说“第4级缺级”或“首次缺级为第4级”都不能单独排除p=3，主答案另采用第一单缝零点对应第4级的通常约定。"
+    },
+    {
+     "k": "m",
+     "x": "\\frac{I_2}{I_0}=\\left[\\frac{\\sin(2\\pi a/d)}{2\\pi a/d}\\right]^2."
+    },
+    {
+     "k": "p",
+     "x": "以中央主极大强度为归一化基准；a/d=1/4、1/2、3/4分别代入得到答案的三种结果。"
+    }
+   ],
    "completeness": "complete",
    "playable": true,
    "originalText": "在光栅夫琅禾费衍射实验中，所用光波 $\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距 $f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间距 $e=1.5\\,\\mathrm{mm}$，且第 4 级亮纹缺级。求光栅缝间距、缝宽以及第 2 级亮纹的相对强度。（衍射角很小，$\\sin\\theta\\approx\\theta$。）",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-80e296673bf6a37e",
    "canonicalId": "past-2017-80e296673bf6a37e",
    "statusKey": "past-2017-80e296673bf6a37e",
@@ -31313,43 +32606,63 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 143
+    "line": 143,
+    "reference": "2017年分段补拍照片：B26847B6DA2357C9F4312921316A4BEE.jpg、FF3E3B1B174F814D9B7D1D962B65A592.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "needsCheck": true,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "用户确认f=500 mm；照片只说第4级缺级，未指定它对应单缝第几个零点。主答案采用单缝第一零点对应第4级的课程惯例，解析保留全部可行缝宽。"
+    ]
    },
    "occurrences": [
     "exam-2017-80e296673bf6a37e"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "B26847B6DA2357C9F4312921316A4BEE.jpg",
+    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
+   ]
   },
   {
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在相干光学处理的 $4f$ 系统中，输入平面上放置振幅透射系数为 $t(x)=\\tfrac12+\\tfrac12\\cos(2\\pi u_0x)$ 的正弦光栅。求：（1）变换平面上的傅里叶频谱；（2）在频谱面上用小圆屏挡住光栅的 $-1$ 级谱后，像面的光强分布及其空间频率。"
+     "x": "在相干光学的处理的4f系统中，在输入平面上放置一振幅透射系数为$t(x)=\\frac12+\\frac12\\cos 2\\pi u_0x$的正弦光栅，求：1）变换平面上的傅里叶频谱；2）在频谱面上用小圆屏挡住光栅的−1级谱，求像面的光强分布及其空间频率。"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "令入射振幅为 $A$。频谱为 $A[\\frac12\\delta(u)+\\frac14\\delta(u-u_0)+\\frac14\\delta(u+u_0)]$；挡负一级后 $I=|A|^2[\\frac5{16}+\\frac14\\cos(2\\pi u_0x^\\prime)]$，强度空间频率为 $u_0$。"
+     "x": "频谱 $A[\\frac12\\delta(u)+\\frac14\\delta(u-u_0)+\\frac14\\delta(u+u_0)]$；挡负一级后 $I(x^\\prime)=|A|^2[\\frac5{16}+\\frac14\\cos(2\\pi u_0x^\\prime)]$，强度空间频率为 $u_0$。"
     }
    ],
    "analysis": [
     {
+     "k": "m",
+     "x": "t(x)=\\frac12+\\frac14e^{i2\\pi u_0x}+\\frac14e^{-i2\\pi u_0x}."
+    },
+    {
      "k": "p",
-     "x": "零级、正负一级的场系数分别为 $A/2,A/4,A/4$。遮挡负一级后，标准4F倒像场为 $A[1/2+\\exp(-\\mathrm i2\\pi u_0x^\\prime)/4]$。取模平方得到所列强度；坐标反转只改变复指数符号，不改变余弦强度。题干未指定入射振幅，单位振幅取 $A=1$。"
+     "x": "零级、正负一级的场系数分别为A/2、A/4、A/4。理想等焦距4f系统按单位倍率倒像处理，挡负一级后："
+    },
+    {
+     "k": "m",
+     "x": "U(x^\\prime)=A\\left[\\frac12+\\frac14e^{-i2\\pi u_0x^\\prime}\\right],\\qquad I=|U|^2=|A|^2\\left[\\frac5{16}+\\frac14\\cos(2\\pi u_0x^\\prime)\\right]."
+    },
+    {
+     "k": "p",
+     "x": "A为输入照明振幅；单位振幅取A=1。倒像改变复指数符号，不改变余弦强度。"
     }
    ],
    "completeness": "complete",
    "playable": true,
    "originalText": "在相干光学处理的 $4f$ 系统中，输入平面上放置振幅透射系数为 $t(x)=\\tfrac12+\\tfrac12\\cos(2\\pi u_0x)$ 的正弦光栅。求：（1）变换平面上的傅里叶频谱；（2）在频谱面上用小圆屏挡住光栅的 $-1$ 级谱后，像面的光强分布及其空间频率。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-fea321798df1563c",
    "canonicalId": "past-2017-fea321798df1563c",
    "statusKey": "past-2017-fea321798df1563c",
@@ -31377,43 +32690,66 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 147
+    "line": 147,
+    "reference": "2017年分段补拍照片：B26847B6DA2357C9F4312921316A4BEE.jpg、FF3E3B1B174F814D9B7D1D962B65A592.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-fea321798df1563c"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "B26847B6DA2357C9F4312921316A4BEE.jpg",
+    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
+   ]
   },
   {
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "自然光先后垂直通过透光轴与 X 轴成 $45^\\circ$ 的起偏器、快轴在 Y 方向的 $1/4$ 波片、第二块 $1/4$ 波片、透光轴与 X 轴成 $135^\\circ$ 的检偏器，最后到达观察屏。求并用琼斯矩阵验证：（1）第一块 $1/4$ 波片透出的光是什么偏振光；（2）为使观察屏最亮，第二块 $1/4$ 波片的快慢轴应如何放置。"
+     "x": "自然光先后垂直通过透光轴与x轴方向夹角为45°的起偏器，一块快轴在y方向的1/4波片，第二块1/4波片，透光轴与x轴方向夹角为135°的检偏器，然后到达观察屏，解答并分别用琼斯矩阵法加以验证。1）第一块1/4波片透出的光是什么偏振光？2）为使观察屏上最亮，第二块1/4波片的快慢轴应如何放置。"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "（1）第一块快轴沿 $y$ 的四分之一波片将 $45^\\circ$ 线偏振光变成圆偏振光（按本文约定为右旋）。 （2）第二块波片快轴也沿 $y$，慢轴沿 $x$；出射为与 $135^\\circ$ 检偏器轴平行的线偏振，屏上最亮。"
+     "x": "第一块四分之一波片输出圆偏振光；第二块快轴沿 $y$、慢轴沿 $x$ 时，屏上最亮，理想输出强度为入射自然光的 $I_0/2$。"
     }
    ],
    "analysis": [
     {
      "k": "p",
-     "x": "起偏器后的 Jones 矢量为 $(1,1)^T/\\sqrt2$。第一片快轴沿 $y$，$J_y=\\operatorname{diag}(i,1)$（略去全局相位），故出射 $(i,1)^T/\\sqrt2\\sim(1,-i)^T/\\sqrt2$，两正交分量等幅、相差 $-\\pi/2$，为圆偏振。对该态再用快轴沿 $y$ 的四分之一波片，得到 $(-1,1)^T/\\sqrt2$，线偏振方位 $135^\\circ$；检偏器也透过 $135^\\circ$，依马吕斯定律输出达到最大。若第二片快轴沿 $x$，出射线方向为 $45^\\circ$，与检偏器正交，输出为零。"
+     "x": "采用时间因子e⁻ⁱωt，略去全局相位。起偏器后的归一化Jones矢量为(1,1)ᵀ/√2，快轴沿y的波片可用J_y=diag(i,1)表示。"
+    },
+    {
+     "k": "m",
+     "x": "J_y\\frac1{\\sqrt2}\\binom11=\\frac1{\\sqrt2}\\binom i1\\sim\\frac1{\\sqrt2}\\binom1{-i}."
+    },
+    {
+     "k": "p",
+     "x": "两正交分量等幅、相差π/2，因此为圆偏振。旋向名称取决于观察方向约定，不在未规定观察方向时指定左旋或右旋。"
+    },
+    {
+     "k": "m",
+     "x": "J_y^2\\frac1{\\sqrt2}\\binom11=\\frac1{\\sqrt2}\\binom{-1}1."
+    },
+    {
+     "k": "p",
+     "x": "再经过同样快轴沿y的波片，得到135°线偏振，与检偏器轴一致，输出最大。若第二片快轴沿x，则抵消第一片延迟，恢复45°线偏振，与135°检偏器正交，理想输出为零。"
     }
    ],
    "completeness": "complete",
    "playable": true,
    "originalText": "自然光先后垂直通过透光轴与 X 轴成 $45^\\circ$ 的起偏器、快轴在 Y 方向的 $1/4$ 波片、第二块 $1/4$ 波片、透光轴与 X 轴成 $135^\\circ$ 的检偏器，最后到达观察屏。求并用琼斯矩阵验证：（1）第一块 $1/4$ 波片透出的光是什么偏振光；（2）为使观察屏最亮，第二块 $1/4$ 波片的快慢轴应如何放置。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-9aacb6b1a420e699",
    "canonicalId": "past-2017-9aacb6b1a420e699",
    "statusKey": "past-2017-9aacb6b1a420e699",
@@ -31441,33 +32777,57 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 151
+    "line": 151,
+    "reference": "2017年分段补拍照片：FF3E3B1B174F814D9B7D1D962B65A592.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-9aacb6b1a420e699"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
+   ]
   },
   {
    "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "激光波长 $\\lambda=500\\,\\mathrm{nm}$，增益系数带宽（大于损耗系数）为 $5\\times10^{-4}\\,\\mathrm{nm}$。若通过调节腔长使激光器只有一个纵模可以振荡，腔长应如何设置？"
+     "x": "设一激光器$\\lambda=500\\,\\mathrm{nm}$，增益系数带宽（大于损耗系数）为$5\\times10^{-4}\\,\\mathrm{nm}$，若通过调节腔长使激光器只有一个纵膜可以振荡，则腔长如何设置？"
     }
    ],
    "options": [],
-   "answer": [],
-   "analysis": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "空气线性腔的稳妥条件为 $L<250$ mm，并将某一腔模调入有效增益频带。一般应以腔光程 $L_{\\rm opt}<250$ mm 表示。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "m",
+     "x": "\\Delta\\nu_g\\simeq\\frac{c\\Delta\\lambda}{\\lambda^2}=\\frac{3\\times10^8\\cdot5\\times10^{-13}}{(5\\times10^{-7})^2}=6\\times10^8\\ \\mathrm{Hz}."
+    },
+    {
+     "k": "m",
+     "x": "\\Delta\\nu_{\\rm FSR}=\\frac{c}{2L_{\\rm opt}}>\\Delta\\nu_g\\Rightarrow L_{\\rm opt}<\\frac{\\lambda^2}{2\\Delta\\lambda}=0.25\\ \\mathrm m."
+    },
+    {
+     "k": "p",
+     "x": "纵模间隔大于净增益为正的带宽，可保证最多一个纵模落入该频带；还必须把该模调到带内才能有一个模振荡。严格不等号避免带宽边界恰好同时容纳两个模。"
+    }
+   ],
    "completeness": "complete",
    "playable": true,
    "originalText": "激光波长 $\\lambda=500\\,\\mathrm{nm}$，增益系数带宽（大于损耗系数）为 $5\\times10^{-4}\\,\\mathrm{nm}$。若通过调节腔长使激光器只有一个纵模可以振荡，腔长应如何设置？",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2017-df21d6e11c510db9",
    "canonicalId": "past-2017-df21d6e11c510db9",
    "statusKey": "past-2017-df21d6e11c510db9",
@@ -31484,7 +32844,7 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "待人工细分"
+     "超纲题目"
     ],
     "formulas": [],
     "pitfalls": []
@@ -31495,17 +32855,23 @@
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2017.md",
-    "line": 155
+    "line": 155,
+    "reference": "2017年分段补拍照片：FF3E3B1B174F814D9B7D1D962B65A592.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
    },
    "occurrences": [
     "exam-2017-df21d6e11c510db9"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "sourcePhotos": [
+    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
+   ]
   },
   {
    "type": "choice",
@@ -32009,11 +33375,7 @@
    "stem": [
     {
      "k": "p",
-     "x": "**原文**：（题干开头有字被折痕遮挡）一束光垂直入射到棱镜Ⅰ的直角面上，则（　）"
-    },
-    {
-     "k": "note",
-     "x": "2018 回忆稿补记的两个选项为“C. 大部分能量经过元件 II；D. 经过元件 II 后产生彩色条纹”，与原卷选项不一致，一并保留供对照。"
+     "x": "有两个斜面相对、间隔为半波长的相同等腰直角棱镜（图示玻璃折射率 $n=1.5$）。一束光垂直入射到棱镜Ⅰ的直角面上，则（　）。"
     }
    ],
    "options": [
@@ -32026,25 +33388,44 @@
      "x": "棱镜Ⅱ中有部分光波透过"
     }
    ],
-   "answer": [],
-   "analysis": [],
+   "answer": [
+    {
+     "k": "p",
+     "x": "选 B：棱镜Ⅱ中有部分光波透过。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "光在第一棱镜斜面上的入射角为45°，大于玻璃—空气界面的临界角arcsin(1/1.5)≈41.81°。孤立界面会发生全反射，但空气隙只有半波长，倏逝场可以耦合进入第二棱镜，形成受抑全反射，所以透射不为零。"
+    },
+    {
+     "k": "p",
+     "x": "不能把半无限空气介质的全反射结论直接用于有限薄空气隙，也不能据此推断“大部分能量”通过第二棱镜。"
+    }
+   ],
    "completeness": "complete",
    "playable": true,
    "originalText": "**原文**：（题干开头有字被折痕遮挡）一束光垂直入射到棱镜Ⅰ的直角面上，则（　）\na. 棱镜Ⅱ中完全没有光波透过　b. 棱镜Ⅱ中有部分光波透过\n\n> 原文见 `往年真题_2007.md`。\n> 2018 回忆稿补记的两个选项为“C. 大部分能量经过元件 II；D. 经过元件 II 后产生彩色条纹”，与原卷选项不一致，一并保留供对照。",
-   "answerAvailability": "not_provided",
+   "answerAvailability": "review_provided",
    "id": "past-2018-a987259740457e67",
    "canonicalId": "past-2018-a987259740457e67",
    "statusKey": "past-2018-a987259740457e67",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch3",
+   "chapterId": "phys-ch9",
    "section": "一、选择题",
    "number": "7.　引自 2007 年选择第 14 题",
    "name": "2018年 一、选择题",
    "year": 2018,
    "order": 1269,
    "typeName": "选择题",
-   "stemImages": [],
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/2007-choice-14-prism-gap.svg",
+     "alt": "2007年第14题双棱镜薄空气隙原图重绘，亦为2018年第7题参考图"
+    }
+   ],
    "analysisImages": [],
    "knowledge": {
     "points": [
@@ -32054,17 +33435,19 @@
     "pitfalls": []
    },
    "topics": [
-    "geom-ch3-k3"
+    "phys-ch9-k4"
    ],
    "topicAssignment": "keyword_review_pending",
    "origin": {
     "file": "电子版_修订/2018.md",
     "line": 36,
-    "reference": "原文见 `往年真题_2007.md`。"
+    "reference": "2007年选择第14题原卷：E846498A9F8968CF04D7DC48641AD415.jpg。"
    },
    "review": {
     "needsCheck": false,
-    "notes": "答案按修订稿导入；知识点标签为初步归类。"
+    "notes": [
+     "E846498A9F8968CF04D7DC48641AD415.jpg为2007年第14题原卷照片，补齐了棱镜形状、n=1.5与半波长空气隙条件。回忆稿另记的C、D不作为原卷选项。"
+    ]
    },
    "occurrences": [
     "exam-2018-a987259740457e67"
@@ -56837,6 +58220,270 @@
      "line": 64
     }
    ]
+  },
+  {
+   "id": "past-2017-21e60e338d90257d",
+   "canonicalId": "past-2017-21e60e338d90257d",
+   "statusKey": "past-2017-21e60e338d90257d",
+   "sourceType": "past_exam",
+   "sourceLabel": "浙江大学841历年真题",
+   "chapterId": "geom-ch3",
+   "section": "三、画图题",
+   "number": "1",
+   "name": "2017年 三、画图题",
+   "year": 2017,
+   "order": 1451,
+   "type": "calc",
+   "typeName": "作图题",
+   "revisionKind": "drawing",
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-01-prism-coordinates.svg",
+     "alt": "无屋脊的两棱镜系统及入射坐标条件图"
+    }
+   ],
+   "analysisImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-01-prism-solution.svg",
+     "alt": "入射、a段及b段的坐标方向答案"
+    }
+   ],
+   "knowledge": {
+    "points": [
+     "反射棱镜与像方位"
+    ],
+    "formulas": [],
+    "pitfalls": []
+   },
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "occurrences": [
+    "exam-2017-21e60e338d90257d"
+   ],
+   "duplicateType": "unique",
+   "examFrequency": 1,
+   "origin": {
+    "file": "2017年分段照片/5BBA430B6EEA38546419A4E79741BEA7.jpg",
+    "reference": "2017年分段补拍照片：5BBA430B6EEA38546419A4E79741BEA7.jpg；已结合用户逐项确认重新识别。"
+   },
+   "answer": [
+    {
+     "k": "p",
+     "x": "以入射全局 $(x,y,z)$ 为基底：$a$ 段为 $(x,-y,-z)$；$b$ 段为 $(x,z,y)$。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "两棱镜均为普通反射棱镜，没有屋脊。按题图第一棱镜内+z→+y→−z的两次反射，第二棱镜使−z→+y的一次反射逐次变换整个坐标系，而不只是改变光轴箭头。"
+    },
+    {
+     "k": "m",
+     "x": "M_a=\\operatorname{diag}(1,-1,-1),\\quad M_{a\\to b}=\\begin{pmatrix}1&0&0\\\\0&0&-1\\\\0&-1&0\\end{pmatrix},\\quad M_b=M_{a\\to b}M_a=\\begin{pmatrix}1&0&0\\\\0&0&1\\\\0&1&0\\end{pmatrix}."
+    },
+    {
+     "k": "p",
+     "x": "a段：x保持原方向，y向上，z向左；b段：x仍保持原方向，y向右，z向下。第一段两次反射仍为右手性，累计三次反射后的b段为左手性；不能为保持右手性额外翻转某轴。"
+    }
+   ],
+   "stem": [
+    {
+     "k": "p",
+     "x": "以下棱镜系统中已画出入射的右手坐标系，请画出a、b两个空间的坐标系。"
+    }
+   ],
+   "options": [],
+   "sourcePhotos": [
+    "5BBA430B6EEA38546419A4E79741BEA7.jpg"
+   ],
+   "review": {
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "answerAvailability": "review_provided",
+   "completeness": "complete",
+   "playable": true
+  },
+  {
+   "id": "past-2017-c8065fe598212224",
+   "canonicalId": "past-2017-c8065fe598212224",
+   "statusKey": "past-2017-c8065fe598212224",
+   "sourceType": "past_exam",
+   "sourceLabel": "浙江大学841历年真题",
+   "chapterId": "inst-c5",
+   "section": "三、画图题",
+   "number": "2",
+   "name": "2017年 三、画图题",
+   "year": 2017,
+   "order": 1452,
+   "type": "calc",
+   "typeName": "作图题",
+   "revisionKind": "drawing",
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-02-kohler-condition.svg",
+     "alt": "柯拉照明条件图，左焦点Fo，右焦点Fo撇"
+    }
+   ],
+   "analysisImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-02-kohler-solution.svg",
+     "alt": "像面0.8视场的子午主光线及通过孔阑下缘的光线"
+    }
+   ],
+   "knowledge": {
+    "points": [
+     "柯拉照明与共轭面作图"
+    ],
+    "formulas": [],
+    "pitfalls": []
+   },
+   "topics": [
+    "inst-c5-k4"
+   ],
+   "occurrences": [
+    "exam-2017-c8065fe598212224"
+   ],
+   "duplicateType": "unique",
+   "examFrequency": 1,
+   "origin": {
+    "file": "2017年分段照片/5BBA430B6EEA38546419A4E79741BEA7.jpg",
+    "reference": "2017年分段补拍照片：5BBA430B6EEA38546419A4E79741BEA7.jpg、605A61AB41161A3B40B8FD932F212681.jpg；已结合用户逐项确认重新识别。"
+   },
+   "answer": [
+    {
+     "k": "p",
+     "x": "子午主光线连接指定像点与孔径光阑中心；边缘光线连接同一像点与孔径光阑下边缘，再向物面和照明系统逆向追迹。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "在A′面取轴上方0.8倍半视场高度的像点。先作像点到物镜后焦面Fo′处孔阑中心的连线；在物镜处依薄透镜规律折转，反向追至物面A，再经聚光镜、前置透镜追至光源。这是子午主光线。"
+    },
+    {
+     "k": "p",
+     "x": "边缘光线改为连接同一像点与Fo′处孔阑下边缘，依次经过同样的元件逆向追迹。两条线在像点A′、物点A及相应J₁视场像点相交；在孔阑处一条过中心，一条过下边缘。"
+    },
+    {
+     "k": "m",
+     "x": "J_1\\longleftrightarrow A\\longleftrightarrow A^\\prime,\\qquad S\\longleftrightarrow J_2\\longleftrightarrow F_o^\\prime."
+    },
+    {
+     "k": "p",
+     "x": "J₁属于视场共轭组，J₂属于光源／孔径共轭组。解析图采用满足薄透镜共轭关系的示意距离，表示作图步骤，不把示意尺寸作为题干条件。"
+    }
+   ],
+   "stem": [
+    {
+     "k": "p",
+     "x": "显微物镜和柯拉照明系统中，1）像面上光轴上方0.8视场（能够成像的视场大小按像面大小决定）的子午主光线；2）该视场的通过孔阑下边缘的光线。"
+    }
+   ],
+   "options": [],
+   "sourcePhotos": [
+    "5BBA430B6EEA38546419A4E79741BEA7.jpg",
+    "605A61AB41161A3B40B8FD932F212681.jpg"
+   ],
+   "review": {
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "answerAvailability": "review_provided",
+   "completeness": "complete",
+   "playable": true
+  },
+  {
+   "id": "past-2017-26924536f261611f",
+   "canonicalId": "past-2017-26924536f261611f",
+   "statusKey": "past-2017-26924536f261611f",
+   "sourceType": "past_exam",
+   "sourceLabel": "浙江大学841历年真题",
+   "chapterId": "phys-ch13",
+   "section": "三、画图题",
+   "number": "3",
+   "name": "2017年 三、画图题",
+   "year": 2017,
+   "order": 1453,
+   "type": "calc",
+   "typeName": "作图题",
+   "revisionKind": "drawing",
+   "stemImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-03-crystal-condition.svg",
+     "alt": "负单轴晶体折射条件图，晶体内斜向双箭头为光轴"
+    }
+   ],
+   "analysisImages": [
+    {
+     "src": "assets/audit-diagrams/2017-draw-03-huygens-answer.svg",
+     "alt": "负单轴晶体o与e光的惠更斯波面、光线及波矢方向"
+    }
+   ],
+   "knowledge": {
+    "points": [
+     "双折射、光轴与 o/e 光"
+    ],
+    "formulas": [],
+    "pitfalls": []
+   },
+   "topics": [
+    "phys-ch13-k5"
+   ],
+   "occurrences": [
+    "exam-2017-26924536f261611f"
+   ],
+   "duplicateType": "unique",
+   "examFrequency": 1,
+   "origin": {
+    "file": "2017年分段照片/5BBA430B6EEA38546419A4E79741BEA7.jpg",
+    "reference": "2017年分段补拍照片：5BBA430B6EEA38546419A4E79741BEA7.jpg、605A61AB41161A3B40B8FD932F212681.jpg；已结合用户逐项确认重新识别。"
+   },
+   "answer": [
+    {
+     "k": "p",
+     "x": "$\\boldsymbol S_o\\parallel\\boldsymbol k_o$；$\\boldsymbol S_e$ 沿非常光波面触点的半径，$\\boldsymbol k_e$ 垂直该处的切线，两者一般不平行。"
+    }
+   ],
+   "analysis": [
+    {
+     "k": "p",
+     "x": "按原图保留左上↔右下的光轴方向。惠更斯作图时，从先到达界面的点作普通光的圆形子波面和非常光的椭圆形子波面；负单轴晶体ne<no，e光射线速度波面在垂直光轴方向伸得更远，沿光轴方向与o光圆相切。"
+    },
+    {
+     "k": "p",
+     "x": "从后到达界面的点分别作两波面的切线，即折射波前。普通光圆的切点半径与波前法线一致，给出So、ko；非常光椭圆的切点半径给出Se，切线法线给出ke。两种波矢的切向分量均与入射波矢相同。"
+    },
+    {
+     "k": "p",
+     "x": "不可把光轴箭头误读为折射光线，也不可把e光波矢直接沿半径画出。解析图中的折射率和角度只用于构造示意，不新增为原题数据。"
+    }
+   ],
+   "stem": [
+    {
+     "k": "p",
+     "x": "设光以$\\theta$角从空气入射到负单轴晶体分界面上，请用惠更斯作图法示意画出折射光波中$\\vec S_o,\\vec S_e,\\vec k_o,\\vec k_e$的方向。"
+    }
+   ],
+   "options": [],
+   "sourcePhotos": [
+    "5BBA430B6EEA38546419A4E79741BEA7.jpg",
+    "605A61AB41161A3B40B8FD932F212681.jpg"
+   ],
+   "review": {
+    "needsCheck": false,
+    "notes": [
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+    ]
+   },
+   "answerAvailability": "review_provided",
+   "completeness": "complete",
+   "playable": true
   }
  ],
  "relations": [
