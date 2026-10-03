@@ -13,3 +13,5 @@
 .cloud-message[data-error=true]{background:#fff1e8;color:#844526}.cloud-separator{border:0;border-top:1px solid var(--edge);margin:20px 0}
 .cloud-conflict{border-left:3px solid #c28754;padding-left:12px;margin:12px 0}.cloud-conflict summary{cursor:pointer}.cloud-conflict ul{max-height:160px;overflow:auto;padding-left:20px}
 .cloud-dialog [hidden]{display:none!important}.cloud-hint{font-size:12px}.cloud-dialog input[type=file]{max-width:100%}
+
+.cloud-dialog .english-key-remember{display:flex;align-items:center;gap:8px;font-size:13px}.cloud-dialog .english-key-remember input{width:auto;padding:0}.cloud-dialog #english-api-settings a{color:var(--accent,var(--blue));font-size:13px}

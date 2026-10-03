@@ -1180,6 +1180,7 @@ function bind() {
   $('lightbox').addEventListener('click', function (ev) { if (ev.target === $('lightbox')) closeLightbox(); });
 
   document.addEventListener('keydown', function (ev) {
+    if (ui.scope.type === 'english') return;
     if (ev.key === 'Escape') { closeLightbox(); closeNav(); return; }
     var tag = (ev.target && ev.target.tagName) || '';
     if (!$('lightbox').hidden || $('app').classList.contains('nav-open')) return;

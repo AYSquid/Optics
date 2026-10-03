@@ -84,16 +84,16 @@
     const chapterTitle = document.getElementById('crumb');
     const chapterHeading = chapterTitle.closest('.crumb-wrap');
     function openDirectoryFromTitle() {
-      if (compact.matches && !app.classList.contains('nav-open')) document.getElementById('nav-toggle').click();
+      if (compact.matches && !chapterTitle.querySelector('.exam-subject-picker') && !app.classList.contains('nav-open')) document.getElementById('nav-toggle').click();
     }
     chapterHeading.addEventListener('click', openDirectoryFromTitle);
     chapterTitle.addEventListener('keydown', event => {
-      if (compact.matches && (event.key === 'Enter' || event.key === ' ')) {
+      if (event.target === chapterTitle && compact.matches && !chapterTitle.querySelector('.exam-subject-picker') && (event.key === 'Enter' || event.key === ' ')) {
         event.preventDefault();event.stopPropagation();openDirectoryFromTitle();
       }
     });
     function syncTitleAccessibility() {
-      if (compact.matches) {
+      if (compact.matches && !chapterTitle.querySelector('.exam-subject-picker')) {
         chapterTitle.setAttribute('role', 'button');chapterTitle.tabIndex=0;
         chapterTitle.setAttribute('aria-controls', 'sidebar');
         chapterTitle.setAttribute('aria-expanded', String(app.classList.contains('nav-open')));
@@ -102,6 +102,7 @@
         ['role','tabindex','aria-controls','aria-expanded','title'].forEach(name=>chapterTitle.removeAttribute(name));
       }
     }
+    new MutationObserver(syncTitleAccessibility).observe(chapterTitle,{childList:true});
     new MutationObserver(syncTitleAccessibility).observe(app,{attributes:true,attributeFilter:['class']});
     function syncLayout() {
       syncTitleAccessibility();

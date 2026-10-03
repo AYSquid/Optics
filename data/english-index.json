@@ -1,0 +1,7008 @@
+{
+  "version": 1,
+  "rubric": "assets/english/writing-rubric.md",
+  "papers": [
+    {
+      "id": "english1-2010",
+      "variant": 1,
+      "year": 2010,
+      "url": "assets/english/english1/2010.json",
+      "sha256": "fe3472b93bab039b898319bb8614dbd5c9770a769c33ab1e85abedf17294fbe0",
+      "sourceUrl": "assets/english/english1/2010.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2010-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2010-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2010-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2010-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2010-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2011",
+      "variant": 1,
+      "year": 2011,
+      "url": "assets/english/english1/2011.json",
+      "sha256": "a23a96b5328b02e0af3abbe46118b0b3c97e5e75371aa7cc52b66c24e881f159",
+      "sourceUrl": "assets/english/english1/2011.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2011-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2011-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2011-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2011-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2011-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2012",
+      "variant": 1,
+      "year": 2012,
+      "url": "assets/english/english1/2012.json",
+      "sha256": "f09470ce53926777f40f6058b9b8629098abdae03131da34130eb76fe8261096",
+      "sourceUrl": "assets/english/english1/2012.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2012-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2012-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2012-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2012-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2012-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2013",
+      "variant": 1,
+      "year": 2013,
+      "url": "assets/english/english1/2013.json",
+      "sha256": "6ce125bab792e1d28e8abed961f226d46d9d2da1853f848faaed8e2b19f72ebe",
+      "sourceUrl": "assets/english/english1/2013.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2013-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2013-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2013-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2013-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2013-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2014",
+      "variant": 1,
+      "year": 2014,
+      "url": "assets/english/english1/2014.json",
+      "sha256": "32e902f1253346cda33f7d6c3fc070773fa428e62a2df55598a1f96902c2233e",
+      "sourceUrl": "assets/english/english1/2014.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2014-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2014-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2014-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2014-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2014-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2015",
+      "variant": 1,
+      "year": 2015,
+      "url": "assets/english/english1/2015.json",
+      "sha256": "300dfe3982b3431dfc8a64d01605e4de9d9402f3329bb4fddd70ff5f78702c91",
+      "sourceUrl": "assets/english/english1/2015.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2015-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2015-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2015-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2015-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2015-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2016",
+      "variant": 1,
+      "year": 2016,
+      "url": "assets/english/english1/2016.json",
+      "sha256": "cf7f86474a69b2d621687b4dee2a340ab314db44d56068c1e246eb3d6b25f314",
+      "sourceUrl": "assets/english/english1/2016.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2016-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2016-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2016-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2016-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2016-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2017",
+      "variant": 1,
+      "year": 2017,
+      "url": "assets/english/english1/2017.json",
+      "sha256": "e90bc08e2b522699514239de1f53e2aaabfe935efb7f028d351f00eae9929bc0",
+      "sourceUrl": "assets/english/english1/2017.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2017-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2017-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2017-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2017-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2017-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2018",
+      "variant": 1,
+      "year": 2018,
+      "url": "assets/english/english1/2018.json",
+      "sha256": "bc702bc9e08fd1da86c5672b1bfb5fc645f9f7301595783d1035048b2fa9bd86",
+      "sourceUrl": "assets/english/english1/2018.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2018-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2018-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2018-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2018-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2018-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2019",
+      "variant": 1,
+      "year": 2019,
+      "url": "assets/english/english1/2019.json",
+      "sha256": "7c49075c0dfeb764269b47e28bc4ce6103686b34a588c92ae2bcd9c0b9c6a5c0",
+      "sourceUrl": "assets/english/english1/2019.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2019-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2019-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2019-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2019-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2019-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2020",
+      "variant": 1,
+      "year": 2020,
+      "url": "assets/english/english1/2020.json",
+      "sha256": "dac7ae7c0db7e6818baab5e53b08bddb0e026dc0ec2574ebc5e2965dfe9d58d7",
+      "sourceUrl": "assets/english/english1/2020.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2020-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2020-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2020-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2020-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2020-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2021",
+      "variant": 1,
+      "year": 2021,
+      "url": "assets/english/english1/2021.json",
+      "sha256": "badbe6848dac834cf3818c921ca030d31de2db31f8485c10ae86019dcfdccf3f",
+      "sourceUrl": "assets/english/english1/2021.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2021-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2021-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2021-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2021-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2021-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2022",
+      "variant": 1,
+      "year": 2022,
+      "url": "assets/english/english1/2022.json",
+      "sha256": "cf6f0b55f76f457410d1bcdbd9a9d7db1e5d0c5ce1e4f59980db57ebba4c92a5",
+      "sourceUrl": "assets/english/english1/2022.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2022-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2022-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2022-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2022-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2022-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2023",
+      "variant": 1,
+      "year": 2023,
+      "url": "assets/english/english1/2023.json",
+      "sha256": "e0d0e739db7d87b85be7744ffb46bc67aeebbff9ea282fdc326f1b2927bd583d",
+      "sourceUrl": "assets/english/english1/2023.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2023-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2023-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2023-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2023-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2023-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2024",
+      "variant": 1,
+      "year": 2024,
+      "url": "assets/english/english1/2024.json",
+      "sha256": "b10394ef4dedd5288fe2c612c768d74018b4a13cc683d1483f72060d047e190c",
+      "sourceUrl": "assets/english/english1/2024.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2024-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2024-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2024-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2024-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2024-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2025",
+      "variant": 1,
+      "year": 2025,
+      "url": "assets/english/english1/2025.json",
+      "sha256": "9fb2252f88c940ad02bb124efd8dc5f2d08fc12d48caae40ce7ae81750095d74",
+      "sourceUrl": "assets/english/english1/2025.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2025-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2025-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2025-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2025-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2025-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english1-2026",
+      "variant": 1,
+      "year": 2026,
+      "url": "assets/english/english1/2026.md",
+      "sha256": "34a7cbd6d4451c28928805b9228b70d8fe5740adddf761a024d7ad5050bccf7c",
+      "format": "markdown",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english1-2026-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english1-2026-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english1-2026-q21",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q22",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q23",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q24",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q25",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q26",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q27",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q28",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q29",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q30",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q31",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q32",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q33",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q34",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q35",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q36",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q37",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q38",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q39",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english1-2026-q41",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q42",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q43",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q44",
+            "score": 2
+          },
+          {
+            "id": "english1-2026-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 52,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 5,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2010",
+      "variant": 2,
+      "year": 2010,
+      "url": "assets/english/english2/2010.json",
+      "sha256": "7618b8edc5ae8ece099c3794f7a80aad55a1628b857fc8cb911c8caa0ef7f514",
+      "sourceUrl": "assets/english/english2/2010.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2010-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2010-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2010-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2010-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2010-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2011",
+      "variant": 2,
+      "year": 2011,
+      "url": "assets/english/english2/2011.json",
+      "sha256": "6bc65bf10854ecd216d0fff773c74ea5ae0d5ab0833516cc30be48b5c8eea1a8",
+      "sourceUrl": "assets/english/english2/2011.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2011-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2011-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2011-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2011-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2011-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2012",
+      "variant": 2,
+      "year": 2012,
+      "url": "assets/english/english2/2012.json",
+      "sha256": "3320dd34467bb36dd4e9f19c32eeb0be874dff36c9527633f60e39159f98216b",
+      "sourceUrl": "assets/english/english2/2012.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2012-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2012-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2012-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2012-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2012-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2013",
+      "variant": 2,
+      "year": 2013,
+      "url": "assets/english/english2/2013.json",
+      "sha256": "ce70a366c6f8a48cbe8ae8189071874110bbd3952ba714b98ac02a11f8fda046",
+      "sourceUrl": "assets/english/english2/2013.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2013-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2013-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2013-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2013-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2013-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2014",
+      "variant": 2,
+      "year": 2014,
+      "url": "assets/english/english2/2014.json",
+      "sha256": "7c3983064b1bd38559732f2caba0ea5bf2995082865401e0a884be5e808cceab",
+      "sourceUrl": "assets/english/english2/2014.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2014-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2014-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2014-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2014-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2014-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2015",
+      "variant": 2,
+      "year": 2015,
+      "url": "assets/english/english2/2015.json",
+      "sha256": "5179bad08d582495ad13b3207c81e977880736260f45255e9866925950c2a6cc",
+      "sourceUrl": "assets/english/english2/2015.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2015-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2015-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2015-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2015-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2015-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2016",
+      "variant": 2,
+      "year": 2016,
+      "url": "assets/english/english2/2016.json",
+      "sha256": "011848ec7301ae234e7c15b3909e546b17a302eada280d1fe0cd34cfdd957378",
+      "sourceUrl": "assets/english/english2/2016.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2016-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2016-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2016-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2016-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2016-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2017",
+      "variant": 2,
+      "year": 2017,
+      "url": "assets/english/english2/2017.json",
+      "sha256": "5f30f98a31e72c61235d9711e177e0c228c96232d0e393437f2eea763f01b9c4",
+      "sourceUrl": "assets/english/english2/2017.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2017-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2017-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2017-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2017-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2017-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2018",
+      "variant": 2,
+      "year": 2018,
+      "url": "assets/english/english2/2018.json",
+      "sha256": "b86191f2a6161ceaaaf7f0600db404233cf5bb3ca050f5fbc714250d1bf8ffc8",
+      "sourceUrl": "assets/english/english2/2018.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2018-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2018-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2018-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2018-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2018-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2019",
+      "variant": 2,
+      "year": 2019,
+      "url": "assets/english/english2/2019.json",
+      "sha256": "4ce7282d855460f249cd95eedfddcf6375b6e173a26678cbb5c9967e74894d23",
+      "sourceUrl": "assets/english/english2/2019.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2019-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2019-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2019-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2019-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2019-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2020",
+      "variant": 2,
+      "year": 2020,
+      "url": "assets/english/english2/2020.json",
+      "sha256": "126bd8725d93d0449d4b3fcb45fb09ce4058d548153c9bbb66fc745dfa47c28d",
+      "sourceUrl": "assets/english/english2/2020.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2020-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2020-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2020-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2020-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2020-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2021",
+      "variant": 2,
+      "year": 2021,
+      "url": "assets/english/english2/2021.json",
+      "sha256": "5cb27f3be825fd7017d4ce000c5e88be6a3e5ab84113f5e71b91a3000b68a4ce",
+      "sourceUrl": "assets/english/english2/2021.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2021-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2021-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2021-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2021-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2021-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2022",
+      "variant": 2,
+      "year": 2022,
+      "url": "assets/english/english2/2022.json",
+      "sha256": "c34dafddf96341673a2557fef27a758f548de1e5236534c30aca1e42f5dbbb25",
+      "sourceUrl": "assets/english/english2/2022.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2022-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2022-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2022-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2022-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2022-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2023",
+      "variant": 2,
+      "year": 2023,
+      "url": "assets/english/english2/2023.json",
+      "sha256": "a4e2c61f90c81f24a19152a07a7c0b814e859631937066cc41e06e2298d114e4",
+      "sourceUrl": "assets/english/english2/2023.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2023-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2023-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2023-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2023-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2023-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2024",
+      "variant": 2,
+      "year": 2024,
+      "url": "assets/english/english2/2024.json",
+      "sha256": "4a7b3edfea26d5051e1893ee417f101e4e765acd5b835acd44320361fb3aa3ca",
+      "sourceUrl": "assets/english/english2/2024.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2024-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2024-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2024-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2024-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2024-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2025",
+      "variant": 2,
+      "year": 2025,
+      "url": "assets/english/english2/2025.json",
+      "sha256": "5f9e0448131110555baf6ec2635e7dd3ef0ee47a3ad87aebaf880fb7af91f0db",
+      "sourceUrl": "assets/english/english2/2025.md",
+      "format": "json",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2025-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2025-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2025-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2025-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2025-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    },
+    {
+      "id": "english2-2026",
+      "variant": 2,
+      "year": 2026,
+      "url": "assets/english/english2/2026.md",
+      "sha256": "77e8fe245b57c2552e38fdb6a747233dc3810d7cb97f4a0dc3a0f732e55eb022",
+      "format": "markdown",
+      "objectiveSections": {
+        "cloze": [
+          {
+            "id": "english2-2026-q1",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q2",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q3",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q4",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q5",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q6",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q7",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q8",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q9",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q10",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q11",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q12",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q13",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q14",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q15",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q16",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q17",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q18",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q19",
+            "score": 0.5
+          },
+          {
+            "id": "english2-2026-q20",
+            "score": 0.5
+          }
+        ],
+        "reading": [
+          {
+            "id": "english2-2026-q21",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q22",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q23",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q24",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q25",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q26",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q27",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q28",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q29",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q30",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q31",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q32",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q33",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q34",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q35",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q36",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q37",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q38",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q39",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q40",
+            "score": 2
+          }
+        ],
+        "new": [
+          {
+            "id": "english2-2026-q41",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q42",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q43",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q44",
+            "score": 2
+          },
+          {
+            "id": "english2-2026-q45",
+            "score": 2
+          }
+        ]
+      },
+      "questionCount": 48,
+      "sectionCounts": {
+        "cloze": 20,
+        "reading": 20,
+        "new": 5,
+        "translation": 1,
+        "short": 1,
+        "long": 1
+      }
+    }
+  ]
+}

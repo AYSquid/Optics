@@ -64,7 +64,7 @@ function initialize(){if(initialized)return;initialized=true;
   }
   if(!auth().user)return;
   if(!ready&&['cloud','bank','exams','resume'].includes(action))return;
-  switch(action){case 'ready':try{sessionStorage.setItem('optics.entry.seen.v3','1');}catch(e){}update();break;case 'replay':mount(true);break;case 'logout':try{await auth().signOut();}catch(_error){reply({type:'optics-auth-error',message:'退出失败，请重试'});}break;case 'cloud':$('cloud-open').click();break;case 'bank':location.hash='/bank';openBank();route();break;case 'exams':location.hash='/exams';openExamHome();route();break;case 'resume':if(ui.scope.type==='exams')openBank();location.hash=ui.scope.type==='exam'?'/year/'+ui.scope.paperId:'/resume';route();break;}
+  switch(action){case 'ready':try{sessionStorage.setItem('optics.entry.seen.v3','1');}catch(e){}update();break;case 'replay':mount(true);break;case 'logout':try{await auth().signOut();}catch(_error){reply({type:'optics-auth-error',message:'退出失败，请重试'});}break;case 'cloud':$('cloud-open').click();break;case 'bank':location.hash='/bank';openBank();route();break;case 'exams':location.hash='/exams';openExamHome();route();break;case 'resume':if(ui.scope.type==='exams')openBank();location.hash=ui.scope.type==='english'?'/exams/english/'+ui.scope.paperId:ui.scope.type==='exam'?'/year/'+ui.scope.paperId:'/resume';route();break;}
  });
  window.addEventListener('hashchange',route);window.addEventListener('optics:progress',update);window.addEventListener('optics:sync-status',update);route();
 }
