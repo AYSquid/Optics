@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1215" viewBox="0 0 900 1215" role="img" aria-labelledby="title description">
-<title id="title">2026 三棱镜系统：坐标解图</title><desc id="description">两条斜光线在中间棱镜内部直接相交，不在交点反射。第一棱镜按两个普通反射面读图；a 左上、纸内、右上，b 右、纸外、上。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1060" viewBox="0 0 900 1060" role="img" aria-labelledby="title description">
+<title id="title">2026 三棱镜系统：坐标解图</title><desc id="description">两条斜光线在中间棱镜内部直接相交，不在交点反射。第一棱镜顶部已确认是屋脊；a 左上、纸外、右上，b 右、纸内、上，累计反射6/10次。</desc>
 <defs>
 <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
 <marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
@@ -19,6 +19,7 @@ text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
 <text x="35" y="44" class="heading" text-anchor="start">2026  /  坐标与反射顺序</text>
 <g id="original-geometry">
 <path class="line " d="M248,315 L263,161 L343,125 L420,156 L248,315"/>
+<path class="line " d="M272,171 L350,136"/>
 <style>
  .secondary{stroke:#976333;stroke-width:1.5}
  @media (prefers-color-scheme:dark){
@@ -52,36 +53,32 @@ text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
 </g>
 <g id="reflection-labels">
 <text x="272" y="277" class="number" text-anchor="start">R1</text>
-<text x="343" y="106" class="number" text-anchor="start">R2</text>
-<text x="557" y="446" class="number" text-anchor="start">R3–4</text>
-<text x="335" y="441" class="number" text-anchor="start">R5</text>
-<text x="584" y="103" class="number" text-anchor="start">R6</text>
-<text x="718" y="247" class="number" text-anchor="start">R7–8</text>
-<text x="566" y="209" class="number" text-anchor="start">R9</text>
+<text x="343" y="106" class="number" text-anchor="start">R2–3</text>
+<text x="557" y="446" class="number" text-anchor="start">R4–5</text>
+<text x="335" y="441" class="number" text-anchor="start">R6</text>
+<text x="584" y="103" class="number" text-anchor="start">R7</text>
+<text x="718" y="247" class="number" text-anchor="start">R8–9</text>
+<text x="566" y="209" class="number" text-anchor="start">R10</text>
 </g>
 <text x="35" y="602" class="note" text-anchor="start">中间光线相交处没有反射面。</text>
 <path class="line " d="M35,638 L865,638" stroke-dasharray="5 6"/>
-<text x="55" y="692" class="heading result" text-anchor="start">a  ·  5 次反射</text>
-<text x="480" y="692" class="heading result" text-anchor="start">b  ·  9 次反射</text>
+<text x="55" y="692" class="heading result" text-anchor="start">a  ·  6 次反射</text>
+<text x="480" y="692" class="heading result" text-anchor="start">b  ·  10 次反射</text>
 <path class="line answer" d="M225,820 L175.503,770.503" marker-end="url(#answer-arrow)"/>
 <text x="158.532" y="762.532" class="math result" text-anchor="middle">x</text>
 <path class="line answer" d="M225,820 L274.497,770.503" marker-end="url(#answer-arrow)"/>
 <text x="291.468" y="762.532" class="math result" text-anchor="middle">z</text>
 <circle class="line answer" cx="225" cy="820" r="9"/>
-<path class="line answer" d="M221,816 L229,824"/>
-<path class="line answer" d="M221,824 L229,816"/>
+<circle class="line " cx="225" cy="820" r="2.2" style="fill:#346D68;stroke:none"/>
 <text x="200" y="854" class="math result" text-anchor="middle">y</text>
 <path class="line answer" d="M645,820 L715,820" marker-end="url(#answer-arrow)"/>
 <text x="739" y="829" class="math result" text-anchor="middle">x</text>
 <path class="line answer" d="M645,820 L645,750" marker-end="url(#answer-arrow)"/>
 <text x="645" y="735" class="math result" text-anchor="middle">z</text>
 <circle class="line answer" cx="645" cy="820" r="9"/>
-<circle class="line " cx="645" cy="820" r="2.2" style="fill:#346D68;stroke:none"/>
+<path class="line answer" d="M641,816 L649,824"/>
+<path class="line answer" d="M641,824 L649,816"/>
 <text x="620" y="854" class="math result" text-anchor="middle">y</text>
-<text x="45" y="954" class="note" text-anchor="start">主解：第一棱镜为 2 次普通反射。</text>
-<text x="45" y="1000" class="note" text-anchor="start">后两块棱镜的成对斜线按屋脊处理。</text>
-<path class="line " d="M35,1034 L865,1034" stroke-dasharray="5 6"/>
-<text x="45" y="1082" class="note caution" text-anchor="start">若补充证据确认第一块顶部也是屋脊：</text>
-<text x="45" y="1128" class="note" text-anchor="start">x、z 不变；a 的 y 改为 ⊙，b 的 y 改为 ⊗。</text>
-<text x="45" y="1174" class="note" text-anchor="start">该分支累计反射为 6 / 10 次，详见报告。</text>
+<text x="45" y="954" class="note" text-anchor="start">第一棱镜顶部为屋脊：实际反射共 3 次。</text>
+<text x="45" y="1000" class="note" text-anchor="start">a：y ⊙；b：y ⊗，与纸质答案一致。</text>
 </svg>

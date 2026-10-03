@@ -221,7 +221,7 @@ function mathNode(tex, display) {
 }
 
 function isAuditDiagram(src) { return /(?:^|\/)assets\/audit-diagrams\/[^?#]+\.svg(?:[?#]|$)/.test(src || ''); }
-function figureAssetUrl(src) { return isAuditDiagram(src) ? src + (src.indexOf('?') < 0 ? '?' : '&') + 'v=svg-redraw-20261003-09a2a00' : src; }
+function figureAssetUrl(src) { return isAuditDiagram(src) ? src + (src.indexOf('?') < 0 ? '?' : '&') + 'v=svg-roof-confirmed-20261003-r2' : src; }
 
 function figureNode(src, alt) {
   var fig = el('figure', 'figure');

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="630" viewBox="0 0 900 630" role="img" aria-labelledby="title description">
-<title id="title">2026 三棱镜系统：题图</title><desc id="description">两条斜光线在中间棱镜内部直接相交，不在交点反射。保留入射坐标和 a、b。</desc>
+<title id="title">2026 三棱镜系统：题图</title><desc id="description">两条斜光线在中间棱镜内部直接相交，不在交点反射。第一棱镜顶部按用户确认补明屋脊双线，保留入射坐标和 a、b。</desc>
 <defs>
 <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#302D27" stroke-width="1.3"/></marker>
 <marker id="answer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#346D68" stroke-width="1.4"/></marker>
@@ -19,6 +19,7 @@ text {fill:#302D27;font:28px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
 <text x="35" y="44" class="heading" text-anchor="start">2026  /  题图</text>
 <g id="original-geometry">
 <path class="line " d="M248,315 L263,161 L343,125 L420,156 L248,315"/>
+<path class="line " d="M272,171 L350,136"/>
 <style>
  .secondary{stroke:#976333;stroke-width:1.5}
  @media (prefers-color-scheme:dark){
