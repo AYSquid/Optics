@@ -3,6 +3,24 @@
  'use strict';
  const labels={cloze:'完形填空',reading:'阅读',new:'新题型',translation:'翻译',short:'小作文',long:'大作文'};
  const plain=s=>s.replace(/&nbsp;/g,' ').replace(/\\_/g,'_').replace(/\*\*/g,'').replace(/<\/?u>/g,'').trim();
+ // Match translation targets while preserving the original paragraph and punctuation.
+ function translationSegments(text,questions){
+  const canonical=s=>s.normalize('NFKC').toLowerCase().replace(/[\p{P}\p{Z}\s]/gu,'');
+  let folded='',starts=[],ends=[],offset=0;
+  for(const char of text){const key=canonical(char);for(let i=0;i<key.length;i++){starts.push(offset);ends.push(offset+char.length);}folded+=key;offset+=char.length;}
+  const ranges=[];
+  for(const q of questions){
+   const target=canonical(plain(q.prompt||''));if(!target)continue;
+   const at=folded.indexOf(target);if(at<0)continue;
+   const start=starts[at];let end=ends[at+target.length-1];
+   if(/[.!?…]$/.test(plain(q.prompt||''))){const tail=text.slice(end).match(/^\s*[.!?…]/);if(tail)end+=tail[0].length;}
+   ranges.push({start,end,number:q.number});
+  }
+  const segments=[];let cursor=0;
+  ranges.sort((a,b)=>a.start-b.start).forEach(r=>{if(r.start<cursor)return;if(r.start>cursor)segments.push({text:text.slice(cursor,r.start)});segments.push({text:text.slice(r.start,r.end),number:r.number});cursor=r.end;});
+  if(cursor<text.length)segments.push({text:text.slice(cursor)});
+  return segments;
+ }
  function sections(text){
   const blocks=[];let current=null,context='',kind='';
   text.split(/\r?\n/).forEach(line=>{
@@ -97,5 +115,5 @@
  const cache=new Map();let indexPromise;
  async function index(){return indexPromise||(indexPromise=fetch('data/english-index.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('英语索引加载失败');return r.json();}).catch(e=>{indexPromise=null;throw e;}));}
  async function load(id){if(cache.has(id))return cache.get(id);const data=await index(),meta=data.papers.find(p=>p.id===id);if(!meta)throw Error('年份不存在');let paper;if(meta.format==='json'){const responses=await Promise.all([fetch(meta.url,{cache:'no-store'}),fetch(meta.sourceUrl,{cache:'no-store'})]);if(responses.some(r=>!r.ok))throw Error('试卷加载失败');paper=adapt(await responses[0].json(),await responses[1].text(),meta);}else{const response=await fetch(meta.url,{cache:'no-store'});if(!response.ok)throw Error('试卷加载失败');paper=parse(await response.text(),meta);}cache.set(id,paper);return paper;}
- return {parse,adapt,index,load,plain,labels};
+ return {parse,adapt,index,load,plain,labels,translationSegments};
 });

@@ -66,3 +66,7 @@
 @media(max-width:900px){.eng-mode-buttons{margin-left:0;flex-basis:100%}.eng-grade-dialog{padding:22px 18px}.eng-mode-label{flex-basis:100%}.eng-dialog-actions{flex-wrap:wrap}}
 
 .eng-writing-tabs{display:flex;gap:8px;margin:8px 0 18px}.eng-writing-tabs [aria-pressed=true]{background:var(--lt-ink,var(--text));color:var(--panel);border-color:var(--accent,var(--blue))}
+
+/* English I translation: keep target sentences visible in passage and context. */
+.eng-translation-target{text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:.22em;text-decoration-skip-ink:auto}
+.eng-translation-target.is-current{text-decoration-thickness:2px}

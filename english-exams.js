@@ -6,13 +6,22 @@
  let root=null,indexData=null,paper=null,group=null,qindex=0,token=0,mounted='',questionMounted='',sheet=false,overview=false,active=false,homeVariant=1,lastTrigger=null;
  function ensure(){if(!root){root=node('section','english-root');root.id='english-root';by('scroller').append(root);}EnglishStore.init();return root;}
  function sourceUrl(src){const url=new URL(src,new URL(paper.sourceUrl||paper.url,location.href));if(url.origin!==location.origin||!url.pathname.includes('/assets/english/'))return '';return url.href;}
- function markdown(text,into){
+ function markdown(text,into,translation=false){
   // Text-only nodes and explicitly local images; no arbitrary HTML execution.
   String(text||'').split(/\n\s*\n/).filter(s=>s.trim()&&s.trim()!=='---').forEach(block=>{
    const images=[...block.matchAll(/!\[([^\]]*)\]\(([^)]+)\)/g)];
    images.forEach(m=>image(m[2],m[1],into));
    const rest=block.replace(/!\[[^\]]*\]\([^)]+\)/g,'').replace(/^>\s?/gm,'').replace(/^#{1,4}\s?/gm,'');
-   if(rest.trim()){const p=node('p');p.textContent=EnglishData.plain(rest);into.append(p);}
+   if(rest.trim()){
+    const p=node('p'),text=EnglishData.plain(rest);
+    if(translation&&paper?.variant===1&&group?.kind==='translation'){
+     EnglishData.translationSegments(text,group.questions).forEach(part=>{
+      if(part.number){const mark=node('u','eng-translation-target',part.text);mark.dataset.question=String(part.number);mark.classList.toggle('is-current',part.number===current()?.number);mark.setAttribute('aria-label','第 '+part.number+' 题翻译句');p.append(mark);}
+      else p.append(document.createTextNode(part.text));
+     });
+    }else p.textContent=text;
+    into.append(p);
+   }
   });
  }
  function image(src,alt,into){const url=sourceUrl(typeof src==='string'?src:src.src||src.path||'');if(!url)return;const img=node('img','eng-image');img.src=url;img.alt=alt||'试题材料';img.loading='lazy';img.tabIndex=0;const open=()=>openLightbox(url,img.alt);img.onclick=open;img.onkeydown=e=>{if(e.key==='Enter')open();};into.append(img);}
@@ -82,7 +91,7 @@
    const tabs=node('div','eng-tabs');tabs.append(button('文章',()=>showOverview(false),'btn btn-ghost'),button('题目',()=>showOverview(true),'btn btn-ghost'));toolbar.append(tabs);const modeLabel=node('span','eng-mode-label');modeLabel.id='eng-mode-label';toolbar.append(modeLabel);const syncLabel=node('span','eng-paper-sync',EnglishStore.summary().text);syncLabel.id='eng-sync-status';toolbar.append(syncLabel);ExamTimer.attach('english:'+paper.id,toolbar);root.append(toolbar);
    const workspace=node('div','eng-workspace');workspace.dataset.kind=group.kind;
    const passage=node('article','eng-passage');passage.id='eng-passage';passage.tabIndex=0;passage.setAttribute('aria-label','文章，独立滚动');
-   const title=node('h2',null,group.label);passage.append(title);markdown(group.passage||current().prompt,passage);
+   const title=node('h2',null,group.label);passage.append(title);markdown(group.passage||current().prompt,passage,true);
    [...passage.querySelectorAll('p')].forEach((p,i)=>{p.id='eng-paragraph-'+(i+1);p.dataset.paragraph=String(i+1);});
    let scrollTimer;passage.addEventListener('scroll',()=>{clearTimeout(scrollTimer);const k=scrollKey();scrollTimer=setTimeout(()=>EnglishStore.set(k,passage.scrollTop),180);},{passive:true});
    const panel=node('section','eng-question-panel');panel.id='eng-question-panel';panel.setAttribute('aria-label','当前题目');
@@ -97,7 +106,7 @@
   by('eng-mode-label').textContent=EnglishObjective.getMode()==='practice'?'刷题模式 · 分篇提交':'套卷模式 · 统一批改';by('eng-current-bar').hidden=current().type!=='objective';root.dataset.kind=group.kind;setSheet(sheet);renderOverview();
  }
  function renderQuestion(){
-  const q=current();if(!q)return;const content=by('eng-q-content');content.replaceChildren();
+  const q=current();if(!q)return;root.querySelectorAll('.eng-translation-target').forEach(mark=>mark.classList.toggle('is-current',Number(mark.dataset.question)===q.number));const content=by('eng-q-content');content.replaceChildren();
   const head=node('div','eng-q-head');head.append(node('span','eng-label','QUESTION / '+q.number),button('收起 ↓',()=>setSheet(false),'btn btn-ghost eng-sheet-close'));content.append(head);
   if(q.type==='writing'){const tabs=node('div','eng-writing-tabs');paper.groups.filter(g=>['short','long'].includes(g.kind)).forEach(g=>{const b=button(g.label,()=>navigate(g,0));b.setAttribute('aria-pressed',String(g===group));tabs.append(b);});content.append(tabs);}
   const prompt=node('div','eng-prompt');markdown(q.prompt,prompt);content.append(prompt);(q.images||[]).forEach(src=>image(src,'作文题图 / 图表',prompt));
@@ -129,7 +138,7 @@
   by('eng-current-bar').setAttribute('aria-expanded',String(sheet));by('eng-sheet-backdrop').hidden=!sheet;by('eng-passage').inert=sheet||overview;
   if(!sheet&&lastTrigger?.isConnected){lastTrigger.focus({preventScroll:true});lastTrigger=null;}
  }
- function openContext(){const d=node('dialog','eng-context');d.append(button('关闭',()=>d.close(),'btn btn-outline'));const article=node('article','eng-context-content');markdown(group.passage,article);d.append(article);document.body.append(d);d.addEventListener('close',()=>d.remove());d.showModal();}
+ function openContext(){const d=node('dialog','eng-context');d.append(button('关闭',()=>d.close(),'btn btn-outline'));const article=node('article','eng-context-content');markdown(group.passage,article,true);d.append(article);document.body.append(d);d.addEventListener('close',()=>d.remove());d.showModal();}
  async function submitGrade(q,answer,submit){
   if(!answer.trim()){by('eng-save-note').textContent='请先输入答案';return;}
   const gradingPaper=paper,gradingGroup=group;const prior=versions(q),previous=prior.filter(v=>v.status==='complete').at(-1),id=crypto.randomUUID(),key='version:'+q.id+':'+id;
