@@ -101,12 +101,12 @@
     "exam-2017-df21d6e11c510db9"
    ],
    "count": 34,
-   "sourceNote": "按2017年分段补拍照片与用户确认重新识别；选择第9题补D：45°，选择第10题保留一般解析，缺条件的填空第3题与计算第3题按用户要求不收录。",
+   "sourceNote": "按2017年分段补拍照片与用户确认重新识别；选择第9题补D：45°，选择第10题保留一般解析，缺条件的填空第3题与计算第3题按用户要求不收录。 原选择第8、12、16、19、20题因选项缺失改编为填空题；第10、14、17、18题改编为简答题，原题号保留。",
    "requiresReview": false,
    "typeCounts": {
-    "choice": 17,
-    "blank": 9,
-    "calc": 8
+    "choice": 8,
+    "blank": 14,
+    "calc": 12
    },
    "playableCount": 34,
    "incompleteCount": 0,
@@ -3832,11 +3832,11 @@
    "section": "一、选择题",
    "questionNumber": "8",
    "order": 8,
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "在典型的牛顿环装置中，若用平行光垂直照明，则当凸透镜与平板间距减少时，条纹将（ ）。"
+     "x": "在典型的牛顿环装置中，用平行光垂直照明。当凸透镜与平板间距减小时，同级次牛顿环向____扩展，环的半径____。"
     }
    ],
    "options": [],
@@ -3866,18 +3866,21 @@
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-4f4fd9b3f50b869d",
-   "revisionKind": "choice",
+   "revisionKind": "blank",
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "stemImages": [],
    "analysisImages": [],
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
-   ]
+   ],
+   "typeName": "填空题",
+   "originalQuestionType": "choice"
   },
   {
    "id": "exam-2017-da48bee9a54c4440",
@@ -3962,11 +3965,11 @@
    "section": "一、选择题",
    "questionNumber": "10",
    "order": 10,
-   "type": "choice",
+   "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "三个全同小圆孔的夫琅禾费衍射图样是（ ）。"
+     "x": "简述三个全同小圆孔的夫琅禾费衍射图样与单孔衍射包络、三孔干涉之间的关系。"
     }
    ],
    "options": [],
@@ -4004,19 +4007,22 @@
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-aa8b40169aa7b78e",
-   "revisionKind": "choice",
+   "revisionKind": "calc",
    "review": {
     "needsCheck": false,
     "notes": [
      "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "照片未记录三孔中心排列和图形选项。按用户要求直接保留此题，答案与解析采用适用于任意排列的通式。"
+     "照片未记录三孔中心排列和图形选项。按用户要求直接保留此题，答案与解析采用适用于任意排列的通式。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为简答题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "stemImages": [],
    "analysisImages": [],
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
-   ]
+   ],
+   "typeName": "简答题",
+   "originalQuestionType": "choice"
   },
   {
    "id": "exam-2017-68a470a8e72d592d",
@@ -4097,11 +4103,11 @@
    "section": "一、选择题",
    "questionNumber": "12",
    "order": 12,
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "布儒斯特角$\\theta_B$入射时（ ）。"
+     "x": "光从一种无吸收介质以布儒斯特角$\\theta_B$入射另一种无吸收介质时，p偏振光的反射率为____；若入射光为自然光，反射光为____偏振光。"
     }
    ],
    "options": [],
@@ -4131,11 +4137,12 @@
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-c728f597026db83c",
-   "revisionKind": "choice",
+   "revisionKind": "blank",
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "stemImages": [],
@@ -4143,7 +4150,9 @@
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "typeName": "填空题",
+   "originalQuestionType": "choice"
   },
   {
    "id": "exam-2017-205247028d846679",
@@ -4223,11 +4232,11 @@
    "section": "一、选择题",
    "questionNumber": "14",
    "order": 14,
-   "type": "choice",
+   "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "光波从光密介质进入光疏介质并发生全反射时，（ ）。"
+     "x": "光波从光密介质进入光疏介质并发生全反射时，光疏介质中是否仍存在电磁场？简述该场沿界面法线的变化，以及理想半无限、无吸收介质中的法向平均能流。"
     }
    ],
    "options": [],
@@ -4261,18 +4270,21 @@
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-6b12bcc9ca291714",
-   "revisionKind": "choice",
+   "revisionKind": "calc",
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为简答题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "stemImages": [],
    "analysisImages": [],
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "typeName": "简答题",
+   "originalQuestionType": "choice"
   },
   {
    "id": "exam-2017-bf81e6c5f3860341",
@@ -4348,11 +4360,11 @@
    "section": "一、选择题",
    "questionNumber": "16",
    "order": 16,
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收影响），若相邻光束之光程差为波长整数倍，则（ ）。"
+     "x": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收），若相邻光束之光程差为波长整数倍，则透射光形成____纹，反射光形成____纹。"
     }
    ],
    "options": [],
@@ -4386,18 +4398,21 @@
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-a486bd26b1cc71af",
-   "revisionKind": "choice",
+   "revisionKind": "blank",
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "stemImages": [],
    "analysisImages": [],
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "typeName": "填空题",
+   "originalQuestionType": "choice"
   },
   {
    "id": "exam-2017-b747e1b3809e13b2",
@@ -4406,11 +4421,11 @@
    "section": "一、选择题",
    "questionNumber": "17",
    "order": 17,
-   "type": "choice",
+   "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在He-Ne激光器中，若输出了两个纵模，则原因可能为（ ）。"
+     "x": "在He-Ne激光器中，若输出了两个纵模，简述可能的原因。"
     }
    ],
    "options": [],
@@ -4440,18 +4455,21 @@
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-b747e1b3809e13b2",
-   "revisionKind": "choice",
+   "revisionKind": "calc",
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为简答题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "stemImages": [],
    "analysisImages": [],
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "typeName": "简答题",
+   "originalQuestionType": "choice"
   },
   {
    "id": "exam-2017-2be06a95b9235ba9",
@@ -4460,11 +4478,11 @@
    "section": "一、选择题",
    "questionNumber": "18",
    "order": 18,
-   "type": "choice",
+   "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在一个激光谐振腔内部加入一个倾斜（布儒斯特角）的平板玻璃实现线偏振光的输出，其实现的光学原理（ ）。"
+     "x": "在激光谐振腔内加入一个以布儒斯特角倾斜放置的平板玻璃，可以实现线偏振光输出。说明其光学原理。"
     }
    ],
    "options": [],
@@ -4494,18 +4512,21 @@
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-2be06a95b9235ba9",
-   "revisionKind": "choice",
+   "revisionKind": "calc",
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为简答题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "stemImages": [],
    "analysisImages": [],
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "typeName": "简答题",
+   "originalQuestionType": "choice"
   },
   {
    "id": "exam-2017-ecb5b6ff81ba0ef5",
@@ -4514,11 +4535,11 @@
    "section": "一、选择题",
    "questionNumber": "19",
    "order": 19,
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "当激光器达到稳定输出时，我们突然将激光器的输出反射镜撤掉，则激活介质的增益系数将（ ）。"
+     "x": "当激光器达到稳定输出时，突然撤去输出反射镜。在泵浦条件不变的情况下，激活介质的增益系数在撤镜瞬间____；随后的恢复过程中____，趋向小信号增益。"
     }
    ],
    "options": [],
@@ -4548,18 +4569,21 @@
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-ecb5b6ff81ba0ef5",
-   "revisionKind": "choice",
+   "revisionKind": "blank",
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "stemImages": [],
    "analysisImages": [],
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "typeName": "填空题",
+   "originalQuestionType": "choice"
   },
   {
    "id": "exam-2017-9de4cece6d93ed93",
@@ -4568,11 +4592,11 @@
    "section": "一、选择题",
    "questionNumber": "20",
    "order": 20,
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "声光效应产生的布拉格衍射，如果入射光的角度不变而声波频率增加，则（ ）。"
+     "x": "声光效应产生布拉格衍射时，保持声速、光波长和折射率不变。声波频率增加，所需的布拉格匹配角____；若入射角保持原匹配角不变，则原匹配点附近的衍射效率____。"
     }
    ],
    "options": [],
@@ -4602,18 +4626,21 @@
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-9de4cece6d93ed93",
-   "revisionKind": "choice",
+   "revisionKind": "blank",
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "stemImages": [],
    "analysisImages": [],
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "typeName": "填空题",
+   "originalQuestionType": "choice"
   },
   {
    "id": "exam-2017-696bb0126554b7a7",
@@ -30410,11 +30437,11 @@
    ]
   },
   {
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "在典型的牛顿环装置中，若用平行光垂直照明，则当凸透镜与平板间距减少时，条纹将（ ）。"
+     "x": "在典型的牛顿环装置中，用平行光垂直照明。当凸透镜与平板间距减小时，同级次牛顿环向____扩展，环的半径____。"
     }
    ],
    "options": [],
@@ -30449,7 +30476,7 @@
    "name": "2017年 一、选择题",
    "year": 2017,
    "order": 17,
-   "typeName": "选择题",
+   "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
@@ -30471,7 +30498,8 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "occurrences": [
@@ -30481,7 +30509,9 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
-   ]
+   ],
+   "revisionKind": "blank",
+   "originalQuestionType": "choice"
   },
   {
    "type": "choice",
@@ -30580,11 +30610,11 @@
    ]
   },
   {
-   "type": "choice",
+   "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "三个全同小圆孔的夫琅禾费衍射图样是（ ）。"
+     "x": "简述三个全同小圆孔的夫琅禾费衍射图样与单孔衍射包络、三孔干涉之间的关系。"
     }
    ],
    "options": [],
@@ -30627,7 +30657,7 @@
    "name": "2017年 一、选择题",
    "year": 2017,
    "order": 19,
-   "typeName": "选择题",
+   "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
@@ -30650,7 +30680,8 @@
     "needsCheck": false,
     "notes": [
      "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "照片未记录三孔中心排列和图形选项。按用户要求直接保留此题，答案与解析采用适用于任意排列的通式。"
+     "照片未记录三孔中心排列和图形选项。按用户要求直接保留此题，答案与解析采用适用于任意排列的通式。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为简答题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "occurrences": [
@@ -30660,7 +30691,9 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
-   ]
+   ],
+   "revisionKind": "calc",
+   "originalQuestionType": "choice"
   },
   {
    "type": "choice",
@@ -30755,11 +30788,11 @@
    ]
   },
   {
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "布儒斯特角$\\theta_B$入射时（ ）。"
+     "x": "光从一种无吸收介质以布儒斯特角$\\theta_B$入射另一种无吸收介质时，p偏振光的反射率为____；若入射光为自然光，反射光为____偏振光。"
     }
    ],
    "options": [],
@@ -30794,7 +30827,7 @@
    "name": "2017年 一、选择题",
    "year": 2017,
    "order": 20,
-   "typeName": "选择题",
+   "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
@@ -30816,7 +30849,8 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "occurrences": [
@@ -30827,7 +30861,9 @@
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "revisionKind": "blank",
+   "originalQuestionType": "choice"
   },
   {
    "type": "choice",
@@ -30921,11 +30957,11 @@
    ]
   },
   {
-   "type": "choice",
+   "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "光波从光密介质进入光疏介质并发生全反射时，（ ）。"
+     "x": "光波从光密介质进入光疏介质并发生全反射时，光疏介质中是否仍存在电磁场？简述该场沿界面法线的变化，以及理想半无限、无吸收介质中的法向平均能流。"
     }
    ],
    "options": [],
@@ -30964,7 +31000,7 @@
    "name": "2017年 一、选择题",
    "year": 2017,
    "order": 22,
-   "typeName": "选择题",
+   "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
@@ -30986,7 +31022,8 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为简答题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "occurrences": [
@@ -30996,7 +31033,9 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "revisionKind": "calc",
+   "originalQuestionType": "choice"
   },
   {
    "type": "choice",
@@ -31086,11 +31125,11 @@
    ]
   },
   {
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收影响），若相邻光束之光程差为波长整数倍，则（ ）。"
+     "x": "平行平板干涉中，当平板表面的反射率很高时（不考虑吸收），若相邻光束之光程差为波长整数倍，则透射光形成____纹，反射光形成____纹。"
     }
    ],
    "options": [],
@@ -31129,7 +31168,7 @@
    "name": "2017年 一、选择题",
    "year": 2017,
    "order": 24,
-   "typeName": "选择题",
+   "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
@@ -31151,7 +31190,8 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "occurrences": [
@@ -31161,14 +31201,16 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "revisionKind": "blank",
+   "originalQuestionType": "choice"
   },
   {
-   "type": "choice",
+   "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在He-Ne激光器中，若输出了两个纵模，则原因可能为（ ）。"
+     "x": "在He-Ne激光器中，若输出了两个纵模，简述可能的原因。"
     }
    ],
    "options": [],
@@ -31203,7 +31245,7 @@
    "name": "2017年 一、选择题",
    "year": 2017,
    "order": 7,
-   "typeName": "选择题",
+   "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
@@ -31225,7 +31267,8 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为简答题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "occurrences": [
@@ -31235,14 +31278,16 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "revisionKind": "calc",
+   "originalQuestionType": "choice"
   },
   {
-   "type": "choice",
+   "type": "calc",
    "stem": [
     {
      "k": "p",
-     "x": "在一个激光谐振腔内部加入一个倾斜（布儒斯特角）的平板玻璃实现线偏振光的输出，其实现的光学原理（ ）。"
+     "x": "在激光谐振腔内加入一个以布儒斯特角倾斜放置的平板玻璃，可以实现线偏振光输出。说明其光学原理。"
     }
    ],
    "options": [],
@@ -31277,7 +31322,7 @@
    "name": "2017年 一、选择题",
    "year": 2017,
    "order": 25,
-   "typeName": "选择题",
+   "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
@@ -31299,7 +31344,8 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为简答题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "occurrences": [
@@ -31309,14 +31355,16 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "revisionKind": "calc",
+   "originalQuestionType": "choice"
   },
   {
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "当激光器达到稳定输出时，我们突然将激光器的输出反射镜撤掉，则激活介质的增益系数将（ ）。"
+     "x": "当激光器达到稳定输出时，突然撤去输出反射镜。在泵浦条件不变的情况下，激活介质的增益系数在撤镜瞬间____；随后的恢复过程中____，趋向小信号增益。"
     }
    ],
    "options": [],
@@ -31351,7 +31399,7 @@
    "name": "2017年 一、选择题",
    "year": 2017,
    "order": 8,
-   "typeName": "选择题",
+   "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
@@ -31373,7 +31421,8 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "occurrences": [
@@ -31383,14 +31432,16 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "revisionKind": "blank",
+   "originalQuestionType": "choice"
   },
   {
-   "type": "choice",
+   "type": "blank",
    "stem": [
     {
      "k": "p",
-     "x": "声光效应产生的布拉格衍射，如果入射光的角度不变而声波频率增加，则（ ）。"
+     "x": "声光效应产生布拉格衍射时，保持声速、光波长和折射率不变。声波频率增加，所需的布拉格匹配角____；若入射角保持原匹配角不变，则原匹配点附近的衍射效率____。"
     }
    ],
    "options": [],
@@ -31425,7 +31476,7 @@
    "name": "2017年 一、选择题",
    "year": 2017,
    "order": 9,
-   "typeName": "选择题",
+   "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
@@ -31447,7 +31498,8 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。"
+     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
+     "原卷为选择题，补拍资料未记录选项；按用户要求依据现有答案改编为填空题，保留原题号、原题面记录及答案解析。"
     ]
    },
    "occurrences": [
@@ -31457,7 +31509,9 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "revisionKind": "blank",
+   "originalQuestionType": "choice"
   },
   {
    "type": "blank",
