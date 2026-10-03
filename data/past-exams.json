@@ -84,7 +84,6 @@
     "exam-2017-9de4cece6d93ed93",
     "exam-2017-696bb0126554b7a7",
     "exam-2017-247e6b2a92ae4de4",
-    "exam-2017-7144681b90acd983",
     "exam-2017-30e4ee70a0ad83e9",
     "exam-2017-66698583063ca4c4",
     "exam-2017-95a583d60fa63953",
@@ -97,22 +96,21 @@
     "exam-2017-26924536f261611f",
     "exam-2017-fb935ddc373ac150",
     "exam-2017-0fac68fcebfda603",
-    "exam-2017-80e296673bf6a37e",
     "exam-2017-fea321798df1563c",
     "exam-2017-9aacb6b1a420e699",
     "exam-2017-df21d6e11c510db9"
    ],
-   "count": 36,
-   "sourceNote": "按2017年分段补拍照片重新识别；11处视觉疑问已由用户确认。保留照片已给出的题号、选项与条件，补入3道画图题及答案解析。",
-   "requiresReview": true,
+   "count": 34,
+   "sourceNote": "按2017年分段补拍照片与用户确认重新识别；选择第9题补D：45°，选择第10题保留一般解析，缺条件的填空第3题与计算第3题按用户要求不收录。",
+   "requiresReview": false,
    "typeCounts": {
     "choice": 17,
-    "blank": 10,
-    "calc": 9
+    "blank": 9,
+    "calc": 8
    },
-   "playableCount": 36,
+   "playableCount": 34,
    "incompleteCount": 0,
-   "answerCount": 36
+   "answerCount": 34
   },
   {
    "year": 2018,
@@ -3907,6 +3905,10 @@
     {
      "key": "C",
      "x": "33.5°"
+    },
+    {
+     "key": "D",
+     "x": "45°"
     }
    ],
    "originalText": "自然光投射到两片相叠的偏振片上（理想偏振片），当透射光强为入射自然光强的1/4时，偏振片的透光轴方向夹角为（ ）。",
@@ -3920,7 +3922,7 @@
    "answer": [
     {
      "k": "p",
-     "x": "透光轴锐角夹角为 $45^\\circ$；照片中的三个选项均不等于该结果。"
+     "x": "选 D：透光轴锐角夹角为 $45^\\circ$。"
     }
    ],
    "analysis": [
@@ -3934,17 +3936,17 @@
     },
     {
      "k": "p",
-     "x": "30°、60°、33.5°均不满足题设光强比，因此保留原选项，但不指定错误的选项字母。"
+     "x": "由马吕斯定律得到45°，对应D选项。D为用户要求补充的正确选项，原照片中的A、B、C保持不变。"
     }
    ],
    "answerAvailability": "review_provided",
    "questionId": "past-2017-da48bee9a54c4440",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
+    "needsCheck": false,
     "notes": [
      "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "回忆照片给出的选项为30°、60°、33.5°，与题设I/I₀=1/4算得45°不一致；没有纸质答案可据以反解修订，暂不自动判分。"
+     "原照片记录A：30°、B：60°、C：33.5°。按用户要求补充D：45°，题设光强比与D选项一致。"
     ]
    },
    "stemImages": [],
@@ -4004,10 +4006,10 @@
    "questionId": "past-2017-aa8b40169aa7b78e",
    "revisionKind": "choice",
    "review": {
-    "needsCheck": true,
+    "needsCheck": false,
     "notes": [
      "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "照片没有三孔排列或图形选项，仅能给出适用于任意三孔位置的一般表达式。"
+     "照片未记录三孔中心排列和图形选项。按用户要求直接保留此题，答案与解析采用适用于任意排列的通式。"
     ]
    },
    "stemImages": [],
@@ -4737,69 +4739,6 @@
    ]
   },
   {
-   "id": "exam-2017-7144681b90acd983",
-   "year": 2017,
-   "paperId": "2017",
-   "section": "二、填空题",
-   "questionNumber": "3",
-   "order": 23,
-   "type": "blank",
-   "stem": [
-    {
-     "k": "p",
-     "x": "透射光栅常数$d=2.4\\,\\mu m$，缝宽$a=0.8\\,\\mu m$，单色光垂直入射时，在透镜的焦面上共看到____个条纹，它们的衍射级次具体为____。"
-    }
-   ],
-   "options": [],
-   "originalText": "透射光栅常数$d=2.4\\,\\mu m$，缝宽$a=0.8\\,\\mu m$，单色光垂直入射时，在透镜的焦面上共看到____个条纹，它们的衍射级次具体为____。",
-   "originalHeading": "3",
-   "sourceFile": "0F8D23459369E88446258333B5D02BEF.jpg",
-   "sourceLine": 97,
-   "sourceHash": "0bc7c78b2d763b032d7761ec2f7872c157b260b7e5bbc9885a4ba8e95908cd8f",
-   "completeness": "complete",
-   "playable": true,
-   "sourceImages": [],
-   "answer": [
-    {
-     "k": "p",
-     "x": "缺级为非零的 $m=\\pm3,\\pm6,\\ldots$；可见级次与总条纹数还需要波长，照片未给出，不能指定唯一数量。"
-    }
-   ],
-   "analysis": [
-    {
-     "k": "m",
-     "x": "d\\sin\\theta=m\\lambda,\\qquad a\\sin\\theta=p\\lambda\\ (p\\ne0),\\qquad d/a=3\\Rightarrow m=3p."
-    },
-    {
-     "k": "p",
-     "x": "透镜有限焦面内需满足|m|λ<d；若只按传播级次讨论，极限掠射级次还须单独处理。令M为严格满足Mλ<d的最大非负整数，则："
-    },
-    {
-     "k": "m",
-     "x": "N_{\\rm bright}=1+2\\left(M-\\left\\lfloor\\frac M3\\right\\rfloor\\right),\\qquad M=\\left\\lceil\\frac d\\lambda\\right\\rceil-1."
-    },
-    {
-     "k": "p",
-     "x": "保留零级，去掉正负的非零3倍数级次。缺少λ时，只能写出这些条件和公式。"
-    }
-   ],
-   "answerAvailability": "review_provided",
-   "questionId": "past-2017-7144681b90acd983",
-   "revisionKind": "blank",
-   "review": {
-    "needsCheck": true,
-    "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "新照片仍没有单色光波长，无法唯一给出条纹数；未擅自补入常见波长。"
-    ]
-   },
-   "stemImages": [],
-   "analysisImages": [],
-   "sourcePhotos": [
-    "0F8D23459369E88446258333B5D02BEF.jpg"
-   ]
-  },
-  {
    "id": "exam-2017-30e4ee70a0ad83e9",
    "year": 2017,
    "paperId": "2017",
@@ -5325,74 +5264,6 @@
    "analysisImages": [],
    "sourcePhotos": [
     "B26847B6DA2357C9F4312921316A4BEE.jpg"
-   ]
-  },
-  {
-   "id": "exam-2017-80e296673bf6a37e",
-   "year": 2017,
-   "paperId": "2017",
-   "section": "四、计算题",
-   "questionNumber": "3",
-   "order": 36,
-   "type": "calc",
-   "stem": [
-    {
-     "k": "p",
-     "x": "在光栅夫朗禾费衍射实验中，所用光波$\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距$f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间的距离$e=1.5\\,\\mathrm{mm}$，并且第4级亮纹缺级。求光栅的缝间距和缝宽，以及第2级亮纹的相对强度？（衍射角很小，$\\sin\\theta\\approx\\theta$。）"
-    }
-   ],
-   "options": [],
-   "originalText": "在光栅夫朗禾费衍射实验中，所用光波$\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距$f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间的距离$e=1.5\\,\\mathrm{mm}$，并且第4级亮纹缺级。求光栅的缝间距和缝宽，以及第2级亮纹的相对强度？（衍射角很小，$\\sin\\theta\\approx\\theta$。）",
-   "originalHeading": "3",
-   "sourceFile": "B26847B6DA2357C9F4312921316A4BEE.jpg",
-   "sourceLine": 143,
-   "sourceHash": "3d9cf5f068bf96e06acfed15b08b4426e4a9919b1d7b8450075e154f2ae32e1f",
-   "completeness": "complete",
-   "playable": true,
-   "sourceImages": [],
-   "answer": [
-    {
-     "k": "p",
-     "x": "光栅常数 $d=0.210933$ mm。按第4级对应单缝第一暗纹的通常约定，缝宽 $a=d/4=0.052733$ mm，第2级相对强度 $I_2/I_0=4/\\pi^2\\approx0.405285$。若未指定对应单缝暗纹的级次，另有 $a=d/2$ 或 $3d/4$，对应相对强度 $0$ 或 $4/(9\\pi^2)\\approx0.045032$。"
-    }
-   ],
-   "analysis": [
-    {
-     "k": "m",
-     "x": "e\\simeq\\frac{f\\lambda}{d}\\Rightarrow d=\\frac{500\\cdot0.0006328}{1.5}=0.210933\\ \\mathrm{mm}."
-    },
-    {
-     "k": "m",
-     "x": "4\\lambda/d=p\\lambda/a\\Rightarrow a=\\frac p4d,\\quad0<a<d\\Rightarrow p=1,2,3."
-    },
-    {
-     "k": "p",
-     "x": "若明确第4级对应单缝第一暗纹，则p=1、a=d/4。p=2时第2级也缺级；p=3时最小缺级仍为第4级。因此只说“第4级缺级”或“首次缺级为第4级”都不能单独排除p=3，主答案另采用第一单缝零点对应第4级的通常约定。"
-    },
-    {
-     "k": "m",
-     "x": "\\frac{I_2}{I_0}=\\left[\\frac{\\sin(2\\pi a/d)}{2\\pi a/d}\\right]^2."
-    },
-    {
-     "k": "p",
-     "x": "以中央主极大强度为归一化基准；a/d=1/4、1/2、3/4分别代入得到答案的三种结果。"
-    }
-   ],
-   "answerAvailability": "review_provided",
-   "questionId": "past-2017-80e296673bf6a37e",
-   "revisionKind": "calc",
-   "review": {
-    "needsCheck": true,
-    "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "用户确认f=500 mm；照片只说第4级缺级，未指定它对应单缝第几个零点。主答案采用单缝第一零点对应第4级的课程惯例，解析保留全部可行缝宽。"
-    ]
-   },
-   "stemImages": [],
-   "analysisImages": [],
-   "sourcePhotos": [
-    "B26847B6DA2357C9F4312921316A4BEE.jpg",
-    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
    ]
   },
   {
@@ -30632,12 +30503,16 @@
     {
      "key": "C",
      "x": "33.5°"
+    },
+    {
+     "key": "D",
+     "x": "45°"
     }
    ],
    "answer": [
     {
      "k": "p",
-     "x": "透光轴锐角夹角为 $45^\\circ$；照片中的三个选项均不等于该结果。"
+     "x": "选 D：透光轴锐角夹角为 $45^\\circ$。"
     }
    ],
    "analysis": [
@@ -30651,7 +30526,7 @@
     },
     {
      "k": "p",
-     "x": "30°、60°、33.5°均不满足题设光强比，因此保留原选项，但不指定错误的选项字母。"
+     "x": "由马吕斯定律得到45°，对应D选项。D为用户要求补充的正确选项，原照片中的A、B、C保持不变。"
     }
    ],
    "completeness": "complete",
@@ -30689,10 +30564,10 @@
     "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
+    "needsCheck": false,
     "notes": [
      "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "回忆照片给出的选项为30°、60°、33.5°，与题设I/I₀=1/4算得45°不一致；没有纸质答案可据以反解修订，暂不自动判分。"
+     "原照片记录A：30°、B：60°、C：33.5°。按用户要求补充D：45°，题设光强比与D选项一致。"
     ]
    },
    "occurrences": [
@@ -30772,10 +30647,10 @@
     "reference": "2017年分段补拍照片：A6B17D98AE8AA89C8D957AC6227CBF11.jpg；已结合用户逐项确认重新识别。"
    },
    "review": {
-    "needsCheck": true,
+    "needsCheck": false,
     "notes": [
      "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "照片没有三孔排列或图形选项，仅能给出适用于任意三孔位置的一般表达式。"
+     "照片未记录三孔中心排列和图形选项。按用户要求直接保留此题，答案与解析采用适用于任意排列的通式。"
     ]
    },
    "occurrences": [
@@ -31752,89 +31627,6 @@
    "stem": [
     {
      "k": "p",
-     "x": "透射光栅常数$d=2.4\\,\\mu m$，缝宽$a=0.8\\,\\mu m$，单色光垂直入射时，在透镜的焦面上共看到____个条纹，它们的衍射级次具体为____。"
-    }
-   ],
-   "options": [],
-   "answer": [
-    {
-     "k": "p",
-     "x": "缺级为非零的 $m=\\pm3,\\pm6,\\ldots$；可见级次与总条纹数还需要波长，照片未给出，不能指定唯一数量。"
-    }
-   ],
-   "analysis": [
-    {
-     "k": "m",
-     "x": "d\\sin\\theta=m\\lambda,\\qquad a\\sin\\theta=p\\lambda\\ (p\\ne0),\\qquad d/a=3\\Rightarrow m=3p."
-    },
-    {
-     "k": "p",
-     "x": "透镜有限焦面内需满足|m|λ<d；若只按传播级次讨论，极限掠射级次还须单独处理。令M为严格满足Mλ<d的最大非负整数，则："
-    },
-    {
-     "k": "m",
-     "x": "N_{\\rm bright}=1+2\\left(M-\\left\\lfloor\\frac M3\\right\\rfloor\\right),\\qquad M=\\left\\lceil\\frac d\\lambda\\right\\rceil-1."
-    },
-    {
-     "k": "p",
-     "x": "保留零级，去掉正负的非零3倍数级次。缺少λ时，只能写出这些条件和公式。"
-    }
-   ],
-   "completeness": "complete",
-   "playable": true,
-   "originalText": "透射光栅常数 $d=2.4\\,\\mu\\mathrm m$、缝宽 $a=0.8\\,\\mu\\mathrm m$，单色光垂直入射时，在透镜的焦面上看到____个条纹，它们的衍射级次具体为____。",
-   "answerAvailability": "review_provided",
-   "id": "past-2017-7144681b90acd983",
-   "canonicalId": "past-2017-7144681b90acd983",
-   "statusKey": "past-2017-7144681b90acd983",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "phys-ch11",
-   "section": "二、填空题",
-   "number": "3",
-   "name": "2017年 二、填空题",
-   "year": 2017,
-   "order": 1065,
-   "typeName": "填空题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "多缝干涉与光栅方程"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "phys-ch11-k4"
-   ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2017.md",
-    "line": 97,
-    "reference": "2017年分段补拍照片：0F8D23459369E88446258333B5D02BEF.jpg；已结合用户逐项确认重新识别。"
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "新照片仍没有单色光波长，无法唯一给出条纹数；未擅自补入常见波长。"
-    ]
-   },
-   "occurrences": [
-    "exam-2017-7144681b90acd983"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1,
-   "sourcePhotos": [
-    "0F8D23459369E88446258333B5D02BEF.jpg"
-   ]
-  },
-  {
-   "type": "blank",
-   "stem": [
-    {
-     "k": "p",
      "x": "一平面电磁波在均匀介质中传播时电场强度 $\\vec E(x,y,z,t)=(E_x\\vec x-\\sqrt3\\vec y+\\sqrt5\\vec z)\\exp[i(x+\\sqrt3y+\\sqrt5z-6\\times10^8t)\\times10^6]\\ \\mathrm{V/m}$，那么其传播速度（相速）为____，该均匀介质折射率为____。"
     }
    ],
@@ -32536,94 +32328,6 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "B26847B6DA2357C9F4312921316A4BEE.jpg"
-   ]
-  },
-  {
-   "type": "calc",
-   "stem": [
-    {
-     "k": "p",
-     "x": "在光栅夫朗禾费衍射实验中，所用光波$\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距$f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间的距离$e=1.5\\,\\mathrm{mm}$，并且第4级亮纹缺级。求光栅的缝间距和缝宽，以及第2级亮纹的相对强度？（衍射角很小，$\\sin\\theta\\approx\\theta$。）"
-    }
-   ],
-   "options": [],
-   "answer": [
-    {
-     "k": "p",
-     "x": "光栅常数 $d=0.210933$ mm。按第4级对应单缝第一暗纹的通常约定，缝宽 $a=d/4=0.052733$ mm，第2级相对强度 $I_2/I_0=4/\\pi^2\\approx0.405285$。若未指定对应单缝暗纹的级次，另有 $a=d/2$ 或 $3d/4$，对应相对强度 $0$ 或 $4/(9\\pi^2)\\approx0.045032$。"
-    }
-   ],
-   "analysis": [
-    {
-     "k": "m",
-     "x": "e\\simeq\\frac{f\\lambda}{d}\\Rightarrow d=\\frac{500\\cdot0.0006328}{1.5}=0.210933\\ \\mathrm{mm}."
-    },
-    {
-     "k": "m",
-     "x": "4\\lambda/d=p\\lambda/a\\Rightarrow a=\\frac p4d,\\quad0<a<d\\Rightarrow p=1,2,3."
-    },
-    {
-     "k": "p",
-     "x": "若明确第4级对应单缝第一暗纹，则p=1、a=d/4。p=2时第2级也缺级；p=3时最小缺级仍为第4级。因此只说“第4级缺级”或“首次缺级为第4级”都不能单独排除p=3，主答案另采用第一单缝零点对应第4级的通常约定。"
-    },
-    {
-     "k": "m",
-     "x": "\\frac{I_2}{I_0}=\\left[\\frac{\\sin(2\\pi a/d)}{2\\pi a/d}\\right]^2."
-    },
-    {
-     "k": "p",
-     "x": "以中央主极大强度为归一化基准；a/d=1/4、1/2、3/4分别代入得到答案的三种结果。"
-    }
-   ],
-   "completeness": "complete",
-   "playable": true,
-   "originalText": "在光栅夫琅禾费衍射实验中，所用光波 $\\lambda=632.8\\,\\mathrm{nm}$，透镜焦距 $f=500\\,\\mathrm{mm}$，观察到两相邻亮条纹间距 $e=1.5\\,\\mathrm{mm}$，且第 4 级亮纹缺级。求光栅缝间距、缝宽以及第 2 级亮纹的相对强度。（衍射角很小，$\\sin\\theta\\approx\\theta$。）",
-   "answerAvailability": "review_provided",
-   "id": "past-2017-80e296673bf6a37e",
-   "canonicalId": "past-2017-80e296673bf6a37e",
-   "statusKey": "past-2017-80e296673bf6a37e",
-   "sourceType": "past_exam",
-   "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "phys-ch11",
-   "section": "四、计算题",
-   "number": "3",
-   "name": "2017年 四、计算题",
-   "year": 2017,
-   "order": 1075,
-   "typeName": "计算／简答题",
-   "stemImages": [],
-   "analysisImages": [],
-   "knowledge": {
-    "points": [
-     "多缝干涉与光栅方程"
-    ],
-    "formulas": [],
-    "pitfalls": []
-   },
-   "topics": [
-    "phys-ch11-k4"
-   ],
-   "topicAssignment": "keyword_review_pending",
-   "origin": {
-    "file": "电子版_修订/2017.md",
-    "line": 143,
-    "reference": "2017年分段补拍照片：B26847B6DA2357C9F4312921316A4BEE.jpg、FF3E3B1B174F814D9B7D1D962B65A592.jpg；已结合用户逐项确认重新识别。"
-   },
-   "review": {
-    "needsCheck": true,
-    "notes": [
-     "按2017年分段补拍照片重新识别，11处视觉疑问已由用户确认。",
-     "用户确认f=500 mm；照片只说第4级缺级，未指定它对应单缝第几个零点。主答案采用单缝第一零点对应第4级的课程惯例，解析保留全部可行缝宽。"
-    ]
-   },
-   "occurrences": [
-    "exam-2017-80e296673bf6a37e"
-   ],
-   "duplicateType": "unique",
-   "examFrequency": 1,
-   "sourcePhotos": [
-    "B26847B6DA2357C9F4312921316A4BEE.jpg",
-    "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
    ]
   },
   {
@@ -58689,18 +58393,6 @@
     "exam-2022-5efae1735f3c5989"
    ],
    "reason": "候选相似度 0.869；未确认物理条件及目标完全一致，未合并。"
-  },
-  {
-   "type": "possible_variant",
-   "questionIds": [
-    "past-2017-80e296673bf6a37e",
-    "past-2025-e31566f101993013"
-   ],
-   "originalIds": [
-    "exam-2017-80e296673bf6a37e",
-    "exam-2025-e31566f101993013"
-   ],
-   "reason": "候选相似度 0.875；未确认物理条件及目标完全一致，未合并。"
   },
   {
    "type": "possible_variant",
