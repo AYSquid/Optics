@@ -236,8 +236,8 @@
     "blank": 9,
     "calc": 5
    },
-   "playableCount": 29,
-   "incompleteCount": 1,
+   "playableCount": 30,
+   "incompleteCount": 0,
    "answerCount": 30
   },
   {
@@ -339,8 +339,8 @@
     "choice": 25,
     "calc": 6
    },
-   "playableCount": 30,
-   "incompleteCount": 1,
+   "playableCount": 31,
+   "incompleteCount": 0,
    "answerCount": 31
   },
   {
@@ -390,8 +390,8 @@
     "choice": 30,
     "calc": 5
    },
-   "playableCount": 34,
-   "incompleteCount": 1,
+   "playableCount": 35,
+   "incompleteCount": 0,
    "answerCount": 35
   },
   {
@@ -436,8 +436,8 @@
     "choice": 23,
     "calc": 7
    },
-   "playableCount": 28,
-   "incompleteCount": 2,
+   "playableCount": 30,
+   "incompleteCount": 0,
    "answerCount": 30
   },
   {
@@ -489,8 +489,8 @@
     "choice": 29,
     "calc": 8
    },
-   "playableCount": 36,
-   "incompleteCount": 1,
+   "playableCount": 37,
+   "incompleteCount": 0,
    "answerCount": 37
   },
   {
@@ -10397,8 +10397,8 @@
    "sourceFile": "电子版_修订/2020.md",
    "sourceLine": 173,
    "sourceHash": "15ee199deb2b21bfe08242055a92cf386e2a51812a3a59fd2c5164f69e479960",
-   "completeness": "needs_image",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [
     "IMG_20260927_145741.jpg",
     "IMG_20260927_145741.jpg"
@@ -10449,8 +10449,10 @@
     }
    ],
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-02：完整题面已通过答案与解析审查；详细复核依据保存在本地审查记录。"
+    ]
    },
    "stemImages": [
     {
@@ -13456,20 +13458,33 @@
     {
      "k": "p",
      "x": "有两种光学材料，材料 A 对不同谱线的折射率分别为 $n_C=1.5143,n_D=1.5167,n_F=1.5224$；材料 B 对不同谱线的折射率分别为 $n_C=1.6609,n_D=1.6666,n_F=1.6811$。"
-    },
-    {
-     "k": "p",
-     "x": "(a) 材料 A 色散小　(b) 材料 B 色散小　(c) A、B 色散一致　(d) 无法比较"
     }
    ],
-   "options": [],
+   "options": [
+    {
+     "key": "A",
+     "x": "材料 A 色散小"
+    },
+    {
+     "key": "B",
+     "x": "材料 B 色散小"
+    },
+    {
+     "key": "C",
+     "x": "A、B 色散一致"
+    },
+    {
+     "key": "D",
+     "x": "无法比较"
+    }
+   ],
    "originalText": "有两种光学材料，材料 A 对不同谱线的折射率分别为 $n_C=1.5143,n_D=1.5167,n_F=1.5224$；材料 B 对不同谱线的折射率分别为 $n_C=1.6609,n_D=1.6666,n_F=1.6811$。\n\n(a) 材料 A 色散小　(b) 材料 B 色散小　(c) A、B 色散一致　(d) 无法比较\n\n<!-- 原图：IMG_20260923_104511.jpg -->",
    "originalHeading": "3.",
    "sourceFile": "电子版_修订/2022.md",
    "sourceLine": 21,
    "sourceHash": "b6681dce24532cb84a78a7025c9133f26d3dc6e19255f29ac27744ef3e2cc6b4",
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [
     "IMG_20260923_104511.jpg"
    ],
@@ -13499,8 +13514,10 @@
     }
    ],
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    }
   },
   {
@@ -17398,22 +17415,35 @@
      "x": "关于光亮度，下列说法正确的是："
     },
     {
-     "k": "p",
-     "x": "A 选项是说的发光强度　B 选项说的是照度　C 选项是说单位是尼特　D 选项是上述都不对"
-    },
-    {
      "k": "note",
      "x": "原卷选项按上述说明性文字印刷，照录。"
     }
    ],
-   "options": [],
+   "options": [
+    {
+     "key": "A",
+     "x": "选项是说的发光强度"
+    },
+    {
+     "key": "B",
+     "x": "选项说的是照度"
+    },
+    {
+     "key": "C",
+     "x": "选项是说单位是尼特"
+    },
+    {
+     "key": "D",
+     "x": "选项是上述都不对"
+    }
+   ],
    "originalText": "关于光亮度，下列说法正确的是：\n\nA 选项是说的发光强度　B 选项说的是照度　C 选项是说单位是尼特　D 选项是上述都不对\n\n> 原卷选项按上述说明性文字印刷，照录。\n\n<!-- 原图：IMG_20260923_104452.jpg -->",
    "originalHeading": "29.",
    "sourceFile": "电子版_修订/2023.md",
    "sourceLine": 213,
    "sourceHash": "bb2439ea0140895bb954207ed6daf4007ec832ea5cec4afbd15b0ba8121e716f",
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [
     "IMG_20260923_104452.jpg"
    ],
@@ -17439,8 +17469,10 @@
     }
    ],
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    }
   },
   {
@@ -18454,8 +18486,8 @@
    "sourceFile": "电子版_修订/2024.md",
    "sourceLine": 89,
    "sourceHash": "015048a273ccb1fb43254bafffdc533c693aee079a6729c2ee72ec663f212ef7",
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [
     "IMG_20260923_104431.jpg"
    ],
@@ -18481,8 +18513,10 @@
     }
    ],
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    }
   },
   {
@@ -18610,8 +18644,8 @@
    "sourceFile": "电子版_修订/2024.md",
    "sourceLine": 113,
    "sourceHash": "015048a273ccb1fb43254bafffdc533c693aee079a6729c2ee72ec663f212ef7",
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [
     "IMG_20260923_104431.jpg"
    ],
@@ -18637,8 +18671,10 @@
     }
    ],
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    }
   },
   {
@@ -20702,7 +20738,7 @@
     },
     {
      "key": "D",
-     "x": "D、B、S <!-- 原图：IMG_20260923_104418.jpg --> 在各向异性晶体中，有哪三个物理量相互垂直"
+     "x": "D、B、S"
     }
    ],
    "originalText": "在各向异性晶体中，有哪三个物理量相互垂直\nA. E、B、S\nB. E、D、k\nC. E、B、k\nD. D、B、S\n\n<!-- 原图：IMG_20260923_104418.jpg -->",
@@ -20710,8 +20746,8 @@
    "sourceFile": "电子版_修订/2025.md",
    "sourceLine": 84,
    "sourceHash": "98d5028aa40ef6f8c0ea2f348044fe5d330b80eb7c7f13379087d13bc9248ff6",
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "sourceImages": [
     "IMG_20260923_104418.jpg"
    ],
@@ -20741,8 +20777,10 @@
     }
    ],
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    }
   },
   {
@@ -27459,7 +27497,7 @@
    "number": "15.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 5002,
+   "order": 5003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27639,7 +27677,7 @@
    "number": "17.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 5003,
+   "order": 5004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28082,7 +28120,7 @@
    "number": "22.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 3004,
+   "order": 3005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28263,12 +28301,12 @@
    "statusKey": "past-2016-94012a779f4a65fd",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch13",
    "section": "一、选择题",
    "number": "24.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 2001,
+   "order": 6001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28280,9 +28318,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch13-k11"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2016.md",
     "line": 191
@@ -28311,7 +28349,7 @@
     "changes": "按纸质D及“e光线不符合”补成波法线与光线方向的区别，并补齐C、D。",
     "originalUniquelyRecovered": false
    },
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch13-k11"
   },
   {
    "type": "choice",
@@ -28368,12 +28406,12 @@
    "statusKey": "past-2016-789f674364ee5d76",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch13",
    "section": "一、选择题",
    "number": "25.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 2002,
+   "order": 3001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28385,9 +28423,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch13-k2"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2016.md",
     "line": 199
@@ -28416,7 +28454,7 @@
     "changes": "按纸质D=90°把缺失目的补为完全消除透射光，去掉D中的重复题干。",
     "originalUniquelyRecovered": false
    },
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch13-k2"
   },
   {
    "type": "choice",
@@ -28562,7 +28600,7 @@
    "number": "27.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1003,
+   "order": 1001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28665,12 +28703,12 @@
    "statusKey": "past-2016-f7305958f753ad7e",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "exam-outofscope",
    "section": "一、选择题",
    "number": "28.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 4001,
+   "order": 1004,
    "typeName": "选择题",
    "stemImages": [
     {
@@ -28687,9 +28725,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k4"
+    "exam-outofscope-k1"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2016.md",
     "line": 222
@@ -28711,7 +28749,7 @@
      "line": 36
     }
    ],
-   "studyTopicId": "exam-incomplete-k4"
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "choice",
@@ -28773,7 +28811,7 @@
    "number": "29.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 4002,
+   "order": 4001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28873,7 +28911,7 @@
    "number": "30.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1004,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28965,7 +29003,7 @@
    "number": "31.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1005,
+   "order": 1003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -29215,7 +29253,7 @@
    "number": "3.",
    "name": "2016年 三、填空题",
    "year": 2016,
-   "order": 5004,
+   "order": 5005,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -29439,12 +29477,12 @@
    "statusKey": "past-2016-8dc3ac558639ae05",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch12",
    "section": "四、计算题",
    "number": "1.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 2003,
+   "order": 3005,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -29461,9 +29499,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch12-k2"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2016.md",
     "line": 276
@@ -29485,7 +29523,7 @@
      "line": 78
     }
    ],
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch12-k2"
   },
   {
    "type": "calc",
@@ -29534,7 +29572,7 @@
    "number": "2.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 2004,
+   "order": 2003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29728,7 +29766,7 @@
    "number": "4.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 6008,
+   "order": 6009,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29799,7 +29837,7 @@
    "number": "5.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 9004,
+   "order": 9005,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29880,7 +29918,7 @@
    "number": "6.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 5015,
+   "order": 5017,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29971,7 +30009,7 @@
    "number": "7.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 6002,
+   "order": 6005,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -30091,7 +30129,7 @@
    "number": "8.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 1009,
+   "order": 1020,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -30179,7 +30217,7 @@
    "number": "1",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 1002,
+   "order": 1003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -30621,7 +30659,7 @@
    "number": "9",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 3003,
+   "order": 3004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -30705,7 +30743,7 @@
    "number": "10",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 5014,
+   "order": 5016,
    "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -31300,7 +31338,7 @@
    "number": "17",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 1006,
+   "order": 1019,
    "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -31534,7 +31572,7 @@
    "number": "20",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 1010,
+   "order": 1009,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -32008,7 +32046,7 @@
    "number": "7",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 1013,
+   "order": 1012,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -32080,7 +32118,7 @@
    "number": "8",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 1014,
+   "order": 1013,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -32156,7 +32194,7 @@
    "number": "9",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 1011,
+   "order": 1010,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -32235,7 +32273,7 @@
    "number": "10",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 1012,
+   "order": 1011,
    "typeName": "填空题",
    "stemImages": [
     {
@@ -32502,7 +32540,7 @@
    "number": "4",
    "name": "2017年 四、计算题",
    "year": 2017,
-   "order": 6009,
+   "order": 6010,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -32590,7 +32628,7 @@
    "number": "5",
    "name": "2017年 四、计算题",
    "year": 2017,
-   "order": 9005,
+   "order": 9006,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -32669,7 +32707,7 @@
    "number": "6",
    "name": "2017年 四、计算题",
    "year": 2017,
-   "order": 1015,
+   "order": 1021,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -32864,12 +32902,12 @@
    "statusKey": "past-2018-9db5584364754809",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "geom-ch4",
    "section": "一、选择题",
    "number": "2.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1001,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -32881,9 +32919,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch4-k1"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2018.md",
     "line": 12
@@ -32912,7 +32950,7 @@
     "changes": "采用纸质A，把问题明确为入射空间中与孔阑边缘共轭的轮廓；缺失C按出射窗边缘作练习补项。",
     "originalUniquelyRecovered": false
    },
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch4-k1"
   },
   {
    "type": "choice",
@@ -33107,7 +33145,7 @@
    "number": "5.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1002,
+   "order": 1001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33424,7 +33462,7 @@
    "number": "9.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 2005,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33595,7 +33633,7 @@
    "number": "11. 引自2005年选择第7题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 4003,
+   "order": 4004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33765,7 +33803,7 @@
    "number": "14.　引自 2012 年选择第 9 题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 6001,
+   "order": 6002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33918,7 +33956,7 @@
    "number": "16.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 2008,
+   "order": 2002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33989,7 +34027,7 @@
    "number": "17.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 4003,
+   "order": 4002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -34060,7 +34098,7 @@
    "number": "18.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 4005,
+   "order": 4003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -34141,12 +34179,12 @@
    "statusKey": "past-2018-ecb5b6ff81ba0ef5",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "exam-outofscope",
    "section": "一、选择题",
    "number": "19.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 4004,
+   "order": 1005,
    "typeName": "选择题",
    "stemImages": [
     {
@@ -34163,9 +34201,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k4"
+    "exam-outofscope-k1"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2018.md",
     "line": 96
@@ -34187,7 +34225,7 @@
      "line": 18
     }
    ],
-   "studyTopicId": "exam-incomplete-k4"
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -34360,7 +34398,7 @@
    "number": "3.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 1016,
+   "order": 1014,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34431,7 +34469,7 @@
    "number": "4.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 1017,
+   "order": 1015,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34504,7 +34542,7 @@
    "number": "5.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 1018,
+   "order": 1016,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34575,7 +34613,7 @@
    "number": "6.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 1019,
+   "order": 1017,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34654,7 +34692,7 @@
    "number": "四、几何光学（18 分）",
    "name": "2018年 计算题",
    "year": 2018,
-   "order": 6001,
+   "order": 6004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -34736,12 +34774,12 @@
    "statusKey": "past-2018-598557e48918459a",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch9",
    "section": "计算题",
    "number": "五、电磁波（10 分）",
    "name": "2018年 计算题",
    "year": 2018,
-   "order": 2007,
+   "order": 1009,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -34753,9 +34791,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch9-k1"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2018.md",
     "line": 133
@@ -34777,7 +34815,7 @@
      "line": 52
     }
    ],
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch9-k1"
   },
   {
    "type": "calc",
@@ -35003,12 +35041,12 @@
    "statusKey": "past-2018-a50e0176cb973094",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch13",
    "section": "计算题",
    "number": "九、偏振（14 分）",
    "name": "2018年 计算题",
    "year": 2018,
-   "order": 2006,
+   "order": 9002,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -35020,9 +35058,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch13-k4"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2018.md",
     "line": 147
@@ -35051,7 +35089,7 @@
     "changes": "按纸质符号答案把no/ne保留为参数，最小厚度也要求符号式，不虚构数值。",
     "originalUniquelyRecovered": false
    },
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "choice",
@@ -35323,7 +35361,7 @@
    "number": "3.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1003,
+   "order": 1004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35788,7 +35826,7 @@
    "number": "8.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 5004,
+   "order": 5005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -36346,7 +36384,7 @@
    "number": "14.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 5005,
+   "order": 5006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -36437,7 +36475,7 @@
    "number": "一",
    "name": "2019年 二、计算题",
    "year": 2019,
-   "order": 6003,
+   "order": 6006,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -36529,7 +36567,7 @@
    "number": "二",
    "name": "2019年 二、计算题",
    "year": 2019,
-   "order": 9006,
+   "order": 9007,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -36708,12 +36746,12 @@
    "statusKey": "past-2019-98adc4e316007ffb",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch12",
    "section": "二、计算题",
    "number": "四",
    "name": "2019年 二、计算题",
    "year": 2019,
-   "order": 2009,
+   "order": 6007,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -36725,9 +36763,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch12-k3"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2019.md",
     "line": 132,
@@ -36750,7 +36788,7 @@
      "line": 111
     }
    ],
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch12-k3"
   },
   {
    "type": "calc",
@@ -37480,7 +37518,7 @@
    "number": "7.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1004,
+   "order": 1005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37653,7 +37691,7 @@
    "number": "9.　引自 2008 年选择第 8 题",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 3010,
+   "order": 3011,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -38518,7 +38556,7 @@
    "number": "6.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 5013,
+   "order": 5014,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38668,7 +38706,7 @@
    "number": "8.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 6004,
+   "order": 6005,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -39168,12 +39206,12 @@
    "statusKey": "past-2020-baad089ef2c8291b",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch10",
    "section": "四、计算题（60 分）",
    "number": "2.（10 分）　引自 2006 年牛顿环计算题",
    "name": "2020年 四、计算题（60 分）",
    "year": 2020,
-   "order": 2010,
+   "order": 8006,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -39190,9 +39228,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch10-k12"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2020.md",
     "line": 173,
@@ -39215,7 +39253,7 @@
      "line": 81
     }
    ],
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch10-k12"
   },
   {
    "type": "calc",
@@ -39259,12 +39297,12 @@
    "statusKey": "past-2020-7e0867f4a25129ac",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch11",
    "section": "四、计算题（60 分）",
    "number": "3.（10 分）",
    "name": "2020年 四、计算题（60 分）",
    "year": 2020,
-   "order": 2011,
+   "order": 5015,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -39281,9 +39319,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch11-k4"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2020.md",
     "line": 182,
@@ -39306,7 +39344,7 @@
      "line": 95
     }
    ],
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "calc",
@@ -39363,7 +39401,7 @@
    "number": "4.（10 分）　引自 2005 年计算第 9 题",
    "name": "2020年 四、计算题（60 分）",
    "year": 2020,
-   "order": 6010,
+   "order": 6011,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -39474,7 +39512,7 @@
    "number": "5.（10 分）　引自 2012 年大题第 8 题",
    "name": "2020年 四、计算题（60 分）",
    "year": 2020,
-   "order": 9007,
+   "order": 9008,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -40968,7 +41006,7 @@
    "number": "16.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 5006,
+   "order": 5007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -41512,7 +41550,7 @@
    "number": "22.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 3005,
+   "order": 3006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -41678,7 +41716,7 @@
    "number": "1.",
    "name": "2021年 二、填空题（7 分）",
    "year": 2021,
-   "order": 5005,
+   "order": 5006,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -42075,10 +42113,10 @@
    "statusKey": "past-2021-acce7ae6e80c8a89",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "order": 1003,
+   "chapterId": "geom-ch3",
+   "order": 3003,
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch3-k3"
    ],
    "knowledge": {
     "points": [
@@ -42099,7 +42137,7 @@
      "alt": "2021 坐标解图：第一棱镜双线面按屋脊两次反射计入"
     }
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "type": "calc",
    "stem": [
     {
@@ -42155,7 +42193,7 @@
     "exam-2021-acce7ae6e80c8a89"
    ],
    "examFrequency": 1,
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch3-k3"
   },
   {
    "id": "past-2021-d1a3372210c1a949",
@@ -42163,10 +42201,10 @@
    "statusKey": "past-2021-d1a3372210c1a949",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "order": 1004,
+   "chapterId": "geom-ch4",
+   "order": 6001,
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch4-k6"
    ],
    "knowledge": {
     "points": [
@@ -42187,7 +42225,7 @@
      "alt": "2021 年完整光路答案：透明底细线，示意坐标不表示原题数值"
     }
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "type": "calc",
    "stem": [
     {
@@ -42271,7 +42309,7 @@
     "exam-2021-d1a3372210c1a949"
    ],
    "examFrequency": 1,
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch4-k6"
   },
   {
    "type": "calc",
@@ -42634,7 +42672,7 @@
    "number": "5.（10 分）",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 6011,
+   "order": 6012,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -42863,7 +42901,7 @@
    "number": "8.（10 分）",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 9008,
+   "order": 9009,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -43041,7 +43079,7 @@
    "number": "2.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 3001,
+   "order": 3002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43083,13 +43121,26 @@
     {
      "k": "p",
      "x": "有两种光学材料，材料 A 对不同谱线的折射率分别为 $n_C=1.5143,n_D=1.5167,n_F=1.5224$；材料 B 对不同谱线的折射率分别为 $n_C=1.6609,n_D=1.6666,n_F=1.6811$。"
-    },
-    {
-     "k": "p",
-     "x": "(a) 材料 A 色散小　(b) 材料 B 色散小　(c) A、B 色散一致　(d) 无法比较"
     }
    ],
-   "options": [],
+   "options": [
+    {
+     "key": "A",
+     "x": "材料 A 色散小"
+    },
+    {
+     "key": "B",
+     "x": "材料 B 色散小"
+    },
+    {
+     "key": "C",
+     "x": "A、B 色散一致"
+    },
+    {
+     "key": "D",
+     "x": "无法比较"
+    }
+   ],
    "answer": [
     {
      "k": "p",
@@ -43106,8 +43157,8 @@
      "x": "Abbe数越大，相对色散越弱，所以材料A色散较小。"
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "有两种光学材料，材料 A 对不同谱线的折射率分别为 $n_C=1.5143,n_D=1.5167,n_F=1.5224$；材料 B 对不同谱线的折射率分别为 $n_C=1.6609,n_D=1.6666,n_F=1.6811$。\n\n(a) 材料 A 色散小　(b) 材料 B 色散小　(c) A、B 色散一致　(d) 无法比较\n\n<!-- 原图：IMG_20260923_104511.jpg -->",
    "answerAvailability": "reference_provided",
    "id": "past-2022-018ca449b3dc4a89",
@@ -43115,12 +43166,12 @@
    "statusKey": "past-2022-018ca449b3dc4a89",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "geom-ch3",
    "section": "一、选择题（25×2＝50 分）",
    "number": "3.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1005,
+   "order": 5001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43132,16 +43183,18 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch3-k5"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2022.md",
     "line": 21
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    },
    "occurrences": [
     "exam-2022-018ca449b3dc4a89"
@@ -43154,7 +43207,7 @@
      "line": 11
     }
    ],
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch3-k5"
   },
   {
    "type": "choice",
@@ -44364,7 +44417,7 @@
    "number": "17.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 5007,
+   "order": 5008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44981,7 +45034,7 @@
    "number": "25.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 4004,
+   "order": 4005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -45543,7 +45596,7 @@
    "number": "6.（12 分）",
    "name": "2022年 三、计算题",
    "year": 2022,
-   "order": 9009,
+   "order": 9010,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -45803,7 +45856,7 @@
    "number": "3.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 5008,
+   "order": 5009,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46961,7 +47014,7 @@
    "number": "16.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 6002,
+   "order": 6003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47124,12 +47177,12 @@
    "statusKey": "past-2023-dffe31562a8d89bc",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch11",
    "section": "一、选择题（每题 2 分，共 60 分）",
    "number": "18.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 2012,
+   "order": 5001,
    "typeName": "选择题",
    "stemImages": [
     {
@@ -47146,9 +47199,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch11-k4"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2023.md",
     "line": 134
@@ -47170,7 +47223,7 @@
      "line": 26
     }
    ],
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -47312,7 +47365,7 @@
    "number": "20.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 3006,
+   "order": 3007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47776,7 +47829,7 @@
    "number": "25.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 5002,
+   "order": 5003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -48072,15 +48125,28 @@
      "x": "关于光亮度，下列说法正确的是："
     },
     {
-     "k": "p",
-     "x": "A 选项是说的发光强度　B 选项说的是照度　C 选项是说单位是尼特　D 选项是上述都不对"
-    },
-    {
      "k": "note",
      "x": "原卷选项按上述说明性文字印刷，照录。"
     }
    ],
-   "options": [],
+   "options": [
+    {
+     "key": "A",
+     "x": "选项是说的发光强度"
+    },
+    {
+     "key": "B",
+     "x": "选项说的是照度"
+    },
+    {
+     "key": "C",
+     "x": "选项是说单位是尼特"
+    },
+    {
+     "key": "D",
+     "x": "选项是上述都不对"
+    }
+   ],
    "answer": [
     {
      "k": "p",
@@ -48093,8 +48159,8 @@
      "x": "$1\\,\\mathrm{nit}=1\\,\\mathrm{cd/m^2}$；照度为 $\\mathrm{lx}$，发光强度为 $\\mathrm{cd}$。"
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "关于光亮度，下列说法正确的是：\n\nA 选项是说的发光强度　B 选项说的是照度　C 选项是说单位是尼特　D 选项是上述都不对\n\n> 原卷选项按上述说明性文字印刷，照录。\n\n<!-- 原图：IMG_20260923_104452.jpg -->",
    "answerAvailability": "reference_provided",
    "id": "past-2023-160539b52495ed1d",
@@ -48102,12 +48168,12 @@
    "statusKey": "past-2023-160539b52495ed1d",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "geom-ch5",
    "section": "一、选择题（每题 2 分，共 60 分）",
    "number": "29.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1006,
+   "order": 3001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -48119,16 +48185,18 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch5-k2"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2023.md",
     "line": 213
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    },
    "occurrences": [
     "exam-2023-160539b52495ed1d"
@@ -48141,7 +48209,7 @@
      "line": 37
     }
    ],
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch5-k2"
   },
   {
    "type": "choice",
@@ -48593,7 +48661,7 @@
    "number": "4.",
    "name": "2023年 三、计算题",
    "year": 2023,
-   "order": 6012,
+   "order": 6013,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -48676,7 +48744,7 @@
    "number": "5.",
    "name": "2023年 三、计算题",
    "year": 2023,
-   "order": 9010,
+   "order": 9011,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -48952,7 +49020,7 @@
    "number": "3.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 5003,
+   "order": 5004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49414,8 +49482,8 @@
      "x": "长焦距、较小f数（较大的相对孔径）和较近对焦距离都会减小景深。四项中第2项同时满足这三项。"
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "摄影时候，需要突出人物，虚化背景，下列选项正确的是\n\nA. 使用短焦镜头，小光圈数，远对准距离\nB. 使用长焦镜头，小光圈数，近对准距离\nB. 使用短焦镜头，大光圈数，近对准距离\nB. 使用长焦镜头，大光圈数，远对准距离\n\n【原卷四项标签印为 A、B、B、B；本版已按 A、B、C、D 顺序修正】\n\n<!-- 原图：IMG_20260923_104431.jpg；已目视核对 -->",
    "answerAvailability": "reference_provided",
    "id": "past-2024-124c4d6e86e999b6",
@@ -49423,12 +49491,12 @@
    "statusKey": "past-2024-124c4d6e86e999b6",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "inst-c7",
    "section": "选择题",
    "number": "8.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 3002,
+   "order": 3003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49440,16 +49508,18 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k1"
+    "inst-c7-k3"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2024.md",
     "line": 89
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    },
    "occurrences": [
     "exam-2024-124c4d6e86e999b6"
@@ -49462,7 +49532,7 @@
      "line": 16
     }
    ],
-   "studyTopicId": "exam-incomplete-k3"
+   "studyTopicId": "inst-c7-k3"
   },
   {
    "type": "choice",
@@ -49610,8 +49680,8 @@
      "x": "孔阑在单折射球面曲率中心时，主光线径向入射，对各色光都不偏折；同一参考像面上的主光线交点不发生随波长的位移，因此倍率色差消失。球心孔阑还可消除彗差、像散及畸变，不能消除球差、场曲和位置色差。题中末项重复印作A，网站按原顺序以D作为第四项键；正确的是第一项A。"
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "对于折射单球面，孔径光阑合适位置时，可以消除的初级像差有\n\nA. 彗差、像散、畸变、倍率色差\nB. 彗差、像散、畸变\nC. 像散、场曲、倍率色差\nA. 场曲、球差、位置色差\n\n【末项原卷印作 A（应为 D）；本版已修正为 D。】\n\n<!-- 原图：IMG_20260923_104431.jpg；已目视核对 -->",
    "answerAvailability": "reference_provided",
    "id": "past-2024-11e45ab2ab825856",
@@ -49619,12 +49689,12 @@
    "statusKey": "past-2024-11e45ab2ab825856",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "geom-ch6",
    "section": "选择题",
    "number": "10.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1007,
+   "order": 6001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49636,16 +49706,18 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch6-k4"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2024.md",
     "line": 113
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    },
    "occurrences": [
     "exam-2024-11e45ab2ab825856"
@@ -49658,7 +49730,7 @@
      "line": 18
     }
    ],
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch6-k4"
   },
   {
    "type": "choice",
@@ -50657,7 +50729,7 @@
    "number": "22.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 3007,
+   "order": 3008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -50745,7 +50817,7 @@
    "number": "23.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 6003,
+   "order": 6004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51033,7 +51105,7 @@
    "number": "3.",
    "name": "2024年 三、计算题",
    "year": 2024,
-   "order": 8006,
+   "order": 8008,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -51386,7 +51458,7 @@
    "number": "7.",
    "name": "2024年 三、计算题",
    "year": 2024,
-   "order": 9011,
+   "order": 9012,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -51834,7 +51906,7 @@
    "number": "5.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 5009,
+   "order": 5010,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52104,7 +52176,7 @@
    "number": "8.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 4005,
+   "order": 4006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52179,7 +52251,7 @@
     },
     {
      "key": "D",
-     "x": "D、B、S <!-- 原图：IMG_20260923_104418.jpg --> 在各向异性晶体中，有哪三个物理量相互垂直"
+     "x": "D、B、S"
     }
    ],
    "answer": [
@@ -52198,8 +52270,8 @@
      "x": "各向异性晶体中E通常不垂直k，且D与E不必平行，所以其他组选项不满足三者两两垂直。"
     }
    ],
-   "completeness": "partial",
-   "playable": false,
+   "completeness": "complete",
+   "playable": true,
    "originalText": "在各向异性晶体中，有哪三个物理量相互垂直\nA. E、B、S\nB. E、D、k\nC. E、B、k\nD. D、B、S\n\n<!-- 原图：IMG_20260923_104418.jpg -->",
    "answerAvailability": "reference_provided",
    "id": "past-2025-03467b8d059d418c",
@@ -52207,12 +52279,12 @@
    "statusKey": "past-2025-03467b8d059d418c",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch13",
    "section": "一、选择题（每题 2 分）",
    "number": "9.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 2013,
+   "order": 4001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52224,16 +52296,18 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch13-k5"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2025.md",
     "line": 84
    },
    "review": {
-    "needsCheck": true,
-    "notes": "题干或配图尚不完整。"
+    "needsCheck": false,
+    "notes": [
+     "2026-10-04：题面条件及四个选项均已收录；选项排印/解析问题已处理，撤销遗留的未补全标记。参考答案与解析保留。"
+    ]
    },
    "occurrences": [
     "exam-2025-03467b8d059d418c"
@@ -52246,7 +52320,7 @@
      "line": 18
     }
    ],
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch13-k5"
   },
   {
    "type": "choice",
@@ -53339,7 +53413,7 @@
    "number": "22.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 3008,
+   "order": 3009,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -54035,10 +54109,10 @@
    "statusKey": "past-2025-acce7ae6e80c8a89",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "order": 1008,
+   "chapterId": "geom-ch3",
+   "order": 3004,
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch3-k3"
    ],
    "knowledge": {
     "points": [
@@ -54059,7 +54133,7 @@
      "alt": "2025屋脊棱镜坐标解图：a上、纸内、右；b下、纸外、右；累计反射3/7次"
     }
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "type": "calc",
    "stem": [
     {
@@ -54137,7 +54211,7 @@
     "exam-2025-acce7ae6e80c8a89"
    ],
    "examFrequency": 1,
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch3-k3"
   },
   {
    "id": "past-2025-d1a3372210c1a949",
@@ -54145,10 +54219,10 @@
    "statusKey": "past-2025-d1a3372210c1a949",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "order": 1009,
+   "chapterId": "geom-ch4",
+   "order": 6002,
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch4-k6"
    ],
    "knowledge": {
     "points": [
@@ -54169,7 +54243,7 @@
      "alt": "2025 年完整光路答案：透明底细线，示意坐标不表示原题数值"
     }
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "type": "calc",
    "stem": [
     {
@@ -54263,7 +54337,7 @@
     "exam-2025-d1a3372210c1a949"
    ],
    "examFrequency": 1,
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch4-k6"
   },
   {
    "type": "calc",
@@ -54499,12 +54573,12 @@
    "statusKey": "past-2025-968eea5ae2e6316a",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch10",
    "section": "三、计算题",
    "number": "3.",
    "name": "2025年 三、计算题",
    "year": 2025,
-   "order": 2014,
+   "order": 2003,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -54521,9 +54595,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch10-k2"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2025.md",
     "line": 320
@@ -54545,7 +54619,7 @@
      "line": 93
     }
    ],
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch10-k2"
   },
   {
    "type": "calc",
@@ -54689,7 +54763,7 @@
    "number": "5.",
    "name": "2025年 三、计算题",
    "year": 2025,
-   "order": 6013,
+   "order": 6014,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -54774,7 +54848,7 @@
    "number": "6.",
    "name": "2025年 三、计算题",
    "year": 2025,
-   "order": 9012,
+   "order": 9013,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -54958,7 +55032,7 @@
    "number": "2.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 3002,
+   "order": 3003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55334,7 +55408,7 @@
    "number": "7.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 6003,
+   "order": 6004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56322,7 +56396,7 @@
    "number": "18.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 5010,
+   "order": 5011,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56412,7 +56486,7 @@
    "number": "21.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 3009,
+   "order": 3010,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56600,7 +56674,7 @@
    "number": "23.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 5011,
+   "order": 5012,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56780,7 +56854,7 @@
    "number": "25.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 4006,
+   "order": 4007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -57534,10 +57608,10 @@
    "statusKey": "past-2026-acce7ae6e80c8a89",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "order": 1010,
+   "chapterId": "geom-ch3",
+   "order": 3005,
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch3-k3"
    ],
    "knowledge": {
     "points": [
@@ -57558,7 +57632,7 @@
      "alt": "2026屋脊棱镜坐标解图：a左上、纸外、右上；b右、纸内、上；累计反射6/10次"
     }
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "type": "calc",
    "stem": [
     {
@@ -57622,7 +57696,7 @@
     "exam-2026-acce7ae6e80c8a89"
    ],
    "examFrequency": 1,
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch3-k3"
   },
   {
    "id": "past-2026-d1a3372210c1a949",
@@ -57630,10 +57704,10 @@
    "statusKey": "past-2026-d1a3372210c1a949",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "order": 1011,
+   "chapterId": "geom-ch4",
+   "order": 6003,
    "topics": [
-    "exam-incomplete-k1"
+    "geom-ch4-k6"
    ],
    "knowledge": {
     "points": [
@@ -57654,7 +57728,7 @@
      "alt": "2026 年完整光路答案：透明底细线，示意坐标不表示原题数值"
     }
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "type": "calc",
    "stem": [
     {
@@ -57738,7 +57812,7 @@
     "exam-2026-d1a3372210c1a949"
    ],
    "examFrequency": 1,
-   "studyTopicId": "exam-incomplete-k1"
+   "studyTopicId": "geom-ch4-k6"
   },
   {
    "id": "past-2026-4d438e48fa3c8f09",
@@ -57746,10 +57820,10 @@
    "statusKey": "past-2026-4d438e48fa3c8f09",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
-   "order": 2016,
+   "chapterId": "phys-ch13",
+   "order": 6006,
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch13-k11"
    ],
    "knowledge": {
     "points": [
@@ -57770,7 +57844,7 @@
      "alt": "负晶体惠更斯答案图：o 圆、e 椭圆、同一界面点切线及分别标注的 k、S；示意非实测角度"
     }
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "type": "calc",
    "stem": [
     {
@@ -57846,7 +57920,7 @@
     "exam-2026-4d438e48fa3c8f09"
    ],
    "examFrequency": 1,
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch13-k11"
   },
   {
    "type": "calc",
@@ -57943,7 +58017,7 @@
    "number": "1.",
    "name": "2026年 三、计算题",
    "year": 2026,
-   "order": 6004,
+   "order": 6007,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -58031,12 +58105,12 @@
    "statusKey": "past-2026-06f1df120fd02bf9",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "exam-incomplete",
+   "chapterId": "phys-ch10",
    "section": "三、计算题",
    "number": "2.",
    "name": "2026年 三、计算题",
    "year": 2026,
-   "order": 2015,
+   "order": 8007,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -58053,9 +58127,9 @@
     "pitfalls": []
    },
    "topics": [
-    "exam-incomplete-k2"
+    "phys-ch10-k12"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_study_topic",
    "origin": {
     "file": "电子版_修订/2026.md",
     "line": 355
@@ -58077,7 +58151,7 @@
      "line": 50
     }
    ],
-   "studyTopicId": "exam-incomplete-k2"
+   "studyTopicId": "phys-ch10-k12"
   },
   {
    "type": "calc",
@@ -58201,7 +58275,7 @@
    "number": "4.",
    "name": "2026年 三、计算题",
    "year": 2026,
-   "order": 6014,
+   "order": 6015,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [
@@ -58299,7 +58373,7 @@
    "number": "5.",
    "name": "2026年 三、计算题",
    "year": 2026,
-   "order": 9013,
+   "order": 9014,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -58348,7 +58422,7 @@
    "number": "1",
    "name": "2017年 三、画图题",
    "year": 2017,
-   "order": 3003,
+   "order": 3006,
    "type": "calc",
    "typeName": "作图题",
    "revisionKind": "drawing",
@@ -58527,7 +58601,7 @@
    "number": "3",
    "name": "2017年 三、画图题",
    "year": 2017,
-   "order": 6005,
+   "order": 6007,
    "type": "calc",
    "typeName": "作图题",
    "revisionKind": "drawing",
