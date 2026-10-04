@@ -93,7 +93,7 @@
  function attach(){
   if(attached)return;key=OpticsCloud.localKey('gopt.study-home.v1');
   try{const saved=JSON.parse(localStorage.getItem(key)||'null');if(saved&&typeof saved==='object'&&!Array.isArray(saved)){state.resume=saved.resume||null;state.days=saved.days&&typeof saved.days==='object'&&!Array.isArray(saved.days)?saved.days:{};state.examDate=/^\d{4}-\d{2}-\d{2}$/.test(saved.examDate)?saved.examDate:'';}}catch(e){writable=false;}
-  attached=true;by('home-return').onclick=open;
+  attached=true;by('home-return').onclick=open;document.querySelector('.brand-home').onclick=e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open();};
   if(!state.resume&&legacy&&DATA.byId[legacy.lastQuestionId]&&['all','chapter','kn','exam'].includes(legacy.scope?.type)){const q=DATA.byId[legacy.lastQuestionId];state.resume={kind:'optics',scope:legacy.scope,filter:legacy.statusFilter||'all',questionId:q.id,title:legacy.scope.type==='exam'?q.year+' 年真题':(findChapter(q.chapterId)?.title||'全部题目'),number:String(q.number),at:new Date().toISOString()};save();}
   window.addEventListener('hashchange',()=>{if(location.hash==='#/dashboard'){show();}else{const was=active;exit();if(was&&location.hash!=='#/home')render();capture();}});
   document.addEventListener('click',e=>{const option=e.target.closest('#options [data-option-key],.retest-options [data-option-key],.eng-option');if(option&&!option.disabled){const q=option.matches('.eng-option')?EnglishExams.current:option.closest('.retest-card')?DATA.byId[option.closest('.retest-card').dataset.question]:currentQuestion();if(q)record(q.canonicalId||q.statusKey||q.id);}});
