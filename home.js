@@ -63,11 +63,11 @@ function initialize(){if(initialized)return;initialized=true;
    finally{signingIn=false;}return;
   }
   if(!auth().user)return;
-  if(!ready&&['cloud','bank','exams','resume'].includes(action))return;
-  switch(action){case 'ready':try{sessionStorage.setItem('optics.entry.seen.v3','1');}catch(e){}update();break;case 'replay':mount(true);break;case 'logout':try{await auth().signOut();}catch(_error){reply({type:'optics-auth-error',message:'退出失败，请重试'});}break;case 'cloud':$('cloud-open').click();break;case 'bank':location.hash='/bank';openBank();route();break;case 'exams':location.hash='/exams';openExamHome();route();break;case 'resume':if(ui.scope.type==='exams')openBank();location.hash=ui.scope.type==='english'?'/exams/english/'+ui.scope.paperId:ui.scope.type==='exam'?'/year/'+ui.scope.paperId:'/resume';route();break;}
+  if(!ready&&['cloud','bank','exams','resume','dashboard'].includes(action))return;
+  switch(action){case 'ready':try{sessionStorage.setItem('optics.entry.seen.v3','1');}catch(e){}update();break;case 'replay':mount(true);break;case 'logout':try{await auth().signOut();}catch(_error){reply({type:'optics-auth-error',message:'退出失败，请重试'});}break;case 'cloud':$('cloud-open').click();break;case 'bank':location.hash='/bank';openBank();route();break;case 'exams':location.hash='/exams';openExamHome();route();break;case 'dashboard':OpticsDashboard.open();route();break;case 'resume':OpticsDashboard.resume();route();break;}
  });
  window.addEventListener('hashchange',route);window.addEventListener('optics:progress',update);window.addEventListener('optics:sync-status',update);route();
 }
-function attach(){if(ready)return;ready=true;$('home-return').onclick=()=>{location.hash='/home';};route();}
+function attach(){if(ready)return;ready=true;$('home-return').onclick=()=>{window.OpticsDashboard?.open();};route();}
 window.OpticsHome={initialize,attach,update};
 })();

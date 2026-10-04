@@ -27,7 +27,7 @@
  function image(src,alt,into){const url=sourceUrl(typeof src==='string'?src:src.src||src.path||'');if(!url)return;const img=node('img','eng-image');img.src=url;img.alt=alt||'试题材料';img.loading='lazy';img.tabIndex=0;const open=()=>openLightbox(url,img.alt);img.onclick=open;img.onkeydown=e=>{if(e.key==='Enter')open();};into.append(img);}
  function current(){return group?.questions[qindex];}
  function position(){return {groupId:group.id,question:qindex};}
- function remember(){if(!paper||!group)return;EnglishStore.set('position:'+paper.id,position());EnglishStore.set('last',{paperId:paper.id,...position()});}
+ function remember(){if(!paper||!group)return;EnglishStore.set('position:'+paper.id,position());EnglishStore.set('last',{paperId:paper.id,...position()});window.OpticsDashboard?.englishPosition(paper,group,current());}
  function scrollKey(){return 'scroll:'+paper.id+':'+group.id;}
  function saveScroll(){if(paper&&group&&by('eng-passage'))EnglishStore.set(scrollKey(),by('eng-passage').scrollTop);}
  function versions(q){return EnglishStore.list('version:'+q.id+':').map(r=>r.value).filter(Boolean).sort((a,b)=>a.version-b.version);}
@@ -142,7 +142,7 @@
  async function submitGrade(q,answer,submit){
   if(!answer.trim()){by('eng-save-note').textContent='请先输入答案';return;}
   const gradingPaper=paper,gradingGroup=group;const prior=versions(q),previous=prior.filter(v=>v.status==='complete').at(-1),id=crypto.randomUUID(),key='version:'+q.id+':'+id;
-  const record={id,questionId:q.id,version:prior.length+1,answer,status:'pending',createdAt:new Date().toISOString(),result:null};EnglishStore.set(key,record);submit.disabled=true;by('eng-save-note').textContent='正在批改，当前答案已保存为 Version '+String(record.version).padStart(2,'0');renderVersions(q);
+  const record={id,questionId:q.id,version:prior.length+1,answer,status:'pending',createdAt:new Date().toISOString(),result:null};EnglishStore.set(key,record);window.OpticsDashboard?.record(q.id);submit.disabled=true;by('eng-save-note').textContent='正在批改，当前答案已保存为 Version '+String(record.version).padStart(2,'0');renderVersions(q);
   try{const result=await EnglishGrader.grade(gradingPaper,gradingGroup,q,answer,previous);EnglishStore.set(key,{...record,status:'complete',result});}
   catch(e){EnglishStore.set(key,{...record,status:'error',error:e.message});}
   finally{if(current()?.id===q.id&&by('eng-grading')){submit.disabled=false;by('eng-save-note').textContent='';renderVersions(q);}}

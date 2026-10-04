@@ -716,7 +716,7 @@ function integrate(){
  const welcome=document.querySelector('.rhine-welcome-screen .content-wrapper');
  if(welcome&&!welcomed){welcomed=true;
   nav=document.createElement('nav');nav.className='optics-links';nav.inert=true;nav.setAttribute('aria-label','学习导航');
-  [['resume','继续学习','CONTINUE'],['bank','章节题库','QUESTION BANK'],['exams','历年真题','EXAM ARCHIVE'],['cloud','云端记录','CLOUD RECORDS'],['logout','退出登录','SIGN OUT']].forEach(([action,label,sub],i)=>{const cell=document.createElement('span');cell.className='optics-drawer';cell.style.setProperty('--i',String(i));const b=document.createElement('button');b.type='button';b.innerHTML=label+'<small>'+sub+'</small>';b.onclick=()=>send(action);cell.append(b);nav.append(cell);});
+  [['dashboard','学习首页','STUDY HOME'],['bank','章节题库','QUESTION BANK'],['exams','历年真题','EXAM ARCHIVE'],['cloud','云端记录','CLOUD RECORDS'],['logout','退出登录','SIGN OUT']].forEach(([action,label,sub],i)=>{const cell=document.createElement('span');cell.className='optics-drawer';cell.style.setProperty('--i',String(i));const b=document.createElement('button');b.type='button';b.innerHTML=label+'<small>'+sub+'</small>';b.onclick=()=>send(action);cell.append(b);nav.append(cell);});
   const status=document.createElement('p');status.className='optics-status';status.id='optics-status';status.textContent='工程光学 · 学习终端已就绪';welcome.append(nav);nav.append(status);syncHomeLogoLayout();setTimeout(syncHomeLogoLayout,120);
   const replay=document.createElement('button');replay.className='optics-replay';replay.textContent='↻ 重播开场';replay.onclick=()=>send('replay');document.body.append(replay);
   observer.disconnect();if(complete)reveal();   // 动画已完成才立即显示；否则等 optics:welcome-complete

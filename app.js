@@ -1288,6 +1288,7 @@ function boot() {
       if(window.OpticsCloud) OpticsCloud.attach();
       if(window.OpticsHome) OpticsHome.attach();
       if(window.OpticsStudyTools) OpticsStudyTools.attach();
+      if(window.OpticsDashboard) OpticsDashboard.attach();
       document.title = '工程光学刷题（' + DATA.questions.length + ' 题）';
     } catch (e) {
       fatal('题库数据解析失败。', String(e && e.stack ? e.stack : e));

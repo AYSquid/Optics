@@ -21,7 +21,7 @@
  const status=q=>getStatus(statusKeyOf(q))||'none';
  const favorite=q=>!!state.favorites[canonical(q)];
  function persist(){
-  try{localStorage.setItem(key(),JSON.stringify(state));storageError='';return true;}
+  try{localStorage.setItem(key(),JSON.stringify(state));storageError='';window.OpticsDashboard?.retestPosition(state.session);return true;}
   catch(e){storageError='本机保存失败，请导出收藏备份。本次改动仍保留在当前页面。';announce(storageError);return false;}
  }
  function load(){
@@ -237,7 +237,7 @@
   if(!result){
    const submit=btn(auto?'提交答案':'完成作答 · 对照答案',()=>{
     const pick=s.picks[q.id]||'';if(auto&&!validChoiceSelection(q,pick)){live.textContent='请先选择答案。';return;}
-    s.results[q.id]={kind:auto?'objective':'manual',correct:auto?pick.split('').sort().join('')===keys.slice().sort().join(''):null,status:''};
+    window.OpticsDashboard?.record(canonical(q));s.results[q.id]={kind:auto?'objective':'manual',correct:auto?pick.split('').sort().join('')===keys.slice().sort().join(''):null,status:''};
     if(auto){const id=canonical(q);if(s.results[q.id].correct)delete state.mistakes[id];else state.mistakes[id]=new Date().toISOString();}
     persist();renderHub();
    },'study-button study-primary');card.append(submit);
