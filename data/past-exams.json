@@ -26241,7 +26241,7 @@
    "number": "1.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1000,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -26274,7 +26274,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 10
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k2"
   },
   {
    "type": "choice",
@@ -26365,7 +26366,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 11
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -26435,7 +26437,7 @@
    "number": "3.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1002,
+   "order": 1001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -26468,7 +26470,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 12
     }
-   ]
+   ],
+   "studyTopicId": "inst-c3-k1"
   },
   {
    "type": "choice",
@@ -26525,12 +26528,12 @@
    "statusKey": "past-2016-81a6dd96a15167dd",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch2",
+   "chapterId": "geom-ch6",
    "section": "一、选择题",
    "number": "4.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1003,
+   "order": 2003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -26563,7 +26566,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 13
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k1"
   },
   {
    "type": "choice",
@@ -26625,7 +26629,7 @@
    "number": "5.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1004,
+   "order": 3002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -26658,7 +26662,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 14
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch3-k3"
   },
   {
    "type": "choice",
@@ -26720,7 +26725,7 @@
    "number": "6.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1005,
+   "order": 3001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -26762,7 +26767,8 @@
     "answerSource": "IMG_20260928_135446.jpg，第6题A",
     "changes": "按纸质A限定源像匹配孔阑；C恢复为视场光阑边缘与物面边缘共轭，消除第二个错误选项。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "inst-c5-k4"
   },
   {
    "type": "choice",
@@ -26816,7 +26822,7 @@
    "number": "7.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1006,
+   "order": 8001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -26849,7 +26855,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 16
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k4"
   },
   {
    "type": "choice",
@@ -26903,7 +26910,7 @@
    "number": "8.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1007,
+   "order": 9002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -26936,7 +26943,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 17
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k12"
   },
   {
    "type": "choice",
@@ -26994,7 +27002,7 @@
    "number": "9.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1008,
+   "order": 6001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27029,7 +27037,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 18
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k3"
   },
   {
    "type": "choice",
@@ -27083,7 +27092,7 @@
    "number": "10.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1009,
+   "order": 4001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27119,7 +27128,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 19
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k9"
   },
   {
    "type": "choice",
@@ -27169,7 +27179,7 @@
    "number": "11.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1010,
+   "order": 11001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27202,7 +27212,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 20
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -27256,7 +27267,7 @@
    "number": "12.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1011,
+   "order": 6001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27289,7 +27300,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 21
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k3"
   },
   {
    "type": "choice",
@@ -27347,7 +27359,7 @@
    "number": "13.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1012,
+   "order": 10002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27380,7 +27392,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 22
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k14"
   },
   {
    "type": "choice",
@@ -27446,7 +27459,7 @@
    "number": "15.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1013,
+   "order": 5002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27479,7 +27492,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 23
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -27541,7 +27555,7 @@
    "number": "16.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1014,
+   "order": 7002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27574,7 +27588,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 24
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k5"
   },
   {
    "type": "choice",
@@ -27624,7 +27639,7 @@
    "number": "17.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1015,
+   "order": 5003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27657,7 +27672,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 25
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -27707,7 +27723,7 @@
    "number": "18.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1016,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27740,7 +27756,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 26
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k2"
   },
   {
    "type": "choice",
@@ -27798,7 +27815,7 @@
    "number": "19.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1017,
+   "order": 7002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27832,7 +27849,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 27
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k6"
   },
   {
    "type": "choice",
@@ -27886,7 +27904,7 @@
    "number": "20.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1018,
+   "order": 1003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -27921,7 +27939,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 28
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k1"
   },
   {
    "type": "choice",
@@ -27975,7 +27994,7 @@
    "number": "21.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1019,
+   "order": 4004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28008,7 +28027,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 29
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -28062,7 +28082,7 @@
    "number": "22.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1020,
+   "order": 3004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28097,7 +28117,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 30
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k2"
   },
   {
    "type": "choice",
@@ -28151,7 +28172,7 @@
    "number": "23.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1021,
+   "order": 8004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28184,7 +28205,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 31
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k3"
   },
   {
    "type": "choice",
@@ -28246,7 +28268,7 @@
    "number": "24.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 3,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28288,7 +28310,8 @@
     "answerSource": "IMG_20260928_135451.jpg，第24题D",
     "changes": "按纸质D及“e光线不符合”补成波法线与光线方向的区别，并补齐C、D。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "choice",
@@ -28350,7 +28373,7 @@
    "number": "25.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 4,
+   "order": 2002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28392,7 +28415,8 @@
     "answerSource": "IMG_20260928_135451.jpg，第25题D",
     "changes": "按纸质D=90°把缺失目的补为完全消除透射光，去掉D中的重复题干。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "choice",
@@ -28450,7 +28474,7 @@
    "number": "26.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1024,
+   "order": 8002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28483,7 +28507,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 34
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k4"
   },
   {
    "type": "choice",
@@ -28537,7 +28562,7 @@
    "number": "27.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 3,
+   "order": 1003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28570,7 +28595,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 35
     }
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "choice",
@@ -28644,7 +28670,7 @@
    "number": "28.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 1,
+   "order": 4001,
    "typeName": "选择题",
    "stemImages": [
     {
@@ -28684,7 +28710,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 36
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k4"
   },
   {
    "type": "choice",
@@ -28746,7 +28773,7 @@
    "number": "29.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 2,
+   "order": 4002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28779,7 +28806,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 37
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k4"
   },
   {
    "type": "choice",
@@ -28845,7 +28873,7 @@
    "number": "30.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 6,
+   "order": 1004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28878,7 +28906,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 38
     }
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "choice",
@@ -28936,7 +28965,7 @@
    "number": "31.",
    "name": "2016年 一、选择题",
    "year": 2016,
-   "order": 7,
+   "order": 1005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -28969,7 +28998,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 39
     }
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -29014,7 +29044,7 @@
    "number": "1.",
    "name": "2016年 三、填空题",
    "year": 2016,
-   "order": 1030,
+   "order": 2008,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -29047,7 +29077,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 48
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k2"
   },
   {
    "type": "blank",
@@ -29092,7 +29123,7 @@
    "number": "2.",
    "name": "2016年 三、填空题",
    "year": 2016,
-   "order": 1334,
+   "order": 4004,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -29134,7 +29165,8 @@
     "answerSource": "IMG_20260928_135453.jpg，填空第2题",
     "changes": "按纸质“正”补充实际像高v>6mm；修复“高度变”为畸变。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch6-k6"
   },
   {
    "type": "blank",
@@ -29183,7 +29215,7 @@
    "number": "3.",
    "name": "2016年 三、填空题",
    "year": 2016,
-   "order": 1032,
+   "order": 5004,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -29216,7 +29248,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 60
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch3-k5"
   },
   {
    "type": "blank",
@@ -29253,7 +29286,7 @@
    "number": "4.",
    "name": "2016年 三、填空题",
    "year": 2016,
-   "order": 1033,
+   "order": 1012,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -29286,7 +29319,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 67
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "blank",
@@ -29327,7 +29361,7 @@
    "number": "5.",
    "name": "2016年 三、填空题",
    "year": 2016,
-   "order": 8,
+   "order": 1007,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -29360,7 +29394,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 72
     }
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "calc",
@@ -29409,7 +29444,7 @@
    "number": "1.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 5,
+   "order": 2003,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -29449,7 +29484,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 78
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "calc",
@@ -29498,7 +29534,7 @@
    "number": "2.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 6,
+   "order": 2004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29531,7 +29567,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 86
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "calc",
@@ -29592,7 +29629,7 @@
    "number": "3.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 1037,
+   "order": 6003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29625,7 +29662,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 92
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k11"
   },
   {
    "type": "calc",
@@ -29690,7 +29728,7 @@
    "number": "4.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 1038,
+   "order": 6008,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29723,7 +29761,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 102
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k3"
   },
   {
    "type": "calc",
@@ -29760,7 +29799,7 @@
    "number": "5.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 1039,
+   "order": 9004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29795,7 +29834,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 113
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "calc",
@@ -29840,7 +29880,7 @@
    "number": "6.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 1040,
+   "order": 5015,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29873,7 +29913,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 125
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "calc",
@@ -29930,7 +29971,7 @@
    "number": "7.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 1041,
+   "order": 6002,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -29972,7 +30013,8 @@
     "answerSource": "IMG_20260928_135501.jpg，计算七最终倍率及50%渐晕",
     "changes": "优先纸质最终倍率大小0.01，由总焦距24mm反解整组调焦量0.24mm；按倒立实像取β=-0.01、主点物距2424mm。纸解0.6mm及其960.9mm物距不同时采用。前镜口径按纸质线性50%渐晕取25.96mm。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch4-k6"
   },
   {
    "type": "calc",
@@ -30049,7 +30091,7 @@
    "number": "8.",
    "name": "2016年 四、计算题",
    "year": 2016,
-   "order": 9,
+   "order": 1009,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -30082,7 +30124,8 @@
      "file": "电子版_修订/2016_答案.md",
      "line": 150
     }
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "choice",
@@ -30136,7 +30179,7 @@
    "number": "1",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 12,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -30169,7 +30212,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k1"
   },
   {
    "type": "choice",
@@ -30227,7 +30271,7 @@
    "number": "2",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 13,
+   "order": 4001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -30260,7 +30304,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k2"
   },
   {
    "type": "choice",
@@ -30314,7 +30359,7 @@
    "number": "5",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 15,
+   "order": 1001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -30347,7 +30392,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
-   ]
+   ],
+   "studyTopicId": "inst-c5-k1"
   },
   {
    "type": "choice",
@@ -30401,7 +30447,7 @@
    "number": "7",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 1049,
+   "order": 9001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -30434,7 +30480,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k6"
   },
   {
    "type": "blank",
@@ -30475,7 +30522,7 @@
    "number": "8",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 17,
+   "order": 8005,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -30511,7 +30558,8 @@
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
    ],
    "revisionKind": "blank",
-   "originalQuestionType": "choice"
+   "originalQuestionType": "choice",
+   "studyTopicId": "phys-ch10-k12"
   },
   {
    "type": "choice",
@@ -30573,7 +30621,7 @@
    "number": "9",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 18,
+   "order": 3003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -30607,7 +30655,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k2"
   },
   {
    "type": "calc",
@@ -30656,7 +30705,7 @@
    "number": "10",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 19,
+   "order": 5014,
    "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -30693,7 +30742,8 @@
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
    ],
    "revisionKind": "calc",
-   "originalQuestionType": "choice"
+   "originalQuestionType": "choice",
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -30751,7 +30801,7 @@
    "number": "11",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 1053,
+   "order": 1004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -30785,7 +30835,8 @@
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg",
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k1"
   },
   {
    "type": "blank",
@@ -30826,7 +30877,7 @@
    "number": "12",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 20,
+   "order": 9008,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -30863,7 +30914,8 @@
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
    ],
    "revisionKind": "blank",
-   "originalQuestionType": "choice"
+   "originalQuestionType": "choice",
+   "studyTopicId": "phys-ch9-k12"
   },
   {
    "type": "choice",
@@ -30921,7 +30973,7 @@
    "number": "13",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 21,
+   "order": 4003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -30954,7 +31006,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "calc",
@@ -30999,7 +31052,7 @@
    "number": "14",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 22,
+   "order": 8010,
    "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -31035,7 +31088,8 @@
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
    ],
    "revisionKind": "calc",
-   "originalQuestionType": "choice"
+   "originalQuestionType": "choice",
+   "studyTopicId": "phys-ch9-k4"
   },
   {
    "type": "choice",
@@ -31089,7 +31143,7 @@
    "number": "15",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 23,
+   "order": 8003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -31122,7 +31176,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k3"
   },
   {
    "type": "blank",
@@ -31167,7 +31222,7 @@
    "number": "16",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 24,
+   "order": 10006,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -31203,7 +31258,8 @@
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
    ],
    "revisionKind": "blank",
-   "originalQuestionType": "choice"
+   "originalQuestionType": "choice",
+   "studyTopicId": "phys-ch10-k6"
   },
   {
    "type": "calc",
@@ -31244,7 +31300,7 @@
    "number": "17",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 7,
+   "order": 1006,
    "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -31280,7 +31336,8 @@
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
    ],
    "revisionKind": "calc",
-   "originalQuestionType": "choice"
+   "originalQuestionType": "choice",
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "calc",
@@ -31321,7 +31378,7 @@
    "number": "18",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 25,
+   "order": 9010,
    "typeName": "简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -31357,7 +31414,8 @@
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
    ],
    "revisionKind": "calc",
-   "originalQuestionType": "choice"
+   "originalQuestionType": "choice",
+   "studyTopicId": "phys-ch9-k12"
   },
   {
    "type": "blank",
@@ -31398,7 +31456,7 @@
    "number": "19",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 8,
+   "order": 1008,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -31434,7 +31492,8 @@
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
    ],
    "revisionKind": "blank",
-   "originalQuestionType": "choice"
+   "originalQuestionType": "choice",
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -31475,7 +31534,7 @@
    "number": "20",
    "name": "2017年 一、选择题",
    "year": 2017,
-   "order": 9,
+   "order": 1010,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -31511,7 +31570,8 @@
     "36ED8C0C40E00EC221E35494D8BD1EB1.jpg"
    ],
    "revisionKind": "blank",
-   "originalQuestionType": "choice"
+   "originalQuestionType": "choice",
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -31556,7 +31616,7 @@
    "number": "1",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 26,
+   "order": 5006,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -31591,7 +31651,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "0F8D23459369E88446258333B5D02BEF.jpg"
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k4"
   },
   {
    "type": "blank",
@@ -31640,7 +31701,7 @@
    "number": "2",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 1064,
+   "order": 7006,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -31674,7 +31735,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "0F8D23459369E88446258333B5D02BEF.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k11"
   },
   {
    "type": "blank",
@@ -31719,7 +31781,7 @@
    "number": "4",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 27,
+   "order": 1004,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -31752,7 +31814,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "0F8D23459369E88446258333B5D02BEF.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k1"
   },
   {
    "type": "blank",
@@ -31793,7 +31856,7 @@
    "number": "5",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 1067,
+   "order": 5005,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -31827,7 +31890,8 @@
    "sourcePhotos": [
     "0F8D23459369E88446258333B5D02BEF.jpg",
     "0A9084972EF966FAFEDF3431505E7A95.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k4"
   },
   {
    "type": "blank",
@@ -31864,7 +31928,7 @@
    "number": "6",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 1068,
+   "order": 7010,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -31898,7 +31962,8 @@
    "sourcePhotos": [
     "0F8D23459369E88446258333B5D02BEF.jpg",
     "0A9084972EF966FAFEDF3431505E7A95.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k5"
   },
   {
    "type": "blank",
@@ -31943,7 +32008,7 @@
    "number": "7",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 13,
+   "order": 1013,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -31977,7 +32042,8 @@
    "sourcePhotos": [
     "0F8D23459369E88446258333B5D02BEF.jpg",
     "0A9084972EF966FAFEDF3431505E7A95.jpg"
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -32014,7 +32080,7 @@
    "number": "8",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 14,
+   "order": 1014,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -32048,7 +32114,8 @@
    "sourcePhotos": [
     "0F8D23459369E88446258333B5D02BEF.jpg",
     "0A9084972EF966FAFEDF3431505E7A95.jpg"
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -32089,7 +32156,7 @@
    "number": "9",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 10,
+   "order": 1011,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -32122,7 +32189,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "0A9084972EF966FAFEDF3431505E7A95.jpg"
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -32167,7 +32235,7 @@
    "number": "10",
    "name": "2017年 二、填空题",
    "year": 2017,
-   "order": 11,
+   "order": 1012,
    "typeName": "填空题",
    "stemImages": [
     {
@@ -32205,7 +32273,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "0A9084972EF966FAFEDF3431505E7A95.jpg"
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "calc",
@@ -32266,7 +32335,7 @@
    "number": "1",
    "name": "2017年 四、计算题",
    "year": 2017,
-   "order": 2,
+   "order": 2002,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -32304,7 +32373,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "B26847B6DA2357C9F4312921316A4BEE.jpg"
-   ]
+   ],
+   "studyTopicId": "inst-c11-k2"
   },
   {
    "type": "calc",
@@ -32349,7 +32419,7 @@
    "number": "2",
    "name": "2017年 四、计算题",
    "year": 2017,
-   "order": 1357,
+   "order": 11014,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -32382,7 +32452,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "B26847B6DA2357C9F4312921316A4BEE.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "calc",
@@ -32431,7 +32502,7 @@
    "number": "4",
    "name": "2017年 四、计算题",
    "year": 2017,
-   "order": 1076,
+   "order": 6009,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -32465,7 +32536,8 @@
    "sourcePhotos": [
     "B26847B6DA2357C9F4312921316A4BEE.jpg",
     "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k3"
   },
   {
    "type": "calc",
@@ -32518,7 +32590,7 @@
    "number": "5",
    "name": "2017年 四、计算题",
    "year": 2017,
-   "order": 1077,
+   "order": 9005,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -32551,7 +32623,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "calc",
@@ -32596,7 +32669,7 @@
    "number": "6",
    "name": "2017年 四、计算题",
    "year": 2017,
-   "order": 17,
+   "order": 1015,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -32629,7 +32702,8 @@
    "examFrequency": 1,
    "sourcePhotos": [
     "FF3E3B1B174F814D9B7D1D962B65A592.jpg"
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "choice",
@@ -32695,7 +32769,7 @@
    "number": "1.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1079,
+   "order": 4002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -32728,7 +32802,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 10
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k2"
   },
   {
    "type": "choice",
@@ -32794,7 +32869,7 @@
    "number": "2.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 33,
+   "order": 1001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -32836,7 +32911,8 @@
     "answerSource": "IMG_20260928_135438.jpg，第2题A",
     "changes": "采用纸质A，把问题明确为入射空间中与孔阑边缘共轭的轮廓；缺失C按出射窗边缘作练习补项。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "type": "choice",
@@ -32881,12 +32957,12 @@
    "statusKey": "past-2018-670b96b63e7ff1d5",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch4",
+   "chapterId": "geom-ch1",
    "section": "一、选择题",
    "number": "3.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1081,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -32919,7 +32995,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 12
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k2"
   },
   {
    "type": "choice",
@@ -32951,12 +33028,12 @@
    "statusKey": "past-2018-35cb3be4039cb527",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch2",
+   "chapterId": "geom-ch1",
    "section": "一、选择题",
    "number": "4.　引自 2006 年选择第 4 题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1337,
+   "order": 4005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -32992,7 +33069,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 13
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k5"
   },
   {
    "type": "choice",
@@ -33029,7 +33107,7 @@
    "number": "5.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 34,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33056,7 +33134,8 @@
     "exam-2018-89975e6f0813661b"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "type": "choice",
@@ -33093,7 +33172,7 @@
    "number": "6.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 35,
+   "order": 3001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33126,7 +33205,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 14
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k3"
   },
   {
    "type": "choice",
@@ -33176,7 +33256,7 @@
    "number": "7.　引自 2007 年选择第 14 题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1269,
+   "order": 8005,
    "typeName": "选择题",
    "stemImages": [
     {
@@ -33211,7 +33291,8 @@
     "exam-2018-a987259740457e67"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "phys-ch9-k4"
   },
   {
    "type": "choice",
@@ -33273,7 +33354,7 @@
    "number": "8.　引自 2007 年选择第 16 题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1086,
+   "order": 11002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33301,7 +33382,8 @@
     "exam-2018-4f4fd9b3f50b869d"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -33342,7 +33424,7 @@
    "number": "9.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 36,
+   "order": 2005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33375,7 +33457,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 15
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "choice",
@@ -33429,7 +33512,7 @@
    "number": "10. 引自2005年选择第9题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1362,
+   "order": 10004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33457,7 +33540,8 @@
     "exam-2018-aa8b40169aa7b78e"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "phys-ch10-k6"
   },
   {
    "type": "choice",
@@ -33511,7 +33595,7 @@
    "number": "11. 引自2005年选择第7题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 40,
+   "order": 4003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33539,7 +33623,8 @@
     "exam-2018-68a470a8e72d592d"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "phys-ch13-k5"
   },
   {
    "type": "choice",
@@ -33601,7 +33686,7 @@
    "number": "13.　引自 2008 年选择第 10 题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1359,
+   "order": 4013,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33629,7 +33714,8 @@
     "exam-2018-205247028d846679"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -33679,7 +33765,7 @@
    "number": "14.　引自 2012 年选择第 9 题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1092,
+   "order": 6001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33707,7 +33793,8 @@
     "exam-2018-6b12bcc9ca291714"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "phys-ch13-k11"
   },
   {
    "type": "choice",
@@ -33765,7 +33852,7 @@
    "number": "15.　引自 2010 年选择第 3 题",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 1093,
+   "order": 1005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33793,7 +33880,8 @@
     "exam-2018-bf81e6c5f3860341"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "phys-ch12-k1"
   },
   {
    "type": "choice",
@@ -33830,7 +33918,7 @@
    "number": "16.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 42,
+   "order": 2008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33863,7 +33951,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 16
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "choice",
@@ -33900,7 +33989,7 @@
    "number": "17.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 29,
+   "order": 4003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33933,7 +34022,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 17
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k4"
   },
   {
    "type": "choice",
@@ -33970,7 +34060,7 @@
    "number": "18.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 43,
+   "order": 4005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -33997,7 +34087,8 @@
     "exam-2018-2be06a95b9235ba9"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "exam-incomplete-k4"
   },
   {
    "type": "choice",
@@ -34055,7 +34146,7 @@
    "number": "19.",
    "name": "2018年 一、选择题",
    "year": 2018,
-   "order": 30,
+   "order": 4004,
    "typeName": "选择题",
    "stemImages": [
     {
@@ -34095,7 +34186,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 18
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k4"
   },
   {
    "type": "blank",
@@ -34132,7 +34224,7 @@
    "number": "1.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 1098,
+   "order": 5004,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34165,7 +34257,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 22
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k3"
   },
   {
    "type": "blank",
@@ -34197,12 +34290,12 @@
    "statusKey": "past-2018-247e6b2a92ae4de4",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "inst-c10",
+   "chapterId": "inst-c11",
    "section": "二、填空题",
    "number": "2.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 1099,
+   "order": 1001,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34229,7 +34322,8 @@
     "exam-2018-247e6b2a92ae4de4"
    ],
    "duplicateType": "unique",
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "inst-c11-k3"
   },
   {
    "type": "blank",
@@ -34266,7 +34360,7 @@
    "number": "3.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 20,
+   "order": 1016,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34299,7 +34393,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 23
     }
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -34336,7 +34431,7 @@
    "number": "4.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 21,
+   "order": 1017,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34371,7 +34466,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 25
     }
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -34408,7 +34504,7 @@
    "number": "5.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 22,
+   "order": 1018,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34441,7 +34537,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 26
     }
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "blank",
@@ -34478,7 +34575,7 @@
    "number": "6.",
    "name": "2018年 二、填空题",
    "year": 2018,
-   "order": 23,
+   "order": 1019,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -34511,7 +34608,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 27
     }
-   ]
+   ],
+   "studyTopicId": "exam-outofscope-k1"
   },
   {
    "type": "calc",
@@ -34556,7 +34654,7 @@
    "number": "四、几何光学（18 分）",
    "name": "2018年 计算题",
    "year": 2018,
-   "order": 39,
+   "order": 6001,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -34593,7 +34691,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 46
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k6"
   },
   {
    "type": "calc",
@@ -34642,7 +34741,7 @@
    "number": "五、电磁波（10 分）",
    "name": "2018年 计算题",
    "year": 2018,
-   "order": 41,
+   "order": 2007,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -34677,7 +34776,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 52
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "calc",
@@ -34729,12 +34829,12 @@
    "statusKey": "past-2018-245a9004210f1efe",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "phys-ch11",
+   "chapterId": "phys-ch10",
    "section": "计算题",
    "number": "六、杨氏干涉（10 分）",
    "name": "2018年 计算题",
    "year": 2018,
-   "order": 1107,
+   "order": 3003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -34767,7 +34867,8 @@
      "file": "电子版_修订/2018_答案.md",
      "line": 58
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k8"
   },
   {
    "type": "calc",
@@ -34812,7 +34913,7 @@
    "number": "七、闪耀光栅（10 分）",
    "name": "2018年 计算题",
    "year": 2018,
-   "order": 1108,
+   "order": 9004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [
@@ -34861,7 +34962,8 @@
     "answerSource": "IMG_20260928_135433.jpg，计算七",
     "changes": "保持30°为衍射角并明确属第一问；按纸质两波长反解缝距3.0μm，原1.5μm更正。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "phys-ch11-k6"
   },
   {
    "type": "calc",
@@ -34906,7 +35008,7 @@
    "number": "九、偏振（14 分）",
    "name": "2018年 计算题",
    "year": 2018,
-   "order": 38,
+   "order": 2006,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -34948,7 +35050,8 @@
     "answerSource": "IMG_20260928_135433.jpg，计算九",
     "changes": "按纸质符号答案把no/ne保留为参数，最小厚度也要求符号式，不虚构数值。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "choice",
@@ -35010,7 +35113,7 @@
    "number": "1.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1111,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35052,7 +35155,8 @@
     "answerSource": "IMG_20260928_135430.jpg，第1题D",
     "changes": "采用纸质答案所用的中心成像系统像差定义，排除有意改变镜面形状的哈哈镜映射及景深离焦。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -35122,7 +35226,7 @@
    "number": "2.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1112,
+   "order": 5001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35164,7 +35268,8 @@
     "answerSource": "IMG_20260928_135430.jpg，第2题E",
     "changes": "把像差具体化为一阶轴向色差，允许零总光焦度，保持纸质E四种。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch6-k3"
   },
   {
    "type": "choice",
@@ -35218,7 +35323,7 @@
    "number": "3.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1113,
+   "order": 1003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35251,7 +35356,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k1"
   },
   {
    "type": "choice",
@@ -35305,7 +35411,7 @@
    "number": "4.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1114,
+   "order": 3001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35338,7 +35444,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k1"
   },
   {
    "type": "choice",
@@ -35391,12 +35498,12 @@
    "statusKey": "past-2019-6e5764cef82fcb99",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "inst-c10",
+   "chapterId": "inst-c3",
    "section": "一、选择题",
    "number": "5.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1115,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35429,7 +35536,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "inst-c3-k2"
   },
   {
    "type": "choice",
@@ -35483,7 +35591,7 @@
    "number": "6.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1362,
+   "order": 2005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35516,7 +35624,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k2"
   },
   {
    "type": "choice",
@@ -35578,7 +35687,7 @@
    "number": "7.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1117,
+   "order": 4003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35620,7 +35729,8 @@
     "answerSource": "IMG_20260928_135430.jpg，第7题D",
     "changes": "两片焦距均取正、镜间距非负；缺失D以10mm重构，保持纸质D。D原值不能由字母唯一恢复。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch2-k2"
   },
   {
    "type": "choice",
@@ -35678,7 +35788,7 @@
    "number": "8.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1118,
+   "order": 5004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35711,7 +35821,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -35769,7 +35880,7 @@
    "number": "9.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1119,
+   "order": 10003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35802,7 +35913,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k14"
   },
   {
    "type": "choice",
@@ -35864,7 +35976,7 @@
    "number": "10.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1120,
+   "order": 4005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35897,7 +36009,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -35947,7 +36060,7 @@
    "number": "11.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1121,
+   "order": 6002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -35980,7 +36093,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k3"
   },
   {
    "type": "choice",
@@ -36038,7 +36152,7 @@
    "number": "12.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1122,
+   "order": 1006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -36073,7 +36187,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k1"
   },
   {
    "type": "choice",
@@ -36139,7 +36254,7 @@
    "number": "13.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1123,
+   "order": 11003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -36172,7 +36287,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -36230,7 +36346,7 @@
    "number": "14.",
    "name": "2019年 一、选择题",
    "year": 2019,
-   "order": 1124,
+   "order": 5005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -36263,7 +36379,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 6
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "calc",
@@ -36320,7 +36437,7 @@
    "number": "一",
    "name": "2019年 二、计算题",
    "year": 2019,
-   "order": 1125,
+   "order": 6003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -36362,7 +36479,8 @@
     "answerSource": "IMG_20260928_135404.jpg，计算一",
     "changes": "按纸解0.45mm的调焦机构明确只移L₁；15.13°明确为半视场，保留精确复算值。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch4-k6"
   },
   {
    "type": "calc",
@@ -36411,7 +36529,7 @@
    "number": "二",
    "name": "2019年 二、计算题",
    "year": 2019,
-   "order": 1126,
+   "order": 9006,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -36446,7 +36564,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 76
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "calc",
@@ -36491,7 +36610,7 @@
    "number": "三",
    "name": "2019年 二、计算题",
    "year": 2019,
-   "order": 1127,
+   "order": 8003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -36524,7 +36643,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 92
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k12"
   },
   {
    "type": "calc",
@@ -36593,7 +36713,7 @@
    "number": "四",
    "name": "2019年 二、计算题",
    "year": 2019,
-   "order": 44,
+   "order": 2009,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -36629,7 +36749,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 111
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "calc",
@@ -36698,7 +36819,7 @@
    "number": "五",
    "name": "2019年 二、计算题",
    "year": 2019,
-   "order": 1129,
+   "order": 1006,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -36731,7 +36852,8 @@
      "file": "电子版_修订/2019_答案.md",
      "line": 127
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k1"
   },
   {
    "type": "choice",
@@ -36797,7 +36919,7 @@
    "number": "1.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1293,
+   "order": 2003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -36839,7 +36961,8 @@
     "answerSource": "IMG_20260928_135358.jpg，第1题A",
     "changes": "限定为有限物点到有限像点的完善成像，允许理想元件模型；B的“透镜/镜面”改为镜面。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch1-k2"
   },
   {
    "type": "choice",
@@ -36897,7 +37020,7 @@
    "number": "2.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1131,
+   "order": 4002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -36930,7 +37053,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 10
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch5-k3"
   },
   {
    "type": "choice",
@@ -36984,7 +37108,7 @@
    "number": "3.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1132,
+   "order": 3002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37017,7 +37141,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 11
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k1"
   },
   {
    "type": "choice",
@@ -37071,7 +37196,7 @@
    "number": "4.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1294,
+   "order": 5003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37104,7 +37229,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 12
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k4"
   },
   {
    "type": "choice",
@@ -37174,7 +37300,7 @@
    "number": "5.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1295,
+   "order": 3001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37207,7 +37333,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 13
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k3"
   },
   {
    "type": "choice",
@@ -37265,7 +37392,7 @@
    "number": "6.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1318,
+   "order": 3003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37298,7 +37425,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 14
     }
-   ]
+   ],
+   "studyTopicId": "inst-c5-k4"
   },
   {
    "type": "choice",
@@ -37352,7 +37480,7 @@
    "number": "7.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1363,
+   "order": 1004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37385,7 +37513,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 15
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k1"
   },
   {
    "type": "choice",
@@ -37439,7 +37568,7 @@
    "number": "8.　引自 2005 年选择第 8 题",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1360,
+   "order": 5004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37473,7 +37602,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 16
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k4"
   },
   {
    "type": "choice",
@@ -37523,7 +37653,7 @@
    "number": "9.　引自 2008 年选择第 8 题",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1364,
+   "order": 3010,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37557,7 +37687,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 17
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k2"
   },
   {
    "type": "choice",
@@ -37619,7 +37750,7 @@
    "number": "10—11.　引自 2005 年选择第 2 题（原卷在此处占两个题号）",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1359,
+   "order": 8004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37653,7 +37784,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 18
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k12"
   },
   {
    "type": "choice",
@@ -37715,7 +37847,7 @@
    "number": "12.　引自 2010 年选择第 4 题",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1358,
+   "order": 7007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37751,7 +37883,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 19
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k5"
   },
   {
    "type": "choice",
@@ -37801,7 +37934,7 @@
    "number": "13.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1141,
+   "order": 11004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37834,7 +37967,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 20
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -37888,7 +38022,7 @@
    "number": "14.　引自 2006 年选择第 13 题",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1353,
+   "order": 9007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -37922,7 +38056,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 21
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k12"
   },
   {
    "type": "choice",
@@ -37971,12 +38106,12 @@
    "statusKey": "past-2020-3108da1ef70f1d39",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "phys-ch11",
+   "chapterId": "phys-ch12",
    "section": "一、选择题（每题 2 分，共 34 分）",
    "number": "15.",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1143,
+   "order": 3001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -38009,7 +38144,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 22
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k2"
   },
   {
    "type": "choice",
@@ -38063,7 +38199,7 @@
    "number": "16.　引自 2006 年选择第 6 题",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1365,
+   "order": 5003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -38097,7 +38233,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 23
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k10"
   },
   {
    "type": "choice",
@@ -38151,7 +38288,7 @@
    "number": "17.　引自 2005 年选择第 10 题",
    "name": "2020年 一、选择题（每题 2 分，共 34 分）",
    "year": 2020,
-   "order": 1359,
+   "order": 10008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -38185,7 +38322,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 24
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k14"
   },
   {
    "type": "blank",
@@ -38222,7 +38360,7 @@
    "number": "4.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 1147,
+   "order": 4002,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38255,7 +38393,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 29
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k6"
   },
   {
    "type": "blank",
@@ -38308,7 +38447,7 @@
    "number": "5.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 1148,
+   "order": 9009,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38341,7 +38480,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 30
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k12"
   },
   {
    "type": "blank",
@@ -38378,7 +38518,7 @@
    "number": "6.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 1149,
+   "order": 5013,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38411,7 +38551,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 31
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "blank",
@@ -38456,7 +38597,7 @@
    "number": "7.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 1354,
+   "order": 7007,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38489,7 +38630,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 32
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k11"
   },
   {
    "type": "blank",
@@ -38521,12 +38663,12 @@
    "statusKey": "past-2020-ea87092f5a3019bb",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch4",
+   "chapterId": "geom-ch6",
    "section": "二、填空题（35 分）",
    "number": "8.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 1151,
+   "order": 6004,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38559,7 +38701,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 33
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k4"
   },
   {
    "type": "blank",
@@ -38596,7 +38739,7 @@
    "number": "9.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 1152,
+   "order": 1013,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38629,7 +38772,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 34
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "blank",
@@ -38666,7 +38810,7 @@
    "number": "10.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 1153,
+   "order": 3001,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38699,7 +38843,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 35
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k5"
   },
   {
    "type": "blank",
@@ -38744,7 +38889,7 @@
    "number": "11.　在 2008 年选择第 10 题基础上要求具体算出传函值",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 1361,
+   "order": 4015,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38780,7 +38925,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 36
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "blank",
@@ -38837,7 +38983,7 @@
    "number": "12.",
    "name": "2020年 二、填空题（35 分）",
    "year": 2020,
-   "order": 1155,
+   "order": 3002,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -38870,7 +39016,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 37
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k5"
   },
   {
    "type": "calc",
@@ -38939,7 +39086,7 @@
    "number": "1.（20 分）",
    "name": "2020年 四、计算题（60 分）",
    "year": 2020,
-   "order": 3,
+   "order": 2003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -38972,7 +39119,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 43
     }
-   ]
+   ],
+   "studyTopicId": "inst-c11-k2"
   },
   {
    "type": "calc",
@@ -39025,7 +39173,7 @@
    "number": "2.（10 分）　引自 2006 年牛顿环计算题",
    "name": "2020年 四、计算题（60 分）",
    "year": 2020,
-   "order": 46,
+   "order": 2010,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -39066,7 +39214,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 81
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "calc",
@@ -39115,7 +39264,7 @@
    "number": "3.（10 分）",
    "name": "2020年 四、计算题（60 分）",
    "year": 2020,
-   "order": 47,
+   "order": 2011,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -39156,7 +39305,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 95
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "calc",
@@ -39213,7 +39363,7 @@
    "number": "4.（10 分）　引自 2005 年计算第 9 题",
    "name": "2020年 四、计算题（60 分）",
    "year": 2020,
-   "order": 1159,
+   "order": 6010,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -39249,7 +39399,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 122
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k3"
   },
   {
    "type": "calc",
@@ -39323,7 +39474,7 @@
    "number": "5.（10 分）　引自 2012 年大题第 8 题",
    "name": "2020年 四、计算题（60 分）",
    "year": 2020,
-   "order": 1160,
+   "order": 9007,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -39357,7 +39508,8 @@
      "file": "电子版_修订/2020_答案.md",
      "line": 134
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "choice",
@@ -39406,12 +39558,12 @@
    "statusKey": "past-2021-a6c6a207db112dc0",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch2",
+   "chapterId": "geom-ch1",
    "section": "一、选择题（46 分）",
    "number": "1.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1161,
+   "order": 4002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -39444,7 +39596,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 9
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k5"
   },
   {
    "type": "choice",
@@ -39502,7 +39655,7 @@
    "number": "2.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1364,
+   "order": 2006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -39535,7 +39688,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 10
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k2"
   },
   {
    "type": "choice",
@@ -39601,7 +39755,7 @@
    "number": "3.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1163,
+   "order": 5002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -39634,7 +39788,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 11
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k4"
   },
   {
    "type": "choice",
@@ -39712,7 +39867,7 @@
    "number": "4.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1164,
+   "order": 5002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -39745,7 +39900,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 12
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k4"
   },
   {
    "type": "choice",
@@ -39807,7 +39963,7 @@
    "number": "5.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1165,
+   "order": 4004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -39840,7 +39996,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 13
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k2"
   },
   {
    "type": "choice",
@@ -39898,7 +40055,7 @@
    "number": "6.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 7,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -39931,7 +40088,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 14
     }
-   ]
+   ],
+   "studyTopicId": "inst-c7-k1"
   },
   {
    "type": "choice",
@@ -39985,7 +40143,7 @@
    "number": "7.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1167,
+   "order": 4002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40018,7 +40176,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 15
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k3"
   },
   {
    "type": "choice",
@@ -40068,7 +40227,7 @@
    "number": "8.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1168,
+   "order": 1003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40101,7 +40260,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 16
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -40155,7 +40315,7 @@
    "number": "9.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1169,
+   "order": 3002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40188,7 +40348,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 17
     }
-   ]
+   ],
+   "studyTopicId": "inst-c5-k4"
   },
   {
    "type": "choice",
@@ -40242,7 +40403,7 @@
    "number": "10.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1170,
+   "order": 3003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40275,7 +40436,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 18
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k1"
   },
   {
    "type": "choice",
@@ -40353,7 +40515,7 @@
    "number": "11.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1171,
+   "order": 1001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40386,7 +40548,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 19
     }
-   ]
+   ],
+   "studyTopicId": "inst-c10-k1"
   },
   {
    "type": "choice",
@@ -40448,7 +40611,7 @@
    "number": "12.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1172,
+   "order": 6003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40481,7 +40644,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 20
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k3"
   },
   {
    "type": "choice",
@@ -40539,7 +40703,7 @@
    "number": "13.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1173,
+   "order": 4001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40573,7 +40737,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 21
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k9"
   },
   {
    "type": "choice",
@@ -40627,7 +40792,7 @@
    "number": "14.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1174,
+   "order": 1003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40660,7 +40825,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 22
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k1"
   },
   {
    "type": "choice",
@@ -40718,7 +40884,7 @@
    "number": "15.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1175,
+   "order": 11005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40751,7 +40917,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 23
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -40801,7 +40968,7 @@
    "number": "16.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1176,
+   "order": 5006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40834,7 +41001,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 24
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -40892,7 +41060,7 @@
    "number": "17.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1177,
+   "order": 7003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -40925,7 +41093,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 25
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k5"
   },
   {
    "type": "choice",
@@ -40983,7 +41152,7 @@
    "number": "18.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1178,
+   "order": 2002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -41016,7 +41185,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 26
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k2"
   },
   {
    "type": "choice",
@@ -41078,7 +41248,7 @@
    "number": "19.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1179,
+   "order": 4006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -41111,7 +41281,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 27
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -41165,7 +41336,7 @@
    "number": "20.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1180,
+   "order": 6002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -41198,7 +41369,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 28
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k3"
   },
   {
    "type": "choice",
@@ -41252,7 +41424,7 @@
    "number": "21.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1181,
+   "order": 11001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -41285,7 +41457,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 29
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k8"
   },
   {
    "type": "choice",
@@ -41339,7 +41512,7 @@
    "number": "22.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1182,
+   "order": 3005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -41375,7 +41548,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 30
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k2"
   },
   {
    "type": "choice",
@@ -41433,7 +41607,7 @@
    "number": "23.",
    "name": "2021年 一、选择题（46 分）",
    "year": 2021,
-   "order": 1183,
+   "order": 10004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -41466,7 +41640,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 31
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k14"
   },
   {
    "type": "blank",
@@ -41503,7 +41678,7 @@
    "number": "1.",
    "name": "2021年 二、填空题（7 分）",
    "year": 2021,
-   "order": 1184,
+   "order": 5005,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -41536,7 +41711,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 35
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch3-k5"
   },
   {
    "type": "blank",
@@ -41573,7 +41749,7 @@
    "number": "2.",
    "name": "2021年 二、填空题（7 分）",
    "year": 2021,
-   "order": 1185,
+   "order": 2005,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -41606,7 +41782,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 36
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k2"
   },
   {
    "type": "blank",
@@ -41643,7 +41820,7 @@
    "number": "3.",
    "name": "2021年 二、填空题（7 分）",
    "year": 2021,
-   "order": 1319,
+   "order": 1003,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -41676,7 +41853,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 37
     }
-   ]
+   ],
+   "studyTopicId": "inst-c5-k1"
   },
   {
    "type": "blank",
@@ -41713,7 +41891,7 @@
    "number": "4.",
    "name": "2021年 二、填空题（7 分）",
    "year": 2021,
-   "order": 1187,
+   "order": 5005,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -41746,7 +41924,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 38
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k3"
   },
   {
    "type": "blank",
@@ -41783,7 +41962,7 @@
    "number": "5.",
    "name": "2021年 二、填空题（7 分）",
    "year": 2021,
-   "order": 1188,
+   "order": 4003,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -41816,7 +41995,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 39
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k6"
   },
   {
    "type": "blank",
@@ -41853,7 +42033,7 @@
    "number": "6.",
    "name": "2021年 二、填空题（7 分）",
    "year": 2021,
-   "order": 1189,
+   "order": 1014,
    "typeName": "填空题",
    "stemImages": [],
    "analysisImages": [],
@@ -41886,7 +42066,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 40
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "id": "past-2021-acce7ae6e80c8a89",
@@ -41895,7 +42076,7 @@
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
    "chapterId": "exam-incomplete",
-   "order": 48,
+   "order": 1003,
    "topics": [
     "exam-incomplete-k1"
    ],
@@ -41973,7 +42154,8 @@
    "occurrences": [
     "exam-2021-acce7ae6e80c8a89"
    ],
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "id": "past-2021-d1a3372210c1a949",
@@ -41982,7 +42164,7 @@
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
    "chapterId": "exam-incomplete",
-   "order": 49,
+   "order": 1004,
    "topics": [
     "exam-incomplete-k1"
    ],
@@ -42088,7 +42270,8 @@
    "occurrences": [
     "exam-2021-d1a3372210c1a949"
    ],
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "type": "calc",
@@ -42125,7 +42308,7 @@
    "number": "1.（16 分）",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 1320,
+   "order": 4002,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -42158,7 +42341,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 44
     }
-   ]
+   ],
+   "studyTopicId": "inst-c5-k5"
   },
   {
    "type": "calc",
@@ -42198,12 +42382,12 @@
    "statusKey": "past-2021-1ee47a764d400de8",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch5",
+   "chapterId": "phys-ch11",
    "section": "四、计算题",
    "number": "2.（6 分）",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 1191,
+   "order": 4003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -42245,7 +42429,8 @@
     "answerSource": "IMG_20260928_135321.jpg，计算第2题",
     "changes": "按纸质134.2nm明确只作近轴公式的形式代入，不声称该大孔径能产生如此尺寸的实际艾里斑。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "phys-ch11-k3"
   },
   {
    "type": "calc",
@@ -42290,7 +42475,7 @@
    "number": "3.（6 分）",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 1355,
+   "order": 7010,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -42332,7 +42517,8 @@
     "answerSource": "IMG_20260928_135321.jpg，计算第3题",
     "changes": "按纸质0.04只计算空气到玻璃前表面的反射，不计后界面返回光。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "phys-ch9-k11"
   },
   {
    "type": "calc",
@@ -42369,7 +42555,7 @@
    "number": "4.",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 1193,
+   "order": 3002,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -42402,7 +42588,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 76
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k8"
   },
   {
    "type": "calc",
@@ -42447,7 +42634,7 @@
    "number": "5.（10 分）",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 1194,
+   "order": 6011,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -42480,7 +42667,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 82
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k3"
   },
   {
    "type": "calc",
@@ -42517,7 +42705,7 @@
    "number": "6.（10 分）",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 1195,
+   "order": 2008,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -42550,7 +42738,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 89
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k2"
   },
   {
    "type": "calc",
@@ -42603,7 +42792,7 @@
    "number": "7.",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 1196,
+   "order": 9004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -42636,7 +42825,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 97
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k5"
   },
   {
    "type": "calc",
@@ -42673,7 +42863,7 @@
    "number": "8.（10 分）",
    "name": "2021年 四、计算题",
    "year": 2021,
-   "order": 1197,
+   "order": 9008,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -42708,7 +42898,8 @@
      "file": "电子版_修订/2021_答案.md",
      "line": 105
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "choice",
@@ -42762,7 +42953,7 @@
    "number": "1.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1329,
+   "order": 1001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -42795,7 +42986,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 9
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch5-k5"
   },
   {
    "type": "choice",
@@ -42849,7 +43041,7 @@
    "number": "2.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1199,
+   "order": 3001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -42882,7 +43074,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 10
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch5-k2"
   },
   {
    "type": "choice",
@@ -42927,7 +43120,7 @@
    "number": "3.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 50,
+   "order": 1005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -42960,7 +43153,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 11
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "type": "choice",
@@ -43014,7 +43208,7 @@
    "number": "4.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1201,
+   "order": 1004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43047,7 +43241,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 12
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -43101,7 +43296,7 @@
    "number": "5.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1202,
+   "order": 1005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43134,7 +43329,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 13
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -43188,7 +43384,7 @@
    "number": "6.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1203,
+   "order": 5003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43221,7 +43417,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 14
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k4"
   },
   {
    "type": "choice",
@@ -43275,7 +43472,7 @@
    "number": "7.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1204,
+   "order": 4003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43308,7 +43505,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 15
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k3"
   },
   {
    "type": "choice",
@@ -43362,7 +43560,7 @@
    "number": "8.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1205,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43395,7 +43593,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 16
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch3-k1"
   },
   {
    "type": "choice",
@@ -43453,7 +43652,7 @@
    "number": "9.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1206,
+   "order": 8003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43486,7 +43685,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 17
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k4"
   },
   {
    "type": "choice",
@@ -43548,7 +43748,7 @@
    "number": "10.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1356,
+   "order": 7003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43581,7 +43781,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 18
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k11"
   },
   {
    "type": "choice",
@@ -43635,7 +43836,7 @@
    "number": "11.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1208,
+   "order": 9003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43668,7 +43869,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 19
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k12"
   },
   {
    "type": "choice",
@@ -43722,7 +43924,7 @@
    "number": "12.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1209,
+   "order": 4002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43755,7 +43957,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 20
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k9"
   },
   {
    "type": "choice",
@@ -43809,7 +44012,7 @@
    "number": "13.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1210,
+   "order": 6002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43842,7 +44045,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 21
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k3"
   },
   {
    "type": "choice",
@@ -43892,7 +44096,7 @@
    "number": "14.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1360,
+   "order": 10003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -43925,7 +44129,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 22
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k6"
   },
   {
    "type": "choice",
@@ -43983,7 +44188,7 @@
    "number": "15.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1212,
+   "order": 11006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44016,7 +44221,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 23
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -44070,7 +44276,7 @@
    "number": "16.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1213,
+   "order": 2003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44103,7 +44309,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 24
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k2"
   },
   {
    "type": "choice",
@@ -44157,7 +44364,7 @@
    "number": "17.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1214,
+   "order": 5007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44190,7 +44397,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 25
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -44244,7 +44452,7 @@
    "number": "18.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1215,
+   "order": 7004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44277,7 +44485,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 26
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k5"
   },
   {
    "type": "choice",
@@ -44331,7 +44540,7 @@
    "number": "19.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1216,
+   "order": 10005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44364,7 +44573,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 27
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k14"
   },
   {
    "type": "choice",
@@ -44418,7 +44628,7 @@
    "number": "20.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1217,
+   "order": 4007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44451,7 +44661,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 28
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -44505,7 +44716,7 @@
    "number": "21.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1218,
+   "order": 1007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44538,7 +44749,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 29
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k1"
   },
   {
    "type": "choice",
@@ -44592,7 +44804,7 @@
    "number": "22.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1219,
+   "order": 5002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44626,7 +44838,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 30
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k10"
   },
   {
    "type": "choice",
@@ -44680,7 +44893,7 @@
    "number": "23.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1220,
+   "order": 8005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44713,7 +44926,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 31
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k3"
   },
   {
    "type": "choice",
@@ -44767,7 +44981,7 @@
    "number": "25.",
    "name": "2022年 一、选择题（25×2＝50 分）",
    "year": 2022,
-   "order": 1221,
+   "order": 4004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -44800,7 +45014,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 33
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k5"
   },
   {
    "type": "calc",
@@ -44873,7 +45088,7 @@
    "number": "1.（20 分）",
    "name": "2022年 三、计算题",
    "year": 2022,
-   "order": 4,
+   "order": 2004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -44908,7 +45123,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 37
     }
-   ]
+   ],
+   "studyTopicId": "inst-c11-k2"
   },
   {
    "type": "calc",
@@ -44957,7 +45173,7 @@
    "number": "2.（12 分）",
    "name": "2022年 三、计算题",
    "year": 2022,
-   "order": 1357,
+   "order": 1008,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -44990,7 +45206,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 62
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k1"
   },
   {
    "type": "calc",
@@ -45063,7 +45280,7 @@
    "number": "3.（12 分）",
    "name": "2022年 三、计算题",
    "year": 2022,
-   "order": 1224,
+   "order": 9005,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -45096,7 +45313,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 74
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k5"
   },
   {
    "type": "calc",
@@ -45145,7 +45363,7 @@
    "number": "4.（12 分）",
    "name": "2022年 三、计算题",
    "year": 2022,
-   "order": 1225,
+   "order": 8004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -45178,7 +45396,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 97
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k12"
   },
   {
    "type": "calc",
@@ -45227,7 +45446,7 @@
    "number": "5.（12 分）",
    "name": "2022年 三、计算题",
    "year": 2022,
-   "order": 1226,
+   "order": 11003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -45262,7 +45481,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 106
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k7"
   },
   {
    "type": "calc",
@@ -45323,7 +45543,7 @@
    "number": "6.（12 分）",
    "name": "2022年 三、计算题",
    "year": 2022,
-   "order": 1227,
+   "order": 9009,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -45356,7 +45576,8 @@
      "file": "电子版_修订/2022_答案.md",
      "line": 125
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "choice",
@@ -45406,7 +45627,7 @@
    "number": "1.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1228,
+   "order": 8002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -45439,7 +45660,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 9
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k12"
   },
   {
    "type": "choice",
@@ -45493,7 +45715,7 @@
    "number": "2.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1229,
+   "order": 10002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -45526,7 +45748,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 10
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k6"
   },
   {
    "type": "choice",
@@ -45580,7 +45803,7 @@
    "number": "3.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1230,
+   "order": 5008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -45613,7 +45836,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 11
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -45667,7 +45891,7 @@
    "number": "4.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1231,
+   "order": 8006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -45702,7 +45926,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 12
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k3"
   },
   {
    "type": "choice",
@@ -45760,7 +45985,7 @@
    "number": "5.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1232,
+   "order": 4008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -45793,7 +46018,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 13
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -45846,12 +46072,12 @@
    "statusKey": "past-2023-7fe920f073f9a5ed",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "phys-ch11",
+   "chapterId": "phys-ch12",
    "section": "一、选择题（每题 2 分，共 60 分）",
    "number": "6.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1233,
+   "order": 5002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -45884,7 +46110,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 14
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k4"
   },
   {
    "type": "choice",
@@ -45938,7 +46165,7 @@
    "number": "7.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1234,
+   "order": 4005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -45971,7 +46198,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 15
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k2"
   },
   {
    "type": "choice",
@@ -46025,7 +46253,7 @@
    "number": "8.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1235,
+   "order": 7003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46058,7 +46286,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 16
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k6"
   },
   {
    "type": "choice",
@@ -46112,7 +46341,7 @@
    "number": "9.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1236,
+   "order": 9004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46145,7 +46374,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 17
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k12"
   },
   {
    "type": "choice",
@@ -46211,7 +46441,7 @@
    "number": "10.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1237,
+   "order": 2002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46244,7 +46474,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 18
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k2"
   },
   {
    "type": "choice",
@@ -46298,7 +46529,7 @@
    "number": "11.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1238,
+   "order": 1006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46331,7 +46562,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 19
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -46385,7 +46617,7 @@
    "number": "12.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1239,
+   "order": 1007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46418,7 +46650,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 20
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -46463,12 +46696,12 @@
    "statusKey": "past-2023-7b14dd0609d05cd8",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch1",
+   "chapterId": "phys-ch9",
    "section": "一、选择题（每题 2 分，共 60 分）",
    "number": "13.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1240,
+   "order": 7001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46501,7 +46734,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 21
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k11"
   },
   {
    "type": "choice",
@@ -46550,12 +46784,12 @@
    "statusKey": "past-2023-42ef9e9a98b51278",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch3",
+   "chapterId": "phys-ch9",
    "section": "一、选择题（每题 2 分，共 60 分）",
    "number": "14.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1241,
+   "order": 8004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46588,7 +46822,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 22
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k4"
   },
   {
    "type": "choice",
@@ -46642,7 +46877,7 @@
    "number": "15.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1242,
+   "order": 11007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46675,7 +46910,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 23
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -46725,7 +46961,7 @@
    "number": "16.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1243,
+   "order": 6002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46758,7 +46994,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 24
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k11"
   },
   {
    "type": "choice",
@@ -46808,7 +47045,7 @@
    "number": "17.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1244,
+   "order": 2004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -46841,7 +47078,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 25
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k2"
   },
   {
    "type": "choice",
@@ -46891,7 +47129,7 @@
    "number": "18.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 51,
+   "order": 2012,
    "typeName": "选择题",
    "stemImages": [
     {
@@ -46931,7 +47169,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 26
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "choice",
@@ -46985,7 +47224,7 @@
    "number": "19.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1246,
+   "order": 4009,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47018,7 +47257,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 27
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -47072,7 +47312,7 @@
    "number": "20.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1247,
+   "order": 3006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47105,7 +47345,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 28
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k2"
   },
   {
    "type": "choice",
@@ -47163,7 +47404,7 @@
    "number": "21.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1248,
+   "order": 3002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47196,7 +47437,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 29
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k2"
   },
   {
    "type": "choice",
@@ -47274,7 +47516,7 @@
    "number": "22.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1296,
+   "order": 3002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47307,7 +47549,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 30
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k3"
   },
   {
    "type": "choice",
@@ -47365,7 +47608,7 @@
    "number": "23.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1358,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47398,7 +47641,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 31
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k1"
   },
   {
    "type": "choice",
@@ -47448,7 +47692,7 @@
    "number": "24.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1251,
+   "order": 9001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47481,7 +47725,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 32
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k5"
   },
   {
    "type": "choice",
@@ -47531,7 +47776,7 @@
    "number": "25.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1252,
+   "order": 5002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47564,7 +47809,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 33
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch3-k5"
   },
   {
    "type": "choice",
@@ -47609,12 +47855,12 @@
    "statusKey": "past-2023-bcb4e3fdea22f4f0",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch2",
+   "chapterId": "geom-ch1",
    "section": "一、选择题（每题 2 分，共 60 分）",
    "number": "26.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1253,
+   "order": 4003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47647,7 +47893,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 34
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k5"
   },
   {
    "type": "choice",
@@ -47693,7 +47940,7 @@
    "number": "27.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1254,
+   "order": 5004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47726,7 +47973,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 35
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k4"
   },
   {
    "type": "choice",
@@ -47780,7 +48028,7 @@
    "number": "28.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1255,
+   "order": 9002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47813,7 +48061,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 36
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k6"
   },
   {
    "type": "choice",
@@ -47858,7 +48107,7 @@
    "number": "29.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 52,
+   "order": 1006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47891,7 +48140,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 37
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "type": "choice",
@@ -47949,7 +48199,7 @@
    "number": "30.",
    "name": "2023年 一、选择题（每题 2 分，共 60 分）",
    "year": 2023,
-   "order": 1257,
+   "order": 3004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -47982,7 +48232,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 38
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k1"
   },
   {
    "type": "calc",
@@ -48047,7 +48298,7 @@
    "number": "1.",
    "name": "2023年 三、计算题",
    "year": 2023,
-   "order": 5,
+   "order": 2005,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -48082,7 +48333,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 42
     }
-   ]
+   ],
+   "studyTopicId": "inst-c11-k2"
   },
   {
    "type": "calc",
@@ -48151,7 +48403,7 @@
    "number": "2.",
    "name": "2023年 三、计算题",
    "year": 2023,
-   "order": 1259,
+   "order": 7002,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -48184,7 +48436,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 60
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k4"
   },
   {
    "type": "calc",
@@ -48245,7 +48498,7 @@
    "number": "3.",
    "name": "2023年 三、计算题",
    "year": 2023,
-   "order": 1260,
+   "order": 6004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -48278,7 +48531,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 67
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k11"
   },
   {
    "type": "calc",
@@ -48339,7 +48593,7 @@
    "number": "4.",
    "name": "2023年 三、计算题",
    "year": 2023,
-   "order": 1261,
+   "order": 6012,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -48372,7 +48626,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 76
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k3"
   },
   {
    "type": "calc",
@@ -48421,7 +48676,7 @@
    "number": "5.",
    "name": "2023年 三、计算题",
    "year": 2023,
-   "order": 1262,
+   "order": 9010,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -48454,7 +48709,8 @@
      "file": "电子版_修订/2023_答案.md",
      "line": 91
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "choice",
@@ -48520,7 +48776,7 @@
    "number": "1.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1263,
+   "order": 3005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -48553,7 +48809,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 9
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k1"
   },
   {
    "type": "choice",
@@ -48602,12 +48859,12 @@
    "statusKey": "past-2024-4c9ce475dbb52409",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch2",
+   "chapterId": "geom-ch1",
    "section": "选择题",
    "number": "2.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1339,
+   "order": 4006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -48640,7 +48897,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 10
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k5"
   },
   {
    "type": "choice",
@@ -48694,7 +48952,7 @@
    "number": "3.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1265,
+   "order": 5003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -48727,7 +48985,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 11
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch3-k5"
   },
   {
    "type": "choice",
@@ -48789,7 +49048,7 @@
    "number": "4.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1266,
+   "order": 2002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -48822,7 +49081,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 12
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch3-k1"
   },
   {
    "type": "choice",
@@ -48880,7 +49140,7 @@
    "number": "5.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1267,
+   "order": 4004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -48913,7 +49173,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 13
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k3"
   },
   {
    "type": "choice",
@@ -48966,12 +49227,12 @@
    "statusKey": "past-2024-0642eec8c0d8d6fb",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "inst-c10",
+   "chapterId": "inst-c3",
    "section": "选择题",
    "number": "6.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1268,
+   "order": 2002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49004,7 +49265,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 14
     }
-   ]
+   ],
+   "studyTopicId": "inst-c3-k2"
   },
   {
    "type": "choice",
@@ -49058,7 +49320,7 @@
    "number": "7.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1269,
+   "order": 4003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49091,7 +49353,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 15
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch5-k3"
   },
   {
    "type": "choice",
@@ -49165,7 +49428,7 @@
    "number": "8.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 54,
+   "order": 3002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49198,7 +49461,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 16
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k3"
   },
   {
    "type": "choice",
@@ -49252,7 +49516,7 @@
    "number": "9.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1271,
+   "order": 1008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49285,7 +49549,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 17
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -49359,7 +49624,7 @@
    "number": "10.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 53,
+   "order": 1007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49392,7 +49657,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 18
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "type": "choice",
@@ -49454,7 +49720,7 @@
    "number": "11.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1273,
+   "order": 9005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49490,7 +49756,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 19
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k12"
   },
   {
    "type": "choice",
@@ -49552,7 +49819,7 @@
    "number": "12.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1274,
+   "order": 6004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49594,7 +49861,8 @@
     "answerSource": "IMG_20260928_135208.jpg，第12题C",
     "changes": "按纸质C=1.13反解恢复入射介质n≈1.30，替代与答案不合的“水n=1.33”。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "phys-ch9-k3"
   },
   {
    "type": "choice",
@@ -49656,7 +49924,7 @@
    "number": "14.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1275,
+   "order": 1004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49689,7 +49957,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 22
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k1"
   },
   {
    "type": "choice",
@@ -49751,7 +50020,7 @@
    "number": "15.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1276,
+   "order": 11008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49784,7 +50053,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 23
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -49846,7 +50116,7 @@
    "number": "16.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1277,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49888,7 +50158,8 @@
     "answerSource": "IMG_20260928_135208.jpg，第16题C",
     "changes": "按纸质C限定平面屏仅平行或垂直于双孔连线摆放，排除任意倾斜截面。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "phys-ch10-k2"
   },
   {
    "type": "choice",
@@ -49942,7 +50213,7 @@
    "number": "17.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1278,
+   "order": 7005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -49975,7 +50246,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 25
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k5"
   },
   {
    "type": "choice",
@@ -50033,7 +50305,7 @@
    "number": "18.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1279,
+   "order": 10006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -50066,7 +50338,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 26
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k14"
   },
   {
    "type": "choice",
@@ -50120,7 +50393,7 @@
    "number": "19.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1280,
+   "order": 4001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -50153,7 +50426,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 27
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k3"
   },
   {
    "type": "choice",
@@ -50207,7 +50481,7 @@
    "number": "20.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1281,
+   "order": 4010,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -50240,7 +50514,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 28
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -50294,7 +50569,7 @@
    "number": "21.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1282,
+   "order": 8007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -50327,7 +50602,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 29
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k3"
   },
   {
    "type": "choice",
@@ -50381,7 +50657,7 @@
    "number": "22.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1283,
+   "order": 3007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -50414,7 +50690,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 30
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k2"
   },
   {
    "type": "choice",
@@ -50468,7 +50745,7 @@
    "number": "23.",
    "name": "2024年 选择题",
    "year": 2024,
-   "order": 1366,
+   "order": 6003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -50501,7 +50778,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 31
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k11"
   },
   {
    "type": "calc",
@@ -50582,7 +50860,7 @@
    "number": "1.",
    "name": "2024年 三、计算题",
    "year": 2024,
-   "order": 1321,
+   "order": 4003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -50624,7 +50902,8 @@
     "answerSource": "IMG_20260928_135202.jpg，计算一最终NA",
     "changes": "按答案补全条件（2026-10-03）：优先纸质最后数值孔径NA=√5/5，由工作距离39mm反解物镜口径39mm；原156mm及纸解tanU=2不采用。其余近轴共轭和半渐晕模型沿用。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "inst-c5-k5"
   },
   {
    "type": "calc",
@@ -50669,7 +50948,7 @@
    "number": "2.",
    "name": "2024年 三、计算题",
    "year": 2024,
-   "order": 1359,
+   "order": 4003,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -50708,7 +50987,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 65
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k9"
   },
   {
    "type": "calc",
@@ -50753,7 +51033,7 @@
    "number": "3.",
    "name": "2024年 三、计算题",
    "year": 2024,
-   "order": 1361,
+   "order": 8006,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -50795,7 +51075,8 @@
     "answerSource": "IMG_20260928_135156.jpg，计算三",
     "changes": "按纸质R=9.993mm补充中央接触、第三暗环恰在口径边缘、被测凸面曲率更大及近轴矢高模型。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "phys-ch10-k12"
   },
   {
    "type": "calc",
@@ -50840,7 +51121,7 @@
    "number": "4.",
    "name": "2024年 三、计算题",
    "year": 2024,
-   "order": 1288,
+   "order": 9005,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [
@@ -50889,7 +51170,8 @@
     "answerSource": "IMG_20260928_135156.jpg，计算四",
     "changes": "按纸质两问结果把30°明确为沿槽面法线入射时的衍射角。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "phys-ch11-k6"
   },
   {
    "type": "calc",
@@ -50942,7 +51224,7 @@
    "number": "5.",
    "name": "2024年 三、计算题",
    "year": 2024,
-   "order": 3,
+   "order": 2001,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -50975,7 +51257,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 86
     }
-   ]
+   ],
+   "studyTopicId": "inst-c6-k4"
   },
   {
    "type": "calc",
@@ -51024,7 +51307,7 @@
    "number": "6.",
    "name": "2024年 三、计算题",
    "year": 2024,
-   "order": 1290,
+   "order": 2002,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -51057,7 +51340,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 94
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k2"
   },
   {
    "type": "calc",
@@ -51102,7 +51386,7 @@
    "number": "7.",
    "name": "2024年 三、计算题",
    "year": 2024,
-   "order": 1291,
+   "order": 9011,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -51135,7 +51419,8 @@
      "file": "电子版_修订/2024_答案.md",
      "line": 100
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "choice",
@@ -51189,7 +51474,7 @@
    "number": "1.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1292,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51222,7 +51507,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 10
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k1"
   },
   {
    "type": "choice",
@@ -51284,7 +51570,7 @@
    "number": "2.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1293,
+   "order": 3006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51317,7 +51603,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 11
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k1"
   },
   {
    "type": "choice",
@@ -51371,7 +51658,7 @@
    "number": "3.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1294,
+   "order": 5005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51404,7 +51691,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 12
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k4"
   },
   {
    "type": "choice",
@@ -51458,7 +51746,7 @@
    "number": "4.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1295,
+   "order": 1005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51491,7 +51779,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 13
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k1"
   },
   {
    "type": "choice",
@@ -51545,7 +51834,7 @@
    "number": "5.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1296,
+   "order": 5009,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51580,7 +51869,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 14
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -51634,7 +51924,7 @@
    "number": "6.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1297,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51667,7 +51957,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 15
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch5-k1"
   },
   {
    "type": "choice",
@@ -51721,7 +52012,7 @@
    "number": "7.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1298,
+   "order": 4011,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51754,7 +52045,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 16
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -51812,7 +52104,7 @@
    "number": "8.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1299,
+   "order": 4005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51845,7 +52137,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 17
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k5"
   },
   {
    "type": "choice",
@@ -51919,7 +52212,7 @@
    "number": "9.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 56,
+   "order": 2013,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -51952,7 +52245,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 18
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "choice",
@@ -52006,7 +52300,7 @@
    "number": "10.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1301,
+   "order": 2002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52039,7 +52333,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 19
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k2"
   },
   {
    "type": "choice",
@@ -52101,7 +52396,7 @@
    "number": "11.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1302,
+   "order": 2002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52143,7 +52438,8 @@
     "answerSource": "电子版_修订/2025_答案.md，第11题（自行解答）",
     "changes": "按现存资料C补成点光源在准直透镜前焦面横移，而非固定方向平行光束单纯平移。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "phys-ch10-k2"
   },
   {
    "type": "choice",
@@ -52205,7 +52501,7 @@
    "number": "12.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1303,
+   "order": 11009,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52240,7 +52536,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 21
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -52302,7 +52599,7 @@
    "number": "13.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1304,
+   "order": 7002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52335,7 +52632,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 22
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k11"
   },
   {
    "type": "choice",
@@ -52393,7 +52691,7 @@
    "number": "14.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1305,
+   "order": 10007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52426,7 +52724,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 23
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k14"
   },
   {
    "type": "choice",
@@ -52488,7 +52787,7 @@
    "number": "15.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1306,
+   "order": 2003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52530,7 +52829,8 @@
     "answerSource": "电子版_修订/2025_答案.md，第15题（自行解答）",
     "changes": "按现存资料B=30mm反解两透镜间距60mm；尚无对应1—15纸质答案页，不冒称纸质核定。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch4-k2"
   },
   {
    "type": "choice",
@@ -52584,7 +52884,7 @@
    "number": "16.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1307,
+   "order": 9006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52617,7 +52917,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 25
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k12"
   },
   {
    "type": "choice",
@@ -52675,7 +52976,7 @@
    "number": "18.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1308,
+   "order": 1009,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52708,7 +53009,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 27
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -52762,7 +53064,7 @@
    "number": "19.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1362,
+   "order": 10005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52796,7 +53098,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 28
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k6"
   },
   {
    "type": "choice",
@@ -52850,7 +53153,7 @@
    "number": "20.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1310,
+   "order": 4003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52885,7 +53188,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 29
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k9"
   },
   {
    "type": "choice",
@@ -52943,7 +53247,7 @@
    "number": "21.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1311,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -52976,7 +53280,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 30
     }
-   ]
+   ],
+   "studyTopicId": "inst-c3-k1"
   },
   {
    "type": "choice",
@@ -53034,7 +53339,7 @@
    "number": "22.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1312,
+   "order": 3008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -53069,7 +53374,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 31
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k2"
   },
   {
    "type": "choice",
@@ -53123,7 +53429,7 @@
    "number": "23.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1336,
+   "order": 2001,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -53156,7 +53462,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 32
     }
-   ]
+   ],
+   "studyTopicId": "inst-c10-k4"
   },
   {
    "type": "choice",
@@ -53210,7 +53517,7 @@
    "number": "24.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1314,
+   "order": 1010,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -53243,7 +53550,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 33
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -53308,12 +53616,12 @@
    "statusKey": "past-2025-06bba2ad5ccfe15c",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch2",
+   "chapterId": "geom-ch6",
    "section": "一、选择题（每题 2 分）",
    "number": "25.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1315,
+   "order": 2004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -53346,7 +53654,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 34
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k1"
   },
   {
    "type": "choice",
@@ -53400,7 +53709,7 @@
    "number": "26.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1316,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -53433,7 +53742,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 35
     }
-   ]
+   ],
+   "studyTopicId": "inst-c5-k1"
   },
   {
    "type": "choice",
@@ -53487,7 +53797,7 @@
    "number": "27.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1317,
+   "order": 5002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -53521,7 +53831,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 36
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k3"
   },
   {
    "type": "choice",
@@ -53583,7 +53894,7 @@
    "number": "28.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1318,
+   "order": 4005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -53625,7 +53936,8 @@
     "answerSource": "IMG_20260928_135148.jpg，第28题A",
     "changes": "按纸质A“物方远心”把A中的出瞳恢复为孔径光阑，并明确这是物方镜组的像方焦面。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch4-k3"
   },
   {
    "type": "choice",
@@ -53679,7 +53991,7 @@
    "number": "29.",
    "name": "2025年 一、选择题（每题 2 分）",
    "year": 2025,
-   "order": 1319,
+   "order": 1008,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -53714,7 +54026,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 38
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k1"
   },
   {
    "id": "past-2025-acce7ae6e80c8a89",
@@ -53723,7 +54036,7 @@
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
    "chapterId": "exam-incomplete",
-   "order": 55,
+   "order": 1008,
    "topics": [
     "exam-incomplete-k1"
    ],
@@ -53823,7 +54136,8 @@
    "occurrences": [
     "exam-2025-acce7ae6e80c8a89"
    ],
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "id": "past-2025-d1a3372210c1a949",
@@ -53832,7 +54146,7 @@
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
    "chapterId": "exam-incomplete",
-   "order": 58,
+   "order": 1009,
    "topics": [
     "exam-incomplete-k1"
    ],
@@ -53948,7 +54262,8 @@
    "occurrences": [
     "exam-2025-d1a3372210c1a949"
    ],
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "type": "calc",
@@ -53993,7 +54308,7 @@
    "number": "1.",
    "name": "2025年 三、计算题",
    "year": 2025,
-   "order": 1322,
+   "order": 4004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -54028,7 +54343,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 47
     }
-   ]
+   ],
+   "studyTopicId": "inst-c5-k5"
   },
   {
    "type": "calc",
@@ -54093,7 +54409,7 @@
    "number": "2.",
    "name": "2025年 三、计算题",
    "year": 2025,
-   "order": 1321,
+   "order": 1007,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -54126,7 +54442,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 77
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k1"
   },
   {
    "type": "calc",
@@ -54187,7 +54504,7 @@
    "number": "3.",
    "name": "2025年 三、计算题",
    "year": 2025,
-   "order": 57,
+   "order": 2014,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -54227,7 +54544,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 93
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "calc",
@@ -54276,7 +54594,7 @@
    "number": "4.",
    "name": "2025年 三、计算题",
    "year": 2025,
-   "order": 1323,
+   "order": 6005,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -54309,7 +54627,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 110
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k11"
   },
   {
    "type": "calc",
@@ -54370,7 +54689,7 @@
    "number": "5.",
    "name": "2025年 三、计算题",
    "year": 2025,
-   "order": 1324,
+   "order": 6013,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -54405,7 +54724,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 116
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k3"
   },
   {
    "type": "calc",
@@ -54454,7 +54774,7 @@
    "number": "6.",
    "name": "2025年 三、计算题",
    "year": 2025,
-   "order": 1325,
+   "order": 9012,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -54487,7 +54807,8 @@
      "file": "电子版_修订/2025_答案.md",
      "line": 138
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "type": "choice",
@@ -54549,7 +54870,7 @@
    "number": "1.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1326,
+   "order": 3007,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -54582,7 +54903,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 11
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k1"
   },
   {
    "type": "choice",
@@ -54636,7 +54958,7 @@
    "number": "2.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1327,
+   "order": 3002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -54669,7 +54991,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 12
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch5-k2"
   },
   {
    "type": "choice",
@@ -54723,7 +55046,7 @@
    "number": "3.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1328,
+   "order": 2004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -54756,7 +55079,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 13
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k2"
   },
   {
    "type": "choice",
@@ -54814,7 +55138,7 @@
    "number": "4.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1329,
+   "order": 1003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -54847,7 +55171,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 14
     }
-   ]
+   ],
+   "studyTopicId": "inst-c3-k1"
   },
   {
    "type": "choice",
@@ -54908,12 +55233,12 @@
    "statusKey": "past-2026-0642eec8c0d8d6fb",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "geom-ch2",
+   "chapterId": "geom-ch1",
    "section": "一、选择题",
    "number": "6.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1330,
+   "order": 4004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -54946,7 +55271,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 16
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch1-k5"
   },
   {
    "type": "choice",
@@ -55008,7 +55334,7 @@
    "number": "7.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1337,
+   "order": 6003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55050,7 +55376,8 @@
     "answerSource": "IMG_20260928_135132.jpg，第7题B",
     "changes": "按纸质B明确准直入射、聚焦实像和球差目标。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "geom-ch6-k4"
   },
   {
    "type": "choice",
@@ -55112,7 +55439,7 @@
    "number": "8.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1332,
+   "order": 1011,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55145,7 +55472,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 18
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch6-k5"
   },
   {
    "type": "choice",
@@ -55207,7 +55535,7 @@
    "number": "9.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1333,
+   "order": 1006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55249,7 +55577,8 @@
     "answerSource": "IMG_20260928_135132.jpg，第9题C",
     "changes": "按纸质C改为理想同源分光的充分条件列表，避免把同偏振和同波列说成普遍必要条件。",
     "originalUniquelyRecovered": false
-   }
+   },
+   "studyTopicId": "phys-ch10-k1"
   },
   {
    "type": "choice",
@@ -55327,7 +55656,7 @@
    "number": "10.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1334,
+   "order": 1002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55360,7 +55689,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 20
     }
-   ]
+   ],
+   "studyTopicId": "inst-c10-k1"
   },
   {
    "type": "choice",
@@ -55422,7 +55752,7 @@
    "number": "11.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 8,
+   "order": 1003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55455,7 +55785,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 21
     }
-   ]
+   ],
+   "studyTopicId": "inst-c7-k1"
   },
   {
    "type": "choice",
@@ -55525,7 +55856,7 @@
    "number": "13.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1336,
+   "order": 4006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55558,7 +55889,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 23
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch2-k2"
   },
   {
    "type": "choice",
@@ -55612,7 +55944,7 @@
    "number": "14.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1323,
+   "order": 3004,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55645,7 +55977,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 24
     }
-   ]
+   ],
+   "studyTopicId": "inst-c5-k4"
   },
   {
    "type": "choice",
@@ -55699,7 +56032,7 @@
    "number": "15.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1338,
+   "order": 11002,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55732,7 +56065,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 25
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k8"
   },
   {
    "type": "choice",
@@ -55794,7 +56128,7 @@
    "number": "16.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1339,
+   "order": 11010,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55829,7 +56163,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 26
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k7"
   },
   {
    "type": "choice",
@@ -55895,7 +56230,7 @@
    "number": "17.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1340,
+   "order": 6005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -55928,7 +56263,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 27
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k3"
   },
   {
    "type": "choice",
@@ -55986,7 +56322,7 @@
    "number": "18.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1341,
+   "order": 5010,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56021,7 +56357,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 28
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -56075,7 +56412,7 @@
    "number": "21.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1342,
+   "order": 3009,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56110,7 +56447,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 31
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k2"
   },
   {
    "type": "choice",
@@ -56164,7 +56502,7 @@
    "number": "22.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1343,
+   "order": 1009,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56199,7 +56537,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 32
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k1"
   },
   {
    "type": "choice",
@@ -56261,7 +56600,7 @@
    "number": "23.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1344,
+   "order": 5011,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56294,7 +56633,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 33
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k4"
   },
   {
    "type": "choice",
@@ -56348,7 +56688,7 @@
    "number": "24.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1345,
+   "order": 4006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56381,7 +56721,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 34
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k3"
   },
   {
    "type": "choice",
@@ -56439,7 +56780,7 @@
    "number": "25.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1346,
+   "order": 4006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56472,7 +56813,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 35
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k5"
   },
   {
    "type": "choice",
@@ -56530,7 +56872,7 @@
    "number": "26.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1347,
+   "order": 6003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56563,7 +56905,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 36
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k3"
   },
   {
    "type": "choice",
@@ -56617,7 +56960,7 @@
    "number": "27.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1348,
+   "order": 2005,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56650,7 +56993,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 37
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k2"
   },
   {
    "type": "choice",
@@ -56704,7 +57048,7 @@
    "number": "28.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1349,
+   "order": 7006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56737,7 +57081,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 38
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k5"
   },
   {
    "type": "choice",
@@ -56795,7 +57140,7 @@
    "number": "29.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1350,
+   "order": 8006,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56828,7 +57173,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 39
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch9-k4"
   },
   {
    "type": "choice",
@@ -56882,7 +57228,7 @@
    "number": "31.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1351,
+   "order": 8003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -56915,7 +57261,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 41
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch10-k12"
   },
   {
    "type": "choice",
@@ -56969,7 +57316,7 @@
    "number": "32.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1352,
+   "order": 5003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -57002,7 +57349,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 42
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k4"
   },
   {
    "type": "choice",
@@ -57056,7 +57404,7 @@
    "number": "33.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1353,
+   "order": 4012,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -57089,7 +57437,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 43
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k5"
   },
   {
    "type": "choice",
@@ -57143,7 +57492,7 @@
    "number": "34.",
    "name": "2026年 一、选择题",
    "year": 2026,
-   "order": 1354,
+   "order": 3003,
    "typeName": "选择题",
    "stemImages": [],
    "analysisImages": [],
@@ -57176,7 +57525,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 44
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k2"
   },
   {
    "id": "past-2026-acce7ae6e80c8a89",
@@ -57185,7 +57535,7 @@
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
    "chapterId": "exam-incomplete",
-   "order": 59,
+   "order": 1010,
    "topics": [
     "exam-incomplete-k1"
    ],
@@ -57271,7 +57621,8 @@
    "occurrences": [
     "exam-2026-acce7ae6e80c8a89"
    ],
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "id": "past-2026-d1a3372210c1a949",
@@ -57280,7 +57631,7 @@
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
    "chapterId": "exam-incomplete",
-   "order": 61,
+   "order": 1011,
    "topics": [
     "exam-incomplete-k1"
    ],
@@ -57386,7 +57737,8 @@
    "occurrences": [
     "exam-2026-d1a3372210c1a949"
    ],
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "exam-incomplete-k1"
   },
   {
    "id": "past-2026-4d438e48fa3c8f09",
@@ -57395,7 +57747,7 @@
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
    "chapterId": "exam-incomplete",
-   "order": 62,
+   "order": 2016,
    "topics": [
     "exam-incomplete-k2"
    ],
@@ -57493,7 +57845,8 @@
    "occurrences": [
     "exam-2026-4d438e48fa3c8f09"
    ],
-   "examFrequency": 1
+   "examFrequency": 1,
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "calc",
@@ -57590,7 +57943,7 @@
    "number": "1.",
    "name": "2026年 三、计算题",
    "year": 2026,
-   "order": 1355,
+   "order": 6004,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -57625,7 +57978,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 70
     }
-   ]
+   ],
+   "studyTopicId": "geom-ch4-k6"
   },
   {
    "type": "calc",
@@ -57682,7 +58036,7 @@
    "number": "2.",
    "name": "2026年 三、计算题",
    "year": 2026,
-   "order": 60,
+   "order": 2015,
    "typeName": "计算／简答题",
    "stemImages": [
     {
@@ -57722,7 +58076,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 50
     }
-   ]
+   ],
+   "studyTopicId": "exam-incomplete-k2"
   },
   {
    "type": "calc",
@@ -57763,7 +58118,7 @@
    "number": "3.",
    "name": "2026年 三、计算题",
    "year": 2026,
-   "order": 1357,
+   "order": 2009,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -57796,7 +58151,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 56
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch11-k2"
   },
   {
    "type": "calc",
@@ -57845,7 +58201,7 @@
    "number": "4.",
    "name": "2026年 三、计算题",
    "year": 2026,
-   "order": 1358,
+   "order": 6014,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [
@@ -57885,7 +58241,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 60
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch12-k3"
   },
   {
    "type": "calc",
@@ -57942,7 +58299,7 @@
    "number": "5.",
    "name": "2026年 三、计算题",
    "year": 2026,
-   "order": 1359,
+   "order": 9013,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
@@ -57977,7 +58334,8 @@
      "file": "电子版_修订/2026_答案.md",
      "line": 64
     }
-   ]
+   ],
+   "studyTopicId": "phys-ch13-k4"
   },
   {
    "id": "past-2017-21e60e338d90257d",
@@ -57990,7 +58348,7 @@
    "number": "1",
    "name": "2017年 三、画图题",
    "year": 2017,
-   "order": 1451,
+   "order": 3003,
    "type": "calc",
    "typeName": "作图题",
    "revisionKind": "drawing",
@@ -58063,7 +58421,8 @@
    },
    "answerAvailability": "review_provided",
    "completeness": "complete",
-   "playable": true
+   "playable": true,
+   "studyTopicId": "geom-ch3-k3"
   },
   {
    "id": "past-2017-c8065fe598212224",
@@ -58076,7 +58435,7 @@
    "number": "2",
    "name": "2017年 三、画图题",
    "year": 2017,
-   "order": 1452,
+   "order": 3005,
    "type": "calc",
    "typeName": "作图题",
    "revisionKind": "drawing",
@@ -58154,7 +58513,8 @@
    },
    "answerAvailability": "review_provided",
    "completeness": "complete",
-   "playable": true
+   "playable": true,
+   "studyTopicId": "inst-c5-k4"
   },
   {
    "id": "past-2017-26924536f261611f",
@@ -58167,7 +58527,7 @@
    "number": "3",
    "name": "2017年 三、画图题",
    "year": 2017,
-   "order": 1453,
+   "order": 6005,
    "type": "calc",
    "typeName": "作图题",
    "revisionKind": "drawing",
@@ -58241,7 +58601,8 @@
    },
    "answerAvailability": "review_provided",
    "completeness": "complete",
-   "playable": true
+   "playable": true,
+   "studyTopicId": "phys-ch13-k11"
   }
  ],
  "relations": [
