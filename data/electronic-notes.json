@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "按原 PDF 章节拆分，保留原版文字、公式和图示。",
+  "description": "几何光学保留原章册；物理光学使用复审源码编译章册，已补充手写干涉笔记与教学图。",
   "sources": [
     {
       "name": "几何光学.pdf",
@@ -8,9 +8,9 @@
       "sha256": "2a4bb5a578f2a6a82ab4175d4722acac46503850985f2d864f76ee7496eef105"
     },
     {
-      "name": "物理光学.pdf",
-      "pages": 79,
-      "sha256": "ee76a70387af6e21b7d7b519c34ef6c91cd04b6a5f1a78e02b84e02fcce22a09"
+      "name": "物理光学_手写笔记补全_20261004.pdf",
+      "pages": 84,
+      "sha256": "124ba73bbdfc1165eede4cfe2eb32ebffab1ccf34dcc529b1725ed759e7545cb"
     }
   ],
   "chapters": [
@@ -194,13 +194,13 @@
       "title": "光的电磁理论",
       "label": "第九章",
       "group": "物理光学",
-      "source": "物理光学.pdf",
+      "source": "物理光学_手写笔记补全_20261004.pdf",
       "sourceStart": 1,
-      "sourceEnd": 16,
-      "pages": 16,
-      "bytes": 1358603,
-      "url": "assets/notes/phys-ch9.pdf",
-      "sha256": "649437bf07116aff733515fa9b4fa2cece82d46d7fc8f48fb6a041660bdc2a21",
+      "sourceEnd": 17,
+      "pages": 17,
+      "bytes": 1347209,
+      "url": "assets/notes/phys-ch9.pdf?v=a0d898841224",
+      "sha256": "a0d8988412243c2b433a828c33cc205358b8da4cc95b928fc4c465909a21f34f",
       "relatedChapters": [
         {
           "id": "phys-ch9",
@@ -214,13 +214,13 @@
       "title": "光的干涉",
       "label": "第十章",
       "group": "物理光学",
-      "source": "物理光学.pdf",
-      "sourceStart": 17,
-      "sourceEnd": 31,
-      "pages": 15,
-      "bytes": 4166612,
-      "url": "assets/notes/phys-ch10.pdf",
-      "sha256": "e9594b84db733576541bb90034baf562819291168cd7ba2f647fddb42bf917db",
+      "source": "物理光学_手写笔记补全_20261004.pdf",
+      "sourceStart": 18,
+      "sourceEnd": 35,
+      "pages": 18,
+      "bytes": 4187151,
+      "url": "assets/notes/phys-ch10.pdf?v=3d472705d450",
+      "sha256": "3d472705d4502bf6c6282f9371c192fe7e48ff8e4eb5c49021c39dfc21ab7349",
       "relatedChapters": [
         {
           "id": "phys-ch10",
@@ -234,13 +234,13 @@
       "title": "光的衍射与光栅",
       "label": "第十一章",
       "group": "物理光学",
-      "source": "物理光学.pdf",
-      "sourceStart": 32,
-      "sourceEnd": 45,
-      "pages": 14,
-      "bytes": 719358,
-      "url": "assets/notes/phys-ch11.pdf",
-      "sha256": "a15199b1dc56edb453490ce67bd3bd10219cb3f2ae56dee0466bab614d84e64c",
+      "source": "物理光学_手写笔记补全_20261004.pdf",
+      "sourceStart": 36,
+      "sourceEnd": 50,
+      "pages": 15,
+      "bytes": 706886,
+      "url": "assets/notes/phys-ch11.pdf?v=bb1ce1a9b5b7",
+      "sha256": "bb1ce1a9b5b702e52db7a02dd21e4b6f09e029715df853374a33d9e79f2f4dbb",
       "relatedChapters": [
         {
           "id": "phys-ch11",
@@ -254,13 +254,13 @@
       "title": "傅里叶光学",
       "label": "第十二章",
       "group": "物理光学",
-      "source": "物理光学.pdf",
-      "sourceStart": 46,
-      "sourceEnd": 58,
-      "pages": 13,
-      "bytes": 206900,
-      "url": "assets/notes/phys-ch12.pdf",
-      "sha256": "858936542f2404e49ffac5b01139d830f5c63bd190c8269de9734a7e42b275a5",
+      "source": "物理光学_手写笔记补全_20261004.pdf",
+      "sourceStart": 51,
+      "sourceEnd": 64,
+      "pages": 14,
+      "bytes": 198523,
+      "url": "assets/notes/phys-ch12.pdf?v=4b19be2efdf9",
+      "sha256": "4b19be2efdf9b8223a6ff66d8c1a223ce52122f768c4b0f6a1a1b2febd4e2852",
       "relatedChapters": [
         {
           "id": "phys-ch12",
@@ -274,13 +274,13 @@
       "title": "偏振与晶体光学",
       "label": "第十三章",
       "group": "物理光学",
-      "source": "物理光学.pdf",
-      "sourceStart": 59,
-      "sourceEnd": 79,
-      "pages": 21,
-      "bytes": 401522,
-      "url": "assets/notes/phys-ch13.pdf",
-      "sha256": "704a3bd63098a17dd9200a442329c2f6f9660d244511c483b85aeb853628f41c",
+      "source": "物理光学_手写笔记补全_20261004.pdf",
+      "sourceStart": 65,
+      "sourceEnd": 84,
+      "pages": 20,
+      "bytes": 376435,
+      "url": "assets/notes/phys-ch13.pdf?v=40cac4e91c84",
+      "sha256": "40cac4e91c843a3e3b3d367f5075340adb60e0a3c1d58d32db00601c15044912",
       "relatedChapters": [
         {
           "id": "phys-ch13",

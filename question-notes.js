@@ -141,6 +141,7 @@
    const draft=drafts.get(draftKey(id));if(draft?.text===content)drafts.delete(draftKey(id));else if(draft)draft.base=result.data;
    if(revision===viewRevision&&dialog.open){message(byId('notes-text')?.value===content?'已保存':'已保存提交的版本；新输入的文字尚未保存。');}
    if(typeof BroadcastChannel==='function')channel?.postMessage({user:owner,question:id});
+   window.dispatchEvent(new Event('optics:notes-changed'));
   }catch(e){if(gen===generation&&revision===viewRevision&&dialog.open){message(friendly(e),true);if(e.code==='23505'||e.code==='NOTE_CONFLICT')showConflict(id,revision);}}
   finally{if(gen===generation){busy=false;if(editing&&byId('notes-save')){byId('notes-save').disabled=false;byId('notes-save').textContent='保存笔记';}}}
  }
@@ -167,6 +168,7 @@
   const confirm=byId('notes-delete-confirm');confirm.querySelectorAll('button').forEach(b=>b.disabled=true);message('正在删除笔记…');
   try{requireUser();const result=await auth().client.from('question_notes').delete().eq('user_id',owner).eq('question_id',id).eq('updated_at',base.updated_at).select('id');if(result.error)throw result.error;if(!result.data?.length)throw {code:'NOTE_CONFLICT'};
    if(gen!==generation)return;cache.set(id,null);drafts.delete(draftKey(id));library=library.filter(r=>r.question_id!==id);libraryLoaded=false;refreshCount();reflect();channel?.postMessage({user:owner,question:id});
+   window.dispatchEvent(new Event('optics:notes-changed'));
    if(revision===viewRevision&&dialog.open){current=null;await openLibrary(true);toast('笔记已删除');}
   }catch(e){if(gen===generation&&revision===viewRevision)message(friendly(e),true);}
   finally{if(gen===generation){busy=false;confirm?.querySelectorAll('button').forEach(b=>b.disabled=false);if(editing&&byId('notes-save')){byId('notes-save').disabled=false;byId('notes-save').textContent='保存笔记';}}}
@@ -197,9 +199,20 @@
  }
  function updateCurrent(){reflect();const q=activeQuestion();if(uid&&q&&!cache.has(q.id)&&!pending.has(q.id))readNote(q.id).catch(()=>{});}
  const channel=typeof BroadcastChannel==='function'?new BroadcastChannel('optics-question-notes'):null;
- if(channel)channel.onmessage=e=>{if(e.data?.user!==uid)return;cache.delete(e.data.question);libraryLoaded=false;refreshCount();updateCurrent();};
+ if(channel)channel.onmessage=e=>{if(e.data?.user!==uid)return;cache.delete(e.data.question);libraryLoaded=false;refreshCount();updateCurrent();window.dispatchEvent(new Event('optics:notes-changed'));};
  byId('btn-question-note').onclick=openCurrent;byId('notes-library-open').onclick=()=>openLibrary(true);
  const originalRender=window.render;window.render=function(){originalRender.apply(this,arguments);updateCurrent();};
  auth().subscribe(()=>setTimeout(sessionChanged,0));auth().ready.then(sessionChanged);
- window.OpticsNotes={updateCurrent};
+ // The mastery map reads only IDs; note bodies remain lazy and private.
+ async function questionIds(){
+  requireUser();const owner=uid,gen=generation,ids=[];
+  for(let offset=0;;offset+=500){
+   const result=await auth().client.from('question_notes').select('question_id').eq('user_id',owner).order('question_id',{ascending:true}).range(offset,offset+499);
+   if(result.error)throw result.error;
+   if(gen!==generation)throw Error('登录用户已变化');
+   const rows=result.data||[];ids.push(...rows.map(row=>row.question_id));if(rows.length<500)break;
+  }
+  return ids;
+ }
+ window.OpticsNotes={updateCurrent,questionIds};
 })();
