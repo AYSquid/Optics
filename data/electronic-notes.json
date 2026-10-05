@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "全部章节已对照现有真题标红重点公式，保留原有内容、教学图和光学仪器原讲义页面。",
+  "description": "物理光学已优化完整知识点分页、上下分式与F-P公式标红，并核验重画三种分波面干涉装置图；完整合订本另含可点击目录。",
   "sources": [
     {
       "name": "几何光学_真题重点公式标红_20261005.pdf",
@@ -8,9 +8,9 @@
       "sha256": "9829781f67930f63ee4a71e96432d56a42233b4d90fd625cf07ff5a410ff6155"
     },
     {
-      "name": "物理光学_真题重点公式标红_20261005.pdf",
-      "pages": 84,
-      "sha256": "9a6fdbe07aeebb222c4101aca9036a88edaba1f776dcf32d7911c203e2fadc7b"
+      "name": "物理光学_真题重点公式标红_含目录_20261005.pdf",
+      "pages": 93,
+      "sha256": "204fd7957744bd9d5e995a88f8fbcd2bd8737fb1d06aba482b56dd4213d68bfb"
     }
   ],
   "chapters": [
@@ -194,13 +194,13 @@
       "title": "光的电磁理论",
       "label": "第九章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 1,
-      "sourceEnd": 17,
+      "source": "物理光学_真题重点公式标红_含目录_20261005.pdf",
+      "sourceStart": 4,
+      "sourceEnd": 20,
       "pages": 17,
-      "bytes": 1347254,
-      "url": "assets/notes/phys-ch9.pdf?v=211ceda342b2",
-      "sha256": "211ceda342b233460e749fdc7539b7d409f26847d2eed0b6aa6f5db1e11eada8",
+      "bytes": 1351209,
+      "url": "assets/notes/phys-ch9.pdf?v=864254156a6a",
+      "sha256": "864254156a6a8c86f21d6591182a20cc7530a06ef4078986372b236dac310ea9",
       "relatedChapters": [
         {
           "id": "phys-ch9",
@@ -214,13 +214,13 @@
       "title": "光的干涉",
       "label": "第十章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 18,
-      "sourceEnd": 35,
-      "pages": 18,
-      "bytes": 4187315,
-      "url": "assets/notes/phys-ch10.pdf?v=d812c62336a6",
-      "sha256": "d812c62336a61ddadaf69018c20f0a6d7ddbc0ba301f9fefc420a30d8fae79cc",
+      "source": "物理光学_真题重点公式标红_含目录_20261005.pdf",
+      "sourceStart": 21,
+      "sourceEnd": 41,
+      "pages": 21,
+      "bytes": 1709350,
+      "url": "assets/notes/phys-ch10.pdf?v=f971c2146974",
+      "sha256": "f971c214697472f8ab950b9572bd8162baf70629c9ab371a8b3a6d1fda0e2966",
       "relatedChapters": [
         {
           "id": "phys-ch10",
@@ -234,13 +234,13 @@
       "title": "光的衍射与光栅",
       "label": "第十一章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 36,
-      "sourceEnd": 50,
-      "pages": 15,
-      "bytes": 707121,
-      "url": "assets/notes/phys-ch11.pdf?v=ca1af28afb69",
-      "sha256": "ca1af28afb690364376dcbbd5a3bd7ac6459963f8712d4ef86bdbbf5de49abc5",
+      "source": "物理光学_真题重点公式标红_含目录_20261005.pdf",
+      "sourceStart": 42,
+      "sourceEnd": 58,
+      "pages": 17,
+      "bytes": 715675,
+      "url": "assets/notes/phys-ch11.pdf?v=c2dc71f3e55f",
+      "sha256": "c2dc71f3e55f44c9c101bff5cd23d6edea59afde3ee8993d91a24a40a2e2c5c9",
       "relatedChapters": [
         {
           "id": "phys-ch11",
@@ -254,13 +254,13 @@
       "title": "傅里叶光学",
       "label": "第十二章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 51,
-      "sourceEnd": 64,
+      "source": "物理光学_真题重点公式标红_含目录_20261005.pdf",
+      "sourceStart": 59,
+      "sourceEnd": 72,
       "pages": 14,
-      "bytes": 198789,
-      "url": "assets/notes/phys-ch12.pdf?v=cd295c5ebcb8",
-      "sha256": "cd295c5ebcb85ddba7d36a0160448bcfaac5eeb5cfb56f0330beb5de5e75f05f",
+      "bytes": 201738,
+      "url": "assets/notes/phys-ch12.pdf?v=d0e5a8ed383f",
+      "sha256": "d0e5a8ed383f6199b88cb03406cba4e551c34fab146b8e1d54380d0aa6f31094",
       "relatedChapters": [
         {
           "id": "phys-ch12",
@@ -274,13 +274,13 @@
       "title": "偏振与晶体光学",
       "label": "第十三章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 65,
-      "sourceEnd": 84,
-      "pages": 20,
-      "bytes": 376702,
-      "url": "assets/notes/phys-ch13.pdf?v=41263676afa4",
-      "sha256": "41263676afa401dd09ac14d53788e73847095d91121bfb47de85555fd7642f65",
+      "source": "物理光学_真题重点公式标红_含目录_20261005.pdf",
+      "sourceStart": 73,
+      "sourceEnd": 93,
+      "pages": 21,
+      "bytes": 379484,
+      "url": "assets/notes/phys-ch13.pdf?v=4148b66881e3",
+      "sha256": "4148b66881e310d181cb14b6fb27abbf3e20a33dfe43650f7b0cb46f2dca1e7d",
       "relatedChapters": [
         {
           "id": "phys-ch13",

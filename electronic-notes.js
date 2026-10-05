@@ -28,7 +28,7 @@
  floatMinus.setAttribute('aria-label','缩小 PDF');floatPlus.setAttribute('aria-label','放大 PDF');exitImmersive.id='electronic-immersive-close';floating.append(floatMinus,floatPage,floatPlus,exitImmersive);
  reader.append(heading,toolbar,message,viewport,floating);main.append(reader);
  function catalog(){
-  if(!catalogPromise)catalogPromise=fetch('data/electronic-notes.json').then(r=>{if(!r.ok)throw Error('目录加载失败');return r.json();}).catch(e=>{catalogPromise=null;throw e;});
+  if(!catalogPromise)catalogPromise=fetch('data/electronic-notes.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('目录加载失败');return r.json();}).catch(e=>{catalogPromise=null;throw e;});
   return catalogPromise;
  }
  function library(){
