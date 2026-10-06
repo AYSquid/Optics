@@ -9,8 +9,8 @@
     },
     {
       "name": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "pages": 93,
-      "sha256": "cfa76734b39961327d4dd0fcd70e1b708b7a9789ac735505e2f6149d8471bd9d"
+      "pages": 94,
+      "sha256": "6df313aa4e21667e581b9192131ff182a3456c0f0b0bc606c5336056d24c670d"
     }
   ],
   "chapters": [
@@ -216,11 +216,11 @@
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
       "sourceStart": 21,
-      "sourceEnd": 41,
-      "pages": 21,
-      "bytes": 1716736,
-      "url": "assets/notes/phys-ch10.pdf?v=202a266962cf",
-      "sha256": "202a266962cf53365ffea711d274df555ec8a6f70cad12c68d4d7d9487666567",
+      "sourceEnd": 42,
+      "pages": 22,
+      "bytes": 1717902,
+      "url": "assets/notes/phys-ch10.pdf?v=ee12d523d9f5",
+      "sha256": "ee12d523d9f5270ca46da415d3dd02ef639972b806206cf0f679cb2e4bc3160c",
       "relatedChapters": [
         {
           "id": "phys-ch10",
@@ -235,8 +235,8 @@
       "label": "第十一章",
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "sourceStart": 42,
-      "sourceEnd": 58,
+      "sourceStart": 43,
+      "sourceEnd": 59,
       "pages": 17,
       "bytes": 715675,
       "url": "assets/notes/phys-ch11.pdf?v=c2dc71f3e55f",
@@ -255,8 +255,8 @@
       "label": "第十二章",
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "sourceStart": 59,
-      "sourceEnd": 72,
+      "sourceStart": 60,
+      "sourceEnd": 73,
       "pages": 14,
       "bytes": 201738,
       "url": "assets/notes/phys-ch12.pdf?v=d0e5a8ed383f",
@@ -275,8 +275,8 @@
       "label": "第十三章",
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "sourceStart": 73,
-      "sourceEnd": 93,
+      "sourceStart": 74,
+      "sourceEnd": 94,
       "pages": 21,
       "bytes": 379484,
       "url": "assets/notes/phys-ch13.pdf?v=4148b66881e3",
