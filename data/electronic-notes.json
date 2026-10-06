@@ -10,7 +10,7 @@
     {
       "name": "物理光学_真题重点公式标红_含目录_20261006.pdf",
       "pages": 93,
-      "sha256": "12b2b631e41f6971a348fe75bba8b193bbf47302a502f266039552a10553793c"
+      "sha256": "dfac7e5c4a44063f0418616c95c92c630a607668117c0616d1535216c1b2819d"
     }
   ],
   "chapters": [
@@ -218,9 +218,9 @@
       "sourceStart": 21,
       "sourceEnd": 41,
       "pages": 21,
-      "bytes": 1711298,
-      "url": "assets/notes/phys-ch10.pdf?v=66a056a290c4",
-      "sha256": "66a056a290c4ca2d2dc50951c3c7a88ff8884574002f081259e1c10ef839ca9e",
+      "bytes": 1713280,
+      "url": "assets/notes/phys-ch10.pdf?v=89098f21d806",
+      "sha256": "89098f21d8065b27cf9870004e364a3bed478b154a697529aa6e12602635ee84",
       "relatedChapters": [
         {
           "id": "phys-ch10",
