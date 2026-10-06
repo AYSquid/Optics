@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "物理光学已统一杨氏双缝与空间、时间相干性的符号说明，保留完整知识点分页、重点标红及核验后的干涉装置图；合订本含可点击目录。",
+  "description": "物理光学已统一相干性的符号说明并优化分页留白，保留完整知识点、原文字号、重点标红及核验后的干涉装置图；合订本含可点击目录。",
   "sources": [
     {
       "name": "几何光学_真题重点公式标红_20261005.pdf",
@@ -9,8 +9,8 @@
     },
     {
       "name": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "pages": 94,
-      "sha256": "6df313aa4e21667e581b9192131ff182a3456c0f0b0bc606c5336056d24c670d"
+      "pages": 92,
+      "sha256": "b9e4d4558efb7186f922807907f2766ef239b128dd8c23f7885aaec1880cd773"
     }
   ],
   "chapters": [
@@ -196,11 +196,11 @@
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
       "sourceStart": 4,
-      "sourceEnd": 20,
-      "pages": 17,
-      "bytes": 1351209,
-      "url": "assets/notes/phys-ch9.pdf?v=864254156a6a",
-      "sha256": "864254156a6a8c86f21d6591182a20cc7530a06ef4078986372b236dac310ea9",
+      "sourceEnd": 19,
+      "pages": 16,
+      "bytes": 1350772,
+      "url": "assets/notes/phys-ch9.pdf?v=cef9c1bb7877",
+      "sha256": "cef9c1bb78773d3fb744a47846921d88d6f9c6e41aba5c7d50e6a6b7314e430f",
       "relatedChapters": [
         {
           "id": "phys-ch9",
@@ -215,12 +215,12 @@
       "label": "第十章",
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "sourceStart": 21,
-      "sourceEnd": 42,
-      "pages": 22,
-      "bytes": 1717902,
-      "url": "assets/notes/phys-ch10.pdf?v=ee12d523d9f5",
-      "sha256": "ee12d523d9f5270ca46da415d3dd02ef639972b806206cf0f679cb2e4bc3160c",
+      "sourceStart": 20,
+      "sourceEnd": 40,
+      "pages": 21,
+      "bytes": 1717173,
+      "url": "assets/notes/phys-ch10.pdf?v=075a0e5c5042",
+      "sha256": "075a0e5c50422a7e7618e87004fbe3cd0e25cb33b77fab6acb589747e0b4ad66",
       "relatedChapters": [
         {
           "id": "phys-ch10",
@@ -235,12 +235,12 @@
       "label": "第十一章",
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "sourceStart": 43,
-      "sourceEnd": 59,
+      "sourceStart": 41,
+      "sourceEnd": 57,
       "pages": 17,
-      "bytes": 715675,
-      "url": "assets/notes/phys-ch11.pdf?v=c2dc71f3e55f",
-      "sha256": "c2dc71f3e55f44c9c101bff5cd23d6edea59afde3ee8993d91a24a40a2e2c5c9",
+      "bytes": 715693,
+      "url": "assets/notes/phys-ch11.pdf?v=40dc4fa2fa92",
+      "sha256": "40dc4fa2fa92c026c44fbdbd8a43541f994fb429d9e0b3e51d1b780b7e2bc40f",
       "relatedChapters": [
         {
           "id": "phys-ch11",
@@ -255,12 +255,12 @@
       "label": "第十二章",
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "sourceStart": 60,
-      "sourceEnd": 73,
+      "sourceStart": 58,
+      "sourceEnd": 71,
       "pages": 14,
-      "bytes": 201738,
-      "url": "assets/notes/phys-ch12.pdf?v=d0e5a8ed383f",
-      "sha256": "d0e5a8ed383f6199b88cb03406cba4e551c34fab146b8e1d54380d0aa6f31094",
+      "bytes": 201728,
+      "url": "assets/notes/phys-ch12.pdf?v=b9866526d381",
+      "sha256": "b9866526d3812e6988cefbb1573b13acf9e44bd8578a743f74186293caaa4271",
       "relatedChapters": [
         {
           "id": "phys-ch12",
@@ -275,12 +275,12 @@
       "label": "第十三章",
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "sourceStart": 74,
-      "sourceEnd": 94,
+      "sourceStart": 72,
+      "sourceEnd": 92,
       "pages": 21,
-      "bytes": 379484,
-      "url": "assets/notes/phys-ch13.pdf?v=4148b66881e3",
-      "sha256": "4148b66881e310d181cb14b6fb27abbf3e20a33dfe43650f7b0cb46f2dca1e7d",
+      "bytes": 379501,
+      "url": "assets/notes/phys-ch13.pdf?v=de97031969ed",
+      "sha256": "de97031969ed5192b083e4a86dab4d4129ef5fb0b6eef079d349a702bfa093bf",
       "relatedChapters": [
         {
           "id": "phys-ch13",
