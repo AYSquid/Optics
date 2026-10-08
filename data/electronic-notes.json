@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "笔记已补远摄与反远距、远心光路判题口诀及仪器分辨率，闪耀与阶梯光栅按教材重画；保留原有知识点、真题重点标红与物理光学可点击目录。",
+  "description": "笔记保留远摄、反远距与远心判断及仪器分辨率补充；衍射部分已按手写批注加入紫色说明和框选，保留真题重点标红、教材重画图与可点击目录。",
   "sources": [
     {
       "name": "几何光学_真题重点公式标红_20261008.pdf",
@@ -10,7 +10,7 @@
     {
       "name": "物理光学_真题重点公式标红_含目录_20261008.pdf",
       "pages": 93,
-      "sha256": "c8cd5fe4d24b8aaa437a088ebd15a61fdc02e01e464aab154558b171a84ea76e"
+      "sha256": "3aa21737aa4e2d4a40845f1ef250c29878e3ef8e57dc0245488e17d28cae4568"
     }
   ],
   "chapters": [
@@ -238,9 +238,9 @@
       "sourceStart": 41,
       "sourceEnd": 58,
       "pages": 18,
-      "bytes": 730201,
-      "url": "assets/notes/phys-ch11.pdf?v=5a85b5f7f541",
-      "sha256": "5a85b5f7f5412ba71eab1477573d0b91680de0de7eab3f0c9da494a7e928ed78",
+      "bytes": 734662,
+      "url": "assets/notes/phys-ch11.pdf?v=f005d3a38323",
+      "sha256": "f005d3a38323de576764bb42b4e39b87f0fdaf9d25bcfc1fcc21ec82928a224b",
       "relatedChapters": [
         {
           "id": "phys-ch11",
