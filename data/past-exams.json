@@ -12904,11 +12904,7 @@
    "stem": [
     {
      "k": "p",
-     "x": "用课程近轴公式 $d=2.44f\\lambda/\\Phi$ 作形式计算。给定 $\\lambda=550\\,\\mathrm{nm}$、$f=100\\,\\mathrm{mm}$、$\\Phi=1000\\,\\mathrm{mm}$，求公式所得的像面艾里斑直径。本问只考公式代入，不要求这些参数满足实际近轴成像。"
-    },
-    {
-     "k": "note",
-     "x": "按答案补全条件（2026-10-03）：按纸质134.2nm明确只作近轴公式的形式代入，不声称该大孔径能产生如此尺寸的实际艾里斑。 这是获准的练习题重构，原题文字另行保留，不宣称补充内容原卷已印出。"
+     "x": "用一个照相物镜对无穷远发光波长为 $550\\,\\mathrm{nm}$ 的点光源成像，物镜的口径 $\\Phi=1000\\,\\mathrm{mm}$，焦距 $f=100\\,\\mathrm{mm}$，求其像面上艾里斑的直径。"
     }
    ],
    "options": [],
@@ -12931,11 +12927,11 @@
    "analysis": [
     {
      "k": "p",
-     "x": "$d=2.44\\times100\\times550/1000=134.2\\,\\mathrm{nm}$。口径/焦距比为10，已不满足通常近轴假设；这个数是纸质公式计算结果，不是可靠的实际衍射斑尺寸。"
+     "x": "采用圆形口径物镜的艾里斑直径公式，注意直径系数为2.44，半径系数为1.22。"
     },
     {
-     "k": "note",
-     "x": "答案依据：IMG_20260928_135321.jpg，计算第2题。补充的条件用于使练习题与该答案相容。"
+     "k": "m",
+     "x": "d_A=2.44\\frac{\\lambda f}{\\Phi}=2.44\\frac{550\\,\\mathrm{nm}\\times100\\,\\mathrm{mm}}{1000\\,\\mathrm{mm}}=134.2\\,\\mathrm{nm}"
     }
    ],
    "answerAvailability": "reference_provided",
@@ -12950,15 +12946,8 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按纸质134.2nm明确只作近轴公式的形式代入，不声称该大孔径能产生如此尺寸的实际艾里斑。；按用户纸质答案优先及反解补题指示处理。"
+     "已据用户提供的原卷照片164ae1e4d1ff180bf3031b40e9aea1f7.jpg核验题干；口径1000mm按原卷保留。"
     ]
-   },
-   "reconstruction": {
-    "date": "2026-10-03",
-    "authority": "user_authorized_answer_based_reconstruction",
-    "answerSource": "IMG_20260928_135321.jpg，计算第2题",
-    "changes": "按纸质134.2nm明确只作近轴公式的形式代入，不声称该大孔径能产生如此尺寸的实际艾里斑。",
-    "originalUniquelyRecovered": false
    }
   },
   {
@@ -42387,11 +42376,7 @@
    "stem": [
     {
      "k": "p",
-     "x": "用课程近轴公式 $d=2.44f\\lambda/\\Phi$ 作形式计算。给定 $\\lambda=550\\,\\mathrm{nm}$、$f=100\\,\\mathrm{mm}$、$\\Phi=1000\\,\\mathrm{mm}$，求公式所得的像面艾里斑直径。本问只考公式代入，不要求这些参数满足实际近轴成像。"
-    },
-    {
-     "k": "note",
-     "x": "按答案补全条件（2026-10-03）：按纸质134.2nm明确只作近轴公式的形式代入，不声称该大孔径能产生如此尺寸的实际艾里斑。 这是获准的练习题重构，原题文字另行保留，不宣称补充内容原卷已印出。"
+     "x": "用一个照相物镜对无穷远发光波长为 $550\\,\\mathrm{nm}$ 的点光源成像，物镜的口径 $\\Phi=1000\\,\\mathrm{mm}$，焦距 $f=100\\,\\mathrm{mm}$，求其像面上艾里斑的直径。"
     }
    ],
    "options": [],
@@ -42404,11 +42389,11 @@
    "analysis": [
     {
      "k": "p",
-     "x": "$d=2.44\\times100\\times550/1000=134.2\\,\\mathrm{nm}$。口径/焦距比为10，已不满足通常近轴假设；这个数是纸质公式计算结果，不是可靠的实际衍射斑尺寸。"
+     "x": "采用圆形口径物镜的艾里斑直径公式，注意直径系数为2.44，半径系数为1.22。"
     },
     {
-     "k": "note",
-     "x": "答案依据：IMG_20260928_135321.jpg，计算第2题。补充的条件用于使练习题与该答案相容。"
+     "k": "m",
+     "x": "d_A=2.44\\frac{\\lambda f}{\\Phi}=2.44\\frac{550\\,\\mathrm{nm}\\times100\\,\\mathrm{mm}}{1000\\,\\mathrm{mm}}=134.2\\,\\mathrm{nm}"
     }
    ],
    "completeness": "complete",
@@ -42420,7 +42405,7 @@
    "statusKey": "past-2021-1ee47a764d400de8",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "phys-ch11",
+   "chapterId": "inst-c6",
    "section": "四、计算题",
    "number": "2.（6 分）",
    "name": "2021年 四、计算题",
@@ -42431,15 +42416,22 @@
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "光度量与辐射度量换算"
+     "摄影物镜的圆孔衍射与艾里斑直径"
     ],
-    "formulas": [],
-    "pitfalls": []
+    "formulas": [
+     {
+      "k": "m",
+      "x": "d_A=2.44\\lambda f/\\Phi,\\quad r_A=1.22\\lambda f/\\Phi,\\quad\\theta_{\\min}=1.22\\lambda/\\Phi"
+     }
+    ],
+    "pitfalls": [
+     "直径与半径的系数不要混用；波长、焦距和口径统一单位。"
+    ]
    },
    "topics": [
-    "geom-ch5-k5"
+    "inst-c6-k5"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "reviewed_against_user_paper_photo_20261008",
    "origin": {
     "file": "电子版_修订/2021.md",
     "line": 238
@@ -42447,7 +42439,7 @@
    "review": {
     "needsCheck": false,
     "notes": [
-     "按纸质134.2nm明确只作近轴公式的形式代入，不声称该大孔径能产生如此尺寸的实际艾里斑。；按用户纸质答案优先及反解补题指示处理。"
+     "已据用户提供的原卷照片164ae1e4d1ff180bf3031b40e9aea1f7.jpg核验题干；口径1000mm按原卷保留。"
     ]
    },
    "occurrences": [
@@ -42461,14 +42453,7 @@
      "line": 67
     }
    ],
-   "reconstruction": {
-    "date": "2026-10-03",
-    "authority": "user_authorized_answer_based_reconstruction",
-    "answerSource": "IMG_20260928_135321.jpg，计算第2题",
-    "changes": "按纸质134.2nm明确只作近轴公式的形式代入，不声称该大孔径能产生如此尺寸的实际艾里斑。",
-    "originalUniquelyRecovered": false
-   },
-   "studyTopicId": "phys-ch11-k3"
+   "studyTopicId": "inst-c6-k5"
   },
   {
    "type": "calc",

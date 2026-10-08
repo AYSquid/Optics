@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "description": "物理光学已统一相干性的符号说明并优化分页留白，保留完整知识点、原文字号、重点标红及核验后的干涉装置图；合订本含可点击目录。",
+  "description": "笔记已补远摄与反远距、远心光路判题口诀及仪器分辨率，闪耀与阶梯光栅按教材重画；保留原有知识点、真题重点标红与物理光学可点击目录。",
   "sources": [
     {
-      "name": "几何光学_真题重点公式标红_20261005.pdf",
-      "pages": 70,
-      "sha256": "9829781f67930f63ee4a71e96432d56a42233b4d90fd625cf07ff5a410ff6155"
+      "name": "几何光学_真题重点公式标红_20261008.pdf",
+      "pages": 72,
+      "sha256": "d9dab1f4ed1f1a62da84c696f1ca8a9b10e1390ef52160a9d02ac13f15a617d7"
     },
     {
-      "name": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "pages": 92,
-      "sha256": "f5c453d641064118024921dffe8e500f080bb9e922a8ea2e54c12981f8c59cad"
+      "name": "物理光学_真题重点公式标红_含目录_20261008.pdf",
+      "pages": 93,
+      "sha256": "c8cd5fe4d24b8aaa437a088ebd15a61fdc02e01e464aab154558b171a84ea76e"
     }
   ],
   "chapters": [
@@ -19,13 +19,13 @@
       "title": "几何光学基本定律与成像概念",
       "label": "第一章",
       "group": "几何光学",
-      "source": "几何光学_真题重点公式标红_20261005.pdf",
+      "source": "几何光学_真题重点公式标红_20261008.pdf",
       "sourceStart": 2,
       "sourceEnd": 7,
       "pages": 6,
-      "bytes": 576928,
-      "url": "assets/notes/geom-ch1.pdf?v=a1745c1ced5b",
-      "sha256": "a1745c1ced5b94e7beeefa25be8772944c61480bc83e32276da4dc85f38602f6",
+      "bytes": 579118,
+      "url": "assets/notes/geom-ch1.pdf?v=95e196a13dbf",
+      "sha256": "95e196a13dbf8de577f5bdddf4072f99502fdcbae5ab317f3f22c482a5dd84a9",
       "relatedChapters": [
         {
           "id": "geom-ch1",
@@ -39,13 +39,13 @@
       "title": "理想光学系统",
       "label": "第二章",
       "group": "几何光学",
-      "source": "几何光学_真题重点公式标红_20261005.pdf",
+      "source": "几何光学_真题重点公式标红_20261008.pdf",
       "sourceStart": 8,
-      "sourceEnd": 14,
-      "pages": 7,
-      "bytes": 703244,
-      "url": "assets/notes/geom-ch2.pdf?v=e41e9c967a34",
-      "sha256": "e41e9c967a342d025b345408dcab089bd0b50dc4f4390b2699c8d7e56d8624a5",
+      "sourceEnd": 15,
+      "pages": 8,
+      "bytes": 710292,
+      "url": "assets/notes/geom-ch2.pdf?v=01a3c424a3b6",
+      "sha256": "01a3c424a3b6a13e11656eba8571305d730af9a9c298a21f4ccd1505bc8616e7",
       "relatedChapters": [
         {
           "id": "geom-ch2",
@@ -59,13 +59,13 @@
       "title": "平面镜、平板、反射棱镜与光学材料",
       "label": "第三章",
       "group": "几何光学",
-      "source": "几何光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 15,
-      "sourceEnd": 19,
+      "source": "几何光学_真题重点公式标红_20261008.pdf",
+      "sourceStart": 16,
+      "sourceEnd": 20,
       "pages": 5,
-      "bytes": 603411,
-      "url": "assets/notes/geom-ch3.pdf?v=0f261968e001",
-      "sha256": "0f261968e001e86b3124b8972ce8fa319b3a8a94715372d04d5f82c0af387d95",
+      "bytes": 606115,
+      "url": "assets/notes/geom-ch3.pdf?v=d590ef4d71d7",
+      "sha256": "d590ef4d71d747e3295d56cef25f50be930001cc25a87b648ed5bc85eba6f976",
       "relatedChapters": [
         {
           "id": "geom-ch3",
@@ -79,13 +79,13 @@
       "title": "光阑与景深",
       "label": "第四章",
       "group": "几何光学",
-      "source": "几何光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 20,
-      "sourceEnd": 24,
+      "source": "几何光学_真题重点公式标红_20261008.pdf",
+      "sourceStart": 21,
+      "sourceEnd": 25,
       "pages": 5,
-      "bytes": 562917,
-      "url": "assets/notes/geom-ch4.pdf?v=c8c65db371a7",
-      "sha256": "c8c65db371a7c9b9d0d33e512f0c9db9187bc2af1eb005d8ef136a4ca5e0e68a",
+      "bytes": 567186,
+      "url": "assets/notes/geom-ch4.pdf?v=3133f03eccd5",
+      "sha256": "3133f03eccd50d5af702c391be36d8c2e561c2b80647569be50f138f6a4b9c31",
       "relatedChapters": [
         {
           "id": "geom-ch4",
@@ -99,13 +99,13 @@
       "title": "光度学与色度学基础",
       "label": "第五章",
       "group": "几何光学",
-      "source": "几何光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 25,
-      "sourceEnd": 29,
+      "source": "几何光学_真题重点公式标红_20261008.pdf",
+      "sourceStart": 26,
+      "sourceEnd": 30,
       "pages": 5,
-      "bytes": 595583,
-      "url": "assets/notes/geom-ch5.pdf?v=5cc6601d428c",
-      "sha256": "5cc6601d428c7cba0a05603de1c357ed09ec372698ae37253b7422cc3385bb15",
+      "bytes": 598416,
+      "url": "assets/notes/geom-ch5.pdf?v=b1f49142417a",
+      "sha256": "b1f49142417abac3bd3685464f7973e091ccb2e6539ef93da8f67baa519358fa",
       "relatedChapters": [
         {
           "id": "geom-ch5",
@@ -119,13 +119,13 @@
       "title": "像差基础",
       "label": "第六章",
       "group": "几何光学",
-      "source": "几何光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 30,
-      "sourceEnd": 34,
+      "source": "几何光学_真题重点公式标红_20261008.pdf",
+      "sourceStart": 31,
+      "sourceEnd": 35,
       "pages": 5,
-      "bytes": 598371,
-      "url": "assets/notes/geom-ch6.pdf?v=e06a05999e24",
-      "sha256": "e06a05999e24da57c06711691a72db6ba5a5de76346ac9ad7d274bd1e1630a21",
+      "bytes": 601077,
+      "url": "assets/notes/geom-ch6.pdf?v=beae67131c8f",
+      "sha256": "beae67131c8ff7563a60265d88dcf9106f423efaadcd6a9fce681e6c47f66380",
       "relatedChapters": [
         {
           "id": "geom-ch6",
@@ -139,53 +139,53 @@
       "title": "光学仪器",
       "label": "光学仪器",
       "group": "光学仪器",
-      "source": "几何光学_真题重点公式标红_20261005.pdf",
-      "sourceStart": 35,
-      "sourceEnd": 70,
-      "pages": 36,
-      "bytes": 2034935,
-      "url": "assets/notes/instruments.pdf?v=68f8a367ab4d",
-      "sha256": "68f8a367ab4d84b6f8c4bfee4331bd87ced57a4c7647415805cb07698dbdc139",
+      "source": "几何光学_真题重点公式标红_20261008.pdf",
+      "sourceStart": 36,
+      "sourceEnd": 72,
+      "pages": 37,
+      "bytes": 1161442,
+      "url": "assets/notes/instruments.pdf?v=1f0115aa2d77",
+      "sha256": "1f0115aa2d77d14e12e13823593706783c2ffad9b4068b644926b28b3006ceb2",
       "relatedChapters": [
         {
           "id": "inst-c2",
           "label": "第 2 节 选填题：知识点–原题–解析–答案–公式",
-          "page": 15
+          "page": 16
         },
         {
           "id": "inst-c3",
           "label": "第 3 节 人眼、眼镜与双目视觉大题",
-          "page": 22
+          "page": 23
         },
         {
           "id": "inst-c4",
           "label": "第 4 节 放大镜、瞳与渐晕大题",
-          "page": 24
+          "page": 25
         },
         {
           "id": "inst-c5",
           "label": "第 5 节 显微镜综合大题",
-          "page": 26
+          "page": 27
         },
         {
           "id": "inst-c6",
           "label": "第 6 节 双薄透镜摄影物镜与主平面大题",
-          "page": 28
+          "page": 29
         },
         {
           "id": "inst-c7",
           "label": "第 7 节 曝光、等效焦距与景深大题",
-          "page": 30
+          "page": 31
         },
         {
           "id": "inst-c10",
           "label": "第 10 节 普通望远镜综合大题",
-          "page": 33
+          "page": 34
         },
         {
           "id": "inst-c11",
           "label": "第 11 节 带场镜、转像组的望远镜大题",
-          "page": 35
+          "page": 36
         }
       ]
     },
@@ -194,7 +194,7 @@
       "title": "光的电磁理论",
       "label": "第九章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
+      "source": "物理光学_真题重点公式标红_含目录_20261008.pdf",
       "sourceStart": 4,
       "sourceEnd": 19,
       "pages": 16,
@@ -214,7 +214,7 @@
       "title": "光的干涉",
       "label": "第十章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
+      "source": "物理光学_真题重点公式标红_含目录_20261008.pdf",
       "sourceStart": 20,
       "sourceEnd": 40,
       "pages": 21,
@@ -234,13 +234,13 @@
       "title": "光的衍射与光栅",
       "label": "第十一章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
+      "source": "物理光学_真题重点公式标红_含目录_20261008.pdf",
       "sourceStart": 41,
-      "sourceEnd": 57,
-      "pages": 17,
-      "bytes": 715693,
-      "url": "assets/notes/phys-ch11.pdf?v=40dc4fa2fa92",
-      "sha256": "40dc4fa2fa92c026c44fbdbd8a43541f994fb429d9e0b3e51d1b780b7e2bc40f",
+      "sourceEnd": 58,
+      "pages": 18,
+      "bytes": 730201,
+      "url": "assets/notes/phys-ch11.pdf?v=5a85b5f7f541",
+      "sha256": "5a85b5f7f5412ba71eab1477573d0b91680de0de7eab3f0c9da494a7e928ed78",
       "relatedChapters": [
         {
           "id": "phys-ch11",
@@ -254,9 +254,9 @@
       "title": "傅里叶光学",
       "label": "第十二章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "sourceStart": 58,
-      "sourceEnd": 71,
+      "source": "物理光学_真题重点公式标红_含目录_20261008.pdf",
+      "sourceStart": 59,
+      "sourceEnd": 72,
       "pages": 14,
       "bytes": 201728,
       "url": "assets/notes/phys-ch12.pdf?v=b9866526d381",
@@ -274,9 +274,9 @@
       "title": "偏振与晶体光学",
       "label": "第十三章",
       "group": "物理光学",
-      "source": "物理光学_真题重点公式标红_含目录_20261006.pdf",
-      "sourceStart": 72,
-      "sourceEnd": 92,
+      "source": "物理光学_真题重点公式标红_含目录_20261008.pdf",
+      "sourceStart": 73,
+      "sourceEnd": 93,
       "pages": 21,
       "bytes": 379501,
       "url": "assets/notes/phys-ch13.pdf?v=de97031969ed",
