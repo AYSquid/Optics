@@ -45479,26 +45479,26 @@
    "statusKey": "past-2022-beb6dcf92506682e",
    "sourceType": "past_exam",
    "sourceLabel": "浙江大学841历年真题",
-   "chapterId": "phys-ch11",
+   "chapterId": "phys-ch12",
    "section": "三、计算题",
    "number": "5.（12 分）",
    "name": "2022年 三、计算题",
    "year": 2022,
-   "order": 11003,
+   "order": 3006,
    "typeName": "计算／简答题",
    "stemImages": [],
    "analysisImages": [],
    "knowledge": {
     "points": [
-     "菲涅耳衍射与夫琅禾费衍射"
+     "薄透镜的二次相位与透射函数"
     ],
     "formulas": [],
     "pitfalls": []
    },
    "topics": [
-    "phys-ch11-k1"
+    "phys-ch12-k2"
    ],
-   "topicAssignment": "keyword_review_pending",
+   "topicAssignment": "manual_reviewed",
    "origin": {
     "file": "电子版_修订/2022.md",
     "line": 224
@@ -45520,7 +45520,7 @@
      "line": 106
     }
    ],
-   "studyTopicId": "phys-ch11-k7"
+   "studyTopicId": "phys-ch12-k2"
   },
   {
    "type": "calc",
