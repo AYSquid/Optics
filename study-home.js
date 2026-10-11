@@ -3,11 +3,34 @@
  const by=id=>document.getElementById(id),copy=value=>JSON.parse(JSON.stringify(value));
  const node=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
  const button=(text,fn,cls='study-button')=>{const b=node('button',cls,text);b.type='button';b.onclick=fn;return b;};
- let attached=false,key='',state={resume:null,days:{},examDate:''},active=false,restoring=false,writable=true,legacy=null;
- const dateKey=(d=new Date())=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+ let attached=false,key='',state={resume:null,days:{},events:{},examDate:''},active=false,restoring=false,writable=true,legacy=null;
+ const dateKey=(d=new Date())=>{const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(d);const v=Object.fromEntries(parts.map(p=>[p.type,p.value]));return v.year+'-'+v.month+'-'+v.day;};
+ const previousDay=day=>{const d=new Date(day+'T12:00:00Z');d.setUTCDate(d.getUTCDate()-1);return d.toISOString().slice(0,10);};
+ let activityDay='',account=null;
  function save(){if(!writable)return;try{localStorage.setItem(key,JSON.stringify(state));}catch(e){writable=false;}}
  function isPractice(){return !document.body.classList.contains('study-page')&&!active&&/^#\/(bank|resume|year\/|exams\/(optics|english)\/)/.test(location.hash);}
- function record(id){if(!attached||!id)return;const day=dateKey();const items=state.days[day]||(state.days[day]=[]);if(!items.includes(id)){items.push(id);save();if(active)show();}}
+ function record(id,details={}){
+  if(!attached||!id)return;const q=DATA.byId[id];id=q?.canonicalId||q?.statusKey||id;
+  const day=dateKey(),items=state.days[day]||(state.days[day]=[]),events=state.events[day]||(state.events[day]={});
+  const old=events[id]||{},sources={...(old.sources||{})};sources[details.kind||'assessment']=true;
+  events[id]={...old,...details,sources,at:new Date().toISOString(),label:q?(findChapter(q.chapterId)?.title||'光学题目')+' · '+q.number:details.label||'英语题目'};
+  if(!items.includes(id))items.push(id);
+  if(state.resume&&(state.resume.questionId===id||q&&state.resume.questionId===q.id))state.resume.at=new Date().toISOString();
+  save();if(active)show();
+ }
+ function undoRecord(id){
+  const day=dateKey(),event=state.events[day]?.[id];if(!event?.sources?.assessment)return;delete event.sources.assessment;
+  if(!Object.keys(event.sources).length){delete state.events[day][id];state.days[day]=(state.days[day]||[]).filter(qid=>qid!==id);}save();if(active)show();
+ }
+ function loadState(){
+  key=OpticsCloud.localKey('gopt.study-home.v1');state={resume:null,days:{},events:{},examDate:''};writable=true;
+  try{const saved=JSON.parse(localStorage.getItem(key)||'null');if(saved&&typeof saved==='object'&&!Array.isArray(saved)){
+   state.resume=saved.resume||null;state.examDate=/^\d{4}-\d{2}-\d{2}$/.test(saved.examDate)?saved.examDate:'';
+   for(const [day,ids] of Object.entries(saved.days||{}))if(/^\d{4}-\d{2}-\d{2}$/.test(day)&&Array.isArray(ids))state.days[day]=[...new Set(ids.filter(id=>typeof id==='string'))];
+   if(saved.events&&typeof saved.events==='object'&&!Array.isArray(saved.events))state.events=saved.events;
+  }}catch(e){writable=false;}
+ }
+ function totals(){const qs=DATA.questions.filter(q=>q.playable!==false),completed=qs.filter(q=>!!getStatus(statusKeyOf(q))).length;return {total:qs.length,completed,remaining:qs.length-completed,weak:qs.filter(q=>['shaky','unknown'].includes(getStatus(statusKeyOf(q)))).length};}
  function capture(){
   if(!attached||restoring||!isPractice()||OpticsCloud?.isApplying())return;
   const q=currentQuestion();if(!q||!['all','chapter','kn','exam'].includes(ui.scope.type))return;
@@ -16,7 +39,7 @@
   state.resume=next;save();
  }
  function retestPosition(session){
-  if(!attached||active||location.hash!=='#/retest'||!session||session.finished)return;const q=DATA.byId[session.ids[session.index]];if(!q)return;state.resume={kind:'retest',questionId:q.id,title:'错题复测 / '+(findChapter(q.chapterId)?.title||'本轮练习'),number:String(q.number),count:session.ids.length,done:Object.keys(session.results).length,at:new Date().toISOString()};save();
+  if(!attached||active||location.hash!=='#/retest'||!session||session.finished)return;const q=DATA.byId[session.ids[session.index]];if(!q)return;state.resume={kind:'retest',questionId:q.id,title:'错题复测 / '+(findChapter(q.chapterId)?.title||'本轮练习'),number:String(q.number),count:session.ids.length,done:Object.values(session.results).filter(r=>['known','shaky','unknown'].includes(r.status)).length,at:new Date().toISOString()};save();
  }
  function englishPosition(paper,group,q){
   if(!attached||!paper||!group||!q||active)return;
@@ -49,21 +72,21 @@
   if(r.kind==='english'){
    const p=window.EnglishExams?.paper;
    // English stores choices and graded subjective work independently of optics.
-   const prefix=r.paperId+'-',choices=EnglishStore.list('choice:'+prefix).filter(x=>x.value?.key);
+   const prefix=r.paperId+'-',answered=new Set(EnglishObjective.results(r.paperId).filter(a=>a.key).map(a=>a.id));
    const written=new Set(EnglishStore.list('version:'+prefix).filter(x=>x.value?.status==='complete').map(x=>x.value.questionId));
-   return {done:choices.length+written.size,total:r.paperCount||p?.questionCount||0};
+   return {done:answered.size+written.size,total:r.paperCount||p?.questionCount||0};
   }
   let ids=[];
   if(r.scope.type==='exam')ids=EXAMS.years.find(y=>y.id===r.scope.paperId)?.occurrenceIds||[];
   else if(r.scope.type==='chapter')ids=DATA.questions.filter(q=>q.chapterId===r.scope.chapterId).map(q=>q.id);
   else if(r.scope.type==='kn')ids=findKn(r.scope.chapterId,r.scope.knId)?.questionIds||[];
   else ids=DATA.questions.map(q=>q.id);
-  ids=ids.filter(id=>DATA.byId[id]?.playable!==false);
+  ids=ids.filter(id=>DATA.byId[id]&&DATA.byId[id].playable!==false&&(!r.scope.studyCategory||r.scope.studyCategory==='all'||(r.scope.studyCategory==='past'?DATA.byId[id].sourceType==='past_exam':r.scope.studyCategory==='geom'?['geom','inst'].includes(findChapter(DATA.byId[id].chapterId)?.source):findChapter(DATA.byId[id].chapterId)?.source==='phys')));
   return {done:ids.filter(id=>!!getStatus(statusKeyOf(DATA.byId[id]))).length,total:ids.length};
  }
  function metric(label,value,suffix,detail){const n=node('article','dashboard-metric');n.append(node('span','dashboard-metric-label',label));const v=node('div','dashboard-metric-value');v.append(node('strong',null,value),node('span',null,suffix));n.append(v,node('p',null,detail));return n;}
  function show(){
-  if(!attached)return;active=true;document.body.classList.remove('study-page');document.body.classList.add('dashboard-page');
+  if(!attached)return;active=true;document.body.classList.remove('study-page','notes-page');document.body.classList.add('dashboard-page');
   window.EnglishExams?.leave();window.OpticsElectronicNotes?.close();window.ExamTimer?.detach();
   const root=by('study-dashboard');root.hidden=false;root.replaceChildren();by('home-return').setAttribute('aria-current','page');
   document.querySelector('.page-eyebrow').textContent='STUDY / 学习首页';by('crumb').textContent='学习首页';by('crumb-sub').textContent='继续上一次练习，记录每一天的积累';by('progress').textContent='LEARNING / LOG';
@@ -73,37 +96,50 @@
   detail.append(node('h3',null,r?r.title:'准备开始你的第一段练习'));
   const meta=r?'上次停在第 '+r.number+' 题'+(r.kind==='optics'?' · '+statusFilterName(r.filter)+'筛选':'')+' · '+new Date(r.at).toLocaleString('zh-CN',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'选择一个章节或年份，开始后会自动保存位置。';
   detail.append(node('p','study-muted',meta));
-  if(r){const line=node('p','dashboard-completion');line.append('已完成 ',node('strong',null,p.done), ' 题'+(p.total?' · 还剩 '+Math.max(0,p.total-p.done)+' 题':''));detail.append(line);if(p.total){const bar=node('progress');bar.max=p.total;bar.value=p.done;bar.setAttribute('aria-label','当前分类完成进度');detail.append(bar);}detail.append(node('p','dashboard-footnote',r.kind==='retest'?'提交答案后计入本轮完成进度。':r.kind==='english'?'客观题作答、主观题批改完成后计入进度。':'手动标记会做、不会做或不熟练后，计入完成进度。'));}
+  if(r){const line=node('p','dashboard-completion');line.append('已完成 ',node('strong',null,p.done), ' 题'+(p.total?' · 还剩 '+Math.max(0,p.total-p.done)+' 题':''));detail.append(line);if(p.total){const bar=node('progress');bar.max=p.total;bar.value=p.done;bar.setAttribute('aria-label','当前分类完成进度');detail.append(bar);}detail.append(node('p','dashboard-footnote',r.kind==='retest'?'标记会做、不会做或不熟练后，计入本轮完成进度。':r.kind==='english'?'客观题提交批改、主观题批改完成后计入进度。':'手动标记会做、不会做或不熟练后，计入完成进度。'));}
   card.append(detail,button(r?'继续做题 →':'开始练习 →',resume,'study-button study-primary dashboard-resume'));root.append(card);
-  const stats=node('section','dashboard-stats');const today=dateKey(),yesterday=new Date();yesterday.setDate(yesterday.getDate()-1);const n=state.days[today]?.length||0,prev=state.days[dateKey(yesterday)]?.length||0;
+  const stats=node('section','dashboard-stats');const today=dateKey(),yesterday=previousDay(today);const n=state.days[today]?.length||0,prev=state.days[yesterday]?.length||0;
   const date=state.examDate?new Date(state.examDate+'T00:00:00'):null,midnight=new Date(today+'T00:00:00');const remaining=date?Math.ceil((date-midnight)/86400000):null;
   const countdown=metric('考试倒计时',remaining===null?'—':Math.max(0,remaining),'天',date?'目标日期 · '+state.examDate:'设置你的考试日期');
   const input=node('input','dashboard-date');input.type='date';input.value=state.examDate;input.setAttribute('aria-label','考试日期');input.onchange=()=>{state.examDate=input.value;save();show();};countdown.append(input);
-  let streak=0,cursor=new Date();if(!n)cursor.setDate(cursor.getDate()-1);while(state.days[dateKey(cursor)]?.length){streak++;cursor.setDate(cursor.getDate()-1);}
-  stats.append(countdown,metric('今日刷题数',n,'题','昨日 '+prev+' 题 · 同一道题每天计一次'),metric('连续学习',streak,'天','作答或标记掌握状态，记录当日学习'));root.append(stats);
-  const activity=node('section','study-panel dashboard-activity');const title=node('div','dashboard-activity-head');title.append(node('h2',null,'学习活动'),node('span','study-muted','每日作答 · 近 17 周'));activity.append(title);
-  const legend=node('div','dashboard-legend');legend.append(node('span',null,'刷题强度'));for(let i=0;i<5;i++){const s=node('i');s.dataset.level=i;s.title=['无','1–4 题','5–9 题','10–19 题','20 题及以上'][i];legend.append(s);}legend.append(node('span',null,'多'));activity.append(legend);
-  const viewport=node('div','dashboard-heatmap-scroll'),chart=node('div','dashboard-heatmap');chart.setAttribute('aria-label','最近 17 周每日作答记录');
+  let streak=0,cursor=n?today:yesterday;while(state.days[cursor]?.length){streak++;cursor=previousDay(cursor);}
+  stats.append(countdown,metric('今日刷题数',n,'题',prev?('昨日 '+prev+' 题 · '+(n===prev?'与昨日持平':'较昨日'+(n>prev?'增加 ':'减少 ')+Math.abs(Math.round((n-prev)/prev*100))+'%')):'昨日无刷题记录'),metric('连续学习',streak,'天','有效作答判定日连续累计'));root.append(stats);
+  const sum=totals(),overview=node('section','study-panel dashboard-bank-summary');overview.append(node('h2',null,'题库进度'));
+  const summaryGrid=node('div','dashboard-summary-grid');[['可练习题目',sum.total],['已完成',sum.completed],['还剩未做',sum.remaining],['待巩固',sum.weak]].forEach(([t,n])=>{const block=node('div');block.append(node('span',null,t),node('strong',null,n+' 题'));summaryGrid.append(block);});overview.append(summaryGrid);root.append(overview);
+  const width=by('scroller').clientWidth-56,weeks=width<608?13:width<800?17:26,activity=node('section','study-panel dashboard-activity'),title=node('div','dashboard-activity-head');title.append(node('h2',null,'学习活动'),node('span','study-muted','每日作答 · 近 '+weeks+' 周'));activity.append(title);
+  const legend=node('div','dashboard-legend');legend.append(node('span',null,'刷题强度'));for(let i=0;i<5;i++){const swatch=node('i');swatch.dataset.level=i;swatch.title=['无','轻：1–5 次','中：6–15 次','高：16–30 次','很高：31 次及以上'][i];legend.append(swatch);}legend.append(node('span',null,'很高'));activity.append(legend);
+  const viewport=node('div','dashboard-heatmap-scroll'),chart=node('div','dashboard-heatmap');chart.style.gridTemplateColumns='18px repeat('+weeks+',minmax(0,1fr))';chart.setAttribute('aria-label','刷题强度热力图（按作答判定次数）');
   const labels=node('div','dashboard-day-labels');labels.append(node('span',null,''));['日','一','二','三','四','五','六'].forEach(day=>labels.append(node('span',null,day)));chart.append(labels);
-  const start=new Date(today+'T12:00:00');start.setDate(start.getDate()-start.getDay()-16*7);let lastMonth=-1,days=0;
-  for(let w=0;w<17;w++){const col=node('div','dashboard-week');const wd=new Date(start);wd.setDate(start.getDate()+w*7);const month=wd.getMonth(),label=month!==lastMonth?month+1+'月':'';lastMonth=month;col.append(node('span','dashboard-month',label));for(let d=0;d<7;d++){const dt=new Date(wd);dt.setDate(wd.getDate()+d);const key=dateKey(dt),count=state.days[key]?.length||0;if(count)days++;const cell=node('span','dashboard-day');cell.dataset.level=count===0?0:count<5?1:count<10?2:count<20?3:4;cell.title=key+' · '+count+' 题';cell.setAttribute('aria-label',cell.title);if(key>today)cell.classList.add('is-future');if(key===today)cell.classList.add('is-today');col.append(cell);}chart.append(col);}
-  viewport.append(chart);activity.append(viewport,node('p','dashboard-footnote','近 17 周记录 '+days+' 个作答日。每日记录从此功能启用后开始积累。'));root.append(activity);
+  const start=new Date(today+'T12:00:00Z');start.setUTCDate(start.getUTCDate()-start.getUTCDay()-(weeks-1)*7);let lastMonth=-1,days=0;
+  const dayDetail=node('div','dashboard-day-detail');dayDetail.hidden=true;
+  for(let w=0;w<weeks;w++){
+   const col=node('div','dashboard-week'),wd=new Date(start);wd.setUTCDate(start.getUTCDate()+w*7);const month=wd.getUTCMonth(),name=month!==lastMonth?month+1+'月':'';lastMonth=month;col.append(node('span','dashboard-month',name));
+   for(let d=0;d<7;d++){
+    const dt=new Date(wd);dt.setUTCDate(wd.getUTCDate()+d);const day=dt.toISOString().slice(0,10);if(day>today)continue;
+    const count=state.days[day]?.length||0;if(count)days++;const cell=node('button','dashboard-day');cell.type='button';cell.dataset.day=day;cell.dataset.level=count===0?0:count<=5?1:count<=15?2:count<=30?3:4;cell.title=day+' · '+count+' 次作答判定';cell.setAttribute('aria-label',cell.title);if(day===today)cell.classList.add('is-today');
+    cell.onclick=()=>{activityDay=day;dayDetail.hidden=false;dayDetail.replaceChildren(node('h3',null,day+' · '+count+' 次作答判定'));(state.days[day]||[]).forEach(id=>{const event=state.events[day]?.[id],q=DATA.byId[id];const row=node('div','dashboard-day-record');row.append(node('span',null,event?.label||(q?(findChapter(q.chapterId)?.title||'光学题目')+' · '+q.number:'英语题目')),node('small',null,event?.level?({known:'会做',shaky:'不熟练',unknown:'不会做'}[event.level]):event?.kind==='objective'?'已提交批改':event?.kind==='subjective'?'批改完成':'历史学习记录'));if(q)row.append(button('查看原题',()=>{exit();location.hash='/bank';ui.statusFilter='all';ui.scope={type:'chapter',chapterId:q.chapterId};reselect({keepQuestionId:q.id});savePrefs();}));dayDetail.append(row);});if(!count)dayDetail.append(node('p',null,'当天没有作答判定记录。'));};col.append(cell);
+   }chart.append(col);
+  }
+  viewport.append(chart);activity.append(viewport,dayDetail,node('p','dashboard-footnote','近 '+weeks+' 周记录 '+days+' 个作答日。点击日期可查看当日题目；选择选项或查看答案不计数，同日同题改评不重复累计。'));root.append(activity);
   const shortcuts=node('div','dashboard-shortcuts');[['章节题库',()=>{exit();location.hash='/bank';openBank();}],['历年真题',()=>{exit();location.hash='/exams';openExamHome();}],['掌握地图',()=>OpticsStudyTools.open('mastery')],['错题复测',()=>OpticsStudyTools.open('retest')]].forEach(([text,fn])=>shortcuts.append(button(text+' →',fn)));root.append(shortcuts,node('p','dashboard-storage-note',writable?'做题位置、每日记录与考试日期保存在此浏览器，并按登录账号分别保存。':'本机记录保存失败，关闭网页后可能无法恢复本次位置。'));
  }
  function attach(){
   if(attached)return;key=OpticsCloud.localKey('gopt.study-home.v1');
-  try{const saved=JSON.parse(localStorage.getItem(key)||'null');if(saved&&typeof saved==='object'&&!Array.isArray(saved)){state.resume=saved.resume||null;state.days=saved.days&&typeof saved.days==='object'&&!Array.isArray(saved.days)?saved.days:{};state.examDate=/^\d{4}-\d{2}-\d{2}$/.test(saved.examDate)?saved.examDate:'';}}catch(e){writable=false;}
+  loadState();account=window.OpticsAuth?.user?.id||null;
   attached=true;by('home-return').onclick=open;document.querySelector('.brand-home').onclick=e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open();};
   if(!state.resume&&legacy&&DATA.byId[legacy.lastQuestionId]&&['all','chapter','kn','exam'].includes(legacy.scope?.type)){const q=DATA.byId[legacy.lastQuestionId];state.resume={kind:'optics',scope:legacy.scope,filter:legacy.statusFilter||'all',questionId:q.id,title:legacy.scope.type==='exam'?q.year+' 年真题':(findChapter(q.chapterId)?.title||'全部题目'),number:String(q.number),at:new Date().toISOString()};save();}
   window.addEventListener('hashchange',()=>{if(location.hash==='#/dashboard'){show();}else{const was=active;exit();if(was&&location.hash!=='#/home')render();capture();}});
-  document.addEventListener('click',e=>{const option=e.target.closest('#options [data-option-key],.retest-options [data-option-key],.eng-option');if(option&&!option.disabled){const q=option.matches('.eng-option')?EnglishExams.current:option.closest('.retest-card')?DATA.byId[option.closest('.retest-card').dataset.question]:currentQuestion();if(q)record(q.canonicalId||q.statusKey||q.id);}});
-  window.addEventListener('storage',e=>{if(e.key===key&&e.newValue){try{const other=JSON.parse(e.newValue);if(other&&other.days){state=other;if(active)show();}}catch(_){}}});
+
+  window.addEventListener('storage',e=>{if(e.key===key&&e.newValue){try{const other=JSON.parse(e.newValue);if(other&&other.days){loadState();if(active)show();}}catch(_){}}});
   document.addEventListener('keydown',e=>{if(active&&['ArrowLeft','ArrowRight'].includes(e.key)&&!e.target.matches('input,textarea,select')&&!e.target.closest('dialog'))e.stopImmediatePropagation();},true);
+  OpticsAuth?.subscribe(()=>{const next=OpticsAuth.user?.id||null;if(next===account)return;account=next;loadState();if(active)show();});
+  let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(active)show();},150);});
   if(location.hash==='#/dashboard')show();else capture();
  }
  const baseStart=window.start;window.start=function(){try{legacy=JSON.parse(localStorage.getItem(OpticsCloud.localKey('gopt.prefs.v1'))||'null');}catch(_){}return baseStart.apply(this,arguments);};
  const baseRender=window.render;window.render=function(){if(active&&location.hash==='#/dashboard'){show();return;}baseRender();capture();};
  const baseScope=window.setScope;window.setScope=function(scope,opts){if(active){exit();location.hash='/bank';}return baseScope(scope,opts);};
- const baseStatus=window.changeStatus;window.changeStatus=function(val){const q=currentQuestion();baseStatus(val);if(val&&q?.playable!==false&&q)record(q.canonicalId||q.statusKey||q.id);capture();};
- window.OpticsDashboard={attach,open,resume,record,englishPosition,retestPosition};
+ const baseStatus=window.changeStatus;window.changeStatus=function(val){const q=currentQuestion();baseStatus(val);capture();};
+ const baseSetStatus=window.setStatus;window.setStatus=function(id,value){const old=getStatus(id),result=baseSetStatus.apply(this,arguments);if(attached&&value&&value!==old){const q=DATA.byId[id]||DATA.questions.find(q=>statusKeyOf(q)===id);if(q&&q.playable!==false)record(q.canonicalId||q.statusKey||q.id,{kind:'assessment',level:value});}return result;};
+ window.OpticsDashboard={attach,open,resume,record,undo:undoRecord,englishPosition,retestPosition,totals,progress:()=>progress(state.resume),counts:()=>copy(state.days)};
 })();

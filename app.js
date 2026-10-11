@@ -376,8 +376,13 @@ function orderedStudyChapters() {
 }
 
 function renderTree() {
-  var tree = $('tree');
-  clear(tree);
+  var treeHost = $('tree');
+  var sidebarScroll = treeHost.closest('.sidebar-scroll');
+  var sidebarTop = sidebarScroll ? sidebarScroll.scrollTop : 0;
+  var focusedScope = treeHost.contains(document.activeElement) ? document.activeElement.dataset.treeScope : '';
+  // Build off-screen: removing the old tree first collapses the scroll height
+  // and the browser permanently clamps its parent's scroll position to zero.
+  var tree = document.createDocumentFragment();
 
   var rootNode = el('div', 'tree-node');
   var rootBtn = el('button', 'tree-root-btn tree-btn' + (ui.scope.type === 'all' ? ' is-current' : ''));
@@ -416,6 +421,7 @@ function renderTree() {
 
     var btn = el('button', 'tree-chap-btn tree-btn');
     btn.type = 'button';
+    btn.dataset.treeScope = ch.id;
     var caret = el('span', 'tree-caret', '▶');
     var row = el('div', 'tree-chapter-row');
     var expand = el('button', 'tree-expand');
@@ -439,6 +445,7 @@ function renderTree() {
     ch.knowledge.forEach(function (k) {
       var kb = el('button', 'tree-kn-btn tree-btn');
       kb.type = 'button';
+      kb.dataset.treeScope = k.id;
       kb.title = k.name;
       kb.appendChild(el('span', 'tree-name', k.name));
       var kmatch = k.questionIds.filter(function (id) { return matchesFilter(id, ui.statusFilter); }).length;
@@ -468,6 +475,12 @@ function renderTree() {
     node.appendChild(kids);
     group.appendChild(node);
   });
+  treeHost.replaceChildren(tree);
+  if (focusedScope) {
+    var focusTarget = treeHost.querySelector('[data-tree-scope="' + focusedScope + '"]');
+    if (focusTarget) focusTarget.focus({preventScroll:true});
+  }
+  if (sidebarScroll) sidebarScroll.scrollTop = sidebarTop;
 }
 
 function countBadge(total, match) {

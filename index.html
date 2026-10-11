@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="english-exams.css?v=20261003-translation">
 <link rel="stylesheet" href="study-tools.css?v=20261004-r1">
 <link rel="stylesheet" href="study-home.css?v=20261004-r2">
+<link rel="stylesheet" href="learning-flow.css?v=20261011">
 <script src="sidebar-scroll.js?v=20260930-native" defer></script>
 <script src="themes.js?v=lonetrail-default-20260930"></script>
 <script src="terminal-header.js?v=subject-picker-20261003-r2" defer></script>
@@ -46,10 +47,10 @@
     <nav class="module-nav" aria-label="学习模块"><button id="module-bank" type="button">章节题库</button><button id="module-exams" type="button">历年真题</button></nav>
     <details class="theme-menu"><summary>主题配色 <span id="theme-current">孤星</span></summary><div class="theme-picker" role="group" aria-label="页面配色"><button data-set-theme="lonetrail" type="button">孤星</button><button data-set-theme="blue" type="button">浅蓝 · 白</button><button data-set-theme="lavender" type="button">浅紫 · 白</button><button data-set-theme="green" type="button">浅绿</button><button data-set-theme="green-solid" type="button">浅绿 · 纯色</button><button data-set-theme="rhine" type="button">莱茵生命</button><button data-set-theme="rhine-terminal" type="button">认证终端</button></div></details>
     <button id="cloud-open" class="cloud-entry" type="button"><span>云端记录</span><small id="cloud-short">本地模式</small></button>
-    <button id="notes-library-open" class="cloud-entry notes-entry" type="button" aria-haspopup="dialog" aria-controls="question-notes-dialog"><span>题目笔记</span><small id="notes-count">—</small></button>
+    <button id="notes-library-open" class="cloud-entry notes-entry" type="button" aria-controls="notes-library-page"><span>题目笔记</span><small id="notes-count">—</small></button>
     <button id="electronic-notes-open" class="cloud-entry notes-entry" type="button" aria-haspopup="dialog" aria-controls="electronic-notes-dialog"><span>电子笔记</span><small>章节 PDF</small></button>
     <nav class="study-links" aria-label="学习工具">
-      <button id="favorites-open" type="button" aria-haspopup="dialog" aria-controls="favorites-dialog"><span aria-hidden="true">☆</span>收藏本 <small id="favorites-count">0</small></button>
+      <button id="favorites-open" type="button" aria-controls="study-hub"><span aria-hidden="true">☆</span>收藏本 <small id="favorites-count">0</small></button>
       <button id="mastery-open" type="button"><span aria-hidden="true">▦</span>掌握地图</button>
       <button id="knowledge-open" type="button"><span aria-hidden="true">⌘</span>知识图谱</button>
       <button id="retest-open" type="button"><span aria-hidden="true">↻</span>错题复测 <small id="retest-count">0</small></button>
@@ -187,19 +188,20 @@
 <script src="cloud.js?v=source-multiselect-20261003-r1"></script>
 
 <script src="vendor/katex/katex.min.js"></script>
-<script src="app.js?v=dashboard-20261004-r1"></script>
+<script src="app.js?v=interaction-flow-20261011"></script>
 <script src="exam-timer.js?v=20261003"></script>
 <script src="english-data.js?v=20261003-translation"></script>
 <script src="english-store.js?v=20261003"></script>
 <script src="english-objective.js?v=20261003-modes"></script>
 <script src="english-api-settings.js?v=20261003"></script>
 <script src="english-grader.js?v=20261003"></script>
-<script src="english-exams.js?v=dashboard-20261004-r1"></script>
+<script src="english-exams.js?v=interaction-flow-20261011"></script>
 <script src="exams.js?v=english-20261003-r1"></script>
 <script src="home.js?v=dashboard-20261004-r1"></script>
-<script src="question-notes.js?v=study-tools-20261004-r1"></script>
-<script src="electronic-notes.js?v=20261005-physics-layout"></script>
-<script src="study-tools.js?v=dashboard-20261004-r1"></script>
-<script src="study-home.js?v=20261004-r2"></script>
+<script src="note-editor.js?v=20261011"></script>
+<script src="question-notes.js?v=interaction-flow-20261011"></script>
+<script src="electronic-notes.js?v=interaction-flow-20261011"></script>
+<script src="study-tools.js?v=interaction-flow-20261011"></script>
+<script src="study-home.js?v=interaction-flow-20261011"></script>
 </body>
 </html>

@@ -144,5 +144,5 @@
  window.addEventListener('hashchange',closeReader);
  new ResizeObserver(()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(active&&pdf){const a=pendingAnchor||anchor();pendingAnchor=null;layoutPages(a);}},160);}).observe(viewport);
  window.OpticsAuth?.subscribe(()=>{if(!window.OpticsAuth.user){closeReader();if(dialog.open)dialog.close();positions.clear();}});
- $('electronic-notes-open').onclick=openLibrary;window.OpticsElectronicNotes={openLibrary,close:closeReader};
+ $('electronic-notes-open').onclick=openLibrary;window.OpticsElectronicNotes={openLibrary,close:closeReader,openByChapter:async id=>{const data=await catalog(),c=data.chapters.find(c=>c.id===id||c.id==='instruments'&&c.relatedChapters?.some(r=>r.id===id));if(c){const section=c.relatedChapters?.find(r=>r.id===id);return openChapter(c,section?.page);}return openLibrary();}};
 })();
