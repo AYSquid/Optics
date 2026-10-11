@@ -44,6 +44,7 @@
  function formatDate(value){const d=new Date(value);return Number.isNaN(d.getTime())?'':d.toLocaleString('zh-CN',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});}
  function reflect(){
   const countEl=byId('notes-count');if(countEl)countEl.textContent=uid?(count===null?'—':String(count)):'需登录';
+  if(!libraryPage.hidden){byId('progress').textContent=uid?(count===null?'笔记读取中':count+' 条笔记'):'请登录';document.querySelector('.page-eyebrow').textContent='NOTES / 题目笔记';}
   const b=byId('btn-question-note'),q=activeQuestion();if(!b)return;
   b.disabled=!uid||!q;
   const exists=q&&cache.get(q.id);const dot=b.querySelector('.note-record-dot');if(dot)dot.hidden=!exists;
@@ -125,7 +126,7 @@
  }
  function renderDetail(row,edit){
   if(!current)return;editing=edit;body.replaceChildren();const q=current.q,id=current.id,draft=drafts.get(draftKey(id));const parsed=format.read(row?.content||'');noteTags=[...(draft?.tags||parsed.tags)];
-  body.append(node('div','notes-context',context(q)));const meta=node('div','notes-meta',metadata(q));meta.append(node('span','notes-id','题目 ID：'+id));body.append(meta,original(q));
+  body.append(node('div','notes-context',context(q)));const meta=node('div','notes-meta',metadata(q));body.append(meta,original(q));
   const label=node('label','notes-editor-label','我的笔记');body.append(label);
   if(edit){const input=node('textarea','notes-textarea');input.id='notes-text';input.maxLength=50000;input.placeholder='记录关键思路、公式或易错点；支持 Markdown。';input.value=draft?draft.text:parsed.body;input.autocomplete='off';label.htmlFor=input.id;const editor=format.editor(input,scheduleSave,noteTags);body.append(editor.element);}
   else{const content=node('div','notes-content');format.render(parsed.body,content);body.append(content);if(parsed.tags.length)body.append(node('p','notes-meta','标签：'+parsed.tags.join(' · ')));}
