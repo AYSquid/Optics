@@ -442,5 +442,6 @@
   },true);
   render();
  }
- window.OpticsStudyTools={attach,open,openFavorites,assess:recordAssessment,plans:()=>JSON.parse(JSON.stringify(state.plans)),startPractice};
+ function restoreCheckpoint(saved){if(!saved||!Array.isArray(saved.ids)||!saved.ids.length||saved.ids.length>DATA.questions.length||!saved.ids.every(id=>DATA.byId[id]&&DATA.byId[id].playable!==false)||!Number.isInteger(saved.index)||saved.index<0||saved.index>=saved.ids.length)return false;const prior=state.session;state.session={...saved,results:saved.results&&typeof saved.results==='object'?saved.results:{},picks:saved.picks&&typeof saved.picks==='object'?saved.picks:{},drafts:prior?.date===saved.date?prior.drafts||{}:{}};persist();return true;}
+ window.OpticsStudyTools={restoreCheckpoint,attach,open,openFavorites,assess:recordAssessment,plans:()=>JSON.parse(JSON.stringify(state.plans)),startPractice};
 })();

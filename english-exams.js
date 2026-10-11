@@ -55,7 +55,7 @@
   try{indexData=await EnglishData.index();if(seq!==token||!active)return;renderHome();}catch(e){if(seq===token)root.replaceChildren(node('p','eng-error',e.message),button('重试',home));}
  }
  function renderHome(){
-  root.replaceChildren();const intro=node('div','exam-intro');intro.append(node('h1',null,'循着年份，回到考场。'),node('p',null,'按原题顺序练习，分别记录每份试卷的进度。客观题提交后判分；翻译和作文保存草稿及每次批改。'));
+  root.replaceChildren();const intro=node('div','exam-intro');intro.append(node('p',null,'按原题顺序练习，分别记录每份试卷的进度。客观题提交后判分；翻译和作文保存草稿及每次批改。'));
   const switcher=node('div','eng-variants');[1,2].forEach(v=>{const b=button('英语'+(v===1?'一':'二'),()=>{homeVariant=v;renderHome();});b.setAttribute('aria-pressed',String(v===homeVariant));switcher.append(b);});intro.append(switcher);root.append(intro);syncBar(root);
   const grid=node('div','exam-grid');indexData.papers.filter(p=>p.variant===homeVariant).sort((a,b)=>b.year-a.year).forEach(p=>{
    const card=node('article','year-card');card.append(node('h2',null,p.year));card.append(node('p',null,Object.entries(p.sectionCounts).map(([k,n])=>EnglishData.labels[k]+' '+n).join(' · ')));

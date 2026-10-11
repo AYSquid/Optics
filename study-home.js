@@ -3,35 +3,38 @@
  const by=id=>document.getElementById(id),copy=value=>JSON.parse(JSON.stringify(value));
  const node=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
  const button=(text,fn,cls='study-button')=>{const b=node('button',cls,text);b.type='button';b.onclick=fn;return b;};
- let attached=false,key='',state={resume:null,days:{},events:{},examDate:''},active=false,restoring=false,writable=true,legacy=null;
+ let attached=false,key='',state={resume:null,days:{},events:{},removed:{},examDate:'',examDateAt:''},active=false,restoring=false,writable=true,legacy=null;
  const dateKey=(d=new Date())=>{const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(d);const v=Object.fromEntries(parts.map(p=>[p.type,p.value]));return v.year+'-'+v.month+'-'+v.day;};
  const previousDay=day=>{const d=new Date(day+'T12:00:00Z');d.setUTCDate(d.getUTCDate()-1);return d.toISOString().slice(0,10);};
  let activityDay='',account=null;
- function save(){if(!writable)return;try{localStorage.setItem(key,JSON.stringify(state));}catch(e){writable=false;}}
+ function save(){if(!writable)return;try{localStorage.setItem(key,JSON.stringify(state));window.OpticsDashboardCloud?.capture();}catch(e){writable=false;}}
  function isPractice(){return !document.body.classList.contains('study-page')&&!active&&/^#\/(bank|resume|year\/|exams\/(optics|english)\/)/.test(location.hash);}
  function record(id,details={}){
   if(!attached||!id)return;const q=DATA.byId[id];id=q?.canonicalId||q?.statusKey||id;
   const day=dateKey(),items=state.days[day]||(state.days[day]=[]),events=state.events[day]||(state.events[day]={});
   const old=events[id]||{},sources={...(old.sources||{})};sources[details.kind||'assessment']=true;
   events[id]={...old,...details,sources,at:new Date().toISOString(),label:q?(findChapter(q.chapterId)?.title||'光学题目')+' · '+q.number:details.label||'英语题目'};
-  if(!items.includes(id))items.push(id);
+  if(!items.includes(id))items.push(id);if(state.removed[day])delete state.removed[day][id];
   if(state.resume&&(state.resume.questionId===id||q&&state.resume.questionId===q.id))state.resume.at=new Date().toISOString();
   save();if(active)show();
  }
  function undoRecord(id){
   const day=dateKey(),event=state.events[day]?.[id];if(!event?.sources?.assessment)return;delete event.sources.assessment;
-  if(!Object.keys(event.sources).length){delete state.events[day][id];state.days[day]=(state.days[day]||[]).filter(qid=>qid!==id);}save();if(active)show();
+  if(!Object.keys(event.sources).length){delete state.events[day][id];(state.removed[day]||(state.removed[day]={}))[id]=new Date().toISOString();state.days[day]=(state.days[day]||[]).filter(qid=>qid!==id);}save();if(active)show();
  }
  function loadState(){
-  key=OpticsCloud.localKey('gopt.study-home.v1');state={resume:null,days:{},events:{},examDate:''};writable=true;
+  key=OpticsCloud.localKey('gopt.study-home.v1');state={resume:null,days:{},events:{},removed:{},examDate:'',examDateAt:''};writable=true;
   try{const saved=JSON.parse(localStorage.getItem(key)||'null');if(saved&&typeof saved==='object'&&!Array.isArray(saved)){
    state.resume=saved.resume||null;state.examDate=/^\d{4}-\d{2}-\d{2}$/.test(saved.examDate)?saved.examDate:'';
    for(const [day,ids] of Object.entries(saved.days||{}))if(/^\d{4}-\d{2}-\d{2}$/.test(day)&&Array.isArray(ids))state.days[day]=[...new Set(ids.filter(id=>typeof id==='string'))];
    if(saved.events&&typeof saved.events==='object'&&!Array.isArray(saved.events))state.events=saved.events;
+   if(saved.removed&&typeof saved.removed==='object'&&!Array.isArray(saved.removed))state.removed=saved.removed;
+   state.examDateAt=typeof saved.examDateAt==='string'?saved.examDateAt:'';
   }}catch(e){writable=false;}
  }
  function totals(){const qs=DATA.questions.filter(q=>q.playable!==false),completed=qs.filter(q=>!!getStatus(statusKeyOf(q))).length;return {total:qs.length,completed,remaining:qs.length-completed,weak:qs.filter(q=>['shaky','unknown'].includes(getStatus(statusKeyOf(q)))).length};}
  function capture(){
+  if(window.OpticsDashboardCloud?.pendingInitialPull())return;
   if(!attached||restoring||!isPractice()||OpticsCloud?.isApplying())return;
   const q=currentQuestion();if(!q||!['all','chapter','kn','exam'].includes(ui.scope.type))return;
   const next={kind:'optics',scope:copy(ui.scope),filter:ui.statusFilter,questionId:q.id,title:scopeTitle(),number:String(q.number),count:ui.scopeIds.length,at:new Date().toISOString()};
@@ -39,7 +42,7 @@
   state.resume=next;save();
  }
  function retestPosition(session){
-  if(!attached||active||location.hash!=='#/retest'||!session||session.finished)return;const q=DATA.byId[session.ids[session.index]];if(!q)return;state.resume={kind:'retest',questionId:q.id,title:'错题复测 / '+(findChapter(q.chapterId)?.title||'本轮练习'),number:String(q.number),count:session.ids.length,done:Object.values(session.results).filter(r=>['known','shaky','unknown'].includes(r.status)).length,at:new Date().toISOString()};save();
+  if(!attached||active||location.hash!=='#/retest'||!session||session.finished)return;const q=DATA.byId[session.ids[session.index]];if(!q)return;state.resume={kind:'retest',questionId:q.id,title:'错题复测 / '+(findChapter(q.chapterId)?.title||'本轮练习'),number:String(q.number),count:session.ids.length,checkpoint:{ids:session.ids,index:session.index,name:session.name,date:session.date,picks:session.picks,results:session.results,finished:session.finished,paused:session.paused},done:Object.values(session.results).filter(r=>['known','shaky','unknown'].includes(r.status)).length,at:new Date().toISOString()};save();
  }
  function englishPosition(paper,group,q){
   if(!attached||!paper||!group||!q||active)return;
@@ -51,7 +54,7 @@
   const r=state.resume;exit();
   if(!r){location.hash='/bank';openBank();return;}
   window.OpticsElectronicNotes?.close();
-  if(r.kind==='retest'){OpticsStudyTools.open('retest');return;}
+  if(r.kind==='retest'){if(r.checkpoint)OpticsStudyTools.restoreCheckpoint(r.checkpoint);OpticsStudyTools.open('retest');return;}
   if(r.kind==='english'){location.hash='/exams/english/'+encodeURIComponent(r.paperId)+'/'+encodeURIComponent(r.groupId)+'/'+r.questionNumber;return;}
   if(!DATA.byId[r.questionId]){location.hash='/bank';openBank();return;}
   restoring=true;
@@ -90,7 +93,7 @@
   window.EnglishExams?.leave();window.OpticsElectronicNotes?.close();window.ExamTimer?.detach();
   const root=by('study-dashboard');root.hidden=false;root.replaceChildren();by('home-return').setAttribute('aria-current','page');
   document.querySelector('.page-eyebrow').textContent='STUDY / 学习首页';by('crumb').textContent='学习首页';by('crumb-sub').textContent='继续上一次练习，记录每一天的积累';by('progress').textContent='LEARNING / LOG';
-  const head=node('div','dashboard-heading');head.append(node('span','study-kicker','STUDY TERMINAL / 学习终端'),node('h1',null,'从上一次，继续。'));head.append(button('返回开场',()=>{exit();location.hash='/home';},'study-button dashboard-entry'));root.append(head);
+
   const card=node('section','study-panel dashboard-continue');card.append(node('span','study-kicker','RESUME / 继续做题'),node('h2',null,'继续学习'));
   const r=state.resume,p=progress(r),detail=node('div','dashboard-resume-info');
   detail.append(node('h3',null,r?r.title:'准备开始你的第一段练习'));
@@ -101,7 +104,7 @@
   const stats=node('section','dashboard-stats');const today=dateKey(),yesterday=previousDay(today);const n=state.days[today]?.length||0,prev=state.days[yesterday]?.length||0;
   const date=state.examDate?new Date(state.examDate+'T00:00:00'):null,midnight=new Date(today+'T00:00:00');const remaining=date?Math.ceil((date-midnight)/86400000):null;
   const countdown=metric('考试倒计时',remaining===null?'—':Math.max(0,remaining),'天',date?'目标日期 · '+state.examDate:'设置你的考试日期');
-  const input=node('input','dashboard-date');input.type='date';input.value=state.examDate;input.setAttribute('aria-label','考试日期');input.onchange=()=>{state.examDate=input.value;save();show();};countdown.append(input);
+  const input=node('input','dashboard-date');input.type='date';input.value=state.examDate;input.setAttribute('aria-label','考试日期');input.onchange=()=>{state.examDate=input.value;state.examDateAt=new Date().toISOString();save();show();};countdown.append(input);
   let streak=0,cursor=n?today:yesterday;while(state.days[cursor]?.length){streak++;cursor=previousDay(cursor);}
   stats.append(countdown,metric('今日刷题数',n,'题',prev?('昨日 '+prev+' 题 · '+(n===prev?'与昨日持平':'较昨日'+(n>prev?'增加 ':'减少 ')+Math.abs(Math.round((n-prev)/prev*100))+'%')):'昨日无刷题记录'),metric('连续学习',streak,'天','有效作答判定日连续累计'));root.append(stats);
   const sum=totals(),overview=node('section','study-panel dashboard-bank-summary');overview.append(node('h2',null,'题库进度'));
@@ -121,12 +124,37 @@
    }chart.append(col);
   }
   viewport.append(chart);activity.append(viewport,dayDetail,node('p','dashboard-footnote','近 '+weeks+' 周记录 '+days+' 个作答日。点击日期可查看当日题目；选择选项或查看答案不计数，同日同题改评不重复累计。'));root.append(activity);
-  const shortcuts=node('div','dashboard-shortcuts');[['章节题库',()=>{exit();location.hash='/bank';openBank();}],['历年真题',()=>{exit();location.hash='/exams';openExamHome();}],['掌握地图',()=>OpticsStudyTools.open('mastery')],['错题复测',()=>OpticsStudyTools.open('retest')]].forEach(([text,fn])=>shortcuts.append(button(text+' →',fn)));root.append(shortcuts,node('p','dashboard-storage-note',writable?'做题位置、每日记录与考试日期保存在此浏览器，并按登录账号分别保存。':'本机记录保存失败，关闭网页后可能无法恢复本次位置。'));
+  const shortcuts=node('div','dashboard-shortcuts');[['章节题库',()=>{exit();location.hash='/bank';openBank();}],['历年真题',()=>{exit();location.hash='/exams';openExamHome();}],['掌握地图',()=>OpticsStudyTools.open('mastery')],['错题复测',()=>OpticsStudyTools.open('retest')],['返回开场',()=>{exit();location.hash='/home';}]].forEach(([text,fn])=>shortcuts.append(button(text+' →',fn)));root.append(shortcuts,node('p','dashboard-storage-note',storageText()));reflectLights();
+ }
+ function storageText(){return writable?(window.OpticsDashboardCloud?.summary().text||'离线记录会先保存在本机。'):'本机记录保存失败，请先备份已有记录。';}
+ function receiveCloud(values){
+  const prefix='settings:study-home.';
+  for(const [k,v] of Object.entries(values)){
+   if(k===prefix+'resume'&&v&&['optics','english','retest'].includes(v.kind)&&typeof v.at==='string')state.resume=v;
+   else if(k===prefix+'exam-date'&&v&&(/^\d{4}-\d{2}-\d{2}$/.test(v.date)||v.date==='')){state.examDate=v.date;state.examDateAt=v.at||'';}
+   else if(k.startsWith(prefix+'day:')&&v&&Array.isArray(v.ids)){
+    const day=k.slice((prefix+'day:').length);if(!/^\d{4}-\d{2}-\d{2}$/.test(day))continue;
+    state.days[day]=[...new Set(v.ids.filter(id=>typeof id==='string'))];state.events[day]=v.events||{};state.removed[day]=v.removed||{};
+   }
+  }
+  try{localStorage.setItem(key,JSON.stringify(state));}catch(_){writable=false;}
+  if(active)show();reflectLights();
+ }
+ function reflectLights(){
+  const host=by('dashboard-statusbar');if(!host)return;host.replaceChildren();
+  const cloud=window.OpticsDashboardCloud?.summary(),optics=window.OpticsCloud?.summary();
+  const entries=[['存储正常',writable?'ok':'error'],[!cloud?.enabled?'未登录':cloud.problem?'云端未连接':cloud.running||cloud.pending||optics?.pending?'同步中':cloud.ready?'云端已同步':'连接中',!cloud?.enabled||cloud.problem?'idle':cloud.running||cloud.pending||optics?.pending?'pending':'ok'],['今日 '+(state.days[dateKey()]?.length||0)+' 题','ok']];
+  entries.forEach(([text,tone])=>{const item=node('span','dashboard-status-item'),lamp=node('i','dashboard-status-lamp');lamp.dataset.tone=tone;lamp.setAttribute('aria-hidden','true');item.append(lamp,document.createTextNode(text));host.append(item);});
  }
  function attach(){
   if(attached)return;key=OpticsCloud.localKey('gopt.study-home.v1');
   loadState();account=window.OpticsAuth?.user?.id||null;
-  attached=true;by('home-return').onclick=open;document.querySelector('.brand-home').onclick=e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open();};
+  attached=true;
+  const statusbar=node('div','dashboard-statusbar');statusbar.id='dashboard-statusbar';statusbar.setAttribute('role','status');document.querySelector('.actionbar').append(statusbar);
+  window.OpticsDashboardCloud?.attach(()=>copy(state),receiveCloud);
+  window.addEventListener('dashboard:sync',()=>{const foot=document.querySelector('.dashboard-storage-note');if(foot)foot.textContent=storageText();reflectLights();});
+  window.addEventListener('optics:sync-status',reflectLights);
+  by('home-return').onclick=open;document.querySelector('.brand-home').onclick=e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open();};
   if(!state.resume&&legacy&&DATA.byId[legacy.lastQuestionId]&&['all','chapter','kn','exam'].includes(legacy.scope?.type)){const q=DATA.byId[legacy.lastQuestionId];state.resume={kind:'optics',scope:legacy.scope,filter:legacy.statusFilter||'all',questionId:q.id,title:legacy.scope.type==='exam'?q.year+' 年真题':(findChapter(q.chapterId)?.title||'全部题目'),number:String(q.number),at:new Date().toISOString()};save();}
   window.addEventListener('hashchange',()=>{if(location.hash==='#/dashboard'){show();}else{const was=active;exit();if(was&&location.hash!=='#/home')render();capture();}});
 
