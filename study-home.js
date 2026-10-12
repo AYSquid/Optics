@@ -36,13 +36,13 @@
  function capture(){
   if(window.OpticsDashboardCloud?.pendingInitialPull())return;
   if(!attached||restoring||!isPractice()||OpticsCloud?.isApplying())return;
-  const q=currentQuestion();if(!q||!['all','chapter','kn','exam'].includes(ui.scope.type))return;
+  const q=currentQuestion();if(!q||!['all','chapter','kn','list','exam'].includes(ui.scope.type))return;
   const next={kind:'optics',scope:copy(ui.scope),filter:ui.statusFilter,questionId:q.id,title:scopeTitle(),number:String(q.number),count:ui.scopeIds.length,at:new Date().toISOString()};
   if(state.resume?.questionId===q.id&&JSON.stringify(state.resume.scope)===JSON.stringify(next.scope)&&state.resume.filter===next.filter)return;
   state.resume=next;save();
  }
  function retestPosition(session){
-  if(!attached||active||location.hash!=='#/retest'||!session||session.finished)return;const q=DATA.byId[session.ids[session.index]];if(!q)return;state.resume={kind:'retest',questionId:q.id,title:'错题复测 / '+(findChapter(q.chapterId)?.title||'本轮练习'),number:String(q.number),count:session.ids.length,checkpoint:{ids:session.ids,index:session.index,name:session.name,date:session.date,picks:session.picks,results:session.results,finished:session.finished,paused:session.paused},done:Object.values(session.results).filter(r=>['known','shaky','unknown'].includes(r.status)).length,at:new Date().toISOString()};save();
+  if(!attached||active||!/^#\/retest(?:\?|$)/.test(location.hash)||!session||session.finished)return;const q=DATA.byId[session.ids[session.index]];if(!q)return;state.resume={kind:'retest',questionId:q.id,title:'错题复测 / '+(findChapter(q.chapterId)?.title||'本轮练习'),number:String(q.number),count:session.ids.length,checkpoint:{ids:session.ids,index:session.index,name:session.name,date:session.date,picks:session.picks,results:session.results,finished:session.finished,paused:session.paused},done:Object.values(session.results).filter(r=>['known','shaky','unknown'].includes(r.status)).length,at:new Date().toISOString()};save();
  }
  function englishPosition(paper,group,q){
   if(!attached||!paper||!group||!q||active)return;
@@ -80,7 +80,8 @@
    return {done:answered.size+written.size,total:r.paperCount||p?.questionCount||0};
   }
   let ids=[];
-  if(r.scope.type==='exam')ids=EXAMS.years.find(y=>y.id===r.scope.paperId)?.occurrenceIds||[];
+  if(r.scope.type==='list')ids=r.scope.ids||[];
+  else if(r.scope.type==='exam')ids=EXAMS.years.find(y=>y.id===r.scope.paperId)?.occurrenceIds||[];
   else if(r.scope.type==='chapter')ids=DATA.questions.filter(q=>q.chapterId===r.scope.chapterId).map(q=>q.id);
   else if(r.scope.type==='kn')ids=findKn(r.scope.chapterId,r.scope.knId)?.questionIds||[];
   else ids=DATA.questions.map(q=>q.id);
@@ -162,7 +163,7 @@
   window.addEventListener('dashboard:sync',()=>{const foot=document.querySelector('.dashboard-storage-note');if(foot)foot.textContent=storageText();reflectLights();});
   window.addEventListener('optics:sync-status',reflectLights);
   by('home-return').onclick=open;document.querySelector('.brand-home').onclick=e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open();};
-  if(!state.resume&&legacy&&DATA.byId[legacy.lastQuestionId]&&['all','chapter','kn','exam'].includes(legacy.scope?.type)){const q=DATA.byId[legacy.lastQuestionId];state.resume={kind:'optics',scope:legacy.scope,filter:legacy.statusFilter||'all',questionId:q.id,title:legacy.scope.type==='exam'?q.year+' 年真题':(findChapter(q.chapterId)?.title||'全部题目'),number:String(q.number),at:new Date().toISOString()};save();}
+  if(!state.resume&&legacy&&DATA.byId[legacy.lastQuestionId]&&['all','chapter','kn','list','exam'].includes(legacy.scope?.type)){const q=DATA.byId[legacy.lastQuestionId];state.resume={kind:'optics',scope:legacy.scope,filter:legacy.statusFilter||'all',questionId:q.id,title:legacy.scope.type==='exam'?q.year+' 年真题':(findChapter(q.chapterId)?.title||'全部题目'),number:String(q.number),at:new Date().toISOString()};save();}
   window.addEventListener('hashchange',()=>{if(location.hash==='#/dashboard'){show();}else{const was=active;exit();if(was&&location.hash!=='#/home')render();capture();}});
 
   window.addEventListener('storage',e=>{if(e.key===key&&e.newValue){try{const other=JSON.parse(e.newValue);if(other&&other.days){loadState();if(active)show();}}catch(_){}}});

@@ -4,6 +4,8 @@
 .flow-field{display:grid;gap:6px;min-width:150px;font-size:12px;color:var(--soft)}
 .flow-field select,.flow-field input,.flow-controls>select{min-height:40px;max-width:100%;padding:8px 12px;background:var(--surface,var(--panel));color:var(--ink);border:1px solid var(--edge);border-radius:var(--radius-sm);font:inherit}
 .flow-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.options .choice-controls{grid-column:1/-1;display:flex;align-items:center;gap:10px;margin-top:10px}
+.choice-controls>[hidden]{display:none}
 .flow-question-list,.flow-question-row,.flow-note-row{min-width:0}
 .flow-question-row,.flow-note-row{border:1px solid var(--edge);border-radius:var(--radius-sm);background:var(--surface,var(--panel));padding:18px 20px;margin:12px 0}
 .flow-question-head{display:flex;gap:14px;align-items:center;justify-content:space-between;font-size:13px}

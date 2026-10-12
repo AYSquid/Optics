@@ -175,6 +175,7 @@ var ui = {
   analysisOpen: false,
   choicePick: {},          // 当前题本次作答；切题后清空，重新进入时不透露答案
   choiceQuestionId: null,
+  choiceChecked: false,
   openChapters: {}
 };
 
@@ -282,7 +283,14 @@ function chapterOrderIndex(cid) {
 
 function buildScopeIds() {
   var ids;
-  if (ui.scope.type === 'chapter') {
+  if (ui.scope.type === 'list') {
+    var seen = {};
+    ui.scopeIds = (ui.scope.ids || []).filter(function(id) {
+      if (!Object.prototype.hasOwnProperty.call(DATA.byId,id) || seen[id]) return false;
+      seen[id] = true; return true;
+    });
+    return;
+  } else if (ui.scope.type === 'chapter') {
     ids = DATA.questions.filter(function (q) { return q.chapterId === ui.scope.chapterId; });
   } else if (ui.scope.type === 'kn') {
     var ch = findChapter(ui.scope.chapterId);
@@ -324,6 +332,7 @@ function findKn(cid, kid) {
 }
 
 function scopeTitle() {
+  if (ui.scope.type === 'list') return ui.scope.name || '筛选题单';
   if (ui.scope.type === 'all') return '全部题目';
   if (ui.scope.type === 'chapter') {
     var c = findChapter(ui.scope.chapterId);
@@ -555,6 +564,7 @@ function resetChoiceForQuestion(q) {
   if (ui.choiceQuestionId === nextId) return;
   ui.choicePick = {};
   ui.choiceQuestionId = nextId;
+  ui.choiceChecked = false;
 }
 
 // Source/editorial notes belong in the disclosure; physical conditions remain in the exercise.
@@ -725,7 +735,7 @@ function render() {
       renderInline(o.x, t);
       b.appendChild(t);
       b.addEventListener('click', function () {
-        if(q.playable === false) return;
+        if(q.playable === false || (isMultipleChoice(q) && ui.choiceChecked)) return;
         if (isMultipleChoice(q)) {
           var next = selectedChoiceKeys(q);
           var index = next.indexOf(o.key);
@@ -744,6 +754,14 @@ function render() {
     result.setAttribute('role', 'status');
     result.setAttribute('aria-live', 'polite');
     opts.appendChild(result);
+    if (isMultipleChoice(q)) {
+      var controls = el('div','choice-controls');
+      var check = el('button','btn btn-primary choice-check','核对答案');check.type='button';
+      var reset = el('button','btn btn-outline choice-reset','重新作答');reset.type='button';
+      check.onclick=function(){if(!validChoiceSelection(q,ui.choicePick[q.id])||!choiceAnswerKeys(q).length)return;ui.choiceChecked=true;applyChoiceFeedback(q,opts);};
+      reset.onclick=function(){ui.choiceChecked=false;ui.answerOpen=false;ui.analysisOpen=false;delete ui.choicePick[q.id];if(q.occurrenceId)saveExamChoice(q);applyRegions(q);applyChoiceFeedback(q,opts);};
+      controls.append(check,reset);opts.appendChild(controls);
+    }
     applyChoiceFeedback(q, opts);
   } else {
     opts.className = 'options';
@@ -808,18 +826,23 @@ function selectedChoiceKeys(q) {
 function applyChoiceFeedback(q, opts) {
   var picked = selectedChoiceKeys(q);
   var keys = choiceAnswerKeys(q);
+  var multiple = isMultipleChoice(q), ready = !multiple || ui.choiceChecked;
   var wrong = keys.length && picked.some(function (key) { return keys.indexOf(key) < 0; });
   opts.querySelectorAll('.option').forEach(function (button) {
     var key = button.getAttribute('data-option-key');
     var selected = picked.indexOf(key) >= 0;
     var correct = keys.indexOf(String(key).toUpperCase()) >= 0;
-    var verdict = picked.length && keys.length && correct && (selected || wrong) ? 'correct' : wrong && selected ? 'wrong' : '';
+    var verdict = !ready ? '' : picked.length && keys.length && correct && (selected || wrong) ? 'correct' : wrong && selected ? 'wrong' : '';
+    button.disabled = q.playable === false || (multiple && ui.choiceChecked);
     button.setAttribute('aria-pressed', selected ? 'true' : 'false');
     button.setAttribute('data-verdict', verdict);
     button.title = verdict === 'correct' ? '正确答案' : verdict === 'wrong' ? '选择错误' : '';
   });
+  var check=opts.querySelector('.choice-check'),reset=opts.querySelector('.choice-reset');
+  if(check){check.hidden=ui.choiceChecked;check.disabled=!picked.length||!keys.length;check.textContent=keys.length?'核对答案':'答案待核对';}
+  if(reset)reset.hidden=!ui.choiceChecked;
   var live = opts.querySelector('.choice-feedback-live');
-  if (live) live.textContent = !picked.length ? '' : !keys.length ? '本题答案尚待核对，暂不判定正误。' : wrong ? '所选包含错误选项。正确选项为 ' + keys.join('、') + '。' : keys.length > 1 ? picked.length === keys.length ? '已选全，回答正确。' : '已选选项正确，尚未选全。' : '选择正确。';
+  if (live) live.textContent = !ready ? (picked.length?'已选择 '+picked.length+' 项，核对后显示结果。':'多选题：选好后点击“核对答案”。') : !picked.length ? '' : !keys.length ? '本题答案尚待核对，暂不判定正误。' : wrong ? '所选包含错误选项。正确选项为 ' + keys.join('、') + '。' : keys.length > 1 ? picked.length === keys.length ? '已选全，回答正确。' : '所选不完整。正确选项为 '+keys.join('、')+'。' : '选择正确。';
 }
 
 function currentKnNames(q) {
@@ -831,6 +854,7 @@ function currentKnNames(q) {
 
 function applyRegions(q) {
   if (!q) { ui.answerOpen = false; ui.analysisOpen = false; }
+  if(q&&isMultipleChoice(q)&&ui.answerOpen){ui.choiceChecked=true;applyChoiceFeedback(q,$('options'));}
   var rn = $('review-note');
   rn.hidden = true;
   rn.textContent = '';
@@ -1239,7 +1263,7 @@ function normalizeState() {
   store.state.status = valid;
 
   var s = store.prefs.scope;
-  if (!s || ['all', 'chapter', 'kn', 'exams', 'exam'].indexOf(s.type) < 0 || (s.type === 'chapter' && !findChapter(s.chapterId)) ||
+  if (!s || ['all', 'chapter', 'kn', 'list', 'exams', 'exam'].indexOf(s.type) < 0 || (s.type === 'list' && (!Array.isArray(s.ids) || !s.ids.length || s.ids.length > DATA.questions.length || !s.ids.every(function(id){return Object.prototype.hasOwnProperty.call(DATA.byId,id);}))) || (s.type === 'chapter' && !findChapter(s.chapterId)) ||
       (s.type === 'kn' && !findKn(s.chapterId, s.knId))) {
     store.prefs.scope = { type: 'all' };
   }
@@ -1255,7 +1279,7 @@ function start() {
   ui.scope = store.prefs.scope;
   ui.statusFilter = store.prefs.statusFilter;
   ui.openChapters = store.prefs.openChapters || {};
-  if (ui.scope.type !== 'all') ui.openChapters[ui.scope.chapterId] = true;
+  if (ui.scope.type === 'chapter' || ui.scope.type === 'kn') ui.openChapters[ui.scope.chapterId] = true;
 
   buildScopeIds();
   buildMatchIds();
