@@ -141,10 +141,10 @@
   if(active)show();reflectLights();
  }
  function reflectLights(){
-  const host=by('dashboard-statusbar');if(!host)return;host.replaceChildren();
+  const host=by('dashboard-statusbar');if(!host)return;
   const cloud=window.OpticsDashboardCloud?.summary(),optics=window.OpticsCloud?.summary();
   const entries=[['存储正常',writable?'ok':'error'],[!cloud?.enabled?'未登录':cloud.problem?'云端未连接':cloud.running||cloud.pending||optics?.pending?'同步中':cloud.ready?'云端已同步':'连接中',!cloud?.enabled||cloud.problem?'idle':cloud.running||cloud.pending||optics?.pending?'pending':'ok'],['今日 '+(state.days[dateKey()]?.length||0)+' 题','ok']];
-  entries.forEach(([text,tone])=>{const item=node('span','dashboard-status-item'),lamp=node('i','dashboard-status-lamp');lamp.dataset.tone=tone;lamp.setAttribute('aria-hidden','true');item.append(lamp,document.createTextNode(text));host.append(item);});
+  entries.forEach(([text,tone],index)=>{let item=host.children[index];if(!item){item=node('span','dashboard-status-item');const lamp=node('i','dashboard-status-lamp');lamp.setAttribute('aria-hidden','true');item.append(lamp,document.createTextNode(''));host.append(item);}item.firstElementChild.dataset.tone=tone;item.lastChild.nodeValue=text;});
  }
  function attach(){
   if(attached)return;key=OpticsCloud.localKey('gopt.study-home.v1');
