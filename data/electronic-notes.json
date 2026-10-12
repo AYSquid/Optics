@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "衍射部分已重新识别紫色手写批注并排版：长公式独立成行，短批注就近对应，圈选内容使用紫框；保留真题标红、教材重画图和可点击目录。",
+  "description": "衍射部分已重新识别紫色手写批注并排版：长公式独立成行，短批注就近对应，圈选内容使用紫框；保留真题标红、教材重画图和可点击目录。 傅里叶光学已补充CTF与OTF的归一化自相关、二倍截止频率、圆形与矩形出瞳重叠面积法及H的值域、通带。",
   "sources": [
     {
       "name": "几何光学_真题重点公式标红_20261008.pdf",
@@ -9,8 +9,8 @@
     },
     {
       "name": "物理光学_真题重点公式标红_含目录_20261008.pdf",
-      "pages": 93,
-      "sha256": "37ce4471a50caeaff4a2dfa7722618151618c20ca3bb9f9e7fdbcc9117e00b4d"
+      "pages": 94,
+      "sha256": "5aa6dce7153c8e3580b54d1e2d5d5d188caaef5f09030b80196b61124abf1612"
     }
   ],
   "chapters": [
@@ -256,11 +256,11 @@
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261008.pdf",
       "sourceStart": 59,
-      "sourceEnd": 72,
-      "pages": 14,
-      "bytes": 201728,
-      "url": "assets/notes/phys-ch12.pdf?v=b9866526d381",
-      "sha256": "b9866526d3812e6988cefbb1573b13acf9e44bd8578a743f74186293caaa4271",
+      "sourceEnd": 73,
+      "pages": 15,
+      "bytes": 212369,
+      "url": "assets/notes/phys-ch12.pdf?v=51e40f7c11c8",
+      "sha256": "51e40f7c11c81644bdeb778299536438b31af5ffb55ed2f9eb760633dc37bfa7",
       "relatedChapters": [
         {
           "id": "phys-ch12",
@@ -275,8 +275,8 @@
       "label": "第十三章",
       "group": "物理光学",
       "source": "物理光学_真题重点公式标红_含目录_20261008.pdf",
-      "sourceStart": 73,
-      "sourceEnd": 93,
+      "sourceStart": 74,
+      "sourceEnd": 94,
       "pages": 21,
       "bytes": 379501,
       "url": "assets/notes/phys-ch13.pdf?v=de97031969ed",
