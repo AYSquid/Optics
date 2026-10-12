@@ -95,11 +95,20 @@
   document.querySelector('.page-eyebrow').textContent='STUDY / 学习首页';by('crumb').textContent='学习首页';by('crumb-sub').textContent='继续上一次练习，记录每一天的积累';by('progress').textContent='LEARNING / LOG';
 
   const card=node('section','study-panel dashboard-continue');card.append(node('span','study-kicker','RESUME / 继续做题'),node('h2',null,'继续学习'));
-  const r=state.resume,p=progress(r),detail=node('div','dashboard-resume-info');
+  const r=state.resume,p=progress(r),sum=totals(),detail=node('div','dashboard-resume-info');
   detail.append(node('h3',null,r?r.title:'准备开始你的第一段练习'));
   const meta=r?'上次停在第 '+r.number+' 题'+(r.kind==='optics'?' · '+statusFilterName(r.filter)+'筛选':'')+' · '+new Date(r.at).toLocaleString('zh-CN',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'选择一个章节或年份，开始后会自动保存位置。';
   detail.append(node('p','study-muted',meta));
-  if(r){const line=node('p','dashboard-completion');line.append('已完成 ',node('strong',null,p.done), ' 题'+(p.total?' · 还剩 '+Math.max(0,p.total-p.done)+' 题':''));detail.append(line);if(p.total){const bar=node('progress');bar.max=p.total;bar.value=p.done;bar.setAttribute('aria-label','当前分类完成进度');detail.append(bar);}detail.append(node('p','dashboard-footnote',r.kind==='retest'?'标记会做、不会做或不熟练后，计入本轮完成进度。':r.kind==='english'?'客观题提交批改、主观题批改完成后计入进度。':'手动标记会做、不会做或不熟练后，计入完成进度。'));}
+  const lines=node('div','dashboard-progress-stack');
+  function progressLine(name,done,total,kind,extra=''){
+   const row=node('section','dashboard-progress-row');row.dataset.kind=kind;
+   const labels=node('div','dashboard-progress-labels');labels.append(node('strong',null,name),node('span',null,total?'已完成 '+done+' / '+total+' 题 · 还剩 '+Math.max(0,total-done)+' 题':'选择章节后开始记录'));if(extra)labels.append(node('small',null,extra));
+   const bar=node('progress');bar.max=total||1;bar.value=done;bar.setAttribute('aria-label',name+'：已完成 '+done+' / '+total+' 题');row.append(labels,bar);lines.append(row);
+  }
+  progressLine('当前练习',p.done,p.total,'current');
+  progressLine('题库整体',sum.completed,sum.total,'bank','待巩固 '+sum.weak+' 题');
+  detail.append(lines);
+  if(r)detail.append(node('p','dashboard-footnote',r.kind==='retest'?'标记会做、不会做或不熟练后，计入本轮完成进度。':r.kind==='english'?'客观题提交批改、主观题批改完成后计入进度。':'手动标记会做、不会做或不熟练后，计入完成进度。'));
   card.append(detail,button(r?'继续做题 →':'开始练习 →',resume,'study-button study-primary dashboard-resume'));root.append(card);
   const stats=node('section','dashboard-stats');const today=dateKey(),yesterday=previousDay(today);const n=state.days[today]?.length||0,prev=state.days[yesterday]?.length||0;
   const date=state.examDate?new Date(state.examDate+'T00:00:00'):null,midnight=new Date(today+'T00:00:00');const remaining=date?Math.ceil((date-midnight)/86400000):null;
@@ -107,8 +116,6 @@
   const input=node('input','dashboard-date');input.type='date';input.value=state.examDate;input.setAttribute('aria-label','考试日期');input.onchange=()=>{state.examDate=input.value;state.examDateAt=new Date().toISOString();save();show();};countdown.append(input);
   let streak=0,cursor=n?today:yesterday;while(state.days[cursor]?.length){streak++;cursor=previousDay(cursor);}
   stats.append(countdown,metric('今日刷题数',n,'题',prev?('昨日 '+prev+' 题 · '+(n===prev?'与昨日持平':'较昨日'+(n>prev?'增加 ':'减少 ')+Math.abs(Math.round((n-prev)/prev*100))+'%')):'昨日无刷题记录'),metric('连续学习',streak,'天','有效作答判定日连续累计'));root.append(stats);
-  const sum=totals(),overview=node('section','study-panel dashboard-bank-summary');overview.append(node('h2',null,'题库进度'));
-  const summaryGrid=node('div','dashboard-summary-grid');[['可练习题目',sum.total],['已完成',sum.completed],['还剩未做',sum.remaining],['待巩固',sum.weak]].forEach(([t,n])=>{const block=node('div');block.append(node('span',null,t),node('strong',null,n+' 题'));summaryGrid.append(block);});overview.append(summaryGrid);root.append(overview);
   const width=by('scroller').clientWidth-56,weeks=width<608?13:width<800?17:26,activity=node('section','study-panel dashboard-activity'),title=node('div','dashboard-activity-head');title.append(node('h2',null,'学习活动'),node('span','study-muted','每日作答 · 近 '+weeks+' 周'));activity.append(title);
   const legend=node('div','dashboard-legend');legend.append(node('span',null,'刷题强度'));for(let i=0;i<5;i++){const swatch=node('i');swatch.dataset.level=i;swatch.title=['无','轻：1–5 次','中：6–15 次','高：16–30 次','很高：31 次及以上'][i];legend.append(swatch);}legend.append(node('span',null,'很高'));activity.append(legend);
   const viewport=node('div','dashboard-heatmap-scroll'),chart=node('div','dashboard-heatmap');chart.style.gridTemplateColumns='18px repeat('+weeks+',minmax(0,1fr))';chart.setAttribute('aria-label','刷题强度热力图（按作答判定次数）');

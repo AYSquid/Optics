@@ -76,16 +76,25 @@
 .dashboard-page .actionbar>.actionbar-left,.dashboard-page .actionbar>.actionbar-right{display:none!important}
 .dashboard-page .dashboard-statusbar{display:flex;align-items:center;justify-content:flex-end;gap:28px;width:100%;font-size:11px;line-height:1.5}
 .dashboard-status-item{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
-.dashboard-status-lamp{--lamp-color:#99978f;width:7px;height:7px;flex:none;display:inline-block;border-radius:50%;background:var(--lamp-color);animation:dashboard-lamp-breathe 2.8s ease-in-out infinite}
+.dashboard-status-lamp{--lamp-color:#99978f;width:7px;height:7px;flex:none;display:inline-block;border-radius:50%;background:var(--lamp-color);animation:dashboard-lamp-breathe 2.8s ease-in-out infinite both}
 .dashboard-status-lamp[data-tone="ok"]{--lamp-color:#8cb8a9}
 .dashboard-status-lamp[data-tone="pending"]{--lamp-color:#e3a53b}
 .dashboard-status-lamp[data-tone="error"]{--lamp-color:#bf5753}
 .dashboard-status-lamp[data-tone="idle"]{animation:none;opacity:.45}
-.dashboard-status-item:nth-child(2) .dashboard-status-lamp{animation-delay:-.9s}
-.dashboard-status-item:nth-child(3) .dashboard-status-lamp{animation-delay:-1.8s}
+.dashboard-status-item:nth-child(2) .dashboard-status-lamp{animation-delay:.9s}
+.dashboard-status-item:nth-child(3) .dashboard-status-lamp{animation-delay:1.8s}
 @keyframes dashboard-lamp-breathe{0%,100%{opacity:.4;box-shadow:0 0 0 0 transparent}50%{opacity:1;box-shadow:0 0 8px 1px var(--lamp-color)}}
 @media(prefers-reduced-motion:reduce){.dashboard-status-lamp{animation:none;opacity:1;box-shadow:none}}
 .exam-intro{margin-bottom:18px}
 .exam-intro p{margin-top:0}
 @media(max-width:600px){.dashboard-page .actionbar{min-height:48px;padding:12px}.dashboard-page .dashboard-statusbar{justify-content:space-between;gap:8px;font-size:10px}}
+.dashboard-progress-stack{display:grid;gap:16px;margin-top:18px;max-width:560px}
+.dashboard-progress-labels{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 12px;margin-bottom:8px;font-size:12px}
+.dashboard-progress-labels strong{font-size:12px;min-width:65px}
+.dashboard-progress-labels span,.dashboard-progress-labels small{color:var(--soft)}
+.dashboard-progress-labels small{margin-left:auto;font-size:11px}
+.dashboard-resume-info .dashboard-progress-row progress{width:100%}
+.dashboard-progress-row[data-kind="bank"] progress::-webkit-progress-value{background:var(--lt-teal,#24764e)}
+.dashboard-progress-row[data-kind="bank"] progress::-moz-progress-bar{background:var(--lt-teal,#24764e)}
+@media(max-width:600px){.dashboard-progress-labels{font-size:11px;gap:5px 8px}.dashboard-progress-labels strong{font-size:11px}.dashboard-progress-labels small{margin-left:0}}
 @media(max-width:700px){.flow-controls{gap:8px}.flow-controls>.study-search{flex-basis:100%;min-width:0}.flow-field{flex:1;min-width:120px}.flow-question-row,.flow-note-row{padding:14px 12px}.flow-question-head{align-items:start;flex-wrap:wrap}.flow-question-preview summary{font-size:13px;flex-wrap:wrap}.flow-collection-summary>.study-primary{margin-left:0}#notes-library-page .notes-head{padding:16px}#notes-library-page .notes-head h2{font-size:21px}.note-editor-toolbar{gap:1px;padding:6px}.note-editor-toolbar button{padding:7px}.note-editor .notes-textarea{height:260px}.notes-page .scroller{padding-bottom:20px}.note-tags input{width:110px}}
