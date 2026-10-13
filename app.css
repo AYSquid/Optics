@@ -361,11 +361,11 @@ button { font-family: inherit; font-size: inherit; }
   .nav-toggle { display: inline-block; }
   .sidebar {
     position: fixed; top: 0; bottom: 0; left: 0; z-index: 50; transform: translateX(-102%);
-    transition: transform .18s ease; box-shadow: 0 6px 30px rgba(20, 26, 34, .16);
+    transition: transform .18s ease; box-shadow: 0 6px 30px rgba(48, 45, 39, .16);
   }
   .app.nav-open .sidebar { transform: none; }
   .app.nav-open .sidebar-backdrop {
-    display: block; position: fixed; inset: 0; z-index: 40; background: rgba(20, 26, 34, .32);
+    display: block; position: fixed; inset: 0; z-index: 40; background: rgba(48, 45, 39, .32);
   }
   .scroller { padding-left: 14px; padding-right: 14px; }
   .card { padding: 18px 16px 20px; }
@@ -378,7 +378,7 @@ button { font-family: inherit; font-size: inherit; }
 /* Study room: restrained ink, paper and optical linework. */
 :root{--bg:hsla(var(--theme-hue), 66.7%, 97.6%, 1.000);--panel:#fff;--line:#e5e8e3;--line-strong:#d5dcd6;--text:hsla(var(--theme-hue), 29.9%, 26.9%, 1.000);--text-soft:hsla(var(--theme-hue), 15.8%, 47.1%, 1.000);--text-dim:hsla(var(--theme-hue), 15.0%, 54.3%, 1.000);--blue:hsla(var(--theme-hue), 55.8%, 62.7%, 1.000);--blue-dark:hsla(var(--theme-hue), 41.4%, 48.8%, 1.000);--blue-soft:hsla(var(--theme-hue), 100.0%, 96.5%, 1.000);--blue-line:hsla(var(--theme-hue), 67.7%, 87.8%, 1.000);--sidebar-w:278px;--radius:12px;--radius-sm:7px;--shadow:none;}
 html,body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;font-size:15px;background:var(--bg);}
-button,input{-webkit-tap-highlight-color:transparent;}
+button,input,a,summary,[role="button"],.crumb-wrap,.sidebar-backdrop{-webkit-tap-highlight-color:transparent;}
 button{transition:background .15s,color .15s,border-color .15s;}
 button:focus-visible,summary:focus-visible{outline:2px solid #7faf9b;outline-offset:3px;}
 .sidebar{background:hsla(var(--theme-hue), 66.7%, 96.5%, 1.000);border-right:1px solid hsla(var(--theme-hue), 44.2%, 91.6%, 1.000);}
