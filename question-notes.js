@@ -77,9 +77,12 @@
   rememberDraft();clearTimeout(autoSaveTimer);if(autoSavePaused||!current||!editing)return;
   message('等待自动保存…');const id=current.id;autoSaveTimer=setTimeout(()=>{if(current?.id===id&&editing)save(true);},1100);
  }
+ function isNotesRoute(){return /^#\/notes(?:\?|$)/.test(location.hash);}
+ function readNoteFilters(){const p=new URLSearchParams(location.hash.split('?')[1]||'');noteFilters={chapter:findChapter(p.get('chapter'))?p.get('chapter'):'',tag:(p.get('tag')||'').slice(0,30),search:(p.get('q')||'').slice(0,200)};notePage=Math.max(0,Math.floor(Number(p.get('page'))||0));}
+ function saveNoteFilters(){if(!isNotesRoute())return;const p=new URLSearchParams();if(noteFilters.chapter)p.set('chapter',noteFilters.chapter);if(noteFilters.tag)p.set('tag',noteFilters.tag);if(noteFilters.search)p.set('q',noteFilters.search);if(notePage)p.set('page',notePage);history.replaceState(null,'','#/notes'+(p.size?'?'+p:''));}
  function leaveLibrary(){rememberDraft();clearTimeout(autoSaveTimer);libraryPage.hidden=true;document.body.classList.remove('notes-page');dialog.append(panel);}
  function show(){
-  if(location.hash==='#/notes'&&mode!=='current'){if(dialog.open)dialog.close();libraryPage.append(panel);libraryPage.hidden=false;document.body.classList.add('notes-page');document.body.classList.remove('dashboard-page','study-page');byId('crumb').textContent='题目笔记';byId('crumb-sub').textContent='个人理解与解题记录';return;}
+  if(isNotesRoute()&&mode!=='current'){if(dialog.open)dialog.close();libraryPage.append(panel);libraryPage.hidden=false;document.body.classList.add('notes-page');document.body.classList.remove('dashboard-page','study-page');byId('crumb').textContent='题目笔记';byId('crumb-sub').textContent='个人理解与解题记录';return;}
   dialog.dataset.view=mode==='current'?'current':'library';
   if(dialog.open)return;
   lastFocus=document.activeElement;
@@ -96,7 +99,7 @@
  dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeModal();});
  // Capture prevents the practice page's arrow/Escape shortcuts changing the question.
  dialog.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();closeModal();}else if((e.ctrlKey||e.metaKey)&&e.key==='Enter'&&!e.isComposing&&editing){e.preventDefault();save();}e.stopPropagation();});
- function setHead(back=false){head.replaceChildren();if(back)head.append(button('← 返回笔记列表','notes-back',()=>{rememberDraft();openLibrary(false);}));else head.append(title);head.append(close);close.textContent=location.hash==='#/notes'?'返回学习区':'×';dialog.setAttribute('aria-label',back?'题目笔记详情':'题目笔记');if(back)dialog.removeAttribute('aria-labelledby');else dialog.setAttribute('aria-labelledby','notes-title');}
+ function setHead(back=false){head.replaceChildren();if(back)head.append(button('← 返回笔记列表','notes-back',()=>{rememberDraft();openLibrary(false);}));else head.append(title);head.append(close);close.textContent=isNotesRoute()?'返回学习区':'×';dialog.setAttribute('aria-label',back?'题目笔记详情':'题目笔记');if(back)dialog.removeAttribute('aria-labelledby');else dialog.setAttribute('aria-labelledby','notes-title');}
  function loading(text){body.replaceChildren(node('p','notes-description',text));}
  function readError(error,retry){body.replaceChildren(node('p','notes-description',friendly(error)),button('重新加载','btn btn-outline',retry));}
  async function openCurrent(){const q=activeQuestion();if(!q||!uid)return;mode='current';await openDetail(q.id,true);}
@@ -221,7 +224,7 @@
     const bottom=node('div','flow-row-actions');bottom.append(node('time','notes-meta','最后编辑：'+formatDate(row.updated_at)),button('查看原题与笔记','btn btn-ghost',()=>{mode='library';openDetail(row.question_id,false);}));item.append(bottom);list.append(item);
    });
    if(!rows.length)list.append(node('div','notes-empty',library.length?'没有匹配的笔记，试试其他关键词或清除筛选。':'还没有题目笔记。在原题中打开“笔记”即可记录思路。'));
-   pager.replaceChildren();const prev=button('上一页','btn btn-ghost',()=>{notePage--;fill();}),next=button('下一页','btn btn-ghost',()=>{notePage++;fill();});prev.disabled=notePage===0;next.disabled=notePage>=pages-1;pager.append(prev,node('span',null,(notePage+1)+' / '+pages+' · '+rows.length+' 条'),next);
+   pager.replaceChildren();const prev=button('上一页','btn btn-ghost',()=>{notePage--;fill();}),next=button('下一页','btn btn-ghost',()=>{notePage++;fill();});prev.disabled=notePage===0;next.disabled=notePage>=pages-1;pager.append(prev,node('span',null,(notePage+1)+' / '+pages+' · '+rows.length+' 条'),next);saveNoteFilters();
   }search.oninput=()=>{noteFilters.search=search.value;notePage=0;fill();};chapters.onchange=()=>{noteFilters.chapter=chapters.value;notePage=0;fill();};tags.onchange=()=>{noteFilters.tag=tags.value;notePage=0;fill();};fill();
   if(listMore)body.append(button('加载更多笔记','btn btn-ghost notes-load-more',()=>loadList(true,viewRevision)));
  }
@@ -233,11 +236,11 @@
  function updateCurrent(){reflect();const q=activeQuestion();if(uid&&q&&!cache.has(q.id)&&!pending.has(q.id))readNote(q.id).catch(()=>{});}
  const channel=typeof BroadcastChannel==='function'?new BroadcastChannel('optics-question-notes'):null;
  if(channel)channel.onmessage=e=>{if(e.data?.user!==uid)return;cache.delete(e.data.question);libraryLoaded=false;refreshCount();updateCurrent();window.dispatchEvent(new Event('optics:notes-changed'));};
- byId('btn-question-note').onclick=openCurrent;byId('notes-library-open').onclick=()=>{if(location.hash!=='#/notes'){pageReturn=location.hash||'#/bank';location.hash='/notes';}else openLibrary(true);};
- window.addEventListener('hashchange',()=>{if(location.hash==='#/notes'){window.OpticsElectronicNotes?.close();closeNav();openLibrary(true);}else if(!libraryPage.hidden)leaveLibrary();});
+ byId('btn-question-note').onclick=openCurrent;byId('notes-library-open').onclick=()=>{if(!isNotesRoute()){pageReturn=location.hash||'#/bank';location.hash='/notes';}else openLibrary(true);};
+ window.addEventListener('hashchange',()=>{if(isNotesRoute()){readNoteFilters();window.OpticsElectronicNotes?.close();closeNav();openLibrary(true);}else if(!libraryPage.hidden)leaveLibrary();});
  panel.addEventListener('keydown',e=>{if(!libraryPage.hidden){if((e.ctrlKey||e.metaKey)&&e.key==='Enter'&&editing&&!e.isComposing){e.preventDefault();save();}e.stopPropagation();}});
  const originalRender=window.render;window.render=function(){originalRender.apply(this,arguments);updateCurrent();};
- auth().subscribe(()=>setTimeout(sessionChanged,0));auth().ready.then(sessionChanged);
+ auth().subscribe(()=>setTimeout(sessionChanged,0));auth().ready.then(()=>{sessionChanged();if(isNotesRoute()){readNoteFilters();openLibrary(true);}});
  // The mastery map reads only IDs; note bodies remain lazy and private.
  async function questionIds(){
   requireUser();const owner=uid,gen=generation,ids=[];
@@ -249,8 +252,8 @@
   }
   return ids;
  }
- window.OpticsNotes={updateCurrent,questionIds,open:(id,edit=true)=>{mode=location.hash==='#/notes'?'library':'current';return openDetail(id,edit);}};
- auth().ready.then(()=>{if(location.hash==='#/notes')openLibrary(true);});
+ window.OpticsNotes={updateCurrent,questionIds,open:(id,edit=true)=>{mode=isNotesRoute()?'library':'current';return openDetail(id,edit);}};
+
  const previousScope=window.setScope;window.setScope=function(){if(!libraryPage.hidden){leaveLibrary();location.hash='/bank';}return previousScope.apply(this,arguments);};
  const previousFilter=window.setStatusFilter;window.setStatusFilter=function(){if(!libraryPage.hidden){leaveLibrary();location.hash='/bank';}return previousFilter.apply(this,arguments);};
 })();

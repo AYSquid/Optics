@@ -306,10 +306,11 @@ function buildScopeIds() {
     if (d) return d;
     return a.order - b.order;
   });
-  ui.scopeIds = ids.map(function (q) { return q.id; });
+  ui.scopeIds = ids.filter(function(q){return q.playable!==false;}).map(function (q) { return q.id; });
 }
 
 function matchesFilter(qid, filter) {
+  if(DATA.byId[qid]?.playable===false)return false;
   if (filter === 'all') return true;
   var st = getStatus(statusKeyOf(DATA.byId[qid]));
   if (filter === 'none') return st === '';
@@ -397,7 +398,7 @@ function renderTree() {
   var rootBtn = el('button', 'tree-root-btn tree-btn' + (ui.scope.type === 'all' ? ' is-current' : ''));
   rootBtn.type = 'button';
   rootBtn.appendChild(el('span', 'tree-name', '全部题目'));
-  var allCnt = DATA.questions.length;
+  var allCnt = DATA.questions.filter(function(q){return q.playable!==false;}).length;
   var allMatch = DATA.questions.filter(function (q) { return matchesFilter(q.id, ui.statusFilter); }).length;
   rootBtn.appendChild(countBadge(allCnt, allMatch));
   rootBtn.addEventListener('click', function () { setScope({ type: 'all' }); });
@@ -443,7 +444,7 @@ function renderTree() {
     var matchCount = DATA.questions.filter(function (q) {
       return q.chapterId === ch.id && matchesFilter(q.id, ui.statusFilter);
     }).length;
-    btn.appendChild(countBadge(ch.count, matchCount));
+    btn.appendChild(countBadge(DATA.questions.filter(function(q){return q.chapterId===ch.id&&q.playable!==false;}).length, matchCount));
     if (ui.scope.type === 'chapter' && ui.scope.chapterId === ch.id) btn.classList.add('is-current');
     row.classList.toggle('is-current', btn.classList.contains('is-current'));
 
@@ -458,7 +459,7 @@ function renderTree() {
       kb.title = k.name;
       kb.appendChild(el('span', 'tree-name', k.name));
       var kmatch = k.questionIds.filter(function (id) { return matchesFilter(id, ui.statusFilter); }).length;
-      kb.appendChild(countBadge(k.count, kmatch));
+      kb.appendChild(countBadge(k.questionIds.filter(function(id){return DATA.byId[id]?.playable!==false;}).length, kmatch));
       if (ui.scope.type === 'kn' && ui.scope.knId === k.id) kb.classList.add('is-current');
       kb.addEventListener('click', function () {
         setScope({ type: 'kn', chapterId: ch.id, knId: k.id });
@@ -735,7 +736,7 @@ function render() {
       renderInline(o.x, t);
       b.appendChild(t);
       b.addEventListener('click', function () {
-        if(q.playable === false || (isMultipleChoice(q) && ui.choiceChecked)) return;
+        if(q.playable === false || ui.choiceChecked) return;
         if (isMultipleChoice(q)) {
           var next = selectedChoiceKeys(q);
           var index = next.indexOf(o.key);
@@ -743,7 +744,7 @@ function render() {
           // Keep the existing string storage format, including compatibility with cloud records.
           ui.choicePick[q.id] = next.sort().join('');
         } else {
-          ui.choicePick[q.id] = (ui.choicePick[q.id] === o.key) ? '' : o.key;
+          ui.choicePick[q.id] = o.key; ui.choiceChecked = true;
         }
         if(q.occurrenceId) saveExamChoice(q);
         applyChoiceFeedback(q, opts);
@@ -754,7 +755,7 @@ function render() {
     result.setAttribute('role', 'status');
     result.setAttribute('aria-live', 'polite');
     opts.appendChild(result);
-    if (isMultipleChoice(q)) {
+    if (q.options.length) {
       var controls = el('div','choice-controls');
       var check = el('button','btn btn-primary choice-check','核对答案');check.type='button';
       var reset = el('button','btn btn-outline choice-reset','重新作答');reset.type='button';
@@ -833,13 +834,13 @@ function applyChoiceFeedback(q, opts) {
     var selected = picked.indexOf(key) >= 0;
     var correct = keys.indexOf(String(key).toUpperCase()) >= 0;
     var verdict = !ready ? '' : picked.length && keys.length && correct && (selected || wrong) ? 'correct' : wrong && selected ? 'wrong' : '';
-    button.disabled = q.playable === false || (multiple && ui.choiceChecked);
+    button.disabled = q.playable === false || ui.choiceChecked;
     button.setAttribute('aria-pressed', selected ? 'true' : 'false');
     button.setAttribute('data-verdict', verdict);
     button.title = verdict === 'correct' ? '正确答案' : verdict === 'wrong' ? '选择错误' : '';
   });
   var check=opts.querySelector('.choice-check'),reset=opts.querySelector('.choice-reset');
-  if(check){check.hidden=ui.choiceChecked;check.disabled=!picked.length||!keys.length;check.textContent=keys.length?'核对答案':'答案待核对';}
+  if(check){check.hidden=!multiple||ui.choiceChecked;check.disabled=!picked.length||!keys.length;check.textContent=keys.length?'核对答案':'答案待核对';}
   if(reset)reset.hidden=!ui.choiceChecked;
   var live = opts.querySelector('.choice-feedback-live');
   if (live) live.textContent = !ready ? (picked.length?'已选择 '+picked.length+' 项，核对后显示结果。':'多选题：选好后点击“核对答案”。') : !picked.length ? '' : !keys.length ? '本题答案尚待核对，暂不判定正误。' : wrong ? '所选包含错误选项。正确选项为 ' + keys.join('、') + '。' : keys.length > 1 ? picked.length === keys.length ? '已选全，回答正确。' : '所选不完整。正确选项为 '+keys.join('、')+'。' : '选择正确。';
@@ -854,7 +855,7 @@ function currentKnNames(q) {
 
 function applyRegions(q) {
   if (!q) { ui.answerOpen = false; ui.analysisOpen = false; }
-  if(q&&isMultipleChoice(q)&&ui.answerOpen){ui.choiceChecked=true;applyChoiceFeedback(q,$('options'));}
+  if(q&&q.options&&q.options.length&&ui.answerOpen){ui.choiceChecked=true;applyChoiceFeedback(q,$('options'));}
   var rn = $('review-note');
   rn.hidden = true;
   rn.textContent = '';

@@ -8,6 +8,7 @@
  const label={none:'未标记',known:'会做',shaky:'不熟练',unknown:'不会做'};
  const symbol={none:'',known:'✓',shaky:'',unknown:'×'};
  const modes={favorites:'收藏本',mastery:'掌握地图',knowledge:'知识图谱',retest:'错题复测'};
+ let syncBaseline={},receivingCloud=false;
  let attached=false,root,owner=null,state,storageError='',snapshot=null,questionReturn='';
  let notes=null,notesLoading=false,notesError='',notesToken=0;
  let map={category:'all',chapter:'',statuses:[],attributes:[],enhanced:false};
@@ -19,12 +20,12 @@
  let dialog,dialogBody,dialogTitle,favoriteFocus,selectedFavorite='',favoriteSearch='',favoriteFilter='all',replaceDialog;
  const mode=()=>location.hash.match(/^#\/(mastery|knowledge|retest|favorites)(?:[/?]|$)/)?.[1]||'';
  const key=()=> 'gopt.study-tools.v1'+(owner?'.space.'+owner:'.guest');
- const emptyState=()=>({version:1,favorites:{},mistakes:{},schedules:{},plans:{},session:null,history:[]});
+ const emptyState=()=>({version:1,favorites:{},mistakes:{},schedules:{},plans:{},session:null,history:[],syncEntries:{}});
  const canonical=q=>q?.canonicalId||q?.id;
  const status=q=>getStatus(statusKeyOf(q))||'none';
  const favorite=q=>!!state.favorites[canonical(q)];
  function persist(){
-  try{localStorage.setItem(key(),JSON.stringify(state));storageError='';window.OpticsDashboard?.retestPosition(state.session);return true;}
+  try{updateSyncEntries();localStorage.setItem(key(),JSON.stringify(state));window.OpticsToolsCloud?.capture();storageError='';window.OpticsDashboard?.retestPosition(state.session);return true;}
   catch(e){storageError='本机保存失败，请导出收藏备份。本次改动仍保留在当前页面。';announce(storageError);return false;}
  }
  function load(){
@@ -36,6 +37,7 @@
    Object.entries(saved.mistakes).forEach(([id,value])=>{if(DATA.byId[id]&&typeof value==='string')state.mistakes[id]=value;});
    Object.entries(saved.schedules||{}).forEach(([id,value])=>{if(DATA.byId[id]&&typeof value==='string'&&Number.isFinite(Date.parse(value)))state.schedules[id]=value;});
    Object.entries(saved.plans||{}).forEach(([id,p])=>{if(DATA.byId[id]&&p&&['known','shaky','unknown'].includes(p.level)&&Number.isInteger(p.step)&&p.step>=0&&typeof p.due==='string'&&Number.isFinite(Date.parse(p.due)))state.plans[id]=p;});
+   state.syncEntries=saved.syncEntries&&typeof saved.syncEntries==='object'&&!Array.isArray(saved.syncEntries)?saved.syncEntries:{};
    state.history=Array.isArray(saved.history)?saved.history.filter(h=>h&&typeof h.date==='string').slice(-20):[];
    const s=saved.session;
    if(s&&Array.isArray(s.ids)&&s.ids.length&&s.ids.length<=DATA.questions.length&&s.ids.every(id=>DATA.byId[id]&&DATA.byId[id].playable!==false)&&Number.isInteger(s.index)&&s.index>=0&&s.index<s.ids.length&&s.results&&typeof s.results==='object'&&!Array.isArray(s.results)){
@@ -47,6 +49,22 @@
    storageError='学习工具记录格式异常，原始内容已保留。请先导出检查。';
   }
  }
+ function entityValues(){
+  const out={};Object.entries(state.favorites).forEach(([id,v])=>out['favorite:'+id]=v);
+  new Set([...Object.keys(state.plans),...Object.keys(state.schedules),...Object.keys(state.mistakes)]).forEach(id=>out['review:'+id]={plan:state.plans[id]||null,due:state.schedules[id]||null,mistake:state.mistakes[id]||null});
+  if(state.session)out.session=state.session;return out;
+ }
+ function stableValue(value){return JSON.stringify(value,(_k,v)=>v&&typeof v==='object'&&!Array.isArray(v)?Object.fromEntries(Object.keys(v).sort().map(k=>[k,v[k]])):v);}
+ function seedSync(){const values=entityValues();state.syncEntries=state.syncEntries||{};for(const [k,v] of Object.entries(values)){if(!state.syncEntries[k])state.syncEntries[k]={value:JSON.parse(JSON.stringify(v)),at:k.startsWith('favorite:')?v:k==='session'?v.date:(v.plan?.lastDate?v.plan.lastDate+'T00:00:00.000Z':'1970-01-01T00:00:00.000Z')};}syncBaseline=Object.fromEntries(Object.entries(values).map(([k,v])=>[k,JSON.stringify(v)]));}
+ function updateSyncEntries(){if(receivingCloud)return;const values=entityValues();state.syncEntries=state.syncEntries||{};for(const k of new Set([...Object.keys(values),...Object.keys(syncBaseline)])){const text=JSON.stringify(values[k]);if(text!==syncBaseline[k]){const stamp=Math.max(Date.now(),(Date.parse(state.syncEntries[k]?.at)||0)+1);state.syncEntries[k]={value:values[k]===undefined?null:JSON.parse(text),at:new Date(stamp).toISOString()};}}syncBaseline=Object.fromEntries(Object.entries(values).map(([k,v])=>[k,JSON.stringify(v)]));}
+ function receiveToolsCloud(entries){
+  if(owner!==window.OpticsAuth?.user?.id)return;receivingCloud=true;const before=stableValue(entityValues());
+  try{for(const [key,entry] of Object.entries(entries)){const k=key.replace(/^settings:study-tools\./,'');if(!entry||typeof entry.at!=='string'||!Number.isFinite(Date.parse(entry.at)))continue;const local=state.syncEntries[k];if(local&&local.at>entry.at)continue;const id=k.split(':').slice(1).join(':');if(k!=='session'&&(!DATA.byId[id]||!['favorite','review'].includes(k.split(':')[0])))continue;state.syncEntries[k]=entry;const v=entry.value;
+   if(k==='session'){if(stableValue(state.session)!==stableValue(v))state.session=v;continue;}if(k.startsWith('favorite:')){if(typeof v==='string'&&Number.isFinite(Date.parse(v)))state.favorites[id]=v;else if(v===null)delete state.favorites[id];}
+   else{for(const [field,value] of [['plans',v?.plan],['schedules',v?.due],['mistakes',v?.mistake]]){if(value)state[field][id]=value;else delete state[field][id];}}
+  }const changed=before!==stableValue(entityValues());localStorage.setItem(key(),JSON.stringify(state));if(changed)load();seedSync();if(changed){reflect();if(mode())renderHub();}}
+  finally{receivingCloud=false;}
+ }
  function announce(text){const n=by('study-announcement');if(n)n.textContent=text;}
  function textOf(q){return (q.stem||[]).map(b=>b.x||(b.items||[]).join(' ')).join(' ').replace(/\s+/g,' ');}
  function context(q){const ch=findChapter(q.chapterId);return [ch?ch.num+' '+ch.title:'其他资料',q.year?q.year+' 年':null,q.typeName,'原题 '+q.number].filter(Boolean).join(' · ');}
@@ -56,12 +74,12 @@
   if(value==='past')return isPaper(q);
   const ch=findChapter(q.chapterId);return value==='geom'?['geom','inst'].includes(ch?.source):ch?.source==='phys';
  }
- function questions(filter){return DATA.questions.filter(q=>category(q,filter.category)&&(!filter.chapter||q.chapterId===filter.chapter));}
+ function questions(filter){return DATA.questions.filter(q=>q.playable!==false&&category(q,filter.category)&&(!filter.chapter||q.chapterId===filter.chapter));}
  function categories(host,filter,change){
   const row=node('div','study-filter-row');row.append(node('strong','study-filter-label','分类'));
   [['all','全部'],['geom','几何光学'],['phys','物理光学'],['past','历年真题']].forEach(([value,name])=>{
    const b=btn(name,()=>{filter.category=value;filter.chapter='';change();},'study-chip');b.dataset.category=value;
-   b.setAttribute('aria-pressed',String(filter.category===value));b.append(node('small',null,String(DATA.questions.filter(q=>category(q,value)&&(filter!==favorites||favorite(q))).length)));row.append(b);
+   b.setAttribute('aria-pressed',String(filter.category===value));b.append(node('small',null,String(DATA.questions.filter(q=>q.playable!==false&&category(q,value)&&(filter!==favorites||favorite(q))).length)));row.append(b);
   });host.append(row);
  }
  function chapters(host,filter,change){
@@ -118,7 +136,7 @@
   window.OpticsElectronicNotes?.close();window.EnglishExams?.leave();if(m!=='retest'||!state.session||state.session.finished||state.session.paused)window.ExamTimer?.detach();
   document.body.classList.add('study-page');root.hidden=false;root.dataset.page=m;root.replaceChildren();
   by('crumb').textContent=modes[m];by('crumb-sub').textContent='工程光学 · 个人学习记录';
-  document.querySelector('.page-eyebrow').textContent='STUDY / 学习工具';by('progress').textContent='共 '+DATA.questions.length+' 题';
+  document.querySelector('.page-eyebrow').textContent='STUDY / 学习工具';by('progress').textContent='可练习 '+DATA.questions.filter(q=>q.playable!==false).length+' 题';
   if(m==='mastery')renderMastery();else if(m==='knowledge')renderKnowledge();else if(m==='favorites')renderFavorites();else renderRetest();
   by('scroller').scrollTop=pageScroll;
   reflect();
@@ -173,7 +191,7 @@
  }
  function renderKnowledgeBody(host){
   host.replaceChildren();const term=graph.search.trim().toLowerCase();
-  const catalog=orderedStudyChapters().map(ch=>({ch,topics:ch.knowledge.map(k=>({k,ids:k.questionIds.filter(id=>category(DATA.byId[id],graph.category))})).filter(t=>t.ids.length&&(!term|| (ch.num+' '+ch.title+' '+t.k.name).toLowerCase().includes(term)))})).filter(c=>c.topics.length);
+  const catalog=orderedStudyChapters().map(ch=>({ch,topics:ch.knowledge.map(k=>({k,ids:k.questionIds.filter(id=>DATA.byId[id]?.playable!==false&&category(DATA.byId[id],graph.category))})).filter(t=>t.ids.length&&(!term|| (ch.num+' '+ch.title+' '+t.k.name).toLowerCase().includes(term)))})).filter(c=>c.topics.length);
   if(!catalog.some(c=>c.ch.id===graph.chapter))graph.chapter=catalog[0]?.ch.id||'';
   history.replaceState(null,'',toolHash('knowledge'));
   if(!catalog.length){host.append(node('p','study-panel study-empty','没有匹配的章节或知识点。'));return;}
@@ -215,7 +233,7 @@
  function listContext(origin){
   if(origin==='favorites')return {ids:favoriteRows().map(q=>q.id),name:'收藏本练习',filters:{...favorites}};
   if(origin==='mastery')return {ids:questions(map).filter(mapMatch).map(q=>q.id),name:'掌握地图筛选练习',filters:JSON.parse(JSON.stringify(map))};
-  if(origin==='knowledge'){const ch=orderedStudyChapters().find(ch=>ch.knowledge.some(k=>k.id===graph.topic)),k=ch?.knowledge.find(k=>k.id===graph.topic);return {ids:(k?.questionIds||[]).filter(id=>category(DATA.byId[id],graph.category)),name:k?.name||'知识点练习',filters:{...graph}};}
+  if(origin==='knowledge'){const ch=orderedStudyChapters().find(ch=>ch.knowledge.some(k=>k.id===graph.topic)),k=ch?.knowledge.find(k=>k.id===graph.topic);return {ids:(k?.questionIds||[]).filter(id=>DATA.byId[id]?.playable!==false&&category(DATA.byId[id],graph.category)),name:k?.name||'知识点练习',filters:{...graph}};}
   if(origin==='retest')return {ids:state.session?.ids||[],name:'本轮复测题目',filters:{...review}};
   return null;
  }
@@ -394,7 +412,7 @@
  function renderKnowledgeDetail(){
   const chapter=orderedStudyChapters().find(ch=>ch.knowledge.some(k=>k.id===graph.topic)),topic=chapter?.knowledge.find(k=>k.id===graph.topic);
   if(!topic){graph.topic='';location.hash=toolHash('knowledge').slice(1);return;}
-  const ids=topic.questionIds.filter(id=>category(DATA.byId[id],graph.category)),qs=ids.map(id=>DATA.byId[id]);
+  const ids=topic.questionIds.filter(id=>DATA.byId[id]?.playable!==false&&category(DATA.byId[id],graph.category)),qs=ids.map(id=>DATA.byId[id]);
   const head=heading(topic.name,chapter.num+' '+chapter.title);head.append(btn('← 返回知识点',()=>{graph.topic='';location.hash=toolHash('knowledge').slice(1);}),btn('开始知识点练习',()=>startPractice(ids,topic.name),'study-button study-primary'));
   const tabs=node('div','flow-tabs');[['questions','题目（'+qs.length+'）'],['explain','讲解与笔记']].forEach(([v,t])=>{const b=btn(t,()=>{graph.tab=v;renderHub();},'study-chip');b.setAttribute('aria-pressed',String(graph.tab===v));tabs.append(b);});root.append(tabs);
   const panel=node('section','study-panel');root.append(panel);
@@ -465,7 +483,7 @@
  const originalFeedback=window.applyChoiceFeedback;
  window.applyChoiceFeedback=function(q,opts){originalFeedback.apply(this,arguments);if(!attached||q.playable===false||isMultipleChoice(q)&&!ui.choiceChecked)return;const picked=selectedChoiceKeys(q),keys=choiceAnswerKeys(q);if(keys.length&&picked.some(k=>!keys.includes(k))){const id=canonical(q);state.mistakes[id]=new Date().toISOString();persist();reflect();}};
  function attach(){
-  if(attached)return;owner=window.OpticsAuth?.user?.id||null;load();root=by('study-hub');createFavorites();attached=true;if(mode())readToolRoute();
+  if(attached)return;owner=window.OpticsAuth?.user?.id||null;load();seedSync();root=by('study-hub');createFavorites();attached=true;window.OpticsToolsCloud?.attach(()=>state.syncEntries,receiveToolsCloud);if(mode())readToolRoute();
   ['favorites-open','notes-library-open'].forEach(id=>by(id).removeAttribute('aria-haspopup'));by('favorites-open').removeAttribute('aria-controls');
   by('favorites-open').onclick=openFavorites;by('btn-favorite').onclick=()=>toggleFavorite(currentQuestion());by('btn-study-return').onclick=()=>{if(questionReturnHash)location.hash=questionReturnHash;else open(questionReturn);};
   ['mastery','knowledge','retest'].forEach(m=>by(m+'-open').onclick=()=>open(m));
@@ -480,14 +498,14 @@
    renderHub();const next=selector&&root.querySelector(selector);if(next){next.focus({preventScroll:true});if(selection)next.setSelectionRange(...selection);}
   });
   window.addEventListener('optics:notes-changed',()=>{notesToken++;notes=null;notesError='';notesLoading=false;if(mode()==='mastery')readNotes(true);});
-  window.addEventListener('storage',e=>{if(e.key===key()){load();reflect();if(mode())renderHub();if(dialog.open)selectedFavorite?favoriteDetail():favoriteList();}});
-  window.OpticsAuth?.subscribe(()=>{const next=window.OpticsAuth?.user?.id||null;if(next===owner)return;owner=next;notesToken++;notes=null;notesError='';notesLoading=false;snapshot=null;questionReturn='';load();if(dialog.open)dialog.close();reflect();});
+  window.addEventListener('storage',e=>{if(e.key===key()){load();seedSync();reflect();if(mode())renderHub();if(dialog.open)selectedFavorite?favoriteDetail():favoriteList();}});
+  window.OpticsAuth?.subscribe(()=>{const next=window.OpticsAuth?.user?.id||null;if(next===owner)return;owner=next;notesToken++;notes=null;notesError='';notesLoading=false;snapshot=null;questionReturn='';load();seedSync();if(dialog.open)dialog.close();reflect();});
   document.addEventListener('keydown',e=>{
    if(!mode())return;if(e.key==='Escape'){closeNav();return;}
    if(['ArrowLeft','ArrowRight'].includes(e.key)&&!e.target.matches('input,textarea,select')&&!e.target.closest('dialog')&&!e.target.isContentEditable)e.stopImmediatePropagation();
   },true);
   render();
  }
- function restoreCheckpoint(saved){if(!saved||!Array.isArray(saved.ids)||!saved.ids.length||saved.ids.length>DATA.questions.length||!saved.ids.every(id=>DATA.byId[id]&&DATA.byId[id].playable!==false)||!Number.isInteger(saved.index)||saved.index<0||saved.index>=saved.ids.length)return false;const prior=state.session;state.session={...saved,results:saved.results&&typeof saved.results==='object'?saved.results:{},picks:saved.picks&&typeof saved.picks==='object'?saved.picks:{},drafts:prior?.date===saved.date?prior.drafts||{}:{}};persist();return true;}
+ function restoreCheckpoint(saved){if(!saved||!Array.isArray(saved.ids)||!saved.ids.length||saved.ids.length>DATA.questions.length||!saved.ids.every(id=>DATA.byId[id]&&DATA.byId[id].playable!==false)||!Number.isInteger(saved.index)||saved.index<0||saved.index>=saved.ids.length)return false;const prior=state.session;if(prior?.date===saved.date&&prior.finished&&!saved.finished)return true;state.session={...saved,results:saved.results&&typeof saved.results==='object'?saved.results:{},picks:saved.picks&&typeof saved.picks==='object'?saved.picks:{},drafts:prior?.date===saved.date?prior.drafts||{}:{}};persist();return true;}
  window.OpticsStudyTools={restoreCheckpoint,attach,open,openFavorites,assess:recordAssessment,plans:()=>JSON.parse(JSON.stringify(state.plans)),startPractice,startRetest:startRetestSession};
 })();

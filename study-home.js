@@ -42,7 +42,7 @@
   state.resume=next;save();
  }
  function retestPosition(session){
-  if(!attached||active||!/^#\/retest(?:\?|$)/.test(location.hash)||!session||session.finished)return;const q=DATA.byId[session.ids[session.index]];if(!q)return;state.resume={kind:'retest',questionId:q.id,title:'错题复测 / '+(findChapter(q.chapterId)?.title||'本轮练习'),number:String(q.number),count:session.ids.length,checkpoint:{ids:session.ids,index:session.index,name:session.name,date:session.date,picks:session.picks,results:session.results,finished:session.finished,paused:session.paused},done:Object.values(session.results).filter(r=>['known','shaky','unknown'].includes(r.status)).length,at:new Date().toISOString()};save();
+  if(!attached||active||!/^#\/retest(?:\?|$)/.test(location.hash)||!session)return;const q=DATA.byId[session.ids[session.index]];if(!q)return;state.resume={kind:'retest',questionId:q.id,title:'错题复测 / '+(findChapter(q.chapterId)?.title||'本轮练习'),number:String(q.number),count:session.ids.length,checkpoint:{ids:session.ids,index:session.index,name:session.name,date:session.date,picks:session.picks,results:session.results,finished:session.finished,paused:session.paused},done:Object.values(session.results).filter(r=>['known','shaky','unknown'].includes(r.status)).length,at:new Date().toISOString()};save();
  }
  function englishPosition(paper,group,q){
   if(!attached||!paper||!group||!q||active)return;
@@ -110,7 +110,7 @@
   progressLine('题库整体',sum.completed,sum.total,'bank','待巩固 '+sum.weak+' 题');
   detail.append(lines);
   if(r)detail.append(node('p','dashboard-footnote',r.kind==='retest'?'标记会做、不会做或不熟练后，计入本轮完成进度。':r.kind==='english'?'客观题提交批改、主观题批改完成后计入进度。':'手动标记会做、不会做或不熟练后，计入完成进度。'));
-  card.append(detail,button(r?'继续做题 →':'开始练习 →',resume,'study-button study-primary dashboard-resume'));root.append(card);
+  card.append(detail,button(r?.kind==='retest'&&r.checkpoint?.finished?'查看复测结果 →':r?'继续做题 →':'开始练习 →',resume,'study-button study-primary dashboard-resume'));root.append(card);
   const stats=node('section','dashboard-stats');const today=dateKey(),yesterday=previousDay(today);const n=state.days[today]?.length||0,prev=state.days[yesterday]?.length||0;
   const date=state.examDate?new Date(state.examDate+'T00:00:00'):null,midnight=new Date(today+'T00:00:00');const remaining=date?Math.ceil((date-midnight)/86400000):null;
   const countdown=metric('考试倒计时',remaining===null?'—':Math.max(0,remaining),'天',date?'目标日期 · '+state.examDate:'设置你的考试日期');
@@ -150,7 +150,7 @@
  }
  function reflectLights(){
   const host=by('dashboard-statusbar');if(!host)return;
-  const cloud=window.OpticsDashboardCloud?.summary(),optics=window.OpticsCloud?.summary();
+  const cloud=window.OpticsDashboardCloud?.summary(),optics=window.OpticsCloud?.summary(),tools=window.OpticsToolsCloud?.summary();if(cloud){cloud.problem=cloud.problem||tools?.problem||(optics?.configured&&!optics?.connected?'掌握记录尚未连接':'');cloud.pending+=tools?.pending||0;cloud.running=cloud.running||tools?.running;}
   const entries=[['存储正常',writable?'ok':'error'],[!cloud?.enabled?'未登录':cloud.problem?'云端未连接':cloud.running||cloud.pending||optics?.pending?'同步中':cloud.ready?'云端已同步':'连接中',!cloud?.enabled||cloud.problem?'idle':cloud.running||cloud.pending||optics?.pending?'pending':'ok'],['今日 '+(state.days[dateKey()]?.length||0)+' 题','ok']];
   entries.forEach(([text,tone],index)=>{let item=host.children[index];if(!item){item=node('span','dashboard-status-item');const lamp=node('i','dashboard-status-lamp');lamp.setAttribute('aria-hidden','true');item.append(lamp,document.createTextNode(''));host.append(item);}item.firstElementChild.dataset.tone=tone;item.lastChild.nodeValue=text;});
  }
@@ -160,6 +160,7 @@
   attached=true;
   const statusbar=node('div','dashboard-statusbar');statusbar.id='dashboard-statusbar';statusbar.setAttribute('role','status');document.querySelector('.actionbar').append(statusbar);
   window.OpticsDashboardCloud?.attach(()=>copy(state),receiveCloud);
+  window.addEventListener('tools:sync',reflectLights);
   window.addEventListener('dashboard:sync',()=>{const foot=document.querySelector('.dashboard-storage-note');if(foot)foot.textContent=storageText();reflectLights();});
   window.addEventListener('optics:sync-status',reflectLights);
   by('home-return').onclick=open;document.querySelector('.brand-home').onclick=e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();open();};
@@ -176,6 +177,6 @@
  const baseRender=window.render;window.render=function(){if(active&&location.hash==='#/dashboard'){show();return;}baseRender();capture();};
  const baseScope=window.setScope;window.setScope=function(scope,opts){if(active){exit();location.hash='/bank';}return baseScope(scope,opts);};
  const baseStatus=window.changeStatus;window.changeStatus=function(val){const q=currentQuestion();baseStatus(val);capture();};
- const baseSetStatus=window.setStatus;window.setStatus=function(id,value){const old=getStatus(id),result=baseSetStatus.apply(this,arguments);if(attached&&value&&value!==old){const q=DATA.byId[id]||DATA.questions.find(q=>statusKeyOf(q)===id);if(q&&q.playable!==false)record(q.canonicalId||q.statusKey||q.id,{kind:'assessment',level:value});}return result;};
+ const baseSetStatus=window.setStatus;window.setStatus=function(id,value){const old=getStatus(id),result=baseSetStatus.apply(this,arguments);if(attached&&value){const q=DATA.byId[id]||DATA.questions.find(q=>statusKeyOf(q)===id);if(q&&q.playable!==false)record(q.canonicalId||q.statusKey||q.id,{kind:'assessment',level:value});}return result;};
  window.OpticsDashboard={attach,open,resume,record,undo:undoRecord,englishPosition,retestPosition,totals,progress:()=>progress(state.resume),counts:()=>copy(state.days)};
 })();
