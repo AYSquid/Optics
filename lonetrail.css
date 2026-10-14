@@ -329,3 +329,9 @@ html[data-theme="lonetrail"].theme-switching *,html[data-theme="lonetrail"].them
 @media(prefers-reduced-motion:reduce){html[data-theme="lonetrail"] *,html[data-theme="lonetrail"] *::before,html[data-theme="lonetrail"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 html[data-theme="lonetrail"] .tree-subsection-title{color:var(--lt-ink);border-color:var(--lt-line);font:700 13px/1.7 var(--lt-title-font);box-shadow:inset 2px 0 var(--lt-orange);padding-left:12px}
+
+/* Approved internal medal motif, adapted as a non-interactive background. */
+html[data-theme="lonetrail"] .main::after{display:none}
+html[data-theme="lonetrail"] .scroller{isolation:isolate}
+html[data-theme="lonetrail"] .scroller::after{content:"";position:absolute;right:0;bottom:0;width:min(470px,64vw);aspect-ratio:240/180;background:url("assets/arclight-inner.svg?v=20261014") right bottom/contain no-repeat;opacity:.15;pointer-events:none;z-index:-1}
+@media(max-width:900px){html[data-theme="lonetrail"] .scroller::after{width:340px;right:-35px;opacity:.13}}
