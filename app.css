@@ -496,6 +496,25 @@ html:is([data-theme="rhine-terminal"],[data-theme="lonetrail"]) .source-detail .
 @media(max-width:560px){.qmeta{font-size:11px;}.badge{font-size:10px;}.actionbar .btn{min-height:42px;}.actionbar .status-buttons .btn{min-height:38px;}}
 
 .source-table-wrap{overflow-x:auto;margin:16px 0}.source-table{border-collapse:collapse;width:100%;font-size:.95em}.source-table th,.source-table td{border:1px solid var(--border,#dce4df);padding:10px 14px;text-align:left;min-width:100px}.source-table th{background:var(--surface-2,#f4f6f5)}
+
+/* Scanned workbook lines reflow as paragraphs; wide formulae scroll locally. */
+:is(.stem,.region-body,.study-solution,.option-text) { min-width:0; overflow-wrap:anywhere; }
+.math-inline .katex { overflow-wrap:normal; }
+.math-inline.is-wide { display:inline-block; max-width:100%; vertical-align:middle; overflow-x:auto; overflow-y:hidden; padding:3px 0; box-sizing:border-box; }
+.math-inline.is-wide .katex { white-space:nowrap; }
+.qbadges { align-items:flex-start; }
+.figure:has(img[src*="workbook-engopt2/"]) { max-width:100%; }
+.figure img[src*="workbook-engopt2/"] { max-height:360px; max-width:min(100%,640px); width:auto; margin-inline:auto; object-fit:contain; }
+.option-text .figure img[src*="workbook-engopt2/"] { max-height:240px; }
+html[data-theme] .figure:has(img[src*="workbook-engopt2/"]) figcaption::before { content:none; }
+html[data-theme] .cross-duplicate-number, html[data-theme] .has-cross-duplicate .flow-question-head strong { color:var(--lt-red,#ac2729); }
+.cross-duplicates { position:relative; max-width:100%; }
+html[data-theme] .badge.b-cross-duplicate { color:var(--lt-red,#ac2729); border:1px solid var(--lt-red,#ac2729); background:var(--lt-red-paper,#fff2ef); cursor:pointer; font-weight:600; }
+.cross-duplicate-list { flex-basis:100%; margin:10px 0 0; padding:10px 16px 10px 30px; border-left:2px solid var(--lt-red,#ac2729); background:var(--lt-red-paper,#fff2ef); font-size:13px; line-height:1.75; }
+.cross-duplicate-list li+li { margin-top:8px; }
+html[data-theme] .cross-duplicate-link { color:var(--lt-red,#ac2729); font:inherit; font-weight:600; text-align:left; border:0; border-bottom:1px solid currentColor; padding:0; background:transparent; cursor:pointer; }
+.cross-duplicate-reason { display:block; color:var(--lt-ink,var(--text)); }
+@media(max-width:560px) { .figure img[src*="workbook-engopt2/"] { max-height:320px; } }
 @media(max-width:560px){.pager{flex-wrap:wrap}.pager #btn-prev-section,.pager #btn-next-section{flex:1 1 40%;order:1}}
 
 

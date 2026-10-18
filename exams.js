@@ -34,6 +34,7 @@ function initExams(data){
  data.occurrences.forEach(function(o){
   EXAMS.byOccurrence[o.id]=o;
   var q=EXAMS.canonical[o.questionId]||DATA.byId[o.questionId];
+  q=Object.assign({},q,{crossSourceDuplicates:(DATA.byId[o.questionId]||q).crossSourceDuplicates||[]});
   DATA.byId[o.id]=Object.assign({},q,{id:o.id,occurrenceId:o.id,canonicalId:o.questionId,statusKey:q.statusKey||o.questionId,stem:o.stem,options:o.options,answer:o.answer||[],analysis:o.analysis||[],answerAvailability:o.answerAvailability,review:o.review||q.review,number:o.questionNumber,year:o.year,section:o.section,order:o.order,playable:o.playable,completeness:o.completeness,typeName:o.revisionKind==='drawing'?'作图题':q.typeName,origin:{file:o.sourceFile,line:o.sourceLine}});
  });
  try{var p=JSON.parse(localStorage.getItem(EXAM_STORE_KEY)||'{}');['positions','marks','choices'].forEach(function(k){if(p[k]&&typeof p[k]==='object'&&!Array.isArray(p[k]))examProgress[k]=p[k];});}catch(e){examWritable=false;}

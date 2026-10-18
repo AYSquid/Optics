@@ -10730,7 +10730,18 @@
      "line": 17
     }
    ],
-   "studyTopicId": "phys-ch9-k12"
+   "studyTopicId": "phys-ch9-k12",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-14",
+     "kind": "same_question",
+     "reason": "均问布儒斯特角入射时哪个反射/折射分量为零；仅选项排序或措辞不同。",
+     "examYears": [
+      2016
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -11904,7 +11915,18 @@
      "line": 30
     }
    ],
-   "studyTopicId": "phys-ch13-k2"
+   "studyTopicId": "phys-ch13-k2",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-15",
+     "kind": "same_question",
+     "reason": "均为自然光通过两片理想偏振片，透射光强为入射光强的四分之一，求透光轴夹角；干扰选项有差别。",
+     "examYears": [
+      2016
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -14345,7 +14367,18 @@
    ],
    "revisionKind": "blank",
    "originalQuestionType": "choice",
-   "studyTopicId": "phys-ch10-k12"
+   "studyTopicId": "phys-ch10-k12",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch09-exercise-一_choice-15",
+     "kind": "same_question",
+     "reason": "均问牛顿环装置间距减小时同级条纹的变化；2017 为填空并同时问半径变化。",
+     "examYears": [
+      2017
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -14442,7 +14475,18 @@
    "sourcePhotos": [
     "A6B17D98AE8AA89C8D957AC6227CBF11.jpg"
    ],
-   "studyTopicId": "phys-ch13-k2"
+   "studyTopicId": "phys-ch13-k2",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-15",
+     "kind": "same_question",
+     "reason": "均为自然光通过两片理想偏振片，透射光强为入射光强的四分之一，求透光轴夹角；干扰选项有差别。",
+     "examYears": [
+      2017
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "calc",
@@ -17169,7 +17213,18 @@
    ],
    "duplicateType": "unique",
    "examFrequency": 1,
-   "studyTopicId": "phys-ch10-k7"
+   "studyTopicId": "phys-ch10-k7",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch09-exercise-一_choice-20",
+     "kind": "same_question",
+     "reason": "均问玻璃表面单层增透膜材料折射率的选择范围；选项数量或次序不同。",
+     "examYears": [
+      2018
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -19608,7 +19663,18 @@
      "line": 6
     }
    ],
-   "studyTopicId": "phys-ch11-k4"
+   "studyTopicId": "phys-ch11-k4",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch10-exercise-一_choice-14",
+     "kind": "same_question",
+     "reason": "均给 N₁=600、N₂=1800，求 I₂/I₁；选项次序不同。",
+     "examYears": [
+      2019
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -20430,7 +20496,18 @@
      "line": 92
     }
    ],
-   "studyTopicId": "phys-ch11-k12"
+   "studyTopicId": "phys-ch11-k12",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch10-example-example-10-5",
+     "kind": "same_question",
+     "reason": "光栅设计的四项条件及可见谱线问题相同：600 nm、二级不超过 30°、三级缺级、分辨 0.02 nm；练习册另要求绘图。",
+     "examYears": [
+      2019
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "calc",
@@ -20639,7 +20716,18 @@
      "line": 127
     }
    ],
-   "studyTopicId": "phys-ch9-k1"
+   "studyTopicId": "phys-ch9-k1",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch08-example-example-8-2",
+     "kind": "same_question",
+     "reason": "电场表达式、振幅、频率参数和初相位完全一致，均求频率、波长、相位、传播方向及磁场。",
+     "examYears": [
+      2019
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -21754,7 +21842,18 @@
      "line": 20
     }
    ],
-   "studyTopicId": "phys-ch10-k7"
+   "studyTopicId": "phys-ch10-k7",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch09-exercise-一_choice-20",
+     "kind": "same_question",
+     "reason": "均问玻璃表面单层增透膜材料折射率的选择范围；选项数量或次序不同。",
+     "examYears": [
+      2020
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -21843,7 +21942,18 @@
      "line": 21
     }
    ],
-   "studyTopicId": "phys-ch9-k12"
+   "studyTopicId": "phys-ch9-k12",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-14",
+     "kind": "same_question",
+     "reason": "均问布儒斯特角入射时哪个反射/折射分量为零；仅选项排序或措辞不同。",
+     "examYears": [
+      2020
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -23092,7 +23202,27 @@
      "line": 95
     }
    ],
-   "studyTopicId": "phys-ch11-k4"
+   "studyTopicId": "phys-ch11-k4",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch10-example-example-10-7",
+     "kind": "same_question",
+     "reason": "均为 2N 条等宽缝、不透明间隔交替为 a 和 3a，求正入射夫琅和费强度分布。",
+     "examYears": [
+      2020
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "engopt2-ch10-exercise-三_calc-6",
+     "kind": "shared_subquestion",
+     "reason": "练习册第（3）问“全放开”与真题的 2N 缝交替间隔多缝衍射题相同；遮奇缝、遮偶缝两问不同。",
+     "examYears": [
+      2020
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "calc",
@@ -24612,7 +24742,18 @@
      "line": 22
     }
    ],
-   "studyTopicId": "phys-ch10-k1"
+   "studyTopicId": "phys-ch10-k1",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch09-exercise-一_choice-1",
+     "kind": "same_question",
+     "reason": "均问干涉条件中不必满足哪一项，答案为初相位相同；振动方向这一干扰选项的表述不同。",
+     "examYears": [
+      2021
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -24704,7 +24845,18 @@
      "line": 23
     }
    ],
-   "studyTopicId": "phys-ch10-k7"
+   "studyTopicId": "phys-ch10-k7",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch09-exercise-一_choice-20",
+     "kind": "same_question",
+     "reason": "均问玻璃表面单层增透膜材料折射率的选择范围；选项数量或次序不同。",
+     "examYears": [
+      2021
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -25244,7 +25396,18 @@
      "line": 29
     }
    ],
-   "studyTopicId": "phys-ch13-k8"
+   "studyTopicId": "phys-ch13-k8",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-13",
+     "kind": "same_question",
+     "reason": "均用四分之一波片加检偏器辨别三类光，转一周出现两亮两黑；2021 文字中的“部分线偏振”与其括注“圆偏振加自然光”有冲突，按括注对应。",
+     "examYears": [
+      2021
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -25335,7 +25498,19 @@
      "line": 30
     }
    ],
-   "studyTopicId": "phys-ch13-k2"
+   "studyTopicId": "phys-ch13-k2",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-15",
+     "kind": "same_question",
+     "reason": "均为自然光通过两片理想偏振片，透射光强为入射光强的四分之一，求透光轴夹角；干扰选项有差别。",
+     "examYears": [
+      2021,
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -27303,7 +27478,18 @@
      "line": 15
     }
    ],
-   "studyTopicId": "geom-ch4-k3"
+   "studyTopicId": "geom-ch4-k3",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch04-exercise-一_choice-5",
+     "kind": "same_question",
+     "reason": "物方远心与入瞳位于无穷远是同一条件，均问主光线在哪侧平行光轴。",
+     "examYears": [
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -29111,7 +29297,18 @@
      "line": 74
     }
    ],
-   "studyTopicId": "phys-ch10-k5"
+   "studyTopicId": "phys-ch10-k5",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch09-example-example-9-10",
+     "kind": "same_question",
+     "reason": "均为迈克尔逊双谱线条纹消失/复现的可见度与镜移，钠双线数据均为 589.0 nm 和 589.6 nm。",
+     "examYears": [
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "calc",
@@ -29194,7 +29391,18 @@
      "line": 97
     }
    ],
-   "studyTopicId": "phys-ch11-k12"
+   "studyTopicId": "phys-ch11-k12",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch10-example-example-10-5",
+     "kind": "same_question",
+     "reason": "光栅设计的四项条件及可见谱线问题相同：600 nm、二级不超过 30°、三级缺级、分辨 0.02 nm；练习册另要求绘图。",
+     "examYears": [
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "calc",
@@ -29374,7 +29582,18 @@
      "line": 125
     }
    ],
-   "studyTopicId": "phys-ch13-k4"
+   "studyTopicId": "phys-ch13-k4",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-三_calc-5",
+     "kind": "shared_subquestion",
+     "reason": "长轴在 x 轴、长短轴比 2∶1 的椭圆偏振光琼斯矢量部分相同；真题另含波片光路或正交验证，练习册另问左右旋叠加。",
+     "examYears": [
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -29458,7 +29677,18 @@
      "line": 9
     }
    ],
-   "studyTopicId": "phys-ch10-k12"
+   "studyTopicId": "phys-ch10-k12",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch09-exercise-一_choice-15",
+     "kind": "same_question",
+     "reason": "均问牛顿环装置间距减小时同级条纹的变化；2017 为填空并同时问半径变化。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -29546,7 +29776,18 @@
      "line": 10
     }
    ],
-   "studyTopicId": "phys-ch10-k6"
+   "studyTopicId": "phys-ch10-k6",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch09-exercise-一_choice-18",
+     "kind": "same_question",
+     "reason": "均问高反射率、无吸收平板在整波长光程差时的反射/透射光强；选项数量不同。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -29634,7 +29875,18 @@
      "line": 11
     }
    ],
-   "studyTopicId": "phys-ch11-k4"
+   "studyTopicId": "phys-ch11-k4",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch10-exercise-一_choice-14",
+     "kind": "same_question",
+     "reason": "均给 N₁=600、N₂=1800，求 I₂/I₁；选项次序不同。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -29724,7 +29976,18 @@
      "line": 12
     }
    ],
-   "studyTopicId": "phys-ch13-k3"
+   "studyTopicId": "phys-ch13-k3",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-5",
+     "kind": "same_question",
+     "reason": "均问自然光直接通过四分之一波片后的偏振态，未加入起偏器。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -30172,7 +30435,18 @@
      "line": 17
     }
    ],
-   "studyTopicId": "phys-ch9-k12"
+   "studyTopicId": "phys-ch9-k12",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-14",
+     "kind": "same_question",
+     "reason": "均问布儒斯特角入射时哪个反射/折射分量为零；仅选项排序或措辞不同。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -31439,7 +31713,18 @@
      "line": 31
     }
    ],
-   "studyTopicId": "phys-ch9-k1"
+   "studyTopicId": "phys-ch9-k1",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch08-exercise-一_choice-10",
+     "kind": "same_question",
+     "reason": "均由复振幅 (A/r)exp(−ikr) 判断波的类型；选项次序不同。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -34419,7 +34704,18 @@
      "line": 29
     }
    ],
-   "studyTopicId": "phys-ch13-k3"
+   "studyTopicId": "phys-ch13-k3",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-5",
+     "kind": "same_question",
+     "reason": "均问自然光直接通过四分之一波片后的偏振态，未加入起偏器。",
+     "examYears": [
+      2024
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -36736,7 +37032,18 @@
      "line": 25
     }
    ],
-   "studyTopicId": "phys-ch9-k12"
+   "studyTopicId": "phys-ch9-k12",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-14",
+     "kind": "same_question",
+     "reason": "均问布儒斯特角入射时哪个反射/折射分量为零；仅选项排序或措辞不同。",
+     "examYears": [
+      2025
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -37193,7 +37500,18 @@
      "line": 31
     }
    ],
-   "studyTopicId": "phys-ch13-k2"
+   "studyTopicId": "phys-ch13-k2",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-15",
+     "kind": "same_question",
+     "reason": "均为自然光通过两片理想偏振片，透射光强为入射光强的四分之一，求透光轴夹角；干扰选项有差别。",
+     "examYears": [
+      2025
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -39884,7 +40202,18 @@
      "line": 25
     }
    ],
-   "studyTopicId": "phys-ch13-k8"
+   "studyTopicId": "phys-ch13-k8",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-一_choice-13",
+     "kind": "same_question",
+     "reason": "均用四分之一波片加检偏器辨别三类光，转一周出现两亮两黑；2021 文字中的“部分线偏振”与其括注“圆偏振加自然光”有冲突，按括注对应。",
+     "examYears": [
+      2026
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -41080,7 +41409,18 @@
      "line": 41
     }
    ],
-   "studyTopicId": "phys-ch10-k12"
+   "studyTopicId": "phys-ch10-k12",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch09-exercise-一_choice-15",
+     "kind": "same_question",
+     "reason": "均问牛顿环装置间距减小时同级条纹的变化；2017 为填空并同时问半径变化。",
+     "examYears": [
+      2026
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "type": "choice",
@@ -41833,7 +42173,18 @@
      "line": 64
     }
    ],
-   "studyTopicId": "phys-ch13-k4"
+   "studyTopicId": "phys-ch13-k4",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "engopt2-ch11-exercise-三_calc-5",
+     "kind": "shared_subquestion",
+     "reason": "长轴在 x 轴、长短轴比 2∶1 的椭圆偏振光琼斯矢量部分相同；真题另含波片光路或正交验证，练习册另问左右旋叠加。",
+     "examYears": [
+      2026
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "past-2026-acce7ae6e80c8a89",
@@ -108782,7 +109133,18 @@
     "C"
    ],
    "selectionMode": "multiple",
-   "workbookChapterId": "engopt2-ch04"
+   "workbookChapterId": "engopt2-ch04",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2022-8a08800f0b503258",
+     "kind": "same_question",
+     "reason": "物方远心与入瞳位于无穷远是同一条件，均问主光线在哪侧平行光轴。",
+     "examYears": [
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch04-exercise-一_choice-6",
@@ -171098,7 +171460,18 @@
    "name": "例题分析 8-2",
    "studyTopicId": "engopt2-ch08-examples",
    "originalOptions": [],
-   "workbookChapterId": "engopt2-ch08"
+   "workbookChapterId": "engopt2-ch08",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2019-50737656d2017735",
+     "kind": "same_question",
+     "reason": "电场表达式、振幅、频率参数和初相位完全一致，均求频率、波长、相位、传播方向及磁场。",
+     "examYears": [
+      2019
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch08-example-example-8-3",
@@ -185039,7 +185412,18 @@
    "correctOptionKeys": [
     "B"
    ],
-   "workbookChapterId": "engopt2-ch08"
+   "workbookChapterId": "engopt2-ch08",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2023-e14fc8ff467f3422",
+     "kind": "same_question",
+     "reason": "均由复振幅 (A/r)exp(−ikr) 判断波的类型；选项次序不同。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch08-exercise-一_choice-11",
@@ -205962,7 +206346,18 @@
    "name": "例题分析 9-10",
    "studyTopicId": "engopt2-ch09-examples",
    "originalOptions": [],
-   "workbookChapterId": "engopt2-ch09"
+   "workbookChapterId": "engopt2-ch09",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2022-8e07c5bf7764ece4",
+     "kind": "same_question",
+     "reason": "均为迈克尔逊双谱线条纹消失/复现的可见度与镜移，钠双线数据均为 589.0 nm 和 589.6 nm。",
+     "examYears": [
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch09-example-example-9-11",
@@ -211732,7 +212127,18 @@
    "correctOptionKeys": [
     "B"
    ],
-   "workbookChapterId": "engopt2-ch09"
+   "workbookChapterId": "engopt2-ch09",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2021-b084a72cf5e02dae",
+     "kind": "same_question",
+     "reason": "均问干涉条件中不必满足哪一项，答案为初相位相同；振动方向这一干扰选项的表述不同。",
+     "examYears": [
+      2021
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch09-exercise-一_choice-2",
@@ -216982,7 +217388,36 @@
    "correctOptionKeys": [
     "A"
    ],
-   "workbookChapterId": "engopt2-ch09"
+   "workbookChapterId": "engopt2-ch09",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2023-c114a7c00b4380b2",
+     "kind": "same_question",
+     "reason": "均问牛顿环装置间距减小时同级条纹的变化；2017 为填空并同时问半径变化。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2026-3d750e6c234644a0",
+     "kind": "same_question",
+     "reason": "均问牛顿环装置间距减小时同级条纹的变化；2017 为填空并同时问半径变化。",
+     "examYears": [
+      2026
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2017-4f4fd9b3f50b869d",
+     "kind": "same_question",
+     "reason": "均问牛顿环装置间距减小时同级条纹的变化；2017 为填空并同时问半径变化。",
+     "examYears": [
+      2017
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch09-exercise-一_choice-16",
@@ -217901,7 +218336,18 @@
    "correctOptionKeys": [
     "B"
    ],
-   "workbookChapterId": "engopt2-ch09"
+   "workbookChapterId": "engopt2-ch09",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2023-0313c5fdc4f2533d",
+     "kind": "same_question",
+     "reason": "均问高反射率、无吸收平板在整波长光程差时的反射/透射光强；选项数量不同。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch09-exercise-一_choice-19",
@@ -218478,7 +218924,36 @@
    "correctOptionKeys": [
     "C"
    ],
-   "workbookChapterId": "engopt2-ch09"
+   "workbookChapterId": "engopt2-ch09",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2021-d606eb167e14d751",
+     "kind": "same_question",
+     "reason": "均问玻璃表面单层增透膜材料折射率的选择范围；选项数量或次序不同。",
+     "examYears": [
+      2021
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2018-4f4fd9b3f50b869d",
+     "kind": "same_question",
+     "reason": "均问玻璃表面单层增透膜材料折射率的选择范围；选项数量或次序不同。",
+     "examYears": [
+      2018
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2020-b219c0f1c155fd9d",
+     "kind": "same_question",
+     "reason": "均问玻璃表面单层增透膜材料折射率的选择范围；选项数量或次序不同。",
+     "examYears": [
+      2020
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch09-exercise-二_blank-1",
@@ -232332,7 +232807,27 @@
    "name": "例题分析 10-5",
    "studyTopicId": "engopt2-ch10-examples",
    "originalOptions": [],
-   "workbookChapterId": "engopt2-ch10"
+   "workbookChapterId": "engopt2-ch10",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2019-29e63651a9d32208",
+     "kind": "same_question",
+     "reason": "光栅设计的四项条件及可见谱线问题相同：600 nm、二级不超过 30°、三级缺级、分辨 0.02 nm；练习册另要求绘图。",
+     "examYears": [
+      2019
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2022-c34d7213b1350b40",
+     "kind": "same_question",
+     "reason": "光栅设计的四项条件及可见谱线问题相同：600 nm、二级不超过 30°、三级缺级、分辨 0.02 nm；练习册另要求绘图。",
+     "examYears": [
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch10-example-example-10-6",
@@ -236552,7 +237047,18 @@
    "name": "例题分析 10-7*",
    "studyTopicId": "engopt2-ch10-examples",
    "originalOptions": [],
-   "workbookChapterId": "engopt2-ch10"
+   "workbookChapterId": "engopt2-ch10",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2020-7e0867f4a25129ac",
+     "kind": "same_question",
+     "reason": "均为 2N 条等宽缝、不透明间隔交替为 a 和 3a，求正入射夫琅和费强度分布。",
+     "examYears": [
+      2020
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch10-example-example-10-8",
@@ -246162,7 +246668,27 @@
    "correctOptionKeys": [
     "D"
    ],
-   "workbookChapterId": "engopt2-ch10"
+   "workbookChapterId": "engopt2-ch10",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2019-e7e91d15cf3cbbea",
+     "kind": "same_question",
+     "reason": "均给 N₁=600、N₂=1800，求 I₂/I₁；选项次序不同。",
+     "examYears": [
+      2019
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2023-4e9810e68a31c1fe",
+     "kind": "same_question",
+     "reason": "均给 N₁=600、N₂=1800，求 I₂/I₁；选项次序不同。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch10-exercise-一_choice-15",
@@ -252038,7 +252564,18 @@
    "name": "自测练习 6",
    "studyTopicId": "engopt2-ch10-calc",
    "originalOptions": [],
-   "workbookChapterId": "engopt2-ch10"
+   "workbookChapterId": "engopt2-ch10",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2020-7e0867f4a25129ac",
+     "kind": "shared_subquestion",
+     "reason": "练习册第（3）问“全放开”与真题的 2N 缝交替间隔多缝衍射题相同；遮奇缝、遮偶缝两问不同。",
+     "examYears": [
+      2020
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch10-exercise-三_calc-7",
@@ -273933,7 +274470,27 @@
    "correctOptionKeys": [
     "D"
    ],
-   "workbookChapterId": "engopt2-ch11"
+   "workbookChapterId": "engopt2-ch11",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2024-bb0a41687414004f",
+     "kind": "same_question",
+     "reason": "均问自然光直接通过四分之一波片后的偏振态，未加入起偏器。",
+     "examYears": [
+      2024
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2023-f762b14cfd6149bc",
+     "kind": "same_question",
+     "reason": "均问自然光直接通过四分之一波片后的偏振态，未加入起偏器。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch11-exercise-一_choice-6",
@@ -276661,7 +277218,27 @@
    "correctOptionKeys": [
     "B"
    ],
-   "workbookChapterId": "engopt2-ch11"
+   "workbookChapterId": "engopt2-ch11",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2026-740bf11f287aba0f",
+     "kind": "same_question",
+     "reason": "均用四分之一波片加检偏器辨别三类光，转一周出现两亮两黑；2021 文字中的“部分线偏振”与其括注“圆偏振加自然光”有冲突，按括注对应。",
+     "examYears": [
+      2026
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2021-c5959aa03dd4e626",
+     "kind": "same_question",
+     "reason": "均用四分之一波片加检偏器辨别三类光，转一周出现两亮两黑；2021 文字中的“部分线偏振”与其括注“圆偏振加自然光”有冲突，按括注对应。",
+     "examYears": [
+      2021
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch11-exercise-一_choice-14",
@@ -277319,7 +277896,45 @@
    "correctOptionKeys": [
     "C"
    ],
-   "workbookChapterId": "engopt2-ch11"
+   "workbookChapterId": "engopt2-ch11",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2020-45c52f5513508461",
+     "kind": "same_question",
+     "reason": "均问布儒斯特角入射时哪个反射/折射分量为零；仅选项排序或措辞不同。",
+     "examYears": [
+      2020
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2016-e7e91d15cf3cbbea",
+     "kind": "same_question",
+     "reason": "均问布儒斯特角入射时哪个反射/折射分量为零；仅选项排序或措辞不同。",
+     "examYears": [
+      2016
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2023-9732c07e2063c693",
+     "kind": "same_question",
+     "reason": "均问布儒斯特角入射时哪个反射/折射分量为零；仅选项排序或措辞不同。",
+     "examYears": [
+      2023
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2025-31602f57107142f6",
+     "kind": "same_question",
+     "reason": "均问布儒斯特角入射时哪个反射/折射分量为零；仅选项排序或措辞不同。",
+     "examYears": [
+      2025
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch11-exercise-一_choice-15",
@@ -277874,7 +278489,46 @@
    "correctOptionKeys": [
     "B"
    ],
-   "workbookChapterId": "engopt2-ch11"
+   "workbookChapterId": "engopt2-ch11",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2016-30c5dbccbfd2e005",
+     "kind": "same_question",
+     "reason": "均为自然光通过两片理想偏振片，透射光强为入射光强的四分之一，求透光轴夹角；干扰选项有差别。",
+     "examYears": [
+      2016
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2021-7d1d71a08eff9789",
+     "kind": "same_question",
+     "reason": "均为自然光通过两片理想偏振片，透射光强为入射光强的四分之一，求透光轴夹角；干扰选项有差别。",
+     "examYears": [
+      2021,
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2017-da48bee9a54c4440",
+     "kind": "same_question",
+     "reason": "均为自然光通过两片理想偏振片，透射光强为入射光强的四分之一，求透光轴夹角；干扰选项有差别。",
+     "examYears": [
+      2017
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2025-5f74b6d67af62eac",
+     "kind": "same_question",
+     "reason": "均为自然光通过两片理想偏振片，透射光强为入射光强的四分之一，求透光轴夹角；干扰选项有差别。",
+     "examYears": [
+      2025
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch11-exercise-二_blank-1",
@@ -283190,7 +283844,27 @@
    "name": "自测练习 5",
    "studyTopicId": "engopt2-ch11-calc",
    "originalOptions": [],
-   "workbookChapterId": "engopt2-ch11"
+   "workbookChapterId": "engopt2-ch11",
+   "crossSourceDuplicates": [
+    {
+     "questionId": "past-2026-220a41ee2575c823",
+     "kind": "shared_subquestion",
+     "reason": "长轴在 x 轴、长短轴比 2∶1 的椭圆偏振光琼斯矢量部分相同；真题另含波片光路或正交验证，练习册另问左右旋叠加。",
+     "examYears": [
+      2026
+     ],
+     "reviewedAt": "2026-10-19"
+    },
+    {
+     "questionId": "past-2022-1df087720212d4f0",
+     "kind": "shared_subquestion",
+     "reason": "长轴在 x 轴、长短轴比 2∶1 的椭圆偏振光琼斯矢量部分相同；真题另含波片光路或正交验证，练习册另问左右旋叠加。",
+     "examYears": [
+      2022
+     ],
+     "reviewedAt": "2026-10-19"
+    }
+   ]
   },
   {
    "id": "engopt2-ch11-exercise-三_calc-6",

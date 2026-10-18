@@ -209,17 +209,43 @@ function renderInline(text, into) {
 
 function mathNode(tex, display) {
   var wrap = el('span', display ? 'math-block' : 'math-inline');
+  var options = {displayMode: !!display, throwOnError: true, strict: false, macros: KATEX_MACROS};
   try {
-    window.katex.render(tex, wrap, {
-      displayMode: !!display, throwOnError: false, strict: false, macros: KATEX_MACROS,
-      errorColor: '#c0392b'
-    });
+    window.katex.render(tex, wrap, options);
   } catch (e) {
-    wrap.textContent = tex;
-    wrap.classList.add('math-failed');
+    // Some scanned TeX puts spacing commands between a base and its scripts.
+    // Retry without cosmetic spacing; keep every mathematical symbol intact.
+    try {
+      window.katex.render(String(tex).replace(/\\(?:!|,|;|quad\b|qquad\b)/g, ' '), wrap, options);
+    } catch (retryError) {
+      wrap.textContent = tex;
+      wrap.classList.add('math-failed');
+    }
   }
   return wrap;
 }
+
+function fitInlineMath(root) {
+  (root || document).querySelectorAll('.math-inline').forEach(function (wrap) {
+    wrap.classList.remove('is-wide');
+    var parent = wrap.parentElement;
+    if (!parent || !parent.getClientRects().length) return;
+    var style = getComputedStyle(parent);
+    var width = parent.clientWidth - parseFloat(style.paddingLeft || 0) - parseFloat(style.paddingRight || 0);
+    if (!width) return;
+    var wide = Array.from(wrap.querySelectorAll('.katex-html > .base')).some(function (base) { return base.getBoundingClientRect().width > width + 1; });
+    wrap.classList.toggle('is-wide', wide);
+  });
+}
+
+var inlineMathFrame = 0;
+function scheduleInlineMathFit() {
+  if (inlineMathFrame) return;
+  inlineMathFrame = requestAnimationFrame(function () { inlineMathFrame = 0; fitInlineMath(document); });
+}
+window.addEventListener('resize', scheduleInlineMathFit);
+new MutationObserver(scheduleInlineMathFit).observe(document.body, {childList:true,subtree:true});
+if (document.fonts) document.fonts.ready.then(scheduleInlineMathFit);
 
 function isAuditDiagram(src) { return /(?:^|\/)assets\/audit-diagrams\/[^?#]+\.svg(?:[?#]|$)/.test(src || ''); }
 function figureAssetUrl(src) { return isAuditDiagram(src) ? src + (src.indexOf('?') < 0 ? '?' : '&') + 'v=svg-roof-confirmed-20261003-r2' : src; }
@@ -245,9 +271,34 @@ function figureNode(src, alt) {
   return fig;
 }
 
+function reflowScanLines(blocks) {
+  var result = [], previousSource = null;
+  (blocks || []).forEach(function (block) {
+    if (!block) return;
+    var last = result[result.length - 1];
+    var scanned = block.k === 'p' && block.pdfPage && Array.isArray(block.bbox);
+    var nextStep = /^(?:【|[（(]\s*\d+\s*[)）]|[①②③④⑤⑥⑦⑧⑨⑩]|(?:\d+|[一二三四五六七八九十]+)[、．.](?!\d))/.test((block.x || '').trim());
+    var newIndent = scanned && block.numberIndent && block.bbox[0] >= block.numberIndent - 8;
+    var adjacent = previousSource && (block.pdfPage === previousSource.pdfPage
+      ? block.bbox[1] - previousSource.bbox[3] < 32
+      : block.pdfPage === previousSource.pdfPage + 1);
+    if (scanned && last && previousSource && adjacent && !nextStep && !newIndent && !/[。？！?!；;：:]\s*$/.test(last.x)) {
+      var gap = (/\$$/.test(last.x) && /^\$/.test(block.x)) || (/[A-Za-z0-9]$/.test(last.x) && /^[A-Za-z]/.test(block.x)) ? ' ' : '';
+      last.x += gap + block.x;
+    } else {
+      result.push(scanned ? Object.assign({}, block) : block);
+    }
+    previousSource = scanned ? block : null;
+  });
+  return result;
+}
+
 function renderBlocks(blocks, into) {
-  (blocks || []).forEach(function (b) {
+  var reflowed = reflowScanLines(blocks);
+  reflowed.forEach(function (b, index) {
     if (!b) return;
+    var previous = reflowed[index - 1];
+    if (b.k === 'p' && previous && previous.k === 'image' && previous.alt && String(b.x).replace(/\s/g, '') === previous.alt.replace(/\s/g, '')) return;
     if (b.k === 'image') { if(b.src)into.appendChild(figureNode(b.src,b.alt||'')); return; }
     if (b.k === 'm') { into.appendChild(mathNode(b.x, true)); return; }
     if (b.k === 'table') {
@@ -273,6 +324,36 @@ function renderBlocks(blocks, into) {
     renderInline(b.x, p);
     into.appendChild(p);
   });
+  fitInlineMath(into);
+}
+
+function crossSourceMatches(q) {
+  return (q.crossSourceDuplicates || []).filter(function (match) { return !!DATA.byId[match.questionId]; });
+}
+
+function duplicateMarker(q) {
+  var matches = crossSourceMatches(q);
+  if (!matches.length) return null;
+  var details = el('details', 'cross-duplicates');
+  var same = matches.some(function (match) { return match.kind === 'same_question'; });
+  var label = same ? '重复题' : '含重复子题';
+  details.appendChild(el('summary', 'badge b-cross-duplicate', label + ' · 与' + (q.sourceType === 'workbook' ? '真题' : '练习册') + '对照'));
+  var list = el('ul', 'cross-duplicate-list');
+  matches.forEach(function (match) {
+    var other = DATA.byId[match.questionId], li = el('li');
+    var years = (match.examYears || []).join('、');
+    var name = other.sourceType === 'workbook' ? other.chapterNumber + ' ' + other.section + ' ' + other.number : years + ' 年真题 · ' + other.number;
+    var button = el('button', 'cross-duplicate-link', name);
+    button.type = 'button';
+    button.onclick = function () {
+      if (window.OpticsStudyTools) window.OpticsStudyTools.startPractice([q.canonicalId || q.id].concat(matches.map(function (m) { return m.questionId; })), '重复题对照', other.id);
+    };
+    li.appendChild(button);
+    li.appendChild(el('span', 'cross-duplicate-reason', (match.kind === 'shared_subquestion' ? '相同子题：' : '') + match.reason));
+    list.appendChild(li);
+  });
+  details.appendChild(list);
+  return details;
 }
 
 /* ============================================================ 列表与筛选 */
@@ -710,7 +791,7 @@ function render() {
   var sourceOpen = keepSource && previousSource.open;
   var sourceFocused = keepSource && previousSource.querySelector('summary') === document.activeElement;
   clear(meta);
-  meta.appendChild(el('span', null, '原题编号：' + q.number));
+  meta.appendChild(el('span', crossSourceMatches(q).length ? 'cross-duplicate-number' : null, '原题编号：' + q.number));
   meta.appendChild(el('span', 'sep', '·'));
   meta.appendChild(el('span', null, displayType));
   if (q.name) { meta.appendChild(el('span', 'sep', '·')); meta.appendChild(el('span', null, q.name)); }
@@ -733,6 +814,8 @@ function render() {
     badges.appendChild(sh);
   }
   if (q.review && q.review.needsCheck) badges.appendChild(el('span', 'badge b-amber', '待核对'));
+  var duplicate = duplicateMarker(q);
+  if (duplicate) badges.appendChild(duplicate);
 
   // 题干
   var stem = $('stem');
@@ -814,6 +897,7 @@ function render() {
   $('jump-input').style.borderColor = '';
   $('jump-input').classList.remove('is-error');
   $('jump-input').title = '输入当前列表中的题号';
+  fitInlineMath($('card'));
   $('scroller').scrollTop = 0;
 }
 

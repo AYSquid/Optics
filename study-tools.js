@@ -278,6 +278,7 @@
   const timer=node('div','study-session-timer');root.append(timer);window.ExamTimer?.attach('retest:'+s.date,timer);timer.querySelector('.exam-timer')?.setAttribute('aria-label','复测计时');
   const card=node('article','study-panel retest-card');card.dataset.question=q.id;
   const meta=node('div','study-grid-head');meta.append(node('span','study-muted',context(q)),renderQuestionSource(q),btn(favorite(q)?'★ 已收藏':'☆ 收藏',()=>toggleFavorite(q),'study-button'),btn('题目笔记',()=>window.OpticsNotes?.open(q.id,true),'study-button'));card.append(meta);
+  const duplicate=duplicateMarker(q);if(duplicate)card.append(duplicate);
   if(q.review?.needsCheck)card.append(node('p','study-warning','本题答案或条件仍待核对；按参考答案自评，暂不自动判分。'));
   const stem=node('div','stem');renderBlocks(questionContentBlocks(q.stem),stem);card.append(stem);
   (q.stemImages||[]).forEach(im=>card.append(figureNode(im.src,im.alt||im.caption||'')));
@@ -381,6 +382,7 @@
  function questionPreview(q,actions=[]){
   const item=node('article','flow-question-row');item.dataset.question=q.id;
   const summary=node('div','flow-question-head');summary.append(node('strong',null,context(q)),node('span','flow-status',label[status(q)]));item.append(summary);
+  const duplicate=duplicateMarker(q);if(duplicate){item.classList.add('has-cross-duplicate');item.append(duplicate);}
   const details=node('details','flow-question-preview');const title=node('summary');const text=node('span');renderInline(textOf(q).slice(0,190),text);title.append(text,node('span','study-muted','展开题目'));details.append(title);
   details.addEventListener('toggle',()=>{if(!details.open||details.dataset.loaded)return;details.dataset.loaded='true';const stem=node('div','stem');renderBlocks(questionContentBlocks(q.stem),stem);details.append(stem);(q.stemImages||[]).forEach(im=>details.append(figureNode(im.src,im.alt||im.caption||'')));});item.append(details);
   const bar=node('div','flow-row-actions');actions.forEach(b=>bar.append(b));item.append(bar);return item;
