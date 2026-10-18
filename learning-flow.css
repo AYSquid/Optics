@@ -100,3 +100,13 @@
 .dashboard-progress-row[data-kind="bank"] progress::-moz-progress-bar{background:var(--lt-teal,#24764e)}
 @media(max-width:600px){.dashboard-progress-labels{font-size:11px;gap:5px 8px}.dashboard-progress-labels strong{font-size:11px}.dashboard-progress-labels small{margin-left:0}}
 @media(max-width:700px){.flow-controls{gap:8px}.flow-controls>.study-search{flex-basis:100%;min-width:0}.flow-field{flex:1;min-width:120px}.flow-question-row,.flow-note-row{padding:14px 12px}.flow-question-head{align-items:start;flex-wrap:wrap}.flow-question-preview summary{font-size:13px;flex-wrap:wrap}.flow-collection-summary>.study-primary{margin-left:0}#notes-library-page .notes-head{padding:16px}#notes-library-page .notes-head h2{font-size:21px}.note-editor-toolbar{gap:1px;padding:6px}.note-editor-toolbar button{padding:7px}.note-editor .notes-textarea{height:260px}.notes-page .scroller{padding-bottom:20px}.note-tags input{width:110px}}
+
+/* Question-source switch; chapter taxonomy stays shared. */
+.bank-source-row{display:flex;align-items:center;gap:12px;margin:8px 0 15px;padding-bottom:14px;border-bottom:1px solid var(--lt-line,var(--edge))}
+.bank-source-label{font-size:12px;color:var(--lt-muted,var(--soft));flex:none}
+.bank-source-switch{display:flex;flex:1;min-width:0;padding:3px;border:1px solid var(--lt-line,var(--edge));border-radius:9px;background:var(--lt-paper-2,var(--surface,var(--panel)));gap:2px}
+.bank-source-option{flex:1;min-width:0;min-height:35px;padding:7px 3px;border:0;border-radius:6px;background:transparent;color:var(--lt-muted,var(--soft));font:inherit;font-size:12px;white-space:nowrap;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.bank-source-option[aria-pressed="true"]{background:var(--lt-ink,var(--accent));color:var(--lt-paper-2,var(--panel));box-shadow:0 1px 3px #302d2720}
+.bank-source-option:hover{color:var(--accent)}
+.bank-source-option[aria-pressed="true"]:hover{color:var(--lt-paper-2,var(--panel))}
+.bank-source-option:focus-visible{outline:2px solid var(--accent);outline-offset:1px}

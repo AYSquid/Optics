@@ -72,7 +72,7 @@
  function category(q,value){
   if(value==='all')return true;
   if(value==='past')return isPaper(q);
-  const ch=findChapter(q.chapterId);return value==='geom'?['geom','inst'].includes(ch?.source):ch?.source==='phys';
+  const ch=findChapter(q.chapterId);const group=ch?.subjectGroup||ch?.source;return value==='geom'?['geom','inst'].includes(group):group==='phys';
  }
  function questions(filter){return DATA.questions.filter(q=>q.playable!==false&&category(q,filter.category)&&(!filter.chapter||q.chapterId===filter.chapter));}
  function categories(host,filter,change){
@@ -287,7 +287,7 @@
    q.options.forEach(o=>{const b=btn('',()=>{
     let picks=String(s.picks[q.id]||'').split('').filter(Boolean);if(isMultipleChoice(q)){picks=picks.includes(o.key)?picks.filter(k=>k!==o.key):picks.concat(o.key);}else picks=picks.includes(o.key)?[]:[o.key];s.picks[q.id]=picks.sort().join('');persist();renderHub();
    },'option');b.dataset.optionKey=o.key;b.setAttribute('aria-pressed',String(picked.includes(o.key)));b.disabled=!!result;
-    b.setAttribute('data-verdict',result&&auto?(keys.includes(o.key)?'correct':picked.includes(o.key)?'wrong':''):'');b.append(node('span','option-key',o.key));const text=node('span','option-text');renderInline(o.x,text);b.append(text);options.append(b);
+    b.setAttribute('data-verdict',result&&auto?(keys.includes(o.key)?'correct':picked.includes(o.key)?'wrong':''):'');b.append(node('span','option-key',o.key));const text=node('span','option-text');if(o.blocks?.some(b=>b.k==='image'))renderBlocks(o.blocks,text);else renderInline(o.x,text);b.append(text);options.append(b);
    });card.append(options);if(isMultipleChoice(q))card.append(node('p','study-muted','多选题 · 提交前可反复调整选项'));
   }
   if(!auto){

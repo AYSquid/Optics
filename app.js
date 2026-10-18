@@ -248,6 +248,7 @@ function figureNode(src, alt) {
 function renderBlocks(blocks, into) {
   (blocks || []).forEach(function (b) {
     if (!b) return;
+    if (b.k === 'image') { if(b.src)into.appendChild(figureNode(b.src,b.alt||'')); return; }
     if (b.k === 'm') { into.appendChild(mathNode(b.x, true)); return; }
     if (b.k === 'table') {
       var wrap=el('div','source-table-wrap'),table=el('table','source-table'),head=el('tr');
@@ -281,6 +282,31 @@ function chapterOrderIndex(cid) {
   return 999;
 }
 
+var bankPaperCache={length:-1,ids:new Set()};
+function bankSource(){return ['all','workbook','past'].indexOf(ui.scope.bankSource)>=0?ui.scope.bankSource:'all';}
+function matchesBankSource(q,source){
+  if(!q)return false;source=source||bankSource();if(source==='all')return true;
+  if(source==='workbook')return q.sourceType==='workbook'||/^engopt2-/.test(q.id);
+  var occurrences=typeof EXAMS!=='undefined'?EXAMS.occurrences||[]:[];
+  if(bankPaperCache.length!==occurrences.length){bankPaperCache={length:occurrences.length,ids:new Set(occurrences.map(function(o){return o.questionId;}))};}
+  return bankPaperCache.ids.has(q.canonicalId||q.id);
+}
+function sourceChapterIds(ch){return DATA.questions.filter(function(q){return q.chapterId===ch.id&&q.playable!==false&&matchesBankSource(q);}).map(function(q){return q.id;});}
+function bankDirectoryChapters(){return orderedStudyChapters().filter(function(ch){return sourceChapterIds(ch).length;});}
+function normalizeChapterScope(scope){if(scope&&scope.chapterId&&DATA.chapterAliases?.[scope.chapterId])scope.chapterId=DATA.chapterAliases[scope.chapterId];return scope;}
+function setBankSource(value){
+  if(['all','workbook','past'].indexOf(value)<0||value===bankSource())return;
+  var scope=Object.assign({},ui.scope,{bankSource:value}),q=currentQuestion();
+  if(['all','chapter','kn'].indexOf(scope.type)<0)scope={type:'all',bankSource:value};
+  if(scope.type==='kn'&&!findKn(scope.chapterId,scope.knId)?.questionIds.some(function(id){return DATA.byId[id]?.playable!==false&&matchesBankSource(DATA.byId[id],value);}))scope={type:'chapter',chapterId:scope.chapterId,bankSource:value};
+  if(scope.type==='chapter'&&!DATA.questions.some(function(q){return q.chapterId===scope.chapterId&&q.playable!==false&&matchesBankSource(q,value);}))scope={type:'all',bankSource:value};
+  setScope(scope,{keepExpansion:true,keepNav:true,keepQuestionId:q?.id});
+}
+function bankSourceControl(){
+ var row=el('div','bank-source-row'),label=el('span','bank-source-label','题库'),group=el('div','bank-source-switch');group.setAttribute('role','group');group.setAttribute('aria-label','题库来源');
+ [['all','全部'],['workbook','练习册'],['past','真题']].forEach(function(pair){var b=el('button','bank-source-option',pair[1]);b.type='button';b.dataset.bankSource=pair[0];b.setAttribute('aria-pressed',String(bankSource()===pair[0]));b.onclick=function(){setBankSource(pair[0]);};group.appendChild(b);});row.append(label,group);return row;
+}
+
 function buildScopeIds() {
   var ids;
   if (ui.scope.type === 'list') {
@@ -306,7 +332,7 @@ function buildScopeIds() {
     if (d) return d;
     return a.order - b.order;
   });
-  ui.scopeIds = ids.filter(function(q){return q.playable!==false;}).map(function (q) { return q.id; });
+  ui.scopeIds = ids.filter(function(q){return q.playable!==false&&matchesBankSource(q);}).map(function (q) { return q.id; });
 }
 
 function matchesFilter(qid, filter) {
@@ -334,7 +360,7 @@ function findKn(cid, kid) {
 
 function scopeTitle() {
   if (ui.scope.type === 'list') return ui.scope.name || '筛选题单';
-  if (ui.scope.type === 'all') return '全部题目';
+  if (ui.scope.type === 'all') return bankSource()==='workbook'?'练习册题目':bankSource()==='past'?'真题题目':'全部题目';
   if (ui.scope.type === 'chapter') {
     var c = findChapter(ui.scope.chapterId);
     return c ? (c.num + ' ' + c.title) : '未知章节';
@@ -393,20 +419,22 @@ function renderTree() {
   // Build off-screen: removing the old tree first collapses the scroll height
   // and the browser permanently clamps its parent's scroll position to zero.
   var tree = document.createDocumentFragment();
+  var focusedSource=treeHost.contains(document.activeElement)?document.activeElement.dataset.bankSource:'';
+  tree.appendChild(bankSourceControl());
 
   var rootNode = el('div', 'tree-node');
   var rootBtn = el('button', 'tree-root-btn tree-btn' + (ui.scope.type === 'all' ? ' is-current' : ''));
   rootBtn.type = 'button';
-  rootBtn.appendChild(el('span', 'tree-name', '全部题目'));
-  var allCnt = DATA.questions.filter(function(q){return q.playable!==false;}).length;
-  var allMatch = DATA.questions.filter(function (q) { return matchesFilter(q.id, ui.statusFilter); }).length;
+  rootBtn.appendChild(el('span', 'tree-name', bankSource()==='workbook'?'练习册题目':bankSource()==='past'?'真题题目':'全部题目'));
+  var allCnt = DATA.questions.filter(function(q){return q.playable!==false&&matchesBankSource(q);}).length;
+  var allMatch = DATA.questions.filter(function (q) { return matchesBankSource(q)&&matchesFilter(q.id, ui.statusFilter); }).length;
   rootBtn.appendChild(countBadge(allCnt, allMatch));
   rootBtn.addEventListener('click', function () { setScope({ type: 'all' }); });
   rootNode.appendChild(rootBtn);
   tree.appendChild(rootNode);
 
   var lastSource = '', group = tree, geometryGroup = null;
-  orderedStudyChapters().forEach(function (ch) {
+  bankDirectoryChapters().forEach(function (ch) {
     if (ch.source !== lastSource) {
       lastSource = ch.source;
       var srcName = (DATA.sources.filter(function (s) { return s.id === ch.source; })[0] || {}).name || ch.source;
@@ -442,9 +470,9 @@ function renderTree() {
     btn.title = ch.num + ' ' + ch.title;
     btn.appendChild(el('span', 'tree-name', ch.num + ' ' + ch.title));
     var matchCount = DATA.questions.filter(function (q) {
-      return q.chapterId === ch.id && matchesFilter(q.id, ui.statusFilter);
+      return q.chapterId === ch.id && matchesBankSource(q) && matchesFilter(q.id, ui.statusFilter);
     }).length;
-    btn.appendChild(countBadge(DATA.questions.filter(function(q){return q.chapterId===ch.id&&q.playable!==false;}).length, matchCount));
+    btn.appendChild(countBadge(sourceChapterIds(ch).length, matchCount));
     if (ui.scope.type === 'chapter' && ui.scope.chapterId === ch.id) btn.classList.add('is-current');
     row.classList.toggle('is-current', btn.classList.contains('is-current'));
 
@@ -453,13 +481,14 @@ function renderTree() {
     expand.setAttribute('aria-controls', kids.id);
     kids.setAttribute('aria-label', ch.title + '的知识点');
     ch.knowledge.forEach(function (k) {
+      if(!k.questionIds.some(function(id){return DATA.byId[id]?.playable!==false&&matchesBankSource(DATA.byId[id]);}))return;
       var kb = el('button', 'tree-kn-btn tree-btn');
       kb.type = 'button';
       kb.dataset.treeScope = k.id;
       kb.title = k.name;
       kb.appendChild(el('span', 'tree-name', k.name));
-      var kmatch = k.questionIds.filter(function (id) { return matchesFilter(id, ui.statusFilter); }).length;
-      kb.appendChild(countBadge(k.questionIds.filter(function(id){return DATA.byId[id]?.playable!==false;}).length, kmatch));
+      var kmatch = k.questionIds.filter(function (id) { return matchesBankSource(DATA.byId[id])&&matchesFilter(id, ui.statusFilter); }).length;
+      kb.appendChild(countBadge(k.questionIds.filter(function(id){return DATA.byId[id]?.playable!==false&&matchesBankSource(DATA.byId[id]);}).length, kmatch));
       if (ui.scope.type === 'kn' && ui.scope.knId === k.id) kb.classList.add('is-current');
       kb.addEventListener('click', function () {
         setScope({ type: 'kn', chapterId: ch.id, knId: k.id });
@@ -486,6 +515,7 @@ function renderTree() {
     group.appendChild(node);
   });
   treeHost.replaceChildren(tree);
+  if(focusedSource)treeHost.querySelector('[data-bank-source="'+focusedSource+'"]')?.focus({preventScroll:true});
   if (focusedScope) {
     var focusTarget = treeHost.querySelector('[data-tree-scope="' + focusedScope + '"]');
     if (focusTarget) focusTarget.focus({preventScroll:true});
@@ -733,7 +763,7 @@ function render() {
       b.setAttribute('aria-pressed', picked.indexOf(o.key) >= 0 ? 'true' : 'false');
       b.appendChild(el('span', 'option-key', o.key));
       var t = el('span', 'option-text');
-      renderInline(o.x, t);
+      if(o.blocks?.some(function(b){return b.k==='image';}))renderBlocks(o.blocks,t);else renderInline(o.x,t);
       b.appendChild(t);
       b.addEventListener('click', function () {
         if(q.playable === false || ui.choiceChecked) return;
@@ -790,6 +820,7 @@ function render() {
 /* Only grade an explicit answer key; pending/absent answers stay ungraded. */
 function choiceAnswerKeys(q) {
   if (!q || q.playable === false || (q.review && q.review.needsCheck)) return [];
+  if(Array.isArray(q.correctOptionKeys)&&q.correctOptionKeys.length&&q.correctOptionKeys.every(function(k){return(q.options||[]).some(function(o){return o.key===k;});}))return q.correctOptionKeys.slice();
   var paragraph = (q.answer || []).find(function (block) { return block.k === 'p'; });
   if (!paragraph) return [];
   var raw = String(paragraph.x || '').trim();
@@ -811,7 +842,7 @@ function isMultipleChoice(q) {
 }
 
 function validChoiceSelection(q, value) {
-  if (!q || typeof value !== 'string' || !/^[A-H]+$/.test(value)) return false;
+  if (!q || typeof value !== 'string' || !/^[A-J]+$/.test(value)) return false;
   var keys = value.split('');
   var available = (q.options || []).map(function (option) { return option.key; });
   return (keys.length === 1 || isMultipleChoice(q)) && keys.every(function (key, index) {
@@ -1022,11 +1053,13 @@ function renderNotice() {
 /* ============================================================ 交互动作 */
 
 function setScope(scope, opts) {
+  scope=normalizeChapterScope(Object.assign({},scope));
+  if(!scope.bankSource)scope.bankSource=bankSource();
   ui.scope = scope;
   if (scope.type !== 'all' && !(opts && opts.keepExpansion)) ui.openChapters[scope.chapterId] = true;
   savePrefs();
-  reselect({ preferReview: scope.type === 'chapter' || scope.type === 'kn' });
-  closeNav();
+  reselect({ preferReview: scope.type === 'chapter' || scope.type === 'kn',keepQuestionId:opts&&opts.keepQuestionId });
+  if(!(opts&&opts.keepNav))closeNav();
 }
 
 function setStatusFilter(f) {
@@ -1042,14 +1075,14 @@ function scopePos(id) { return ui.scopeIds.indexOf(id); }
 function adjacentStudyScope(dir) {
   if (ui.scope.type !== 'chapter' && ui.scope.type !== 'kn') return null;
   var scopes = [];
-  orderedStudyChapters().forEach(function(ch) {
+  bankDirectoryChapters().forEach(function(ch) {
     if (ui.scope.type === 'chapter') scopes.push({type:'chapter',chapterId:ch.id});
     else ch.knowledge.forEach(function(kn) { scopes.push({type:'kn',chapterId:ch.id,knId:kn.id}); });
   });
   var at = scopes.findIndex(function(s) { return s.chapterId === ui.scope.chapterId && (s.type === 'chapter' || s.knId === ui.scope.knId); });
   for (var i=at+dir; at>=0 && i>=0 && i<scopes.length; i+=dir) {
     var s=scopes[i], kn=s.type==='kn'?findKn(s.chapterId,s.knId):null;
-    var found=DATA.questions.some(function(q) { return q.chapterId===s.chapterId && (!kn || kn.questionIds.indexOf(q.id)>=0) && matchesFilter(q.id,ui.statusFilter); });
+    var found=DATA.questions.some(function(q) { return matchesBankSource(q)&&q.chapterId===s.chapterId && (!kn || kn.questionIds.indexOf(q.id)>=0) && matchesFilter(q.id,ui.statusFilter); });
     if(found) return s;
   }
   return null;
@@ -1263,7 +1296,7 @@ function normalizeState() {
   });
   store.state.status = valid;
 
-  var s = store.prefs.scope;
+  var s = normalizeChapterScope(store.prefs.scope);
   if (!s || ['all', 'chapter', 'kn', 'list', 'exams', 'exam'].indexOf(s.type) < 0 || (s.type === 'list' && (!Array.isArray(s.ids) || !s.ids.length || s.ids.length > DATA.questions.length || !s.ids.every(function(id){return Object.prototype.hasOwnProperty.call(DATA.byId,id);}))) || (s.type === 'chapter' && !findChapter(s.chapterId)) ||
       (s.type === 'kn' && !findKn(s.chapterId, s.knId))) {
     store.prefs.scope = { type: 'all' };
@@ -1316,6 +1349,7 @@ function boot() {
     try {
       DATA.chapters = got['data/chapters.json'].chapters || [];
       DATA.sources = got['data/chapters.json'].sources || [];
+      DATA.chapterAliases=got['data/chapters.json'].chapterAliases||{};
       DATA.typeNames = got['data/chapters.json'].typeNames || {};
       DATA.questions = got['data/questions.json'].questions || [];
       DATA.byId = {};
