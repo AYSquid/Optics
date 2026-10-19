@@ -418,8 +418,8 @@ function bankSourceControl(){
  summary.append(el('span',null,BANK_SOURCE_NAMES[bankSource()]),el('span','bank-source-arrow','⌄'));summary.setAttribute('aria-label','选择题库来源，当前'+BANK_SOURCE_NAMES[bankSource()]);
  menu.setAttribute('popover','manual');menu.setAttribute('aria-label','题库来源与章节或试卷');if(!menu.showPopover)menu.hidden=true;
  function position(){
-  var r=summary.getBoundingClientRect(),width=Math.min(370,innerWidth-24),below=innerHeight-r.bottom-18,above=r.top-18,up=below<280&&above>below;
-  menu.style.width=width+'px';menu.style.left=Math.max(12,Math.min(r.left,innerWidth-width-12))+'px';menu.style.right='auto';menu.style.maxHeight=Math.max(140,Math.min(520,up?above:below))+'px';menu.style.top=up?'auto':(r.bottom+6)+'px';menu.style.bottom=up?(innerHeight-r.top+6)+'px':'auto';
+  var r=summary.getBoundingClientRect(),width=Math.min(r.width,innerWidth-24),below=innerHeight-r.bottom-16,above=r.top-16,up=below<280&&above>below;
+  menu.style.width=width+'px';menu.style.left=Math.max(12,Math.min(r.left,innerWidth-width-12))+'px';menu.style.right='auto';menu.style.maxHeight=Math.max(44,Math.min(480,up?above:below))+'px';menu.style.top=up?'auto':(r.bottom+4)+'px';menu.style.bottom=up?(innerHeight-r.top+4)+'px':'auto';
  }
  Object.keys(BANK_SOURCE_NAMES).forEach(function(source){
   var section=el('section','bank-source-group'),head=el('div','bank-source-group-head'),choose=el('button','bank-source-choice'),toggle=el('button','bank-submenu-toggle','›'),children=el('div','bank-source-submenu');
@@ -428,10 +428,14 @@ function bankSourceControl(){
   choose.append(el('span',null,BANK_SOURCE_NAMES[source]),el('small',null,count+' 题'));
   choose.onclick=function(){picker.open=false;setBankSource(source);};
   children.hidden=true;children.id='bank-submenu-'+source;toggle.setAttribute('aria-label','展开'+BANK_SOURCE_NAMES[source]+(['past','final'].indexOf(source)>=0?'试卷':'章节'));toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls',children.id);
-  toggle.onclick=function(){children.hidden=!children.hidden;toggle.setAttribute('aria-expanded',String(!children.hidden));toggle.textContent=children.hidden?'›':'⌄';};
+  toggle.onclick=function(){var expand=children.hidden;menu.querySelectorAll('.bank-submenu-toggle').forEach(function(other){other.setAttribute('aria-expanded','false');other.textContent='›';menu.querySelector('#'+other.getAttribute('aria-controls')).hidden=true;});children.hidden=!expand;toggle.setAttribute('aria-expanded',String(expand));toggle.textContent=expand?'⌄':'›';};
   var papers=typeof EXAMS!=='undefined'?EXAMS.years.filter(function(y){return paperSourceKind(y)===source;}).slice().sort(function(a,b){return b.year-a.year||paperDisplayName(a).localeCompare(paperDisplayName(b),'zh-CN');}):[];
   if(source==='past'||source==='final')papers.forEach(function(paper){
-    var button=el('button','bank-submenu-option');button.type='button';button.dataset.paperId=paper.id;button.append(el('span',null,paperDisplayName(paper)),el('small',null,paper.count+' 题'));button.onclick=function(){picker.open=false;location.hash='/year/'+encodeURIComponent(paper.id);openExam(paper.id);};children.appendChild(button);
+    var button=el('button','bank-submenu-option'),name=paperDisplayName(paper),caption=el('span','bank-paper-title'),years=name.match(/^\d{4}[-—–]\d{4}/),detail;
+    if(source==='final')detail=name.indexOf('春夏')>=0?'春夏学期':name.indexOf('秋冬')>=0?'秋冬学期':'学期未载';
+    else detail=name.replace(/^\d{4}\s*年\s*/,'').replace('真题','').trim()||'工程光学';
+    caption.append(el('span','bank-paper-year',years?years[0].replace('-', '—'):paper.year+' 年'),el('span','bank-paper-detail',detail));
+    button.type='button';button.dataset.paperId=paper.id;button.title=name;button.setAttribute('aria-label',name+'，'+paper.count+'题');button.append(caption,el('small',null,paper.count+' 题'));button.onclick=function(){picker.open=false;location.hash='/year/'+encodeURIComponent(paper.id);openExam(paper.id);};children.appendChild(button);
   });
   else orderedStudyChapters().forEach(function(ch){
     var ids=DATA.questions.filter(function(q){return q.chapterId===ch.id&&q.playable!==false&&matchesBankSource(q,source);});if(!ids.length)return;
