@@ -411,25 +411,19 @@ function restoreBankSourceFocus(picker){
  if(target.getClientRects().length){target.focus({preventScroll:true});delete picker._pendingMenuFocus;}
 }
 document.addEventListener('pointerdown',function(event){var picker=document.querySelector('.bank-source-picker[open]');if(picker&&!picker.contains(event.target))picker.open=false;});
-window.addEventListener('resize',closeBankSourceMenu);
 function bankSourceControl(){
  var row=el('div','bank-source-row'),picker=el('details','bank-source-picker'),summary=el('summary'),menu=el('div','bank-source-menu'),counts={};
  function bookIcon(){var icon=el('span','bank-source-icon');icon.setAttribute('aria-hidden','true');icon.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 5.5C9 3.8 5.5 3.8 2.5 4.8v14c3-1 6.5-1 9.5.7m0-14c3-1.7 6.5-1.7 9.5-.7v14c-3-1-6.5-1-9.5.7m0-14v14"/></svg>';return icon;}
  Object.keys(BANK_SOURCE_NAMES).forEach(function(source){counts[source]=DATA.questions.filter(function(q){return q.playable!==false&&matchesBankSource(q,source);}).length;});
  summary.append(bookIcon(),el('span','bank-source-name',BANK_SOURCE_NAMES[bankSource()]),el('small','bank-source-total',counts[bankSource()]+' 题'),el('span','bank-source-arrow','⌄'));summary.setAttribute('aria-label','选择题库来源，当前'+BANK_SOURCE_NAMES[bankSource()]+'，'+counts[bankSource()]+'题');
- menu.setAttribute('popover','manual');menu.setAttribute('aria-label','切换题库');if(!menu.showPopover)menu.hidden=true;
- function position(){
-  var r=summary.getBoundingClientRect(),width=Math.min(r.width,innerWidth-24),below=innerHeight-r.bottom-16,above=r.top-16,up=below<220&&above>below;
-  menu.style.width=width+'px';menu.style.left=Math.max(12,Math.min(r.left,innerWidth-width-12))+'px';menu.style.right='auto';menu.style.maxHeight=Math.max(44,Math.min(480,up?above:below))+'px';menu.style.top=up?'auto':(r.bottom+4)+'px';menu.style.bottom=up?(innerHeight-r.top+4)+'px':'auto';
- }
+ menu.setAttribute('aria-label','切换题库');
  Object.keys(BANK_SOURCE_NAMES).forEach(function(source){
   var choose=el('button','bank-source-choice');choose.type='button';choose.dataset.bankSource=source;choose.setAttribute('aria-pressed',String(bankSource()===source));
   choose.append(bookIcon(),el('span','bank-source-name',BANK_SOURCE_NAMES[source]),el('small','bank-source-total',counts[source]+' 题'),el('span','bank-source-check',bankSource()===source?'✓':''));
   choose.onclick=function(){picker.open=false;setBankSource(source);document.querySelector('.bank-source-picker>summary')?.focus({preventScroll:true});};
   menu.appendChild(choose);
  });
- picker.append(summary,menu);picker.addEventListener('toggle',function(){if(!picker.isConnected)return;if(picker.open){position();menu.hidden=false;if(menu.showPopover)menu.showPopover();restoreBankSourceFocus(picker);}else{if(menu.hidePopover&&menu.matches(':popover-open'))menu.hidePopover();else menu.hidden=true;}});
- menu.addEventListener('toggle',function(e){if(e.newState==='closed')picker.open=false;else restoreBankSourceFocus(picker);});
+ picker.append(summary,menu);picker.addEventListener('toggle',function(){if(picker.isConnected&&picker.open)restoreBankSourceFocus(picker);});
  picker.addEventListener('keydown',function(e){e.stopPropagation();if(e.key==='Escape'){picker.open=false;summary.focus({preventScroll:true});}});
  row.append(picker);return row;
 }
