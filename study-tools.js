@@ -283,12 +283,12 @@
   const stem=node('div','stem');renderBlocks(questionContentBlocks(q.stem),stem);card.append(stem);
   (q.stemImages||[]).forEach(im=>card.append(figureNode(im.src,im.alt||im.caption||'')));
   if(q.options?.length){
-   const options=node('div','options retest-options'+(q.options.some(o=>o.x.length>26)?'':' cols-2'));
+   const options=node('div','options retest-options'+(q.options.some(o=>displayOptionText(o).length>26)?'':' cols-2'));
    const picked=String(s.picks[q.id]||'').split('');
    q.options.forEach(o=>{const b=btn('',()=>{
     let picks=String(s.picks[q.id]||'').split('').filter(Boolean);if(isMultipleChoice(q)){picks=picks.includes(o.key)?picks.filter(k=>k!==o.key):picks.concat(o.key);}else picks=picks.includes(o.key)?[]:[o.key];s.picks[q.id]=picks.sort().join('');persist();renderHub();
    },'option');b.dataset.optionKey=o.key;b.setAttribute('aria-pressed',String(picked.includes(o.key)));b.disabled=!!result;
-    b.setAttribute('data-verdict',result&&auto?(keys.includes(o.key)?'correct':picked.includes(o.key)?'wrong':''):'');b.append(node('span','option-key',o.key));const text=node('span','option-text');if(o.blocks?.some(b=>b.k==='image'))renderBlocks(o.blocks,text);else renderInline(o.x,text);b.append(text);options.append(b);
+    b.setAttribute('data-verdict',result&&auto?(keys.includes(o.key)?'correct':picked.includes(o.key)?'wrong':''):'');b.append(node('span','option-key',o.key));const text=node('span','option-text');if(o.blocks?.some(b=>b.k==='image'))renderBlocks(o.blocks,text);else renderInline(displayOptionText(o),text);b.append(text);options.append(b);
    });card.append(options);if(isMultipleChoice(q))card.append(node('p','study-muted','多选题 · 提交前可反复调整选项'));
   }
   if(!auto){
@@ -305,7 +305,7 @@
   }else{
    live.dataset.verdict=result.kind==='objective'?(result.correct?'correct':'wrong'):'';
    live.textContent=result.kind==='objective'?(result.correct?'回答正确。':'回答错误。正确选项：'+keys.join('、')):'请对照参考答案和解析，评估自己的掌握情况。';
-   const answers=node('section','study-solution');answers.append(node('h2',null,'参考答案'));renderBlocks(questionContentBlocks(q.answer||[]),answers);
+   const answers=node('section','study-solution');answers.append(node('h2',null,'参考答案'));renderBlocks(questionContentBlocks(answerContentBlocks(q.answer||[],q)),answers);
    const analysis=node('details','study-solution');analysis.append(node('summary',null,'展开解析与知识点'));const content=node('div');renderBlocks(questionContentBlocks(q.analysis||[]),content);(q.analysisImages||[]).forEach(im=>content.append(figureNode(im.src,im.alt||im.caption||'')));analysis.append(content);card.append(answers,analysis);
    const assessment=node('div','study-assessment');assessment.append(node('span','study-muted','更新掌握状态：'));
    ['known','shaky','unknown'].forEach(value=>{const b=btn(symbol[value]+' '+label[value]+assessmentCaption(q,value),()=>{result.status=value;const id=canonical(q);if(value==='known')delete state.mistakes[id];persist();setStatus(statusKeyOf(q),value);renderHub();},'study-button');b.dataset.status=value;b.setAttribute('aria-pressed',String(result.status===value));assessment.append(b);});card.append(assessment);
@@ -367,9 +367,9 @@
   dialogTitle.textContent='收藏题目';dialogBody.replaceChildren();dialogBody.append(btn('← 返回收藏本',()=>{selectedFavorite='';favoriteList();},'study-button study-muted'),node('p','notes-description',context(q)));
   const stem=node('div','stem');renderBlocks(questionContentBlocks(q.stem),stem);dialogBody.append(stem);
   dialogBody.append(renderQuestionSource(q));if(q.review?.needsCheck)dialogBody.append(node('p','study-warning','本题仍有待核对内容，请同时查看题目来源及注解。'));
-  if(q.options?.length){const options=node('div','favorite-options');q.options.forEach(o=>{const p=node('p');p.append(node('strong',null,o.key+'　'));renderInline(o.x,p);options.append(p);});dialogBody.append(options);}
+  if(q.options?.length){const options=node('div','favorite-options');q.options.forEach(o=>{const p=node('p');p.append(node('strong',null,o.key+'　'));renderInline(displayOptionText(o),p);options.append(p);});dialogBody.append(options);}
   (q.stemImages||[]).forEach(im=>dialogBody.append(figureNode(im.src,im.alt||im.caption||'')));
-  const answer=node('details','study-solution');answer.append(node('summary',null,'查看答案与解析'));answer.addEventListener('toggle',()=>{if(!answer.open||answer.dataset.loaded)return;answer.dataset.loaded='true';const body=node('div');body.append(node('h3',null,'答案'));renderBlocks(questionContentBlocks(q.answer||[]),body);body.append(node('h3',null,'解析'));renderBlocks(questionContentBlocks(q.analysis||[]),body);(q.analysisImages||[]).forEach(im=>body.append(figureNode(im.src,im.alt||im.caption||'')));answer.append(body);});dialogBody.append(answer);
+  const answer=node('details','study-solution');answer.append(node('summary',null,'查看答案与解析'));answer.addEventListener('toggle',()=>{if(!answer.open||answer.dataset.loaded)return;answer.dataset.loaded='true';const body=node('div');body.append(node('h3',null,'答案'));renderBlocks(questionContentBlocks(answerContentBlocks(q.answer||[],q)),body);body.append(node('h3',null,'解析'));renderBlocks(questionContentBlocks(q.analysis||[]),body);(q.analysisImages||[]).forEach(im=>body.append(figureNode(im.src,im.alt||im.caption||'')));answer.append(body);});dialogBody.append(answer);
   const actions=node('div','notes-actions');actions.append(btn('去刷这道题 →',()=>openQuestion(q,''),'study-button study-primary'),btn(favorite(q)?'★ 取消收藏':'☆ 加入收藏',()=>toggleFavorite(q)));dialogBody.append(actions);
  }
  function exportFavorites(){
@@ -423,7 +423,7 @@
   const formulas=[...new Set(qs.flatMap(q=>q.knowledge?.formulas||[]))],pitfalls=[...new Set(qs.flatMap(q=>q.knowledge?.pitfalls||[]))];
   if(formulas.length){panel.append(node('h3',null,'相关公式'));formulas.forEach(f=>{const p=node('div');renderBlocks([typeof f==='string'?{k:'p',x:f}:f],p);panel.append(p);});}
   if(pitfalls.length){panel.append(node('h3',null,'易错点'));pitfalls.forEach(t=>{const p=node('div');renderBlocks([typeof t==='string'?{k:'p',x:t}:t],p);panel.append(p);});}
-  qs.slice(0,8).forEach(q=>{const details=node('details','study-solution');details.append(node('summary',null,(q.year?q.year+' 年真题 · ':'')+q.number+' · 答案与解析'));details.addEventListener('toggle',()=>{if(!details.open||details.dataset.loaded)return;details.dataset.loaded='true';const text=node('div');renderBlocks(questionContentBlocks(q.answer||[]),text);renderBlocks(questionContentBlocks(q.analysis||[]),text);details.append(text);});panel.append(details);});
+  qs.slice(0,8).forEach(q=>{const details=node('details','study-solution');details.append(node('summary',null,(q.year?q.year+' 年真题 · ':'')+q.number+' · 答案与解析'));details.addEventListener('toggle',()=>{if(!details.open||details.dataset.loaded)return;details.dataset.loaded='true';const text=node('div');renderBlocks(questionContentBlocks(answerContentBlocks(q.answer||[],q)),text);renderBlocks(questionContentBlocks(q.analysis||[]),text);details.append(text);});panel.append(details);});
  }
  function exportMastery(qs){
   const canvas=document.createElement('canvas');canvas.width=1120;canvas.height=420+Math.ceil(qs.length/50)*20;const c=canvas.getContext('2d');c.fillStyle='#f6f0e3';c.fillRect(0,0,1120,860);c.fillStyle='#2d2a23';c.font='bold 40px Microsoft YaHei';c.fillText('工程光学 · 掌握卡',55,85);c.font='20px Microsoft YaHei';c.fillText(new Date().toLocaleDateString('zh-CN')+' · '+qs.length+' 题',55,128);

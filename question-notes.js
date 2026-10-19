@@ -123,7 +123,7 @@
  function renderOriginal(q,into){
   if(!q){into.append(node('p',null,'对应题目资料暂不可用；笔记仍可查看与编辑。'));return;}
   const stem=node('div','notes-stem');renderBlocks(q.stem,stem);into.append(stem);
-  if(q.options?.length){const options=node('div','notes-options');q.options.forEach(o=>{const item=node('div','notes-option');item.append(node('strong',null,o.key));const text=node('span');renderInline(o.x,text);item.append(text);options.append(item);});into.append(options);}
+  if(q.options?.length){const options=node('div','notes-options');q.options.forEach(o=>{const item=node('div','notes-option');item.append(node('strong',null,o.key));const text=node('span');renderInline(displayOptionText(o),text);item.append(text);options.append(item);});into.append(options);}
   const images=q.stemImages?.length?q.stemImages:(q.occurrenceId?EXAMS.byOccurrence[q.occurrenceId]?.sourceImages||[]:[]);
   images.forEach(im=>{const fig=node('figure');const img=node('img');img.src=im.src;img.alt=im.alt||im.caption||'原题图片';img.loading='lazy';img.decoding='async';fig.append(img);if(im.caption)fig.append(node('figcaption',null,im.caption));into.append(fig);});
  }

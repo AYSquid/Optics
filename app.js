@@ -690,10 +690,23 @@ function questionContentBlocks(blocks) {
 
 // Keep conclusions, assumptions and explanations in the answer, even when also annotated.
 // Only a standalone bibliography/provenance line belongs solely in the source disclosure.
-function answerContentBlocks(blocks) {
+function answerContentBlocks(blocks, q) {
   return (blocks || []).filter(function (block) {
     return !(block && block.k === 'note' && /^(?:答案依据|参考来源)[：:]/.test(block.x || ''));
+  }).map(function (block) {
+    if (!block || !q || q.sourceType !== 'workbook' || block.k !== 'p') return block;
+    var text = String(block.x || '').trim();
+    if (!/^[①②③④⑤⑥⑦⑧⑨⑩\s、,，。.;；（）()]+$/.test(text)) return block;
+    var map = {};
+    (q.options || []).forEach(function (option) { if (option.originalKey) map[option.originalKey] = option.key; });
+    var keys = text.match(/[①②③④⑤⑥⑦⑧⑨⑩]/g);
+    if (!keys || !keys.every(function (key) { return !!map[key]; })) return block;
+    return Object.assign({}, block, {x: text.replace(/[①②③④⑤⑥⑦⑧⑨⑩]/g, function (key) { return map[key]; })});
   });
+}
+
+function displayOptionText(option) {
+  return String(option.x || '').replace(/^\s*[（(]原[①②③④⑤⑥⑦⑧⑨⑩][）)]\s*/, '');
 }
 
 function questionAnnotations(q) {
@@ -836,7 +849,7 @@ function render() {
   var opts = $('options');
   clear(opts);
   if (q.options && q.options.length) {
-    var longOpt = q.options.some(function (o) { return o.x.length > 26; });
+    var longOpt = q.options.some(function (o) { return displayOptionText(o).length > 26; });
     opts.className = 'options' + (longOpt || q.options.length > 4 ? '' : ' cols-2');
     var picked = selectedChoiceKeys(q);
     q.options.forEach(function (o) {
@@ -846,7 +859,7 @@ function render() {
       b.setAttribute('aria-pressed', picked.indexOf(o.key) >= 0 ? 'true' : 'false');
       b.appendChild(el('span', 'option-key', o.key));
       var t = el('span', 'option-text');
-      if(o.blocks?.some(function(b){return b.k==='image';}))renderBlocks(o.blocks,t);else renderInline(o.x,t);
+      if(o.blocks?.some(function(b){return b.k==='image';}))renderBlocks(o.blocks,t);else renderInline(displayOptionText(o),t);
       b.appendChild(t);
       b.addEventListener('click', function () {
         if(q.playable === false || ui.choiceChecked) return;
@@ -981,7 +994,7 @@ function applyRegions(q) {
     aReg.hidden = false;
     var ab = $('answer-body');
     clear(ab);
-    var answerBlocks = answerContentBlocks(q.answer);
+    var answerBlocks = answerContentBlocks(q.answer, q);
     if (answerBlocks.length) renderBlocks(answerBlocks, ab);
     else ab.appendChild(el('p', null, '原始资料未提供单独答案，当前尚未补充核验答案。'));
     aBtn.textContent = '隐藏答案';
