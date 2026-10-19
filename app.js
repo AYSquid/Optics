@@ -398,12 +398,11 @@ function closeBankSourceMenu(){var picker=document.querySelector('.bank-source-p
 function snapshotBankSourceMenu(host){
  var picker=host.querySelector('.bank-source-picker');if(!picker||!picker.open)return null;
  var active=document.activeElement,focus=picker._pendingMenuFocus||null;
- if(picker.contains(active)){focus={};['data-bank-source','data-paper-id','data-bank-chapter','data-bank-chapter-source','aria-controls'].forEach(function(key){if(active.hasAttribute(key))focus[key]=active.getAttribute(key);});}
- return {expanded:Array.from(picker.querySelectorAll('.bank-submenu-toggle[aria-expanded="true"]')).map(function(b){return b.getAttribute('aria-controls');}),focus:focus};
+ if(picker.contains(active)){focus=active.hasAttribute('data-bank-source')?{'data-bank-source':active.getAttribute('data-bank-source')}:null;}
+ return {focus:focus};
 }
 function restoreBankSourceMenu(host,state){
  if(!state)return;var picker=host.querySelector('.bank-source-picker');if(!picker)return;
- picker.querySelectorAll('.bank-submenu-toggle').forEach(function(toggle){if(state.expanded.indexOf(toggle.getAttribute('aria-controls'))<0)return;toggle.setAttribute('aria-expanded','true');toggle.textContent='⌄';picker.querySelector('#'+toggle.getAttribute('aria-controls')).hidden=false;});
  picker._pendingMenuFocus=state.focus;picker.open=true;
 }
 function restoreBankSourceFocus(picker){
@@ -414,40 +413,25 @@ function restoreBankSourceFocus(picker){
 document.addEventListener('pointerdown',function(event){var picker=document.querySelector('.bank-source-picker[open]');if(picker&&!picker.contains(event.target))picker.open=false;});
 window.addEventListener('resize',closeBankSourceMenu);
 function bankSourceControl(){
- var row=el('div','bank-source-row'),label=el('span','bank-source-label','题库'),picker=el('details','bank-source-picker'),summary=el('summary'),menu=el('div','bank-source-menu');
- summary.append(el('span',null,BANK_SOURCE_NAMES[bankSource()]),el('span','bank-source-arrow','⌄'));summary.setAttribute('aria-label','选择题库来源，当前'+BANK_SOURCE_NAMES[bankSource()]);
- menu.setAttribute('popover','manual');menu.setAttribute('aria-label','题库来源与章节或试卷');if(!menu.showPopover)menu.hidden=true;
+ var row=el('div','bank-source-row'),picker=el('details','bank-source-picker'),summary=el('summary'),menu=el('div','bank-source-menu'),counts={};
+ function bookIcon(){var icon=el('span','bank-source-icon');icon.setAttribute('aria-hidden','true');icon.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 5.5C9 3.8 5.5 3.8 2.5 4.8v14c3-1 6.5-1 9.5.7m0-14c3-1.7 6.5-1.7 9.5-.7v14c-3-1-6.5-1-9.5.7m0-14v14"/></svg>';return icon;}
+ Object.keys(BANK_SOURCE_NAMES).forEach(function(source){counts[source]=DATA.questions.filter(function(q){return q.playable!==false&&matchesBankSource(q,source);}).length;});
+ summary.append(bookIcon(),el('span','bank-source-name',BANK_SOURCE_NAMES[bankSource()]),el('small','bank-source-total',counts[bankSource()]+' 题'),el('span','bank-source-arrow','⌄'));summary.setAttribute('aria-label','选择题库来源，当前'+BANK_SOURCE_NAMES[bankSource()]+'，'+counts[bankSource()]+'题');
+ menu.setAttribute('popover','manual');menu.setAttribute('aria-label','切换题库');if(!menu.showPopover)menu.hidden=true;
  function position(){
-  var r=summary.getBoundingClientRect(),width=Math.min(r.width,innerWidth-24),below=innerHeight-r.bottom-16,above=r.top-16,up=below<280&&above>below;
+  var r=summary.getBoundingClientRect(),width=Math.min(r.width,innerWidth-24),below=innerHeight-r.bottom-16,above=r.top-16,up=below<220&&above>below;
   menu.style.width=width+'px';menu.style.left=Math.max(12,Math.min(r.left,innerWidth-width-12))+'px';menu.style.right='auto';menu.style.maxHeight=Math.max(44,Math.min(480,up?above:below))+'px';menu.style.top=up?'auto':(r.bottom+4)+'px';menu.style.bottom=up?(innerHeight-r.top+4)+'px':'auto';
  }
  Object.keys(BANK_SOURCE_NAMES).forEach(function(source){
-  var section=el('section','bank-source-group'),head=el('div','bank-source-group-head'),choose=el('button','bank-source-choice'),toggle=el('button','bank-submenu-toggle','›'),children=el('div','bank-source-submenu');
-  choose.type=toggle.type='button';choose.dataset.bankSource=source;choose.setAttribute('aria-pressed',String(bankSource()===source));
-  var count=DATA.questions.filter(function(q){return q.playable!==false&&matchesBankSource(q,source);}).length;
-  choose.append(el('span',null,BANK_SOURCE_NAMES[source]),el('small',null,count+' 题'));
-  choose.onclick=function(){picker.open=false;setBankSource(source);};
-  children.hidden=true;children.id='bank-submenu-'+source;toggle.setAttribute('aria-label','展开'+BANK_SOURCE_NAMES[source]+(['past','final'].indexOf(source)>=0?'试卷':'章节'));toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls',children.id);
-  toggle.onclick=function(){var expand=children.hidden;menu.querySelectorAll('.bank-submenu-toggle').forEach(function(other){other.setAttribute('aria-expanded','false');other.textContent='›';menu.querySelector('#'+other.getAttribute('aria-controls')).hidden=true;});children.hidden=!expand;toggle.setAttribute('aria-expanded',String(expand));toggle.textContent=expand?'⌄':'›';};
-  var papers=typeof EXAMS!=='undefined'?EXAMS.years.filter(function(y){return paperSourceKind(y)===source;}).slice().sort(function(a,b){return b.year-a.year||paperDisplayName(a).localeCompare(paperDisplayName(b),'zh-CN');}):[];
-  if(source==='past'||source==='final')papers.forEach(function(paper){
-    var button=el('button','bank-submenu-option'),name=paperDisplayName(paper),caption=el('span','bank-paper-title'),years=name.match(/^\d{4}[-—–]\d{4}/),detail;
-    if(source==='final')detail=name.indexOf('春夏')>=0?'春夏学期':name.indexOf('秋冬')>=0?'秋冬学期':'学期未载';
-    else detail=name.replace(/^\d{4}\s*年\s*/,'').replace('真题','').trim()||'工程光学';
-    caption.append(el('span','bank-paper-year',years?years[0].replace('-', '—'):paper.year+' 年'),el('span','bank-paper-detail',detail));
-    button.type='button';button.dataset.paperId=paper.id;button.title=name;button.setAttribute('aria-label',name+'，'+paper.count+'题');button.append(caption,el('small',null,paper.count+' 题'));button.onclick=function(){picker.open=false;location.hash='/year/'+encodeURIComponent(paper.id);openExam(paper.id);};children.appendChild(button);
-  });
-  else orderedStudyChapters().forEach(function(ch){
-    var ids=DATA.questions.filter(function(q){return q.chapterId===ch.id&&q.playable!==false&&matchesBankSource(q,source);});if(!ids.length)return;
-    var button=el('button','bank-submenu-option');button.type='button';button.dataset.bankChapter=ch.id;button.dataset.bankChapterSource=source;button.append(el('span',null,ch.num+' '+ch.title),el('small',null,ids.length+' 题'));button.onclick=function(){picker.open=false;location.hash='/resume';setScope({type:'chapter',chapterId:ch.id,bankSource:source},{keepExpansion:true});};children.appendChild(button);
-  });
-  if(!children.childNodes.length)children.appendChild(el('p','bank-source-empty','暂无可选试卷'));
-  head.append(choose,toggle);section.append(head,children);menu.appendChild(section);
+  var choose=el('button','bank-source-choice');choose.type='button';choose.dataset.bankSource=source;choose.setAttribute('aria-pressed',String(bankSource()===source));
+  choose.append(bookIcon(),el('span','bank-source-name',BANK_SOURCE_NAMES[source]),el('small','bank-source-total',counts[source]+' 题'),el('span','bank-source-check',bankSource()===source?'✓':''));
+  choose.onclick=function(){picker.open=false;setBankSource(source);document.querySelector('.bank-source-picker>summary')?.focus({preventScroll:true});};
+  menu.appendChild(choose);
  });
  picker.append(summary,menu);picker.addEventListener('toggle',function(){if(!picker.isConnected)return;if(picker.open){position();menu.hidden=false;if(menu.showPopover)menu.showPopover();restoreBankSourceFocus(picker);}else{if(menu.hidePopover&&menu.matches(':popover-open'))menu.hidePopover();else menu.hidden=true;}});
  menu.addEventListener('toggle',function(e){if(e.newState==='closed')picker.open=false;else restoreBankSourceFocus(picker);});
  picker.addEventListener('keydown',function(e){e.stopPropagation();if(e.key==='Escape'){picker.open=false;summary.focus({preventScroll:true});}});
- row.append(label,picker);return row;
+ row.append(picker);return row;
 }
 
 function buildScopeIds() {
@@ -565,6 +549,7 @@ function renderTree() {
   var tree = document.createDocumentFragment();
   var focusedSource=treeHost.contains(document.activeElement)?document.activeElement.dataset.bankSource:'';
   tree.appendChild(bankSourceControl());
+  var directoryHeading=el('div','bank-directory-heading');directoryHeading.append(el('span',null,'章节列表'),el('small',null,'共 '+bankDirectoryChapters().length+' 章'));tree.appendChild(directoryHeading);
 
   var rootNode = el('div', 'tree-node');
   var rootBtn = el('button', 'tree-root-btn tree-btn' + (ui.scope.type === 'all' ? ' is-current' : ''));
