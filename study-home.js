@@ -8,7 +8,7 @@
  const previousDay=day=>{const d=new Date(day+'T12:00:00Z');d.setUTCDate(d.getUTCDate()-1);return d.toISOString().slice(0,10);};
  let activityDay='',account=null;
  function save(){if(!writable)return;try{localStorage.setItem(key,JSON.stringify(state));window.OpticsDashboardCloud?.capture();}catch(e){writable=false;}}
- function isPractice(){return !document.body.classList.contains('study-page')&&!active&&/^#\/(bank|resume|year\/|exams\/(optics|english)\/)/.test(location.hash);}
+ function isPractice(){return !document.body.classList.contains('study-page')&&!active&&/^#\/(bank|resume|year\/|exams\/(optics|english|final)\/)/.test(location.hash);}
  function record(id,details={}){
   if(!attached||!id)return;const q=DATA.byId[id];id=q?.canonicalId||q?.statusKey||id;
   const day=dateKey(),items=state.days[day]||(state.days[day]=[]),events=state.events[day]||(state.events[day]={});
@@ -86,7 +86,7 @@
   else if(r.scope.type==='chapter')ids=DATA.questions.filter(q=>q.chapterId===r.scope.chapterId).map(q=>q.id);
   else if(r.scope.type==='kn')ids=findKn(r.scope.chapterId,r.scope.knId)?.questionIds||[];
   else ids=DATA.questions.map(q=>q.id);
-  ids=ids.filter(id=>DATA.byId[id]&&DATA.byId[id].playable!==false&&matchesBankSource(DATA.byId[id],r.scope.bankSource||'all')&&(!r.scope.studyCategory||r.scope.studyCategory==='all'||(r.scope.studyCategory==='past'?DATA.byId[id].sourceType==='past_exam':r.scope.studyCategory==='geom'?['geom','inst'].includes((findChapter(DATA.byId[id].chapterId)?.subjectGroup||findChapter(DATA.byId[id].chapterId)?.source)):(findChapter(DATA.byId[id].chapterId)?.subjectGroup||findChapter(DATA.byId[id].chapterId)?.source)==='phys')));
+  ids=ids.filter(id=>DATA.byId[id]&&DATA.byId[id].playable!==false&&matchesBankSource(DATA.byId[id],r.scope.bankSource||'all')&&(!r.scope.studyCategory||r.scope.studyCategory==='all'||(['past','final'].includes(r.scope.studyCategory)?matchesBankSource(DATA.byId[id],r.scope.studyCategory):r.scope.studyCategory==='geom'?['geom','inst'].includes((findChapter(DATA.byId[id].chapterId)?.subjectGroup||findChapter(DATA.byId[id].chapterId)?.source)):(findChapter(DATA.byId[id].chapterId)?.subjectGroup||findChapter(DATA.byId[id].chapterId)?.source)==='phys')));
   return {done:ids.filter(id=>!!getStatus(statusKeyOf(DATA.byId[id]))).length,total:ids.length};
  }
  function metric(label,value,suffix,detail){const n=node('article','dashboard-metric');n.append(node('span','dashboard-metric-label',label));const v=node('div','dashboard-metric-value');v.append(node('strong',null,value),node('span',null,suffix));n.append(v,node('p',null,detail));return n;}

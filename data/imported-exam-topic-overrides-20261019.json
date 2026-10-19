@@ -1,0 +1,1973 @@
+{
+ "batch": "20261019",
+ "keyFormat": "paperKey|number|section",
+ "reviewedPhotoQuestions": 277,
+ "reviewMethod": "逐题核读277道照片题，按完整考点确定主章节和现有知识点；不通过题名二字重合宣称人工核定。复合题保留主章节内多个知识点。",
+ "overrides": {
+  "past-2005-physical|一-1|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：分振幅双光束、等倾干涉与平行平板"
+  },
+  "past-2005-physical|一-2|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：牛顿环、曲率与透镜移动"
+  },
+  "past-2005-physical|一-3|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多光束干涉与法布里–珀罗干涉仪"
+  },
+  "past-2005-physical|一-4|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多孔、多缝干涉与衍射包络"
+  },
+  "past-2005-physical|一-5|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波片、相位延迟与偏振态变换"
+  },
+  "past-2005-physical|一-6|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：相干与非相干成像、传递函数与截止频率"
+  },
+  "past-2005-physical|一-7|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：晶体各向异性、光轴与 o/e 光"
+  },
+  "past-2005-physical|一-8|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2005-physical|一-9|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多光束干涉与法布里–珀罗干涉仪"
+  },
+  "past-2005-physical|一-10|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k14"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：菲涅耳半波带与泊松亮斑"
+  },
+  "past-2005-physical|二-1|二、简答题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：电磁光波、横波与平面波参数"
+  },
+  "past-2005-physical|二-2|二、简答题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k7"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：周期函数、傅里叶级数与频谱"
+  },
+  "past-2005-physical|二-3|二、简答题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：分振幅双光束、等倾干涉与平行平板"
+  },
+  "past-2005-physical|二-4|二、简答题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k8"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波片与检偏器的偏振态鉴别"
+  },
+  "past-2005-physical|二-5|二、简答题": {
+   "chapterId": "inst-c10",
+   "topics": [
+    "inst-c10-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：望远镜口径与分辨本领"
+  },
+  "past-2005-physical|三-1|三、解答题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k1",
+    "phys-ch9-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：电磁光波、横波与平面波参数；波矢、方向余弦与空间频率"
+  },
+  "past-2005-physical|三-2|三、解答题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：迈克耳孙干涉仪与测量"
+  },
+  "past-2005-physical|三-3|三、解答题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k7"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光学薄膜、增透与干涉颜色"
+  },
+  "past-2005-physical|三-4|三、解答题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k6",
+    "phys-ch11-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：闪耀光栅与工作级次；光栅方程、可见级次与缺级"
+  },
+  "past-2005-physical|三-5|三、解答题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：惠更斯作图、波法线与折射方向"
+  },
+  "past-2005-physical|三-6|三、解答题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k4",
+    "phys-ch11-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多孔、多缝干涉与衍射包络；单缝衍射、中央宽度与巴比涅原理"
+  },
+  "past-2005-physical|三-7|三、解答题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波矢、方向余弦与空间频率"
+  },
+  "past-2005-physical|三-8|三、解答题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k4",
+    "phys-ch13-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：Jones 向量、矩阵与器件连乘；波片、相位延迟与偏振态变换"
+  },
+  "past-2005-physical|三-9|三、解答题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2006-engineering|一-1|一、选择题": {
+   "chapterId": "inst-c10",
+   "topics": [
+    "inst-c10-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：无焦系统、望远镜类型与倍率"
+  },
+  "past-2006-engineering|一-2|一、选择题": {
+   "chapterId": "geom-ch5",
+   "topics": [
+    "geom-ch5-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：像面照度与 F 数"
+  },
+  "past-2006-engineering|一-3|一、选择题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：双光组组合、总焦距与主面位置"
+  },
+  "past-2006-engineering|一-4|一、选择题": {
+   "chapterId": "geom-ch1",
+   "topics": [
+    "geom-ch1-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：轴向倍率与拉格朗日不变量"
+  },
+  "past-2006-engineering|一-5|一、选择题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：基点、主平面与等效焦距"
+  },
+  "past-2006-engineering|一-6|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k10"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：折射率椭球与 e 光有效折射率"
+  },
+  "past-2006-engineering|一-7|一、选择题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：电磁光波、横波与平面波参数"
+  },
+  "past-2006-engineering|一-8|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多孔、多缝干涉与衍射包络"
+  },
+  "past-2006-engineering|一-9|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：全息记录与再现"
+  },
+  "past-2006-engineering|一-10|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：牛顿环、曲率与透镜移动"
+  },
+  "past-2006-engineering|一-11|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k8"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波片与检偏器的偏振态鉴别"
+  },
+  "past-2006-engineering|一-12|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2006-engineering|一-13|一、选择题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：布儒斯特角与反射偏振"
+  },
+  "past-2006-engineering|一-14|一、选择题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射率、透射率与界面能量分配"
+  },
+  "past-2006-engineering|一-15|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k14"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：菲涅耳半波带与泊松亮斑"
+  },
+  "past-2006-engineering|二-1|二、填空题": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：远心光路与主光线"
+  },
+  "past-2006-engineering|二-2|二、填空题": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：七种像差、分类与孔径视场关系"
+  },
+  "past-2006-engineering|二-3|二、填空题": {
+   "chapterId": "geom-ch5",
+   "topics": [
+    "geom-ch5-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：辐射量、光视效率与光度量换算"
+  },
+  "past-2006-engineering|二-4|二、填空题": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：景深、孔径与对准距离"
+  },
+  "past-2006-engineering|二-5|二、填空题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k8",
+    "phys-ch10-k9"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：条纹清晰度、光源宽度与空间相干；时间相干、波列与多谱线干涉"
+  },
+  "past-2006-engineering|二-6|二、填空题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：干涉条件与相干光"
+  },
+  "past-2006-engineering|二-7|二、填空题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：全反射、倏逝波与反射相位"
+  },
+  "past-2006-engineering|二-8|二、填空题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2006-engineering|二-9|二、填空题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2006-engineering|二-10|二、填空题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2006-engineering|二-11|二、填空题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2006-engineering|二-12|二、填空题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2006-engineering|二-13|二、填空题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2006-engineering|三-1|三、作图题": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射棱镜、屋脊与像方位"
+  },
+  "past-2006-engineering|三-2|三、作图题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：高斯公式、薄透镜成像与垂轴倍率"
+  },
+  "past-2006-engineering|三-3|三、作图题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k6",
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：偏振棱镜与偏振器；惠更斯作图、波法线与折射方向"
+  },
+  "past-2006-engineering|四-1|四、求解计算题": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：显微镜倍率、瞳、视场与口径综合计算"
+  },
+  "past-2006-engineering|四-2|四、求解计算题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k4",
+    "phys-ch13-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：Jones 向量、矩阵与器件连乘；波片、相位延迟与偏振态变换"
+  },
+  "past-2006-engineering|四-3|四、求解计算题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2006-engineering|四-4|四、求解计算题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光栅参数设计与综合计算"
+  },
+  "past-2006-engineering|四-5|四、求解计算题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：牛顿环、曲率与透镜移动"
+  },
+  "past-2006-engineering|四-6|四、求解计算题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2007-engineering|一-1|一、选择题": {
+   "chapterId": "inst-c2",
+   "topics": [
+    "inst-c2-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：人眼、放大镜与望远镜的倍率与瞳"
+  },
+  "past-2007-engineering|一-2|一、选择题": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射棱镜、屋脊与像方位"
+  },
+  "past-2007-engineering|一-3|一、选择题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：基点、主平面与等效焦距"
+  },
+  "past-2007-engineering|一-4|一、选择题": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：七种像差、分类与孔径视场关系"
+  },
+  "past-2007-engineering|一-5|一、选择题": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：景深、孔径与对准距离"
+  },
+  "past-2007-engineering|一-6|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多孔、多缝干涉与衍射包络"
+  },
+  "past-2007-engineering|一-7|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：相干与非相干成像、传递函数与截止频率"
+  },
+  "past-2007-engineering|一-8|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：牛顿环、曲率与透镜移动"
+  },
+  "past-2007-engineering|一-9|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k8"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波片与检偏器的偏振态鉴别"
+  },
+  "past-2007-engineering|一-10|一、选择题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射率、透射率与界面能量分配"
+  },
+  "past-2007-engineering|一-11|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波片、相位延迟与偏振态变换"
+  },
+  "past-2007-engineering|一-12|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：空间频率、透镜变换与频谱面"
+  },
+  "past-2007-engineering|一-13|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：单缝衍射、中央宽度与巴比涅原理"
+  },
+  "past-2007-engineering|一-14|一、选择题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：全反射、倏逝波与反射相位"
+  },
+  "past-2007-engineering|一-15|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：等厚干涉与劈尖"
+  },
+  "past-2007-engineering|一-16|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k7"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光学薄膜、增透与干涉颜色"
+  },
+  "past-2007-engineering|二-1|二、填空题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：高斯公式、薄透镜成像与垂轴倍率"
+  },
+  "past-2007-engineering|二-2|二、填空题": {
+   "chapterId": "inst-c10",
+   "topics": [
+    "inst-c10-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：无焦系统、望远镜类型与倍率"
+  },
+  "past-2007-engineering|二-3|二、填空题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：基点、主平面与等效焦距"
+  },
+  "past-2007-engineering|二-4|二、填空题": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：瞳、窗、主光线与视场"
+  },
+  "past-2007-engineering|二-5|二、填空题": {
+   "chapterId": "inst-c3",
+   "topics": [
+    "inst-c3-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：双目立体视觉与测距"
+  },
+  "past-2007-engineering|二-6|二、填空题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2007-engineering|三-1|三、作图题": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射棱镜、屋脊与像方位"
+  },
+  "past-2007-engineering|三-2|三、作图题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：双光组组合、总焦距与主面位置"
+  },
+  "past-2007-engineering|四-1|四、计算题": {
+   "chapterId": "inst-c11",
+   "topics": [
+    "inst-c11-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：转像望远镜、瞳匹配与口径综合追迹"
+  },
+  "past-2007-engineering|五-1|五、问答题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2007-engineering|六-1|六、计算题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k1",
+    "phys-ch9-k2",
+    "phys-ch9-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：电磁光波、横波与平面波参数；波矢、方向余弦与空间频率；光强、磁场与平均能流"
+  },
+  "past-2007-engineering|七-1|七、计算题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光栅参数设计与综合计算"
+  },
+  "past-2007-engineering|八-1|八、计算题": {
+   "chapterId": "inst-c6",
+   "topics": [
+    "inst-c6-k4",
+    "inst-c6-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：渐变折射率物镜与等效焦距；摄影物镜的艾里斑与衍射分辨率"
+  },
+  "past-2007-engineering|九-1|九、计算题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k4",
+    "phys-ch13-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：Jones 向量、矩阵与器件连乘；波片、相位延迟与偏振态变换"
+  },
+  "past-2007-engineering|十-1|十、作图题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：惠更斯作图、波法线与折射方向"
+  },
+  "past-2007-engineering|十一-1|十一、计算题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2008-engineering|一-1|一、选择题": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：平面镜成像与转动"
+  },
+  "past-2008-engineering|一-2|一、选择题": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：彗差、场曲与像散"
+  },
+  "past-2008-engineering|一-3|一、选择题": {
+   "chapterId": "geom-ch1",
+   "topics": [
+    "geom-ch1-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：符号规则与单球面折射成像"
+  },
+  "past-2008-engineering|一-4|一、选择题": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：球差、齐明点与正弦条件"
+  },
+  "past-2008-engineering|一-5|一、选择题": {
+   "chapterId": "geom-ch1",
+   "topics": [
+    "geom-ch1-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：轴向倍率与拉格朗日不变量"
+  },
+  "past-2008-engineering|一-6|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：惠更斯作图、波法线与折射方向"
+  },
+  "past-2008-engineering|一-7|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：干涉条件与相干光"
+  },
+  "past-2008-engineering|一-8|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：起偏检偏与马吕斯定律"
+  },
+  "past-2008-engineering|一-9|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多孔、多缝干涉与衍射包络"
+  },
+  "past-2008-engineering|一-10|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：相干与非相干成像、传递函数与截止频率"
+  },
+  "past-2008-engineering|一-11|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k10"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：折射率椭球与 e 光有效折射率"
+  },
+  "past-2008-engineering|一-12|一、选择题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k7"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光学薄膜、增透与干涉颜色"
+  },
+  "past-2008-engineering|一-13|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：全息记录与再现"
+  },
+  "past-2008-engineering|一-14|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：单缝衍射、中央宽度与巴比涅原理"
+  },
+  "past-2008-engineering|一-15|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2008-engineering|一-16|一、选择题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2008-engineering|一-17|一、选择题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2008-engineering|一-18|一、选择题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2008-engineering|二-1|二、填空题": {
+   "chapterId": "inst-c2",
+   "topics": [
+    "inst-c2-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：近轴成像、倍率与组合系统"
+  },
+  "past-2008-engineering|二-2|二、填空题": {
+   "chapterId": "geom-ch5",
+   "topics": [
+    "geom-ch5-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：像面照度与 F 数"
+  },
+  "past-2008-engineering|二-3|二、填空题": {
+   "chapterId": "inst-c10",
+   "topics": [
+    "inst-c10-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：无焦系统、望远镜类型与倍率"
+  },
+  "past-2008-engineering|二-4|二、填空题": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：七种像差、分类与孔径视场关系"
+  },
+  "past-2008-engineering|二-5|二、填空题": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：景深、孔径与对准距离"
+  },
+  "past-2008-engineering|二-6|二、填空题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：迈克耳孙干涉仪与测量"
+  },
+  "past-2008-engineering|二-7|二、填空题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：布儒斯特角与反射偏振"
+  },
+  "past-2008-engineering|二-8|二、填空题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k1",
+    "phys-ch9-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：电磁光波、横波与平面波参数；光强、磁场与平均能流"
+  },
+  "past-2008-engineering|三-1|三、作图题": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射棱镜、屋脊与像方位"
+  },
+  "past-2008-engineering|三-2|三、作图题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：高斯公式、薄透镜成像与垂轴倍率"
+  },
+  "past-2008-engineering|三-3|三、作图题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k6",
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：偏振棱镜与偏振器；惠更斯作图、波法线与折射方向"
+  },
+  "past-2008-engineering|四-1|四、问答题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2008-engineering|五-1|五、计算题": {
+   "chapterId": "inst-c6",
+   "topics": [
+    "inst-c6-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：双薄透镜摄影物镜、瞳与口径综合计算"
+  },
+  "past-2008-engineering|五-2|五、计算题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光栅参数设计与综合计算"
+  },
+  "past-2008-engineering|五-3|五、计算题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k4",
+    "phys-ch13-k7"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：Jones 向量、矩阵与器件连乘；偏振光干涉"
+  },
+  "past-2008-engineering|五-4|五、计算题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2008-engineering|五-5|五、计算题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2009-engineering|一-1|一、选择题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：双光组组合、总焦距与主面位置"
+  },
+  "past-2009-engineering|一-2|一、选择题": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：像差校正、光阑位置与对称系统"
+  },
+  "past-2009-engineering|一-3|一、选择题": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：像差校正、光阑位置与对称系统"
+  },
+  "past-2009-engineering|一-4|一、选择题": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：折射棱镜与最小偏向角"
+  },
+  "past-2009-engineering|一-5|一、选择题": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：彗差、场曲与像散"
+  },
+  "past-2009-engineering|一-6|一、选择题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：布儒斯特角与反射偏振"
+  },
+  "past-2009-engineering|一-7|一、选择题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射率、透射率与界面能量分配"
+  },
+  "past-2009-engineering|一-8|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多孔、多缝干涉与衍射包络"
+  },
+  "past-2009-engineering|一-9|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：全息记录与再现"
+  },
+  "past-2009-engineering|一-10|一、选择题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：相干与非相干成像、传递函数与截止频率"
+  },
+  "past-2009-engineering|一-11|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波片、相位延迟与偏振态变换"
+  },
+  "past-2009-engineering|一-12|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k10"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：折射率椭球与 e 光有效折射率"
+  },
+  "past-2009-engineering|一-13|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：晶体各向异性、光轴与 o/e 光"
+  },
+  "past-2009-engineering|一-14|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：起偏检偏与马吕斯定律"
+  },
+  "past-2009-engineering|一-15|一、选择题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k8"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波片与检偏器的偏振态鉴别"
+  },
+  "past-2009-engineering|一-16|一、选择题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2009-engineering|一-17|一、选择题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2009-engineering|一-18|一、选择题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2009-engineering|一-19|一、选择题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2009-engineering|一-20|一、选择题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：圆孔衍射、艾里斑与瑞利分辨率"
+  },
+  "past-2009-engineering|一-21|一、选择题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2009-engineering|二-1|二、填空题（每空1分，共20分）": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：柯拉照明、临界照明与共轭面作图"
+  },
+  "past-2009-engineering|二-2|二、填空题（每空1分，共20分）": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：数值孔径与分辨极限"
+  },
+  "past-2009-engineering|二-3|二、填空题（每空1分，共20分）": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：景深、孔径与对准距离"
+  },
+  "past-2009-engineering|二-4|二、填空题（每空1分，共20分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k1",
+    "geom-ch6-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：球差、齐明点与正弦条件；位置色差、倍率色差与平板像差"
+  },
+  "past-2009-engineering|二-5|二、填空题（每空1分，共20分）": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光阑、视场与远心综合计算"
+  },
+  "past-2009-engineering|二-6|二、填空题（每空1分，共20分）": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：全反射、倏逝波与反射相位"
+  },
+  "past-2009-engineering|二-7|二、填空题（每空1分，共20分）": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：偏振态的分类与数学表示"
+  },
+  "past-2009-engineering|二-8|二、填空题（每空1分，共20分）": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2009-engineering|二-9|二、填空题（每空1分，共20分）": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：晶体各向异性、光轴与 o/e 光"
+  },
+  "past-2009-engineering|二-10|二、填空题（每空1分，共20分）": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k9",
+    "phys-ch10-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：时间相干、波列与多谱线干涉；杨氏双缝与条纹位置"
+  },
+  "past-2009-engineering|三|三、作图题": {
+   "chapterId": "inst-c4",
+   "topics": [
+    "inst-c4-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：放大镜物像、瞳与渐晕综合计算"
+  },
+  "past-2009-engineering|四|四、计算题": {
+   "chapterId": "inst-c11",
+   "topics": [
+    "inst-c11-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：转像望远镜、瞳匹配与口径综合追迹"
+  },
+  "past-2009-engineering|五|五、计算题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k9",
+    "phys-ch10-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：时间相干、波列与多谱线干涉；杨氏双缝与条纹位置"
+  },
+  "past-2009-engineering|六|六、计算题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光栅参数设计与综合计算"
+  },
+  "past-2009-engineering|七|七、作图题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2009-engineering|八|八、作图题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：惠更斯作图、波法线与折射方向"
+  },
+  "past-2009-engineering|九|九、计算题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k4",
+    "phys-ch13-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：Jones 向量、矩阵与器件连乘；波片、相位延迟与偏振态变换"
+  },
+  "past-2009-engineering|十|十、计算题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2010-engineering|一-1|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：界面反射折射与菲涅耳振幅系数"
+  },
+  "past-2010-engineering|一-2|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k9"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：平面波叠加与驻波"
+  },
+  "past-2010-engineering|一-3|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：傅里叶变换性质：位移与缩放"
+  },
+  "past-2010-engineering|一-4|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光栅色散、分辨本领与自由光谱范围"
+  },
+  "past-2010-engineering|一-5|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：牛顿环、曲率与透镜移动"
+  },
+  "past-2010-engineering|一-6|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k14"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：菲涅耳半波带与泊松亮斑"
+  },
+  "past-2010-engineering|一-7|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：空间频率、透镜变换与频谱面"
+  },
+  "past-2010-engineering|一-8|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2010-engineering|一-9|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：惠更斯作图、波法线与折射方向"
+  },
+  "past-2010-engineering|一-10|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：相干与非相干成像、传递函数与截止频率"
+  },
+  "past-2010-engineering|一-11|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波片、相位延迟与偏振态变换"
+  },
+  "past-2010-engineering|一-12|一、选择题（每小题2分，共48分）": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k10"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：折射率椭球与 e 光有效折射率"
+  },
+  "past-2010-engineering|一-13|一、选择题（每小题2分，共48分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：球差、齐明点与正弦条件"
+  },
+  "past-2010-engineering|一-14|一、选择题（每小题2分，共48分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：彗差、场曲与像散"
+  },
+  "past-2010-engineering|一-15|一、选择题（每小题2分，共48分）": {
+   "chapterId": "inst-c4",
+   "topics": [
+    "inst-c4-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：放大镜物像、瞳与渐晕综合计算"
+  },
+  "past-2010-engineering|一-16|一、选择题（每小题2分，共48分）": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：景深、孔径与对准距离"
+  },
+  "past-2010-engineering|一-17|一、选择题（每小题2分，共48分）": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：平行平板、等效空气厚度与像移"
+  },
+  "past-2010-engineering|一-18|一、选择题（每小题2分，共48分）": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射棱镜、屋脊与像方位"
+  },
+  "past-2010-engineering|一-19|一、选择题（每小题2分，共48分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2010-engineering|一-20|一、选择题（每小题2分，共48分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2010-engineering|一-21|一、选择题（每小题2分，共48分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2010-engineering|一-22|一、选择题（每小题2分，共48分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2010-engineering|一-23|一、选择题（每小题2分，共48分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2010-engineering|一-24|一、选择题（每小题2分，共48分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2010-engineering|二-1|二、填空题（每空1分，共19分）": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：惠更斯作图、波法线与折射方向"
+  },
+  "past-2010-engineering|二-2|二、填空题（每空1分，共19分）": {
+   "chapterId": "inst-c10",
+   "topics": [
+    "inst-c10-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：普通望远镜倍率、瞳与视场综合计算"
+  },
+  "past-2010-engineering|二-3|二、填空题（每空1分，共19分）": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：双光组组合、总焦距与主面位置"
+  },
+  "past-2010-engineering|二-4|二、填空题（每空1分，共19分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：七种像差、分类与孔径视场关系"
+  },
+  "past-2010-engineering|二-5|二、填空题（每空1分，共19分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：球差、齐明点与正弦条件"
+  },
+  "past-2010-engineering|二-6|二、填空题（每空1分，共19分）": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：显微镜物像关系、倍率与调焦"
+  },
+  "past-2010-engineering|二-7|二、填空题（每空1分，共19分）": {
+   "chapterId": "inst-c11",
+   "topics": [
+    "inst-c11-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：场镜作用与瞳共轭"
+  },
+  "past-2010-engineering|二-8|二、填空题（每空1分，共19分）": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：远心光路与主光线"
+  },
+  "past-2010-engineering|三-1|三、作图题（共12分）": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射棱镜、屋脊与像方位"
+  },
+  "past-2010-engineering|三-2|三、作图题（共12分）": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光阑、视场与远心综合计算"
+  },
+  "past-2010-engineering|四|四、计算题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多光束干涉与法布里–珀罗干涉仪"
+  },
+  "past-2010-engineering|五|五、计算题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k8",
+    "phys-ch10-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：条纹清晰度、光源宽度与空间相干；杨氏双缝与条纹位置"
+  },
+  "past-2010-engineering|六|六、计算题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光栅色散、分辨本领与自由光谱范围"
+  },
+  "past-2010-engineering|七|七、计算题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：Jones 向量、矩阵与器件连乘"
+  },
+  "past-2010-engineering|八|八、计算题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波矢、方向余弦与空间频率"
+  },
+  "past-2010-engineering|九|九、计算题": {
+   "chapterId": "geom-ch5",
+   "topics": [
+    "geom-ch5-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：像面照度与 F 数"
+  },
+  "past-2010-engineering|十|十、计算题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2011-engineering|一-1|一、选择题（每题2分，共22分）": {
+   "chapterId": "inst-c10",
+   "topics": [
+    "inst-c10-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：无焦系统、望远镜类型与倍率"
+  },
+  "past-2011-engineering|一-2|一、选择题（每题2分，共22分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：位置色差、倍率色差与平板像差"
+  },
+  "past-2011-engineering|一-3|一、选择题（每题2分，共22分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：七种像差、分类与孔径视场关系"
+  },
+  "past-2011-engineering|一-4|一、选择题（每题2分，共22分）": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：柯拉照明、临界照明与共轭面作图"
+  },
+  "past-2011-engineering|一-5|一、选择题（每题2分，共22分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：球差、齐明点与正弦条件"
+  },
+  "past-2011-engineering|一-6|一、选择题（每题2分，共22分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2011-engineering|一-7|一、选择题（每题2分，共22分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2011-engineering|一-8|一、选择题（每题2分，共22分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2011-engineering|一-9|一、选择题（每题2分，共22分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2011-engineering|一-10|一、选择题（每题2分，共22分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2011-engineering|一-11|一、选择题（每题2分，共22分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2011-engineering|二-1|二、填空题（第1至13题每空1分，14题每空2分，共34分）": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k8",
+    "phys-ch10-k9"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：条纹清晰度、光源宽度与空间相干；时间相干、波列与多谱线干涉"
+  },
+  "past-2011-engineering|二-2|二、填空题（第1至13题每空1分，14题每空2分，共34分）": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：杨氏双缝与条纹位置"
+  },
+  "past-2011-engineering|二-3|二、填空题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k7"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光学薄膜、增透与干涉颜色"
+  },
+  "past-2011-engineering|二-4|二、填空题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：偏振态的分类与数学表示"
+  },
+  "past-2011-engineering|二-5|二、填空题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多光束干涉与法布里–珀罗干涉仪"
+  },
+  "past-2011-engineering|二-6|二、填空题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：电磁光波、横波与平面波参数"
+  },
+  "past-2011-engineering|二-7|二、填空题": {
+   "chapterId": "inst-c11",
+   "topics": [
+    "inst-c11-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：场镜作用与瞳共轭"
+  },
+  "past-2011-engineering|二-8|二、填空题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：高斯公式、薄透镜成像与垂轴倍率"
+  },
+  "past-2011-engineering|二-9|二、填空题": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k3",
+    "geom-ch2-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：基点、主平面与等效焦距；双光组组合、总焦距与主面位置"
+  },
+  "past-2011-engineering|二-10|二、填空题": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：显微镜物像关系、倍率与调焦"
+  },
+  "past-2011-engineering|二-11|二、填空题": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射棱镜、屋脊与像方位"
+  },
+  "past-2011-engineering|二-12|二、填空题": {
+   "chapterId": "inst-c7",
+   "topics": [
+    "inst-c7-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光圈、照度与曝光量"
+  },
+  "past-2011-engineering|二-13|二、填空题": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：远心光路与主光线"
+  },
+  "past-2011-engineering|二-14|二、填空题（每空2分）": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k1",
+    "phys-ch9-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：电磁光波、横波与平面波参数；波矢、方向余弦与空间频率"
+  },
+  "past-2011-engineering|三-1|三、作图题（12分）": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：柯拉照明、临界照明与共轭面作图"
+  },
+  "past-2011-engineering|三-2|三、作图题（12分）": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光阑、视场与远心综合计算"
+  },
+  "past-2011-engineering|四|四、计算题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：迈克耳孙干涉仪与测量"
+  },
+  "past-2011-engineering|五|五、计算题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k6",
+    "phys-ch11-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：闪耀光栅与工作级次；光栅色散、分辨本领与自由光谱范围"
+  },
+  "past-2011-engineering|六|六、计算题": {
+   "chapterId": "inst-c6",
+   "topics": [
+    "inst-c6-k4",
+    "inst-c6-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：渐变折射率物镜与等效焦距；摄影物镜的艾里斑与衍射分辨率"
+  },
+  "past-2011-engineering|七|七、计算题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：Jones 向量、矩阵与器件连乘"
+  },
+  "past-2011-engineering|八|八、计算题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：Jones 向量、矩阵与器件连乘"
+  },
+  "past-2011-engineering|九|九、计算题": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：显微镜倍率、瞳、视场与口径综合计算"
+  },
+  "past-2011-engineering|十|十、计算题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2012-engineering|一-1|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：电磁光波、横波与平面波参数"
+  },
+  "past-2012-engineering|一-2|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：牛顿环、曲率与透镜移动"
+  },
+  "past-2012-engineering|一-3|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：干涉条件与相干光"
+  },
+  "past-2012-engineering|一-4|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多孔、多缝干涉与衍射包络"
+  },
+  "past-2012-engineering|一-5|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k14"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：菲涅耳半波带与泊松亮斑"
+  },
+  "past-2012-engineering|一-6|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：多光束干涉与法布里–珀罗干涉仪"
+  },
+  "past-2012-engineering|一-7|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：相干与非相干成像、传递函数与截止频率"
+  },
+  "past-2012-engineering|一-8|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2012-engineering|一-9|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：惠更斯作图、波法线与折射方向"
+  },
+  "past-2012-engineering|一-10|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k8"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：波片与检偏器的偏振态鉴别"
+  },
+  "past-2012-engineering|一-11|一、选择题（每题2分，共42分）": {
+   "chapterId": "inst-c10",
+   "topics": [
+    "inst-c10-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：无焦系统、望远镜类型与倍率"
+  },
+  "past-2012-engineering|一-12|一、选择题（每题2分，共42分）": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：柯拉照明、临界照明与共轭面作图"
+  },
+  "past-2012-engineering|一-13|一、选择题（每题2分，共42分）": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射棱镜、屋脊与像方位"
+  },
+  "past-2012-engineering|一-14|一、选择题（每题2分，共42分）": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：双光组组合、总焦距与主面位置"
+  },
+  "past-2012-engineering|一-15|一、选择题（每题2分，共42分）": {
+   "chapterId": "inst-c10",
+   "topics": [
+    "inst-c10-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：普通望远镜倍率、瞳与视场综合计算"
+  },
+  "past-2012-engineering|一-16|一、选择题（每题2分，共42分）": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：圆孔衍射、艾里斑与瑞利分辨率"
+  },
+  "past-2012-engineering|一-17|一、选择题（每题2分，共42分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2012-engineering|一-18|一、选择题（每题2分，共42分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2012-engineering|一-19|一、选择题（每题2分，共42分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2012-engineering|一-20|一、选择题（每题2分，共42分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2012-engineering|一-21|一、选择题（每题2分，共42分）": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  },
+  "past-2012-engineering|二-1|二、填空题（每空1分，共10分）": {
+   "chapterId": "geom-ch2",
+   "topics": [
+    "geom-ch2-k2"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：双光组组合、总焦距与主面位置"
+  },
+  "past-2012-engineering|二-2|二、填空题（每空1分，共10分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：像差校正、光阑位置与对称系统"
+  },
+  "past-2012-engineering|二-3|二、填空题（每空1分，共10分）": {
+   "chapterId": "geom-ch6",
+   "topics": [
+    "geom-ch6-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：七种像差、分类与孔径视场关系"
+  },
+  "past-2012-engineering|二-4|二、填空题（每空1分，共10分）": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：景深、孔径与对准距离"
+  },
+  "past-2012-engineering|三-1|三、作图题（12分）": {
+   "chapterId": "geom-ch3",
+   "topics": [
+    "geom-ch3-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：反射棱镜、屋脊与像方位"
+  },
+  "past-2012-engineering|三-2|三、作图题（12分）": {
+   "chapterId": "geom-ch4",
+   "topics": [
+    "geom-ch4-k6"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光阑、视场与远心综合计算"
+  },
+  "past-2012-engineering|四|四、计算题": {
+   "chapterId": "phys-ch9",
+   "topics": [
+    "phys-ch9-k1",
+    "phys-ch9-k2",
+    "phys-ch9-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：电磁光波、横波与平面波参数；波矢、方向余弦与空间频率；光强、磁场与平均能流"
+  },
+  "past-2012-engineering|五|五、计算题": {
+   "chapterId": "phys-ch10",
+   "topics": [
+    "phys-ch10-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：迈克耳孙干涉仪与测量"
+  },
+  "past-2012-engineering|六|六、计算题": {
+   "chapterId": "phys-ch11",
+   "topics": [
+    "phys-ch11-k12"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：光栅参数设计与综合计算"
+  },
+  "past-2012-engineering|七|七、计算题": {
+   "chapterId": "phys-ch12",
+   "topics": [
+    "phys-ch12-k3"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：4F 系统、空间滤波与像面分布"
+  },
+  "past-2012-engineering|八|八、计算题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k4"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：Jones 向量、矩阵与器件连乘"
+  },
+  "past-2012-engineering|九|九、作图题": {
+   "chapterId": "phys-ch13",
+   "topics": [
+    "phys-ch13-k11"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：惠更斯作图、波法线与折射方向"
+  },
+  "past-2012-engineering|十|十、计算题": {
+   "chapterId": "inst-c5",
+   "topics": [
+    "inst-c5-k5"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：显微镜倍率、瞳、视场与口径综合计算"
+  },
+  "past-2012-engineering|十一|十一、计算题": {
+   "chapterId": "exam-outofscope",
+   "topics": [
+    "exam-outofscope-k1"
+   ],
+   "reviewBasis": "逐题核读题面及必要选项，沿用现有知识点：超纲题目"
+  }
+ }
+}

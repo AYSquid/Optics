@@ -68,16 +68,17 @@
  function announce(text){const n=by('study-announcement');if(n)n.textContent=text;}
  function textOf(q){return (q.stem||[]).map(b=>b.x||(b.items||[]).join(' ')).join(' ').replace(/\s+/g,' ');}
  function context(q){const ch=findChapter(q.chapterId);return [ch?ch.num+' '+ch.title:'其他资料',q.year?q.year+' 年':null,q.typeName,'原题 '+q.number].filter(Boolean).join(' · ');}
- const isPaper=q=>(EXAMS.occurrences||[]).some(o=>o.questionId===canonical(q));
+ const isPaper=q=>matchesBankSource(q,'past');
  function category(q,value){
   if(value==='all')return true;
   if(value==='past')return isPaper(q);
+  if(value==='final')return matchesBankSource(q,'final');
   const ch=findChapter(q.chapterId);const group=ch?.subjectGroup||ch?.source;return value==='geom'?['geom','inst'].includes(group):group==='phys';
  }
  function questions(filter){return DATA.questions.filter(q=>q.playable!==false&&category(q,filter.category)&&(!filter.chapter||q.chapterId===filter.chapter));}
  function categories(host,filter,change){
   const row=node('div','study-filter-row');row.append(node('strong','study-filter-label','分类'));
-  [['all','全部'],['geom','几何光学'],['phys','物理光学'],['past','历年真题']].forEach(([value,name])=>{
+  [['all','全部'],['geom','几何光学'],['phys','物理光学'],['past','历年真题'],['final','期末试卷']].forEach(([value,name])=>{
    const b=btn(name,()=>{filter.category=value;filter.chapter='';change();},'study-chip');b.dataset.category=value;
    b.setAttribute('aria-pressed',String(filter.category===value));b.append(node('small',null,String(DATA.questions.filter(q=>q.playable!==false&&category(q,value)&&(filter!==favorites||favorite(q))).length)));row.append(b);
   });host.append(row);
@@ -220,7 +221,7 @@
  }
  function readToolRoute(){
   const m=mode();if(!m)return;const p=new URLSearchParams(location.hash.split('?')[1]||''),f=m==='mastery'?map:m==='favorites'?favorites:m==='knowledge'?graph:review;
-  f.category=['all','geom','phys','past'].includes(p.get('category'))?p.get('category'):'all';f.chapter=findChapter(p.get('chapter'))?p.get('chapter'):'';
+  f.category=['all','geom','phys','past','final'].includes(p.get('category'))?p.get('category'):'all';f.chapter=findChapter(p.get('chapter'))?p.get('chapter'):'';
   if(m==='mastery'){map.statuses=(p.get('status')||'').split(',').filter(v=>['none','known','shaky','unknown'].includes(v));map.attributes=(p.get('attr')||'').split(',').filter(v=>['favorite','notes'].includes(v));map.enhanced=p.get('enhanced')==='1';}
   if(m==='favorites'){f.search=(p.get('q')||'').slice(0,200);f.range=['7','30','90','custom'].includes(p.get('time'))?p.get('time'):'all';f.sort=p.get('sort')==='old'?'old':'new';f.page=Math.max(0,Math.min(1000,Number(p.get('page'))||0));f.from=/^\d{4}-\d{2}-\d{2}$/.test(p.get('from'))?p.get('from'):'';f.to=/^\d{4}-\d{2}-\d{2}$/.test(p.get('to'))?p.get('to'):'';}
   if(m==='knowledge'){graph.topic=location.hash.split('?')[0].split('/')[2]||'';graph.search=(p.get('q')||'').slice(0,200);graph.tab=p.get('tab')==='explain'?'explain':'questions';}

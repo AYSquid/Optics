@@ -337,12 +337,13 @@ function duplicateMarker(q) {
   var details = el('details', 'cross-duplicates');
   var same = matches.some(function (match) { return match.kind === 'same_question'; });
   var label = same ? '重复题' : '含重复子题';
-  details.appendChild(el('summary', 'badge b-cross-duplicate', label + ' · 与' + (q.sourceType === 'workbook' ? '真题' : '练习册') + '对照'));
+  var sourceNames=Array.from(new Set(matches.map(function(match){var other=DATA.byId[match.questionId];return other.sourceType==='workbook'?'练习册':other.sourceType==='final_exam'?'期末':other.sourceType==='past_exam'?'真题':'其他题目';})));
+  details.appendChild(el('summary', 'badge b-cross-duplicate', label + ' · 与' + (sourceNames.length===1?sourceNames[0]:'其他来源') + '对照'));
   var list = el('ul', 'cross-duplicate-list');
   matches.forEach(function (match) {
     var other = DATA.byId[match.questionId], li = el('li');
     var years = (match.examYears || []).join('、');
-    var name = other.sourceType === 'workbook' ? other.chapterNumber + ' ' + other.section + ' ' + other.number : years + ' 年真题 · ' + other.number;
+    var name = other.sourceType === 'workbook' ? other.chapterNumber + ' ' + other.section + ' ' + other.number : (other.paperTitle||(years?years+' 年真题':other.name||findChapter(other.chapterId)?.title||'题库')) + ' · ' + other.number;
     var button = el('button', 'cross-duplicate-link', name);
     button.type = 'button';
     button.onclick = function () {
@@ -363,29 +364,86 @@ function chapterOrderIndex(cid) {
   return 999;
 }
 
-var bankPaperCache={length:-1,ids:new Set()};
-function bankSource(){return ['all','workbook','past'].indexOf(ui.scope.bankSource)>=0?ui.scope.bankSource:'all';}
+var BANK_SOURCE_NAMES={all:'全部',workbook:'练习册',past:'真题',final:'期末'};
+var bankPaperCache={length:-1,past:new Set(),final:new Set()};
+function paperSourceKind(paper){return paper&&paper.kind==='final'?'final':'past';}
+function paperDisplayName(paper){return paper.title||(paper.year+' 年真题');}
+function bankSource(){
+ if(ui.scope.type==='exam'&&typeof EXAMS!=='undefined'){var paper=EXAMS.years.find(function(y){return y.id===ui.scope.paperId;});if(paper)return paperSourceKind(paper);}
+ return Object.prototype.hasOwnProperty.call(BANK_SOURCE_NAMES,ui.scope.bankSource)?ui.scope.bankSource:'all';
+}
 function matchesBankSource(q,source){
   if(!q)return false;source=source||bankSource();if(source==='all')return true;
   if(source==='workbook')return q.sourceType==='workbook'||/^engopt2-/.test(q.id);
   var occurrences=typeof EXAMS!=='undefined'?EXAMS.occurrences||[]:[];
-  if(bankPaperCache.length!==occurrences.length){bankPaperCache={length:occurrences.length,ids:new Set(occurrences.map(function(o){return o.questionId;}))};}
-  return bankPaperCache.ids.has(q.canonicalId||q.id);
+  if(bankPaperCache.length!==occurrences.length){
+    bankPaperCache={length:occurrences.length,past:new Set(),final:new Set()};
+    occurrences.forEach(function(o){bankPaperCache[o.kind==='final'?'final':'past'].add(o.questionId);});
+  }
+  return !!bankPaperCache[source]&&bankPaperCache[source].has(q.canonicalId||q.id);
 }
 function sourceChapterIds(ch){return DATA.questions.filter(function(q){return q.chapterId===ch.id&&q.playable!==false&&matchesBankSource(q);}).map(function(q){return q.id;});}
 function bankDirectoryChapters(){return orderedStudyChapters().filter(function(ch){return sourceChapterIds(ch).length;});}
 function normalizeChapterScope(scope){if(scope&&scope.chapterId&&DATA.chapterAliases?.[scope.chapterId])scope.chapterId=DATA.chapterAliases[scope.chapterId];return scope;}
 function setBankSource(value){
-  if(['all','workbook','past'].indexOf(value)<0||value===bankSource())return;
+  if(!Object.prototype.hasOwnProperty.call(BANK_SOURCE_NAMES,value))return;
+  if(value===bankSource()&&['all','chapter','kn'].indexOf(ui.scope.type)>=0)return;
   var scope=Object.assign({},ui.scope,{bankSource:value}),q=currentQuestion();
   if(['all','chapter','kn'].indexOf(scope.type)<0)scope={type:'all',bankSource:value};
   if(scope.type==='kn'&&!findKn(scope.chapterId,scope.knId)?.questionIds.some(function(id){return DATA.byId[id]?.playable!==false&&matchesBankSource(DATA.byId[id],value);}))scope={type:'chapter',chapterId:scope.chapterId,bankSource:value};
   if(scope.type==='chapter'&&!DATA.questions.some(function(q){return q.chapterId===scope.chapterId&&q.playable!==false&&matchesBankSource(q,value);}))scope={type:'all',bankSource:value};
-  setScope(scope,{keepExpansion:true,keepNav:true,keepQuestionId:q?.id});
+  location.hash='/resume';setScope(scope,{keepExpansion:true,keepNav:true,keepQuestionId:q?.id});
 }
+function closeBankSourceMenu(){var picker=document.querySelector('.bank-source-picker[open]');if(picker)picker.open=false;}
+function snapshotBankSourceMenu(host){
+ var picker=host.querySelector('.bank-source-picker');if(!picker||!picker.open)return null;
+ var active=document.activeElement,focus=picker._pendingMenuFocus||null;
+ if(picker.contains(active)){focus={};['data-bank-source','data-paper-id','data-bank-chapter','data-bank-chapter-source','aria-controls'].forEach(function(key){if(active.hasAttribute(key))focus[key]=active.getAttribute(key);});}
+ return {expanded:Array.from(picker.querySelectorAll('.bank-submenu-toggle[aria-expanded="true"]')).map(function(b){return b.getAttribute('aria-controls');}),focus:focus};
+}
+function restoreBankSourceMenu(host,state){
+ if(!state)return;var picker=host.querySelector('.bank-source-picker');if(!picker)return;
+ picker.querySelectorAll('.bank-submenu-toggle').forEach(function(toggle){if(state.expanded.indexOf(toggle.getAttribute('aria-controls'))<0)return;toggle.setAttribute('aria-expanded','true');toggle.textContent='⌄';picker.querySelector('#'+toggle.getAttribute('aria-controls')).hidden=false;});
+ picker._pendingMenuFocus=state.focus;picker.open=true;
+}
+function restoreBankSourceFocus(picker){
+ var focus=picker._pendingMenuFocus;if(!focus||!picker.isConnected)return;
+ var target=Array.from(picker.querySelectorAll('button')).find(function(b){return Object.keys(focus).length&&Object.keys(focus).every(function(key){return b.getAttribute(key)===focus[key];});})||picker.querySelector('summary');
+ if(target.getClientRects().length){target.focus({preventScroll:true});delete picker._pendingMenuFocus;}
+}
+document.addEventListener('pointerdown',function(event){var picker=document.querySelector('.bank-source-picker[open]');if(picker&&!picker.contains(event.target))picker.open=false;});
+window.addEventListener('resize',closeBankSourceMenu);
 function bankSourceControl(){
- var row=el('div','bank-source-row'),label=el('span','bank-source-label','题库'),group=el('div','bank-source-switch');group.setAttribute('role','group');group.setAttribute('aria-label','题库来源');
- [['all','全部'],['workbook','练习册'],['past','真题']].forEach(function(pair){var b=el('button','bank-source-option',pair[1]);b.type='button';b.dataset.bankSource=pair[0];b.setAttribute('aria-pressed',String(bankSource()===pair[0]));b.onclick=function(){setBankSource(pair[0]);};group.appendChild(b);});row.append(label,group);return row;
+ var row=el('div','bank-source-row'),label=el('span','bank-source-label','题库'),picker=el('details','bank-source-picker'),summary=el('summary'),menu=el('div','bank-source-menu');
+ summary.append(el('span',null,BANK_SOURCE_NAMES[bankSource()]),el('span','bank-source-arrow','⌄'));summary.setAttribute('aria-label','选择题库来源，当前'+BANK_SOURCE_NAMES[bankSource()]);
+ menu.setAttribute('popover','manual');menu.setAttribute('aria-label','题库来源与章节或试卷');if(!menu.showPopover)menu.hidden=true;
+ function position(){
+  var r=summary.getBoundingClientRect(),width=Math.min(370,innerWidth-24),below=innerHeight-r.bottom-18,above=r.top-18,up=below<280&&above>below;
+  menu.style.width=width+'px';menu.style.left=Math.max(12,Math.min(r.left,innerWidth-width-12))+'px';menu.style.right='auto';menu.style.maxHeight=Math.max(140,Math.min(520,up?above:below))+'px';menu.style.top=up?'auto':(r.bottom+6)+'px';menu.style.bottom=up?(innerHeight-r.top+6)+'px':'auto';
+ }
+ Object.keys(BANK_SOURCE_NAMES).forEach(function(source){
+  var section=el('section','bank-source-group'),head=el('div','bank-source-group-head'),choose=el('button','bank-source-choice'),toggle=el('button','bank-submenu-toggle','›'),children=el('div','bank-source-submenu');
+  choose.type=toggle.type='button';choose.dataset.bankSource=source;choose.setAttribute('aria-pressed',String(bankSource()===source));
+  var count=DATA.questions.filter(function(q){return q.playable!==false&&matchesBankSource(q,source);}).length;
+  choose.append(el('span',null,BANK_SOURCE_NAMES[source]),el('small',null,count+' 题'));
+  choose.onclick=function(){picker.open=false;setBankSource(source);};
+  children.hidden=true;children.id='bank-submenu-'+source;toggle.setAttribute('aria-label','展开'+BANK_SOURCE_NAMES[source]+(['past','final'].indexOf(source)>=0?'试卷':'章节'));toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls',children.id);
+  toggle.onclick=function(){children.hidden=!children.hidden;toggle.setAttribute('aria-expanded',String(!children.hidden));toggle.textContent=children.hidden?'›':'⌄';};
+  var papers=typeof EXAMS!=='undefined'?EXAMS.years.filter(function(y){return paperSourceKind(y)===source;}).slice().sort(function(a,b){return b.year-a.year||paperDisplayName(a).localeCompare(paperDisplayName(b),'zh-CN');}):[];
+  if(source==='past'||source==='final')papers.forEach(function(paper){
+    var button=el('button','bank-submenu-option');button.type='button';button.dataset.paperId=paper.id;button.append(el('span',null,paperDisplayName(paper)),el('small',null,paper.count+' 题'));button.onclick=function(){picker.open=false;location.hash='/year/'+encodeURIComponent(paper.id);openExam(paper.id);};children.appendChild(button);
+  });
+  else orderedStudyChapters().forEach(function(ch){
+    var ids=DATA.questions.filter(function(q){return q.chapterId===ch.id&&q.playable!==false&&matchesBankSource(q,source);});if(!ids.length)return;
+    var button=el('button','bank-submenu-option');button.type='button';button.dataset.bankChapter=ch.id;button.dataset.bankChapterSource=source;button.append(el('span',null,ch.num+' '+ch.title),el('small',null,ids.length+' 题'));button.onclick=function(){picker.open=false;location.hash='/resume';setScope({type:'chapter',chapterId:ch.id,bankSource:source},{keepExpansion:true});};children.appendChild(button);
+  });
+  if(!children.childNodes.length)children.appendChild(el('p','bank-source-empty','暂无可选试卷'));
+  head.append(choose,toggle);section.append(head,children);menu.appendChild(section);
+ });
+ picker.append(summary,menu);picker.addEventListener('toggle',function(){if(!picker.isConnected)return;if(picker.open){position();menu.hidden=false;if(menu.showPopover)menu.showPopover();restoreBankSourceFocus(picker);}else{if(menu.hidePopover&&menu.matches(':popover-open'))menu.hidePopover();else menu.hidden=true;}});
+ menu.addEventListener('toggle',function(e){if(e.newState==='closed')picker.open=false;else restoreBankSourceFocus(picker);});
+ picker.addEventListener('keydown',function(e){e.stopPropagation();if(e.key==='Escape'){picker.open=false;summary.focus({preventScroll:true});}});
+ row.append(label,picker);return row;
 }
 
 function buildScopeIds() {
@@ -417,7 +475,7 @@ function buildScopeIds() {
 }
 
 function matchesFilter(qid, filter) {
-  if(DATA.byId[qid]?.playable===false)return false;
+  if(DATA.byId[qid]?.playable===false)return ui.scope.type==='exam'&&filter==='all';
   if (filter === 'all') return true;
   var st = getStatus(statusKeyOf(DATA.byId[qid]));
   if (filter === 'none') return st === '';
@@ -441,7 +499,7 @@ function findKn(cid, kid) {
 
 function scopeTitle() {
   if (ui.scope.type === 'list') return ui.scope.name || '筛选题单';
-  if (ui.scope.type === 'all') return bankSource()==='workbook'?'练习册题目':bankSource()==='past'?'真题题目':'全部题目';
+  if (ui.scope.type === 'all') return bankSource()==='all'?'全部题目':BANK_SOURCE_NAMES[bankSource()]+'题目';
   if (ui.scope.type === 'chapter') {
     var c = findChapter(ui.scope.chapterId);
     return c ? (c.num + ' ' + c.title) : '未知章节';
@@ -494,6 +552,7 @@ function orderedStudyChapters() {
 
 function renderTree() {
   var treeHost = $('tree');
+  var sourceMenuState=snapshotBankSourceMenu(treeHost);
   var sidebarScroll = treeHost.closest('.sidebar-scroll');
   var sidebarTop = sidebarScroll ? sidebarScroll.scrollTop : 0;
   var focusedScope = treeHost.contains(document.activeElement) ? document.activeElement.dataset.treeScope : '';
@@ -506,7 +565,7 @@ function renderTree() {
   var rootNode = el('div', 'tree-node');
   var rootBtn = el('button', 'tree-root-btn tree-btn' + (ui.scope.type === 'all' ? ' is-current' : ''));
   rootBtn.type = 'button';
-  rootBtn.appendChild(el('span', 'tree-name', bankSource()==='workbook'?'练习册题目':bankSource()==='past'?'真题题目':'全部题目'));
+  rootBtn.appendChild(el('span', 'tree-name', bankSource()==='all'?'全部题目':BANK_SOURCE_NAMES[bankSource()]+'题目'));
   var allCnt = DATA.questions.filter(function(q){return q.playable!==false&&matchesBankSource(q);}).length;
   var allMatch = DATA.questions.filter(function (q) { return matchesBankSource(q)&&matchesFilter(q.id, ui.statusFilter); }).length;
   rootBtn.appendChild(countBadge(allCnt, allMatch));
@@ -596,12 +655,13 @@ function renderTree() {
     group.appendChild(node);
   });
   treeHost.replaceChildren(tree);
-  if(focusedSource)treeHost.querySelector('[data-bank-source="'+focusedSource+'"]')?.focus({preventScroll:true});
+  if(focusedSource)treeHost.querySelector('.bank-source-picker>summary')?.focus({preventScroll:true});
   if (focusedScope) {
     var focusTarget = treeHost.querySelector('[data-tree-scope="' + focusedScope + '"]');
     if (focusTarget) focusTarget.focus({preventScroll:true});
   }
   if (sidebarScroll) sidebarScroll.scrollTop = sidebarTop;
+  restoreBankSourceMenu(treeHost,sourceMenuState);
 }
 
 function countBadge(total, match) {
@@ -733,7 +793,7 @@ function renderQuestionSource(q) {
   source.appendChild(el('summary', null, notes.length ? '题目来源及注解' : '题目来源'));
   var panel = el('div', 'source-panel');
   panel.appendChild(el('p', 'source-origin', q.sourceLabel + '／' + (q.origin && q.origin.file ? q.origin.file : '—') +
-    (q.origin && q.origin.line ? ' 第 ' + q.origin.line + ' 行' : '')));
+    (q.origin && q.origin.line ? ' 第 ' + q.origin.line + ' 行' : q.origin && q.origin.page ? ' 第 '+q.origin.page+' 页' : '')));
   if (q.origin && q.origin.reference) {
     var ref = el('p'); renderInline(q.origin.reference, ref); panel.appendChild(ref);
   }
@@ -747,6 +807,11 @@ function renderQuestionSource(q) {
     panel.appendChild(el('h4', 'source-heading', '原始题目记录'));
     var original = el('p', 'source-original'); renderInline(q.originalText, original); panel.appendChild(original);
   }
+  [['sourcePageImages','原卷参考照片'],['sourceAnswerImages','原参考答案照片']].forEach(function(pair){
+    var images=q[pair[0]]||[];if(!images.length)return;
+    var group=el('details','source-scan-group');group.appendChild(el('summary',null,pair[1]+'（'+images.length+'）'));
+    group.addEventListener('toggle',function(){if(!group.open||group.dataset.loaded)return;group.dataset.loaded='true';var gallery=el('div','source-scan-gallery');images.forEach(function(im){var src=typeof im==='string'?im:im.src;if(src)gallery.appendChild(figureNode(src,pair[1]));});group.appendChild(gallery);});panel.appendChild(group);
+  });
   source.appendChild(panel);
   return source;
 }

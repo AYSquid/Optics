@@ -1,0 +1,1122 @@
+{
+  "reviewedAt": "2026-10-19",
+  "pairs": [
+    {
+      "questionId": "import-20261019-past-2005-physical-fe11a3a2cc69",
+      "existingQuestionId": "past-2020-7e3d71d602ac5cd3",
+      "kind": "same_question",
+      "reason": "均为平行光垂直照明的牛顿环，凸透镜与平板间距拉大，问同级条纹如何变化；未与“间距缩小”版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-c30857c4e993",
+      "existingQuestionId": "past-2020-7e3d71d602ac5cd3",
+      "kind": "same_question",
+      "reason": "均为平行光垂直照明的牛顿环，凸透镜与平板间距拉大，问同级条纹如何变化；未与“间距缩小”版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-7d7be21e6ec6",
+      "existingQuestionId": "past-2020-7e3d71d602ac5cd3",
+      "kind": "same_question",
+      "reason": "均为平行光垂直照明的牛顿环，凸透镜与平板间距拉大，问同级条纹如何变化；未与“间距缩小”版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-f890b1e071fd",
+      "existingQuestionId": "past-2023-0313c5fdc4f2533d",
+      "kind": "same_question",
+      "reason": "均为无吸收高反射率平行平板，相邻光束光程差为整数波长，比较反射/透射强度；正确物理结论及现有选项对应，练习册仅多一个干扰项。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-f890b1e071fd",
+      "existingQuestionId": "engopt2-ch09-exercise-一_choice-18",
+      "kind": "same_question",
+      "reason": "均为无吸收高反射率平行平板，相邻光束光程差为整数波长，比较反射/透射强度；正确物理结论及现有选项对应，练习册仅多一个干扰项。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-923f03aef399",
+      "existingQuestionId": "past-2019-e7e91d15cf3cbbea",
+      "kind": "same_question",
+      "reason": "已逐项核对N1=600、N2=1800，且所求均为I2/I1；选项顺序或干扰项个数差异不改变同题，未匹配1200刻线或I1/I2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-923f03aef399",
+      "existingQuestionId": "engopt2-ch10-exercise-一_choice-14",
+      "kind": "same_question",
+      "reason": "已逐项核对N1=600、N2=1800，且所求均为I2/I1；选项顺序或干扰项个数差异不改变同题，未匹配1200刻线或I1/I2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-7d7be21e6ec6",
+      "existingQuestionId": "past-2019-e7e91d15cf3cbbea",
+      "kind": "same_question",
+      "reason": "已逐项核对N1=600、N2=1800，且所求均为I2/I1；选项顺序或干扰项个数差异不改变同题，未匹配1200刻线或I1/I2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-7d7be21e6ec6",
+      "existingQuestionId": "engopt2-ch10-exercise-一_choice-14",
+      "kind": "same_question",
+      "reason": "已逐项核对N1=600、N2=1800，且所求均为I2/I1；选项顺序或干扰项个数差异不改变同题，未匹配1200刻线或I1/I2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-7d7be21e6ec6",
+      "existingQuestionId": "phys-ch11-q11-1",
+      "kind": "same_question",
+      "reason": "已逐项核对N1=600、N2=1800，且所求均为I2/I1；选项顺序或干扰项个数差异不改变同题，未匹配1200刻线或I1/I2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-923f03aef399",
+      "existingQuestionId": "past-2019-e7e91d15cf3cbbea",
+      "kind": "same_question",
+      "reason": "已逐项核对N1=600、N2=1800，且所求均为I2/I1；选项顺序或干扰项个数差异不改变同题，未匹配1200刻线或I1/I2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-923f03aef399",
+      "existingQuestionId": "engopt2-ch10-exercise-一_choice-14",
+      "kind": "same_question",
+      "reason": "已逐项核对N1=600、N2=1800，且所求均为I2/I1；选项顺序或干扰项个数差异不改变同题，未匹配1200刻线或I1/I2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-923f03aef399",
+      "existingQuestionId": "phys-ch11-q11-1",
+      "kind": "same_question",
+      "reason": "已逐项核对N1=600、N2=1800，且所求均为I2/I1；选项顺序或干扰项个数差异不改变同题，未匹配1200刻线或I1/I2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-295808e89ade",
+      "existingQuestionId": "past-2023-f762b14cfd6149bc",
+      "kind": "same_question",
+      "reason": "均为自然光直接通过1/4波片，未经过起偏器，问输出偏振态；四个备选偏振态一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-243ba8cf824d",
+      "existingQuestionId": "past-2023-f762b14cfd6149bc",
+      "kind": "same_question",
+      "reason": "均为自然光直接通过1/4波片，未经过起偏器，问输出偏振态；四个备选偏振态一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-3abedde19850",
+      "existingQuestionId": "past-2022-5efae1735f3c5989",
+      "kind": "same_question",
+      "reason": "均为同一圆形出瞳，给相干截止频率ρ1与非相干截止频率ρ2，所求为ρ2/ρ1；已排除倒数ρ1/ρ2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-6ffbda131a3a",
+      "existingQuestionId": "past-2022-5efae1735f3c5989",
+      "kind": "same_question",
+      "reason": "均为同一圆形出瞳，给相干截止频率ρ1与非相干截止频率ρ2，所求为ρ2/ρ1；已排除倒数ρ1/ρ2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-6ffbda131a3a",
+      "existingQuestionId": "past-2022-5efae1735f3c5989",
+      "kind": "same_question",
+      "reason": "均为同一圆形出瞳，给相干截止频率ρ1与非相干截止频率ρ2，所求为ρ2/ρ1；已排除倒数ρ1/ρ2版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-6ffbda131a3a",
+      "existingQuestionId": "past-2018-68a470a8e72d592d",
+      "kind": "same_question",
+      "reason": "单轴晶体中H、D、E、k、S的四组相互垂直关系选择，四组选项逐项相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-7d7be21e6ec6",
+      "existingQuestionId": "past-2020-771d669f086baaac",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-7d7be21e6ec6",
+      "existingQuestionId": "past-2023-7fe920f073f9a5ed",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-7d7be21e6ec6",
+      "existingQuestionId": "past-2017-66698583063ca4c4",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2026-7e5e886ec3ee881d",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2017-66698583063ca4c4",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2020-771d669f086baaac",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-898b55991902",
+      "existingQuestionId": "past-2026-7e5e886ec3ee881d",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-898b55991902",
+      "existingQuestionId": "past-2017-66698583063ca4c4",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-898b55991902",
+      "existingQuestionId": "past-2020-771d669f086baaac",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-7d7be21e6ec6",
+      "existingQuestionId": "past-2026-7e5e886ec3ee881d",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-7d7be21e6ec6",
+      "existingQuestionId": "past-2017-66698583063ca4c4",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-7d7be21e6ec6",
+      "existingQuestionId": "past-2020-771d669f086baaac",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-7d7be21e6ec6",
+      "existingQuestionId": "past-2017-66698583063ca4c4",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-7d7be21e6ec6",
+      "existingQuestionId": "past-2026-7e5e886ec3ee881d",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-7d7be21e6ec6",
+      "existingQuestionId": "past-2020-771d669f086baaac",
+      "kind": "same_question",
+      "reason": "均在相干成像频谱面只透过−1、+2级，求像光栅空间频率相对原频率的倍数；填空/选择或选项顺序变化，级次及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-8ae0b1ec6567",
+      "existingQuestionId": "past-2018-aa8b40169aa7b78e",
+      "kind": "same_question",
+      "reason": "均为观察原子光谱超精细结构选择分光系统，棱镜、F-P干涉仪、光栅等选项对应；2005原卷F-B字样为同一干涉仪的印刷异文。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-8ae0b1ec6567",
+      "existingQuestionId": "past-2022-96d92713c7cc68d7",
+      "kind": "same_question",
+      "reason": "均为观察原子光谱超精细结构选择分光系统，棱镜、F-P干涉仪、光栅等选项对应；2005原卷F-B字样为同一干涉仪的印刷异文。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-8ae0b1ec6567",
+      "existingQuestionId": "past-2025-679c3f3bb6e445e3",
+      "kind": "same_question",
+      "reason": "均为观察原子光谱超精细结构选择分光系统，棱镜、F-P干涉仪、光栅等选项对应；2005原卷F-B字样为同一干涉仪的印刷异文。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-3abedde19850",
+      "existingQuestionId": "past-2022-96d92713c7cc68d7",
+      "kind": "same_question",
+      "reason": "均为观察原子光谱超精细结构选择分光系统，棱镜、F-P干涉仪、光栅等选项对应；2005原卷F-B字样为同一干涉仪的印刷异文。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-3abedde19850",
+      "existingQuestionId": "past-2018-aa8b40169aa7b78e",
+      "kind": "same_question",
+      "reason": "均为观察原子光谱超精细结构选择分光系统，棱镜、F-P干涉仪、光栅等选项对应；2005原卷F-B字样为同一干涉仪的印刷异文。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-3abedde19850",
+      "existingQuestionId": "past-2025-679c3f3bb6e445e3",
+      "kind": "same_question",
+      "reason": "均为观察原子光谱超精细结构选择分光系统，棱镜、F-P干涉仪、光栅等选项对应；2005原卷F-B字样为同一干涉仪的印刷异文。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-c30857c4e993",
+      "existingQuestionId": "past-2020-ff81dfc1064219ff",
+      "kind": "same_question",
+      "reason": "均只开放中央第一半波带，I1为该强度、I2为无遮挡无限波面强度，所求均I2/I1；未与开放1、2、3带或求倒数的版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-c30857c4e993",
+      "existingQuestionId": "phys-ch11-q11-2",
+      "kind": "same_question",
+      "reason": "均只开放中央第一半波带，I1为该强度、I2为无遮挡无限波面强度，所求均I2/I1；未与开放1、2、3带或求倒数的版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-aec6dced3090",
+      "existingQuestionId": "phys-ch9-q9-1",
+      "kind": "same_question",
+      "reason": "电场完整表达式(2x₀−2√3y₀)exp[i(√3x+y+6×10⁸t)]相同，六项所求偏振、方向、相速、振幅、频率、波长全部对应。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-0164b35e110c",
+      "existingQuestionId": "engopt2-ch11-example-example-11-9",
+      "kind": "same_question",
+      "reason": "起偏器和1/4波片快轴沿x，待测波片快轴45°，以输出线偏振方位角测相位延迟；装置顺序、轴向、琼斯证明要求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-b5d836c59a1a",
+      "existingQuestionId": "engopt2-ch11-example-example-11-9",
+      "kind": "same_question",
+      "reason": "起偏器和1/4波片快轴沿x，待测波片快轴45°，以输出线偏振方位角测相位延迟；装置顺序、轴向、琼斯证明要求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-3abedde19850",
+      "existingQuestionId": "past-2020-22177251d171f1c7",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-3abedde19850",
+      "existingQuestionId": "past-2022-fbbbc42b1d584b3d",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-3abedde19850",
+      "existingQuestionId": "phys-ch13-q13-2",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-243ba8cf824d",
+      "existingQuestionId": "past-2020-22177251d171f1c7",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-243ba8cf824d",
+      "existingQuestionId": "past-2022-fbbbc42b1d584b3d",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-243ba8cf824d",
+      "existingQuestionId": "phys-ch13-q13-2",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2020-22177251d171f1c7",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2022-fbbbc42b1d584b3d",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-160c5c1e4502",
+      "existingQuestionId": "phys-ch13-q13-2",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2020-22177251d171f1c7",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2022-fbbbc42b1d584b3d",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-160c5c1e4502",
+      "existingQuestionId": "phys-ch13-q13-2",
+      "kind": "same_question",
+      "reason": "均问单轴晶体e光有效相折射率除no、ne外取决于哪个方向夹角；四种波法线/光线与光轴/界面法线的组合相同，仅排列或记号变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2023-c36c2e85a7c057bc",
+      "kind": "same_question",
+      "reason": "均问全息照相记录物体光波何种信息，备选为振幅、复振幅、强度、位相；题意和选项一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2016-95e982c990f96b5d",
+      "kind": "same_question",
+      "reason": "均问全息照相记录物体光波何种信息，备选为振幅、复振幅、强度、位相；题意和选项一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-c9b9e21ce360",
+      "existingQuestionId": "past-2023-c36c2e85a7c057bc",
+      "kind": "same_question",
+      "reason": "均问全息照相记录物体光波何种信息，备选为振幅、复振幅、强度、位相；题意和选项一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-c9b9e21ce360",
+      "existingQuestionId": "past-2016-95e982c990f96b5d",
+      "kind": "same_question",
+      "reason": "均问全息照相记录物体光波何种信息，备选为振幅、复振幅、强度、位相；题意和选项一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-243ba8cf824d",
+      "existingQuestionId": "past-2026-740bf11f287aba0f",
+      "kind": "same_question",
+      "reason": "均用1/4波片加旋转检偏器鉴别自然光、圆偏振光和部分圆偏振光，观察为“两亮两黑”；未与“两亮两半暗”版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-243ba8cf824d",
+      "existingQuestionId": "engopt2-ch11-exercise-一_choice-13",
+      "kind": "same_question",
+      "reason": "均用1/4波片加旋转检偏器鉴别自然光、圆偏振光和部分圆偏振光，观察为“两亮两黑”；未与“两亮两半暗”版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2026-740bf11f287aba0f",
+      "kind": "same_question",
+      "reason": "均用1/4波片加旋转检偏器鉴别自然光、圆偏振光和部分圆偏振光，观察为“两亮两黑”；未与“两亮两半暗”版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-8ae0b1ec6567",
+      "existingQuestionId": "engopt2-ch11-exercise-一_choice-13",
+      "kind": "same_question",
+      "reason": "均用1/4波片加旋转检偏器鉴别自然光、圆偏振光和部分圆偏振光，观察为“两亮两黑”；未与“两亮两半暗”版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-898b55991902",
+      "existingQuestionId": "past-2026-740bf11f287aba0f",
+      "kind": "same_question",
+      "reason": "均用1/4波片加旋转检偏器鉴别自然光、圆偏振光和部分圆偏振光，观察为“两亮两黑”；未与“两亮两半暗”版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-898b55991902",
+      "existingQuestionId": "engopt2-ch11-exercise-一_choice-13",
+      "kind": "same_question",
+      "reason": "均用1/4波片加旋转检偏器鉴别自然光、圆偏振光和部分圆偏振光，观察为“两亮两黑”；未与“两亮两半暗”版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-c9b9e21ce360",
+      "existingQuestionId": "past-2020-45c52f5513508461",
+      "kind": "same_question",
+      "reason": "均为布儒斯特角入射，选择反射/折射光的s/p分量何者为零，四个物理选项相同，仅顺序变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-c9b9e21ce360",
+      "existingQuestionId": "past-2016-e7e91d15cf3cbbea",
+      "kind": "same_question",
+      "reason": "均为布儒斯特角入射，选择反射/折射光的s/p分量何者为零，四个物理选项相同，仅顺序变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-c9b9e21ce360",
+      "existingQuestionId": "engopt2-ch11-exercise-一_choice-14",
+      "kind": "same_question",
+      "reason": "均为布儒斯特角入射，选择反射/折射光的s/p分量何者为零，四个物理选项相同，仅顺序变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-3abedde19850",
+      "existingQuestionId": "past-2020-45c52f5513508461",
+      "kind": "same_question",
+      "reason": "均为布儒斯特角入射，选择反射/折射光的s/p分量何者为零，四个物理选项相同，仅顺序变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-3abedde19850",
+      "existingQuestionId": "past-2016-e7e91d15cf3cbbea",
+      "kind": "same_question",
+      "reason": "均为布儒斯特角入射，选择反射/折射光的s/p分量何者为零，四个物理选项相同，仅顺序变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-3abedde19850",
+      "existingQuestionId": "engopt2-ch11-exercise-一_choice-14",
+      "kind": "same_question",
+      "reason": "均为布儒斯特角入射，选择反射/折射光的s/p分量何者为零，四个物理选项相同，仅顺序变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-456efdd7e3a7",
+      "existingQuestionId": "past-2017-247e6b2a92ae4de4",
+      "kind": "same_question",
+      "reason": "均为一块n=1.5平板，光从空气垂直通过，不计吸收，求透过能量比例；选择与填空问法不同，单片条件和所求一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-3bb435d5d2a6",
+      "existingQuestionId": "past-2020-baad089ef2c8291b",
+      "kind": "same_question",
+      "reason": "牛顿环检验的λ=600nm、R0=100mm、口径50mm、第3非零暗环半径15mm完全相同，均求R及最多暗环数。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-3bb435d5d2a6",
+      "existingQuestionId": "past-2026-06f1df120fd02bf9",
+      "kind": "same_question",
+      "reason": "牛顿环检验的λ=600nm、R0=100mm、口径50mm、第3非零暗环半径15mm完全相同，均求R及最多暗环数。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-295808e89ade",
+      "existingQuestionId": "past-2022-1da8f60b6379d348",
+      "kind": "same_question",
+      "reason": "远物摄影取大景深的四组焦距、相对孔径、对准距离选项逐项相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2026-416f8b7f8c283435",
+      "kind": "same_question",
+      "reason": "均为单色平面波垂直照物，透镜后焦面观察功率谱/频谱相对分布，问物体应放何处；条件和三个实质选项一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2023-69f3edf0f5c84b1d",
+      "kind": "same_question",
+      "reason": "均为单色平面波垂直照物，透镜后焦面观察功率谱/频谱相对分布，问物体应放何处；条件和三个实质选项一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-6ffbda131a3a",
+      "existingQuestionId": "past-2023-69f3edf0f5c84b1d",
+      "kind": "same_question",
+      "reason": "均为单色平面波垂直照物，透镜后焦面观察功率谱/频谱相对分布，问物体应放何处；条件和三个实质选项一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-6ffbda131a3a",
+      "existingQuestionId": "past-2026-416f8b7f8c283435",
+      "kind": "same_question",
+      "reason": "均为单色平面波垂直照物，透镜后焦面观察功率谱/频谱相对分布，问物体应放何处；条件和三个实质选项一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-c9b9e21ce360",
+      "existingQuestionId": "engopt2-ch10-exercise-一_choice-8",
+      "kind": "same_question",
+      "reason": "相同半径圆盘与圆孔的夫琅和费衍射图样比较，同一互补屏形状和中心以外强度结论；未匹配单缝/细线的另一几何版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-456efdd7e3a7",
+      "existingQuestionId": "past-2018-a987259740457e67",
+      "kind": "same_question",
+      "reason": "两n=1.5等腰直角棱镜斜面相对、空气间隔λ/2，垂直入射第一棱镜直角面，问第二棱镜有无透射；新题n值见题图，与旧题一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-e32bb16f6a8e",
+      "existingQuestionId": "past-2021-d606eb167e14d751",
+      "kind": "same_question",
+      "reason": "玻璃表面单层增透膜，问膜折射率与空气、玻璃折射率的大小关系；题意和有效选项对应。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-e32bb16f6a8e",
+      "existingQuestionId": "past-2018-4f4fd9b3f50b869d",
+      "kind": "same_question",
+      "reason": "玻璃表面单层增透膜，问膜折射率与空气、玻璃折射率的大小关系；题意和有效选项对应。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-e32bb16f6a8e",
+      "existingQuestionId": "engopt2-ch09-exercise-一_choice-20",
+      "kind": "same_question",
+      "reason": "玻璃表面单层增透膜，问膜折射率与空气、玻璃折射率的大小关系；题意和有效选项对应。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-4f1b2ba6bca5",
+      "existingQuestionId": "inst-c2-t1",
+      "kind": "same_question",
+      "reason": "斜平行光与光轴夹角W、焦平面像高y′，均求f′=y′/tanW，无不同数值条件。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-ceab47302c9c",
+      "existingQuestionId": "past-2024-220a41ee2575c823",
+      "kind": "same_question",
+      "reason": "渐变折射率圆片λ=550nm、d=1mm、D=5mm、n=1.5−βr²、β=0.005/mm²完全相同，均证明等效透镜并求焦距、理论分辨率。"
+    },
+    {
+      "questionId": "import-20261019-past-2011-engineering-51c8509e8472",
+      "existingQuestionId": "past-2024-220a41ee2575c823",
+      "kind": "same_question",
+      "reason": "渐变折射率圆片λ=550nm、d=1mm、D=5mm、n=1.5−βr²、β=0.005/mm²完全相同，均证明等效透镜并求焦距、理论分辨率。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-3268f9020fee",
+      "existingQuestionId": "past-2021-77e61a60cca04cd9",
+      "kind": "same_question",
+      "reason": "45°起偏器、第一1/4波片快轴沿y，均求第一片输出态及第二片如何使输出与起偏器垂直，并要求琼斯验证。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-3abedde19850",
+      "existingQuestionId": "past-2018-6b12bcc9ca291714",
+      "kind": "same_question",
+      "reason": "各向同性到各向异性界面的折射，均问除o光线外e光线/波法线何者满足折射定律；三项相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-3abedde19850",
+      "existingQuestionId": "past-2023-07966f73607fbb34",
+      "kind": "same_question",
+      "reason": "各向同性到各向异性界面的折射，均问除o光线外e光线/波法线何者满足折射定律；三项相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2018-6b12bcc9ca291714",
+      "kind": "same_question",
+      "reason": "各向同性到各向异性界面的折射，均问除o光线外e光线/波法线何者满足折射定律；三项相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2023-07966f73607fbb34",
+      "kind": "same_question",
+      "reason": "各向同性到各向异性界面的折射，均问除o光线外e光线/波法线何者满足折射定律；三项相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2018-6b12bcc9ca291714",
+      "kind": "same_question",
+      "reason": "各向同性到各向异性界面的折射，均问除o光线外e光线/波法线何者满足折射定律；三项相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2023-07966f73607fbb34",
+      "kind": "same_question",
+      "reason": "各向同性到各向异性界面的折射，均问除o光线外e光线/波法线何者满足折射定律；三项相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-6ffbda131a3a",
+      "existingQuestionId": "engopt2-ch09-exercise-一_choice-1",
+      "kind": "same_question",
+      "reason": "四个干涉条件频率相同、初相位相同、振动方向相同、光程差小于波列长度逐项相同，均问哪项非必要。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-f890b1e071fd",
+      "existingQuestionId": "engopt2-ch09-exercise-一_choice-1",
+      "kind": "same_question",
+      "reason": "四个干涉条件频率相同、初相位相同、振动方向相同、光程差小于波列长度逐项相同，均问哪项非必要。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-7d7be21e6ec6",
+      "existingQuestionId": "past-2020-29ae3327db12fe54",
+      "kind": "same_question",
+      "reason": "两理想偏振片、自然光、透射强度为入射1/3，求轴夹角；三个数值选项相同，未匹配1/4或1/8强度版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2021-16d98cae9ba445ab",
+      "kind": "same_question",
+      "reason": "三个全同小圆孔的夫琅和费图样，均在几何像、强度和、复振幅和之间选择；孔数和叠加问题完全一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2016-6edf05d13451bc6f",
+      "kind": "same_question",
+      "reason": "三个全同小圆孔的夫琅和费图样，均在几何像、强度和、复振幅和之间选择；孔数和叠加问题完全一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-8ae0b1ec6567",
+      "existingQuestionId": "past-2026-d495ec0163831499",
+      "kind": "same_question",
+      "reason": "三个全同小圆孔的夫琅和费图样，均在几何像、强度和、复振幅和之间选择；孔数和叠加问题完全一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-c30857c4e993",
+      "existingQuestionId": "past-2018-205247028d846679",
+      "kind": "same_question",
+      "reason": "圆形出瞳、相干截止ρ0、非相干传函在ρ=1.5ρ0处取值，四个区间选项相同；未与ρ=ρ0版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2019-21d90394e5c566c8",
+      "kind": "same_question",
+      "reason": "玻璃基板n=1.5、ZnS膜n=2.38、光学厚度λ0/2，均求λ0处膜的作用；没有匹配λ0/4版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-160c5c1e4502",
+      "existingQuestionId": "past-2016-a1bedf5c37e7dbe5",
+      "kind": "same_question",
+      "reason": "玻璃基板n=1.5、ZnS膜n=2.38、光学厚度λ0/2，均求λ0处膜的作用；没有匹配λ0/4版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-456efdd7e3a7",
+      "existingQuestionId": "past-2016-3f206dbbec0b73bc",
+      "kind": "same_question",
+      "reason": "宽a单缝与直径a细线的互补屏夫琅和费图样比较，形状、尺寸符号及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-456efdd7e3a7",
+      "existingQuestionId": "past-2022-3e83abd22be32f89",
+      "kind": "same_question",
+      "reason": "宽a单缝与直径a细线的互补屏夫琅和费图样比较，形状、尺寸符号及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-456efdd7e3a7",
+      "existingQuestionId": "past-2023-fa033e91b95b79c3",
+      "kind": "same_question",
+      "reason": "宽a单缝与直径a细线的互补屏夫琅和费图样比较，形状、尺寸符号及所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-4f1b2ba6bca5",
+      "existingQuestionId": "inst-c2-t3",
+      "kind": "same_question",
+      "reason": "8倍开普勒望远镜后加200倍倒置显微镜，均求组合等效焦距；未匹配100倍显微镜版本。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-fbb5d462ba9b",
+      "existingQuestionId": "engopt2-ch07-exercise-二_blank-15",
+      "kind": "same_question",
+      "reason": "变焦投影物镜、像屏位置固定，要求倍率更大，且相对孔径不变，均填焦距和像面照度变化方向。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-f9b2922f2bb3",
+      "existingQuestionId": "inst-c2-t4",
+      "kind": "same_question",
+      "reason": "叉丝对直线、人眼精度15″、10倍望远镜，均求物方瞄准精度；数值及方法相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-f9b2922f2bb3",
+      "existingQuestionId": "engopt2-ch07-exercise-二_blank-5",
+      "kind": "same_question",
+      "reason": "叉丝对直线、人眼精度15″、10倍望远镜，均求物方瞄准精度；数值及方法相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-243ba8cf824d",
+      "existingQuestionId": "past-2022-c825fd082315b9d2",
+      "kind": "same_question",
+      "reason": "自然光先经起偏器再经1/4波片，问一般输出偏振态；保留了起偏器条件，未与自然光直接过波片版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-243ba8cf824d",
+      "existingQuestionId": "past-2017-bf81e6c5f3860341",
+      "kind": "same_question",
+      "reason": "自然光先经起偏器再经1/4波片，问一般输出偏振态；保留了起偏器条件，未与自然光直接过波片版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-243ba8cf824d",
+      "existingQuestionId": "past-2022-c825fd082315b9d2",
+      "kind": "same_question",
+      "reason": "自然光先经起偏器再经1/4波片，问一般输出偏振态；保留了起偏器条件，未与自然光直接过波片版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-243ba8cf824d",
+      "existingQuestionId": "past-2017-bf81e6c5f3860341",
+      "kind": "same_question",
+      "reason": "自然光先经起偏器再经1/4波片，问一般输出偏振态；保留了起偏器条件，未与自然光直接过波片版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-456efdd7e3a7",
+      "existingQuestionId": "past-2023-9fefa29f31e87d25",
+      "kind": "same_question",
+      "reason": "自然光通过两理想偏振片，要求消除透射光，问两透光轴夹角，四个角度选项对应。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-54757cca2d71",
+      "existingQuestionId": "past-2019-a1bedf5c37e7dbe5",
+      "kind": "same_question",
+      "reason": "振幅1线偏振光从n=1.5玻璃垂直射向空气，均求透射光振幅；未与求透射能量的版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-54757cca2d71",
+      "existingQuestionId": "past-2016-31231fcbfbf6222b",
+      "kind": "same_question",
+      "reason": "振幅1线偏振光从n=1.5玻璃垂直射向空气，均求透射光振幅；未与求透射能量的版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-fe11a3a2cc69",
+      "existingQuestionId": "past-2021-998bea08768568d0",
+      "kind": "same_question",
+      "reason": "反射率近1的平面形成驻波，均求波节到最近波腹间距，λ/4、λ/2、λ、2λ选项相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-f890b1e071fd",
+      "existingQuestionId": "past-2018-bf81e6c5f3860341",
+      "kind": "same_question",
+      "reason": "傅里叶相似定理中空域坐标放大N倍，均求频域坐标缩放倍率，四个倍率选项对应。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-f890b1e071fd",
+      "existingQuestionId": "past-2022-217f31c383d67763",
+      "kind": "same_question",
+      "reason": "傅里叶相似定理中空域坐标放大N倍，均求频域坐标缩放倍率，四个倍率选项对应。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-f890b1e071fd",
+      "existingQuestionId": "past-2026-5f74b6d67af62eac",
+      "kind": "same_question",
+      "reason": "傅里叶相似定理中空域坐标放大N倍，均求频域坐标缩放倍率，四个倍率选项对应。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-923f03aef399",
+      "existingQuestionId": "past-2020-8b8390bb958ac5b5",
+      "kind": "same_question",
+      "reason": "同一光栅第1级分辨本领A，均求第2级分辨本领，级次数字与目标相同；仅错误干扰项集合不同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-923f03aef399",
+      "existingQuestionId": "past-2021-9095c7092eb37e1f",
+      "kind": "same_question",
+      "reason": "同一光栅第1级分辨本领A，均求第2级分辨本领，级次数字与目标相同；仅错误干扰项集合不同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-923f03aef399",
+      "existingQuestionId": "past-2024-11fa43088b023725",
+      "kind": "same_question",
+      "reason": "同一光栅第1级分辨本领A，均求第2级分辨本领，级次数字与目标相同；仅错误干扰项集合不同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-295808e89ade",
+      "existingQuestionId": "engopt2-ch09-exercise-一_choice-15",
+      "kind": "same_question",
+      "reason": "均为平行光垂直照明牛顿环、透镜与平板间距缩小、问条纹变化；未与间距拉大版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-295808e89ade",
+      "existingQuestionId": "past-2023-c114a7c00b4380b2",
+      "kind": "same_question",
+      "reason": "均为平行光垂直照明牛顿环、透镜与平板间距缩小、问条纹变化；未与间距拉大版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-fe11a3a2cc69",
+      "existingQuestionId": "engopt2-ch09-exercise-一_choice-15",
+      "kind": "same_question",
+      "reason": "均为平行光垂直照明牛顿环、透镜与平板间距缩小、问条纹变化；未与间距拉大版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-fe11a3a2cc69",
+      "existingQuestionId": "past-2023-c114a7c00b4380b2",
+      "kind": "same_question",
+      "reason": "均为平行光垂直照明牛顿环、透镜与平板间距缩小、问条纹变化；未与间距拉大版本混同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-c9b9e21ce360",
+      "existingQuestionId": "inst-c2-x1",
+      "kind": "same_question",
+      "reason": "单透镜将前方1m物点成像于后方0.5m，要求像点最清晰，六种透镜形状及朝向选项对应，数字完全相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-898b55991902",
+      "existingQuestionId": "inst-c2-x2",
+      "kind": "same_question",
+      "reason": "放大镜把物成像于无穷远，均问视觉放大率等于角、垂轴、沿轴或以上皆非，选项一致。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-fbb5d462ba9b",
+      "existingQuestionId": "inst-c2-t5",
+      "kind": "same_question",
+      "reason": "望远镜观察远点光源，入瞳100mm、初始10倍、眼瞳5mm，均问增倍率的亮度变化及停止增加的倍率，数值与两个所求相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-8a0a5d270803",
+      "existingQuestionId": "phys-ch9-q9-3",
+      "kind": "same_question",
+      "reason": "A振幅、λ=600nm、方向余弦(2/3,1/3,2/3)，均求xy面复振幅与空间频率，完整条件相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2011-engineering-f890b1e071fd",
+      "existingQuestionId": "past-2022-d383c69302376618",
+      "kind": "same_question",
+      "reason": "均列同样七种像差并问“总是产生圆形弥散斑”的种数；填空/选择差异不改题意。新旧答案差异另列answerConflicts，不据答案不同否认同题。 不同参考对场曲圆斑的计数口径不同，需同时查看解析中的假设。"
+    },
+    {
+      "questionId": "import-20261019-past-2011-engineering-f890b1e071fd",
+      "existingQuestionId": "past-2021-c974919afd9dc979",
+      "kind": "same_question",
+      "reason": "均列同样七种像差并问“总是产生圆形弥散斑”的种数；填空/选择差异不改题意。新旧答案差异另列answerConflicts，不据答案不同否认同题。 不同参考对场曲圆斑的计数口径不同，需同时查看解析中的假设。"
+    },
+    {
+      "questionId": "import-20261019-past-2011-engineering-d5368efb8cea",
+      "existingQuestionId": "past-2022-13190c4acc71ba25",
+      "kind": "same_question",
+      "reason": "真空电磁波(−√2 ex+2ey+Ez ez)exp[i(x+z−ωt)]完全相同，六个待求量仅顺序不同。"
+    },
+    {
+      "questionId": "import-20261019-past-2011-engineering-7eedf1068361",
+      "existingQuestionId": "past-2021-77e61a60cca04cd9",
+      "kind": "same_question",
+      "reason": "45°起偏器、第一1/4波片快轴沿y均相同；45°检偏器输出全黑等价于第二片输出135°线偏振，即旧题要求的与起偏器垂直，两小问实质相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-295808e89ade",
+      "existingQuestionId": "past-2019-31231fcbfbf6222b",
+      "kind": "same_question",
+      "reason": "只允许中心第1、2、3三个半波带通过，I1为有屏强度、I2为无屏强度，均求I1/I2；半波带数与比值方向相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-51c8509e8472",
+      "existingQuestionId": "past-2025-e31566f101993013",
+      "kind": "same_question",
+      "reason": "λ=632.8nm、f=100mm、相邻亮条纹间距5mm、第3级缺级，均求光栅缝距和缝宽；新稿漏列一可能缝宽的差异另记。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-8a0a5d270803",
+      "existingQuestionId": "past-2020-bbb7dfd5ddadb5cf",
+      "kind": "same_question",
+      "reason": "右旋椭圆光长轴x、轴比2:1，经三器件、两次第一象限线偏振后成为长轴y、轴比2:1左旋椭圆光，整张器件/矩阵表要求相同。 两版旋向命名采用不同约定；新题已明确时间因子和观察方向。"
+    },
+    {
+      "questionId": "import-20261019-final-2021-2022-autumn-7d7be21e6ec6",
+      "existingQuestionId": "past-2019-67c0c48a214dc47d",
+      "kind": "same_question",
+      "reason": "带分划板的测量系统，均问孔径光阑、像面、分划板何者可重合或共轭；三个组合和“皆不可能”选项相同，仅顺序变化。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-f890b1e071fd",
+      "existingQuestionId": "past-2017-a486bd26b1cc71af",
+      "kind": "shared_subquestion",
+      "reason": "共同部分为无吸收平行平板在整数波长光程差下的透射极大、反射极小；旧题分成亮/暗两个填空，新题为透射强度选择。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-70680da36db0",
+      "existingQuestionId": "past-2017-0fac68fcebfda603",
+      "kind": "shared_subquestion",
+      "reason": "共同小问为低折射率膜光学厚度5λ0/4、λ0=550nm、可见区380–780nm内的反射极大波长；旧题另问颜色，新题另问膜作用。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-a10743c9b9ab",
+      "existingQuestionId": "engopt2-ch08-example-example-8-3",
+      "kind": "shared_subquestion",
+      "reason": "两相干同波长平面波的振幅A1/A2、两组方向余弦完全相同，共同所求为xy平面光强；新题额外求空间频率。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-68d041d57e4e",
+      "existingQuestionId": "past-2017-fea321798df1563c",
+      "kind": "shared_subquestion",
+      "reason": "新题(1)频谱与(4)挡−1级的强度/空间频率，对应旧题两小问，t(x)=1/2+1/2 cos(2πu0x)相同；新题另有像强和挡零级小问。"
+    },
+    {
+      "questionId": "import-20261019-past-2005-physical-68d041d57e4e",
+      "existingQuestionId": "past-2020-e31ddb47b6087999",
+      "kind": "shared_subquestion",
+      "reason": "新题(3)(4)与旧题(1)(2)均为同一t=1/2+1/2 cos(2πu0x)下分别挡零级、挡−1级，强度问题相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2006-engineering-c943368cfa10",
+      "existingQuestionId": "phys-ch11-q11-3",
+      "kind": "shared_subquestion",
+      "reason": "λ=500nm、相邻主极大sinθ=0.2/0.3、第4级缺级完全相同；新题(1)–(3)对应旧题全部三问，新题另加45°斜入射。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-7c0461739a89",
+      "existingQuestionId": "past-2025-06f1df120fd02bf9",
+      "kind": "shared_subquestion",
+      "reason": "完整电场(Ex x−√3 y+√5 z)exp[i(x+√3y+√5z−6×10⁸t)×10⁶]相同，波长、方向、相速、折射率、Ex五问对应；新题多周期和磁场振幅。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-7c35a2b993dc",
+      "existingQuestionId": "past-2025-06f1df120fd02bf9",
+      "kind": "shared_subquestion",
+      "reason": "完整电场(Ex x−√3 y+√5 z)exp[i(x+√3y+√5z−6×10⁸t)×10⁶]相同，波长、方向、相速、折射率、Ex五问对应；新题多周期和磁场振幅。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-7c0461739a89",
+      "existingQuestionId": "past-2017-30e4ee70a0ad83e9",
+      "kind": "shared_subquestion",
+      "reason": "同一完整电场表达式；旧题相速、折射率两填空对应新题相速、折射率两小问，其余新小问不声称重复。"
+    },
+    {
+      "questionId": "import-20261019-past-2012-engineering-7c35a2b993dc",
+      "existingQuestionId": "past-2017-30e4ee70a0ad83e9",
+      "kind": "shared_subquestion",
+      "reason": "同一完整电场表达式；旧题相速、折射率两填空对应新题相速、折射率两小问，其余新小问不声称重复。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-3268f9020fee",
+      "existingQuestionId": "past-2017-9aacb6b1a420e699",
+      "kind": "shared_subquestion",
+      "reason": "共同第一小问均为自然光经45°起偏器及快轴沿y的1/4波片，求输出偏振态；后续检偏器的135°最亮/45°全黑表述不同，故只声明共同小问。"
+    },
+    {
+      "questionId": "import-20261019-past-2011-engineering-7eedf1068361",
+      "existingQuestionId": "past-2017-9aacb6b1a420e699",
+      "kind": "shared_subquestion",
+      "reason": "共同第一小问均为自然光经45°起偏器及快轴沿y的1/4波片，求输出偏振态；后续检偏器的135°最亮/45°全黑表述不同，故只声明共同小问。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-3268f9020fee",
+      "existingQuestionId": "past-2022-1df087720212d4f0",
+      "kind": "shared_subquestion",
+      "reason": "45°起偏器、第一片快轴沿y、第二片后45°检偏器全黑的条件一致，对应新题第二小问与旧题第一小问；其余小问不同。"
+    },
+    {
+      "questionId": "import-20261019-past-2011-engineering-7eedf1068361",
+      "existingQuestionId": "past-2022-1df087720212d4f0",
+      "kind": "shared_subquestion",
+      "reason": "45°起偏器、第一片快轴沿y、第二片后45°检偏器全黑的条件一致，对应新题第二小问与旧题第一小问；其余小问不同。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-5810dcdca717",
+      "existingQuestionId": "engopt2-ch06-exercise-二_blank-3",
+      "kind": "shared_subquestion",
+      "reason": "共同填空包括不影响清晰度的像差计数、子午/弧矢分离的像差、球心孔阑消除像差种数、阿贝数与位置色差；场曲/像散一处旧题问名称新题问种数，故按共享子题。"
+    },
+    {
+      "questionId": "import-20261019-past-2008-engineering-34d8427df72a",
+      "existingQuestionId": "past-2023-e31566f101993013",
+      "kind": "shared_subquestion",
+      "reason": "新题两小问对应旧题(2)(3)：同一t=1/2+1/2 cos(2πu0x)，分别挡零级和+1级求像强；旧题额外要求频谱与空间频率。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-472e470acf9f",
+      "existingQuestionId": "past-2017-6d905c14cd494443",
+      "kind": "shared_subquestion",
+      "reason": "同种半导体N型与P型费米能级高低比较，对应旧题第一空；旧题另问接触后PN结导带高低，新题没有。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-51c8509e8472",
+      "existingQuestionId": "past-2019-29e63651a9d32208",
+      "kind": "shared_subquestion",
+      "reason": "设计光栅的λ600nm、第2级θ≤30°、最大色散、第3级缺级、第2级分辨0.02nm四条件相同；共同设计参数部分重复，旧题额外求可见谱线数或作图。"
+    },
+    {
+      "questionId": "import-20261019-past-2009-engineering-51c8509e8472",
+      "existingQuestionId": "engopt2-ch10-example-example-10-5",
+      "kind": "shared_subquestion",
+      "reason": "设计光栅的λ600nm、第2级θ≤30°、最大色散、第3级缺级、第2级分辨0.02nm四条件相同；共同设计参数部分重复，旧题额外求可见谱线数或作图。"
+    },
+    {
+      "questionId": "import-20261019-past-2010-engineering-51c8509e8472",
+      "existingQuestionId": "engopt2-ch10-exercise-三_calc-5",
+      "kind": "shared_subquestion",
+      "reason": "光栅宽100mm、500线/mm、f500mm、λ632.8nm完全相同，新题所求1/2级谱线半宽对应旧题(1)；旧题(2)的双波长间距不在新题中。"
+    },
+    {
+      "questionId": "import-20261019-past-2011-engineering-8a0a5d270803",
+      "existingQuestionId": "engopt2-ch11-exercise-三_calc-5",
+      "kind": "shared_subquestion",
+      "reason": "共同子问均求长轴x、轴比2:1的左旋椭圆光Jones矢量；新题另求正交态，旧题另求右旋态及两态相加，未宣称整题相同。"
+    },
+    {
+      "questionId": "import-20261019-past-2007-engineering-3abedde19850",
+      "existingQuestionId": "past-2025-9bb751579a1af722",
+      "kind": "same_question",
+      "reason": "均为N1=600、N2=1200、比较零级主极大I2/I1，目标比值4一致；只存在错误干扰项与选项顺序差异。"
+    }
+  ],
+  "answerConflicts": [
+    {
+      "paperKey": "past-2011-engineering",
+      "section": "一、选择题（每题2分，共22分）",
+      "number": "一-3",
+      "existingQuestionId": "past-2022-d383c69302376618",
+      "newAnswer": [
+        {
+          "k": "p",
+          "x": "C（按固定高斯像面计3种）"
+        }
+      ],
+      "existingAnswer": [
+        {
+          "k": "p",
+          "x": "**B** 2 种"
+        }
+      ],
+      "description": "同题新稿主答案C/3，解释为固定高斯像面；旧题主答案B/2（球差、位置色差）。新稿将场曲计入，但“总是产生圆形弥散斑”与旧题的标准像差分类口径不一致，需根代理处理，未改旧题。",
+      "status": "answer_conflict",
+      "questionId": "import-20261019-past-2011-engineering-f890b1e071fd",
+      "currentImportedAnswer": [
+        {
+          "k": "p",
+          "x": "C（按固定高斯像面计3种）"
+        }
+      ]
+    },
+    {
+      "paperKey": "past-2011-engineering",
+      "section": "一、选择题（每题2分，共22分）",
+      "number": "一-3",
+      "existingQuestionId": "past-2021-c974919afd9dc979",
+      "newAnswer": [
+        {
+          "k": "p",
+          "x": "C（按固定高斯像面计3种）"
+        }
+      ],
+      "existingAnswer": [
+        {
+          "k": "p",
+          "x": "2 种"
+        }
+      ],
+      "description": "与上一项同一新题、另一旧记录：新稿3种，旧填空2种。",
+      "status": "answer_conflict",
+      "questionId": "import-20261019-past-2011-engineering-f890b1e071fd",
+      "currentImportedAnswer": [
+        {
+          "k": "p",
+          "x": "C（按固定高斯像面计3种）"
+        }
+      ]
+    },
+    {
+      "paperKey": "past-2012-engineering",
+      "section": "六、计算题",
+      "number": "六",
+      "existingQuestionId": "past-2025-e31566f101993013",
+      "newAnswer": [
+        {
+          "k": "p",
+          "x": "缝间距d=12.656 μm；缝宽a=d/3≈4.22 μm。"
+        }
+      ],
+      "existingAnswer": [
+        {
+          "k": "p",
+          "x": "光栅常数12.656μm；缝宽 $12.656/3\\approx4.2187$μm 或 $25.312/3\\approx8.4373$μm。若选最小缝宽方案，取4.2187μm。"
+        }
+      ],
+      "description": "题面只说第3级缺级，未要求最小缝宽。旧题给a=d/3≈4.2187μm或2d/3≈8.4373μm；新稿仅给d/3≈4.22μm。新稿主答案少列一组同样满足缺级条件的可能宽度。",
+      "status": "resolved_missing_solution_added",
+      "questionId": "import-20261019-past-2012-engineering-51c8509e8472",
+      "currentImportedAnswer": [
+        {
+          "k": "p",
+          "x": "缝间距 d=12.656 μm；缝宽有两种可能：a=d/3≈4.2187 μm，或 a=2d/3≈8.4373 μm。若另要求最小缝宽，才唯一取前者。"
+        }
+      ]
+    },
+    {
+      "paperKey": "past-2012-engineering",
+      "section": "八、计算题",
+      "number": "八",
+      "existingQuestionId": "past-2020-bbb7dfd5ddadb5cf",
+      "newAnswer": [
+        {
+          "k": "p",
+          "x": "三块器件依次为：快轴0°的1/4波片；透光轴arctan2的线偏振器；快轴0°的1/4波片。"
+        },
+        {
+          "k": "m",
+          "x": "G_1=G_3=\\begin{pmatrix}1&0\\\\0&i\\end{pmatrix},\\qquad G_2=\\begin{pmatrix}1/5&2/5\\\\2/5&4/5\\end{pmatrix}"
+        },
+        {
+          "k": "m",
+          "x": "\\mathbf e_1=\\frac1{\\sqrt5}\\begin{pmatrix}2\\\\1\\end{pmatrix},\\quad\\mathbf e_2=\\frac1{\\sqrt5}\\begin{pmatrix}1\\\\2\\end{pmatrix},\\quad\\mathbf e_3=\\frac1{\\sqrt5}\\begin{pmatrix}1\\\\2i\\end{pmatrix}"
+        }
+      ],
+      "existingAnswer": [
+        {
+          "k": "p",
+          "x": "一组可行方案：两片四分之一波片快轴均沿 $y$，中间起偏器透光轴与 $x$ 成 $\\arctan 2\\approx63.435^\\circ$。最终为长轴沿 $y$、轴比 $2:1$、旋向反转的椭圆偏振光。"
+        }
+      ],
+      "description": "整题目标相同，但新稿两片1/4波片快轴沿x（0°）、旧答案沿y（90°），中间偏振器均arctan2。可能源于旋向、时间因子及Jones矩阵约定；不能只比较快轴标签直接判谁错，需按各自完整约定验算。",
+      "status": "conventions_explicitly_documented",
+      "questionId": "import-20261019-past-2012-engineering-8a0a5d270803",
+      "currentImportedAnswer": [
+        {
+          "k": "p",
+          "x": "三块器件依次为：快轴0°的1/4波片；透光轴arctan2的线偏振器；快轴0°的1/4波片。"
+        },
+        {
+          "k": "m",
+          "x": "G_1=G_3=\\begin{pmatrix}1&0\\\\0&i\\end{pmatrix},\\qquad G_2=\\begin{pmatrix}1/5&2/5\\\\2/5&4/5\\end{pmatrix}"
+        },
+        {
+          "k": "m",
+          "x": "\\mathbf e_1=\\frac1{\\sqrt5}\\begin{pmatrix}2\\\\1\\end{pmatrix},\\quad\\mathbf e_2=\\frac1{\\sqrt5}\\begin{pmatrix}1\\\\2\\end{pmatrix},\\quad\\mathbf e_3=\\frac1{\\sqrt5}\\begin{pmatrix}1\\\\2i\\end{pmatrix}"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "仅将人工逐项核对确认的关系列入pairs；TFIDF/字符相似度只用于挑选候选。",
+    "这是有界快速查重，未穷尽低相似候选，未确认候选不能当重复。",
+    "未合并ID，未修改正式data、旧答案或既有标红关系。",
+    "刻线数不同、强度比方向相反、膜厚λ/2与λ/4、牛顿环间距增减、开放半波带序号不同、定域与非定域等候选已排除。",
+    "最终题稿的部分原题缺选项、数值或使用“旧题改参数”截图，未据截图外形推定与备份旧题相同。"
+  ]
+}
