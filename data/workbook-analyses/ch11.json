@@ -1,0 +1,805 @@
+{
+  "date": "2026-10-19",
+  "entries": [
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "四分之一波片使快、慢轴方向的两个分量增加$\\pi/2$的相对相位，但不改变它们的振幅。出射态还取决于入射线偏振方向与快轴的夹角。"
+        },
+        {
+          "k": "p",
+          "x": "沿任一轴入射仍为线偏振；成$45^\\circ$时两分量等幅，变成圆偏振；其他一般角度变成椭圆偏振。所以信息不足，选D。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "7bad95b36038d4de4daa5013dcd04e91369dcd402fa3da74adb823e90b7f6128"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "圆偏振光沿波片两轴分解后，两分量等幅，相位差为$\\pm\\pi/2$。"
+        },
+        {
+          "k": "p",
+          "x": "通过四分之一波片后，相位差变为$0$或$\\pi$，两个分量同相或反相，合成为线偏振光，选B。波片方位只决定出射线偏振的方向。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "c6f4e2cebc9b6d2e4acf8944e8d048cea047d66469816331491157b8e300a322"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "自然光的两个正交分量之间没有稳定的相位关系。理想波片只引入固定相位延迟，不产生选择吸收。"
+        },
+        {
+          "k": "p",
+          "x": "所以波片不能把自然光变成完全偏振光，其统计偏振态仍为自然光，选D。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "b4c6f0b2ecc86ce367ee588ff1c925f2aa56809b2c359a3d47875ff481254ceb"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "将入射线偏振光沿快、慢轴分解，原来的两个分量同相；半波片使它们产生$\\pi$相对延迟，变成反相。"
+        },
+        {
+          "k": "p",
+          "x": "同相或反相的正交分量仍合成为直线，故选A。若入射振动方向与快轴成$\\theta$，出射方向相对于快轴为$-\\theta$，即关于快轴镜像。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "faaf6dd66e89bb4006852950b02095590e7831cadcdfc31341c7f593b7d109d0"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "波片的快轴是较快本征波的振动方向，通常波片光轴切在片面内，光近于垂直片面传播。"
+        },
+        {
+          "k": "p",
+          "x": "因此快轴位于片面内，并垂直于传播波矢，选C、D。快轴是否与晶体光轴平行，还取决于晶体为正单轴还是负单轴。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "9be8f78459ae428f3a851d59571551eb442400d866911c5550c201cdbf1ee213"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "快轴中的“轴”表示较快本征偏振分量的振动方向，也就是该分量的光矢量方向。"
+        },
+        {
+          "k": "p",
+          "x": "它不是光线的传播方向，也不总与晶体光轴重合，故选B、C。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4960b1f22bd075a877582f8005c5479ba6d8de2403c69d4ebcb134e7f854de32"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "负单轴晶体满足$n_e<n_o$，因此在波片的常用传播几何下，e光传播较快，快轴沿e光振动方向。"
+        },
+        {
+          "k": "p",
+          "x": "晶体光轴平行片面时，e光的振动方向沿光轴，故快轴平行光轴且平行片面，选A、C。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "c902554a807257f7e314fe691a688c84e2aeebca8f4f67827f725d7d82705ddc"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "正单轴晶体满足$n_e>n_o$，故o光较快。常规波片中，o光振动方向垂直于由光轴和波矢组成的主截面，所以快轴垂直光轴、平行片面，B、C成立。"
+        },
+        {
+          "k": "p",
+          "x": "原参考还选D。若这里的“入射平面”指上述主截面，D成立；若指通常由入射光线与界面法线确定的入射面，则其与晶体光轴的关系未给出，不能普遍断言D成立。"
+        }
+      ],
+      "reviewNote": "原参考选B、C、D，但D写“垂直于入射平面”；严格恒成立的是o光垂直主截面（光轴与波矢所张平面），一般入射面不等于主截面，且正入射时入射面不唯一。疑为术语混用。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "01f7101c4533608b57978ba6fd495633209dbfceb14507f61bdf8b5702b02f84"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-11",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "本题的矩阵表示指琼斯表示：以两个正交电场分量的复振幅组成二元列矢量，要求两者之间存在确定的相位关系。"
+        },
+        {
+          "k": "p",
+          "x": "因此它适用于完全偏振光，选B。自然光和部分偏振光需用相干矩阵或斯托克斯参量作统计描述，不能用一个固定琼斯矢量表示。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4ff8d4e7e50eeea1716915d2c34bbe42a1fb9daf8a9eee19d0a1f39e23d8f284"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-12",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "四分之一波片输出线偏振，并不能唯一确定输入态。圆偏振输入可变成线偏振；长短轴沿波片两轴的椭圆偏振输入，也可在相位补偿后变成线偏振。"
+        },
+        {
+          "k": "p",
+          "x": "此外，若输入本来就是沿快轴或慢轴的线偏振光，输出仍为线偏振。故选D。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "ca3436e61f04ca5a8dab8bdb3d059c024e2ef2763c902a09426e4bdf605cea0e"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-13",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "“两亮两黑”表示旋转检偏器时出现完全消光，因此通过四分之一波片后的光必须是完全线偏振光。"
+        },
+        {
+          "k": "p",
+          "x": "圆偏振光经四分之一波片可变成线偏振光；自然光仍为自然光，部分圆偏振光仍含无法完全消光的自然光成分。因此在给定三种候选光中，选B。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "14349b4181312fbf2aad6c50c0a015efcd78098456796d406e95b591790625c0"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-14",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "布儒斯特角满足$\\tan\\theta_B=n_2/n_1$，此时反射光与折射光相互垂直，菲涅耳反射系数$r_p=0$。"
+        },
+        {
+          "k": "p",
+          "x": "因此消失的是反射波的$p$分量，反射波只保留$s$分量，选C；折射波一般仍有两种分量。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "81996c2eb3ed20c704c59073bf34855d86e6a708f3b66998776abc3b262396fb"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-一_choice-15",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "强度为$I_0$的自然光通过第一片理想偏振片后，强度变为$I_0/2$。再通过与它成$\\theta$角的第二片，按马吕斯定律$I=(I_0/2)\\cos^2\\theta$。"
+        },
+        {
+          "k": "p",
+          "x": "令$I=I_0/4$得$\\cos^2\\theta=1/2$，取两轴的锐夹角为$45^\\circ$，选B。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "8117690c94bda7f53ee39c2d67b75a7186df383f55e7d5c57c4fc746bcb89a46"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "不同偏振分量在界面反射、折射时的系数一般不同，因此可用反射和折射方法获得偏振光；晶体对不同振动方向选择吸收，可用二向色性方法起偏。"
+        },
+        {
+          "k": "p",
+          "x": "散射光的偏振态依赖观察方向，适当方向可得到偏振光；双折射则将正交偏振分量分开。三空依次填反射和折射方法、二向色性方法、散射方法。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "8a500530844b683d808da76d821af46037c98d570bd079fb37d44da51c8b3c90"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "电气石对o光和e光的吸收强弱不同，较易被吸收的一种分量在晶体中迅速衰减，另一种分量主要保留下来。"
+        },
+        {
+          "k": "p",
+          "x": "因此出射光近似为沿固定方向振动的线偏振光。两空填吸收、二向色性。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "8c74a122f88c245ef6d573c2fa11ccbeefb388001f50148b27d16d03e7224ec1"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "将入射光分解到波片的两个本征振动方向，折射率较小的分量相速度$v=c/n$较大。"
+        },
+        {
+          "k": "p",
+          "x": "该较快分量的光矢量振动方向就是快轴。快轴指偏振方向，而不是波的前进方向。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "41038d95714ade1b96d154e5287aa633a9bb8bffd78e6c3df7f661d391d52d47"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "线偏振光沿旋光晶体光轴传播时，振动面的方位随传播距离逐渐转动，这就是旋光现象。"
+        },
+        {
+          "k": "p",
+          "x": "均匀晶体内旋转角为$\\theta=\\alpha l$，其中$\\alpha$为单位长度旋光率、$l$为传播长度。远离吸收带时常用近似色散关系$\\alpha\\propto1/\\lambda^2$，所以短波光旋转通常更明显。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "66503119f9338ef31815efda9291f73e860143cc6639a9e0891c451e57990b9c"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "渥拉斯顿棱镜用光轴互相垂直的两个双折射棱镜，使两种正交偏振在接合面分别发生不同方向的偏折。"
+        },
+        {
+          "k": "p",
+          "x": "因此可将自然光分成有一定角分离、振动方向互相垂直的两束线偏振光。双折射率差$|n_o-n_e|$越大，通常分束角越大，故应选双折射率差较大的材料。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "9cb822ff71cc4199dfdca98be76bd840b41815f57af322a1fb89f92f16b2bb80"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "尼科尔棱镜出射的e光是一束线偏振光，“非寻常”描述它在各向异性晶体中的传播性质，并不是光离开晶体后永久具有的属性。"
+        },
+        {
+          "k": "p",
+          "x": "它进入各向同性均匀介质后遵从通常的折射规律，故填“是”。若计算晶体界面的角度，晶体侧应以波法线及相应有效折射率使用切向波矢连续条件。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "3b75ac8188a5a0b225b5235710667c999aede8d43cbca393e2d1a369000f4b02"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "常规波片的光轴切在片面内，光垂直片面传播，故第一空为平行。"
+        },
+        {
+          "k": "p",
+          "x": "方解石是负单轴晶体，$n_e<n_o$，沿光轴振动的e分量较快。因此光轴与快轴平行，与慢轴垂直。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "abe3cd5c2bd3e1f22f3d3da1fea55074a07c140f02024cbed41ef5eda96e58c7"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "一般偏振度表示完全偏振部分占总强度的比例，范围为$0\\le P\\le1$。椭圆偏振光属于完全偏振光，因此$P=1$。"
+        },
+        {
+          "k": "p",
+          "x": "须区分一般偏振度与旋转线检偏器所得的调制度。$P=(I_{\\max}-I_{\\min})/(I_{\\max}+I_{\\min})$仅适用于自然光与线偏振光混合等相应情形，不能直接用来测量任意椭圆偏振光的总偏振度。"
+        },
+        {
+          "k": "p",
+          "x": "例如椭圆两主轴振幅为$a,b$时，线检偏器测得的比值为$(a^2-b^2)/(a^2+b^2)$，圆偏振时甚至为零；这并不表示它们不是完全偏振光。"
+        }
+      ],
+      "reviewNote": "原参考将P=(Imax-Imin)/(Imax+Imin)作为一般定义，同时称椭圆偏振光P=1，两者对一般椭圆偏振不相容。该消光比是线偏振调制度；一般偏振度需斯托克斯参量或完全偏振分量定义。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "82d1caafa5b141b36f28ddb41b007b221791d9c534220cb34109e51ac83fc5c2"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "采用本章省略共同物理系数、以正交分量振幅平方和表示强度的约定。圆偏振光的琼斯分量可写成$(A,\\pm\\mathrm iA)^{\\mathsf T}$，故$I=|E_x|^2+|E_y|^2=2A^2$。"
+        },
+        {
+          "k": "p",
+          "x": "理想线偏振片只透过圆偏振电场沿透光轴的一个投影，其振幅恒为$A$，所以透射强度为$A^2$，即原强度的一半，与透光轴方位无关。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "294dee9236b23e75e6c583f180c26f9ead87e441c1ece832797895e852aaddef"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "入射线偏振方向为$+45^\\circ$，归一化琼斯矢量为$(1,1)^{\\mathsf T}/\\sqrt2$。忽略共同相位，快轴沿$x$的半波片矩阵可取$\\operatorname{diag}(1,-1)$。"
+        },
+        {
+          "k": "p",
+          "x": "输出变为$(1,-1)^{\\mathsf T}/\\sqrt2$，所以光矢量沿$-45^\\circ$方向振动，等价于$135^\\circ$的无向透光轴。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "9a8a81acbb247ce7685c6ab151cf98d198ef514ad40bcc3aac9d21125c022372"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-11",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "采用$e^{-\\mathrm i\\omega t}$时间因子，快轴沿$x$时，慢轴$y$积累的空间相位比$x$多$\\pi/2$。因此输入$(1,1)^{\\mathsf T}/\\sqrt2$变为$(1,\\mathrm i)^{\\mathsf T}/\\sqrt2$，为圆偏振光。"
+        },
+        {
+          "k": "p",
+          "x": "固定位置处可写$E_x\\propto\\cos\\omega t$、$E_y\\propto\\sin\\omega t$。迎着传播方向观察，电矢量从$+x$转向$+y$，按本章逆时针为左旋的约定，填左旋。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "2a9f6111306237ae55e0fcc2c9755704fee8ea7e258400b0510ba86c1a49e729"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-12",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "设入射自然光强为$I_0$，原来两片之间夹角$60^\\circ$，故$I_1=(I_0/2)\\cos^260^\\circ=I_0/8$。"
+        },
+        {
+          "k": "p",
+          "x": "中间加片后，连续两次轴间夹角均为$30^\\circ$，故$I'=(I_0/2)\\cos^430^\\circ=9I_0/32=(9/4)I_1=2.25I_1$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "fc836579109fd649fb1f225d25e02a22b4a34c2e8adc258c62d965cb0effb1e4"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-13",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "两片平行时透射强度最大，为$I_{\\max}=I_0/2$。两轴夹角为$\\theta$时，$I/I_{\\max}=\\cos^2\\theta$。"
+        },
+        {
+          "k": "p",
+          "x": "由$\\cos^2\\theta=1/3$得$\\theta=\\arccos(1/\\sqrt3)=54.736^\\circ\\approx54^\\circ44'$，按原答案较粗近似写作$54^\\circ45'$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "27c0187d4bfa81af819264bb4910d262c36cca5447b7017d0167969c1dbb1688"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-14",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "自然光经过第一片后强度为$I/2$；后面三组相邻透光轴的夹角均为$30^\\circ$。"
+        },
+        {
+          "k": "p",
+          "x": "连续使用马吕斯定律，$I_{\\mathrm{out}}=(I/2)(\\cos^230^\\circ)^3=(I/2)(3/4)^3=27I/128$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "659008b684006d5625f77e2136959cfd86dadf5ee076639cd46129b7df91fd13"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-15",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "晶片引入的相位延迟为$\\delta=2\\pi(n_e-n_o)d/\\lambda$。最薄的四分之一波片取$\\delta=\\pi/2$，即光程差等于$\\lambda/4$。"
+        },
+        {
+          "k": "p",
+          "x": "因此$d_{\\min}=\\lambda/[4(n_e-n_o)]=589.3/[4(1.55335-1.54424)]\\,\\mathrm{nm}=16.17\\,\\mu\\mathrm m\\approx16.2\\,\\mu\\mathrm m$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "c1c212ce1760418d6f4b8e3aef9b461e3ab0bb503a369ddf328edae92f81567c"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-16",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "自然光的反射光完全线偏振，说明入射角为水—玻璃界面的布儒斯特角，满足$\\tan i_B=n_g/n_w$。"
+        },
+        {
+          "k": "p",
+          "x": "故$n_g=(4/3)\\tan50.82^\\circ\\approx1.636$。布儒斯特角公式中的折射率比应包含入射介质水，不能直接令$n_g=\\tan i_B$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "d5fd8eda01a5bf0381a2d19c6d61e39f14907c1d6dfc91e87897c1fe329c1b67"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-17",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "布儒斯特角处，$p$偏振反射系数为零，入射自然光中的$p$分量不贡献反射光。"
+        },
+        {
+          "k": "p",
+          "x": "反射光只剩$s$偏振分量，故为线偏振光，其振动方向垂直于入射面。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "73d94fec857e832007e09520aa75cbebe2f59ebbf0111e89b9bb1e91253e888f"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-18",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "晶片快轴与起偏方向成$45^\\circ$时，正交检偏器后的强度为$I=I_P\\sin^2(\\delta/2)$，其中$\\delta=2\\pi(n_e-n_o)d/\\lambda$。"
+        },
+        {
+          "k": "p",
+          "x": "按参考答案所采用的“透射最强”理解，最薄晶片应为半波片，即$\\delta=\\pi$，把入射线偏振方向转过$90^\\circ$。"
+        },
+        {
+          "k": "p",
+          "x": "故$d_{\\min}=\\lambda/[2(n_e-n_o)]=589.3/[2(1.55335-1.54424)]\\,\\mathrm{nm}=32.34\\,\\mu\\mathrm m$。"
+        },
+        {
+          "k": "p",
+          "x": "题面仅说“能够通过”时，任意足够小且非零、未落在消光条件的厚度都有非零透光，不能唯一给出这一最小厚度。"
+        }
+      ],
+      "reviewNote": "原题“刚好使钠黄光能够通过”不足以唯一确定32.34μm；该答案对应首个透射极大（半波片）。若只要求非零透射，厚度可任意接近零，无正的最小值。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "de2771f2da821d6a36f2fbb1d1b72d0ef646ed115f91c94bd605f6f52232df3b"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-19",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "两偏振器平行时，要使第二片无透射光，石英片须将线偏振方向至少旋转$90^\\circ$；再增加整数倍$180^\\circ$也能消光。"
+        },
+        {
+          "k": "p",
+          "x": "由$\\theta=\\alpha d$，最小厚度$d=90^\\circ/(21.7^\\circ/\\mathrm{mm})=4.147\\,\\mathrm{mm}\\approx4.15\\,\\mathrm{mm}$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "2a3520ecff1654f2c17b957dc7cf07c76cfbeca6ebb4a1d6824704cd78255c65"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-二_blank-20",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "振动方向与$y$轴成$30^\\circ$，按题中方向取向，与$x$轴成$60^\\circ$。线偏振的两分量同相，故电场振幅矢量为$5(\\cos60^\\circ,\\sin60^\\circ)^{\\mathsf T}$。"
+        },
+        {
+          "k": "p",
+          "x": "归一化后消去总振幅5，得到$\\boldsymbol J=(1,\\sqrt3)^{\\mathsf T}/2$，且$\\boldsymbol J^\\dagger\\boldsymbol J=1$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "6f832d31cedefb0257b33ac2e3fe9a9176bb941a8547ed2812ca7352d4a2dc97"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "从左入射时，先遇到竖直透光轴的A片，竖直线偏振全部通过；再经过B片时，轴间夹角为$45^\\circ$。"
+        },
+        {
+          "k": "p",
+          "x": "因此$I_{\\mathrm{左}}=I_0\\cos^245^\\circ=I_0/2$。"
+        },
+        {
+          "k": "p",
+          "x": "从右入射时先通过B片，强度变为$I_0/2$，振动方向也变成B的方向；再通过A片又乘$\\cos^245^\\circ$，故$I_{\\mathrm{右}}=I_0/4$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "22f391c8273f0cc308255bcbba2d05d00a8b7c541856a2c25fa0404844061304"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "将部分偏振光写成强度$I_n$的自然光与强度$I_p$的线偏振光之和。检偏器转角$\\theta$时$I(\\theta)=I_n/2+I_p\\cos^2\\theta$，最大值为$I_n/2+I_p$。"
+        },
+        {
+          "k": "p",
+          "x": "题设给出$I_n/2+I_p/4=\\tfrac12(I_n/2+I_p)$，解得$I_n=I_p$。"
+        },
+        {
+          "k": "p",
+          "x": "所以偏振度$P=I_p/(I_n+I_p)=1/2=50\\%$。自然光背景不随检偏器转角改变，是列方程时必须保留的一项。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "c0eea506aaca5bb34a07688bc3191314d79c5a17ad2a427c4b76c0ce48f0a69a"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "光轴垂直棱镜主截面，主截面内各方向传播的e波均取给定主折射率$n_e$；o、e两束可分别按固定折射率的棱镜计算。"
+        },
+        {
+          "k": "p",
+          "x": "最小偏向时两折射角相等，各为顶角$A/2$，入射角也等于出射角，故$\\delta_{\\min}=2\\arcsin[n\\sin(A/2)]-A$。"
+        },
+        {
+          "k": "p",
+          "x": "代入$A=50^\\circ$：$\\delta_o=2\\arcsin(1.5246\\sin25^\\circ)-50^\\circ\\approx30.22^\\circ$，$\\delta_e=2\\arcsin(1.4792\\sin25^\\circ)-50^\\circ\\approx27.40^\\circ$。"
+        },
+        {
+          "k": "p",
+          "x": "两者差为$\\Delta\\delta\\approx2.82^\\circ$。因$n_o>n_e$，o光偏向角较大。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "d8614c411ae960e4cbf82f417bcb5f1650a8a82b0ec826ec9630b1f1cd01bede"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "入口、出口表面相互平行，光在入口正入射。在两棱镜接合面，o分量在第二块变成e分量，另一分量则由e变成o；接合面的入射角均为$\\theta=15^\\circ$。"
+        },
+        {
+          "k": "m",
+          "x": "r_1=\\arcsin\\!\\left(\\frac{n_o}{n_e}\\sin\\theta\\right)=16.7847^\\circ,\\qquad r_2=\\arcsin\\!\\left(\\frac{n_e}{n_o}\\sin\\theta\\right)=13.4130^\\circ."
+        },
+        {
+          "k": "p",
+          "x": "相对于最初传播方向，两束在第二棱镜中的偏转量分别为$r_1-\\theta$和$\\theta-r_2$，方向相反。由出口面折射得$\\phi_1=\\arcsin[n_e\\sin(r_1-\\theta)]=2.6526^\\circ$，$\\phi_2=\\arcsin[n_o\\sin(\\theta-r_2)]=2.6318^\\circ$。"
+        },
+        {
+          "k": "p",
+          "x": "分离角为两侧出射角之和$\\phi_1+\\phi_2\\approx5.284^\\circ$，约$5.28^\\circ$，与参考的$5.283^\\circ$在取位误差内一致。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "2fa554372ab30d7bd51a70514d049ccfa300bc112707939e114d5476c634fd63"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "长轴沿$x$、长短轴比$2:1$，故两分量振幅比为$2:1$；椭圆主轴与坐标轴重合时，两分量相位差为$\\pm\\pi/2$。以$e^{-\\mathrm i\\omega t}$为时间因子，迎着传播方向看，顺时针定义为右旋。"
+        },
+        {
+          "k": "m",
+          "x": "\\boldsymbol J_R=\\frac1{\\sqrt5}\\begin{bmatrix}2\\\\-\\mathrm i\\end{bmatrix},\\qquad\\boldsymbol J_L=\\frac1{\\sqrt5}\\begin{bmatrix}2\\\\\\mathrm i\\end{bmatrix}."
+        },
+        {
+          "k": "p",
+          "x": "两矢量的模平方均为1；实场分别有$E_x\\propto2\\cos\\omega t$、$E_y\\propto\\mp\\sin\\omega t$，验证了轴比和旋向。"
+        },
+        {
+          "k": "p",
+          "x": "若两束等强、同频、同向且上述整体相位相同，相加得$\\boldsymbol J_R+\\boldsymbol J_L=(4,0)^{\\mathsf T}/\\sqrt5$，为沿$x$轴的线偏振光。若相对整体相位另有变化，必须先将其计入再相加。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "02a84b2de45e0f1647a997c56645e3682b4703da3b797a558bb351b3bea32353"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "设$\\theta$为波片快轴与第一片透光轴的夹角，$\\delta$为波片延迟量，第一片后的强度为$I_P$。正交检偏器后的通式为$I=I_P\\sin^22\\theta\\sin^2(\\delta/2)$。"
+        },
+        {
+          "k": "p",
+          "x": "半波片$\\delta=\\pi$：转一周有4个极大、4个极小。极小在$\\theta=0^\\circ,90^\\circ,180^\\circ,270^\\circ$，$I=0$；极大在$45^\\circ,135^\\circ,225^\\circ,315^\\circ$，$I=I_P$。"
+        },
+        {
+          "k": "p",
+          "x": "四分之一波片$\\delta=\\pi/2$：极值方位与个数相同，但$I_{\\max}=I_P/2$、$I_{\\min}=0$。全波片$\\delta=2\\pi$：所有方位均无透射光，不再有独立的明暗极值。"
+        },
+        {
+          "k": "p",
+          "x": "原参考按入射光为自然光取$I_P=I_0/2$，故半波片极大$I_0/2$、四分之一波片极大$I_0/4$。若$I_0$指已通过第一片的线偏振光强，应分别改为$I_0$和$I_0/2$。"
+        }
+      ],
+      "reviewNote": "题干只称强度I0的“单色光”，未指定自然光或入射偏振态；参考半波片Imax=I0/2隐含自然光入射。解析用首片后强度IP给出通式，并说明该假设。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "31c5d4ff76dc0d4dae8a80c552117a9d414d074bc29a7021b87cdfd03fb340e1"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "晶片的固定双折射光程差为$\\Delta=(n_o-n_e)d=0.172\\times0.025\\,\\mathrm{mm}=4300\\,\\mathrm{nm}$，相位延迟$\\delta=2\\pi\\Delta/\\lambda$。"
+        },
+        {
+          "k": "p",
+          "x": "正交偏振片时，$I=I_P\\sin^2(\\delta/2)$。消光条件为$\\Delta=m\\lambda$，可见范围对应$m=7,8,9,10$。"
+        },
+        {
+          "k": "p",
+          "x": "故缺少的波长为$614.29\\,\\mathrm{nm}$、$537.50\\,\\mathrm{nm}$、$477.78\\,\\mathrm{nm}$、$430.00\\,\\mathrm{nm}$，共4条。"
+        },
+        {
+          "k": "p",
+          "x": "平行偏振片时，$I=I_P\\cos^2(\\delta/2)$。消光条件为$\\Delta=(m+1/2)\\lambda$，可见范围对应$m=6,7,8,9,10$。"
+        },
+        {
+          "k": "p",
+          "x": "故缺少$661.54\\,\\mathrm{nm}$、$573.33\\,\\mathrm{nm}$、$505.88\\,\\mathrm{nm}$、$452.63\\,\\mathrm{nm}$、$409.52\\,\\mathrm{nm}$，共5条。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "1d79b9c4bed146f471402e7aba7926ff0287815e48af08ac79e538bd1bbc6e04"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "两光楔的光轴互相垂直，所以一个楔中较快的偏振分量在另一个楔中较慢。两本征偏振的净光程差为$\\Delta=(n_o-n_e)(d_1-d_2)$。"
+        },
+        {
+          "k": "p",
+          "x": "正交偏振器与光轴成$45^\\circ$时，$I=I_P\\sin^2(\\pi\\Delta/\\lambda)$。厚度差沿横向位置线性变化，故可看到平行于等厚差线的、明暗交替的等间距直条纹。"
+        },
+        {
+          "k": "p",
+          "x": "若以横向坐标$x$从两楔等厚处起算，则$|d_1-d_2|=2x\\tan\\alpha$。相邻同类条纹的光程差相差$\\lambda$，间距为$b=\\lambda/[2|n_o-n_e|\\tan\\alpha]$。"
+        },
+        {
+          "k": "p",
+          "x": "采用本章方解石双折射率差$0.172$，得$b=0.0005893/[2\\times0.172\\tan2^\\circ]\\,\\mathrm{mm}\\approx0.0491\\,\\mathrm{mm}$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "01bc4f30dbf675240bb3e48ffd988f8c78bbf8e413127a4e2c251c2b5dd86b7f"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "第$j$块晶片厚度为$2^{j-1}d$，因此相位延迟为$\\delta_j=2^j\\phi$。它的两主轴与前后平行偏振片均成$45^\\circ$，单级强度透射比为$\\cos^2(\\delta_j/2)=\\cos^2(2^{j-1}\\phi)$。"
+        },
+        {
+          "k": "p",
+          "x": "每经过一片偏振片，偏振方向又被恢复到共同透光轴，因此各级透射比直接相乘：$\\tau=\\prod_{j=0}^{N-1}\\cos^2(2^j\\phi)$。"
+        },
+        {
+          "k": "m",
+          "x": "\\sin(2^N\\phi)=2^N\\sin\\phi\\prod_{j=0}^{N-1}\\cos(2^j\\phi)."
+        },
+        {
+          "k": "p",
+          "x": "上式由$\\sin2x=2\\sin x\\cos x$连续展开得到；平方并整理即有$\\tau=[\\sin(2^N\\phi)/(2^N\\sin\\phi)]^2$。当$\\sin\\phi=0$时按连续极限取值，透射比为1。"
+        },
+        {
+          "k": "p",
+          "x": "这里$\\tau$以通过首片偏振片后的强度为基准；若入射到整个系统的是自然光，包含首片损耗的总透射比还要乘$1/2$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "1dff2e9322bdaaf3f81ad9b102d6b4ae6a0bf4190ded51fc6544b6506abdf6a3"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-11",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "先保留P，并设两缝在后置偏振片前等强为$I_s$。P与P1平行、与P2成$\\theta$，故两缝出射强度为$I_1=I_s$、$I_2=I_s\\cos^2\\theta$；出射偏振方向之间仍有$\\theta$夹角。"
+        },
+        {
+          "k": "p",
+          "x": "干涉项还要乘偏振方向的内积$\\cos\\theta$，因此可见度$V=2\\sqrt{I_1I_2}|\\cos\\theta|/(I_1+I_2)=2\\cos^2\\theta/(1+\\cos^2\\theta)$。"
+        },
+        {
+          "k": "p",
+          "x": "去掉P并取原光源为自然光时，两缝经过P1、P2后的平均强度相等，但投影后的两个振幅不再具有单位相关度。用自然光的两个互不相关正交分量分别求干涉并相加强度，得$I(\\varphi)=I_s[1+\\cos^2\\theta\\cos\\varphi]$。"
+        },
+        {
+          "k": "p",
+          "x": "所以自然光情形应为$V=\\cos^2\\theta$。原参考给$\\cos\\theta$，相当于只保留出射偏振方向的投影因子，却将两个自然光投影振幅误当作完全相关，需核查。"
+        }
+      ],
+      "reviewNote": "已核原PDF物理页191题干：去掉源孔后的P，若原光源为自然光，则P1/P2投影振幅相关度还含cosθ，结合出射偏振内积得到V=cos²θ；原参考cosθ缺少一因子。若假设原光源偏振态不同，题干也需补充说明。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "bec8c509ac24ec65e1578e391abf83f72a0ce47ff6d41c12d43ecc6dd75ec88c"
+    },
+    {
+      "questionId": "engopt2-ch11-exercise-三_calc-12",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "按参考答案采用20%浓度对应$c=0.20\\,\\mathrm{g/cm^3}$，溶液长度$10\\,\\mathrm{cm}=1\\,\\mathrm{dm}$。溶液引起的旋转角为$\\theta=[\\alpha]lc=144^\\circ\\times1\\times0.20=28.8^\\circ$。"
+        },
+        {
+          "k": "p",
+          "x": "要抵消该旋转，选择旋向相反的石英晶片，其旋转角大小满足$\\alpha d=28.8^\\circ$。"
+        },
+        {
+          "k": "p",
+          "x": "因此$d=28.8/21.75\\,\\mathrm{mm}=1.324\\,\\mathrm{mm}\\approx1.32\\,\\mathrm{mm}$。旋光率和比旋光度的长度单位不同，计算前必须统一。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "3df2ecda88669a164f9c2cc3cc0fac54cf8f16d4429a3eb36756284631f54b27"
+    }
+  ]
+}

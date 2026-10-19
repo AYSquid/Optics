@@ -1,0 +1,325 @@
+{
+  "date": "2026-10-19",
+  "entries": [
+    {
+      "questionId": "engopt2-ch01-exercise-一_choice-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 C、D。真空中各种频率的光速均为 c；费马原理要求实际光路的光程取驻值，通常称极值。"
+        },
+        {
+          "k": "p",
+          "x": "B 错在全反射的传播方向：必须由光密介质射向光疏介质，且入射角大于临界角。本题按教材的完整表述判分，A 未写“透明、各向同性”等适用条件；这不表示均匀晶体中的光线必然弯曲。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4d59c9bf59c3290207fe11f100137b5b5d96fb342a1ccbcfc9ba99a9322b6afe"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-一_choice-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、B、C、D。单个折射球面的垂轴放大率为 $\\beta=nl'/(n'l)$。由 $\\beta>1$ 得 l、l' 同号，因此物像在球面的同侧，且像比物大。"
+        },
+        {
+          "k": "m",
+          "x": "\\gamma=\\frac{n}{n'\\beta}>0,\\qquad 0<\\gamma<1."
+        },
+        {
+          "k": "p",
+          "x": "角放大率为正而小于 1，说明近轴光束的孔径角减小，教材所谓“光束变窄”指这一角度关系，不是说像高变小。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "a60520c67728220074e73139ae35364d467d6c3ffe87b1f55679abcc28d9efd9"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-一_choice-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 C。在物像方折射率相同的情况下，$\\beta=l'/l$。实物对应 $l<0$，而 $\\beta<0$，故 $l'>0$，成实像；负号说明倒立，$|\\beta|<1$ 说明缩小。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "53a96de9e82e7c9dc229bdfc8d25098a875db71c8931d9913e78c5d81651dfa8"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-一_choice-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B、D。球面反射用展开的符号约定 $n'=-n$，于是 $\\beta=-l'/l$。$\\beta>0$ 表明 l、l' 异号，对反射成像而言物像虚实相反。"
+        },
+        {
+          "k": "m",
+          "x": "\\gamma=\\frac{n}{n'\\beta}=-\\frac1\\beta<0,\\qquad \\alpha=\\frac{n'}{n}\\beta^2=-\\beta^2<0."
+        },
+        {
+          "k": "p",
+          "x": "因此 C 错、D 对。反射镜前后分别对应不同的实虚空间，不能把折射球面的“同侧”判据直接套过来。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "78662e573f0012b07ee3cd8625398ee30ddcb6e0b31734b4e599e441c8bf564d"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-一_choice-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B。凸面镜对实物为发散反射，反射光反向延长线在镜后相交，形成虚像。镜面成像公式给出的倍率满足 $0<\\beta<1$，所以像正立、缩小。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "455033cffe30cfe521161f494f3d5e5fcd692578b131eb43d75924120f54a30c"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "眼睛允许横向移动，极限光线可从孔的一侧边缘斜穿到另一侧边缘，因此玻璃内的最大倾角由整孔宽决定，不能误用半孔宽。"
+        },
+        {
+          "k": "m",
+          "x": "\\tan r_{\\max}=\\frac{120}{200}=0.6,\\qquad \\sin i_{\\max}=1.5163\\sin r_{\\max}."
+        },
+        {
+          "k": "p",
+          "x": "算得 $i_{\\max}\\simeq51.2725^\\circ$，左右对称的总观察角为 $2i_{\\max}\\simeq102.54^\\circ$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "2f08951365b3425f4496dd7a33f26475a98934c5d40da653a70e5bc4ecccccfc"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "两界面平行，第二介质中两处的入射/折射角相同。设光在第一介质的入射角为 i，第二介质中的角为 r。"
+        },
+        {
+          "k": "m",
+          "x": "n_1\\sin i=n_2\\sin r,\\qquad \\sin r_c=\\frac{n_3}{n_2}."
+        },
+        {
+          "k": "p",
+          "x": "临界情况满足 $n_1\\sin i_c=n_3$，故 $i_c=\\arcsin(1/1.4)=45.58^\\circ$。严格发生全反射时应为 $i>45.58^\\circ$；参考答案给的是起始临界值。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "8ede090d754a0c8791c76f2ad0da3023f543ef7c3ff6d9e0f5558203f3929123"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "刚好看不见时，针尖发出的临界折射光恰从木塞边缘掠出。设临界角为 c，木塞半径为 d/2，则"
+        },
+        {
+          "k": "m",
+          "x": "\\tan c=\\frac{d}{2h},\\qquad \\sin c=\\frac1n."
+        },
+        {
+          "k": "p",
+          "x": "由直角三角形得 $\\sin c=d/\\sqrt{4h^2+d^2}$，所以 $n=\\sqrt{4h^2+d^2}/d$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "e04597472cecf4972f1fbe2ec8089f682c34c84cd708f8003604e0caf6baca8a"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "先采用镜面题常用的“实物距、实像距取正”的距离约定：$s=1.75\\,\\mathrm m$，镜后的虚像为 $s'=-0.10\\,\\mathrm m$。"
+        },
+        {
+          "k": "m",
+          "x": "\\beta=-\\frac{s'}s=\\frac{0.10}{1.75},\\qquad y'=\\beta\\times1.75=0.10\\,\\mathrm m."
+        },
+        {
+          "k": "m",
+          "x": "\\frac1f=\\frac1s+\\frac1{s'},\\qquad f=-0.10606\\,\\mathrm m."
+        },
+        {
+          "k": "p",
+          "x": "凸面镜曲率半径的大小为 $|r|=2|f|=0.2121\\,\\mathrm m$；像为正立虚像。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "e4cea56a3a69f2fb6dd13d83129cc91a0a93b93cc93fd7baf1cf5216ccade27b"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "取 A 顶点为全局坐标 x=0，B 顶点为 x=200 mm，物点在 x=150 mm。每次反射单独用 $1/s+1/s'=1/f$、$\\beta=-s'/s$，实物/实像距取正，凹镜 $f_A=100$ mm、凸镜 $f_B=-250$ mm。"
+        },
+        {
+          "k": "p",
+          "x": "先 A 后 B：A 单独成像距为 300 mm，倍率 −2；这个会聚点在 B 后方 100 mm，是 B 的虚物，故 $s_B=-100$ mm。"
+        },
+        {
+          "k": "m",
+          "x": "s'_B=\\left(-\\frac1{250}+\\frac1{100}\\right)^{-1}=166.6667\\,\\mathrm{mm},\\quad \\beta=\\left(-2\\right)\\left(\\frac{166.6667}{100}\\right)=-\\frac{10}{3}."
+        },
+        {
+          "k": "p",
+          "x": "最终像在 B 左侧 166.6667 mm，$y'=-133.33$ mm；按原题全局轴向记为 $l'_B=-166.6667$ mm。"
+        },
+        {
+          "k": "p",
+          "x": "先 B 后 A：B 的物距为 50 mm，成虚像距 −41.6667 mm，即中间像在 x=241.6667 mm；这对 A 是实物。"
+        },
+        {
+          "k": "m",
+          "x": "s'_A=\\left(\\frac1{100}-\\frac1{241.6667}\\right)^{-1}=170.5882\\,\\mathrm{mm},\\quad y'=40\\times\\frac{41.6667}{50}\\times\\left(-\\frac{170.5882}{241.6667}\\right)=-23.53\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "两次反射的物像距离必须分别从当前镜面量起，不能把前一次像距直接当作后一次物距。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "b8a0bc9fd9d44135006c19ee774ac9f390f54c7b426f4390d97e748bfadc204b"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "平面与刻度紧贴，平面折射不改变此处的横向尺度；把刻度看作玻璃内、距凸面顶点 30 mm 的物。取光从玻璃射向空气，$l=-30$ mm、$n=1.5$、$n'=1$。"
+        },
+        {
+          "k": "m",
+          "x": "\\beta=\\frac{nl'}{n'l}=2\\ \\Rightarrow\\ l'=-40\\,\\mathrm{mm}."
+        },
+        {
+          "k": "m",
+          "x": "\\frac{n'}{l'}-\\frac nl=\\frac{n'-n}{r},\\qquad -\\frac1{40}+\\frac{1.5}{30}=\\frac{-0.5}{r}."
+        },
+        {
+          "k": "p",
+          "x": "所以 $r=-20$ mm，凸面曲率半径的大小为 20 mm。成正立、放大两倍的虚像。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "d7f3f254c83d901dd10cd4a3d18f82786e2a03b306d2afe16c1705463fc05a16"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "液体中的玻璃球为厚透镜，不能把两个球面压在同一顶点。对球半径 R、球内折射率 n、周围液体折射率 $n_s$，其像方主面在球心，焦距为"
+        },
+        {
+          "k": "m",
+          "x": "f'=\\frac{nR}{2(n-n_s)}=\\frac{1.720\\times15}{2(1.720-1.360)}=35.8333\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "平行光会聚于球心右侧 f' 处，故距最后一面为 $f'-R=20.8333$ mm。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "e54583c5491fb68fa5c58ce06b5d32285eeb37bf20aa2a7d1ad950bd50cf5b99"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "薄玻璃壁忽略后，系统等效为“水—空气—水”两折射球面。为与参考答案的数值一致取水的折射率 1.33；两面间距 d=18.5 mm，所有距离沿入射光向右为正。"
+        },
+        {
+          "k": "m",
+          "x": "\\frac1{l'_1}-\\frac{1.33}{-100}=\\frac{1-1.33}{-16.5}\\ \\Rightarrow\\ l'_1=149.2537\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "第二面的物距 $l_2=l'_1-d=130.7537$ mm，为虚物。再算"
+        },
+        {
+          "k": "m",
+          "x": "\\frac{1.33}{l'_2}-\\frac1{130.7537}=\\frac{1.33-1}{16.5}\\ \\Rightarrow\\ l'_2=48.10\\,\\mathrm{mm}."
+        },
+        {
+          "k": "m",
+          "x": "\\beta=\\frac{1.33l'_1}{-100}\\cdot\\frac{l'_2}{1.33l_2}\\simeq-0.550,\\qquad y'=-5.50\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "因此在后表面右侧 48.1 mm 处成缩小倒立实像。若取水的折射率为 4/3，数值会略有不同。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "6099c45fe9d4ad59ec846fe5ce2dfe308b825fbe2af2a25718ffda0f5dcbdf48"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "设凸面半径的大小为 R。未镀银时，薄平凸透镜的焦距为 $f=R/(n-1)=480$ mm。"
+        },
+        {
+          "k": "p",
+          "x": "镀银后，光在玻璃内由曲面反射，再从平面射出；等效会聚距离为 $F=R/(2n)=80$ mm。"
+        },
+        {
+          "k": "m",
+          "x": "R=480(n-1)=160n\\ \\Rightarrow\\ n=1.5,\\quad R=240\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "按光向右传播的球面半径符号，凸面中心在顶点左侧，因此 $r=-240$ mm。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "c8bd3f0f6c23814e60d53eee094c72a6c2e69e7681d0cd03fbb34c81f83f1a35"
+    },
+    {
+      "questionId": "engopt2-ch01-exercise-二_calc-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "第一种情况是空气中的玻璃球，半径 R=30 mm、n=1.5。主面在球心，$f'=nR/[2(n-1)]=45$ mm，所以会聚点在后表面右侧 $45-30=15$ mm，为实像。"
+        },
+        {
+          "k": "p",
+          "x": "第二种情况中，右球左表面是凸面反射镜，半径 30 mm，焦距为 −15 mm。入射到它的光正会聚于镜后 15 mm，恰对应它的虚物焦点，反射后在空气中成为向左的平行光。"
+        },
+        {
+          "k": "p",
+          "x": "平行光再反向通过左侧玻璃球，由对称性会聚于原第一面左侧 15 mm，仍为实像。以原入射方向向右为正记作 $l'=-15$ mm；负号表示像在左侧，不代表这里是虚像。原参考图可用来核对返回光线方向。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "d463ddc78fa770bb8e23d56cd6745996bc4cba7ae2eec984972079b79bd94efc"
+    }
+  ]
+}

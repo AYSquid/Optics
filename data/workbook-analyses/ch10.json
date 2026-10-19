@@ -1,0 +1,905 @@
+{
+  "date": "2026-10-19",
+  "entries": [
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 C。单缝的亮暗条纹沿缝长方向延伸，光强沿垂直于缝的方向变化，所以 A 把条纹方向说反了。"
+        },
+        {
+          "k": "m",
+          "x": "a\\sin\\theta_m=m\\lambda,\\quad m=\\pm1,\\pm2,\\ldots;\\qquad x_m\\simeq\\frac{mf\\lambda}{a}."
+        },
+        {
+          "k": "p",
+          "x": "同侧相邻暗纹的间隔约为 $f\\lambda/a$，故 C 对。跨过中央亮纹的两个一级暗纹相距 $2f\\lambda/a$，B 不成立；次极大位置也并非严格等间隔，D 不成立。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "fc441c5bd384d85af438219d9a09a0bae4529489599d09366bad132a397e1228"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、D。接收屏位于会聚透镜的后焦面时，同侧相邻暗纹间距为"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta x\\simeq\\frac{f_2\\lambda}{a}."
+        },
+        {
+          "k": "p",
+          "x": "增大波长或增大会聚透镜焦距都会增大条纹间距。增大缝宽会使条纹变密；准直透镜的焦距不直接决定此处的衍射尺度。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "56ae3b5ac516febef34bb3626533553dde00833d1c588db898e1ed55ab756b72"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 D。图中接收屏放在 $L_2$ 的后焦面，屏上位置由衍射方向决定，近轴时 $x=f_2\\theta$。"
+        },
+        {
+          "k": "p",
+          "x": "横向移动单缝只改变各衍射方向的整体相位，不会让焦面强度图样跟着平移；沿轴移动单缝也不会使图样按距离缩放。轴向移动 $L_2$ 而接收屏不动，会使屏离开后焦面，因此 C 不成立。"
+        },
+        {
+          "k": "p",
+          "x": "把 $L_2$ 横向移动 $\\Delta x$，其后焦点及整个图样同向移动 $\\Delta x$，所以 D 对。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "c094e41752ea06a86ec9a9341a7fc978697ca292a13074e307f28799a3a554d5"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 C。把点光源沿垂直于缝的方向移动，准直后的入射角改变，中央亮纹在接收屏上反向移动；把它沿此方向扩展成线光源，各点形成的位置不同的条纹会相互叠加，使条纹变模糊。"
+        },
+        {
+          "k": "p",
+          "x": "沿缝长方向扩展光源时，各点在垂直于缝的方向上形成同样的强度分布，叠加后条纹更亮。这里采用长单缝的一维衍射模型，沿缝长方向的微量移动不会使这组条纹同向平移。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "6ec74787dca851289c7f0569d498b340ad941e7f609ae1d5b77269d7b61e74cd"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、C。设准直透镜在垂直于缝的方向移动 $\\Delta x$，固定光源相对其前焦点偏移 $-\\Delta x$，出射平行光因而倾斜约 $\\Delta x/f_1$。"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta x_{\\rm pattern}\\simeq\\frac{f_2}{f_1}\\Delta x."
+        },
+        {
+          "k": "p",
+          "x": "所以条纹与准直透镜同向移动。单缝绕光轴转动时，其傅里叶衍射图样同向转过相同角度；旋转轴对称的准直透镜则不会旋转图样。沿缝长方向平移准直透镜不改变一维条纹的位置。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "a10ec023d921ca28773a898d80609feedf712ddfec37e29977d55d5f94b15feb"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "原答案选 D。D 的依据是：在均匀平行光中横移单缝，只使衍射振幅多出相位因子，其模平方不变，因此接收屏上的强度条纹不变。"
+        },
+        {
+          "k": "p",
+          "x": "增大 $L_2$ 焦距会增大焦面条纹尺度，A 错。B 要看透镜口径是否限制了衍射光束；如果完全不截光，单纯增大口径也不会改变理想图样。"
+        },
+        {
+          "k": "p",
+          "x": "此外，在理想准直照明、接收屏仍在 $L_2$ 后焦面且不发生截光的条件下，沿光轴移动衍射屏同样只改变传播相位，C 也成立。原题未说明额外的截光条件，不能把“仅 D”作为无条件结论。"
+        }
+      ],
+      "reviewNote": "原书 p167 题干、p170 答案核对一致，但理想夫琅和费模型下 C 也成立；B 在透镜原本不截光时亦成立。仅选 D 缺少孔径/截光等附加条件，需复核题意与判分。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "c78abe280ccdf464a912f0ba1a3e86052560f4ff008bfbe5200d0fd00f6ed76b"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、B。圆孔的衍射图样由中央艾里斑和一系列同心圆环组成，暗环由贝塞尔函数的零点决定，环间隔并不严格相等。约 84% 的透射光能量集中在中央亮斑内。"
+        },
+        {
+          "k": "m",
+          "x": "\\theta_1\\simeq1.22\\frac{\\lambda}{D},\\qquad r_1\\simeq1.22\\frac{f\\lambda}{D}."
+        },
+        {
+          "k": "p",
+          "x": "中央斑的大小还与波长和焦距有关，C 错；中央斑是零级，D 错。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4603da5587ceca07e595d6eb1dcbce4c781c169f2ed36edf1074ad02640f08a1"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 C。相同大小的圆孔和不透明圆盘构成互补衍射屏，按巴比涅原理，两者的衍射振幅之和等于没有障碍物时的直透光振幅。"
+        },
+        {
+          "k": "p",
+          "x": "除直透光集中的中心方向外，该和为零，因此两种图样的振幅相反而强度相同。中心处还叠加直透光，不能说全图强度完全相同。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "b3a793e43d58e43d37cb54e394dbad34bf791bba25c70bb9ac15051653a97640"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "按题干应选 B、C，原答案仅列 C，需复核。缝宽为 a，不透明间隔为 2a，所以缝中心距为 $d=3a$。"
+        },
+        {
+          "k": "m",
+          "x": "d\\sin\\theta=k\\lambda,\\qquad a\\sin\\theta=m\\lambda\\ \\Rightarrow\\ k=3m."
+        },
+        {
+          "k": "p",
+          "x": "因此 3、6 等主极大会与单缝极小重合而缺级，B 的缺级规律成立。4 缝在相邻主极大之间有 $4-1=3$ 个极小、$4-2=2$ 个次极大，C 也成立。"
+        },
+        {
+          "k": "p",
+          "x": "由 $\\lambda=a/2$ 得允许的主极大满足 $|k|\\le6$；扣除缺级后为 $k=0,\\pm1,\\pm2,\\pm4,\\pm5$，共 9 个主极大，A 错。主极大和次极大的宽度也不相同，D 错。"
+        }
+      ],
+      "reviewNote": "已对照原书 p167：确为不透明间隔 2a、波长 a/2；p170 仅答③。按 d=3a，②所述3、6…级缺级亦成立，通常应选 B、C；可传播且不缺级的主极大共9个。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "0838f3332889e164fa44dbdb1cb8e4b6a40931a6eadbba4f691544e685d1eebb"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B。光栅按瑞利判据的分辨本领为"
+        },
+        {
+          "k": "m",
+          "x": "R=\\frac{\\lambda}{\\Delta\\lambda}=|k|N."
+        },
+        {
+          "k": "p",
+          "x": "大量缝发出的光相干叠加，使主极大非常窄，因此能区分波长相近的谱线。缝距小主要提高角色散，单缝窄主要改变衍射包络，二者都不能代替大量有效照明缝数的作用。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "b5d3affab688e1c7a197398703f7d5e25b1ec7cec02dee0a06525230b730a45a"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-11",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、B、D。在级次、缝宽和缝距不变时，增加缝数 N 会提高分辨本领并压窄主极大。"
+        },
+        {
+          "k": "m",
+          "x": "R=|k|N,\\qquad \\delta\\theta\\simeq\\frac{\\lambda}{Nd\\cos\\theta_k},\\qquad d\\sin\\theta_k=k\\lambda."
+        },
+        {
+          "k": "p",
+          "x": "主极大的位置由光栅方程决定，不随 N 改变，故 C 错。缺级由光栅主极大与单缝极小重合决定，只涉及 d/a，故 D 对。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "9a102b7712a2ac3e0836eb3cc913c672aa2b30c884823ebe482d69c1317e6ba2"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-12",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 C。减小缝中心距 d 时，同一级次满足 $\\sin\\theta_k=k\\lambda/d$，因而谱线离中央更远、相邻级次间隔增大。"
+        },
+        {
+          "k": "m",
+          "x": "\\frac{d\\theta}{d\\lambda}=\\frac{k}{d\\cos\\theta_k},\\qquad R=|k|N,\\qquad \\delta\\theta\\simeq\\frac{\\lambda}{Nd\\cos\\theta_k}."
+        },
+        {
+          "k": "p",
+          "x": "角色散增大，但在 N 和 k 不变时分辨本领并不提高；主极大反而变宽。缺级由 d/a 决定，d 改变后也不能保证原缺级不变。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "70db0973848e6432f7ccfaa97c150b8adb1c796f5fa6f84c68356a8a8b3f139a"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-13",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 D。在 N、d 不变时，主极大位置、主极大的窄峰宽度以及 $R=|k|N$ 均不由缝宽 a 决定。"
+        },
+        {
+          "k": "p",
+          "x": "增大 a 会使单缝包络变窄，并改变主极大与单缝暗纹重合的条件："
+        },
+        {
+          "k": "m",
+          "x": "d\\sin\\theta=k\\lambda,\\quad a\\sin\\theta=m\\lambda\\ \\Rightarrow\\ k=m\\frac da."
+        },
+        {
+          "k": "p",
+          "x": "所以改变的是缺级规律，而不是相邻主极大的间隔。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "25fe5ba86baf9445957cc59a963c56c3ebc4aa20b006af2f3281b9b56689314f"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-14",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 D。零级方向各缝的光程相同，振幅同相相加，合振幅为单缝的 N 倍，光强为单缝的 $N^2$ 倍。"
+        },
+        {
+          "k": "m",
+          "x": "\\frac{I_2}{I_1}=\\left(\\frac{N_2}{N_1}\\right)^2=\\left(\\frac{1800}{600}\\right)^2=9."
+        },
+        {
+          "k": "p",
+          "x": "这里“其他条件相同”包括每条缝的宽度和照明强度相同。不能把中央峰强度与随缝数成正比的总透射能量混为一谈。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "d39bf776c665cc0639dba7e606717e0f28131f8dc09859e72ce9287f80ac9d06"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-15",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "参考答案 D 指的是 750 nm 谱线的级次。重合意味着两种波长满足同一个衍射方向："
+        },
+        {
+          "k": "m",
+          "x": "k_1\\lambda_1=k_2\\lambda_2,\\qquad450k_1=750k_2\\ \\Rightarrow\\ k_1=5j,\\quad k_2=3j."
+        },
+        {
+          "k": "p",
+          "x": "因此 450 nm 的第 5、10、15…级分别与 750 nm 的第 3、6、9…级重合。原题没有指明所问级次对应哪一种波长，阅读 D 时必须补上“750 nm”。"
+        }
+      ],
+      "reviewNote": "原题未指明重合谱线级次对应的波长；D 仅对应750nm，450nm应为5、10、15…级。原题与参考答案的指代需澄清。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "02ba455900aa694a9de1fb154db2fe58f7846378bf1e67b97bc1b388ba079dda"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-一_choice-16",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B。光栅主极大与单缝极小重合时发生缺级。"
+        },
+        {
+          "k": "m",
+          "x": "(a+b)\\sin\\theta=k\\lambda,\\qquad a\\sin\\theta=m\\lambda\\ \\Rightarrow\\ k=m\\frac{a+b}{a}."
+        },
+        {
+          "k": "p",
+          "x": "要使 3、6、9…级全部缺失，应有 $(a+b)/a=3$，即 $a+b=3a$。其余选项分别对应 2、4、6 的整数倍缺级。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "f54597684824ccd7d8dae09824e69a9f171373b87f0b8e7961b920d7d4d6e157"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填写：光在传播过程中绕过障碍物、偏离直线传播而进入几何影区，并形成稳定的光强不均匀分布。"
+        },
+        {
+          "k": "p",
+          "x": "障碍物或孔径限制了波面，不同波面部分发出的子波在观察处相干叠加，因此几何光学预测的明暗边界附近会出现亮暗结构。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "aff19e88f8d3674382b1565e9373b2abf52f48dc62ebfc00b09422115a31bcf5"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填写“衍射”。丝绸的经纬纤维构成近似二维光栅，不同波长的光有不同衍射角。"
+        },
+        {
+          "k": "m",
+          "x": "d\\sin\\theta=k\\lambda."
+        },
+        {
+          "k": "p",
+          "x": "零级的各种颜色重合，仍呈白色；两侧各级的不同波长分开，所以能看到带颜色的灯丝像。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "e795318058208f61fd8304fcc29b96ac5e6bc73ceaceedfa67d692db440c124b"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "依次填写“菲涅耳衍射”“远场衍射”“光源和观察屏都距衍射屏无穷远”。"
+        },
+        {
+          "k": "p",
+          "x": "前者需要保留波面曲率和传播距离的影响；后者可把入射光和观察方向分别视为平行光。实验中把点光源放在准直透镜的前焦点、观察屏放在会聚透镜的后焦面，就能在有限装置中实现等效的夫琅和费衍射。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "cbaaae5ba3a3b2d877817b3f8d4514be1e4c08891b6eb71e5806d6a73191cd3a"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填写“振动的相干叠加”。先把各面积元子波传到 P 点的复振幅相加，再取模平方得到光强。"
+        },
+        {
+          "k": "m",
+          "x": "E(P)=\\int_S dE(P),\\qquad I(P)\\propto|E(P)|^2."
+        },
+        {
+          "k": "p",
+          "x": "子波的传播相位决定相长或相消，不能先分别计算光强再相加。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "9ac8c3ae108e2a61a0e16cc81e66c5ac5048890776590727f0ec5cc1c8489619"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填写 $D/d$，表示充分利用物镜分辨能力所需的最小放大率。"
+        },
+        {
+          "k": "p",
+          "x": "望远镜的出瞳直径为 $D/|\\Gamma|$。要使物镜收集的光束能够全部进入眼瞳，需有"
+        },
+        {
+          "k": "m",
+          "x": "\\frac D{|\\Gamma|}\\le d\\quad\\Rightarrow\\quad |\\Gamma|\\ge\\frac Dd."
+        },
+        {
+          "k": "p",
+          "x": "临界匹配时 $|\\Gamma|=D/d$；更高放大率不再提高物镜本身的衍射分辨率。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "e6c47e3aefa467cee2df5578abfa197e071cbbac4ebb1c0da274f1ddf6ff291c"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "依次填写 $3\\lambda$、3、$3(n-1)\\lambda$。"
+        },
+        {
+          "k": "p",
+          "x": "正入射时相邻缝沿观察方向的光程差为 $d\\sin\\theta$，题给它等于 $3\\lambda$，所以该方向为第三级主极大。第 1 缝到第 n 缝跨过 n−1 个缝距，故总光程差再乘 n−1。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "f1a7b328f8d2accb10673b3c857e37758060ab2327b8c5517fae0aa877337669"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "按巴比涅原理，细丝在非中心方向的衍射强度与同宽单缝相同。取同侧相邻暗纹间距 $\\Delta x=f\\lambda/a$。"
+        },
+        {
+          "k": "m",
+          "x": "a=\\frac{f\\lambda}{\\Delta x}=\\frac{50\\times0.0006328}{1.5}\\,\\mathrm{mm}=0.02109\\,\\mathrm{mm}\\simeq21\\,\\mu\\mathrm m."
+        },
+        {
+          "k": "p",
+          "x": "因此细丝直径约为 21 μm；题中的暗纹间距采用同侧相邻暗纹间距，跨中央亮纹的两个一级暗纹间距则是它的两倍。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4ad51c222270abb0936d982d7c7e52b9bebfeb7bfdda1d7e04b5725be4718828"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "第一级极小满足 $a\\sin\\theta_1=\\lambda$。"
+        },
+        {
+          "k": "m",
+          "x": "\\sin\\theta_1=\\frac{589\\times10^{-9}}{0.1\\times10^{-3}}=5.89\\times10^{-3}."
+        },
+        {
+          "k": "p",
+          "x": "小角度下 $\\theta_1\\simeq\\sin\\theta_1=5.89\\times10^{-3}\\,\\mathrm{rad}$，在光轴两侧对称出现。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "d85b97b108b935ac8816d0dc1d9adfb31d289c7d6970fc4b259713765bb9eba9"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "按圆孔瑞利判据，口径需满足 $1.22\\lambda/D\\le\\Delta\\theta$。把角秒换成弧度："
+        },
+        {
+          "k": "m",
+          "x": "\\Delta\\theta=\\frac{0.05}{206265}=2.424\\times10^{-7}\\,\\mathrm{rad}."
+        },
+        {
+          "k": "p",
+          "x": "取可见光的典型波长 $\\lambda=550\\,\\mathrm{nm}$，得到 $D\\ge2.77\\,\\mathrm m\\simeq2.8\\,\\mathrm m$。题干没有给波长，因此 2.8 m 是采用这一波长约定的结果。"
+        }
+      ],
+      "reviewNote": "题干缺少观测波长；参考值2.8m相当于采用可见光典型波长约550nm，不能视为对任意波长都成立的唯一数值。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "972ddc95574256f12cb035306102276d9d41de764f65188601e486d946445c25"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填写 7。光栅常数为 $d=1/500\\,\\mathrm{mm}=2\\,\\mu\\mathrm m$。采用 $d(\\sin\\theta-\\sin i)=k\\lambda$ 的有向角约定，$i=30^\\circ$。"
+        },
+        {
+          "k": "m",
+          "x": "-1\\le0.5+\\frac{0.589}{2}k\\le1\\quad\\Rightarrow\\quad-5.09\\le k\\le1.70."
+        },
+        {
+          "k": "p",
+          "x": "可取的整数为 −5、−4、−3、−2、−1、0、1，共 7 条。换用另一种衍射角符号约定会把级次符号反过来，但总数不变。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4ba838596a7dd7400741e174e93790c885faba42eb1ca7cfaec63ff247688212"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-11",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "由光栅分辨本领 $R=kN=\\lambda/\\Delta\\lambda$，第二级所需的照明缝数至少为"
+        },
+        {
+          "k": "m",
+          "x": "N\\ge\\frac{589}{2(589.6-589)}=490.83."
+        },
+        {
+          "k": "p",
+          "x": "取整数 N=491。每毫米有 50 条缝，所需宽度为 $W=N/50=9.82\\,\\mathrm{mm}$。这里控制分辨率的是被照亮的总缝数。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "944164f381f9aba87ed8fcb5427206af3fa0cf00fbdcd12edfe45b92bfb3145e"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-12",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "圆形透镜口径对应艾里斑，其第一暗环半径为 $r=1.22f\\lambda/D$，题目求的是直径，必须再乘 2。"
+        },
+        {
+          "k": "m",
+          "x": "2r=2.44\\frac{f\\lambda}{D}=2.44\\frac{50\\times(546\\times10^{-7})}{1}\\,\\mathrm{cm}=6.66\\times10^{-3}\\,\\mathrm{cm}."
+        },
+        {
+          "k": "p",
+          "x": "因此中央亮斑直径约为 0.0666 mm。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "a126d04ef469cb938e5e11ca65390a1879c6c00258fbee4249f13873bcf3d1dd"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-13",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "原答案 400 nm 与“单缝极大”不符，需复核。把中央极大记为零级，单缝第 k 个次极大的常用近似为 $a\\sin\\theta\\simeq(k+1/2)\\lambda$。"
+        },
+        {
+          "k": "m",
+          "x": "\\left(3+\\frac12\\right)\\lambda\\simeq\\left(2+\\frac12\\right)600\\,\\mathrm{nm}\\quad\\Rightarrow\\quad\\lambda\\simeq428.6\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "若用准确的极值方程 $\\tan\\alpha=\\alpha$，第二、第三次极大为 $\\alpha_2=7.72525$、$\\alpha_3=10.90412$，得到 $\\lambda=600\\alpha_2/\\alpha_3\\simeq425.08\\,\\mathrm{nm}$。400 nm 对应的是第三级暗纹与第二级暗纹重合时的整数级关系。"
+        }
+      ],
+      "reviewNote": "已核对原书p169题干为单缝“第三级极大”与“第二级极大”，p171原答400nm。按通常次极大级次定义，近似428.6nm，精确425.08nm；400nm适用于极小，不应强行套用于极大。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "325f86568be73037af28b62e0792e5094a768ff6ee3c06a736c53e840340a7b2"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-14",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "参考答案为 $a:d=1:6$，它采用包络边界恰好落在干涉亮纹上的通常设定。"
+        },
+        {
+          "k": "p",
+          "x": "中央衍射包络的边界为 $a\\sin\\theta=\\pm\\lambda$，其中的干涉亮纹满足 $d\\sin\\theta=m\\lambda$，所以只计 $|m|<d/a$ 的整数。"
+        },
+        {
+          "k": "p",
+          "x": "当 d/a=6 时，边界的 $m=\\pm6$ 因单缝极小而缺失，中央只剩 $m=0,\\pm1,\\ldots,\\pm5$，共 11 条。严格说，仅凭“含 11 条”只能推出 $5<d/a\\le6$；唯一确定 1:6 还需要上述边界条件。"
+        }
+      ],
+      "reviewNote": "11条干涉主亮纹只严格限制5<d/a≤6；原答1:6隐含中央包络边界恰落在±6级干涉主极大上的整数比条件。原题条件不足以唯一确定该比值。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "182c97b6ffca8d60b29e046f37c07e6269d37996689a050a4fcf7ff0de363364"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-二_blank-15",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "按“垂直于光栅平面入射”的题意，结果应为 500 nm。闪耀方向是刻槽小面的镜面反射方向，与光栅总平面法线成 $2\\gamma=30^\\circ$。"
+        },
+        {
+          "k": "m",
+          "x": "\\lambda_B=d\\sin(2\\gamma)=1\\,\\mu\\mathrm m\\times\\sin30^\\circ=500\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "原答案 517.6 nm 来自 $\\lambda_B=2d\\sin\\gamma$，适用于垂直于刻槽小面入射的利特罗条件。小面法线与光栅总平面法线相差闪耀角，两个入射条件不能混用。"
+        }
+      ],
+      "reviewNote": "原书p169明确为垂直光栅平面入射，故应d sin(2×15°)=500nm；p171原答517.6nm用了Littrow公式2d sin15°。已用Newport官方Determination of the Blaze Wavelength核验，https://www.newport.com/n/determination-blaze-wavelength/ 。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "f97b292fe241c8b9924578e4bdec7a1284ca0f331ae7bd5a67b4efd377f38bf0"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "矩孔衍射的二维强度是两个单缝因子的乘积。以中央极大强度记作 $I_c$，沿中央矩形亮斑的对角线，两方向归一化相位相同，记为 u。"
+        },
+        {
+          "k": "m",
+          "x": "I=I_c\\left(\\frac{\\sin u}{u}\\right)^4,\\qquad\\tan u=u."
+        },
+        {
+          "k": "p",
+          "x": "第一、第二次极大的根分别为 $u_1=4.49341$、$u_2=7.72525$，代入得到"
+        },
+        {
+          "k": "m",
+          "x": "I_1=0.002227I_c,\\qquad I_2=0.0002716I_c."
+        },
+        {
+          "k": "p",
+          "x": "所以约为中央强度的 0.0022 和 0.00027；用半整数位置近似第二次极大，可得原答案的 0.00026。原题把入射强度写成 $I_0$，而这些比例中的 $I_0$ 必须理解为中央极大强度，否则还缺少传播距离或焦距等归一化条件。"
+        }
+      ],
+      "reviewNote": "原题I0定义为入射平行光强，原答却直接给中央峰归一化的比例；两者不可直接等同。按中央峰Ic归一化，精确第一/二次对角线极大为0.002227Ic、0.0002716Ic，原第二值0.00026为近似值。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "99c003f38b4faea3a843473dd07f2c12a5c202a3b51f6f4b8ea00235d59af980"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "小孔处相邻两缝的光程差近似为 $\\Delta=dx/f$。题中 d=1 mm、x=3 mm、f=1000 mm，所以 $\\Delta=0.003\\,\\mathrm{mm}=3000\\,\\mathrm{nm}$。"
+        },
+        {
+          "k": "p",
+          "x": "缺少的颜色对应双缝相消条件："
+        },
+        {
+          "k": "m",
+          "x": "\\Delta=\\left(n+\\frac12\\right)\\lambda\\quad\\Rightarrow\\quad\\lambda=\\frac{6000}{2n+1}\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "要求 $390\\le\\lambda\\le700\\,\\mathrm{nm}$，得到 n=4、5、6、7，因此缺少的波长依次为 666.67 nm、545.45 nm、461.54 nm、400 nm。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "f03eb6541f608939a00153eeffba4afae5ade89f4d702db0b030dd563c844316"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "先用第二级的分辨条件确定有效照明缝数，再用光栅方程求缝距。"
+        },
+        {
+          "k": "m",
+          "x": "N\\ge\\frac{\\lambda_1}{2\\Delta\\lambda}=\\frac{589.0}{2\\times0.6}=490.83\\quad\\Rightarrow\\quad N=491."
+        },
+        {
+          "k": "m",
+          "x": "d=\\frac{2\\lambda_1}{\\sin2.5^\\circ}=27.006\\,\\mu\\mathrm m\\simeq0.027\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "按参考答案采用“第三级为第一次缺级”的设定，三级主极大落在单缝第一级暗纹上，因此 $d/a=3$，得到 $a=d/3\\simeq0.009\\,\\mathrm{mm}$。"
+        },
+        {
+          "k": "p",
+          "x": "如果题意只要求第三级缺级而未限定第一次缺级，$a=2d/3\\simeq0.018\\,\\mathrm{mm}$ 也能使第三级落在单缝第二级暗纹上，缝宽并不唯一。"
+        }
+      ],
+      "reviewNote": "题干仅称第三级缺级，原答a=d/3隐含其对应单缝第一级极小；a=2d/3也满足第三级缺级。N=491按原题λ1=589.0nm代入并向上取整。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "2c822a8b54d00674bf1dfb618311a3cf7c7ae6004c744b58f73e3805145e9c19"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "第三级需满足 $d\\sin\\theta_3=3\\lambda$ 且 $\\theta_3\\le30^\\circ$，所以 $d\\ge3.6\\,\\mu\\mathrm m$。固定级次下，角色散随 d 减小而增大，故取最小允许值。"
+        },
+        {
+          "k": "m",
+          "x": "d=3.6\\,\\mu\\mathrm m,\\quad\\theta_3=30^\\circ,\\quad a=\\frac d4=0.9\\,\\mu\\mathrm m."
+        },
+        {
+          "k": "p",
+          "x": "这个缝宽使第 4 级成为第一次缺级。分辨要求为"
+        },
+        {
+          "k": "m",
+          "x": "3N\\ge\\frac{600}{0.02}=30000\\quad\\Rightarrow\\quad N\\ge10000,\\qquad W=Nd\\ge36\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "对 600 nm，光栅方程给出 $|k|\\le6$；$k=\\pm6$ 对应掠射的 $90^\\circ$ 方向，不能落在有限焦平面上，$k=\\pm4$ 缺级。实际焦面上可见 $k=0,\\pm1,\\pm2,\\pm3,\\pm5$，共 9 条。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "bece4d9bb07707cb12f55c54d77d6d41e44c02a479a1eca0bcce26b74f8a617d"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "光栅常数 $d=1/500\\,\\mathrm{mm}=0.002\\,\\mathrm{mm}$，有效缝数 $N=100\\times500=50000$。由 $d\\sin\\theta_k=k\\lambda$，得 $\\theta_1=18.45^\\circ$、$\\theta_2=39.26^\\circ$。"
+        },
+        {
+          "k": "p",
+          "x": "半宽指从主极大中心到相邻第一个极小，角半宽为 $\\delta\\theta=\\lambda/(Nd\\cos\\theta_k)$。按本题参考答案采用的局部焦面线度近似 $\\delta x=f\\delta\\theta$："
+        },
+        {
+          "k": "m",
+          "x": "\\delta x_k\\simeq\\frac{f\\lambda}{Nd\\cos\\theta_k},\\qquad\\delta x_1=3.34\\times10^{-3}\\,\\mathrm{mm},\\quad\\delta x_2=4.09\\times10^{-3}\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "两波长相差 $\\Delta\\lambda=0.5\\,\\mathrm{nm}$，同一级次的谱线间距由角色散乘焦距得到"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta x_k\\simeq\\frac{fk\\Delta\\lambda}{d\\cos\\theta_k},\\qquad\\Delta x_1=0.132\\,\\mathrm{mm},\\quad\\Delta x_2=0.323\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "按参考答案的有效数字分别记作 $3.34\\times10^{-3}$、$4.08\\times10^{-3}$ mm 和 0.13、0.32 mm；若要求整个主极大宽度，应把上述半宽乘 2。"
+        }
+      ],
+      "reviewNote": "参考答案采用局部线度近似δx=fδθ、Δx=fΔθ。若严格指定同一平面屏坐标x=f tanθ，则导数多出sec²θ，半宽约0.003706/0.006815mm，谱线间距约0.146/0.539mm；需按教材约定判分，不能把两种坐标近似混用。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "026be28a924f7dddcb32446e0b148dc62c2da3763d5194f8afbab4ff764b27e3"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "设 $\\alpha=\\pi a\\sin\\theta/\\lambda$，$I_0$ 为单条宽 a 狭缝的中央极大强度。相邻缝中心距交替为 2a、4a，因此奇数缝单独构成周期 6a 的 N 缝光栅，偶数缝构成它平移 2a 后的同样光栅。"
+        },
+        {
+          "k": "p",
+          "x": "遮住偶数缝或遮住奇数缝，两种情况的强度相同："
+        },
+        {
+          "k": "m",
+          "x": "I_{\\rm odd}=I_{\\rm even}=I_0\\left(\\frac{\\sin\\alpha}{\\alpha}\\right)^2\\left(\\frac{\\sin6N\\alpha}{\\sin6\\alpha}\\right)^2."
+        },
+        {
+          "k": "p",
+          "x": "全部放开时，两组振幅相位差为 $(2\\pi/\\lambda)2a\\sin\\theta=4\\alpha$，叠加后的强度再乘 $|1+e^{i4\\alpha}|^2=4\\cos^22\\alpha$："
+        },
+        {
+          "k": "m",
+          "x": "I=4I_0\\left(\\frac{\\sin\\alpha}{\\alpha}\\right)^2\\left(\\frac{\\sin6N\\alpha}{\\sin6\\alpha}\\right)^2\\cos^22\\alpha."
+        },
+        {
+          "k": "p",
+          "x": "中央处用极限取值，单组为 $N^2I_0$，全部放开为 $4N^2I_0=(2N)^2I_0$，可据此检查缝数因子。"
+        }
+      ],
+      "reviewNote": "配图已修正为例10-7的图10-9（2N缝、交替a/3a不透明间隔），原三缝图的错配已排除。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "3c46207f89b1974c2178510814ec371e4ad44ffb5ae761373feefe78a0ff9b08"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "三缝中心位置可取 0、d、3d。设单条缝的中央强度为 $I_0$，并定义"
+        },
+        {
+          "k": "m",
+          "x": "\\alpha=\\frac{\\pi a}{\\lambda}\\sin\\theta,\\qquad\\beta=\\frac{2\\pi d}{\\lambda}\\sin\\theta."
+        },
+        {
+          "k": "p",
+          "x": "三缝同宽，单缝振幅包络相同；它们的相位依次为 0、β、3β，所以总强度为"
+        },
+        {
+          "k": "m",
+          "x": "I=I_0\\left(\\frac{\\sin\\alpha}{\\alpha}\\right)^2\\left|1+e^{i\\beta}+e^{i3\\beta}\\right|^2=I_0\\left(\\frac{\\sin\\alpha}{\\alpha}\\right)^2[3+2(\\cos\\beta+\\cos2\\beta+\\cos3\\beta)]."
+        },
+        {
+          "k": "p",
+          "x": "三个余弦分别来自缝距 d、2d、3d 的两两干涉。中央处三个振幅同相，强度为 $9I_0$；非等距三缝不能直接套等距三缝因子。"
+        }
+      ],
+      "reviewNote": "配图已修正为图10-12三缝d/2d图；原书副标题误写计算题6，已按题干正确对应第7题。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "afd39f882bc495a9b47f08eebe7b3d7ff11a5ff2aedb5be7fbedce64a19fd864"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "以宽 a 狭缝的中央振幅为 $A_0$，$I_0=|A_0|^2$，并令 $\\alpha=\\pi a\\sin\\theta/\\lambda$。两缝中心距 d=3a，对应中心相位差 $2\\pi d\\sin\\theta/\\lambda=6\\alpha$。"
+        },
+        {
+          "k": "p",
+          "x": "宽 2a 的缝中央振幅为 $2A_0$，其包络参数也加倍，因此"
+        },
+        {
+          "k": "m",
+          "x": "\\frac E{A_0}=\\frac{\\sin\\alpha}{\\alpha}+2\\frac{\\sin2\\alpha}{2\\alpha}e^{i6\\alpha}=\\frac{\\sin\\alpha}{\\alpha}[1+2\\cos\\alpha\\,e^{i6\\alpha}]."
+        },
+        {
+          "k": "p",
+          "x": "取模平方并展开，得"
+        },
+        {
+          "k": "m",
+          "x": "I=I_0\\left(\\frac{\\sin\\alpha}{\\alpha}\\right)^2[3+2(\\cos2\\alpha+\\cos5\\alpha+\\cos7\\alpha)]."
+        },
+        {
+          "k": "p",
+          "x": "中央处两缝振幅为 1:2，同相相加后为 3 倍，故 $I(0)=9I_0$。这也检验了宽缝振幅不能遗漏的系数 2。"
+        }
+      ],
+      "reviewNote": "已补入图10-13不等宽双缝图；原书副标题误写计算题7，已按题干正确对应第8题。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "ef74ba9d4de55413821f766e6d3f3d80d0245e8c6278e0287eddbbfcaae035c8"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "斜入射时不仅出射光有缝间相位差，入射波到达各缝时也已有相位差。按图中有向角约定，两者相减，令"
+        },
+        {
+          "k": "m",
+          "x": "\\alpha'=\\frac{\\pi a}{\\lambda}(\\sin\\theta-\\sin\\theta_0),\\qquad\\beta'=\\frac{\\pi d}{\\lambda}(\\sin\\theta-\\sin\\theta_0)."
+        },
+        {
+          "k": "p",
+          "x": "宽 a、中心距 d 的 N 条缝给出"
+        },
+        {
+          "k": "m",
+          "x": "I(\\theta)=I_0\\left(\\frac{\\sin\\alpha'}{\\alpha'}\\right)^2\\left(\\frac{\\sin N\\beta'}{\\sin\\beta'}\\right)^2."
+        },
+        {
+          "k": "p",
+          "x": "这里 $I_0$ 是在该照明条件下单缝零光程差方向的强度。主极大满足 $d(\\sin\\theta-\\sin\\theta_0)=k\\lambda$；零级移到 $\\theta=\\theta_0$，其强度为 $N^2I_0$。令 $\\theta_0=0$ 即退化为正入射公式。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "673d4e5699572af6b03e97acb18185c59859227dafc42b28031d23f201acf12a"
+    },
+    {
+      "questionId": "engopt2-ch10-exercise-三_calc-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "光栅常数为 $d=1/1000\\,\\mathrm{mm}=1\\,\\mu\\mathrm m$。这里“垂直于槽面”指垂直于刻槽的小反射面，入射光相对光栅总平面法线仍有闪耀角 γ，属于利特罗闪耀条件。"
+        },
+        {
+          "k": "m",
+          "x": "\\lambda_B=2d\\sin\\gamma\\quad\\Rightarrow\\quad\\gamma=\\arcsin\\frac{0.546}{2}=15.8429^\\circ\\simeq15^\\circ50'."
+        },
+        {
+          "k": "p",
+          "x": "采用与原答案一致的级次符号，光栅方程写成 $\\sin\\theta_k=\\sin\\gamma+k\\lambda/d=0.273+0.546k$。由 $|\\sin\\theta_k|\\le1$ 得"
+        },
+        {
+          "k": "m",
+          "x": "-2.33\\le k\\le1.33\\quad\\Rightarrow\\quad k=-2,-1,0,+1."
+        },
+        {
+          "k": "p",
+          "x": "所以不考虑缺级时共 4 条谱线，衍射角依次为 $-54.985^\\circ$、$-15.843^\\circ$、$15.843^\\circ$、$54.985^\\circ$，即原答案的约 $-55^\\circ$、$-15^\\circ50'$、$15^\\circ50'$、$55^\\circ$。本符号下闪耀的是 −1 级，“一级”表示其级次绝对值为 1；改变角度正向会把级次符号整体反过来。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "6e3820ec3d228c9ef4e8e74f35bf92a280fcc652705a9eb4d949d785833f428a"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "date": "2026-10-19",
+  "entries": [
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "光能损失分三类：透射界面上的反射等损失、透明介质内部的吸收损失、反射镜面的不完全反射损失。常用总透过率/反射率的乘积计算剩余通量：$\\Phi_{\\rm 出}=\\Phi_{\\rm 入}\\prod\\tau_i\\prod\\rho_j$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "b7315f8cd718483df2f12e87e5e690c160723e1f645d9883da0d710cdea3a3ba"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "发光强度 $I_v=\\mathrm d\\Phi_v/\\mathrm d\\Omega$，单位是坎德拉 cd=lm/sr；光照度 $E_v=\\mathrm d\\Phi_v/\\mathrm dA$，单位是勒克斯 lx=lm/m²。一个按方向立体角分配，一个按接收面积分配。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4d33bf7438cf097c47515da82644ec4d288acabfd822c54fc8f59bca1afded09"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "点源对面元的照度为 $E=I(\\theta)\\cos\\alpha/r^2$，α 是光线与受照面法线的夹角。因此与该方向的发光强度成正比、与距离平方成反比，还要乘受照面的投影余弦。光源方向角 θ 与受照面倾角 α 不一定相同。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "aa03602c8660504e8f59592467a6fee7d14f48462b4a8d87063f4704c2f62d24"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填余弦辐射体（朗伯体）、亮度。发光面元在方向 θ 的发光强度为 $I_\\theta=LA\\cos\\theta$；虽强度按余弦变化，但亮度 $L=I_\\theta/(A\\cos\\theta)$ 与方向无关。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "f823123f44307cf5e9f55afb580b3232c4f755c6a2f345c429f64d26a17e3de1"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "三属性为明度、色调、饱和度。掺白通常提高明度、降低饱和度；掺黑通常降低明度，并改变饱和度。教材的填空强调“明度、饱和度”，不把明度与描述主色类别的色调混为一谈。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "27854d615fa11fe0ca7759a595d46c24a15c0d751f3fe9c294727e04f7d0a842"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "均匀点源/球源在所有方向的强度均为 I₀，对整个球面立体角积分即可：$\\Phi=\\int_{4\\pi}I_0\\,\\mathrm d\\Omega=4\\pi I_0$。这里不是只对一个半球积分。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "759eda7211b243cbdd78b8f9047a988e2ddfa12b006775959e162da67dab4a6c"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "地球相对于日地距离很小，视立体角约为投影圆面积除以距离平方，而不是地球表面积除以距离平方。"
+        },
+        {
+          "k": "m",
+          "x": "\\Omega\\simeq\\frac{\\pi R_\\oplus^2}{r^2}=\\pi\\left(\\frac{6.371\\times10^6}{1.496\\times10^{11}}\\right)^2=5.698\\times10^{-9}\\,\\mathrm{sr}."
+        },
+        {
+          "k": "p",
+          "x": "精确式为 $2\\pi[1-\\sqrt{1-(R_\\oplus/r)^2}]$，本题与小角近似的差别可忽略。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "b6692375cd304ddb708fd56eb61297726a736501687e7d2543c17f6560fe039d"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "总光通量均匀分配到4π sr，故 $I=\\Phi/(4\\pi)=900/(4\\pi)=71.62$ cd。不要把 lm 与 W 混为一谈，本题给出的900 lm已经是光度学通量。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "11fdfca1079545e546f173f204eb09a3a50844e9a12eab24431a8e5f2d27d79f"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "均匀辐射源的总辐通量为 $\\Phi_e=4\\pi I_e=4\\pi\\times0.1=1.256637$ W。单色辐射按视觉效率换算："
+        },
+        {
+          "k": "m",
+          "x": "\\Phi_v=683V(600)\\Phi_e=541.58\\,\\mathrm{lm},\\qquad I_v=683V(600)I_e=43.10\\,\\mathrm{cd}."
+        },
+        {
+          "k": "p",
+          "x": "光视效率 V 本身无量纲，不能省略683 lm/W这个换算系数。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4c86f44c018cb64f23c2f1aca29086faf3e071a8feb477cb80173635cf559cbd"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-一_blank-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "均匀漫射球在空间各方向的总发光强度相同，$I=\\Phi/(4\\pi)=159.15$ cd。观察方向上的投影面积是圆盘 $A_{\\rm 投}=\\pi D^2/4$，因此"
+        },
+        {
+          "k": "m",
+          "x": "L=\\frac I{A_{\\rm 投}}=\\frac{159.15}{\\pi(0.17)^2/4}\\simeq7.01\\times10^3\\,\\mathrm{cd/m^2}."
+        },
+        {
+          "k": "p",
+          "x": "亮度分母应取投影面积，不能直接用整个球面面积。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "2fbfae83cb331d5ef66aa3819d0804cb50d6e91ed5a3799c8bc04b23bccc50dc"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-二_calc-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "单色光满足 $\\Phi_v=683V(\\lambda)\\Phi_e$，因此"
+        },
+        {
+          "k": "m",
+          "x": "\\Phi_e=\\frac{620}{683\\times0.06}=15.13\\,\\mathrm W,\\qquad Q_e=\\Phi_e t=15.13\\times60\\simeq907.8\\,\\mathrm J."
+        },
+        {
+          "k": "p",
+          "x": "假定题给光束全部照到屏幕且无中途损耗；1 min 要换成60 s。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4018decf909535b4427646636793c2830004675af86cdb91a9c38c877c34b6b4"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-二_calc-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "灯正下方光线垂直地板，$E_0=60/2.5^2=9.6$ lx。"
+        },
+        {
+          "k": "p",
+          "x": "角落相对灯垂线的水平偏移为 $(2.5,1.5)$ m，距离平方 $r^2=2.5^2+2.5^2+1.5^2=14.75$，入射余弦为 $2.5/r$，故"
+        },
+        {
+          "k": "m",
+          "x": "E_{\\rm 角}=\\frac{60\\times2.5}{(14.75)^{3/2}}\\simeq2.648\\,\\mathrm{lx}."
+        },
+        {
+          "k": "p",
+          "x": "原书扫描所列6.249 lx不能由题给房间尺寸、灯高和60 cd得到。此处保留原答案作来源记录，计算应按上式，不能遗漏斜入射的余弦因子。"
+        }
+      ],
+      "reviewNote": "已对照原书题面；角落照度应约2.648 lx，原参考6.249 lx与题设不符。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "1f291bb08a9c7aab55d89e196f5e5261b863df9cc4cae377bfc5a45716a732de"
+    },
+    {
+      "questionId": "engopt2-ch05-exercise-二_calc-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "先区分灯丝自身的强度、加聚光镜后的轴向强度以及光斑平均照度。灯丝总光通量 $\\Phi=300\\times21.5=6450$ lm；因两面朗伯发光，其单面法向强度为 $I_N=\\Phi/(2\\pi)=1026.55$ cd，这正是参考答案中的约1027 cd。"
+        },
+        {
+          "k": "p",
+          "x": "灯丝面积 $A_s=\\pi(0.0094/2)^2$，亮度 $L_s=I_N/A_s=1.4792\\times10^7$ cd/m²。按无损近轴照明的轴心照度公式，聚光镜直径 D=0.15 m、屏距 z=15 m："
+        },
+        {
+          "k": "m",
+          "x": "E_{\\rm 中心}\\simeq L_s\\frac{\\pi D^2}{4z^2}=1.162\\times10^3\\,\\mathrm{lx},\\quad I_{\\rm 出,轴}\\simeq E_{\\rm 中心}z^2=2.614\\times10^5\\,\\mathrm{cd}."
+        },
+        {
+          "k": "p",
+          "x": "不加镜、灯到屏距离15 m时，$E_0=I_N/15^2=4.562$ lx，轴心增益约255。若保持距聚光镜15 m的同一屏面，则灯距为15.15 m，无镜照度约4.473 lx。"
+        },
+        {
+          "k": "p",
+          "x": "若按整个含半影的几何光斑作平均，可另估集光通量 $\\Phi_c=\\pi I_N\\sin^2[\\arctan(D/(2f))]=645$ lm，光斑外径 $D+zd_s/f\\simeq1.09$ m，平均照度约691 lx，增益约151.5，可近似复现参考值150。这个平均估算混合了精确集光角与近轴光斑几何，不是严格的中心照度计算。原参考“1027 cd、4.54 lx、150”未明确说明每个数值的强度和平均口径；1027 cd可由灯丝自身的法向强度得到，不能直接当作加镜后的轴向强度。"
+        }
+      ],
+      "reviewNote": "原参考未明确各数值对应的光强与平均口径；解析分别给出近轴中心与含半影全光斑的平均增益估算。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "cd944bcb2e131d9f11f17f79b0baffa51373b9ee55546bf7bc0d9a62a2fc1143"
+    }
+  ]
+}

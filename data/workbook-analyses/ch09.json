@@ -1,0 +1,1093 @@
+{
+  "date": "2026-10-19",
+  "entries": [
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B。稳定干涉要求两束光的相位差在观察时间内保持稳定，并不要求它们的初相位相等；固定的非零初相位差只会使条纹整体移动。"
+        },
+        {
+          "k": "p",
+          "x": "教材还要求同频、同振动方向，并使光程差处于相干长度之内。更一般地，两束光的振动方向只要有共同分量，就可能产生相应的干涉项。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "9280eb5da84af0e417364dd31abcb004ab1a194629f095e2bcdd63f7a7dff8a2"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、C。设双孔间距为 d，屏距为 D，近轴条件下光程差为 $\\Delta\\simeq dx/D$。"
+        },
+        {
+          "k": "m",
+          "x": "x_m=\\frac{m\\lambda D}{d},\\qquad e=\\frac{\\lambda D}{d}."
+        },
+        {
+          "k": "p",
+          "x": "条纹与双孔连线垂直，且近似等间隔。增大波长或屏距会使间隔增大，增大双孔间距才使间隔减小。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "7c869a40fd457004b966bb7520975a302dd3ecdc3eda355251c2ea8e5cd827fd"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B、D。杨氏装置中两孔同相照明，亮纹要求相位差是 $2\\pi$ 的整数倍，即光程差是波长的整数倍。"
+        },
+        {
+          "k": "m",
+          "x": "\\delta=2m\\pi,\\qquad\\Delta=m\\lambda,\\qquad x_m=\\frac{m\\lambda D}{d}."
+        },
+        {
+          "k": "p",
+          "x": "A 给的是暗纹相位条件；C 把双孔间距 d 与屏距 D 的位置颠倒了。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "cf8b50d4b407d98125ed5ee3c70037faa5a256ae8782086aafd98a57357bcb22"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B、D。条纹间隔 $e=\\lambda D/d$；入水后波长变为真空波长的 $1/n$，故条纹变密；屏移远使 D 增大，条纹间隔增大。"
+        },
+        {
+          "k": "p",
+          "x": "光源移近双缝使干涉孔径角增大，原先的允许宽度不再满足同样的可见度要求；直接增大缝光源宽度也会降低空间相干性，所以 A、C 错。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "f4e58a8c0dcb18e879202cdfc003e7fc0a1252ff8368bb3598e2fe2b4a365cc7"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、B。本教材把均匀线光源可见度首次降为零时的宽度叫临界宽度，把可见度约为 0.9 时的宽度叫允许宽度。"
+        },
+        {
+          "k": "m",
+          "x": "b_c=\\frac{\\lambda}{\\beta},\\qquad b_0=\\frac{b_c}{4}=\\frac{\\lambda}{4\\beta},\\qquad K(b_0)=\\frac{\\sin(\\pi/4)}{\\pi/4}\\simeq0.90."
+        },
+        {
+          "k": "p",
+          "x": "允许宽度随波长增大，随干涉孔径角增大而减小，D 中的 0.8 不符合这里的约定。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "14aabd2bc13eda09fad9e547977d423d9cb58b85ec58dbf94b473c56173c92b9"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 C、D。平行平板厚度不变，光程差随折射角 r 变化，属于等倾干涉。"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta_{\\rm geom}=2nh\\cos r."
+        },
+        {
+          "k": "p",
+          "x": "中心对应 r=0，光程差及干涉级次最大；向外角度增加，级次降低。圆环中心疏、边缘密，并非等间隔；h 增大使同一角度范围内跨越的级次增多，条纹更密。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "9867162897a4bccb0d513885322e5e1a1699c7aebb0d69ee8325171a173b7f43"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、B、D。扩展光源的各点所产生的条纹在无穷远的同一方向重合，等倾条纹定域在无穷远，可用透镜焦平面观察。"
+        },
+        {
+          "k": "p",
+          "x": "中心光程差为 $2nh$，所以板越厚中心级次越高；相邻级次要求光程差改变一个波长，波长增大时条纹更疏。"
+        },
+        {
+          "k": "p",
+          "x": "理想无吸收平板的反射、透射光强互补，一场的亮处对应另一场的暗处，故 C 错。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "33e3249c3a314c379c883631818cc7beb9601cf33b2b0bf441863edee1af4b16"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B。单色点光源没有扩展光源各点条纹相互错开的平均效应，而且相干长度较大，最适于在相干光束的重叠区域内观察非定域条纹。"
+        },
+        {
+          "k": "p",
+          "x": "扩展光源通常需要选择适当的定域面；白光的相干长度很短，能形成清晰条纹的光程差范围受到更强限制。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "0f81a76f04236f3ed5c453529b56a0ff1d0737b36b600451386860112bdeeaa1"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、B、C、D。小楔角、近正入射时，相邻同类条纹对应厚度变化 $\\lambda/(2n)$。"
+        },
+        {
+          "k": "m",
+          "x": "e=\\frac{\\lambda}{2n\\alpha},\\qquad H=\\frac{\\lambda}{2n}\\frac{\\Delta e}{e}."
+        },
+        {
+          "k": "p",
+          "x": "因此楔角减小、波长增大均使条纹变宽；局部厚度误差越大，条纹偏移越大。叠加同材料的等厚平板仅增加固定厚度，不改变厚度梯度，故不改变条纹间隔。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "b62de5f7e2944d1c1763068a16268b0dc9845c8b0d799fbec41d7ea47d28b61d"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-11",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、C。定域位置由同一入射光线分出的两束反射光的交会位置决定，不能一律画在楔板表面。"
+        },
+        {
+          "k": "p",
+          "x": "按本题楔板的几何约定，正入射时定域条纹位于楔板内部；斜入射时，偏离楔板的距离随厚度增大而增大、随楔角减小而增大，所以 C 对、D 错。光源和楔棱同侧时也不能判为 B 所说的楔板下方。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "3acc1685ca5b6feea083ae603ee9e47403eb8d60c463dd4d6f3fd079743d146f"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-12",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B。直条纹代表等厚线；图中 A、B 位于同一条纹方向，故两处空气层厚度相同，两球直径相等。"
+        },
+        {
+          "k": "p",
+          "x": "轻压右侧 D 后，条纹间隔变大，说明原先的厚度梯度被减小；因此原空气层向右增厚，右侧 C 球较大，得到 $r_A=r_B<r_C$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "67668f1047febda96c3fee8b49ecc1718a5608e7941a1b86c99ef8f3773a4026"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-13",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、B、C。力逐渐增大使金属丝受压，空气楔的楔角减小。"
+        },
+        {
+          "k": "m",
+          "x": "h(x)\\simeq\\alpha x,\\qquad e=\\frac{\\lambda}{2\\alpha},\\qquad x_m=\\frac{m\\lambda}{2\\alpha}\\quad\\text{（暗纹）}."
+        },
+        {
+          "k": "p",
+          "x": "于是条纹间隔增大，有限长度内的条纹数减少；同一条纹的位置 x 增大，向右移出。右侧是原来厚度较大、级次较高的一侧，故 D 错。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "b2e3c0c8ef3efea43b0189f13b0aad6dcf191e7f0257e36167f0ecfcf986ea74"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-14",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、C、D。凹面向下时空气膜中心最厚，可写为 $h(r)=h_c-r^2/(2R)$，中心级次比边缘高，B 错。"
+        },
+        {
+          "k": "p",
+          "x": "轻压使中心厚度 $h_c$ 减小。对任一固定暗纹级次，有 $r_m^2=2Rh_c-m\\lambda R$，故圆环向中心收缩；相邻环的半径差增大，有限口径内的条纹数减少。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "9cd4b9019102a4f12f40bfa44cbe5ce4bb3f1ddfe9ffe888ab3f699597480577"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-15",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A。牛顿环空气膜厚度为 $h(r)=h_0+r^2/(2R)$，反射暗纹满足 $2h=m\\lambda$。"
+        },
+        {
+          "k": "m",
+          "x": "r_m^2=R(m\\lambda-2h_0)."
+        },
+        {
+          "k": "p",
+          "x": "减小透镜与平板间距即减小 $h_0$，同一级圆环的半径增大，因此条纹向外扩展。相邻固定级次环的间距不会因此增大，D 不成立。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "357e460a2704e065c234bb9f0c0d314e9acb79828e11119099e335fd74bc31fe"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-16",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "A 可以确定成立：白光相干长度虽短，只要两臂光程在很小范围内匹配，仍可观察白光条纹。"
+        },
+        {
+          "k": "p",
+          "x": "白光还要求两臂通过玻璃的色散得到补偿；仅移动反射镜不能普遍抵消不同波长的玻璃光程差。若仪器已用补偿板等效消除了这项色散，移动动镜寻找零光程差就是可行操作，D 也可能成立。"
+        },
+        {
+          "k": "p",
+          "x": "原参考答案仅列 A，本题必须结合“是否已作色散补偿”的装置条件理解，不能把 D 当成无条件错误。"
+        }
+      ],
+      "reviewNote": "原答案仅A；题干未说明补偿板/色散补偿状态。已补偿的理想迈克耳逊可通过动镜找到零光程差白光条纹，D也成立；若未补偿，单移镜不能普遍消除玻璃色散。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "5e7cd4e3b0434dfc6006badd3979593f51967d922ffe20eea8c71257ea77c8d7"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-17",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B、D。多光束干涉需在两面镀高反射膜，使多次往返光束保持足够强度；高透过率的增透膜不符合这一目的。"
+        },
+        {
+          "k": "m",
+          "x": "\\frac{I_t}{I_i}=\\frac1{1+F\\sin^2(\\delta/2)},\\qquad F=\\frac{4R}{(1-R)^2}."
+        },
+        {
+          "k": "p",
+          "x": "在对称、无吸收的理想条件下，共振时 $I_t=I_i$。R 越大，共振峰越细锐，形成近暗背景上的细亮纹；C 把反射率和透过率的作用说反了。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "2abfe34a0bd24f1955ad1689daf7b8dfb2737dbda551abb809ee4209f3f92730"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-18",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 B。相邻光束光程差为整数波长时，相位差 $\\delta=2m\\pi$，艾里公式的正弦项为零。"
+        },
+        {
+          "k": "m",
+          "x": "I_t=I_i,\\qquad I_r=I_i-I_t=0."
+        },
+        {
+          "k": "p",
+          "x": "这个共振峰值在理想无吸收条件下与 R 无关。提高 R 会使峰变窄，并不继续提高已经等于入射光强的透射峰值。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "56fafc1febc6f5b7fa0ca7e0bfb1e3635dfb3ecc103e351dad89602f0aac8f58"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-19",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 A、B、C。F-P 干涉仪利用高反射平行面间的多光束干涉，将谱线变成细锐的等倾圆环，适于分析超精细结构。"
+        },
+        {
+          "k": "m",
+          "x": "\\mathcal R\\simeq mN_{\\rm eff},\\qquad m=\\frac{2nh}{\\lambda},\\qquad\\Delta\\lambda_{\\rm FSR}\\simeq\\frac{\\lambda^2}{2nh}."
+        },
+        {
+          "k": "p",
+          "x": "高干涉级次与较多有效光束共同提供高分辨率；代价是自由光谱范围较小，所以 D 错。这里 C 应理解为高阶工作的重要作用，反射率对精细度同样重要。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "317edccfda12ad9c54bde28f25b37bda764e666741e23cd2346e16055756ffe6"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-一_choice-20",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "选 C。空气、膜、玻璃之间折射率依次增大时，膜上下表面的两束反射光均发生半波损失，它们之间的反射附加相位差为零。"
+        },
+        {
+          "k": "p",
+          "x": "取四分之一波光学厚度 $nh=\\lambda/4$，传播相位差为 $\\pi$，可使两反射光相消。若还要求振幅完全相等，理想折射率为 $n=\\sqrt{n_{\\rm air}n_{\\rm glass}}$，显然位于空气与玻璃之间。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "e70ee0eba23bb7185cd6996479cee37536aaa5ac363f686e7539aeba8e5ef553"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填“频率相同、振动方向相同、位相差恒定”。同频且相位差稳定时，干涉项不会随时间平均而消失。"
+        },
+        {
+          "k": "m",
+          "x": "I=I_1+I_2+2\\sqrt{I_1I_2}\\cos\\delta."
+        },
+        {
+          "k": "p",
+          "x": "这里写的是教材采用的同偏振条件；一般情况下应取两束光沿共同振动方向的分量来计算干涉项。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "639ccedbd5a8f3d28b60476b46f0730b832c9d537f41f21da66dbc8ec834010f"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填“叠加的相干光由光源的同一条光线经平板上、下表面反射分离而来”。"
+        },
+        {
+          "k": "p",
+          "x": "干涉孔径角描述两条参与干涉的入射光线在光源处的夹角；$\\beta=0$ 表示它们在分束以前是同一条光线，而不是说两束出射光的光程差一定为零。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "76b20bdf842d4669617323630254998194399f896c6c91186b0dc543cfdf4355"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填 $\\Delta_{\\max}=c\\Delta t$、“越好”。相干时间是光场保持有效相位关联的时间，乘以真空光速就得到以真空光程计的相干长度。"
+        },
+        {
+          "k": "p",
+          "x": "相干长度越大，允许相互干涉的两束光之间的时间延迟越大，时间相干性越好，通常对应较窄的光谱宽度。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "fa5ba3a86105fb426e2e9e857fa985292243e85395d660ab8879368a568ed06f"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "依次填“分波前法”“分振幅法”。杨氏双缝从同一入射波前的两个不同位置取光；平板上表面的反射和透射则把同一入射光束的振幅分为两部分，再经下表面反射后叠加。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "5382c03809938df6dd67d503c886cbd7444dbe54e2238d32a621fe1eed0a6056"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "可见度衡量条纹的明暗反差，填"
+        },
+        {
+          "k": "m",
+          "x": "K=\\frac{I_{\\max}-I_{\\min}}{I_{\\max}+I_{\\min}},\\qquad0\\leq K\\leq1."
+        },
+        {
+          "k": "p",
+          "x": "影响因素填“相干光束的振幅比、光源宽度和光源的非单色性”。等强且完全相干时 K=1；振幅失配、空间相干性降低或光谱展宽都会减小可见度。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "8dce901cf1f0674bfd7ebfd51b3dd1d455877c7b375686649d2bd2e63928dfb5"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "依次填“等距直条纹”“同心圆条纹”。两相干点源的等光程差曲面是以其连线为轴的旋转双曲面。"
+        },
+        {
+          "k": "p",
+          "x": "远处近轴屏垂直于中垂线时，$\\Delta\\simeq dx/D$，截出的条纹近似为等距直线；屏垂直于两点源连线时，绕该轴转动对称，截线为同心圆。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "1190710f0fc61313394e63c6951dfd1457c1d01c68828c7f23b27accefebfea5"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "依次填“透射光”“全暗背景上的细锐亮纹”“F-P 干涉仪”。高反射率使透射光只在很窄的共振相位区间显著增强，谱线容易分开和定位；反射场则主要表现为亮背景上的细暗纹。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "f077b5c8b5684ea3ed442075d9c5cc38647993868b9417b6107f1cd13aa05a21"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "两种波长的同级亮纹位置为 $x_m=m\\lambda D/d$，相减即可，不能用两条纹间隔相减后忘记乘级次。"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta x_{10}=\\frac{10D}{d}(\\lambda_2-\\lambda_1)=\\frac{10\\times1}{10^{-3}}\\times0.6\\times10^{-9}\\,\\mathrm m=6\\,\\mu\\mathrm m."
+        },
+        {
+          "k": "p",
+          "x": "填 $6\\,\\mu\\mathrm m$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "968e1e600572c4d8a109316ce3eb13a382fbf1acb614d5027ed161a8c5b11700"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "薄膜只增加单程光程差 $(n-1)t$，条纹移动 4 级即增加 4 个有效波长。"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta=4\\lambda=2200\\,\\mathrm{nm}=2.2\\times10^{-3}\\,\\mathrm{mm}."
+        },
+        {
+          "k": "m",
+          "x": "t=\\frac{\\Delta}{n-1}=\\frac{2.2\\times10^{-3}}{0.480}=4.583\\times10^{-3}\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "两空分别填上述光程差和厚度；杨氏装置中不应额外乘往返因子 2。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "7d81e0b7800fe8da26b023264f7dedb96c082c2fcebf992df36dfb5efb9ec3a1"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "这里求允许宽度，采用教材 $K\\simeq0.9$ 的约定，不能误用条纹首次消失的临界宽度。"
+        },
+        {
+          "k": "m",
+          "x": "b_0=\\frac{\\lambda}{4\\beta}=\\frac{550\\times10^{-6}}{4\\times1.25\\times10^{-3}}\\,\\mathrm{mm}=0.11\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "填 0.11 mm。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "ba7168e4a3d544951a94f659b7a62a4a7e615167d0173c64b12d9669f952e811"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-11",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "完全相干、同振动方向的两束光，其可见度用振幅计算为"
+        },
+        {
+          "k": "m",
+          "x": "K=\\frac{2A_1A_2}{A_1^2+A_2^2}=\\frac{2\\times1\\times3}{1^2+3^2}=0.6."
+        },
+        {
+          "k": "p",
+          "x": "填 0.6。题给的是振幅比 1∶3，对应的光强比是 1∶9。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "7e5ca30d220f279da55495497b44038ecc7f82f6740abcbc3c04b5e2fd7a5cd5"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-12",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "按波列持续时间估计相干时间 $\\tau=10^{-9}\\,\\mathrm s$，光程范围为 $c\\tau$；再利用 $\\Delta\\lambda\\simeq\\lambda^2/(c\\tau)$。"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta\\lambda\\simeq\\frac{(600\\times10^{-9})^2}{3.0\\times10^8\\times10^{-9}}\\,\\mathrm m=1.2\\times10^{-3}\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "填 $1.2\\times10^{-3}$。这里采用教材的波列宽度估算，不另引入特定谱线线形的系数。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "d58ad95a4f0bb4269d022052e95756c6bd23b845bc47bacacaefec01fc7cb82c"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-13",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "反射镜移动 d 会使往返光程改变 2d，吞没 N 条纹意味着 $N\\lambda=2d$。"
+        },
+        {
+          "k": "m",
+          "x": "\\lambda=\\frac{2\\times0.233}{792}\\,\\mathrm{mm}=5.884\\times10^{-4}\\,\\mathrm{mm}\\simeq588\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "填 588；本题关键是动镜位移与光程差变化相差因子 2。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "80b1b4150084be0ded5e550be3a41cd3dfd6bb20de9785e45858271355c610bb"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-14",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "按参考答案采用“空气中的自由透明膜”模型：上表面反射发生半波损失，下表面反射不发生，两反射光附加相位相差 $\\pi$。"
+        },
+        {
+          "k": "m",
+          "x": "2nh+\\frac\\lambda2=m\\lambda\\quad\\Rightarrow\\quad h_{\\min}=\\frac\\lambda{4n}."
+        },
+        {
+          "k": "p",
+          "x": "填 $\\lambda/(4n)$。若膜后另有基底，必须先根据三个介质的折射率判断两次反射是否仍只有一次半波损失。"
+        }
+      ],
+      "reviewNote": "题干未说明膜后介质。参考答案λ/(4n)要求两束反射光恰有一次相对半波损失，例如空气中的自由膜；若膜折射率介于空气与基底之间，最小反射加强厚度将改为λ/(2n)。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "8460220cab7e674925c763a314f87f63d483032bcbffb26db083666c576c7e61"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-15",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "干涉滤光片的透射共振条件为 $2nh=m\\lambda$。给定间隔层 $h=200\\,\\mathrm{nm}$，其往返光学厚度为 $2nh=600\\,\\mathrm{nm}$。"
+        },
+        {
+          "k": "m",
+          "x": "\\lambda_m=\\frac{600}{m}\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "只有 m=1 对应可见光 600 nm；m≥2 已落到紫外区，故填 600 nm。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "7b8423d4efff31eea5a6da3c616c9f199f3c66aebce915eb23bcc3a71ae92ca2"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-16",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "局部条纹偏移占一个条纹间隔的比例，等于局部厚度误差占相邻同类条纹厚度差的比例。"
+        },
+        {
+          "k": "m",
+          "x": "H=\\frac{\\lambda}{2n}\\frac{\\Delta e}{e_0}=\\frac{660}{2\\times1.5}\\times\\frac15=44\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "填 44。若误把玻璃楔当成空气楔而漏掉 n，会得到错误的 66 nm。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "d725350d16fc80a795fa737f10a7e327446eea0e728010d9f5c15a9b092c323f"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-17",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "5 cm 内有 15 个条纹间隔，所以 $e=0.05/15\\,\\mathrm m$。正入射时楔角满足 $\\alpha=\\lambda/(2ne)$。"
+        },
+        {
+          "k": "m",
+          "x": "\\alpha=\\frac{600\\times10^{-9}\\times15}{2\\times1.52\\times0.05}=5.92\\times10^{-5}\\,\\mathrm{rad}."
+        },
+        {
+          "k": "p",
+          "x": "填 $5.92\\times10^{-5}$；条纹间隔数已给出，不需要再加减 1。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "31d98cac587872842d402059068c6c3f8b032910b48f7ba1279ec1ca10fe2c8e"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-18",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "填“变密”。水进入透镜与平板之间后，薄层的折射率由 1 变为 1.33；由于水的折射率仍低于两块玻璃，两反射光仍保留一次相对半波损失。"
+        },
+        {
+          "k": "m",
+          "x": "r_m^2=\\frac{m\\lambda R}{n_{\\rm film}}."
+        },
+        {
+          "k": "p",
+          "x": "同一级圆环半径及相邻环的径向间隔均缩小为原来的 $1/\\sqrt{1.33}$，故条纹变密。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "bca88e16227ded7b7f9b6ec7fb51fc18588cc2fbc1a1756adea3c7a166cb3be8"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-19",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "空气楔小角度下 $\\alpha\\simeq d/L$，相邻暗纹间隔为 $e=\\lambda/(2\\alpha)$。"
+        },
+        {
+          "k": "m",
+          "x": "e=\\frac{\\lambda L}{2d}=\\frac{589\\times10^{-6}\\times200}{2\\times0.05}\\,\\mathrm{mm}=1.178\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "填 1.18 mm。这里细丝直径 d 等于距接触端 L 处的空气层厚度。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "518201b6c273d50d183abd9e7c7cd09d7a19c0ec0ee3fdd6677913a1f87b5c4d"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-20",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "依次填“增大”“右”“增大”。下压玻璃板使空气楔角 $\\alpha$ 减小，故 $e=\\lambda/(2\\alpha)$ 增大；同一暗纹 $x_m=m\\lambda/(2\\alpha)$ 增大，向右移动。"
+        },
+        {
+          "k": "p",
+          "x": "改为斜入射后，空气膜内的光程差为 $2h\\cos i_1$，因此"
+        },
+        {
+          "k": "m",
+          "x": "e(i_1)=\\frac{\\lambda}{2\\alpha\\cos i_1}>e(0)."
+        },
+        {
+          "k": "p",
+          "x": "题图中的角度是相对于膜法线定义，斜入射使条纹间隔增大。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "bb700a00b8910317e9a4d2d529d949ef9d736eb9efafcd73493e35337bd493be"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-21",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "所求 h 是能够分辨两线的最小间隔。按本教材的分辨判据，有效光束数 $N_{\\rm eff}=0.97\\mathcal F$，其中 $\\mathcal F=\\pi\\sqrt R/(1-R)$。"
+        },
+        {
+          "k": "m",
+          "x": "\\frac{\\lambda}{\\Delta\\lambda}=\\frac{2h}{\\lambda}N_{\\rm eff}\\quad\\Rightarrow\\quad h_{\\min}=\\frac{\\lambda^2}{2\\Delta\\lambda\\,0.97\\pi\\sqrt R/(1-R)}."
+        },
+        {
+          "k": "p",
+          "x": "代入 $\\lambda=600\\,\\mathrm{nm}$、$\\Delta\\lambda=1\\,\\mathrm{nm}$、R=0.95，得 $h_{\\min}\\simeq3.03\\,\\mu\\mathrm m$。填 3.03；若省去教材判据中的 0.97，数值会略有差异。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "2ac7ea09be7a76f86d663d9f1d58b372075b8f33d55f41890bf90a64cebba033"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-22",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "空气标准具正入射时中心级次为"
+        },
+        {
+          "k": "m",
+          "x": "m=\\frac{2h}{\\lambda}=\\frac{2\\times2.5\\times10^6}{500}=10000."
+        },
+        {
+          "k": "p",
+          "x": "一整个条纹间隔对应一个自由光谱范围 $\\Delta\\lambda_{\\rm FSR}=\\lambda^2/(2h)=0.05\\,\\mathrm{nm}$，故 1/100 条纹间距对应"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta\\lambda=\\frac{0.05}{100}=5\\times10^{-4}\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "两空填 10000 和 $5\\times10^{-4}$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "19e1372e9446ac94539156e779be44b4c67a57a6c4bab0d1bac1e79c14d81f33"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-二_blank-23",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "按图中五行顺序，参考表给出的三列分别为：牛顿环 a、c、b、a、a；迈克耳逊圆环 b、b、a、a、c；F-P 圆环 b、b、a、a、c。"
+        },
+        {
+          "k": "p",
+          "x": "牛顿环是薄膜附近的等厚干涉，理想接触处反射为暗，级次向外增加；迈克耳逊与 F-P 圆环为定域于无穷远的等倾干涉，中心光程差最大，中心亮暗由具体光程差决定。"
+        },
+        {
+          "k": "p",
+          "x": "表中“增加空气膜厚度条纹变细”需要区分含义：等倾环随间隔增大确会变密；牛顿环若指整体增大中心间隙，同一级圆环向中心收缩，但相邻固定级次的径向间距会增大，不能把“变细”直接理解为牛顿环也变密。"
+        }
+      ],
+      "reviewNote": "原答案表第四行三列均a（变细）。对牛顿环若“增加空气膜厚度”指整体抬高透镜，固定级次环收缩且径向间距增大；表中“变细”可能指环半径变小，若指条纹间距则表述有误。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "c7f042ee71c129c868be1325a9b4fd07969b33f6817ee46ebe54e174216959b9"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "三束光的电场都垂直于各自传播方向，虽然磁场同向，电场却不能直接作三个同向标量相加。令 $u=\\pi y/\\lambda$，把两侧光束电场沿 y、z 分解，在 z=0 平面合成为"
+        },
+        {
+          "k": "m",
+          "x": "\\widetilde E_y=A(1+\\sqrt3\\cos u),\\qquad\\widetilde E_z=iA\\sin u."
+        },
+        {
+          "k": "p",
+          "x": "两正交分量的强度相加，略去公共比例系数得"
+        },
+        {
+          "k": "m",
+          "x": "I=A^2\\bigl[(1+\\sqrt3\\cos u)^2+\\sin^2u\\bigr]=A^2[3+2\\sqrt3\\cos u+\\cos(2u)]."
+        },
+        {
+          "k": "p",
+          "x": "求可见度需取真正的最大、最小值。写成 $I/A^2=2(\\cos u+\\sqrt3/2)^2+1/2$，可得 $I_{\\max}=(4+2\\sqrt3)A^2$、$I_{\\min}=A^2/2$。"
+        },
+        {
+          "k": "m",
+          "x": "K=\\frac{7+4\\sqrt3}{9+4\\sqrt3}\\simeq0.8744."
+        },
+        {
+          "k": "p",
+          "x": "原答案的强度式与此一致，但给出的 K=0.866 不符合该式的全局极值；它相当于把 $\\cos u=-1$ 时的次极大值误用作最小值。"
+        }
+      ],
+      "reviewNote": "源强度式正确，但按其全局最大/最小求可见度为0.8744，非源答案0.866。Imin=A²/2在cos(πy/λ)=-√3/2取得；cos=-1处是次极大值。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "23c0c8017de2efca12a72cdd583d5761dae929c301109af30be57ff3d859e3f9"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "(1) 双缝间隔 d=0.5 mm、屏距 D=1000 mm，故 $e=\\lambda D/d=1\\,\\mathrm{mm}$。"
+        },
+        {
+          "k": "p",
+          "x": "(2) 设光源到双缝距离为 L，光源横移量为 $y_s$。中心亮纹要求源到双缝与双缝到屏的光程差抵消，所以 $x_0=-Dy_s/L$。光源下移 2 mm，条纹向上移动 $1000\\times2/300=6.67\\,\\mathrm{mm}$。"
+        },
+        {
+          "k": "p",
+          "x": "(3) 光谱全宽是 $\\Delta\\lambda=5\\,\\mathrm{nm}$，教材以 $\\Delta_{\\max}\\simeq\\lambda^2/\\Delta\\lambda$ 估算相干长度，临界级次为"
+        },
+        {
+          "k": "m",
+          "x": "m_{\\rm lim}=\\frac{\\Delta_{\\max}}{\\lambda}=\\frac{\\lambda}{\\Delta\\lambda}=100."
+        },
+        {
+          "k": "p",
+          "x": "原答案用 100 表示可见级次的极限；均匀连续光谱模型在这个边界处可见度已首次降为零，严格能看到的整数级次应在 100 以内。"
+        },
+        {
+          "k": "p",
+          "x": "(4) 干涉孔径角 $\\beta\\simeq d/L$，临界源宽 $b_c=\\lambda/\\beta=\\lambda L/d=0.30\\,\\mathrm{mm}$。这里问消失时的临界宽度，不能再除以 4。"
+        }
+      ],
+      "reviewNote": "第(3)源答案100是按相干长度估计的临界级次，均匀谱在该级可见度为零；若将“能够看到的最高整数级次”严格理解，需低于100，且具体可见阈值依谱线形状和观测条件而定。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "0297c2008dccc25bdc34c08fd837d0b6de0ed0f919017f566d68dc3c0df3b9c7"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "(1) 设一个原缝单独在轴上产生的光强为 $I_0$。玻璃片只给一路增加光程 $(n-1)t$，相位差 $\\delta=2\\pi(n-1)t/\\lambda$。"
+        },
+        {
+          "k": "m",
+          "x": "I(P_0)=2I_0(1+\\cos\\delta)=4I_0\\cos^2\\!\\left[\\frac{\\pi(n-1)t}{\\lambda}\\right]."
+        },
+        {
+          "k": "p",
+          "x": "当 $(n-1)t=m\\lambda$ 时为最亮 $4I_0$，当 $(n-1)t=(m+1/2)\\lambda$ 时为暗。"
+        },
+        {
+          "k": "p",
+          "x": "(2) 在同样的均匀照明下，轴上远场振幅与缝宽成正比。缝宽加倍的一路振幅加倍，单独强度变成 $4I_0$，另一缝仍为 $I_0$。"
+        },
+        {
+          "k": "m",
+          "x": "I(P_0)=4I_0+I_0+2\\sqrt{4I_0^2}\\cos\\delta=I_0\\!\\left[5+4\\cos\\frac{2\\pi(n-1)t}{\\lambda}\\right]."
+        },
+        {
+          "k": "p",
+          "x": "此时最暗也只有 $I_0$，不能再完全相消。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "8a46daa3ed4f6ffabea0f510c1f40d7dcc43fe42211989ed839e40f822dbc573"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "厚度台阶把透镜孔径分为两半，两半在焦点的振幅大小相等。多出的玻璃厚度 d 替代等长空气，光程差为 $(n-1)d$。"
+        },
+        {
+          "k": "m",
+          "x": "\\frac I{I_{\\rm flat}}=\\cos^2\\frac\\delta2=\\frac14,\\qquad\\delta=\\frac{2\\pi(n-1)d}{\\lambda}."
+        },
+        {
+          "k": "p",
+          "x": "最小正相位差为 $\\delta=2\\pi/3$，于是"
+        },
+        {
+          "k": "m",
+          "x": "d_{\\min}=\\frac{\\lambda}{3(n-1)}=\\frac{630}{3\\times0.5}=420\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "这里是透射波前台阶，光程差没有反射往返的因子 2。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "a5a00710ba1f7fd3e8f90c8b6b92304e35c4eff12c2abad6dce5ee1f656ccd59"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "肥皂膜两侧为空气，反射光有一次相对半波损失。最薄的反射加强条件是 $2nh\\cos r=\\lambda/2$。"
+        },
+        {
+          "k": "p",
+          "x": "视线与法线的 35° 是空气中的反射角，也等于入射角 i；膜内角 r 由 $\\sin r=\\sin i/n$ 求得。"
+        },
+        {
+          "k": "m",
+          "x": "h_{\\min}=\\frac{\\lambda}{4n\\cos r}=\\frac{500}{4\\sqrt{1.33^2-\\sin^2 35^\\circ}}\\,\\mathrm{nm}\\simeq104.17\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "不能把空气中的 35° 直接作为膜内折射角。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "0febb80b2000f4df58d4c2a39a24291fc3f01ae537220f277d57cc9b91333aa1"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "(1) 理想接触的反射暗环满足 $2h=m\\lambda$，而球面与平面间有 $h\\simeq r^2/(2R)$，所以 $r_N^2=N\\lambda R$。在 N 较大时，相邻环间距可用微分近似："
+        },
+        {
+          "k": "m",
+          "x": "e_N\\simeq\\frac{dr_N}{dN}=\\frac12\\sqrt{\\frac{R\\lambda}{N}}."
+        },
+        {
+          "k": "p",
+          "x": "严格相邻暗环间隔为 $\\sqrt{R\\lambda}(\\sqrt{N+1}-\\sqrt N)$；题给表达式是局部近似，并非中心附近的精确差分。"
+        },
+        {
+          "k": "p",
+          "x": "(2) 相距 k 个条纹有 $r_{N+k}^2-r_N^2=k\\lambda R$，故 $R=(r_{N+k}^2-r_N^2)/(k\\lambda)$，未知的固定中心间隙也会在平方差中消去。"
+        },
+        {
+          "k": "p",
+          "x": "(3) 两者均为中心疏、边缘密的同心圆。牛顿环为等厚干涉，级次向外增加，理想接触中心为暗；等倾圆环级次向外降低，中心亮暗取决于轴向光程差。牛顿环定域于薄层附近，等倾环定域于无穷远。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "23e9208094e7246a857efadbba417f4bf96d062927dcaca898b07becfccabad2"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "动镜移动 d 改变的是往返光程 2d，条纹每移动一条对应光程差改变一个波长。"
+        },
+        {
+          "k": "m",
+          "x": "\\lambda=\\frac{2d}{N}=\\frac{2\\times0.03164}{100}\\,\\mathrm{mm}=0.0006328\\,\\mathrm{mm}=632.8\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "因此单色光波长为 632.8 nm。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "b1ba24155ec10cd07a7659cdd34a0264755277cfcae1e0a115b3082522402e64"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "等倾小角度下环半径平方随由中心向外的环序号线性增加。用第 2、第 5 环消去未知焦距和尺度，定义相对环位置 $q=3r_2^2/(r_5^2-r_2^2)$；两谱线的 q 之差就是条纹间距的分数。"
+        },
+        {
+          "k": "m",
+          "x": "q_1=\\frac{3\\times2^2}{3.8^2-2^2}=1.14943,\\qquad q_2=\\frac{3\\times2.1^2}{3.85^2-2.1^2}=1.27059."
+        },
+        {
+          "k": "p",
+          "x": "标准具的自由光谱范围为 $\\lambda^2/(2h)=500^2/(2\\times250000)=0.50\\,\\mathrm{nm}$。"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta\\lambda=|q_2-q_1|\\frac{\\lambda^2}{2h}\\simeq0.12116\\times0.50=0.0606\\,\\mathrm{nm}\\simeq0.06\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "这里按两组同序环属于相邻对应级次、谱线差小于一个自由光谱范围来确定波长差。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "39122df3c333f10650eb9bad52ea9088e0588470196fc0e7577262a4dd183b79"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "间隔 h 有两项限制：要让最靠近的两谱线可分辨，h 必须足够大；要使整组谱线不与相邻干涉级次重叠，h 又不能太大。"
+        },
+        {
+          "k": "p",
+          "x": "取平均波长 $\\lambda\\simeq546.074\\,\\mathrm{nm}$；四线最小间隔为 $0.0006\\,\\mathrm{nm}$，总跨度为 $0.0025\\,\\mathrm{nm}$。R=0.9 时 $\\mathcal F=\\pi\\sqrt R/(1-R)\\simeq29.80$，按教材分辨判据 $N_{\\rm eff}=0.97\\mathcal F$。"
+        },
+        {
+          "k": "m",
+          "x": "\\frac{\\lambda^2}{2hN_{\\rm eff}}<0.0006\\,\\mathrm{nm}\\quad\\Rightarrow\\quad h>8.6\\,\\mathrm{mm}."
+        },
+        {
+          "k": "m",
+          "x": "\\Delta\\lambda_{\\rm FSR}=\\frac{\\lambda^2}{2h}>0.0025\\,\\mathrm{nm}\\quad\\Rightarrow\\quad h<59.64\\,\\mathrm{mm}."
+        },
+        {
+          "k": "p",
+          "x": "因此取 $8.6\\,\\mathrm{mm}<h<59.64\\,\\mathrm{mm}$。提示中的“最大波长”应理解为整组谱线的最大波长差；题干同位素标注不参与这个计算。"
+        }
+      ],
+      "reviewNote": "源题把第一条线的同位素印为Hg100，疑为Hg198之误；源提示“最大波长”应为“最大波长差/谱线总跨度”。间隔计算仅使用给定波长，源答案应读作8.6 mm<h<59.64 mm。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "1091412ecaa2afae4deb4ced60ffbf4ce87a018b61d9509c6d7f8a456387294c"
+    },
+    {
+      "questionId": "engopt2-ch09-exercise-四_calc-11",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "(1) 正入射透射共振满足 $2nh=m\\lambda$，其中 $2nh=2\\times1.55\\times400=1240\\,\\mathrm{nm}$。"
+        },
+        {
+          "k": "m",
+          "x": "\\lambda_m=\\frac{1240}{m}\\,\\mathrm{nm}."
+        },
+        {
+          "k": "p",
+          "x": "可见区内只有 m=2、3 两条，波长分别为 620 nm、413.3 nm；m=1 在红外，m≥4 在紫外。"
+        },
+        {
+          "k": "p",
+          "x": "(2) 本教材的“半宽度”指峰值一半处两侧波长之差，即半高全宽 FWHM，不是从峰中心到单侧半高点的距离。"
+        },
+        {
+          "k": "m",
+          "x": "\\Delta\\lambda_{\\rm FWHM}\\simeq\\frac{\\lambda^2}{2\\pi nh}\\frac{1-R}{\\sqrt R}."
+        },
+        {
+          "k": "p",
+          "x": "分别代入 R=0.96、n=1.55、h=400 nm，得 620 nm 峰宽约 4.03 nm，413.3 nm 峰宽约 1.79 nm。若问单侧半高半宽，则应分别再除以 2。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "1ea29d154a2fb8aebb00fa4502a8d2f357f019c461028c8a1c6477064099c0b0"
+    }
+  ]
+}

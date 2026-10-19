@@ -1,0 +1,525 @@
+{
+  "date": "2026-10-19",
+  "entries": [
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "等相位面满足$z/c-t=\\text{常数}$，故随时间增加向$+z$移动；在原点、$t=0$时，相位为$\\pi/2$。"
+        },
+        {
+          "k": "p",
+          "x": "当$t=2.5\\times10^{-15}\\,\\mathrm s$时，$\\omega t=\\pi/2$，所以$E_y=2>0$。又$\\boldsymbol B=\\hat{\\boldsymbol z}\\times\\boldsymbol E/c$，磁场沿$-x$方向，故选A、B、C。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "05d5b87dee393716f1a3cd11c305889113dbc816bf950a7b5ac26673b200b8f1"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "光通过静止界面时频率保持不变，因此周期$T=1/\\nu$也不变。"
+        },
+        {
+          "k": "p",
+          "x": "介质中$v=c/n<c$，$\\lambda=v/\\nu=\\lambda_0/n$减小，而波数$k=2\\pi/\\lambda$增大，故选A、B。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "94bcc8dca07c4b6b0666b2f675d0141ed2bf7c778043fe44d02add8868973006"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "三个静止界面均不改变频率，故$\\nu_1=\\nu_2=\\nu_3$。速度和介质内波长分别为$v=c/n$、$\\lambda=c/(n\\nu)$。"
+        },
+        {
+          "k": "p",
+          "x": "因为$n_2<n_1<n_3$，所以$v_2>v_1>v_3$，$\\lambda_2>\\lambda_1>\\lambda_3$，选B。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "f42bb47346d705eac00b1d2c72eea8123b796961429951e8ef20d3a4116f8315"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "两束光均沿半径入射圆弧面，在圆弧面不偏折；到平面界面时，图中$P$的入射角比$Q$大，而出射角相同。由$n\\sin i=\\sin r$可知$n_Q>n_P$。"
+        },
+        {
+          "k": "p",
+          "x": "按玻璃的正常色散，$Q$的频率较大。两束光在玻璃内走过相同半径，传播时间$t=nR/c$，故$Q$用时较长，选D。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "da13c63bade2a2f5a67e1954dbf8feb58fa189f573b3ae1c43b080e6924a28ca"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "本题问两束反射光之间是否多出相当于半个波长的相对相位差。按常用的界面反射相位规则，由低折射率一侧射向高折射率一侧时反射产生$\\pi$相变，反向则不产生该相变。"
+        },
+        {
+          "k": "p",
+          "x": "若$n_2$小于两侧折射率或大于两侧折射率，两次反射中恰有一次产生$\\pi$相变。因此选C、D；A、B两种排列的两次反射相变相同。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "395fdad3ca5fac0de477ce47e26012c9106461678727baa1cb3c8702087e8236"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "两正交分量振幅相等，但相位差$\\delta=5\\pi/4$既非$0,\\pi$，也非$\\pm\\pi/2$，故合成为椭圆偏振光。"
+        },
+        {
+          "k": "p",
+          "x": "取题中的$e^{-\\mathrm i\\omega t}$时间约定，迎着传播方向观察，规定顺时针为右旋。取$E_x$达正最大值的时刻，有$\\mathrm dE_y/\\mathrm dt=A\\omega\\sin\\delta<0$，电矢量顺时针转动，故选D。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "c96fbc41b5af1e61ace6aa9365efebf8bd8c4330677a3b8fc588510899624d6a"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "同向、同偏振而频率接近的两波叠加时，合振幅随差频缓慢变化。例如等振幅情形有$E=2A\\cos[(\\omega_1-\\omega_2)t/2]\\cos[(\\omega_1+\\omega_2)t/2]$。"
+        },
+        {
+          "k": "p",
+          "x": "光强包络的变化频率为$|\\nu_1-\\nu_2|$，这就是光学拍，故选C。频率相同不会出现这种差频起伏。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "765056a44c4e7219378172370e746a4b5aebcadcf975946526b28c43a5031fa6"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "按两列等振幅波的标准情形，令$E_1=A\\cos(kz-\\omega t)$、$E_2=A\\cos(kz+\\omega t)$，则合波为$E=2A\\cos kz\\cos\\omega t$。"
+        },
+        {
+          "k": "p",
+          "x": "振幅随位置变化，波节和波腹位置固定，故本题预期选B。严格的纯驻波还要求两波振幅相等且相位关系稳定；一般驻波也属于干涉的特殊情形。"
+        }
+      ],
+      "reviewNote": "题干未给两波振幅相等与相位稳定。振幅不等时是驻波成分与行波成分的叠加，不能严格称纯驻波；选项A的干涉也为上位概念。原答B是标准等振幅情形。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "e55ee146906c84e3a662f92454de15682d4b622e57dd67670e7bb11a1e6a1e34"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "无吸收的发散球面波振幅随距离按$1/r$衰减，因此$A(4\\,\\mathrm m)=2\\times1/4=0.5\\,\\mathrm{V/m}$。"
+        },
+        {
+          "k": "p",
+          "x": "角频率为$\\omega=2\\pi\\nu=2\\pi\\times10^{14}\\,\\mathrm{rad/s}$，故选A、C。应区分振幅的$1/r$规律与光强的$1/r^2$规律。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "3d23c9341db6a17f6d0a315da6d7510a1379f41b0c7ae5240e2c20104ecf1f1f"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-一_choice-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "采用本章与$e^{\\mathrm i(kz-\\omega t)}$一致的时间因子$e^{-\\mathrm i\\omega t}$，实场相位为$-kr-\\omega t+\\text{常数}$。"
+        },
+        {
+          "k": "p",
+          "x": "等相位条件给出$\\mathrm dr/\\mathrm dt=-\\omega/k$，波面向球心移动；$1/r$说明它是球面波。因此选B。若改用相反时间因子，空间指数的符号也必须相应改变。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4663794fd03451a3f6a271492d3c683264f8bbf6a05c87ad21f1cda31a7ad00d"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-二_blank-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "界面不改变频率；介质内波长为$\\lambda=\\lambda_0/n=760/1.33\\approx571\\,\\mathrm{nm}$。"
+        },
+        {
+          "k": "p",
+          "x": "频率$\\nu=c/\\lambda_0=3.0\\times10^8/(760\\times10^{-9})\\approx3.95\\times10^{14}\\,\\mathrm{Hz}$，按题中精度约为$4\\times10^{14}\\,\\mathrm{Hz}$。颜色由频率决定，仍为红色。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "fec3965cf2c1aee5ae40cc878023c345c1264850383650e2ba7ce0d79e25c11d"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-二_blank-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "一般入射时会同时产生反射和折射。全反射要求从光密介质射向光疏介质，即$n_1>n_2$，且$i>i_c$，其中$\\sin i_c=n_2/n_1$。"
+        },
+        {
+          "k": "p",
+          "x": "对理想、透明、无吸收的电介质界面，纯$p$偏振光以布儒斯特角$i_B$入射时$r_p=0$，全部能量透射；其条件为$\\tan i_B=n_2/n_1$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "cc9a1cadd4cb4ade590e622346d7e78268f910ceb7f2835aab39101d5d7787e5"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-二_blank-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "同频、同振动方向、沿同一直线反向传播且相位关系稳定的两列波能形成固定的干涉分布。"
+        },
+        {
+          "k": "p",
+          "x": "若还具有相同振幅，合波可写成$E=2A\\cos(kz+\\varphi)\\cos(\\omega t+\\psi)$，得到有固定波节的纯驻波。原答案列出的是前三项主要条件。"
+        }
+      ],
+      "reviewNote": "严格形成有零振幅波节的纯驻波还要求两反向波等振幅、相位关系稳定；原参考答案只列同频、同振动方向、反向传播。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "59853154408d2ef53994433eeccb9e632fbebc5b6e5cabb3bd19904cacbfa053"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-二_blank-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "相位差$\\delta=-5\\pi/4$可化为$3\\pi/4$。它不是$0,\\pi$或$\\pm\\pi/2$，故不是线偏振或圆偏振，而是椭圆偏振。"
+        },
+        {
+          "k": "p",
+          "x": "取题中的$e^{-\\mathrm i\\omega t}$时间约定，迎着传播方向观察，规定逆时针为左旋。在$E_x$达正最大值时，$\\mathrm dE_y/\\mathrm dt=A\\omega\\sin\\delta>0$，因此为左旋椭圆偏振光。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "7db980510d07e29be4cf19a819cd4d66a77230bb646fa1423ff7be8f383a8af5"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-二_blank-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "用和差化积将两项相加：$y=2A\\cos[(\\varphi_1-\\varphi_2)/2]\\cos[\\omega t+(\\varphi_1+\\varphi_2)/2]$。"
+        },
+        {
+          "k": "p",
+          "x": "所以合振动的非负振幅为$2A|\\cos[(\\varphi_1-\\varphi_2)/2]|$。原答案不带绝对值时，将余弦前负号等效吸收入合振动初相位即可。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "be7874ed172902e6e4921c024f65837e16c3c579c15cd501273532d34b305d68"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-二_blank-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "平面波的相位写成$\\boldsymbol k\\cdot\\boldsymbol r-\\omega t$，其中$\\boldsymbol k=(2,3,4)$。负时间项表明传播方向与$\\boldsymbol k$同向。"
+        },
+        {
+          "k": "p",
+          "x": "将波矢除以其模$|\\boldsymbol k|=\\sqrt{2^2+3^2+4^2}=\\sqrt{29}$，得单位矢量$\\hat{\\boldsymbol k}=(2\\hat{\\boldsymbol x}+3\\hat{\\boldsymbol y}+4\\hat{\\boldsymbol z})/\\sqrt{29}$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "8f8a8a4b4fc95ea741ab06631fb744e4fcbf88d3a03423bb55ba0a6fc60c4862"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-二_blank-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "将相位与$kx-\\omega t$比较，得到$k=3\\pi\\times10^6\\,\\mathrm{m^{-1}}$；正弦或余弦形式不影响波长。"
+        },
+        {
+          "k": "p",
+          "x": "于是$\\lambda=2\\pi/k=2/(3\\times10^6)\\,\\mathrm m=666.7\\,\\mathrm{nm}$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "4d0da6a77f0ebb71bf570f3f5c91986f39779da7e231a420292ef53204bacb03"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-二_blank-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "若传播方向位于$+x$、$+z$组成的象限，其单位矢量为$\\hat{\\boldsymbol k}=\\sin\\theta\\,\\hat{\\boldsymbol x}+\\cos\\theta\\,\\hat{\\boldsymbol z}$，因此$\\boldsymbol k\\cdot\\boldsymbol r=(2\\pi/\\lambda)(x\\sin\\theta+z\\cos\\theta)$。"
+        },
+        {
+          "k": "p",
+          "x": "采用时间因子$e^{-\\mathrm i\\omega t}$并令初相位为零，复振幅为$\\widetilde E=A\\exp[\\mathrm i(2\\pi/\\lambda)(x\\sin\\theta+z\\cos\\theta)]$。完整复波还需乘上$e^{-\\mathrm i\\omega t}$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "47c8f4fbdf93deb6ef3201cc828e5bc31fcaca840f16a02b1b1d0a18eaa084c1"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-二_blank-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "由吸收定律$I=I_0e^{-\\alpha L}$，两种材料吸收相同比例的光，就要求其吸收光学厚度$\\alpha L$相等。"
+        },
+        {
+          "k": "p",
+          "x": "因此空气层厚度$L=(10^{-2}\\times1)/10^{-5}=1000\\,\\mathrm{cm}=10\\,\\mathrm m$，这里不计表面反射。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "a8ef8e4f0a11d06a9108dc935f3057503642c30126fe515af444ebbad50c29a7"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-1",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "与$E_x=A\\cos[\\omega(z/v-t)]$比较可知，$\\omega=\\pi\\times10^{15}\\,\\mathrm{rad/s}$，$v=0.65c$。"
+        },
+        {
+          "k": "m",
+          "x": "\\nu=\\frac{\\omega}{2\\pi}=5.0\\times10^{14}\\,\\mathrm{Hz},\\qquad\\lambda=\\frac v\\nu=\\frac{0.65\\times3.0\\times10^8}{5.0\\times10^{14}}=0.39\\,\\mu\\mathrm m."
+        },
+        {
+          "k": "p",
+          "x": "由$n=c/v$，玻璃折射率$n=1/0.65\\approx1.538$。这里$0.39\\,\\mu\\mathrm m$是玻璃内波长，真空波长为$0.60\\,\\mu\\mathrm m$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "1a6ad0a0138f359d3cb2852b4f0c53b853ba6b08e523b5bb548fcda34627c438"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-2",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "以$e^{-\\mathrm i\\omega t}$为时间因子，两振动的复振幅相加为$\\widetilde E=6+8e^{\\mathrm i\\pi/2}=6+8\\mathrm i$。"
+        },
+        {
+          "k": "p",
+          "x": "合振幅$|\\widetilde E|=\\sqrt{6^2+8^2}=10\\,\\mathrm{V/m}$，初相位$\\alpha=\\arctan(8/6)=0.9273\\,\\mathrm{rad}$。"
+        },
+        {
+          "k": "p",
+          "x": "因此$E=10\\cos(0.9273-2\\pi\\times10^{15}t)\\,\\mathrm{V/m}$。相位应取第一象限，与两个分量的正实部、正虚部一致。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "e16ed13dc3675795740d2c9a0479365938cdd602816d100113fd843454a9f6c6"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-3",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "统一取时间因子$e^{\\mathrm i\\omega t}$：由于余弦为偶函数，两波可分别写成$\\operatorname{Re}[ae^{\\mathrm ikx}e^{\\mathrm i\\omega t}]$和$\\operatorname{Re}[-ae^{-\\mathrm ikx}e^{\\mathrm i\\omega t}]$。"
+        },
+        {
+          "k": "p",
+          "x": "复振幅之和为$a(e^{\\mathrm ikx}-e^{-\\mathrm ikx})=2\\mathrm ia\\sin kx$，取实部得$E=-2a\\sin kx\\sin\\omega t$。"
+        },
+        {
+          "k": "p",
+          "x": "这是驻波，波节满足$kx=m\\pi$，空间振幅为$2a|\\sin kx|$。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "f1c412062b910e1ed28d3110dcc11ce947644ba5c16596540281e9dfcb4ffd48"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-4",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "先由斯涅尔定律得折射角$r=\\arcsin(\\sin50^\\circ/1.5)=30.710^\\circ$。采用局部右手基底$(p,s,\\hat{\\boldsymbol k})$，时间因子为$e^{-\\mathrm i\\omega t}$；迎着各自传播方向看，顺时针称右旋。"
+        },
+        {
+          "k": "m",
+          "x": "r_s=\\frac{\\cos i-n\\cos r}{\\cos i+n\\cos r}=-0.33474,\\quad r_p=\\frac{n\\cos i-\\cos r}{n\\cos i+\\cos r}=0.05725;"
+        },
+        {
+          "k": "m",
+          "x": "t_s=\\frac{2\\cos i}{\\cos i+n\\cos r}=0.66526,\\quad t_p=\\frac{2\\cos i}{n\\cos i+\\cos r}=0.70483."
+        },
+        {
+          "k": "p",
+          "x": "入射右旋圆偏振光可取琼斯矢量$(1,-\\mathrm i)^{\\mathsf T}/\\sqrt2$。反射波与$(0.05725,\\,0.33474\\mathrm i)^{\\mathsf T}$成正比，是左旋椭圆偏振光，长短轴比约$5.85$。"
+        },
+        {
+          "k": "p",
+          "x": "透射波与$(0.70483,-0.66526\\mathrm i)^{\\mathsf T}$成正比，是右旋椭圆偏振光，长短轴比约$1.06$。两分量仍相差$\\pi/2$，但幅度不等，因此都不再是圆偏振光。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "accce1b58d29a7628b0d9c3dc047cecd58ac82a0f68bcc1cae239a020b4ef980"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-5",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "将入射电场沿$p$、$s$方向分解：$A_p=A\\cos\\theta$，$A_s=A\\sin\\theta$；反射后相应振幅为$r_{\\parallel}A\\cos\\theta$和$r_{\\perp}A\\sin\\theta$。"
+        },
+        {
+          "k": "p",
+          "x": "两分量互相正交，总光强应将各分量强度相加，故$R=|r_{\\parallel}|^2\\cos^2\\theta+|r_{\\perp}|^2\\sin^2\\theta$。透明介质的实反射系数情形即为原答案的平方形式。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "28580b03317dd0a95224ca91d1be280e04b1666426e205fa55b7781259d0defc"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-6",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "取空气中近轴正入射、忽略吸收与多次反射回收。每个未镀膜表面的反射率为$R=[(n-1)/(n+1)]^2$，两片分离透镜共有四个空气—玻璃界面。"
+        },
+        {
+          "k": "m",
+          "x": "R_1=0.0400,\\qquad R_2=(0.7/2.7)^2=0.067215,\\qquad T=(1-R_1)^2(1-R_2)^2\\approx0.80187."
+        },
+        {
+          "k": "p",
+          "x": "未镀膜的总损失$1-T\\approx19.81\\%$，约$19.8\\%$；原答案$19.7\\%$与精算略有差异。"
+        },
+        {
+          "k": "p",
+          "x": "若四个表面反射率均降为$1\\%$，则损失$1-0.99^4=0.039404\\approx3.9\\%$。不能直接将四个反射率相加，因为后续表面的入射能量已经减小。"
+        }
+      ],
+      "reviewNote": "按题设n=1.5、1.7及四个空气界面正入射，未镀膜损失精算为19.8128%，原参考19.7%有约0.11个百分点差异，疑为近似或数值误差。",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "06e34f1a8d59b62476180261c70328dc7fee10e72248914e8cb9fb74c2619970"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-7",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "题目已排除界面反射，只需使用朗伯吸收定律$T=I/I_0=e^{-\\alpha d}$，故$d=-\\ln T/\\alpha$。"
+        },
+        {
+          "k": "m",
+          "x": "\\begin{array}{c|cccc}T&0.10&0.20&0.50&0.80\\\\\\hline d\\;(\\mathrm{cm})&7.196&5.029&2.166&0.697\\end{array}"
+        },
+        {
+          "k": "p",
+          "x": "按一位小数依次为$7.2\\,\\mathrm{cm}$、$5.0\\,\\mathrm{cm}$、$2.2\\,\\mathrm{cm}$和$0.7\\,\\mathrm{cm}$。透过率越低，需要的吸收层越厚。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "9e0811a1623aed0558bc70584cb68d26ae61ca8800333b117d0a6bcb2ca31f97"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-8",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "采用两项科希公式$n(\\lambda)=A+B/\\lambda^2$，并统一以$\\mathrm{nm}$表示波长。两条谱线给出两个方程：$1.65250=A+B/435.8^2$，$1.62450=A+B/546.1^2$。"
+        },
+        {
+          "k": "m",
+          "x": "B=\\frac{1.65250-1.62450}{435.8^{-2}-546.1^{-2}}=1.464313\\times10^4\\,\\mathrm{nm^2},\\qquad A=1.575399."
+        },
+        {
+          "k": "p",
+          "x": "代入$\\lambda=589.3\\,\\mathrm{nm}$得$n=1.617565\\approx1.61756$。"
+        },
+        {
+          "k": "p",
+          "x": "由$\\mathrm dn/\\mathrm d\\lambda=-2B/\\lambda^3$得色散率$-1.43105\\times10^{-4}\\,\\mathrm{nm^{-1}}$。负号表示波长增加时折射率下降。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "a810416bef85234f8513c4467616ad7c9dbf2601b420966c38e39974fd1b14ea"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-9",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "设两列波的波数分别为$k+\\mathrm dk$和$k-\\mathrm dk$，初相位相同。将其复表示相加，再用$e^{\\mathrm iu}+e^{-\\mathrm iu}=2\\cos u$。"
+        },
+        {
+          "k": "m",
+          "x": "\\widetilde E=2A_0\\cos(\\mathrm dk\\,z-\\mathrm d\\omega\\,t)\\,e^{\\mathrm i(kz-\\omega t)}."
+        },
+        {
+          "k": "p",
+          "x": "快速振荡项$kz-\\omega t$的等相位面传播速度为$v_p=\\omega/k$；慢变振幅包络的等相位面满足$\\mathrm dk\\,z-\\mathrm d\\omega\\,t=\\text{常数}$，故$v_g=\\mathrm d\\omega/\\mathrm dk$。"
+        },
+        {
+          "k": "p",
+          "x": "当两频率足够接近时，$v_g$就是色散关系的导数$\\mathrm d\\omega/\\mathrm dk$；无色散介质中它与相速度相同。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "8a8ddc7326b8a1441fbb48b7cc326033e708f24d8c8a01a507bbec8024832495"
+    },
+    {
+      "questionId": "engopt2-ch08-exercise-三_calc-10",
+      "analysis": [
+        {
+          "k": "p",
+          "x": "沿与$x$轴成$\\theta$角的方向取电场投影，复振幅为$\\widetilde E_\\theta=a_1\\cos\\theta+a_2e^{\\mathrm i\\delta}\\sin\\theta$，其中已略去共同相位。"
+        },
+        {
+          "k": "m",
+          "x": "I(\\theta)=|\\widetilde E_\\theta|^2=a_1^2\\cos^2\\theta+a_2^2\\sin^2\\theta+a_1a_2\\sin2\\theta\\cos\\delta."
+        },
+        {
+          "k": "p",
+          "x": "这里沿用题中以振幅平方表示光强的归一化。交叉项来自同一偏振方向上的两个投影相干叠加；不能先将两分量强度简单投影后相加。"
+        }
+      ],
+      "reviewNote": "",
+      "basis": "题干、配图、原参考答案及对应章节公式；补充解析，非原书逐字转录",
+      "stemFingerprint": "6dda844abc83b4dc0eadcdd98e226ffeff5d20eaca9f7f7d82d078ae19136c68"
+    }
+  ]
+}
