@@ -410,7 +410,6 @@ function restoreBankSourceFocus(picker){
  var target=Array.from(picker.querySelectorAll('button')).find(function(b){return Object.keys(focus).length&&Object.keys(focus).every(function(key){return b.getAttribute(key)===focus[key];});})||picker.querySelector('summary');
  if(target.getClientRects().length){target.focus({preventScroll:true});delete picker._pendingMenuFocus;}
 }
-document.addEventListener('pointerdown',function(event){var picker=document.querySelector('.bank-source-picker[open]');if(picker&&!picker.contains(event.target))picker.open=false;});
 function bankSourceControl(){
  var row=el('div','bank-source-row'),picker=el('details','bank-source-picker'),summary=el('summary'),menu=el('div','bank-source-menu'),counts={};
  function bookIcon(){var icon=el('span','bank-source-icon');icon.setAttribute('aria-hidden','true');icon.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 5.5C9 3.8 5.5 3.8 2.5 4.8v14c3-1 6.5-1 9.5.7m0-14c3-1.7 6.5-1.7 9.5-.7v14c-3-1-6.5-1-9.5.7m0-14v14"/></svg>';return icon;}
