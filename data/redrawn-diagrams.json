@@ -1,0 +1,952 @@
+{
+ "batch": "20261020",
+ "count": 189,
+ "originalScansRetained": true,
+ "replacements": [
+  {
+   "src": "assets/workbook-engopt2/images/p013_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p013_figure_01.svg",
+   "notes": "已对照题干全反射边缘光线：上层n1、下层n2、I1=90°、I2、x、L与200mm；光线由金属片射向界面。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p014_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p014_figure_01.svg",
+   "notes": "已核对6分图、左右观察眼图标、气泡A/B及像点；尺寸保留400/300/200/100/80mm与原符号。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p015_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p015_figure_01.svg",
+   "notes": "已对照三种成像过程：透射、第一面镀膜、第二面镀膜；保留A1′(A2)、A2′(A3)、A3′和全部物像距离。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p016_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p016_figure_01.svg",
+   "notes": "核对A→第一面折射→镀膜第二面反射→第一面折射至B；保留B′、A′与l1/l2/l3及d尺寸定义。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p017_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p017_figure_01.svg",
+   "notes": "核对厚平凸透镜r1=100、r2=∞、d=300、n=1.5；近轴与远轴光线、I/U角及L′1、L2、L′2、x分开保留，纵向偏差按原图放大示意。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p019_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p019_figure_01.svg",
+   "notes": "核对同心凹凸双镜、C1C2重合、O1/O2、两次反射和第一反射虚延长；尺寸关系r1=r2+d、r1=3d/r2=2d与题解一致。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p020_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p020_figure_01.svg",
+   "notes": "核对相对放置的左凹镜A与右凸镜B及两镜间向上物体O；原图无尺寸线，保留简图构成。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p021_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p021_figure_01.svg",
+   "notes": "核对半径相同并相切的两玻璃球，左球n=1.5，右球左表面反射镀层及水平光轴。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p022_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p022_figure_01.svg",
+   "notes": "核对a透射玻璃球实像、b相切镀膜球返回光路，A1′(A2)、A2′、A4′/A5′及实线/虚延长线按扫描保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p028_table_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p028_table_01.svg",
+   "notes": "逐格重绘18种正/负系统成像，保留原双段5列+4列表头与l/f符号；每格按高斯式计算共轭交点，主面传递等高，实线和虚延长分开。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p029_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p029_figure_01.svg",
+   "notes": "核对a假设主面H/H′次序、b实际交换主面次序；A/F/H/H′/F′/A′及−l、l′、−f、f′、d/−d全部保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p030_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p030_figure_01.svg",
+   "notes": "核对远摄型正负透镜顺序，入射平行、出射会聚，虚延长交H′；d、L、lF′、f′及u1′/u2′。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p031_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p031_figure_01.svg",
+   "notes": "核对L1/L2两正透镜与正反向校核光路；H在O2右100mm，H′=O1，F1′=F′=F=O2及所有100/200mm尺寸。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p032_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p032_figure_01.svg",
+   "notes": "核对厚透镜轮廓、H/H′(J′)、两焦点和远端物像断轴；l1/l2′与l/l′、lF/lF′、lH/lH′定义无混用。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p033_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p033_figure_01.svg",
+   "notes": "核对水中第一面n1=1.33、内部1.6、像方1；J′位于H左侧，主面/焦点/牛顿距离与原图标签全部保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p035_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p035_figure_01.svg",
+   "notes": "核对三片光组a正正负与b反向负正正顺序，光线高度、H′投影及lH′、lF′、f′的方向定义。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/ch02_choice_3_1.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_1.svg",
+   "notes": "逐项对照原选项1，保留主面顺序、各交点高度及实虚光线，未纠正题中错误光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/ch02_choice_3_2.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_2.svg",
+   "notes": "逐项对照原选项2，保留主面顺序、各交点高度及实虚光线，未纠正题中错误光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/ch02_choice_3_3.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_3.svg",
+   "notes": "逐项对照原选项3，保留主面顺序、各交点高度及实虚光线，未纠正题中错误光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/ch02_choice_3_4.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_4.svg",
+   "notes": "逐项对照原选项4，保留主面顺序、各交点高度及实虚光线，未纠正题中错误光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p036_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p036_figure_02.svg",
+   "notes": "四分图逐项按扫描重建；与对应选项独立图几何一致，错误选项保留，不按答案改画。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/ch02_choice_4_1.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_1.svg",
+   "notes": "逐项对照原选项1，保留主面顺序、各交点高度及实虚光线，未纠正题中错误光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/ch02_choice_4_2.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_2.svg",
+   "notes": "逐项对照原选项2，保留主面顺序、各交点高度及实虚光线，未纠正题中错误光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/ch02_choice_4_3.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_3.svg",
+   "notes": "逐项对照原选项3，保留主面顺序、各交点高度及实虚光线，未纠正题中错误光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/ch02_choice_4_4.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_4.svg",
+   "notes": "逐项对照原选项4，保留主面顺序、各交点高度及实虚光线，未纠正题中错误光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p036_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p036_figure_01.svg",
+   "notes": "四分图逐项按扫描重建；与对应选项独立图几何一致，错误选项保留，不按答案改画。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p047_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p047_figure_01.svg",
+   "notes": "核对60°双镜几何，M2M3平行OA、M1M3平行OB；两个法线及直角、α与I1/I2双撇号按原图保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p047_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p047_figure_02.svg",
+   "notes": "核对自准直往返三束光、倾斜镜与原位置、F/F1、y、a、x、θ/2θ；用放大倾角展示位移，三条返回平行束由同一反射定律构成。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p048_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p048_figure_01.svg",
+   "notes": "核对透镜与平面镜成像位置：AB正立、A′B′倒立半高实像、A″B″镜后虚像，600mm/150mm和物像距离。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p048_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p048_figure_02.svg",
+   "notes": "直接采用用户已认可的样图几何；平行面、斯涅尔定律、厚度与侧移公式已校核，保留D/E、φ、I1/I1′/I2/I2′、d/d′。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p049_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p049_figure_01.svg",
+   "notes": "核对文件上平板d、虚像A1′(A2)、透镜L、物方焦点F以及Δl/ΔL；保持先平板再透镜的成像关系。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p050_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p050_figure_01.svg",
+   "notes": "核对等边色散棱镜、B/D折射点、C为法线交点、α、δ与四个I角；内部光线平行底边，对应最小偏向角对称光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p050_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p050_figure_02.svg",
+   "notes": "核对a原镜与光楔出射偏转、b逆时针转镜后的竖直出射；45°、θ、δ、α及原位置虚线按两分图保留，示意角放大便于辨识。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p051_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p051_figure_02.svg",
+   "notes": "核对尾灯右侧入射平面和左侧连续五组锯齿反射面，原图无文字或光线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p051_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p051_figure_01.svg",
+   "notes": "核对两束平行入射a/b经同一棱镜到屏上M；a偏折较大，b偏折较小，标签与相遇点保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p052_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p052_figure_01.svg",
+   "notes": "核对a单光楔、b反向双光楔、c平行平板三行布局，以及每行入射箭头、共轴物镜与分图标号。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p054_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p054_figure_01.svg",
+   "notes": "核对双光楔P1/P2等速反向转动示意，x/y轴、±θ、底向、S1/S2及矢量和S(A)与虚线平行四边形。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p052_figure_03.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p052_figure_03.svg",
+   "notes": "逐面核对图3-27三组棱镜投影：左串联五角/折转/直角元件，中组五角与平板/折转，右屋脊与Dove轮廓；保留4个初始坐标圆点及各射线走向，不补原题未给的输出答案。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p052_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p052_figure_02.svg",
+   "notes": "核对物方oxyz和像方o′x′y′z′三维坐标箭头、物镜、45°反射镜及虚线棱镜待填框；未把答案五角屋脊预填进题干。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p053_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p053_figure_02.svg",
+   "notes": "核对眼E离地2.5m、离墙1.5m，镜长1m、上端离地2m，地面与墙下垂线O和全部尺寸方向。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p053_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p053_figure_01.svg",
+   "notes": "核对水容器轮廓、水面与水纹、底面平面镜M及眼E，h1从眼高量到水面、h2从水面量到镜面。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p053_figure_04.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p053_figure_04.svg",
+   "notes": "核对两平面镜夹角α、上下反射面的背面排线；按题干原始简图保留，不额外加入证明光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p053_figure_03.png",
+   "svg": "assets/redrawn-20261020/workbook-geom13/p053_figure_03.svg",
+   "notes": "核对四次反射B→上镜→C→D后水平出射，42°严格从M1法线量起，α=12°时末光线平行M1；A/A′/B/C/D与M1/M2保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p060_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p060_figure_02.svg",
+   "notes": "核对4-11a/b：保留物面AB、F/F′、虚入瞳、L与实出瞳及2ω；出瞳位于L与F′之间。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p060_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p060_figure_01.svg",
+   "notes": "核对4-12两等口径凸透镜、P1/F1/P2次序及两光阑像L1′/L2′；虚像构造线用虚线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p061_figure_03.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p061_figure_03.svg",
+   "notes": "核对4-13c)：平行光束与圆孔30mm/镜组40mm；主光线打在镜框边缘，K=0.5。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p061_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p061_figure_02.svg",
+   "notes": "核对4-13a：圆孔、透镜组、轴点A/B与x、50mm尺寸；保留两条张角比较线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p061_figure_04.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p061_figure_04.svg",
+   "notes": "核对4-13b)：平行光束与圆孔30mm/镜组40mm；上边缘光线与镜框边缘相接，K=1。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p061_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p061_figure_01.svg",
+   "notes": "核对4-14：三根平行入射光经照相物镜会聚于像高y′，f′与ωm构成直角三角形。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p062_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p062_figure_01.svg",
+   "notes": "核对显微镜图：AB经物镜成为倒立A′B′，中间像在目镜物焦面，-4倍率、出瞳共轭公式通过数值检查；保留全部物像距。物镜为孔径光阑，保留出瞳与视场光阑。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p063_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p063_figure_01.svg",
+   "notes": "核对4-16a/b：物镜平行入射三光线、焦面交点、f1′、−f2；a保留x/y极限视场构造，b保留K=0.5目镜。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p063_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p063_figure_02.svg",
+   "notes": "核对4-17：物镜/场镜/目镜/出瞳顺序，以及f1′、−f2与出瞳距lz′。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p065_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p065_figure_01.svg",
+   "notes": "核对4-18题图：保留F1/F1′与透镜后孔径光阑（出瞳）；未加入题目要求自行作出的答案光路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p072_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p072_figure_01.svg",
+   "notes": "核对5-1：吊灯、桌面中心O，垂距x、斜距L、θ、水平1m与桌高0.8m；L²=x²+1。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p073_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p073_figure_01.svg",
+   "notes": "核对5-2：反射镜、光源、聚光镜、片门AB、放映物镜与倒立银幕A′B′；保留长距离断裂符。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p074_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p074_figure_01.svg",
+   "notes": "核对5-3重复扫描各自替换：两反射镜、F1/F2、120°/30°、可变光阑、平凸透镜H3/H3′与±60°/±90°灯泡发光分布；数值未改。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p074_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p074_figure_02.svg",
+   "notes": "核对5-3重复扫描各自替换：两反射镜、F1/F2、120°/30°、可变光阑、平凸透镜H3/H3′与±60°/±90°灯泡发光分布；数值未改。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p076_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p076_figure_01.svg",
+   "notes": "核对5-4：灯丝半径4.7、聚光镜L、屏幕C与150/15000距离；保留平面在前的平凸镜。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p077_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p077_figure_01.svg",
+   "notes": "核对5-5：胶合物镜、两Porro棱镜与折叠轴线、平玻璃及两组目镜；保留各外表面和胶合面结构。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p084_table_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p084_table_02.svg",
+   "notes": "逐格对照扫描表：保留表头1/2/3、全部六位小数、正负号、空格和公式上下标；纯矢量文字/表格线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p084_table_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p084_table_01.svg",
+   "notes": "逐格对照扫描表：保留表头1/2/3、全部六位小数、正负号、空格和公式上下标；纯矢量文字/表格线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p084_table_03.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p084_table_03.svg",
+   "notes": "逐格对照扫描表：保留表头1/2/3、全部六位小数、正负号、空格和公式上下标；纯矢量文字/表格线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p085_table_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p085_table_02.svg",
+   "notes": "逐格对照扫描表：保留表头1/2/3、全部六位小数、正负号、空格和公式上下标；纯矢量文字/表格线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p085_table_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p085_table_01.svg",
+   "notes": "逐格对照扫描表：保留表头1/2/3、全部六位小数、正负号、空格和公式上下标；纯矢量文字/表格线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p085_table_03.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p085_table_03.svg",
+   "notes": "逐格对照扫描表：保留表头1/2/3、全部六位小数、正负号、空格和公式上下标；纯矢量文字/表格线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p086_table_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p086_table_01.svg",
+   "notes": "逐格对照扫描表：保留表头1/2/3、全部六位小数、正负号、空格和公式上下标；纯矢量文字/表格线。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p089_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p089_figure_01.svg",
+   "notes": "核对6-1题图：入射光瞳、光学系统O/Z、a/b/z及出射a′/b′/z′、全部A/B焦点。题图未加入答案像差尺寸。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p090_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p090_figure_01.svg",
+   "notes": "核对6-2答案：入射光瞳、光学系统O/Z、a/b/z及出射a′/b′/z′、全部A/B焦点。保留球差、彗差、子午/弧矢场曲、像散和畸变标注；纵向差沿轴、像高差沿像面。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p101_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p101_figure_02.svg",
+   "notes": "核对7-7四分图a/b/c/d：凹面镜、眼睛A、远点A′、F′/C，l/l′/lr与25cm；实像/虚像延长线沿原图。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p101_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p101_figure_01.svg",
+   "notes": "核对7-8：放大镜虚像、F/F′、眼睛、ω′及−l′、P′、D距离；虚像反向延长线以虚线区分。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p103_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p103_figure_01.svg",
+   "notes": "核对7-9a/b：显微镜正常观察与摄影两种光路，物镜、目镜、出瞳、倒立中间像及最终实像；250mm和全部l1/l2/lz/d尺寸保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p104_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p104_figure_01.svg",
+   "notes": "核对显微镜图：AB经物镜成为倒立A′B′，中间像在目镜物焦面，-4倍率、出瞳共轭公式通过数值检查；保留全部物像距。孔径光阑在物镜后焦面，另保留f1′、Δ。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p105_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p105_figure_01.svg",
+   "notes": "核对7-11：物镜（孔径光阑）、后焦面场镜F1′(F2)、目镜，主光线高度hz及−ω/−u/u′，fo′/−fe/−l/l′。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p106_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p106_figure_01.svg",
+   "notes": "核对7-12a组合物镜：H′、正/负两透镜、h1/h2、500/400/300mm、d与焦点顺序。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p106_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p106_figure_02.svg",
+   "notes": "核对7-12b望远结构：H′、正/负两透镜、h1/h2、500/400/300mm、d与焦点顺序。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p106_figure_03_fullreview.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p106_figure_03_fullreview.svg",
+   "notes": "核对7-12c完整望远光路：H′、正/负两透镜、h1/h2、500/400/300mm、d与焦点顺序。保留目镜−fe=20与出瞳lz′。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p108_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p108_figure_01.svg",
+   "notes": "核对7-13a/b/c：含两转像透镜、场镜、100mm后孔径光阑、250mm间隔、分划板与目镜；主光线和上下边缘光线、H/H′、全部尺寸保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p111_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-geom47/p111_figure_01.svg",
+   "notes": "核对7-14题图：眼睛、薄玻璃片、凸面镜背面纹与镜后焦距f′；保持仅有题图给定元素。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p122_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p122_figure_01.svg",
+   "notes": "逐图核对x、y、z(k)坐标、E/B方向与两处45°；保留原投影坐标结构。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p125_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p125_figure_01.svg",
+   "notes": "偏振椭圆按Ex²+Ey²−√2ExEy=A²/2重建；核对Ex/Ey、A/B、ρ/ξ、ψ与顺时针箭头。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p127_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p127_figure_01.svg",
+   "notes": "半圆玻璃砖与圆心O、入射P/Q、共同出射OF已逐项核对；P入射角大于Q。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p127_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p127_figure_02.svg",
+   "notes": "保留n1/n2/n3三层、一次反射1与经下界面反射的2；所有光线箭头与原图一致。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p138_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p138_figure_02.svg",
+   "notes": "保留a/b装置、S/S′、透镜、P/A夹角δ、焦距f′和MN重叠干涉区；阴影由手工边界重建。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p138_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p138_figure_01.svg",
+   "notes": "三波30°传播方向与a/b分图核对；曲线严格用[1+2cos(πy/λ)]²，主峰9、次峰1和零点2λ/3均核验。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p140_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p140_figure_02.svg",
+   "notes": "杨氏双缝S1/S2、仅S1后玻璃片厚t、平面波入射与对称点P0已核对。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p140_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p140_figure_01.svg",
+   "notes": "双光源S/S′、双缝S1/S2、P、D及两处虚线光程差Δ1/Δ2保留，未改变光路结构。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p141_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p141_figure_01.svg",
+   "notes": "玻璃板中点C的台阶突变、共同平整上表面及三支垂直入射箭头已核对。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p143_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p143_figure_01.svg",
+   "notes": "迈克耳逊结构、M1平面镜、M2凸面镜及虚像M2′、分光面A、O/O1/O2和往返方向逐项核对。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p144_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p144_figure_01.svg",
+   "notes": "斐索干涉仪按原图手建激光器、L1/H/G/L2/L3及待测平行平板，核对下行与返回光束、观察支路。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p144_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p144_figure_02.svg",
+   "notes": "F-P装置的两反射板间隔1cm、插入上半部透明薄片、L1/L2与f1′/f2′、多次反射折线均核对。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p147_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p147_figure_01.svg",
+   "notes": "圆形视场、竖直等厚条纹、同列A/B球与右侧C球、受压黑点D位置逐项核对。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p147_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p147_figure_02.svg",
+   "notes": "空气楔上板A、金属细丝圆截面、向下作用力F及接触端按原图重建。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p149_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p149_figure_02.svg",
+   "notes": "三维空气劈尖按原构图重建，保留上板A/下板B/圆柱G、楔角α、下压力F。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p149_table_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p149_table_01.svg",
+   "notes": "原表全部表头与五行选项文字重排为纯矢量；三列作答区保持留白，不填入答案。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p152_table_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p152_table_01.svg",
+   "notes": "原表全部表头与五行选项文字重排为纯矢量；逐格核对答案列a/c/b/a/a，b/b/a/a/c，b/b/a/a/c。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p149_figure_03.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p149_figure_03.svg",
+   "notes": "劳埃镜S/M/P布局核对；保留题图光源距镜面很近的关系与镜后虚线，不加入解图内容。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p153_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p153_figure_01.svg",
+   "notes": "劳埃镜S/M/P布局核对；根据有限镜面两端构造虚像S′和极限光线，屏上a/c/d/b顺序及cd干涉区与原图一致。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p150_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p150_figure_01.svg",
+   "notes": "薄膜等倾干涉装置的S光源、斜分光镜M、横置L、屏与同心环、薄膜/玻璃两面和多束反射光保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p151_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p151_figure_02.svg",
+   "notes": "牛顿环平凸透镜、平板、C/O、球面R、横向r和边缘间隙h逐项核对；球面由圆方程生成，两份扫描各输出独立SVG。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p151_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p151_figure_01.svg",
+   "notes": "牛顿环平凸透镜、平板、C/O、球面R、横向r和边缘间隙h逐项核对；球面由圆方程生成，两份扫描各输出独立SVG。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p162_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p162_figure_01.svg",
+   "notes": "核对I/I0、α(x)、±π/±2π/±3π及对应x标签、可见区域；sinc²包络与d/a=3的主峰和第三级缺级手工构造，谱线有限展宽仅用于可读性。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p163_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p163_figure_01.svg",
+   "notes": "2N缝结构逐条重画，缝宽a，第一间隔a与下一间隔3a，省略号和上下尺寸箭头保留；未套等间距光栅。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p165_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p165_figure_01.svg",
+   "notes": "a/b光楔与阶梯近似分图、狭缝宽b、楔角α、两支水平入射箭头和上下孔径箭头逐项核对。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p166_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p166_figure_01.svg",
+   "notes": "单缝夫琅和费装置光源、L1/L2、衍射屏/接收屏、P、θ及焦距f′逐项核对，焦面会聚箭头保持。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p170_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p170_figure_01.svg",
+   "notes": "不等距三缝：三缝同宽a，中心距d与2d按1:2比例手工重建，尺寸延长线和箭头核对。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p170_figure_03.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p170_figure_03.svg",
+   "notes": "不等宽双缝a与2a、中心距d=3a按比例重建，保留原尺寸与箭头。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p170_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p170_figure_02.svg",
+   "notes": "斜入射多缝图的三支平行入射与三支平行出射光、法向光轴、θ0和θ有向角位置核对。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p180_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p180_figure_01.svg",
+   "notes": "玻璃向空气n1=1.54/n2=1，θ1=30°、反射角θ1′与折射角θ2按Snell核验；I1/I1′/I2及三组s点/p箭头逐项核对。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p181_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p181_figure_01.svg",
+   "notes": "正交P1/P2透光轴与插入P3、x/y坐标、θ夹角核对，保留原双向轴线结构。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p182_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p182_figure_01.svg",
+   "notes": "五面板完整重建；光轴垂直纸面用点表示；1)o直/e下，2)o上/e直，3)o/e均下且e偏折大，4)o上/e下；原o/e标签和1–4序号均保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p183_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p183_figure_01.svg",
+   "notes": "λ/4片快轴x、y、70°方向与正交消光方向逐项核对；两方向按70°和−20°重建。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p184_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p184_figure_01.svg",
+   "notes": "a/b两分图：起偏器/待测波片/1/4片/检偏器及快慢轴、光束方向全部核对；横截面x为起偏器与λ/4片快轴，待测快轴45°，y为检偏方向。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p184_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p184_figure_02.svg",
+   "notes": "按P1=0°、P2=60°、光轴=30°做矢量投影；核对A、Ae/Ao、Ae2/Ao2箭头与λ/4光轴，o投影反向保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p185_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p185_figure_01.svg",
+   "notes": "偏振衍射装置a与孔径横截面b完整保留；核对x/z与x/y坐标、P1/P2/屏幕、±a/2、左右相反的±45°轴纹。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p186_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p186_figure_01.svg",
+   "notes": "偏振杨氏干涉装置逐项核对S/P、S1/P1、S2/P2与屏Σ，保留屏前独立检偏片P′。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p189_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p189_figure_02.svg",
+   "notes": "两组A/B偏振片分别重建；左组向右入射、右组向左入射，I0两箭头和A片高于B片的原布局保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p189_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p189_figure_01.svg",
+   "notes": "ADP棱镜P/α及纸外光轴圆点、D、入射/出射法线、I1、I1′−I2、−I2′和偏向角δ保留；符号照原图未改写为求解数值。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p190_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p190_figure_01.svg",
+   "notes": "渥拉斯顿棱镜两楔斜界面、θ、相互垂直光轴（双箭头/圆点）、两束点/短线偏振标记和两处φ全部核对；偏折仅示意。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p190_figure_02.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p190_figure_02.svg",
+   "notes": "巴比涅补偿器两光楔及两处α、三支平行入射箭头、竖直/纸外光轴符号逐项核对，几何不按2°比例以保持原图可读性。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p190_figure_03.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p190_figure_03.svg",
+   "notes": "双折射滤光器P1/C1/P2/C2/P3/C3/P4/PN+1序列完整；晶片d、2d、4d按1:2:4绘制，省略段虚线与入射光箭头保留。"
+  },
+  {
+   "src": "assets/workbook-engopt2/images/p191_figure_01.png",
+   "svg": "assets/redrawn-20261020/workbook-wave/p191_figure_01.svg",
+   "notes": "偏振杨氏干涉装置逐项核对S/P、S1/P1、S2/P2与屏Σ，此题原图无屏前P′，保留三片偏振片。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2006-iii-1.jpg",
+   "svg": "assets/redrawn-20261020/photos/006-answer-2006-iii-1.svg",
+   "notes": "保留x′出纸面、z′向右、y′向下的原坐标答案。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2007-iii-1.jpg",
+   "svg": "assets/redrawn-20261020/photos/015-answer-2007-iii-1.svg",
+   "notes": "a、b、c处坐标的左右/上下方向以及出入纸面标志均按原印刷答案保留。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2008-iii-1.jpg",
+   "svg": "assets/redrawn-20261020/photos/022-answer-2008-iii-1.svg",
+   "notes": "三处带一/二/三撇坐标、点和叉号逐项保留，未混用坐标轴。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2005-iii-6.jpg",
+   "svg": "assets/redrawn-20261020/photos/003-2005-iii-6.svg",
+   "notes": "缝宽严格为a与2a，d是两缝内缘间隔；尺寸线端点经过核对。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2005-iii-8.jpg",
+   "svg": "assets/redrawn-20261020/photos/004-2005-iii-8.svg",
+   "notes": "四块光学元件顺序、透振/快轴方向与原图一致，中文元件名称重新排版。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2009-IX.jpg",
+   "svg": "assets/redrawn-20261020/photos/040-2009-IX.svg",
+   "notes": "2009题四元件的顺序及斜放起偏器标志按原图保留；未套用2005题的水平起偏状态。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2006-iii-3.jpg",
+   "svg": "assets/redrawn-20261020/photos/009-2006-iii-3.svg",
+   "notes": "按本年原图分别保留晶体两区光轴、o/e光的分束方向和点/短线偏振标记；给定图未添加答案光路。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2006-iii-3.jpg",
+   "svg": "assets/redrawn-20261020/photos/010-answer-2006-iii-3.svg",
+   "notes": "按本年原图分别保留晶体两区光轴、o/e光的分束方向和点/短线偏振标记；给定图未添加答案光路。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2008-iii-3.jpg",
+   "svg": "assets/redrawn-20261020/photos/025-2008-iii-3.svg",
+   "notes": "按本年原图分别保留晶体两区光轴、o/e光的分束方向和点/短线偏振标记；给定图未添加答案光路。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2008-iii-3.jpg",
+   "svg": "assets/redrawn-20261020/photos/026-answer-2008-iii-3.svg",
+   "notes": "按本年原图分别保留晶体两区光轴、o/e光的分束方向和点/短线偏振标记；给定图未添加答案光路。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2009-VIII.jpg",
+   "svg": "assets/redrawn-20261020/photos/038-2009-VIII.svg",
+   "notes": "按本年原图分别保留晶体两区光轴、o/e光的分束方向和点/短线偏振标记；给定图未添加答案光路。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2009-VIII-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos/039-2009-VIII-answer.svg",
+   "notes": "按本年原图分别保留晶体两区光轴、o/e光的分束方向和点/短线偏振标记；给定图未添加答案光路。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-IX.jpg",
+   "svg": "assets/redrawn-20261020/photos/082-2012-IX.svg",
+   "notes": "按本年原图分别保留晶体两区光轴、o/e光的分束方向和点/短线偏振标记；给定图未添加答案光路。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-IX-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos/083-2012-IX-answer.svg",
+   "notes": "按本年原图分别保留晶体两区光轴、o/e光的分束方向和点/短线偏振标记；给定图未添加答案光路。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2008-v-3.jpg",
+   "svg": "assets/redrawn-20261020/photos/027-2008-v-3.svg",
+   "notes": "保留x/y、P/A两条轴；α从+x到P，β从+x到A，与原题定义一致。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2007-i-14.jpg",
+   "svg": "assets/redrawn-20261020/photos/012-2007-i-14.svg",
+   "notes": "两等腰直角棱镜及斜面空气间隙独立绘出，I/II区和n数值保留。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2007-i-15.jpg",
+   "svg": "assets/redrawn-20261020/photos/013-2007-i-15.svg",
+   "notes": "保留上方楔形受检平板与下方三根同向弯折等厚条纹，以及a、b测量位置。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-XI.jpg",
+   "svg": "assets/redrawn-20261020/photos/086-2012-XI.svg",
+   "notes": "保留两反射镜、串联的两段增益介质和各自编号，不改变腔体连接关系。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2006-iv-5.jpg",
+   "svg": "assets/redrawn-20261020/photos/011-2006-iv-5.svg",
+   "notes": "按原示意保留上方被检曲面R、下方样板R0、口径Φ和中心O；相近曲面分线清晰。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2008-ii-6.jpg",
+   "svg": "assets/redrawn-20261020/photos/020-2008-ii-6.svg",
+   "notes": "迈克耳孙装置S/L/G/M1/M2/O1/O2/A及各光路方向重画，M2微凹面和M1背镀线保留。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-IV-vector.jpg",
+   "svg": "assets/redrawn-20261020/photos/049-2010-IV-vector.svg",
+   "notes": "提示图的A1、A2和A′采用严格平行四边形矢量相加；三个相位角分别从同一参考轴计量。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-IV-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos/050-2010-IV-answer.svg",
+   "notes": "原参考解中的弦长构图及其两行公式一并矢量化，未丢弃图片中原有的数学内容。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-X-diagram.jpg",
+   "svg": "assets/redrawn-20261020/photos/057-2010-X-diagram.svg",
+   "notes": "电光晶体长L、横向间距d、电极±/V、X/Y与光束方向按原图重建；不交换电极与轴名。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-choice14.jpg",
+   "svg": "assets/redrawn-20261020/photos/043-2010-choice14.svg",
+   "notes": "七种Petzval结构依原序分列：正单片、平板、正负分离、负单片、胶合正负、双正、双负；未因答案而删改选项。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-choice13.jpg",
+   "svg": "assets/redrawn-20261020/photos/071-2012-choice13.svg",
+   "notes": "保持四种棱镜候选外形和原序，第一种的空间折面/双反射结构未简化为普通三角形。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-IX.jpg",
+   "svg": "assets/redrawn-20261020/photos/055-2010-IX.svg",
+   "notes": "投影系统与原题空白八列表合并重排；源/聚光镜/图片/投影物镜/投影屏及各列变量均保留。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2011-IX-table-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos/068-2011-IX-table-answer.svg",
+   "notes": "参考表九列及原数值完整保留并重排；移动方向文字单列排清，长度单位沿用正文mm。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-VIII-table.jpg",
+   "svg": "assets/redrawn-20261020/photos/080-2012-VIII-table.svg",
+   "notes": "原题待填写的四行三器件空表重新排版，未向题干表中填入答案。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-VIII-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos/081-2012-VIII-answer.svg",
+   "notes": "琼斯表保留四行三器件结构；解答表按既有主答案排出归一化偏振态，实际振幅与旋向约定指向正文，原参考照片保留。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2009-i-4.jpg",
+   "svg": "assets/redrawn-20261020/photos/029-2009-i-4.svg",
+   "notes": "四幅等边三角棱镜保持原a/b/c/d次序：内光线分别上倾、平行底边、下倾及首面法向入射；原题未给出的出射段未额外补画。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-blank3.jpg",
+   "svg": "assets/redrawn-20261020/photos/072-2012-blank3.svg",
+   "notes": "三分图依原题保留彗差环带点列、弯曲F像、轴外红蓝绿不同位置和尺度斑点；题干图仅标(a)(b)(c)，未泄露像差名称。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2006-iii-1.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2006-iii-1.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；核对初始x出纸面、y向下、z向右，透镜、棱镜组全部外缘/屋脊交线与像面；摄影倾斜已拉正，未添加像方答案坐标。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2007-iii-1.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2007-iii-1.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；逐面核对单反系统：摄影物镜正/负/正三片轮廓、45°反光镜、毛玻璃平板、屋脊五角棱镜双屋脊线、目镜、底片及a/b/c位置；初始x为叉、y向上、z向右，反射节点已落在投影面上，未预填作答坐标。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2008-iii-1.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2008-iii-1.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；核对2008入射x叉/y上/z右，物镜、带投影侧面的直角反射棱镜、五角棱镜外缘及a/b/c三个空间；不添加题后下一题文字。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-III-1.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2010-III-1.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；核对五角棱镜5条边和入射水平—斜向反射—竖直出射的给定折线路径；剔除原照片右缘属于邻图的残缺线。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-III-1-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2010-III-1-answer.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；逐边核对五角棱镜展开答案：原棱镜实体、两次反射展开外缘、水平展开光轴和斜向展开射线；虚实线及末端箭头保留。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-III-1-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2012-III-1-answer.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；核对施密特棱镜给定三反射折线、三角截面及平板展开虚线，包括上方翻折顶点、右竖直展开面和水平展开光线。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/finals/2019-coordinate-a.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2019-coordinate-a.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；核对2019-a初始x圆点/y左/z下，左直角棱镜、望远组两虚线主面及末端三反射三角棱镜；a/b/c位置与三折反射箭头保留。末端3节点在相应镜面上，反射定律数值校验通过。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/finals/2019-coordinate-b.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2019-coordinate-b.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；核对2019-b初始x圆点/y下/z右、先望远组再五角棱镜再三反射三角棱镜；a/b/c保留，五角两次与末端三次反射节点均在各自镜面上并通过反射定律校验。原照底端截断的三角顶点仅沿已给直边延伸闭合，非原照直接可见。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/finals/2022-spring-coordinate.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2022-spring-coordinate.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；逐面核对单反系统：摄影物镜正/负/正三片轮廓、45°反光镜、屋脊五角棱镜双屋脊线、目镜、底片及1/2/3位置；初始x为叉、y向上、z向右，反射节点已落在投影面上，未预填作答坐标。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/finals/2022-autumn-coordinate.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom13/2022-autumn-coordinate.svg",
+   "notes": "已逐张对照原图与最终PNG，检查标注、箭头、面交线和布局；核对别汉棱镜交错折面、平面镜、屋脊五角棱镜两屋脊面，初始x叉/y上/z右及a/b/c；仅重建原题给定结构，去除学生手写答案与涂线。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2006-iii-2.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2006-iii-2.svg",
+   "notes": "2006三-2：保留虚物AB、反向虚像A′B′与横向CD；只画原题给定位置，不加入答案透镜。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2006-iii-2.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/answer-2006-iii-2.svg",
+   "notes": "2006三-2：保留虚物AB、反向虚像A′B′与横向CD；按BB′交轴确定负透镜，逐点重建C′D′及实/虚线。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2007-iii-2.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2007-iii-2.svg",
+   "notes": "2007三-2：F1、F2′、H1/H1′、H2/H2′、F1′、F2全保留；两薄透镜基点顺序按原图。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2007-iii-2.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/answer-2007-iii-2.svg",
+   "notes": "2007三-2：F1、F2′、H1/H1′、H2/H2′、F1′、F2全保留；H′=J′在第一镜左侧，F′在第二镜与F1′右侧，入/出射反向构造保留。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2008-iii-2.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2008-iii-2.svg",
+   "notes": "2008三-2：保留正立AB、同侧缩小虚像A′B′、右侧虚线CD；未加入答案构造。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2008-iii-2.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/answer-2008-iii-2.svg",
+   "notes": "2008三-2：保留正立AB、同侧缩小虚像A′B′、右侧虚线CD；负透镜、F′及CD两端成像构造按原参考图的关系重建。保留原参考右侧C′D′构造，未根据文字转录的虚像表述移到镜左。 已独立复核：CD为虚物，C′D′为出射光正向会聚的右侧实像；统一订正原正文虚像一词。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2009-i-1.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/answer-2009-i-1.svg",
+   "notes": "2009一-1：前负后正的分离系统，F1′/F2/H′/F′及f′，保持像方主面在后正镜右侧、焦点左侧。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2009-III.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2009-III.svg",
+   "notes": "2009三放大镜：只重画主示意图，题目/说明文字已数字化；保留A′、F、L与眼瞳P′，不加入解答。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2009-III-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2009-III-answer.svg",
+   "notes": "2009三放大镜：只重画主示意图，题目/说明文字已数字化；保留A′/A/F/L/P/P′、入瞳、半渐晕y/y′及反向虚线。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-III-2.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2010-III-2.svg",
+   "notes": "2010三-2：两薄透镜、中央孔阑与原给定共轭光线；只重建题图，不加入入瞳/出瞳解答。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-III-2-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2010-III-2-answer.svg",
+   "notes": "2010三-2：两薄透镜、中央孔阑与原给定共轭光线；保留原参考的虚入瞳/虚出瞳和辅助延长线，瞳的标记置于相交处。已用给定光线求各镜光焦度并数值核验瞳共轭和实/虚像侧；只取原参考中画出的上半瞳边缘。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2011-III-1.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2011-III-1.svg",
+   "notes": "2011三-1显微照明：前置物镜/J1、Fs与J2、聚光镜、物面A、物镜、Fo′孔阑和像面A′均保留；仅保留原给定的部分照明光线。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2011-III-1-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2011-III-1-answer.svg",
+   "notes": "2011三-1显微照明：前置物镜/J1、Fs与J2、聚光镜、物面A、物镜、Fo′孔阑和像面A′均保留；补全原参考的物/像范围2y/2y′及光源下缘通过物面上缘的光线。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2011-III-2.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2011-III-2.svg",
+   "notes": "2011三-2：两薄透镜、中央孔阑与原给定共轭光线；只重建题图，不加入入瞳/出瞳解答。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2011-III-2-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2011-III-2-answer.svg",
+   "notes": "2011三-2：两薄透镜、中央孔阑与原给定共轭光线；保留原参考的虚入瞳/虚出瞳和辅助延长线，瞳的标记置于相交处。已用给定光线求各镜光焦度并数值核验瞳共轭和实/虚像侧；只取原参考中画出的上半瞳边缘。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-III-2.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2012-III-2.svg",
+   "notes": "2012三-2：物AB向下、两薄透镜、中间孔阑及平行入射给定光线；未加入答案所求光线/像。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-III-2-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2012-III-2-answer.svg",
+   "notes": "2012三-2：物AB向下、两薄透镜、中间孔阑及平行入射给定光线；按参考图保留入/出瞳、主光线、边缘光线和右侧倒立像A′B′。已用给定光线求各镜光焦度并数值核验瞳共轭和实/虚像侧；只取原参考中画出的上半瞳边缘。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2012-X-layout-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2012-X-layout-answer.svg",
+   "notes": "2012双目显微镜纵向布局：重建两块27mm平板、131/37/20间隔，保留α、−l1、l1′、fe′、lp′及目镜/出瞳光路。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/finals/2019-pupils.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2019-pupils.svg",
+   "notes": "2019期末光瞳题：保留正/负两薄透镜、中间光阑及给定轴上光线；保留AB向下与像点A′。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/finals/2022-spring-pupils.jpg",
+   "svg": "assets/redrawn-20261020/photos-geom47/2022-spring-pupils.svg",
+   "notes": "2022期末光瞳题：保留正/负两薄透镜、中间光阑及给定轴上光线；原题未给字母的部分不擅加焦点或答案瞳。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2005-iii-5.jpg",
+   "svg": "assets/redrawn-20261020/photos-wave/2005-iii-5.svg",
+   "notes": "逐图核对空气/石英、入射θ、界面法线与晶体内斜向双箭头光轴；仅去除扫描上下裁断的相邻题文字碎片。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2005-iii-5.jpg",
+   "svg": "assets/redrawn-20261020/photos-wave/answer-2005-iii-5.svg",
+   "notes": "o光圆与e光椭圆、两条切平面、θ和直角记号全部保留；So/Ko同向右下，Ke右下近法线，Se左下。切点/径向/法向用解析几何核对；按原参考定性夸张绘制，不将椭圆轴比冒称真实石英参数。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/2007-x.jpg",
+   "svg": "assets/redrawn-20261020/photos-wave/2007-x.svg",
+   "notes": "2007题图两支平行入射光、界面法线、θ与右下角斜光轴双箭头逐项核对；保留与2005题图不同的布局。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/early/answer-2007-x.jpg",
+   "svg": "assets/redrawn-20261020/photos-wave/answer-2007-x.svg",
+   "notes": "o光圆与e光椭圆、两条切平面、θ和直角记号全部保留；So/Ko同向右下，Ke右下近法线，Se左下。切点/径向/法向用解析几何核对；按原参考定性夸张绘制，不将椭圆轴比冒称真实石英参数。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2010-blank1.jpg",
+   "svg": "assets/redrawn-20261020/photos-wave/2010-blank1.svg",
+   "notes": "完整重排原题文字和1A–1I空格，重建A/A′/A″、Σ/Σe/Σo、θ、α/β箭头；按题意不补画缺失的e波法线。正晶体定性示意，不标造石英数值。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2009-VII.jpg",
+   "svg": "assets/redrawn-20261020/photos-wave/2009-VII.svg",
+   "notes": "原题七全部文字重排；屋顶/墙壁/天空三区单独矢量重画并裁切光栅线，方向分别−60°/+60°/0°（有向光栅120°），无扫描嵌入。"
+  },
+  {
+   "src": "assets/imported-exams-20261019/late/2009-VII-answer.jpg",
+   "svg": "assets/redrawn-20261020/photos-wave/2009-VII-answer.svg",
+   "notes": "保留原书目、蓝/白/红三方向及120°、4f布局与两行说明；更正旧注物面在L1后焦面为前焦面，原参考照片保留。"
+  }
+ ]
+}

@@ -282,6 +282,11 @@ button { font-family: inherit; font-size: inherit; }
   max-width: 100%;
 }
 .figure img { display: block; max-width: 100%; height: auto; cursor: zoom-in; border-radius: 4px; }
+.figure.is-redrawn-diagram{max-width:100%;padding:6px 0;border:0;border-radius:0;background:transparent}
+.figure.is-redrawn-diagram img{width:auto;max-width:100%;max-height:440px;object-fit:contain;margin-inline:auto;border-radius:0;background:var(--lt-paper-2,#fff);color-scheme:only light}
+.option-text .figure.is-redrawn-diagram img{max-height:280px}
+html[data-theme] .figure.is-redrawn-diagram figcaption::before{content:none}
+.lightbox-img.is-redrawn-diagram{background:var(--lt-paper-2,#fff);border-radius:0;padding:10px;box-sizing:border-box}
 .figure figcaption { font-size: 12.5px; color: var(--text-dim); margin-top: 6px; text-align: center; }
 .figure.is-missing {
   background: var(--red-soft); border-color: #f3c6c1; color: #8f2b21;

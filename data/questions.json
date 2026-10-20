@@ -44592,7 +44592,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p013_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p013_figure_01.svg",
      "alt": "图 1-2 例 1-1 图",
      "imageType": "figure",
      "pdfPage": 13,
@@ -44604,7 +44604,9 @@
       533
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p013_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -44808,7 +44810,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p013_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p013_figure_01.svg",
      "alt": "图 1-2 例 1-1 图",
      "imageType": "figure",
      "pdfPage": 13,
@@ -44820,7 +44822,9 @@
       533
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p013_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -44954,7 +44958,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p014_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p014_figure_01.svg",
      "alt": "图 1-3 例 1-2 图",
      "imageType": "figure",
      "pdfPage": 14,
@@ -44967,7 +44971,9 @@
      ],
      "onePassReview": "reviewed_once",
      "numberIndent": 100,
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p014_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -45471,7 +45477,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p014_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p014_figure_01.svg",
      "alt": "图 1-3 例 1-2 图",
      "imageType": "figure",
      "pdfPage": 14,
@@ -45483,7 +45489,9 @@
       946.7371826171875
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p014_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -46081,7 +46089,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p014_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p014_figure_01.svg",
      "alt": "图 1-3 例 1-2 图",
      "imageType": "figure",
      "pdfPage": 14,
@@ -46093,7 +46101,9 @@
       946.7371826171875
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p014_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -46908,7 +46918,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p015_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p015_figure_01.svg",
      "alt": "图 1-4 例 1-3 图",
      "imageType": "figure",
      "pdfPage": 15,
@@ -46920,7 +46930,9 @@
       1090.4613037109375
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p015_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -47944,7 +47956,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p015_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p015_figure_01.svg",
      "alt": "图 1-4 例 1-3 图",
      "imageType": "figure",
      "pdfPage": 15,
@@ -47956,7 +47968,9 @@
       1090.4613037109375
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p015_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -48523,7 +48537,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p016_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p016_figure_01.svg",
      "alt": "图 1-5 例 1-4 图",
      "imageType": "figure",
      "pdfPage": 16,
@@ -48535,7 +48549,9 @@
       762.9368286132812
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p016_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -49063,7 +49079,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p016_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p016_figure_01.svg",
      "alt": "图 1-5 例 1-4 图",
      "imageType": "figure",
      "pdfPage": 16,
@@ -49075,7 +49091,9 @@
       762.9368286132812
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p016_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -51315,7 +51333,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p017_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p017_figure_01.svg",
      "alt": "图 1-6. 例 1-6 图",
      "imageType": "figure",
      "pdfPage": 17,
@@ -51327,7 +51345,9 @@
       1096.82373046875
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p017_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -52040,7 +52060,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p017_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p017_figure_01.svg",
      "alt": "图 1-6. 例 1-6 图",
      "imageType": "figure",
      "pdfPage": 17,
@@ -52052,7 +52072,9 @@
       1096.82373046875
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p017_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -54465,7 +54487,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p019_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p019_figure_01.svg",
      "alt": "图 1-7 例 1-9 图",
      "imageType": "figure",
      "pdfPage": 19,
@@ -54477,7 +54499,9 @@
       491.4404296875
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 105.0
+     "numberIndent": 105.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p019_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -54895,7 +54919,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p019_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p019_figure_01.svg",
      "alt": "图 1-7 例 1-9 图",
      "imageType": "figure",
      "pdfPage": 19,
@@ -54907,7 +54931,9 @@
       491.4404296875
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 105.0
+     "numberIndent": 105.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p019_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -59414,7 +59440,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p020_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p020_figure_01.svg",
      "alt": "图 1-8 计算题5图",
      "imageType": "figure",
      "pdfPage": 20,
@@ -59426,7 +59452,9 @@
       1160.56640625
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100.0
+     "numberIndent": 100.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p020_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -60450,7 +60478,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p021_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p021_figure_01.svg",
      "alt": "图 1-9 计算题 10 图",
      "imageType": "figure",
      "pdfPage": 21,
@@ -60462,7 +60490,9 @@
       667.744873046875
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 94.0
+     "numberIndent": 94.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p021_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -60589,7 +60619,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p022_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p022_figure_01.svg",
      "alt": "图 1-10 计算题 10 解",
      "imageType": "figure",
      "pdfPage": 22,
@@ -60601,7 +60631,9 @@
       817.6593627929688
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 103.0
+     "numberIndent": 103.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p022_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -60620,7 +60652,7 @@
    ],
    "analysisImages": [
     {
-     "src": "assets/workbook-engopt2/images/p022_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p022_figure_01.svg",
      "alt": "图 1-10 计算题 10 解",
      "type": "figure",
      "pdfPhysicalPage": 22,
@@ -60630,7 +60662,9 @@
       432.6903076171875,
       684.7599487304688,
       817.6593627929688
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p022_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "answerAvailability": "provided",
@@ -60850,7 +60884,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p028_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p028_table_01.svg",
      "alt": "表2-4 例2-1图解",
      "imageType": "table",
      "pdfPage": 28,
@@ -60862,7 +60896,9 @@
       1175
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p028_table_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -60978,7 +61014,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p028_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p028_table_01.svg",
      "alt": "表2-4 例2-1图解",
      "imageType": "table",
      "pdfPage": 28,
@@ -60990,7 +61026,9 @@
       1175
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p028_table_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -61283,7 +61321,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p029_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p029_figure_01.svg",
      "alt": "图 2-5 例 2-2 图",
      "imageType": "figure",
      "pdfPage": 29,
@@ -61295,7 +61333,9 @@
       475.821533203125
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p029_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -61317,7 +61357,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p029_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p029_figure_01.svg",
      "alt": "图 2-5 例 2-2 图",
      "imageType": "figure",
      "pdfPage": 29,
@@ -61329,7 +61369,9 @@
       475.821533203125
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p029_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -63023,7 +63065,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p030_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p030_figure_01.svg",
      "alt": "图 2-6 例 2-4 图",
      "imageType": "figure",
      "pdfPage": 30,
@@ -63035,7 +63077,9 @@
       398.12005615234375
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p030_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -63119,7 +63163,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p030_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p030_figure_01.svg",
      "alt": "图 2-6 例 2-4 图",
      "imageType": "figure",
      "pdfPage": 30,
@@ -63131,7 +63175,9 @@
       398.12005615234375
      ],
      "onePassReview": "reviewed_once",
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p030_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -63838,7 +63884,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p031_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p031_figure_01.svg",
      "alt": "图 2-7 例 2-5 图",
      "imageType": "figure",
      "pdfPage": 31,
@@ -63849,7 +63895,9 @@
       841.1243286132812,
       364.3734130859375
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p031_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -64223,7 +64271,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p031_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p031_figure_01.svg",
      "alt": "图 2-7 例 2-5 图",
      "imageType": "figure",
      "pdfPage": 31,
@@ -64235,7 +64283,9 @@
       364.3734130859375
      ],
      "numberIndent": 100,
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p031_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -64623,7 +64673,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p031_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p031_figure_01.svg",
      "alt": "图 2-7 例 2-5 图",
      "imageType": "figure",
      "pdfPage": 31,
@@ -64635,7 +64685,9 @@
       364.3734130859375
      ],
      "numberIndent": 100,
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p031_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -66923,7 +66975,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p032_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p032_figure_01.svg",
      "alt": "图 2-8 例 2-8 图",
      "imageType": "figure",
      "pdfPage": 32,
@@ -66934,7 +66986,9 @@
       644.0038452148438,
       831.6024780273438
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p032_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -67477,7 +67531,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p032_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p032_figure_01.svg",
      "alt": "图 2-8 例 2-8 图",
      "imageType": "figure",
      "pdfPage": 32,
@@ -67488,7 +67542,9 @@
       644.0038452148438,
       831.6024780273438
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p032_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -68054,7 +68110,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p033_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p033_figure_01.svg",
      "alt": "图 2-9 例 2-9 图",
      "imageType": "figure",
      "pdfPage": 33,
@@ -68065,7 +68121,9 @@
       757.5975952148438,
       446.2944030761719
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p033_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -69123,7 +69181,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p033_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p033_figure_01.svg",
      "alt": "图 2-9 例 2-9 图",
      "imageType": "figure",
      "pdfPage": 33,
@@ -69134,7 +69192,9 @@
       757.5975952148438,
       446.2944030761719
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p033_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -72324,7 +72384,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p035_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p035_figure_01.svg",
      "alt": "图 2-10 例 2-10 图",
      "imageType": "figure",
      "pdfPage": 35,
@@ -72335,7 +72395,9 @@
       832.2210693359375,
       382.78411865234375
      ],
-     "numberIndent": 97.0
+     "numberIndent": 97.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p035_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -72980,7 +73042,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p035_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p035_figure_01.svg",
      "alt": "图 2-10 例 2-10 图",
      "imageType": "figure",
      "pdfPage": 35,
@@ -72991,7 +73053,9 @@
       832.2210693359375,
       382.78411865234375
      ],
-     "numberIndent": 97.0
+     "numberIndent": 97.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p035_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -75112,7 +75176,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p036_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p036_figure_02.svg",
      "alt": "图 2-11 多选题 3 图",
      "imageType": "figure",
      "pdfPage": 36,
@@ -75123,7 +75187,9 @@
       779.5267333984375,
       409.42095947265625
      ],
-     "numberIndent": 99.0
+     "numberIndent": 99.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p036_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -75133,7 +75199,7 @@
      "blocks": [
       {
        "k": "image",
-       "src": "assets/workbook-engopt2/images/ch02_choice_3_1.png",
+       "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_1.svg",
        "alt": "选项①",
        "imageType": "figure",
        "pdfPage": 36,
@@ -75143,7 +75209,9 @@
         78,
         439,
         251
-       ]
+       ],
+       "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_3_1.png",
+       "redrawBatch": "20261020"
       }
      ],
      "originalKey": "①"
@@ -75154,7 +75222,7 @@
      "blocks": [
       {
        "k": "image",
-       "src": "assets/workbook-engopt2/images/ch02_choice_3_2.png",
+       "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_2.svg",
        "alt": "选项②",
        "imageType": "figure",
        "pdfPage": 36,
@@ -75164,7 +75232,9 @@
         78,
         790,
         251
-       ]
+       ],
+       "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_3_2.png",
+       "redrawBatch": "20261020"
       }
      ],
      "originalKey": "②"
@@ -75175,7 +75245,7 @@
      "blocks": [
       {
        "k": "image",
-       "src": "assets/workbook-engopt2/images/ch02_choice_3_3.png",
+       "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_3.svg",
        "alt": "选项③",
        "imageType": "figure",
        "pdfPage": 36,
@@ -75185,7 +75255,9 @@
         250,
         439,
         413
-       ]
+       ],
+       "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_3_3.png",
+       "redrawBatch": "20261020"
       }
      ],
      "originalKey": "③"
@@ -75196,7 +75268,7 @@
      "blocks": [
       {
        "k": "image",
-       "src": "assets/workbook-engopt2/images/ch02_choice_3_4.png",
+       "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_4.svg",
        "alt": "选项④",
        "imageType": "figure",
        "pdfPage": 36,
@@ -75206,7 +75278,9 @@
         250,
         790,
         413
-       ]
+       ],
+       "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_3_4.png",
+       "redrawBatch": "20261020"
       }
      ],
      "originalKey": "④"
@@ -75214,24 +75288,32 @@
    ],
    "stemImages": [
     {
-     "src": "assets/workbook-engopt2/images/ch02_choice_3_1.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_1.svg",
      "alt": "选项①",
-     "optionKey": "①"
+     "optionKey": "①",
+     "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_3_1.png",
+     "redrawBatch": "20261020"
     },
     {
-     "src": "assets/workbook-engopt2/images/ch02_choice_3_2.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_2.svg",
      "alt": "选项②",
-     "optionKey": "②"
+     "optionKey": "②",
+     "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_3_2.png",
+     "redrawBatch": "20261020"
     },
     {
-     "src": "assets/workbook-engopt2/images/ch02_choice_3_3.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_3.svg",
      "alt": "选项③",
-     "optionKey": "③"
+     "optionKey": "③",
+     "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_3_3.png",
+     "redrawBatch": "20261020"
     },
     {
-     "src": "assets/workbook-engopt2/images/ch02_choice_3_4.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_3_4.svg",
      "alt": "选项④",
-     "optionKey": "④"
+     "optionKey": "④",
+     "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_3_4.png",
+     "redrawBatch": "20261020"
     }
    ],
    "answer": [
@@ -75557,7 +75639,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p036_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p036_figure_01.svg",
      "alt": "图 2-12 多选题 4 图",
      "imageType": "figure",
      "pdfPage": 36,
@@ -75568,7 +75650,9 @@
       768.0768432617188,
       887.0612182617188
      ],
-     "numberIndent": 99.0
+     "numberIndent": 99.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p036_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -75578,7 +75662,7 @@
      "blocks": [
       {
        "k": "image",
-       "src": "assets/workbook-engopt2/images/ch02_choice_4_1.png",
+       "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_1.svg",
        "alt": "选项①",
        "imageType": "figure",
        "pdfPage": 36,
@@ -75588,7 +75672,9 @@
         517,
         442,
         711
-       ]
+       ],
+       "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_4_1.png",
+       "redrawBatch": "20261020"
       }
      ],
      "originalKey": "①"
@@ -75599,7 +75685,7 @@
      "blocks": [
       {
        "k": "image",
-       "src": "assets/workbook-engopt2/images/ch02_choice_4_2.png",
+       "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_2.svg",
        "alt": "选项②",
        "imageType": "figure",
        "pdfPage": 36,
@@ -75609,7 +75695,9 @@
         517,
         790,
         711
-       ]
+       ],
+       "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_4_2.png",
+       "redrawBatch": "20261020"
       }
      ],
      "originalKey": "②"
@@ -75620,7 +75708,7 @@
      "blocks": [
       {
        "k": "image",
-       "src": "assets/workbook-engopt2/images/ch02_choice_4_3.png",
+       "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_3.svg",
        "alt": "选项③",
        "imageType": "figure",
        "pdfPage": 36,
@@ -75630,7 +75718,9 @@
         717,
         442,
         890
-       ]
+       ],
+       "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_4_3.png",
+       "redrawBatch": "20261020"
       }
      ],
      "originalKey": "③"
@@ -75641,7 +75731,7 @@
      "blocks": [
       {
        "k": "image",
-       "src": "assets/workbook-engopt2/images/ch02_choice_4_4.png",
+       "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_4.svg",
        "alt": "选项④",
        "imageType": "figure",
        "pdfPage": 36,
@@ -75651,7 +75741,9 @@
         717,
         790,
         890
-       ]
+       ],
+       "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_4_4.png",
+       "redrawBatch": "20261020"
       }
      ],
      "originalKey": "④"
@@ -75659,24 +75751,32 @@
    ],
    "stemImages": [
     {
-     "src": "assets/workbook-engopt2/images/ch02_choice_4_1.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_1.svg",
      "alt": "选项①",
-     "optionKey": "①"
+     "optionKey": "①",
+     "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_4_1.png",
+     "redrawBatch": "20261020"
     },
     {
-     "src": "assets/workbook-engopt2/images/ch02_choice_4_2.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_2.svg",
      "alt": "选项②",
-     "optionKey": "②"
+     "optionKey": "②",
+     "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_4_2.png",
+     "redrawBatch": "20261020"
     },
     {
-     "src": "assets/workbook-engopt2/images/ch02_choice_4_3.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_3.svg",
      "alt": "选项③",
-     "optionKey": "③"
+     "optionKey": "③",
+     "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_4_3.png",
+     "redrawBatch": "20261020"
     },
     {
-     "src": "assets/workbook-engopt2/images/ch02_choice_4_4.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/ch02_choice_4_4.svg",
      "alt": "选项④",
-     "optionKey": "④"
+     "optionKey": "④",
+     "originalScanSrc": "assets/workbook-engopt2/images/ch02_choice_4_4.png",
+     "redrawBatch": "20261020"
     }
    ],
    "answer": [
@@ -85578,7 +85678,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p047_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p047_figure_01.svg",
      "alt": "图 3-17 例 3-1 图",
      "imageType": "figure",
      "pdfPage": 47,
@@ -85588,7 +85688,9 @@
       657.9276809692383,
       845.09765625,
       855.6808166503906
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p047_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -85913,7 +86015,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p047_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p047_figure_01.svg",
      "alt": "图 3-17 例 3-1 图",
      "imageType": "figure",
      "pdfPage": 47,
@@ -85923,7 +86025,9 @@
       657.9276809692383,
       845.09765625,
       855.6808166503906
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p047_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -86842,7 +86946,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p047_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p047_figure_02.svg",
      "alt": "图 3-18 例 3-2 图",
      "imageType": "figure",
      "pdfPage": 47,
@@ -86852,7 +86956,9 @@
       919.2850646972656,
       846.0970458984375,
       1140.697021484375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p047_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -87617,7 +87723,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p048_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p048_figure_01.svg",
      "alt": "图3-19·例3-3图",
      "imageType": "figure",
      "pdfPage": 48,
@@ -87627,7 +87733,9 @@
       298.5267791748047,
       613.2892456054688,
       507.01116943359375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p048_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -87803,7 +87911,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p048_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p048_figure_01.svg",
      "alt": "图3-19·例3-3图",
      "imageType": "figure",
      "pdfPage": 48,
@@ -87813,7 +87921,9 @@
       298.5267791748047,
       613.2892456054688,
       507.01116943359375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p048_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -88485,7 +88595,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p048_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p048_figure_02.svg",
      "alt": "图 3-20 例 3-4 图",
      "imageType": "figure",
      "pdfPage": 48,
@@ -88495,7 +88605,9 @@
       749.19677734375,
       584.704833984375,
       1014.439208984375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p048_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -89441,7 +89553,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p049_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p049_figure_01.svg",
      "alt": "图 3-21 例 3-5 图",
      "imageType": "figure",
      "pdfPage": 49,
@@ -89451,7 +89563,9 @@
       438.7463073730469,
       627.145751953125,
       685.2244873046875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p049_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -89637,7 +89751,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p049_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p049_figure_01.svg",
      "alt": "图 3-21 例 3-5 图",
      "imageType": "figure",
      "pdfPage": 49,
@@ -89647,7 +89761,9 @@
       438.7463073730469,
       627.145751953125,
       685.2244873046875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p049_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -90958,7 +91074,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p050_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p050_figure_01.svg",
      "alt": "图 3-22 例3-7 图",
      "imageType": "figure",
      "pdfPage": 50,
@@ -90968,7 +91084,9 @@
       97.82391738891602,
       827.1563720703125,
       287.85740661621094
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p050_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -91514,7 +91632,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p050_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p050_figure_01.svg",
      "alt": "图 3-22 例3-7 图",
      "imageType": "figure",
      "pdfPage": 50,
@@ -91524,7 +91642,9 @@
       97.82391738891602,
       827.1563720703125,
       287.85740661621094
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p050_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -92907,7 +93027,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p050_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p050_figure_02.svg",
      "alt": "图 3-23 例 3-8 图",
      "imageType": "figure",
      "pdfPage": 50,
@@ -92917,7 +93037,9 @@
       614.6154174804688,
       737.5933227539062,
       867.614013671875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p050_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -93676,7 +93798,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p051_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p051_figure_02.svg",
      "alt": "图 3-24 多重选择题 2 图",
      "imageType": "figure",
      "pdfPage": 51,
@@ -93686,7 +93808,9 @@
       197.52313232421875,
       752.1342163085938,
       355.6239013671875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p051_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -94396,7 +94520,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p051_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p051_figure_01.svg",
      "alt": "图 3-25 多重选择题 4 图",
      "imageType": "figure",
      "pdfPage": 51,
@@ -94406,7 +94530,9 @@
       512.3713684082031,
       798.6956176757812,
       635.308349609375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p051_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -96159,7 +96285,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p052_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p052_figure_01.svg",
      "alt": "图 3-26 问答或画图题1 图",
      "imageType": "figure",
      "pdfPage": 52,
@@ -96169,7 +96295,9 @@
       85.91932392120361,
       590.6480712890625,
       401.13385009765625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p052_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -96279,7 +96407,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p054_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p054_figure_01.svg",
      "alt": "图 3-33",
      "imageType": "figure",
      "pdfPage": 54,
@@ -96289,7 +96417,9 @@
       510.25494384765625,
       831.6862182617188,
       698.1282958984375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p054_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -96500,7 +96630,7 @@
    ],
    "analysisImages": [
     {
-     "src": "assets/workbook-engopt2/images/p054_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p054_figure_01.svg",
      "alt": "图 3-33",
      "type": "figure",
      "pdfPhysicalPage": 54,
@@ -96510,7 +96640,9 @@
       510.25494384765625,
       831.6862182617188,
       698.1282958984375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p054_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "answerAvailability": "provided",
@@ -96854,7 +96986,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p052_figure_03.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p052_figure_03.svg",
      "alt": "图3-27 问答或画图题2 图",
      "imageType": "figure",
      "pdfPage": 52,
@@ -96864,7 +96996,9 @@
       450.36083984375,
       766.33251953125,
       772.4434814453125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p052_figure_03.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -97052,7 +97186,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p052_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p052_figure_02.svg",
      "alt": "图 3-28 问答或画图题3 图",
      "imageType": "figure",
      "pdfPage": 52,
@@ -97062,7 +97196,9 @@
       820.0205688476562,
       609.7098388671875,
       1049.8165283203125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p052_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -97478,7 +97614,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p053_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p053_figure_02.svg",
      "alt": "图 3-29 计算题1 图",
      "imageType": "figure",
      "pdfPage": 53,
@@ -97488,7 +97624,9 @@
       114.28049850463867,
       562.2794189453125,
       290.3064270019531
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p053_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -97715,7 +97853,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p053_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p053_figure_01.svg",
      "alt": "图 3-30 计算题2 图",
      "imageType": "figure",
      "pdfPage": 53,
@@ -97725,7 +97863,9 @@
       356.03704833984375,
       837.873046875,
       520.1796264648438
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p053_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -98139,7 +98279,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p053_figure_04.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p053_figure_04.svg",
      "alt": "图 3-31 计算题 4 图",
      "imageType": "figure",
      "pdfPage": 53,
@@ -98149,7 +98289,9 @@
       612.34228515625,
       558.2428588867188,
       754.4764404296875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p053_figure_04.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -98464,7 +98606,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p053_figure_03.png",
+     "src": "assets/redrawn-20261020/workbook-geom13/p053_figure_03.svg",
      "alt": "图 3-32 计算题5 图",
      "imageType": "figure",
      "pdfPage": 53,
@@ -98474,7 +98616,9 @@
       875.9979248046875,
       593.2267456054688,
       987.2630615234375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p053_figure_03.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -99284,7 +99428,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p060_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p060_figure_02.svg",
      "alt": "图 4-11 例 4-1 图",
      "imageType": "figure",
      "pdfPage": 60,
@@ -99295,7 +99439,9 @@
       737.6826171875,
       255.86399841308594
      ],
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p060_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -99385,7 +99531,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p060_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p060_figure_02.svg",
      "alt": "图 4-11 例 4-1 图",
      "imageType": "figure",
      "pdfPage": 60,
@@ -99395,7 +99541,9 @@
       95.41533470153809,
       737.6826171875,
       255.86399841308594
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p060_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -99511,7 +99659,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p060_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p060_figure_02.svg",
      "alt": "图 4-11 例 4-1 图",
      "imageType": "figure",
      "pdfPage": 60,
@@ -99521,7 +99669,9 @@
       95.41533470153809,
       737.6826171875,
       255.86399841308594
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p060_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -100010,7 +100160,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p060_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p060_figure_01.svg",
      "alt": "图 4-12 例 4-2 图",
      "imageType": "figure",
      "pdfPage": 60,
@@ -100020,7 +100170,9 @@
       403.16033935546875,
       812.240478515625,
       692.5472412109375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p060_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -101835,7 +101987,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p061_figure_03.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p061_figure_03.svg",
      "alt": "图 4-13 例 4-3 图",
      "imageType": "figure",
      "pdfPage": 61,
@@ -101845,7 +101997,9 @@
       496.3945007324219,
       840.2305297851562,
       687.5703125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p061_figure_03.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -101978,7 +102132,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p061_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p061_figure_02.svg",
      "alt": "figure",
      "imageType": "figure",
      "pdfPage": 61,
@@ -101988,7 +102142,9 @@
       114.10123825073242,
       837.2341918945312,
       283.09727478027344
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p061_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -102159,7 +102315,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p061_figure_04.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p061_figure_04.svg",
      "alt": "b)",
      "imageType": "figure",
      "pdfPage": 61,
@@ -102169,7 +102325,9 @@
       316.5794219970703,
       837.2470703125,
       460.5764465332031
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p061_figure_04.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -102299,7 +102457,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p061_figure_03.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p061_figure_03.svg",
      "alt": "图 4-13 例 4-3 图",
      "imageType": "figure",
      "pdfPage": 61,
@@ -102310,7 +102468,9 @@
       840.2305297851562,
       687.5703125
      ],
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p061_figure_03.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -102483,7 +102643,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p061_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p061_figure_02.svg",
      "alt": "figure",
      "imageType": "figure",
      "pdfPage": 61,
@@ -102493,7 +102653,9 @@
       114.10123825073242,
       837.2341918945312,
       283.09727478027344
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p061_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -102664,7 +102826,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p061_figure_04.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p061_figure_04.svg",
      "alt": "b)",
      "imageType": "figure",
      "pdfPage": 61,
@@ -102674,7 +102836,9 @@
       316.5794219970703,
       837.2470703125,
       460.5764465332031
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p061_figure_04.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -102804,7 +102968,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p061_figure_03.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p061_figure_03.svg",
      "alt": "图 4-13 例 4-3 图",
      "imageType": "figure",
      "pdfPage": 61,
@@ -102815,7 +102979,9 @@
       840.2305297851562,
       687.5703125
      ],
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p061_figure_03.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -104047,7 +104213,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p061_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p061_figure_01.svg",
      "alt": "图 4-14 例 4-4 图",
      "imageType": "figure",
      "pdfPage": 61,
@@ -104057,7 +104223,9 @@
       735.8025512695312,
       844.6529541015625,
       908.4300537109375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p061_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -105144,7 +105312,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p062_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p062_figure_01.svg",
      "alt": "图 4-15 例 4-5 图",
      "imageType": "figure",
      "pdfPage": 62,
@@ -105154,7 +105322,9 @@
       97.72502517700195,
       822.4716796875,
       296.7666015625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p062_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -105696,7 +105866,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p062_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p062_figure_01.svg",
      "alt": "图 4-15 例 4-5 图",
      "imageType": "figure",
      "pdfPage": 62,
@@ -105707,7 +105877,9 @@
       822.4716796875,
       296.7666015625
      ],
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p062_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -106187,7 +106359,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p062_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p062_figure_01.svg",
      "alt": "图 4-15 例 4-5 图",
      "imageType": "figure",
      "pdfPage": 62,
@@ -106198,7 +106370,9 @@
       822.4716796875,
       296.7666015625
      ],
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p062_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -107449,7 +107623,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p063_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p063_figure_01.svg",
      "alt": "图 4-16 例 4-6 图",
      "imageType": "figure",
      "pdfPage": 63,
@@ -107459,7 +107633,9 @@
       117.04310607910156,
       827.7452392578125,
       301.0445556640625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p063_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -107699,7 +107875,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p063_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p063_figure_01.svg",
      "alt": "图 4-16 例 4-6 图",
      "imageType": "figure",
      "pdfPage": 63,
@@ -107709,7 +107885,9 @@
       117.04310607910156,
       827.7452392578125,
       301.0445556640625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p063_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -108359,7 +108537,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p063_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p063_figure_02.svg",
      "alt": "图 4-17 例 4-7 图",
      "imageType": "figure",
      "pdfPage": 63,
@@ -108369,7 +108547,9 @@
       572.5320129394531,
       651.63427734375,
       730.268798828125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p063_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -108635,7 +108815,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p063_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p063_figure_02.svg",
      "alt": "图 4-17 例 4-7 图",
      "imageType": "figure",
      "pdfPage": 63,
@@ -108645,7 +108825,9 @@
       572.5320129394531,
       651.63427734375,
       730.268798828125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p063_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -113935,7 +114117,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p065_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p065_figure_01.svg",
      "alt": "图 4-18 画图题 1 图",
      "imageType": "figure",
      "pdfPage": 65,
@@ -113945,7 +114127,9 @@
       484.30206298828125,
       839.92578125,
       642.9263916015625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p065_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -119108,7 +119292,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p072_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p072_figure_01.svg",
      "alt": "图 5-1 例 5-3 图",
      "imageType": "figure",
      "pdfPage": 72,
@@ -119118,7 +119302,9 @@
       923.1253662109375,
       831.6083374023438,
       1149.7269287109375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p072_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -120140,7 +120326,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p073_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p073_figure_01.svg",
      "alt": "图 5-2 例 5-4 图",
      "imageType": "figure",
      "pdfPage": 73,
@@ -120150,7 +120336,9 @@
       482.12091064453125,
       681.671630859375,
       655.953125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p073_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -122098,7 +122286,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p074_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p074_figure_01.svg",
      "alt": "图 5-3 例 5-5 图",
      "imageType": "figure",
      "pdfPage": 74,
@@ -122108,11 +122296,13 @@
       368.0908203125,
       651.6018676757812,
       715.9482421875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p074_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p074_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p074_figure_02.svg",
      "alt": "图 5-3 例 5-5 图",
      "imageType": "figure",
      "pdfPage": 74,
@@ -122122,7 +122312,9 @@
       368.07476806640625,
       650.5001831054688,
       716.077880859375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p074_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -128163,7 +128355,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p076_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p076_figure_01.svg",
      "alt": "图 5-4 题 3 图",
      "imageType": "figure",
      "pdfPage": 76,
@@ -128173,7 +128365,9 @@
       948.1166381835938,
       607.6495971679688,
       1134.2882080078125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p076_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -128432,7 +128626,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p077_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p077_figure_01.svg",
      "alt": "图 5-5 题4 图",
      "imageType": "figure",
      "pdfPage": 77,
@@ -128442,7 +128636,9 @@
       227.69874572753906,
       607.2223510742188,
       389.6310119628906
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p077_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -129308,7 +129504,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p084_table_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p084_table_02.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 84,
@@ -129318,7 +129514,9 @@
       88.01963138580322,
       823.10791015625,
       366.0572814941406
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p084_table_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -129407,7 +129605,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p084_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p084_table_01.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 84,
@@ -129417,7 +129615,9 @@
       503.3636474609375,
       823.1318359375,
       795.4236450195312
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p084_table_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -129632,7 +129832,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p084_table_03.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p084_table_03.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 84,
@@ -129642,11 +129842,13 @@
       1047.3421020507812,
       823.4832153320312,
       1186.7965087890625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p084_table_03.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p085_table_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p085_table_02.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 85,
@@ -129656,7 +129858,9 @@
       131.48825454711914,
       835.4886474609375,
       293.5118103027344
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p085_table_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -129757,7 +129961,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p085_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p085_table_01.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 85,
@@ -129767,7 +129971,9 @@
       437.9898376464844,
       835.1931762695312,
       714.7579956054688
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p085_table_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -129922,7 +130128,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p085_table_03.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p085_table_03.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 85,
@@ -129932,11 +130138,13 @@
       889.4803466796875,
       835.8226928710938,
       1205.8699951171875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p085_table_03.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p086_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p086_table_01.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 86,
@@ -129946,7 +130154,9 @@
       101.81225776672363,
       825.8778076171875,
       408.650390625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p086_table_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -130147,7 +130357,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p084_table_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p084_table_02.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 84,
@@ -130157,7 +130367,9 @@
       88.01963138580322,
       823.10791015625,
       366.0572814941406
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p084_table_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -130246,7 +130458,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p084_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p084_table_01.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 84,
@@ -130256,7 +130468,9 @@
       503.3636474609375,
       823.1318359375,
       795.4236450195312
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p084_table_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -130471,7 +130685,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p084_table_03.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p084_table_03.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 84,
@@ -130481,11 +130695,13 @@
       1047.3421020507812,
       823.4832153320312,
       1186.7965087890625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p084_table_03.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p085_table_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p085_table_02.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 85,
@@ -130495,7 +130711,9 @@
       131.48825454711914,
       835.4886474609375,
       293.5118103027344
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p085_table_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -130596,7 +130814,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p085_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p085_table_01.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 85,
@@ -130606,7 +130824,9 @@
       437.9898376464844,
       835.1931762695312,
       714.7579956054688
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p085_table_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -130761,7 +130981,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p085_table_03.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p085_table_03.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 85,
@@ -130771,11 +130991,13 @@
       889.4803466796875,
       835.8226928710938,
       1205.8699951171875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p085_table_03.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p086_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p086_table_01.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 86,
@@ -130785,7 +131007,9 @@
       101.81225776672363,
       825.8778076171875,
       408.650390625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p086_table_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -140032,7 +140256,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p089_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p089_figure_01.svg",
      "alt": "图 6-1 问答题图",
      "imageType": "figure",
      "pdfPage": 89,
@@ -140042,7 +140266,9 @@
       547.9606628417969,
       766.884521484375,
       858.7910766601562
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p089_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -140091,7 +140317,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p090_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p090_figure_01.svg",
      "alt": "图 6-2 问答题解",
      "imageType": "figure",
      "pdfPage": 90,
@@ -140101,7 +140327,9 @@
       807.9594116210938,
       760.050048828125,
       1119.5556640625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p090_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -140244,7 +140472,7 @@
    ],
    "analysisImages": [
     {
-     "src": "assets/workbook-engopt2/images/p090_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p090_figure_01.svg",
      "alt": "图 6-2 问答题解",
      "type": "figure",
      "pdfPhysicalPage": 90,
@@ -140254,7 +140482,9 @@
       807.9594116210938,
       760.050048828125,
       1119.5556640625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p090_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "answerAvailability": "provided",
@@ -143378,7 +143608,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p101_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p101_figure_02.svg",
      "alt": "图 7-7 例 7-2 图",
      "imageType": "figure",
      "pdfPage": 101,
@@ -143388,7 +143618,9 @@
       422.9677734375,
       741.2969970703125,
       782.81591796875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p101_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -143946,7 +144178,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p101_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p101_figure_02.svg",
      "alt": "图 7-7 例 7-2 图",
      "imageType": "figure",
      "pdfPage": 101,
@@ -143956,7 +144188,9 @@
       422.9677734375,
       741.2969970703125,
       782.81591796875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p101_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -144922,7 +145156,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p101_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p101_figure_01.svg",
      "alt": "图 7-8 例 7-3 图",
      "imageType": "figure",
      "pdfPage": 101,
@@ -144932,7 +145166,9 @@
       1013.8533935546875,
       839.5673217773438,
       1177.8887939453125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p101_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -145444,7 +145680,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p101_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p101_figure_01.svg",
      "alt": "图 7-8 例 7-3 图",
      "imageType": "figure",
      "pdfPage": 101,
@@ -145454,7 +145690,9 @@
       1013.8533935546875,
       839.5673217773438,
       1177.8887939453125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p101_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -149058,7 +149296,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p103_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p103_figure_01.svg",
      "alt": "图 7-9 例 7-5 图",
      "imageType": "figure",
      "pdfPage": 103,
@@ -149068,7 +149306,9 @@
       856.968994140625,
       809.3487548828125,
       1181.19775390625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p103_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -149574,7 +149814,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p103_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p103_figure_01.svg",
      "alt": "图 7-9 例 7-5 图",
      "imageType": "figure",
      "pdfPage": 103,
@@ -149584,7 +149824,9 @@
       856.968994140625,
       809.3487548828125,
       1181.19775390625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p103_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -150925,7 +151167,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p104_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p104_figure_01.svg",
      "alt": "图 7-10 例 7-6 图",
      "imageType": "figure",
      "pdfPage": 104,
@@ -150935,7 +151177,9 @@
       559.419677734375,
       644.3876342773438,
       796.0537109375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p104_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -151362,7 +151606,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p104_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p104_figure_01.svg",
      "alt": "图 7-10 例 7-6 图",
      "imageType": "figure",
      "pdfPage": 104,
@@ -151372,7 +151616,9 @@
       559.419677734375,
       644.3876342773438,
       796.0537109375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p104_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -152869,7 +153115,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p105_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p105_figure_01.svg",
      "alt": "图 7-11 例 7-7 图",
      "imageType": "figure",
      "pdfPage": 105,
@@ -152879,7 +153125,9 @@
       372.4750061035156,
       634.7542724609375,
       576.6944580078125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p105_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -153135,7 +153383,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p105_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p105_figure_01.svg",
      "alt": "图 7-11 例 7-7 图",
      "imageType": "figure",
      "pdfPage": 105,
@@ -153145,7 +153393,9 @@
       372.4750061035156,
       634.7542724609375,
       576.6944580078125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p105_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -154326,7 +154576,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p106_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p106_figure_01.svg",
      "alt": "figure",
      "imageType": "figure",
      "pdfPage": 106,
@@ -154336,7 +154586,9 @@
       264.9394226074219,
       662.4368896484375,
       456.31903076171875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p106_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -154354,7 +154606,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p106_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p106_figure_02.svg",
      "alt": "figure",
      "imageType": "figure",
      "pdfPage": 106,
@@ -154364,7 +154616,9 @@
       480.1925048828125,
       708.4946899414062,
       667.763916015625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p106_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -154382,7 +154636,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p106_figure_03_fullreview.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p106_figure_03_fullreview.svg",
      "alt": "图7-12c：例7-8望远镜光路、孔径光阑与出瞳",
      "pdfPage": 106,
      "printedPage": 99,
@@ -154392,7 +154646,9 @@
       730,
       920
      ],
-     "source": "manual_crop_from_original_scan"
+     "source": "manual_crop_from_original_scan",
+     "originalScanSrc": "assets/workbook-engopt2/images/p106_figure_03_fullreview.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -155015,7 +155271,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p106_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p106_figure_01.svg",
      "alt": "figure",
      "imageType": "figure",
      "pdfPage": 106,
@@ -155025,7 +155281,9 @@
       264.9394226074219,
       662.4368896484375,
       456.31903076171875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p106_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -155043,7 +155301,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p106_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p106_figure_02.svg",
      "alt": "figure",
      "imageType": "figure",
      "pdfPage": 106,
@@ -155053,7 +155311,9 @@
       480.1925048828125,
       708.4946899414062,
       667.763916015625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p106_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -155071,7 +155331,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p106_figure_03_fullreview.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p106_figure_03_fullreview.svg",
      "alt": "图7-12c：例7-8望远镜光路、孔径光阑与出瞳",
      "pdfPage": 106,
      "printedPage": 99,
@@ -155081,7 +155341,9 @@
       730,
       920
      ],
-     "source": "manual_crop_from_original_scan"
+     "source": "manual_crop_from_original_scan",
+     "originalScanSrc": "assets/workbook-engopt2/images/p106_figure_03_fullreview.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -157678,7 +157940,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p108_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p108_figure_01.svg",
      "alt": "图7-13 例7-9 图",
      "imageType": "figure",
      "pdfPage": 108,
@@ -157688,7 +157950,9 @@
       405.52734375,
       735.1307983398438,
       1164.3448486328125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p108_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -158214,7 +158478,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p108_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p108_figure_01.svg",
      "alt": "图7-13 例7-9 图",
      "imageType": "figure",
      "pdfPage": 108,
@@ -158224,7 +158488,9 @@
       405.52734375,
       735.1307983398438,
       1164.3448486328125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p108_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -168682,7 +168948,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p111_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-geom47/p111_figure_01.svg",
      "alt": "图 7-14 计算题 1 图",
      "imageType": "figure",
      "pdfPage": 111,
@@ -168692,7 +168958,9 @@
       981.8967895507812,
       839.1594848632812,
       1107.601318359375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p111_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -173109,7 +173377,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p122_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p122_figure_01.svg",
      "alt": "图 8-2 例 8-1 图",
      "imageType": "figure",
      "pdfPage": 122,
@@ -173119,7 +173387,9 @@
       555.3495483398438,
       576.40771484375,
       744.310546875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p122_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -173488,7 +173758,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p122_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p122_figure_01.svg",
      "alt": "图 8-2 例 8-1 图",
      "imageType": "figure",
      "pdfPage": 122,
@@ -173498,7 +173768,9 @@
       555.3495483398438,
       576.40771484375,
       744.310546875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p122_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -180723,7 +180995,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p125_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p125_figure_01.svg",
      "alt": "图 8-3 例 8-7 图",
      "imageType": "figure",
      "pdfPage": 125,
@@ -180733,7 +181005,9 @@
       511.10223388671875,
       830.7554931640625,
       754.6773071289062
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p125_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -181372,7 +181646,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p125_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p125_figure_01.svg",
      "alt": "图 8-3 例 8-7 图",
      "imageType": "figure",
      "pdfPage": 125,
@@ -181382,7 +181656,9 @@
       511.10223388671875,
       830.7554931640625,
       754.6773071289062
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p125_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -186515,7 +186791,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p127_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p127_figure_01.svg",
      "alt": "图 8-4 多选题 4 图",
      "imageType": "figure",
      "pdfPage": 127,
@@ -186525,7 +186801,9 @@
       291.7729797363281,
       840.9259033203125,
       462.5826416015625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p127_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -187168,7 +187446,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p127_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p127_figure_02.svg",
      "alt": "图 8-5 多选题 5 图",
      "imageType": "figure",
      "pdfPage": 127,
@@ -187178,7 +187456,9 @@
       518.7052001953125,
       841.172607421875,
       657.5987548828125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p127_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -195266,7 +195546,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p138_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p138_figure_02.svg",
      "alt": "图 9-8 例 9-1 图",
      "imageType": "figure",
      "pdfPage": 138,
@@ -195276,7 +195556,9 @@
       291.24546813964844,
       751.5834350585938,
       488.54571533203125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p138_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -195435,7 +195717,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p138_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p138_figure_02.svg",
      "alt": "图 9-8 例 9-1 图",
      "imageType": "figure",
      "pdfPage": 138,
@@ -195446,7 +195728,9 @@
       751.5834350585938,
       488.54571533203125
      ],
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p138_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -195617,7 +195901,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p138_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p138_figure_02.svg",
      "alt": "图 9-8 例 9-1 图",
      "imageType": "figure",
      "pdfPage": 138,
@@ -195628,7 +195912,9 @@
       751.5834350585938,
       488.54571533203125
      ],
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p138_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -196163,7 +196449,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p138_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p138_figure_01.svg",
      "alt": "图 9-9 例 9-2 图",
      "imageType": "figure",
      "pdfPage": 138,
@@ -196173,7 +196459,9 @@
       804.6607666015625,
       732.0972290039062,
       1012.0314331054688
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p138_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -201111,7 +201399,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p140_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p140_figure_02.svg",
      "alt": "图 9-10 例 9-4 图",
      "imageType": "figure",
      "pdfPage": 140,
@@ -201121,7 +201409,9 @@
       192.97152709960938,
       805.1214599609375,
       371.7444763183594
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p140_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -203137,7 +203427,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p140_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p140_figure_01.svg",
      "alt": "图9-11 例 9-5 图",
      "imageType": "figure",
      "pdfPage": 140,
@@ -203147,7 +203437,9 @@
       975.2210693359375,
       637.1790771484375,
       1147.9603271484375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p140_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -205036,7 +205328,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p141_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p141_figure_01.svg",
      "alt": "图 9-12 例 9-6 图",
      "imageType": "figure",
      "pdfPage": 141,
@@ -205046,7 +205338,9 @@
       692.7627563476562,
       820.9207763671875,
       834.621826171875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p141_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -209029,7 +209323,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p143_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p143_figure_01.svg",
      "alt": "图 9-13 例 9-9 图",
      "imageType": "figure",
      "pdfPage": 143,
@@ -209039,7 +209333,9 @@
       115.72747802734375,
       842.0145263671875,
       319.1278991699219
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p143_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -209155,7 +209451,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p143_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p143_figure_01.svg",
      "alt": "图 9-13 例 9-9 图",
      "imageType": "figure",
      "pdfPage": 143,
@@ -209165,7 +209461,9 @@
       115.72747802734375,
       842.0145263671875,
       319.1278991699219
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p143_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -211334,7 +211632,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p144_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p144_figure_01.svg",
      "alt": "图 9-14 例 9-11 图",
      "imageType": "figure",
      "pdfPage": 144,
@@ -211344,7 +211642,9 @@
       94.50574970245361,
       782.25,
       369.7911376953125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p144_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -211612,7 +211912,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p144_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p144_figure_01.svg",
      "alt": "图 9-14 例 9-11 图",
      "imageType": "figure",
      "pdfPage": 144,
@@ -211622,7 +211922,9 @@
       94.50574970245361,
       782.25,
       369.7911376953125
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p144_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -213414,7 +213716,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p144_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p144_figure_02.svg",
      "alt": "图 9-15 例 9-13 图",
      "imageType": "figure",
      "pdfPage": 144,
@@ -213424,7 +213726,9 @@
       950.2727661132812,
       690.852783203125,
       1164.5775146484375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p144_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -220725,7 +221029,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p147_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p147_figure_01.svg",
      "alt": "图 9-16 多选题 12 图",
      "imageType": "figure",
      "pdfPage": 147,
@@ -220735,7 +221039,9 @@
       232.80714416503906,
       836.3603515625,
       381.823974609375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p147_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -221431,7 +221737,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p147_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p147_figure_02.svg",
      "alt": "图 9-17 多选题 13 图",
      "imageType": "figure",
      "pdfPage": 147,
@@ -221441,7 +221747,9 @@
       440.3077087402344,
       836.2881469726562,
       555.8380737304688
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p147_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -227907,7 +228215,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p149_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p149_figure_02.svg",
      "alt": "图9-18 填空题 20图",
      "imageType": "figure",
      "pdfPage": 149,
@@ -227917,7 +228225,9 @@
       379.967529296875,
       821.859375,
       555.4272155761719
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p149_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -228685,7 +228995,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p149_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p149_table_01.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 149,
@@ -228695,7 +229005,9 @@
       743.3339233398438,
       840.2622680664062,
       971.2357788085938
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p149_table_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -228721,7 +229033,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p152_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p152_table_01.svg",
      "alt": "table",
      "imageType": "table",
      "pdfPage": 152,
@@ -228731,7 +229043,9 @@
       872.4041137695312,
       819.928466796875,
       1107.01806640625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p152_table_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -228750,7 +229064,7 @@
    ],
    "analysisImages": [
     {
-     "src": "assets/workbook-engopt2/images/p152_table_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p152_table_01.svg",
      "alt": "table",
      "type": "table",
      "pdfPhysicalPage": 152,
@@ -228760,7 +229074,9 @@
       872.4041137695312,
       819.928466796875,
       1107.01806640625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p152_table_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "answerAvailability": "provided",
@@ -228891,7 +229207,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p149_figure_03.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p149_figure_03.svg",
      "alt": "图 9-19 问答题图",
      "imageType": "figure",
      "pdfPage": 149,
@@ -228901,7 +229217,9 @@
       1055.229736328125,
       552.01806640625,
       1181.937255859375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p149_figure_03.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -229065,7 +229383,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p153_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p153_figure_01.svg",
      "alt": "图 9-22 问答题解",
      "imageType": "figure",
      "pdfPage": 153,
@@ -229075,7 +229393,9 @@
       168.3637924194336,
       554.3842163085938,
       304.09913635253906
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p153_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -231273,7 +231593,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p150_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p150_figure_01.svg",
      "alt": "图 9-20 计算题 6 图",
      "imageType": "figure",
      "pdfPage": 150,
@@ -231283,7 +231603,9 @@
       832.2372436523438,
       562.646484375,
       1156.928466796875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p150_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -231700,7 +232022,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p151_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p151_figure_02.svg",
      "alt": "图 9-21 计算题 7 图",
      "imageType": "figure",
      "pdfPage": 151,
@@ -231710,11 +232032,13 @@
       220.73748779296875,
       842.2503662109375,
       388.7839660644531
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p151_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p151_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p151_figure_01.svg",
      "alt": "图 9-21 计算题 7 图",
      "imageType": "figure",
      "pdfPage": 151,
@@ -231724,7 +232048,9 @@
       220.82763671875,
       842.2660522460938,
       388.7083740234375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p151_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -237497,7 +237823,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p162_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p162_figure_01.svg",
      "alt": "图 10-8 例 10-5 图",
      "imageType": "figure",
      "pdfPage": 162,
@@ -237507,7 +237833,9 @@
       900.5851440429688,
       622.812744140625,
       1105.813232421875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p162_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -237853,7 +238181,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p162_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p162_figure_01.svg",
      "alt": "图 10-8 例 10-5 图",
      "imageType": "figure",
      "pdfPage": 162,
@@ -237863,7 +238191,9 @@
       900.5851440429688,
       622.812744140625,
       1105.813232421875
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p162_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -239629,7 +239959,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p163_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p163_figure_01.svg",
      "alt": "图 10-9 例 10-7 图",
      "imageType": "figure",
      "pdfPage": 163,
@@ -239639,7 +239969,9 @@
       429.2215270996094,
       852.6516723632812,
       573.3570861816406
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p163_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -245229,7 +245561,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p165_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p165_figure_01.svg",
      "alt": "图 10-10 例 10-10 图",
      "imageType": "figure",
      "pdfPage": 165,
@@ -245239,7 +245571,9 @@
       743.5211181640625,
       840.103515625,
       1007.701416015625
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p165_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -247981,7 +248315,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p166_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p166_figure_01.svg",
      "alt": "图10-11 单缝夫琅和费衍射装置",
      "imageType": "figure",
      "pdfPage": 166,
@@ -247991,7 +248325,9 @@
       879.4176025390625,
       624.8480834960938,
       1048.6841430664062
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p166_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -258908,7 +259244,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p163_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p163_figure_01.svg",
      "alt": "图10-9 2N缝交替间距衍射屏（计算6）",
      "imageType": "figure",
      "pdfPage": 163,
@@ -258918,7 +259254,9 @@
       429.2215270996094,
       852.6516723632812,
       573.3570861816406
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p163_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -259293,7 +259631,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p170_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p170_figure_01.svg",
      "alt": "图10-12 三缝衍射（计算7）",
      "imageType": "figure",
      "pdfPage": 170,
@@ -259303,7 +259641,9 @@
       98.06360816955566,
       386.3746643066406,
       261.59080505371094
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p170_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -259596,7 +259936,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p170_figure_03.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p170_figure_03.svg",
      "alt": "图10-13 不等宽双缝衍射（计算8）",
      "imageType": "figure",
      "pdfPage": 170,
@@ -259606,7 +259946,9 @@
       91.9077091217041,
       674.4506225585938,
       260.4308776855469
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p170_figure_03.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -259888,7 +260230,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p170_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p170_figure_02.svg",
      "alt": "figure",
      "imageType": "figure",
      "pdfPage": 170,
@@ -259898,7 +260240,9 @@
       371.7634582519531,
       591.4142456054688,
       559.765380859375
-     ]
+     ],
+     "originalScanSrc": "assets/workbook-engopt2/images/p170_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -260584,7 +260928,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p180_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p180_figure_01.svg",
      "alt": "图 11-7 例 11-1 图",
      "imageType": "figure",
      "pdfPage": 180,
@@ -260595,7 +260939,9 @@
       813.8966674804688,
       738.8948211669922
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p180_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -260980,7 +261326,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p180_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p180_figure_01.svg",
      "alt": "图 11-7 例 11-1 图",
      "imageType": "figure",
      "pdfPage": 180,
@@ -260992,7 +261338,9 @@
       738.8948211669922
      ],
      "numberIndent": 100,
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p180_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -261405,7 +261753,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p180_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p180_figure_01.svg",
      "alt": "图 11-7 例 11-1 图",
      "imageType": "figure",
      "pdfPage": 180,
@@ -261417,7 +261765,9 @@
       738.8948211669922
      ],
      "numberIndent": 100,
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p180_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "analysisImages": [],
@@ -263464,7 +263814,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p181_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p181_figure_01.svg",
      "alt": "图 11-8 例 11-3 图",
      "imageType": "figure",
      "pdfPage": 181,
@@ -263475,7 +263825,9 @@
       847.0418090820312,
       956.6519165039062
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p181_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -263860,7 +264212,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p181_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p181_figure_01.svg",
      "alt": "图 11-8 例 11-3 图",
      "imageType": "figure",
      "pdfPage": 181,
@@ -263871,7 +264223,9 @@
       847.0418090820312,
       956.6519165039062
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p181_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "m",
@@ -266113,7 +266467,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p182_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p182_figure_01.svg",
      "alt": "图 11-9",
      "imageType": "figure",
      "pdfPage": 182,
@@ -266124,7 +266478,9 @@
       820.7371826171875,
       637.1190185546875
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p182_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -266218,7 +266574,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p182_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p182_figure_01.svg",
      "alt": "图 11-9",
      "imageType": "figure",
      "pdfPage": 182,
@@ -266229,7 +266585,9 @@
       820.7371826171875,
       637.1190185546875
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p182_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -269050,7 +269408,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p183_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p183_figure_01.svg",
      "alt": "图 11-10 例 11-8 图",
      "imageType": "figure",
      "pdfPage": 183,
@@ -269061,7 +269419,9 @@
       846.9542236328125,
       851.5444946289062
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p183_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -269367,7 +269727,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p183_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p183_figure_01.svg",
      "alt": "图 11-10 例 11-8 图",
      "imageType": "figure",
      "pdfPage": 183,
@@ -269378,7 +269738,9 @@
       846.9542236328125,
       851.5444946289062
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p183_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -270245,7 +270607,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p184_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p184_figure_01.svg",
      "alt": "图 11-11 例 11-9 图",
      "imageType": "figure",
      "pdfPage": 184,
@@ -270257,7 +270619,9 @@
       322.6011962890625
      ],
      "numberIndent": 100,
-     "sharedSourceFigure": true
+     "sharedSourceFigure": true,
+     "originalScanSrc": "assets/workbook-engopt2/images/p184_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -270309,7 +270673,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p184_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p184_figure_01.svg",
      "alt": "图 11-11 例 11-9 图",
      "imageType": "figure",
      "pdfPage": 184,
@@ -270320,7 +270684,9 @@
       753.4923095703125,
       322.6011962890625
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p184_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -270641,7 +271007,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p184_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p184_figure_01.svg",
      "alt": "图 11-11 例 11-9 图",
      "imageType": "figure",
      "pdfPage": 184,
@@ -270652,7 +271018,9 @@
       753.4923095703125,
       322.6011962890625
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p184_figure_01.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -272057,7 +272425,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p184_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p184_figure_02.svg",
      "alt": "图 11-12 例 11-10 图",
      "imageType": "figure",
      "pdfPage": 184,
@@ -272068,7 +272436,9 @@
       818.6715698242188,
       1135.357421875
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p184_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -273583,7 +273953,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p185_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p185_figure_01.svg",
      "alt": "图 11-13 例 11-11 图",
      "imageType": "figure",
      "pdfPage": 185,
@@ -273594,7 +273964,9 @@
       749.728515625,
       748.7088012695312
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p185_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -276082,7 +276454,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p186_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p186_figure_01.svg",
      "alt": "图11-14 例 11-12 图",
      "imageType": "figure",
      "pdfPage": 186,
@@ -276093,7 +276465,9 @@
       667.0143432617188,
       717.75634765625
      ],
-     "numberIndent": 100
+     "numberIndent": 100,
+     "originalScanSrc": "assets/workbook-engopt2/images/p186_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -289923,7 +290297,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p189_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p189_figure_02.svg",
      "alt": "图 11-15 计算题1 图",
      "imageType": "figure",
      "pdfPage": 189,
@@ -289934,7 +290308,9 @@
       427.6163024902344,
       1108.4263916015625
      ],
-     "numberIndent": 110.0
+     "numberIndent": 110.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p189_figure_02.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -290448,7 +290824,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p189_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p189_figure_01.svg",
      "alt": "图 11-16 计算题 3 图",
      "imageType": "figure",
      "pdfPage": 189,
@@ -290459,7 +290835,9 @@
       817.9725952148438,
       1109.7877197265625
      ],
-     "numberIndent": 110.0
+     "numberIndent": 110.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p189_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -290773,7 +291151,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p190_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p190_figure_01.svg",
      "alt": "图 11-17 计算题 4 图",
      "imageType": "figure",
      "pdfPage": 190,
@@ -290784,7 +291162,9 @@
       817.2556762695312,
       252.6159210205078
      ],
-     "numberIndent": 81.0
+     "numberIndent": 81.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p190_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -292546,7 +292926,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p190_figure_02.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p190_figure_02.svg",
      "alt": "图 11-18 计算题.9 图",
      "imageType": "figure",
      "pdfPage": 190,
@@ -292557,7 +292937,9 @@
       816.5390625,
       747.7852783203125
      ],
-     "numberIndent": 81.0
+     "numberIndent": 81.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p190_figure_02.png",
+     "redrawBatch": "20261020"
     },
     {
      "k": "p",
@@ -292973,7 +293355,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p190_figure_03.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p190_figure_03.svg",
      "alt": "图 11-19 计算题 10 图",
      "imageType": "figure",
      "pdfPage": 190,
@@ -292984,7 +293366,9 @@
       750.9573364257812,
       1141.2940673828125
      ],
-     "numberIndent": 81.0
+     "numberIndent": 81.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p190_figure_03.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -293418,7 +293802,7 @@
     },
     {
      "k": "image",
-     "src": "assets/workbook-engopt2/images/p191_figure_01.png",
+     "src": "assets/redrawn-20261020/workbook-wave/p191_figure_01.svg",
      "alt": "图 11-20 计算题 11 图",
      "imageType": "figure",
      "pdfPage": 191,
@@ -293429,7 +293813,9 @@
       674.0128784179688,
       366.1321105957031
      ],
-     "numberIndent": 100.0
+     "numberIndent": 100.0,
+     "originalScanSrc": "assets/workbook-engopt2/images/p191_figure_01.png",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -296189,16 +296575,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2005-iii-5.jpg",
-     "alt": "2005年三-5：空气—石英界面、入射角与晶体光轴方向"
+     "src": "assets/redrawn-20261020/photos-wave/2005-iii-5.svg",
+     "alt": "2005年三-5：空气—石英界面、入射角与晶体光轴方向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2005-iii-5.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2005-iii-5.jpg",
-     "alt": "2005年三-5印刷解答：o/e光波法线及能流方向的惠更斯作图"
+     "src": "assets/redrawn-20261020/photos-wave/answer-2005-iii-5.svg",
+     "alt": "2005年三-5印刷解答：o/e光波法线及能流方向的惠更斯作图",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2005-iii-5.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -296288,8 +296678,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2005-iii-6.jpg",
-     "alt": "2005年三-6：缝宽a和2a，缝内缘间距d"
+     "src": "assets/redrawn-20261020/photos/003-2005-iii-6.svg",
+     "alt": "2005年三-6：缝宽a和2a，缝内缘间距d",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2005-iii-6.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -296485,8 +296877,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2005-iii-8.jpg",
-     "alt": "2005年三-8：起偏器、待测波片、1/4波片、检偏器顺序与快轴"
+     "src": "assets/redrawn-20261020/photos/004-2005-iii-8.svg",
+     "alt": "2005年三-8：起偏器、待测波片、1/4波片、检偏器顺序与快轴",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2005-iii-8.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -299720,8 +300114,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iii-1.jpg",
-     "alt": "2006年三-1：物镜、棱镜组和像面及入射坐标"
+     "src": "assets/redrawn-20261020/photos-geom13/2006-iii-1.svg",
+     "alt": "2006年三-1：物镜、棱镜组和像面及入射坐标",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -299732,8 +300128,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2006-iii-1.jpg",
-     "alt": "2006年三-1印刷坐标答案"
+     "src": "assets/redrawn-20261020/photos/006-answer-2006-iii-1.svg",
+     "alt": "2006年三-1印刷坐标答案",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2006-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -299820,8 +300218,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iii-2.jpg",
-     "alt": "2006年三-2：虚物AB、共轭虚像A′B′与物CD位置"
+     "src": "assets/redrawn-20261020/photos-geom47/2006-iii-2.svg",
+     "alt": "2006年三-2：虚物AB、共轭虚像A′B′与物CD位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -299832,8 +300232,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2006-iii-2.jpg",
-     "alt": "2006年三-2印刷解答：由虚物/虚像对确定透镜并求C′D′"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2006-iii-2.svg",
+     "alt": "2006年三-2印刷解答：由虚物/虚像对确定透镜并求C′D′",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2006-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -299920,8 +300322,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iii-3.jpg",
-     "alt": "2006年三-3：洛匈棱镜，两半棱镜光轴方向与斜界面角θ"
+     "src": "assets/redrawn-20261020/photos/009-2006-iii-3.svg",
+     "alt": "2006年三-3：洛匈棱镜，两半棱镜光轴方向与斜界面角θ",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -299932,8 +300336,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2006-iii-3.jpg",
-     "alt": "2006年三-3印刷解答：正单轴石英洛匈棱镜的o/e光与偏振方向"
+     "src": "assets/redrawn-20261020/photos/010-answer-2006-iii-3.svg",
+     "alt": "2006年三-3印刷解答：正单轴石英洛匈棱镜的o/e光与偏振方向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2006-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -300396,8 +300802,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iv-5.jpg",
-     "alt": "2006年四-5：曲率R、R0与口径Φ的牛顿环检验装置"
+     "src": "assets/redrawn-20261020/photos/011-2006-iv-5.svg",
+     "alt": "2006年四-5：曲率R、R0与口径Φ的牛顿环检验装置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iv-5.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -302139,8 +302547,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-i-14.jpg",
-     "alt": "2007年图1：斜面间隔半波长的两个等腰直角棱镜"
+     "src": "assets/redrawn-20261020/photos/012-2007-i-14.svg",
+     "alt": "2007年图1：斜面间隔半波长的两个等腰直角棱镜",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-i-14.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -302258,8 +302668,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-i-15.jpg",
-     "alt": "2007年图2、图3：空气楔检验与弯曲等厚条纹"
+     "src": "assets/redrawn-20261020/photos/013-2007-i-15.svg",
+     "alt": "2007年图2、图3：空气楔检验与弯曲等厚条纹",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-i-15.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -303064,8 +303476,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-iii-1.jpg",
-     "alt": "2007年三-1：单反相机系统和入射坐标系"
+     "src": "assets/redrawn-20261020/photos-geom13/2007-iii-1.svg",
+     "alt": "2007年三-1：单反相机系统和入射坐标系",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -303076,8 +303490,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2007-iii-1.jpg",
-     "alt": "2007年三-1印刷解答：单反系统a、b、c三处坐标"
+     "src": "assets/redrawn-20261020/photos/015-answer-2007-iii-1.svg",
+     "alt": "2007年三-1印刷解答：单反系统a、b、c三处坐标",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2007-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -303164,8 +303580,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-iii-2.jpg",
-     "alt": "2007年三-2：两薄透镜的物、像方焦点及主点位置"
+     "src": "assets/redrawn-20261020/photos-geom47/2007-iii-2.svg",
+     "alt": "2007年三-2：两薄透镜的物、像方焦点及主点位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -303176,8 +303594,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2007-iii-2.jpg",
-     "alt": "2007年三-2印刷解答：等效H′、J′、F′的作图"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2007-iii-2.svg",
+     "alt": "2007年三-2印刷解答：等效H′、J′、F′的作图",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2007-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -303878,8 +304298,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-x.jpg",
-     "alt": "2007年第十题：入射角θ与石英晶体光轴取向"
+     "src": "assets/redrawn-20261020/photos-wave/2007-x.svg",
+     "alt": "2007年第十题：入射角θ与石英晶体光轴取向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-x.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -303890,8 +304312,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2007-x.jpg",
-     "alt": "2007年第十题印刷解答：石英正单轴晶体的惠更斯作图"
+     "src": "assets/redrawn-20261020/photos-wave/answer-2007-x.svg",
+     "alt": "2007年第十题印刷解答：石英正单轴晶体的惠更斯作图",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2007-x.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -306764,8 +307188,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-ii-6.jpg",
-     "alt": "2008年二-6：平面镜M1、曲率很小的凹镜M2与分光板G"
+     "src": "assets/redrawn-20261020/photos/020-2008-ii-6.svg",
+     "alt": "2008年二-6：平面镜M1、曲率很小的凹镜M2与分光板G",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-ii-6.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -307044,8 +307470,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-iii-1.jpg",
-     "alt": "2008年三-1：物镜、直角反射棱镜及五角棱镜与a、b、c位置"
+     "src": "assets/redrawn-20261020/photos-geom13/2008-iii-1.svg",
+     "alt": "2008年三-1：物镜、直角反射棱镜及五角棱镜与a、b、c位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -307056,8 +307484,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2008-iii-1.jpg",
-     "alt": "2008年三-1印刷解答：a、b、c三处坐标"
+     "src": "assets/redrawn-20261020/photos/022-answer-2008-iii-1.svg",
+     "alt": "2008年三-1印刷解答：a、b、c三处坐标",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2008-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -307144,20 +307574,24 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-iii-2.jpg",
-     "alt": "2008年三-2：物AB、虚像A′B′和待成像物CD"
+     "src": "assets/redrawn-20261020/photos-geom47/2008-iii-2.svg",
+     "alt": "2008年三-2：物AB、虚像A′B′和待成像物CD",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "按印刷解答图，CD的像为靠近光轴、位于CD右下方的虚像C′D′。"
+     "x": "CD为虚物，其像C′D′为透镜右侧的实像，由出射光线正向会聚得到。"
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2008-iii-2.jpg",
-     "alt": "2008年三-2印刷解答：由AB、A′B′求CD的像"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2008-iii-2.svg",
+     "alt": "2008年三-2印刷解答：由AB、A′B′求CD的像",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2008-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -307244,8 +307678,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-iii-3.jpg",
-     "alt": "2008年三-3：渥拉斯顿棱镜两部分光轴与斜界面角θ"
+     "src": "assets/redrawn-20261020/photos/025-2008-iii-3.svg",
+     "alt": "2008年三-3：渥拉斯顿棱镜两部分光轴与斜界面角θ",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -307256,8 +307692,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2008-iii-3.jpg",
-     "alt": "2008年三-3印刷解答：负单轴方解石渥拉斯顿棱镜分束及偏振方向"
+     "src": "assets/redrawn-20261020/photos/026-answer-2008-iii-3.svg",
+     "alt": "2008年三-3印刷解答：负单轴方解石渥拉斯顿棱镜分束及偏振方向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2008-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -307620,8 +308058,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-v-3.jpg",
-     "alt": "2008年五-3：起偏器P和检偏器A与x轴夹角α、β"
+     "src": "assets/redrawn-20261020/photos/027-2008-v-3.svg",
+     "alt": "2008年五-3：起偏器P和检偏器A与x轴夹角α、β",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-v-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -307942,8 +308382,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2009-i-1.jpg",
-     "alt": "2009年一-1印刷分析图：负正分离系统像方主面位置"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2009-i-1.svg",
+     "alt": "2009年一-1印刷分析图：负正分离系统像方主面位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2009-i-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -308253,8 +308695,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2009-i-4.jpg",
-     "alt": "2009年一-4：等边三角棱镜的四种入射和内部光路"
+     "src": "assets/redrawn-20261020/photos/029-2009-i-4.svg",
+     "alt": "2009年一-4：等边三角棱镜的四种入射和内部光路",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2009-i-4.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -311064,16 +311508,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-III.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2009-III.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-III.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-III-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2009-III-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-III-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -311411,16 +311859,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VII.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-wave/2009-VII.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VII.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VII-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-wave/2009-VII-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VII-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -311495,16 +311947,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VIII.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/038-2009-VIII.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VIII.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VIII-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/039-2009-VIII-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VIII-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -311579,8 +312035,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-IX.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/040-2009-IX.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-IX.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -313283,8 +313741,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-choice14.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/043-2010-choice14.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-choice14.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -314394,8 +314854,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-blank1.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-wave/2010-blank1.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-blank1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -315000,16 +315462,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-1.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom13/2010-III-1.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-1-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom13/2010-III-1-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-1-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -315079,16 +315545,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-2.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2010-III-2.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-2-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2010-III-2-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-2-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -315158,8 +315628,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-IV-vector.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/049-2010-IV-vector.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-IV-vector.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -315172,8 +315644,10 @@
    "analysis": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-IV-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/050-2010-IV-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-IV-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "stemImages": [],
@@ -315594,8 +316068,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-IX.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/055-2010-IX.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-IX.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -315688,8 +316164,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-X-diagram.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/057-2010-X-diagram.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-X-diagram.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -317983,16 +318461,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-1.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-1.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-1-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-1-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-1-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -318062,16 +318544,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-2.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-2.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-2-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-2-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-2-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -318618,8 +319104,10 @@
    "analysis": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-IX-table-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/068-2011-IX-table-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-IX-table-answer.jpg",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
@@ -320109,8 +320597,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-choice13.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/071-2012-choice13.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-choice13.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -321164,8 +321654,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-blank3.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/072-2012-blank3.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-blank3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -321318,8 +321810,10 @@
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-III-1-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom13/2012-III-1-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-III-1-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -321389,16 +321883,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-III-2.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2012-III-2.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-III-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-III-2-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2012-III-2-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-III-2-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -321879,8 +322377,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-VIII-table.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/080-2012-VIII-table.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-VIII-table.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -321917,8 +322417,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-VIII-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/081-2012-VIII-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-VIII-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "stemImages": [],
@@ -322002,16 +322504,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-IX.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/082-2012-IX.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-IX.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-IX-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/083-2012-IX-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-IX-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -322090,8 +322596,10 @@
    "analysis": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-X-layout-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2012-X-layout-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-X-layout-answer.jpg",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
@@ -322166,8 +322674,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-XI.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/086-2012-XI.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-XI.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -324216,8 +324726,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2019-pupils.jpg",
-     "alt": "两薄透镜与中间孔径光阑、物AB及像点A′"
+     "src": "assets/redrawn-20261020/photos-geom47/2019-pupils.svg",
+     "alt": "两薄透镜与中间孔径光阑、物AB及像点A′",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2019-pupils.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -324300,8 +324812,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2019-coordinate-a.jpg",
-     "alt": "反射棱镜、望远系统与右侧三反射棱镜"
+     "src": "assets/redrawn-20261020/photos-geom13/2019-coordinate-a.svg",
+     "alt": "反射棱镜、望远系统与右侧三反射棱镜",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2019-coordinate-a.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -324387,8 +324901,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2019-coordinate-b.jpg",
-     "alt": "望远系统、五角反射棱镜与末端三反射棱镜"
+     "src": "assets/redrawn-20261020/photos-geom13/2019-coordinate-b.svg",
+     "alt": "望远系统、五角反射棱镜与末端三反射棱镜",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2019-coordinate-b.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -325569,8 +326085,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2022-spring-coordinate.jpg",
-     "alt": "摄影物镜、反光镜、屋脊五角棱镜、目镜和底片"
+     "src": "assets/redrawn-20261020/photos-geom13/2022-spring-coordinate.svg",
+     "alt": "摄影物镜、反光镜、屋脊五角棱镜、目镜和底片",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2022-spring-coordinate.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -325656,8 +326174,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2022-spring-pupils.jpg",
-     "alt": "正、负两薄透镜和中间孔径光阑及轴上共轭光线"
+     "src": "assets/redrawn-20261020/photos-geom47/2022-spring-pupils.svg",
+     "alt": "正、负两薄透镜和中间孔径光阑及轴上共轭光线",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2022-spring-pupils.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -327426,8 +327946,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2022-autumn-coordinate.jpg",
-     "alt": "别汉棱镜、平面镜、屋脊五角棱镜；照片含学生手写作答"
+     "src": "assets/redrawn-20261020/photos-geom13/2022-autumn-coordinate.svg",
+     "alt": "别汉棱镜、平面镜、屋脊五角棱镜；照片含学生手写作答",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2022-autumn-coordinate.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],

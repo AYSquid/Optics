@@ -253,6 +253,7 @@ function figureAssetUrl(src) { return isAuditDiagram(src) ? src + (src.indexOf('
 function figureNode(src, alt) {
   var fig = el('figure', 'figure');
   if (isAuditDiagram(src)) fig.classList.add('is-audit-diagram');
+  if (/^assets\/redrawn-20261020\//.test(src || '')) fig.classList.add('is-redrawn-diagram');
   var img = el('img');
   img.src = figureAssetUrl(src);
   img.alt = alt || '题目配图';
@@ -1354,6 +1355,7 @@ function changeStatus(val) {
 
 function openLightbox(src, alt) {
   $('lightbox-img').classList.toggle('is-audit-diagram', isAuditDiagram(src));
+  $('lightbox-img').classList.toggle('is-redrawn-diagram', /^assets\/redrawn-20261020\//.test(src || ''));
   $('lightbox-img').src = figureAssetUrl(src);
   $('lightbox-img').alt = alt || '';
   $('lightbox-cap').textContent = alt || '';

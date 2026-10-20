@@ -28069,16 +28069,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2005-iii-5.jpg",
-     "alt": "2005年三-5：空气—石英界面、入射角与晶体光轴方向"
+     "src": "assets/redrawn-20261020/photos-wave/2005-iii-5.svg",
+     "alt": "2005年三-5：空气—石英界面、入射角与晶体光轴方向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2005-iii-5.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2005-iii-5.jpg",
-     "alt": "2005年三-5印刷解答：o/e光波法线及能流方向的惠更斯作图"
+     "src": "assets/redrawn-20261020/photos-wave/answer-2005-iii-5.svg",
+     "alt": "2005年三-5印刷解答：o/e光波法线及能流方向的惠更斯作图",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2005-iii-5.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -28123,8 +28127,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2005-iii-6.jpg",
-     "alt": "2005年三-6：缝宽a和2a，缝内缘间距d"
+     "src": "assets/redrawn-20261020/photos/003-2005-iii-6.svg",
+     "alt": "2005年三-6：缝宽a和2a，缝内缘间距d",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2005-iii-6.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -28222,8 +28228,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2005-iii-8.jpg",
-     "alt": "2005年三-8：起偏器、待测波片、1/4波片、检偏器顺序与快轴"
+     "src": "assets/redrawn-20261020/photos/004-2005-iii-8.svg",
+     "alt": "2005年三-8：起偏器、待测波片、1/4波片、检偏器顺序与快轴",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2005-iii-8.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -29900,8 +29908,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iii-1.jpg",
-     "alt": "2006年三-1：物镜、棱镜组和像面及入射坐标"
+     "src": "assets/redrawn-20261020/photos-geom13/2006-iii-1.svg",
+     "alt": "2006年三-1：物镜、棱镜组和像面及入射坐标",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -29912,8 +29922,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2006-iii-1.jpg",
-     "alt": "2006年三-1印刷坐标答案"
+     "src": "assets/redrawn-20261020/photos/006-answer-2006-iii-1.svg",
+     "alt": "2006年三-1印刷坐标答案",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2006-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -29957,8 +29969,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iii-2.jpg",
-     "alt": "2006年三-2：虚物AB、共轭虚像A′B′与物CD位置"
+     "src": "assets/redrawn-20261020/photos-geom47/2006-iii-2.svg",
+     "alt": "2006年三-2：虚物AB、共轭虚像A′B′与物CD位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -29969,8 +29983,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2006-iii-2.jpg",
-     "alt": "2006年三-2印刷解答：由虚物/虚像对确定透镜并求C′D′"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2006-iii-2.svg",
+     "alt": "2006年三-2印刷解答：由虚物/虚像对确定透镜并求C′D′",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2006-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -30014,8 +30030,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iii-3.jpg",
-     "alt": "2006年三-3：洛匈棱镜，两半棱镜光轴方向与斜界面角θ"
+     "src": "assets/redrawn-20261020/photos/009-2006-iii-3.svg",
+     "alt": "2006年三-3：洛匈棱镜，两半棱镜光轴方向与斜界面角θ",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -30026,8 +30044,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2006-iii-3.jpg",
-     "alt": "2006年三-3印刷解答：正单轴石英洛匈棱镜的o/e光与偏振方向"
+     "src": "assets/redrawn-20261020/photos/010-answer-2006-iii-3.svg",
+     "alt": "2006年三-3印刷解答：正单轴石英洛匈棱镜的o/e光与偏振方向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2006-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -30261,8 +30281,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iv-5.jpg",
-     "alt": "2006年四-5：曲率R、R0与口径Φ的牛顿环检验装置"
+     "src": "assets/redrawn-20261020/photos/011-2006-iv-5.svg",
+     "alt": "2006年四-5：曲率R、R0与口径Φ的牛顿环检验装置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iv-5.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -31186,8 +31208,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-i-14.jpg",
-     "alt": "2007年图1：斜面间隔半波长的两个等腰直角棱镜"
+     "src": "assets/redrawn-20261020/photos/012-2007-i-14.svg",
+     "alt": "2007年图1：斜面间隔半波长的两个等腰直角棱镜",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-i-14.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -31247,8 +31271,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-i-15.jpg",
-     "alt": "2007年图2、图3：空气楔检验与弯曲等厚条纹"
+     "src": "assets/redrawn-20261020/photos/013-2007-i-15.svg",
+     "alt": "2007年图2、图3：空气楔检验与弯曲等厚条纹",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-i-15.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -31659,8 +31685,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-iii-1.jpg",
-     "alt": "2007年三-1：单反相机系统和入射坐标系"
+     "src": "assets/redrawn-20261020/photos-geom13/2007-iii-1.svg",
+     "alt": "2007年三-1：单反相机系统和入射坐标系",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -31671,8 +31699,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2007-iii-1.jpg",
-     "alt": "2007年三-1印刷解答：单反系统a、b、c三处坐标"
+     "src": "assets/redrawn-20261020/photos/015-answer-2007-iii-1.svg",
+     "alt": "2007年三-1印刷解答：单反系统a、b、c三处坐标",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2007-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -31716,8 +31746,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-iii-2.jpg",
-     "alt": "2007年三-2：两薄透镜的物、像方焦点及主点位置"
+     "src": "assets/redrawn-20261020/photos-geom47/2007-iii-2.svg",
+     "alt": "2007年三-2：两薄透镜的物、像方焦点及主点位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -31728,8 +31760,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2007-iii-2.jpg",
-     "alt": "2007年三-2印刷解答：等效H′、J′、F′的作图"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2007-iii-2.svg",
+     "alt": "2007年三-2印刷解答：等效H′、J′、F′的作图",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2007-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -32055,8 +32089,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-x.jpg",
-     "alt": "2007年第十题：入射角θ与石英晶体光轴取向"
+     "src": "assets/redrawn-20261020/photos-wave/2007-x.svg",
+     "alt": "2007年第十题：入射角θ与石英晶体光轴取向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-x.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -32067,8 +32103,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2007-x.jpg",
-     "alt": "2007年第十题印刷解答：石英正单轴晶体的惠更斯作图"
+     "src": "assets/redrawn-20261020/photos-wave/answer-2007-x.svg",
+     "alt": "2007年第十题印刷解答：石英正单轴晶体的惠更斯作图",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2007-x.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -33520,8 +33558,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-ii-6.jpg",
-     "alt": "2008年二-6：平面镜M1、曲率很小的凹镜M2与分光板G"
+     "src": "assets/redrawn-20261020/photos/020-2008-ii-6.svg",
+     "alt": "2008年二-6：平面镜M1、曲率很小的凹镜M2与分光板G",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-ii-6.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -33667,8 +33707,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-iii-1.jpg",
-     "alt": "2008年三-1：物镜、直角反射棱镜及五角棱镜与a、b、c位置"
+     "src": "assets/redrawn-20261020/photos-geom13/2008-iii-1.svg",
+     "alt": "2008年三-1：物镜、直角反射棱镜及五角棱镜与a、b、c位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -33679,8 +33721,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2008-iii-1.jpg",
-     "alt": "2008年三-1印刷解答：a、b、c三处坐标"
+     "src": "assets/redrawn-20261020/photos/022-answer-2008-iii-1.svg",
+     "alt": "2008年三-1印刷解答：a、b、c三处坐标",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2008-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -33724,20 +33768,24 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-iii-2.jpg",
-     "alt": "2008年三-2：物AB、虚像A′B′和待成像物CD"
+     "src": "assets/redrawn-20261020/photos-geom47/2008-iii-2.svg",
+     "alt": "2008年三-2：物AB、虚像A′B′和待成像物CD",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "按印刷解答图，CD的像为靠近光轴、位于CD右下方的虚像C′D′。"
+     "x": "CD为虚物，其像C′D′为透镜右侧的实像，由出射光线正向会聚得到。"
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2008-iii-2.jpg",
-     "alt": "2008年三-2印刷解答：由AB、A′B′求CD的像"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2008-iii-2.svg",
+     "alt": "2008年三-2印刷解答：由AB、A′B′求CD的像",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2008-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -33781,8 +33829,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-iii-3.jpg",
-     "alt": "2008年三-3：渥拉斯顿棱镜两部分光轴与斜界面角θ"
+     "src": "assets/redrawn-20261020/photos/025-2008-iii-3.svg",
+     "alt": "2008年三-3：渥拉斯顿棱镜两部分光轴与斜界面角θ",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -33793,8 +33843,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2008-iii-3.jpg",
-     "alt": "2008年三-3印刷解答：负单轴方解石渥拉斯顿棱镜分束及偏振方向"
+     "src": "assets/redrawn-20261020/photos/026-answer-2008-iii-3.svg",
+     "alt": "2008年三-3印刷解答：负单轴方解石渥拉斯顿棱镜分束及偏振方向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2008-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -33979,8 +34031,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-v-3.jpg",
-     "alt": "2008年五-3：起偏器P和检偏器A与x轴夹角α、β"
+     "src": "assets/redrawn-20261020/photos/027-2008-v-3.svg",
+     "alt": "2008年五-3：起偏器P和检偏器A与x轴夹角α、β",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-v-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -34151,8 +34205,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2009-i-1.jpg",
-     "alt": "2009年一-1印刷分析图：负正分离系统像方主面位置"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2009-i-1.svg",
+     "alt": "2009年一-1印刷分析图：负正分离系统像方主面位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2009-i-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -34324,8 +34380,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2009-i-4.jpg",
-     "alt": "2009年一-4：等边三角棱镜的四种入射和内部光路"
+     "src": "assets/redrawn-20261020/photos/029-2009-i-4.svg",
+     "alt": "2009年一-4：等边三角棱镜的四种入射和内部光路",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2009-i-4.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -35876,16 +35934,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-III.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2009-III.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-III.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-III-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2009-III-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-III-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -36067,16 +36129,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VII.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-wave/2009-VII.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VII.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VII-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-wave/2009-VII-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VII-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -36118,16 +36184,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VIII.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/038-2009-VIII.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VIII.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VIII-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/039-2009-VIII-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VIII-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -36169,8 +36239,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-IX.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/040-2009-IX.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-IX.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -37068,8 +37140,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-choice14.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/043-2010-choice14.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-choice14.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -37771,8 +37845,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-blank1.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-wave/2010-blank1.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-blank1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -38101,16 +38177,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-1.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom13/2010-III-1.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-1-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom13/2010-III-1-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-1-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -38147,16 +38227,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-2.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2010-III-2.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-2-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2010-III-2-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-2-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -38193,8 +38277,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-IV-vector.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/049-2010-IV-vector.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-IV-vector.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -38207,8 +38293,10 @@
    "analysis": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-IV-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/050-2010-IV-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-IV-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "sourceFile": "导入试卷/20261019_134230.jpg, 20261019_134240.jpg, 20261019_135807.jpg",
@@ -38439,8 +38527,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-IX.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/055-2010-IX.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-IX.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -38500,8 +38590,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-X-diagram.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/057-2010-X-diagram.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-X-diagram.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -39817,16 +39909,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-1.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-1.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-1-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-1-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-1-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -39863,16 +39959,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-2.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-2.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-2-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-2-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-2-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -40163,8 +40263,10 @@
    "analysis": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-IX-table-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/068-2011-IX-table-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-IX-table-answer.jpg",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
@@ -40987,8 +41089,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-choice13.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/071-2012-choice13.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-choice13.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -41636,8 +41740,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-blank3.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/072-2012-blank3.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-blank3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -41724,8 +41830,10 @@
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-III-1-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom13/2012-III-1-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-III-1-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -41762,16 +41870,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-III-2.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2012-III-2.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-III-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-III-2-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2012-III-2-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-III-2-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -42024,8 +42136,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-VIII-table.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/080-2012-VIII-table.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-VIII-table.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -42062,8 +42176,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-VIII-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/081-2012-VIII-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-VIII-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "sourceFile": "导入试卷/20261019_134317.jpg, 20261019_135832.jpg",
@@ -42101,16 +42217,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-IX.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/082-2012-IX.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-IX.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-IX-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/083-2012-IX-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-IX-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -42156,8 +42276,10 @@
    "analysis": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-X-layout-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2012-X-layout-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-X-layout-answer.jpg",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
@@ -42198,8 +42320,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-XI.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/086-2012-XI.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-XI.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -43447,8 +43571,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2019-pupils.jpg",
-     "alt": "两薄透镜与中间孔径光阑、物AB及像点A′"
+     "src": "assets/redrawn-20261020/photos-geom47/2019-pupils.svg",
+     "alt": "两薄透镜与中间孔径光阑、物AB及像点A′",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2019-pupils.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -43499,8 +43625,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2019-coordinate-a.jpg",
-     "alt": "反射棱镜、望远系统与右侧三反射棱镜"
+     "src": "assets/redrawn-20261020/photos-geom13/2019-coordinate-a.svg",
+     "alt": "反射棱镜、望远系统与右侧三反射棱镜",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2019-coordinate-a.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -43554,8 +43682,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2019-coordinate-b.jpg",
-     "alt": "望远系统、五角反射棱镜与末端三反射棱镜"
+     "src": "assets/redrawn-20261020/photos-geom13/2019-coordinate-b.svg",
+     "alt": "望远系统、五角反射棱镜与末端三反射棱镜",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2019-coordinate-b.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -44305,8 +44435,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2022-spring-coordinate.jpg",
-     "alt": "摄影物镜、反光镜、屋脊五角棱镜、目镜和底片"
+     "src": "assets/redrawn-20261020/photos-geom13/2022-spring-coordinate.svg",
+     "alt": "摄影物镜、反光镜、屋脊五角棱镜、目镜和底片",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2022-spring-coordinate.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -44360,8 +44492,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2022-spring-pupils.jpg",
-     "alt": "正、负两薄透镜和中间孔径光阑及轴上共轭光线"
+     "src": "assets/redrawn-20261020/photos-geom47/2022-spring-pupils.svg",
+     "alt": "正、负两薄透镜和中间孔径光阑及轴上共轭光线",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2022-spring-pupils.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -45480,8 +45614,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2022-autumn-coordinate.jpg",
-     "alt": "别汉棱镜、平面镜、屋脊五角棱镜；照片含学生手写作答"
+     "src": "assets/redrawn-20261020/photos-geom13/2022-autumn-coordinate.svg",
+     "alt": "别汉棱镜、平面镜、屋脊五角棱镜；照片含学生手写作答",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2022-autumn-coordinate.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -82632,16 +82768,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2005-iii-5.jpg",
-     "alt": "2005年三-5：空气—石英界面、入射角与晶体光轴方向"
+     "src": "assets/redrawn-20261020/photos-wave/2005-iii-5.svg",
+     "alt": "2005年三-5：空气—石英界面、入射角与晶体光轴方向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2005-iii-5.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2005-iii-5.jpg",
-     "alt": "2005年三-5印刷解答：o/e光波法线及能流方向的惠更斯作图"
+     "src": "assets/redrawn-20261020/photos-wave/answer-2005-iii-5.svg",
+     "alt": "2005年三-5印刷解答：o/e光波法线及能流方向的惠更斯作图",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2005-iii-5.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -82731,8 +82871,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2005-iii-6.jpg",
-     "alt": "2005年三-6：缝宽a和2a，缝内缘间距d"
+     "src": "assets/redrawn-20261020/photos/003-2005-iii-6.svg",
+     "alt": "2005年三-6：缝宽a和2a，缝内缘间距d",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2005-iii-6.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -82918,8 +83060,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2005-iii-8.jpg",
-     "alt": "2005年三-8：起偏器、待测波片、1/4波片、检偏器顺序与快轴"
+     "src": "assets/redrawn-20261020/photos/004-2005-iii-8.svg",
+     "alt": "2005年三-8：起偏器、待测波片、1/4波片、检偏器顺序与快轴",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2005-iii-8.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -85935,8 +86079,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iii-1.jpg",
-     "alt": "2006年三-1：物镜、棱镜组和像面及入射坐标"
+     "src": "assets/redrawn-20261020/photos-geom13/2006-iii-1.svg",
+     "alt": "2006年三-1：物镜、棱镜组和像面及入射坐标",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -85947,8 +86093,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2006-iii-1.jpg",
-     "alt": "2006年三-1印刷坐标答案"
+     "src": "assets/redrawn-20261020/photos/006-answer-2006-iii-1.svg",
+     "alt": "2006年三-1印刷坐标答案",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2006-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -86035,8 +86183,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iii-2.jpg",
-     "alt": "2006年三-2：虚物AB、共轭虚像A′B′与物CD位置"
+     "src": "assets/redrawn-20261020/photos-geom47/2006-iii-2.svg",
+     "alt": "2006年三-2：虚物AB、共轭虚像A′B′与物CD位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -86047,8 +86197,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2006-iii-2.jpg",
-     "alt": "2006年三-2印刷解答：由虚物/虚像对确定透镜并求C′D′"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2006-iii-2.svg",
+     "alt": "2006年三-2印刷解答：由虚物/虚像对确定透镜并求C′D′",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2006-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -86135,8 +86287,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iii-3.jpg",
-     "alt": "2006年三-3：洛匈棱镜，两半棱镜光轴方向与斜界面角θ"
+     "src": "assets/redrawn-20261020/photos/009-2006-iii-3.svg",
+     "alt": "2006年三-3：洛匈棱镜，两半棱镜光轴方向与斜界面角θ",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -86147,8 +86301,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2006-iii-3.jpg",
-     "alt": "2006年三-3印刷解答：正单轴石英洛匈棱镜的o/e光与偏振方向"
+     "src": "assets/redrawn-20261020/photos/010-answer-2006-iii-3.svg",
+     "alt": "2006年三-3印刷解答：正单轴石英洛匈棱镜的o/e光与偏振方向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2006-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -86601,8 +86757,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2006-iv-5.jpg",
-     "alt": "2006年四-5：曲率R、R0与口径Φ的牛顿环检验装置"
+     "src": "assets/redrawn-20261020/photos/011-2006-iv-5.svg",
+     "alt": "2006年四-5：曲率R、R0与口径Φ的牛顿环检验装置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2006-iv-5.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -88210,8 +88368,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-i-14.jpg",
-     "alt": "2007年图1：斜面间隔半波长的两个等腰直角棱镜"
+     "src": "assets/redrawn-20261020/photos/012-2007-i-14.svg",
+     "alt": "2007年图1：斜面间隔半波长的两个等腰直角棱镜",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-i-14.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -88317,8 +88477,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-i-15.jpg",
-     "alt": "2007年图2、图3：空气楔检验与弯曲等厚条纹"
+     "src": "assets/redrawn-20261020/photos/013-2007-i-15.svg",
+     "alt": "2007年图2、图3：空气楔检验与弯曲等厚条纹",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-i-15.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -89081,8 +89243,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-iii-1.jpg",
-     "alt": "2007年三-1：单反相机系统和入射坐标系"
+     "src": "assets/redrawn-20261020/photos-geom13/2007-iii-1.svg",
+     "alt": "2007年三-1：单反相机系统和入射坐标系",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -89093,8 +89257,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2007-iii-1.jpg",
-     "alt": "2007年三-1印刷解答：单反系统a、b、c三处坐标"
+     "src": "assets/redrawn-20261020/photos/015-answer-2007-iii-1.svg",
+     "alt": "2007年三-1印刷解答：单反系统a、b、c三处坐标",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2007-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -89181,8 +89347,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-iii-2.jpg",
-     "alt": "2007年三-2：两薄透镜的物、像方焦点及主点位置"
+     "src": "assets/redrawn-20261020/photos-geom47/2007-iii-2.svg",
+     "alt": "2007年三-2：两薄透镜的物、像方焦点及主点位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -89193,8 +89361,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2007-iii-2.jpg",
-     "alt": "2007年三-2印刷解答：等效H′、J′、F′的作图"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2007-iii-2.svg",
+     "alt": "2007年三-2印刷解答：等效H′、J′、F′的作图",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2007-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -89829,8 +89999,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2007-x.jpg",
-     "alt": "2007年第十题：入射角θ与石英晶体光轴取向"
+     "src": "assets/redrawn-20261020/photos-wave/2007-x.svg",
+     "alt": "2007年第十题：入射角θ与石英晶体光轴取向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2007-x.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -89841,8 +90013,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2007-x.jpg",
-     "alt": "2007年第十题印刷解答：石英正单轴晶体的惠更斯作图"
+     "src": "assets/redrawn-20261020/photos-wave/answer-2007-x.svg",
+     "alt": "2007年第十题印刷解答：石英正单轴晶体的惠更斯作图",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2007-x.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -92437,8 +92611,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-ii-6.jpg",
-     "alt": "2008年二-6：平面镜M1、曲率很小的凹镜M2与分光板G"
+     "src": "assets/redrawn-20261020/photos/020-2008-ii-6.svg",
+     "alt": "2008年二-6：平面镜M1、曲率很小的凹镜M2与分光板G",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-ii-6.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -92717,8 +92893,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-iii-1.jpg",
-     "alt": "2008年三-1：物镜、直角反射棱镜及五角棱镜与a、b、c位置"
+     "src": "assets/redrawn-20261020/photos-geom13/2008-iii-1.svg",
+     "alt": "2008年三-1：物镜、直角反射棱镜及五角棱镜与a、b、c位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -92729,8 +92907,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2008-iii-1.jpg",
-     "alt": "2008年三-1印刷解答：a、b、c三处坐标"
+     "src": "assets/redrawn-20261020/photos/022-answer-2008-iii-1.svg",
+     "alt": "2008年三-1印刷解答：a、b、c三处坐标",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2008-iii-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -92817,20 +92997,24 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-iii-2.jpg",
-     "alt": "2008年三-2：物AB、虚像A′B′和待成像物CD"
+     "src": "assets/redrawn-20261020/photos-geom47/2008-iii-2.svg",
+     "alt": "2008年三-2：物AB、虚像A′B′和待成像物CD",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "p",
-     "x": "按印刷解答图，CD的像为靠近光轴、位于CD右下方的虚像C′D′。"
+     "x": "CD为虚物，其像C′D′为透镜右侧的实像，由出射光线正向会聚得到。"
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2008-iii-2.jpg",
-     "alt": "2008年三-2印刷解答：由AB、A′B′求CD的像"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2008-iii-2.svg",
+     "alt": "2008年三-2印刷解答：由AB、A′B′求CD的像",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2008-iii-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -92917,8 +93101,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-iii-3.jpg",
-     "alt": "2008年三-3：渥拉斯顿棱镜两部分光轴与斜界面角θ"
+     "src": "assets/redrawn-20261020/photos/025-2008-iii-3.svg",
+     "alt": "2008年三-3：渥拉斯顿棱镜两部分光轴与斜界面角θ",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -92929,8 +93115,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2008-iii-3.jpg",
-     "alt": "2008年三-3印刷解答：负单轴方解石渥拉斯顿棱镜分束及偏振方向"
+     "src": "assets/redrawn-20261020/photos/026-answer-2008-iii-3.svg",
+     "alt": "2008年三-3印刷解答：负单轴方解石渥拉斯顿棱镜分束及偏振方向",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2008-iii-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -93293,8 +93481,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2008-v-3.jpg",
-     "alt": "2008年五-3：起偏器P和检偏器A与x轴夹角α、β"
+     "src": "assets/redrawn-20261020/photos/027-2008-v-3.svg",
+     "alt": "2008年五-3：起偏器P和检偏器A与x轴夹角α、β",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2008-v-3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -93603,8 +93793,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/answer-2009-i-1.jpg",
-     "alt": "2009年一-1印刷分析图：负正分离系统像方主面位置"
+     "src": "assets/redrawn-20261020/photos-geom47/answer-2009-i-1.svg",
+     "alt": "2009年一-1印刷分析图：负正分离系统像方主面位置",
+     "originalScanSrc": "assets/imported-exams-20261019/early/answer-2009-i-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -93914,8 +94106,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/early/2009-i-4.jpg",
-     "alt": "2009年一-4：等边三角棱镜的四种入射和内部光路"
+     "src": "assets/redrawn-20261020/photos/029-2009-i-4.svg",
+     "alt": "2009年一-4：等边三角棱镜的四种入射和内部光路",
+     "originalScanSrc": "assets/imported-exams-20261019/early/2009-i-4.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -96599,16 +96793,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-III.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2009-III.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-III.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-III-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2009-III-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-III-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -96926,16 +97124,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VII.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-wave/2009-VII.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VII.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VII-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-wave/2009-VII-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VII-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -97010,16 +97212,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VIII.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/038-2009-VIII.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VIII.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-VIII-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/039-2009-VIII-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-VIII-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [
@@ -97094,8 +97300,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2009-IX.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/040-2009-IX.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2009-IX.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -98530,8 +98738,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-choice14.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/043-2010-choice14.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-choice14.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -99629,8 +99839,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-blank1.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-wave/2010-blank1.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-blank1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -100223,16 +100435,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-1.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom13/2010-III-1.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-1-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom13/2010-III-1-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-1-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -100302,16 +100518,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-2.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2010-III-2.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-III-2-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2010-III-2-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-III-2-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -100381,8 +100601,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-IV-vector.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/049-2010-IV-vector.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-IV-vector.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -100395,8 +100617,10 @@
    "analysis": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-IV-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/050-2010-IV-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-IV-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "stemImages": [],
@@ -100795,8 +101019,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-IX.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/055-2010-IX.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-IX.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -100889,8 +101115,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2010-X-diagram.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/057-2010-X-diagram.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2010-X-diagram.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -103150,16 +103378,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-1.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-1.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-1.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-1-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-1-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-1-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -103229,16 +103461,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-2.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-2.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-III-2-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2011-III-2-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-III-2-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -103731,8 +103967,10 @@
    "analysis": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2011-IX-table-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/068-2011-IX-table-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2011-IX-table-answer.jpg",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
@@ -105054,8 +105292,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-choice13.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/071-2012-choice13.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-choice13.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [
@@ -106109,8 +106349,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-blank3.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/072-2012-blank3.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-blank3.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -106263,8 +106505,10 @@
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-III-1-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom13/2012-III-1-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-III-1-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -106334,16 +106578,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-III-2.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos-geom47/2012-III-2.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-III-2.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-III-2-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2012-III-2-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-III-2-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -106790,8 +107038,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-VIII-table.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/080-2012-VIII-table.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-VIII-table.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -106828,8 +107078,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-VIII-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/081-2012-VIII-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-VIII-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "stemImages": [],
@@ -106901,16 +107153,20 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-IX.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/082-2012-IX.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-IX.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
    "answer": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-IX-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos/083-2012-IX-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-IX-answer.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "analysis": [],
@@ -106989,8 +107245,10 @@
    "analysis": [
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-X-layout-answer.jpg",
-     "alt": "所提供参考资料的印刷答案/解析"
+     "src": "assets/redrawn-20261020/photos-geom47/2012-X-layout-answer.svg",
+     "alt": "所提供参考资料的印刷答案/解析",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-X-layout-answer.jpg",
+     "redrawBatch": "20261020"
     },
     {
      "k": "image",
@@ -107065,8 +107323,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/late/2012-XI.jpg",
-     "alt": "原卷印刷题图/题面"
+     "src": "assets/redrawn-20261020/photos/086-2012-XI.svg",
+     "alt": "原卷印刷题图/题面",
+     "originalScanSrc": "assets/imported-exams-20261019/late/2012-XI.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -109115,8 +109375,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2019-pupils.jpg",
-     "alt": "两薄透镜与中间孔径光阑、物AB及像点A′"
+     "src": "assets/redrawn-20261020/photos-geom47/2019-pupils.svg",
+     "alt": "两薄透镜与中间孔径光阑、物AB及像点A′",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2019-pupils.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -109199,8 +109461,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2019-coordinate-a.jpg",
-     "alt": "反射棱镜、望远系统与右侧三反射棱镜"
+     "src": "assets/redrawn-20261020/photos-geom13/2019-coordinate-a.svg",
+     "alt": "反射棱镜、望远系统与右侧三反射棱镜",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2019-coordinate-a.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -109286,8 +109550,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2019-coordinate-b.jpg",
-     "alt": "望远系统、五角反射棱镜与末端三反射棱镜"
+     "src": "assets/redrawn-20261020/photos-geom13/2019-coordinate-b.svg",
+     "alt": "望远系统、五角反射棱镜与末端三反射棱镜",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2019-coordinate-b.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -110468,8 +110734,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2022-spring-coordinate.jpg",
-     "alt": "摄影物镜、反光镜、屋脊五角棱镜、目镜和底片"
+     "src": "assets/redrawn-20261020/photos-geom13/2022-spring-coordinate.svg",
+     "alt": "摄影物镜、反光镜、屋脊五角棱镜、目镜和底片",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2022-spring-coordinate.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -110555,8 +110823,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2022-spring-pupils.jpg",
-     "alt": "正、负两薄透镜和中间孔径光阑及轴上共轭光线"
+     "src": "assets/redrawn-20261020/photos-geom47/2022-spring-pupils.svg",
+     "alt": "正、负两薄透镜和中间孔径光阑及轴上共轭光线",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2022-spring-pupils.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
@@ -112313,8 +112583,10 @@
     },
     {
      "k": "image",
-     "src": "assets/imported-exams-20261019/finals/2022-autumn-coordinate.jpg",
-     "alt": "别汉棱镜、平面镜、屋脊五角棱镜；照片含学生手写作答"
+     "src": "assets/redrawn-20261020/photos-geom13/2022-autumn-coordinate.svg",
+     "alt": "别汉棱镜、平面镜、屋脊五角棱镜；照片含学生手写作答",
+     "originalScanSrc": "assets/imported-exams-20261019/finals/2022-autumn-coordinate.jpg",
+     "redrawBatch": "20261020"
     }
    ],
    "options": [],
