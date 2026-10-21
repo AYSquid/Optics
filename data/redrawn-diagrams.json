@@ -666,7 +666,8 @@
   {
    "src": "assets/imported-exams-20261019/late/2009-VIII-answer.jpg",
    "svg": "assets/redrawn-20261020/photos/039-2009-VIII-answer.svg",
-   "notes": "按本年原图分别保留晶体两区光轴、o/e光的分束方向和点/短线偏振标记；给定图未添加答案光路。"
+   "notes": "2026-10-21复核：o光改为纸面内短线，e光保留垂直纸面圆点，恢复与原答案相符的正交偏振。",
+   "reviewed": true
   },
   {
    "src": "assets/imported-exams-20261019/late/2012-IX.jpg",
@@ -936,7 +937,8 @@
   {
    "src": "assets/imported-exams-20261019/late/2010-blank1.jpg",
    "svg": "assets/redrawn-20261020/photos-wave/2010-blank1.svg",
-   "notes": "完整重排原题文字和1A–1I空格，重建A/A′/A″、Σ/Σe/Σo、θ、α/β箭头；按题意不补画缺失的e波法线。正晶体定性示意，不标造石英数值。"
+   "notes": "2026-10-21复核：以圆/椭圆切线重建正晶体惠更斯题图，仅保留题图原有α、β，不补答e波法线；新增独立解析图。",
+   "reviewed": true
   },
   {
    "src": "assets/imported-exams-20261019/late/2009-VII.jpg",
