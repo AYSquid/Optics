@@ -77,6 +77,13 @@ html[data-theme="lonetrail"] .card{
  box-shadow:var(--rf-lift),6px 6px 0 -1px var(--lt-paper-3),6px 6px 0 0 var(--lt-line);
  clip-path:none}
 html[data-theme="lonetrail"] .card::before{height:4px}
+/* 水印随来源栏的实际高度定位，避免长标题或手机换行后压到来源栏。 */
+html[data-theme="lonetrail"] .card{background-image:none}
+html[data-theme="lonetrail"] .card>.qmeta{position:relative}
+html[data-theme="lonetrail"] .card>.qmeta::after{
+ content:"";position:absolute;top:calc(100% + 26px);right:-10px;
+ width:155px;aspect-ratio:886/411;background:url("assets/rhine-life-watermark.svg") center/contain no-repeat;
+ pointer-events:none;z-index:-1}
 html[data-theme="lonetrail"] .qmeta{
  background:linear-gradient(90deg,var(--lt-archive),var(--lt-paper-2));
  box-shadow:inset 4px 0 var(--lt-ink),inset 8px 0 var(--rl-green);letter-spacing:.02em}
@@ -98,13 +105,25 @@ html[data-theme="lonetrail"] .figures .figure{background:var(--rl-white);box-sha
 html[data-theme="lonetrail"] .figures .figure:hover{box-shadow:var(--rf-lift-hover);transform:translateY(-2px)}
 
 /* ---------- 2.7 答案 / 解析 / 知识点 ---------- */
-html[data-theme="lonetrail"] .region{box-shadow:var(--rf-lift);background:var(--rl-white)}
+/* 轮廓与标题共用切角，描边和阴影单独绘制，不裁切正文或焦点。 */
+html[data-theme="lonetrail"] .region{
+ --rf-region-cut:12px;--rf-region-accent:var(--lt-line);
+ position:relative;isolation:isolate;border:0;padding:1px 1px 3px 3px;
+ background:none;box-shadow:none;filter:drop-shadow(0 4px 7px #302D271A)}
+html[data-theme="lonetrail"] .region::before{
+ content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;
+ background:linear-gradient(90deg,var(--rf-region-accent) 0 3px,var(--lt-line) 3px);
+ clip-path:polygon(0 0,calc(100% - var(--rf-region-cut)) 0,100% var(--rf-region-cut),100% 100%,0 100%)}
+html[data-theme="lonetrail"] .region::after{
+ content:"";position:absolute;inset:1px 1px 1px 3px;z-index:-1;pointer-events:none;
+ background:var(--lt-rail) left bottom/100% 3px no-repeat,var(--rl-white);
+ clip-path:polygon(0 0,calc(100% - var(--rf-region-cut) + .586px) 0,100% calc(var(--rf-region-cut) - .586px),100% 100%,0 100%)}
 html[data-theme="lonetrail"] .region-title{
  background:linear-gradient(90deg,var(--lt-ink),var(--lt-ink-3))!important;
- clip-path:polygon(0 0,calc(100% - var(--rf-cut)) 0,100% var(--rf-cut),100% 100%,0 100%);letter-spacing:.08em}
+ clip-path:polygon(0 0,calc(100% - var(--rf-region-cut) + .586px) 0,100% calc(var(--rf-region-cut) - .586px),100% 100%,0 100%);letter-spacing:.08em}
 html[data-theme="lonetrail"] .region-answer .region-title::before{color:#B9D6CC}
-html[data-theme="lonetrail"] .region-answer{border-left:3px solid var(--rl-green)}
-html[data-theme="lonetrail"] .region-analysis{border-left:3px solid var(--lt-orange)}
+html[data-theme="lonetrail"] .region-answer{--rf-region-accent:var(--rl-green)}
+html[data-theme="lonetrail"] .region-analysis{--rf-region-accent:var(--lt-orange)}
 html[data-theme="lonetrail"] .kp{background:linear-gradient(135deg,var(--lt-archive),var(--lt-paper-2));border-left-color:var(--rl-green)}
 html[data-theme="lonetrail"] .kp-title::before{content:"◆ ";color:var(--rl-green-deep);font-size:.8em}
 html[data-theme="lonetrail"] .kp-label{transition:background-color .15s,color .15s}
@@ -183,7 +202,7 @@ html[data-theme="lonetrail"] .dashboard-activity-head h2{font-family:var(--lt-ti
 html[data-theme="lonetrail"] .dashboard-continue h2::after{content:"PIONEER PROJECT";display:block;margin-top:4px;font:italic 8px/1 var(--lt-mono);letter-spacing:.14em;color:var(--lt-muted);opacity:.75}
 html[data-theme="lonetrail"] .dashboard-continue::after{content:"LONE TRAIL / TERMINAL"}
 /* 卡片底部三色轨（参考图卡片下沿的红/黄/青条） */
-html[data-theme="lonetrail"] :is(.dashboard-stats,.year-card,.region){background-image:var(--lt-rail);background-size:100% 3px;background-position:left bottom;background-repeat:no-repeat}
+html[data-theme="lonetrail"] :is(.dashboard-stats,.year-card){background-image:var(--lt-rail);background-size:100% 3px;background-position:left bottom;background-repeat:no-repeat}
 /* 主按钮：亮橙；关键 CTA（继续学习）用参考图 "回顾焦点" 红块 + 双箭头 */
 html[data-theme="lonetrail"] .actionbar #btn-answer[aria-expanded="false"]{background:var(--rf-action);color:#fff;border-color:var(--rf-action)}
 html[data-theme="lonetrail"] .dashboard-resume{background:linear-gradient(160deg,#D8323A,var(--lt-cta));color:#fff;letter-spacing:.06em;box-shadow:0 6px 16px -8px #C8242BAA}
@@ -363,6 +382,7 @@ html[data-theme="lonetrail"] :is(.study-search,.notes-textarea):focus-visible{ou
  html[data-theme="lonetrail"] .scroller::after{right:0;width:min(340px,90vw)}
 }
 @media(max-width:600px){
+ html[data-theme="lonetrail"] .card>.qmeta::after{width:85px;right:-2px;top:calc(100% + 22px)}
  html[data-theme="lonetrail"] .dashboard-resume:hover{transform:none}
  html[data-theme="lonetrail"] .dashboard-continue{padding:22px 18px}
  html[data-theme="lonetrail"] .dashboard-continue::after{display:none}
