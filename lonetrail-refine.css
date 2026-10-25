@@ -16,6 +16,7 @@ html[data-theme="lonetrail"]{
  --rf-action:#B94720;       /* 白字按钮的可读性；亮橙用于线条和图标 */
  --rf-cut:12px;              /* 切角尺寸 */
  --rf-cut-sm:7px;
+ --rf-edge-cut:7px;
  --rf-lift:0 1px 0 #6E624B14,0 6px 18px -8px #302D2740,0 18px 40px -24px #302D2733;
  --rf-lift-hover:0 1px 0 #6E624B1A,0 10px 26px -10px #302D2755,0 26px 56px -28px #302D2744;
  --rf-ease:cubic-bezier(.2,.7,.2,1);
@@ -93,6 +94,18 @@ html[data-theme="lonetrail"] .options .option{
  position:relative;background:var(--rl-white);
  clip-path:polygon(0 0,calc(100% - var(--rf-cut-sm)) 0,100% var(--rf-cut-sm),100% 100%,0 100%);
  transition:transform .18s var(--rf-ease),background-color .15s,border-color .15s,box-shadow .18s var(--rf-ease)}
+/* clip-path 只裁切矩形边框，不会自动描斜边。所有细边切角控件补画斜边，
+   直接继承当前 border-top-color，确保悬停、选中及判题状态保持同色。 */
+html[data-theme="lonetrail"] :is(.options .option,.question-meter,.sidebar .theme-menu summary,.sidebar .cloud-entry,.year-card,.dashboard-shortcuts button,.study-button:not(.dashboard-resume),.actionbar-left .btn,.actionbar .status-buttons .btn){position:relative}
+html[data-theme="lonetrail"] :is(.dashboard-shortcuts button,.study-button:not(.dashboard-resume),.actionbar-left .btn,.actionbar .status-buttons .btn){--rf-edge-cut:6px}
+html[data-theme="lonetrail"] .year-card{--rf-edge-cut:18px}
+html[data-theme="lonetrail"] :is(.options .option,.question-meter,.sidebar .theme-menu summary,.sidebar .cloud-entry,.year-card,.dashboard-shortcuts button,.study-button:not(.dashboard-resume):not([data-status="shaky"]),.actionbar-left .btn)::before,
+html[data-theme="lonetrail"] .actionbar .status-buttons .btn::after,
+html[data-theme="lonetrail"] .study-button[data-status="shaky"]::after{
+ content:"";display:block;position:absolute;top:-.293px;left:calc(100% - var(--rf-edge-cut) + 1px);
+ width:calc(var(--rf-edge-cut) * 1.414214);height:0;margin:0;padding:0;
+ border:0;border-top:1px solid;border-top-color:inherit;border-radius:0;
+ background:none;box-shadow:none;transform-origin:0 0;transform:rotate(45deg);pointer-events:none}
 html[data-theme="lonetrail"] .option:not(:disabled):hover{box-shadow:inset 3px 0 var(--lt-hot);border-color:var(--lt-orange)}
 html[data-theme="lonetrail"] .option-key{
  clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
@@ -125,6 +138,10 @@ html[data-theme="lonetrail"] .region-answer .region-title::before{color:#B9D6CC}
 html[data-theme="lonetrail"] .region-answer{--rf-region-accent:var(--rl-green)}
 html[data-theme="lonetrail"] .region-analysis{--rf-region-accent:var(--lt-orange)}
 html[data-theme="lonetrail"] .kp{background:linear-gradient(135deg,var(--lt-archive),var(--lt-paper-2));border-left-color:var(--rl-green)}
+html[data-theme="lonetrail"] .kp{position:relative}
+html[data-theme="lonetrail"] .kp::before{
+ content:"";position:absolute;top:-.293px;left:7px;width:14.14214px;height:0;
+ border-top:1px solid;border-top-color:inherit;transform-origin:0 0;transform:rotate(135deg);pointer-events:none}
 html[data-theme="lonetrail"] .kp-title::before{content:"◆ ";color:var(--rl-green-deep);font-size:.8em}
 html[data-theme="lonetrail"] .kp-label{transition:background-color .15s,color .15s}
 html[data-theme="lonetrail"] .kp-label:hover{background:var(--lt-ink);color:var(--lt-paper)}
