@@ -1,0 +1,387 @@
+/* =====================================================================
+   LONE TRAIL — REFINE LAYER
+   视觉增强层，最后加载。仅作用于孤星主题 (data-theme="lonetrail")。
+   删除 index.html 中本文件的 <link> 即可完全回退。详见 REDESIGN_PLAN.md
+   ===================================================================== */
+
+/* ---------- 2.3 变量 / 全局 ---------- */
+html[data-theme="lonetrail"]{
+ /* 孤星参考图配色：米白卡 + 亮橙图标 + 红/黄/青三色轨 + 深灰面板。
+    变量名沿用 --rl-*（历史原因），实际已换为孤星青绿，不再是莱茵绿。 */
+ --rl-green:#6FA595;--rl-green-deep:#3F7466;--rl-green-glow:#8CB8A940;
+ --rl-white:#FBF8F1;
+ --lt-hot:#E8642C;          /* 参考图图标橙 */
+ --rf-sidebar-accent:#A65F3C; /* 侧栏采用较暗的暖铜色 */
+ --lt-cta:#C8242B;          /* 继续学习的红色主按钮 */
+ --rf-action:#B94720;       /* 白字按钮的可读性；亮橙用于线条和图标 */
+ --rf-cut:12px;              /* 切角尺寸 */
+ --rf-cut-sm:7px;
+ --rf-lift:0 1px 0 #6E624B14,0 6px 18px -8px #302D2740,0 18px 40px -24px #302D2733;
+ --rf-lift-hover:0 1px 0 #6E624B1A,0 10px 26px -10px #302D2755,0 26px 56px -28px #302D2744;
+ --rf-ease:cubic-bezier(.2,.7,.2,1);
+}
+html[data-theme="lonetrail"] body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+html[data-theme="lonetrail"] ::selection{background:var(--lt-amber);color:var(--lt-ink)}
+html[data-theme="lonetrail"] .scroller{scrollbar-width:thin;scrollbar-color:#AA9270 transparent}
+html[data-theme="lonetrail"] .scroller::-webkit-scrollbar{width:8px}
+html[data-theme="lonetrail"] .scroller::-webkit-scrollbar-thumb{background:linear-gradient(var(--lt-line),#AA9270);border:2px solid transparent;background-clip:padding-box}
+
+/* ---------- 2.4 终端头 ---------- */
+html[data-theme="lonetrail"] .terminal-header{
+ background:
+  repeating-linear-gradient(0deg,#F2E9D805 0 1px,transparent 1px 4px),
+  linear-gradient(90deg,#F2E9D80A 1px,transparent 1px) 0 0/48px 100%,
+  radial-gradient(ellipse 60% 140% at 18% 0%,#C978431C,transparent 60%),
+  radial-gradient(ellipse 40% 120% at 96% 100%,#8CB8A914,transparent 60%),
+  linear-gradient(90deg,#24221E,var(--lt-ink-3) 55%,#24221E);
+ box-shadow:0 6px 18px -10px #000A;z-index:3}
+html[data-theme="lonetrail"] .crumb{font-size:23px;letter-spacing:.05em;text-shadow:none}
+html[data-theme="lonetrail"] .page-eyebrow::before{background:var(--rl-green);box-shadow:0 0 6px var(--rl-green)}
+html[data-theme="lonetrail"] .question-meter{
+ clip-path:polygon(0 0,calc(100% - var(--rf-cut-sm)) 0,100% var(--rf-cut-sm),100% 100%,0 100%);
+ background:linear-gradient(135deg,#3A362FCC,#2B2924CC);border-left-color:var(--rl-green)}
+html[data-theme="lonetrail"] .question-meter-label{color:#B9D6CC}
+html[data-theme="lonetrail"] .question-meter-current{text-shadow:0 0 10px #F2E9D855}
+
+/* ---------- 2.5 侧栏 ---------- */
+html[data-theme="lonetrail"] #sidebar .sidebar-scroll{
+ background:linear-gradient(180deg,var(--lt-paper),var(--lt-paper) 60%,#EDE2CC);
+ box-shadow:inset -1px 0 0 var(--lt-line),inset -8px 0 14px -12px #302D2740}
+html[data-theme="lonetrail"] .module-nav{box-shadow:var(--rf-lift)}
+html[data-theme="lonetrail"] .module-nav button{transition:background-color .18s var(--rf-ease),color .18s}
+html[data-theme="lonetrail"] .module-nav button:not([aria-pressed="true"]):hover{background:var(--lt-archive);color:var(--lt-rust)}
+html[data-theme="lonetrail"] .sidebar :is(.theme-menu summary,.cloud-entry){
+ clip-path:polygon(0 0,calc(100% - var(--rf-cut-sm)) 0,100% var(--rf-cut-sm),100% 100%,0 100%);
+ transition:background-color .18s var(--rf-ease),box-shadow .18s var(--rf-ease),transform .18s var(--rf-ease)}
+html[data-theme="lonetrail"] .sidebar :is(.theme-menu summary,.cloud-entry):hover{background:var(--lt-archive);box-shadow:inset 5px 0 var(--lt-hot)}
+html[data-theme="lonetrail"] .study-links button{transition:color .15s,background-color .15s,padding-left .18s var(--rf-ease)}
+html[data-theme="lonetrail"] .study-links button:hover{color:var(--lt-rust);background:var(--lt-archive);box-shadow:inset 2px 0 var(--lt-hot)}
+html[data-theme="lonetrail"] .study-links button>span[aria-hidden]{display:grid;place-items:center;flex:0 0 24px;width:24px;height:24px;font-size:0;color:var(--rf-sidebar-accent)}
+html[data-theme="lonetrail"] .study-links button>span[aria-hidden]::before{content:"";display:block;width:23px;height:23px;background:currentColor;mask:var(--tool-icon) center/contain no-repeat}
+html[data-theme="lonetrail"] #favorites-open{--tool-icon:url("assets/ui/tool-favorite.svg")}
+html[data-theme="lonetrail"] #mastery-open{--tool-icon:url("assets/ui/tool-mastery.svg")}
+html[data-theme="lonetrail"] #knowledge-open{--tool-icon:url("assets/ui/tool-knowledge.svg")}
+html[data-theme="lonetrail"] #retest-open{--tool-icon:url("assets/ui/tool-retest.svg")}
+html[data-theme="lonetrail"] .sidebar .tree-btn{transition:background-color .15s,color .15s,box-shadow .18s var(--rf-ease)}
+html[data-theme="lonetrail"] .sidebar .tree-btn:not(.is-current):hover{box-shadow:inset 2px 0 var(--lt-orange)}
+html[data-theme="lonetrail"] .sidebar .tree-btn.is-current{
+ background:linear-gradient(90deg,var(--lt-ink-2),var(--lt-ink-3));
+ box-shadow:inset 3px 0 var(--rl-green),0 4px 10px -6px #302D2799}
+html[data-theme="lonetrail"] .tree-btn.is-current::after{color:#B9D6CC;text-shadow:0 0 6px var(--rl-green)}
+html[data-theme="lonetrail"] .filter-btn{transition:all .15s var(--rf-ease)}
+html[data-theme="lonetrail"] .filter-btn[aria-pressed="true"]{box-shadow:inset 0 2px var(--rl-green);color:#D9E8E2}
+
+/* ---------- 2.6 题目卡片 ---------- */
+html[data-theme="lonetrail"] .scroller>.card,
+html[data-theme="lonetrail"] .card{
+ box-shadow:var(--rf-lift),6px 6px 0 -1px var(--lt-paper-3),6px 6px 0 0 var(--lt-line);
+ clip-path:none}
+html[data-theme="lonetrail"] .card::before{height:4px}
+html[data-theme="lonetrail"] .qmeta{
+ background:linear-gradient(90deg,var(--lt-archive),var(--lt-paper-2));
+ box-shadow:inset 4px 0 var(--lt-ink),inset 8px 0 var(--rl-green);letter-spacing:.02em}
+html[data-theme="lonetrail"] .stem{font-size:18.5px;line-height:1.9;letter-spacing:.01em;padding-left:14px;border-left:2px solid var(--lt-line)}
+html[data-theme="lonetrail"] .options{gap:10px}
+html[data-theme="lonetrail"] .options .option{
+ position:relative;background:var(--rl-white);
+ clip-path:polygon(0 0,calc(100% - var(--rf-cut-sm)) 0,100% var(--rf-cut-sm),100% 100%,0 100%);
+ transition:transform .18s var(--rf-ease),background-color .15s,border-color .15s,box-shadow .18s var(--rf-ease)}
+html[data-theme="lonetrail"] .option:not(:disabled):hover{box-shadow:inset 3px 0 var(--lt-hot);border-color:var(--lt-orange)}
+html[data-theme="lonetrail"] .option-key{
+ clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
+ min-width:30px;transition:background-color .15s}
+html[data-theme="lonetrail"] .option:not(:disabled):not([data-verdict]):hover .option-key{background:var(--lt-rust)}
+html[data-theme="lonetrail"] .option[data-verdict="correct"]{background:#E2ECE2;border-color:var(--rl-green);box-shadow:inset 3px 0 var(--rl-green),0 0 0 3px var(--rl-green-glow)}
+html[data-theme="lonetrail"] .option[data-verdict="correct"] .option-key{background:var(--rl-green-deep)}
+html[data-theme="lonetrail"] .option[data-verdict="correct"]::after{color:var(--rl-green-deep)}
+html[data-theme="lonetrail"] .figures .figure{background:var(--rl-white);box-shadow:var(--rf-lift);transition:box-shadow .2s var(--rf-ease),transform .2s var(--rf-ease)}
+html[data-theme="lonetrail"] .figures .figure:hover{box-shadow:var(--rf-lift-hover);transform:translateY(-2px)}
+
+/* ---------- 2.7 答案 / 解析 / 知识点 ---------- */
+html[data-theme="lonetrail"] .region{box-shadow:var(--rf-lift);background:var(--rl-white)}
+html[data-theme="lonetrail"] .region-title{
+ background:linear-gradient(90deg,var(--lt-ink),var(--lt-ink-3))!important;
+ clip-path:polygon(0 0,calc(100% - var(--rf-cut)) 0,100% var(--rf-cut),100% 100%,0 100%);letter-spacing:.08em}
+html[data-theme="lonetrail"] .region-answer .region-title::before{color:#B9D6CC}
+html[data-theme="lonetrail"] .region-answer{border-left:3px solid var(--rl-green)}
+html[data-theme="lonetrail"] .region-analysis{border-left:3px solid var(--lt-orange)}
+html[data-theme="lonetrail"] .kp{background:linear-gradient(135deg,var(--lt-archive),var(--lt-paper-2));border-left-color:var(--rl-green)}
+html[data-theme="lonetrail"] .kp-title::before{content:"◆ ";color:var(--rl-green-deep);font-size:.8em}
+html[data-theme="lonetrail"] .kp-label{transition:background-color .15s,color .15s}
+html[data-theme="lonetrail"] .kp-label:hover{background:var(--lt-ink);color:var(--lt-paper)}
+
+/* ---------- 2.8 翻页栏 / 操作栏 ---------- */
+html[data-theme="lonetrail"] .question-nav{background:linear-gradient(180deg,var(--lt-paper-2),var(--lt-paper));box-shadow:0 -6px 14px -12px #302D2766}
+html[data-theme="lonetrail"] .pager>.btn{transition:color .15s,background-color .15s}
+html[data-theme="lonetrail"] .actionbar{background:
+  linear-gradient(90deg,#F2E9D808 1px,transparent 1px) 0 0/48px 100%,
+  linear-gradient(180deg,var(--lt-ink-3),#24221E)}
+html[data-theme="lonetrail"] .actionbar .btn{clip-path:polygon(0 0,calc(100% - 6px) 0,100% 6px,100% 100%,0 100%)}
+html[data-theme="lonetrail"] .actionbar #btn-answer{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--lt-orange),#B9683A)}
+html[data-theme="lonetrail"] .actionbar #btn-answer::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,#FFF6 50%,transparent);transform:skewX(-20deg);transition:left .5s var(--rf-ease)}
+html[data-theme="lonetrail"] .actionbar #btn-answer[aria-expanded="false"]:hover::after{left:120%}
+html[data-theme="lonetrail"] .actionbar .btn-ok[aria-pressed="true"]{background:var(--rl-green);border-color:var(--rl-green);color:#10241C;box-shadow:0 0 12px -2px var(--rl-green)}
+html[data-theme="lonetrail"] .actionbar .btn-bad[aria-pressed="true"]{box-shadow:0 0 12px -2px var(--lt-red)}
+
+/* ---------- 2.9 学习首页 ---------- */
+html[data-theme="lonetrail"] .dashboard-heading h1{font-family:var(--lt-title-font);letter-spacing:.08em}
+html[data-theme="lonetrail"] .dashboard-heading h1::before{content:"// ";color:var(--rl-green-deep);font-family:var(--lt-mono)}
+html[data-theme="lonetrail"] .dashboard-continue{
+ background-color:var(--rl-white);box-shadow:var(--rf-lift);
+ clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%)}
+html[data-theme="lonetrail"] .dashboard-continue::after{content:"LONE TRAIL / RESUME";position:absolute;right:28px;top:14px;font:8px/1 var(--lt-mono);letter-spacing:.18em;color:var(--lt-muted);opacity:.7}
+html[data-theme="lonetrail"] .dashboard-resume{background:linear-gradient(135deg,var(--lt-orange),#B9683A);border:0;color:var(--lt-on-orange);clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);transition:filter .15s,transform .18s var(--rf-ease)}
+html[data-theme="lonetrail"] .dashboard-resume:hover{filter:brightness(.94)}
+html[data-theme="lonetrail"] .dashboard-resume-info progress{height:8px;clip-path:polygon(0 0,100% 0,calc(100% - 4px) 100%,0 100%)}
+html[data-theme="lonetrail"] .dashboard-resume-info progress::-webkit-progress-value{background:linear-gradient(90deg,var(--rl-green-deep),var(--rl-green))}
+html[data-theme="lonetrail"] .dashboard-resume-info progress::-moz-progress-bar{background:linear-gradient(90deg,var(--rl-green-deep),var(--rl-green))}
+html[data-theme="lonetrail"] .dashboard-stats{background:var(--rl-white);box-shadow:var(--rf-lift)}
+html[data-theme="lonetrail"] .dashboard-metric{transition:background-color .18s}
+html[data-theme="lonetrail"] .dashboard-metric:hover{background:var(--lt-archive)}
+html[data-theme="lonetrail"] .dashboard-metric::before{content:"";position:absolute;left:0;top:18px;width:3px;height:22px;background:var(--rl-green)}
+html[data-theme="lonetrail"] .dashboard-metric:nth-child(2)::before{background:var(--lt-amber)}
+html[data-theme="lonetrail"] .dashboard-metric:nth-child(3)::before{background:var(--lt-red)}
+html[data-theme="lonetrail"] .dashboard-metric-value strong{font-family:var(--lt-mono);color:var(--lt-ink)}
+html[data-theme="lonetrail"] #study-dashboard [data-level="1"]{background:#D6E6DF;border-color:#BFD6CC}
+html[data-theme="lonetrail"] #study-dashboard [data-level="2"]{background:#A9CBBE;border-color:#8DB8A8}
+html[data-theme="lonetrail"] #study-dashboard [data-level="3"]{background:var(--rl-green);border-color:var(--rl-green-deep)}
+html[data-theme="lonetrail"] #study-dashboard [data-level="4"]{background:var(--rl-green-deep);border-color:#1F5544}
+html[data-theme="lonetrail"] .dashboard-day{border-radius:0;transition:transform .12s}
+html[data-theme="lonetrail"] .dashboard-day:hover{transform:scale(1.35);position:relative;z-index:1}
+html[data-theme="lonetrail"] .dashboard-day.is-today{outline-color:var(--lt-orange)}
+html[data-theme="lonetrail"] .dashboard-shortcuts button{clip-path:polygon(0 0,calc(100% - 6px) 0,100% 6px,100% 100%,0 100%);transition:transform .18s var(--rf-ease),background-color .15s}
+html[data-theme="lonetrail"] .dashboard-shortcuts button:hover{transform:translateY(-2px)}
+
+/* ---------- 2.10 历年真题 / 弹窗 / 空状态 / 启动 ---------- */
+html[data-theme="lonetrail"] .year-card{background:var(--rl-white);box-shadow:var(--rf-lift);clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,0 100%);transition:transform .22s var(--rf-ease),box-shadow .22s var(--rf-ease),border-color .15s}
+html[data-theme="lonetrail"] .year-card:hover{transform:translateY(-4px);box-shadow:var(--rf-lift-hover)}
+html[data-theme="lonetrail"] .year-card h2{background:linear-gradient(90deg,var(--lt-ink),var(--lt-rust));-webkit-background-clip:text;background-clip:text;color:transparent}
+html[data-theme="lonetrail"] .year-card button{transition:background-color .15s}
+html[data-theme="lonetrail"] .year-card button:hover{background:var(--rl-green-deep);border-color:var(--rl-green-deep)}
+html[data-theme="lonetrail"] :is(.cloud-dialog,#question-notes-dialog .notes-panel){box-shadow:0 30px 80px -30px #000C}
+html[data-theme="lonetrail"] :is(.cloud-dialog,.question-notes-dialog)::backdrop{background:radial-gradient(circle at 50% 40%,#302D2766,#1A1916B8)}
+html[data-theme="lonetrail"] .empty{background:var(--rl-white);box-shadow:var(--rf-lift)}
+html[data-theme="lonetrail"] .boot{background:radial-gradient(ellipse at 50% 40%,var(--lt-ink-3),#1A1916)}
+html[data-theme="lonetrail"] .boot-title{letter-spacing:.2em}
+
+/* ---------- 2.11 响应式 ---------- */
+@media(max-width:560px){
+ html[data-theme="lonetrail"] .card{box-shadow:var(--rf-lift)}
+ html[data-theme="lonetrail"] .stem{padding-left:10px;font-size:17px}
+ html[data-theme="lonetrail"] .option:hover{transform:none}
+ html[data-theme="lonetrail"] .dashboard-resume:hover{transform:none}
+ html[data-theme="lonetrail"] .dashboard-continue::after{display:none}
+}
+@media(hover:none){
+ html[data-theme="lonetrail"] :is(.option,.year-card,.dashboard-day,.figures .figure,.sidebar .cloud-entry):hover{transform:none}
+}
+
+/* ---------- 2.13 孤星参考图细节（assets/reference/） ---------- */
+/* 模块标题：粗体英文大字 + 中文小字，同终端主页 "Squads / 编队" */
+html[data-theme="lonetrail"] .dashboard-continue h2,
+html[data-theme="lonetrail"] .dashboard-activity-head h2{font-family:var(--lt-title-font);font-weight:800;letter-spacing:.01em;color:var(--lt-ink)}
+html[data-theme="lonetrail"] .dashboard-continue h2::after{content:"PIONEER PROJECT";display:block;margin-top:4px;font:italic 8px/1 var(--lt-mono);letter-spacing:.14em;color:var(--lt-muted);opacity:.75}
+html[data-theme="lonetrail"] .dashboard-continue::after{content:"LONE TRAIL / TERMINAL"}
+/* 卡片底部三色轨（参考图卡片下沿的红/黄/青条） */
+html[data-theme="lonetrail"] :is(.dashboard-stats,.year-card,.region){background-image:var(--lt-rail);background-size:100% 3px;background-position:left bottom;background-repeat:no-repeat}
+/* 主按钮：亮橙；关键 CTA（继续学习）用参考图 "回顾焦点" 红块 + 双箭头 */
+html[data-theme="lonetrail"] .actionbar #btn-answer[aria-expanded="false"]{background:var(--rf-action);color:#fff;border-color:var(--rf-action)}
+html[data-theme="lonetrail"] .dashboard-resume{background:linear-gradient(160deg,#D8323A,var(--lt-cta));color:#fff;letter-spacing:.06em;box-shadow:0 6px 16px -8px #C8242BAA}
+html[data-theme="lonetrail"] .dashboard-resume::after{content:""}
+/* 橙色图标点缀：侧栏工具图标、知识点菱形 */
+html[data-theme="lonetrail"] .kp-title::before{color:var(--lt-hot)}
+/* 等级圆环式计数器：题号计数左侧亮橙弧 */
+html[data-theme="lonetrail"] .question-meter{border-left-color:var(--lt-hot)}
+html[data-theme="lonetrail"] .question-meter-label{color:var(--lt-orange-text)}
+html[data-theme="lonetrail"] .page-eyebrow::before{background:var(--lt-hot);box-shadow:0 0 6px var(--lt-hot)}
+
+/* ---------- 2.14 学习工具 / 英语 / 电子笔记 / 题目笔记（规范 §7.11） ---------- */
+/* 通用面板：白底 + 叠纸阴影 + 右上切角 */
+html[data-theme="lonetrail"] :is(.study-panel,.retest-card,.study-status-tile,.eng-question-panel,.eng-passage,.eng-overview){
+ background:var(--rl-white);border:1px solid var(--lt-line);border-radius:0;box-shadow:var(--rf-lift);
+ clip-path:none}
+html[data-theme="lonetrail"] :is(.study-panel,.retest-card,.eng-question-panel,.eng-overview){background-image:var(--lt-rail);background-size:100% 3px;background-position:left bottom;background-repeat:no-repeat}
+/* 页面标题：双语档案式 */
+html[data-theme="lonetrail"] :is(.study-page-head,.electronic-reader-head) h1,
+html[data-theme="lonetrail"] .study-page-head h2{font-family:var(--lt-title-font);font-weight:800;letter-spacing:.04em;color:var(--lt-ink)}
+html[data-theme="lonetrail"] .study-page-head h1::before,html[data-theme="lonetrail"] .study-page-head h2::before{content:"// ";color:var(--lt-hot);font-family:var(--lt-mono)}
+html[data-theme="lonetrail"] .study-page-head{border-bottom:1px solid var(--lt-line);background:var(--lt-rail) left bottom/72px 3px no-repeat;padding-bottom:12px}
+/* 小标签 / 按钮 */
+html[data-theme="lonetrail"] :is(.study-chip,.eng-tabs button,.eng-mode-buttons button){border-radius:0;border:1px solid var(--lt-line);background:var(--lt-paper-2);color:var(--lt-ink);transition:background-color .15s,color .15s,border-color .15s}
+html[data-theme="lonetrail"] :is(.study-chip,.eng-tabs button,.eng-mode-buttons button):hover{border-color:var(--lt-orange);color:var(--lt-rust)}
+html[data-theme="lonetrail"] :is(.study-chip[aria-pressed="true"],.eng-tabs button[aria-selected="true"],.eng-tabs button[aria-pressed="true"],.eng-mode-buttons button[aria-pressed="true"]){background:var(--lt-ink);color:var(--lt-paper);border-color:var(--lt-ink);box-shadow:inset 0 -2px var(--lt-hot)}
+html[data-theme="lonetrail"] .study-button{border-radius:0;clip-path:polygon(0 0,calc(100% - 6px) 0,100% 6px,100% 100%,0 100%);transition:filter .15s,transform .18s var(--rf-ease)}
+html[data-theme="lonetrail"] .study-button:not(:disabled):hover{border-color:var(--lt-rust)}
+html[data-theme="lonetrail"] :is(.study-search,.study-form-row input,.study-form-row select,.notes-textarea){border-radius:0;border:1px solid var(--lt-line);background:var(--rl-white);color:var(--lt-ink)}
+html[data-theme="lonetrail"] :is(.study-search,.study-form-row input,.study-form-row select,.notes-textarea):focus{border-color:var(--lt-hot);outline:none;box-shadow:0 0 0 3px #E8642C22}
+/* 选项（复测 / 英语）沿用题卡选项语言 */
+html[data-theme="lonetrail"] :is(.retest-options .option,.eng-option){border-radius:0;background:var(--rl-white);border:1px solid var(--lt-line);transition:transform .18s var(--rf-ease),border-color .15s,box-shadow .18s}
+html[data-theme="lonetrail"] :is(.retest-options .option,.eng-option):hover{transform:translateX(3px);border-color:var(--lt-orange);box-shadow:inset 3px 0 var(--lt-orange)}
+html[data-theme="lonetrail"] :is(.study-page,.retest-card) .option-key{clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);border-radius:0}
+/* 掌握地图格子：状态色 */
+html[data-theme="lonetrail"] .mastery-cell{border-radius:0;transition:transform .12s}
+html[data-theme="lonetrail"] .mastery-cell:hover{transform:scale(1.12);position:relative;z-index:1;outline:1px solid var(--lt-hot)}
+/* 知识图谱主题条目 */
+html[data-theme="lonetrail"] .knowledge-topic{border-radius:0;border:1px solid var(--lt-line);background:var(--lt-paper-2);transition:box-shadow .15s,background-color .15s}
+html[data-theme="lonetrail"] .knowledge-topic:hover{background:var(--lt-archive);box-shadow:inset 3px 0 var(--lt-hot)}
+/* 英语：工具栏 / 计时器 / 文章 */
+html[data-theme="lonetrail"] .eng-toolbar{background:linear-gradient(90deg,var(--lt-archive),var(--lt-paper-2));border:1px solid var(--lt-line);border-radius:0}
+html[data-theme="lonetrail"] .exam-timer{font-family:var(--lt-mono);border-radius:0;border-left:3px solid var(--lt-hot);letter-spacing:.06em}
+html[data-theme="lonetrail"] .eng-passage{line-height:1.95}
+html[data-theme="lonetrail"] .exam-subject-menu{border-radius:0;box-shadow:0 18px 40px -18px #000A;border:1px solid var(--lt-line)}
+/* 电子笔记 PDF 阅读器 */
+html[data-theme="lonetrail"] .electronic-reader-head{background:linear-gradient(90deg,var(--lt-ink),var(--lt-ink-3));color:var(--lt-paper);position:relative}
+html[data-theme="lonetrail"] .electronic-reader-head h2{color:var(--lt-paper)}
+html[data-theme="lonetrail"] .electronic-reader-head::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--lt-rail)}
+html[data-theme="lonetrail"] .electronic-reader-toolbar{background:var(--lt-paper);border-bottom:1px solid var(--lt-line)}
+html[data-theme="lonetrail"] .electronic-reader-viewport{background:repeating-linear-gradient(45deg,var(--lt-paper-3) 0 10px,#E3D6BB 10px 11px)}
+html[data-theme="lonetrail"] .electronic-reader-sheet{box-shadow:var(--rf-lift)}
+/* 题目笔记列表 */
+html[data-theme="lonetrail"] .notes-list-item{transition:box-shadow .15s,background-color .15s}
+html[data-theme="lonetrail"] .notes-list-item:hover{background:var(--lt-archive);box-shadow:inset 3px 0 var(--lt-hot)}
+html[data-theme="lonetrail"] .notes-meta{font-family:var(--lt-mono);font-size:10px;letter-spacing:.06em;color:var(--lt-muted)}
+html[data-theme="lonetrail"] .notes-empty{color:var(--lt-muted)}
+html[data-theme="lonetrail"] .notes-toast{border-radius:0;background:var(--lt-ink);color:var(--lt-paper);border-left:3px solid var(--lt-hot)}
+@media(max-width:560px){
+ html[data-theme="lonetrail"] :is(.retest-options .option,.eng-option):hover{transform:none}
+}
+
+
+/* ---------- 2.15 实际页面校验后的组件与边界 ---------- */
+/* 颜色只在孤星作用域内传递；学习工具不再回落到默认亮绿。 */
+html[data-theme="lonetrail"] #study-hub{
+ --study-green:var(--rl-green-deep);--study-red:var(--lt-red);--study-orange:var(--lt-rust);
+}
+html[data-theme="lonetrail"] :is(.card,.study-panel,.year-card,.empty){background-color:var(--rl-white)}
+html[data-theme="lonetrail"] .question-meter-current{text-shadow:none}
+html[data-theme="lonetrail"] .sidebar .tree-chapter-row.is-current .tree-expand{background:var(--lt-ink-2);box-shadow:inset 3px 0 var(--rl-green)}
+html[data-theme="lonetrail"] .sidebar .tree-chapter-row.is-current .tree-chap-btn{box-shadow:none}
+html[data-theme="lonetrail"] .sidebar .tree-chapter-row>.tree-chap-btn{padding-left:11px}
+html[data-theme="lonetrail"] #cloud-short[data-sync-state="synced"]{color:var(--rl-green-deep)}
+html[data-theme="lonetrail"] #cloud-short:is([data-sync-state="error"],[data-sync-state="local"],[data-sync-state="offline"]){color:var(--lt-red)}
+html[data-theme="lonetrail"] .study-links button[aria-current="page"]{background:var(--lt-ink);color:var(--lt-paper);box-shadow:inset 3px 0 var(--rl-green)}
+html[data-theme="lonetrail"] .study-links button[aria-current="page"]>span[aria-hidden]{color:var(--lt-amber)}
+
+/* 下拉菜单仍在文档流里，与选择框同宽。 */
+html[data-theme="lonetrail"] .bank-source-picker>summary{border-left:3px solid var(--rf-sidebar-accent);padding-left:10px}
+html[data-theme="lonetrail"] .bank-source-picker[open]>summary{background:var(--lt-archive);border-color:var(--lt-line);box-shadow:none}
+html[data-theme="lonetrail"] .bank-source-choice[aria-pressed="true"]{background:var(--lt-ink);color:var(--lt-paper);box-shadow:inset 3px 0 var(--rl-green)}
+html[data-theme="lonetrail"] .bank-source-choice[aria-pressed="true"] .bank-source-total{color:var(--lt-paper)}
+
+/* 解析和选项保留状态语义；悬停不得把已判题结果覆盖成普通白底。 */
+html[data-theme="lonetrail"] :is(.option,.eng-option)[data-verdict="correct"]{background:var(--lt-green-paper);border-color:var(--rl-green-deep);box-shadow:inset 3px 0 var(--rl-green-deep)}
+html[data-theme="lonetrail"] :is(.option,.eng-option)[data-verdict="wrong"]{background:var(--lt-red-paper);border-color:var(--lt-red);box-shadow:inset 3px 0 var(--lt-red)}
+html[data-theme="lonetrail"] .option[data-verdict="correct"] .option-key{background:var(--rl-green-deep);color:var(--lt-paper-2)}
+html[data-theme="lonetrail"] .option[data-verdict="wrong"] .option-key{background:var(--lt-red);color:var(--lt-paper-2)}
+html[data-theme="lonetrail"] .options .option[aria-pressed="true"]:not([data-verdict]){background:var(--lt-archive);border-color:var(--lt-orange);box-shadow:inset 3px 0 var(--lt-orange)}
+html[data-theme="lonetrail"] .option-key{display:grid;place-items:center;flex:0 0 30px;height:26px;line-height:1;padding:0}
+html[data-theme="lonetrail"] .region-body{font-size:16px;line-height:1.9}
+html[data-theme="lonetrail"] .kp-label:hover{color:var(--lt-ink)}
+html[data-theme="lonetrail"] .actionbar #btn-answer[aria-expanded="true"]{background:var(--lt-ink-2);color:var(--lt-orange-text);border-color:var(--lt-orange);box-shadow:inset 0 2px var(--lt-orange)}
+html[data-theme="lonetrail"] .actionbar #btn-answer[aria-expanded="true"]::after{display:none}
+html[data-theme="lonetrail"] .actionbar .btn-mid[aria-pressed="true"]{background:var(--lt-ink-2);color:var(--lt-amber);border-color:var(--lt-amber);box-shadow:inset 0 2px var(--lt-amber)}
+html[data-theme="lonetrail"] .actionbar .btn-ok[aria-pressed="true"]{color:var(--lt-ink-2);box-shadow:inset 0 2px var(--lt-teal)}
+html[data-theme="lonetrail"] .actionbar .btn-bad[aria-pressed="true"]{background:var(--lt-red);color:var(--lt-paper-2);box-shadow:inset 0 2px #DB7E75}
+
+/* 主次分明：继续练习保留红色；其它实心按钮用暖橙深色，保证白字可读。 */
+html[data-theme="lonetrail"] .dashboard-resume{background:var(--lt-cta);color:var(--lt-paper-2);box-shadow:none}
+html[data-theme="lonetrail"] .dashboard-resume:hover{background:#AC2027;color:var(--lt-paper-2)}
+html[data-theme="lonetrail"] .dashboard-continue{clip-path:none;padding-top:24px;background-position:left top;background-color:var(--rl-white)}
+html[data-theme="lonetrail"] .dashboard-continue::after{right:24px}
+html[data-theme="lonetrail"] .dashboard-continue::before{clip-path:polygon(0 0,calc(100% - 12px) 0,100% 100%,0 100%)}
+html[data-theme="lonetrail"] .dashboard-continue h2::after{content:none}
+html[data-theme="lonetrail"] .dashboard-progress-row[data-kind="bank"] progress::-webkit-progress-value{background:linear-gradient(90deg,var(--rl-green-deep),var(--rl-green))}
+html[data-theme="lonetrail"] .dashboard-progress-row[data-kind="bank"] progress::-moz-progress-bar{background:linear-gradient(90deg,var(--rl-green-deep),var(--rl-green))}
+html[data-theme="lonetrail"] .dashboard-stats{background-image:var(--lt-rail)}
+html[data-theme="lonetrail"] .dashboard-metric{padding-left:24px}
+html[data-theme="lonetrail"] .dashboard-activity.study-panel{background-image:none}
+html[data-theme="lonetrail"] .dashboard-activity::before{background:var(--lt-line);height:1px}
+html[data-theme="lonetrail"] .dashboard-legend i{border-radius:0}
+html[data-theme="lonetrail"] .dashboard-day:hover{transform:none;border-color:var(--lt-rust);outline:1px solid var(--lt-rust);outline-offset:1px}
+html[data-theme="lonetrail"] .dashboard-date{background:var(--lt-paper-2);border-color:var(--lt-line)}
+html[data-theme="lonetrail"] .year-card h2{background:none;color:var(--lt-ink)}
+html[data-theme="lonetrail"] .year-card button:hover{color:var(--lt-paper-2)}
+
+/* 四个工具：保留表格、图谱及题号格的操作空间，不对滚动容器做切角裁切。 */
+html[data-theme="lonetrail"] .study-panel{clip-path:none;background-image:none}
+html[data-theme="lonetrail"] .study-status-tile{box-shadow:none;clip-path:none}
+html[data-theme="lonetrail"] .study-status-tile[aria-pressed="true"]{background:var(--lt-archive);border-color:var(--state-color);box-shadow:inset 3px 0 var(--state-color)}
+html[data-theme="lonetrail"] .study-chip[aria-pressed="true"] small{color:var(--lt-paper)}
+html[data-theme="lonetrail"] .study-primary:not(.dashboard-resume){background:var(--rf-action);border-color:var(--rf-action);color:#fff}
+html[data-theme="lonetrail"] .study-primary:not(.dashboard-resume):not(:disabled):hover{background:#A53D1C;color:#fff}
+html[data-theme="lonetrail"] .knowledge-chapter{border:0;border-left:2px solid transparent;background:transparent;box-shadow:none;clip-path:none}
+html[data-theme="lonetrail"] .knowledge-chapter[aria-current="page"]{border-left-color:var(--lt-hot);background:var(--lt-archive);color:var(--lt-ink)}
+html[data-theme="lonetrail"] .mastery-cell:hover{transform:none}
+html[data-theme="lonetrail"] :is(.flow-question-row,.flow-note-row):hover{background:var(--lt-paper-2)}
+html[data-theme="lonetrail"] :is(.study-dot,.study-status-tile[data-status="shaky"] .study-dot,.study-assessment button[data-status="shaky"]::before){border-radius:0}
+
+/* 英语阅读的原字体与字号保留；按钮的选中、正确、错误态分别处理。 */
+html[data-theme="lonetrail"] :is(.eng-passage,.eng-question-panel,.eng-overview){clip-path:none;box-shadow:none;background-image:none}
+html[data-theme="lonetrail"] .eng-passage{border-top:0;border-bottom:0;border-left:0}
+html[data-theme="lonetrail"] .eng-question-panel{border:0}
+html[data-theme="lonetrail"] .eng-option{clip-path:none}
+html[data-theme="lonetrail"] .eng-option:hover{transform:none}
+html[data-theme="lonetrail"] .eng-option[aria-pressed="true"]:not([data-verdict]){background:var(--lt-archive);border-color:var(--lt-orange);box-shadow:inset 3px 0 var(--lt-orange)}
+html[data-theme="lonetrail"] :is(.eng-tabs button,.eng-mode-buttons button)[aria-pressed="true"]{background:var(--lt-ink);color:var(--lt-paper)}
+html[data-theme="lonetrail"] .eng-submit{background:var(--rf-action);color:#fff}
+
+/* 阅读器标题实际使用 h2，保持暗面板上的文字和控件亮度。 */
+html[data-theme="lonetrail"] .electronic-reader-head h2{color:var(--lt-paper);font-family:var(--lt-title-font)}
+html[data-theme="lonetrail"] .electronic-reader-head .electronic-reader-detail{color:var(--lt-line)}
+html[data-theme="lonetrail"] .electronic-reader-head .btn{background:transparent;color:var(--lt-paper);border-color:var(--lt-console-rule)}
+html[data-theme="lonetrail"] .electronic-reader-head .btn:hover{background:var(--lt-ink-3);color:#fff;border-color:var(--lt-orange)}
+html[data-theme="lonetrail"] .electronic-reader-head::before{display:none}
+html[data-theme="lonetrail"] .electronic-reader-viewport{background:var(--lt-paper-3)}
+
+/* 笔记页、笔记编辑器和云端弹窗共用纸面 / 控制台层级。 */
+html[data-theme="lonetrail"] #notes-library-page{box-shadow:var(--rf-lift)}
+html[data-theme="lonetrail"] #notes-library-page>.notes-panel>.notes-head{background:var(--lt-ink);color:var(--lt-paper);border-top:3px solid var(--lt-orange)}
+html[data-theme="lonetrail"] #notes-library-page .notes-head h2{color:var(--lt-paper)}
+html[data-theme="lonetrail"] #notes-library-page .notes-head .notes-close{background:transparent;color:var(--lt-paper);border-color:var(--lt-console-rule)}
+html[data-theme="lonetrail"] :is(.cloud-dialog,.question-notes-dialog,.study-confirm,.eng-context){border-radius:0;box-shadow:0 30px 80px -30px #000C}
+html[data-theme="lonetrail"] .cloud-dialog::backdrop,
+html[data-theme="lonetrail"] .question-notes-dialog::backdrop,
+html[data-theme="lonetrail"] .study-confirm::backdrop,
+html[data-theme="lonetrail"] .eng-context::backdrop{background:radial-gradient(circle at 50% 40%,#302D2766,#1A1916B8);backdrop-filter:none}
+html[data-theme="lonetrail"] :is(.cloud-dialog .cloud-primary,.notes-actions .btn-primary){background:var(--rf-action);color:#fff}
+html[data-theme="lonetrail"] .notes-list-item{border-radius:0;background:var(--lt-paper-2)}
+html[data-theme="lonetrail"] :is(.note-editor-toolbar,.notes-original,.notes-content){border-radius:0;background:var(--lt-paper-2);border-color:var(--lt-line)}
+
+/* 焦点在切角内部绘制，不被 clip-path 裁掉。伪元素不接收指针事件。 */
+html[data-theme="lonetrail"] :is(button,summary,a,input,textarea,select,[tabindex]):focus-visible{outline:2px solid var(--lt-hot);outline-offset:-3px}
+html[data-theme="lonetrail"] :is(.dashboard-day,.mastery-cell):focus-visible{outline-color:var(--lt-ink);outline-offset:1px}
+html[data-theme="lonetrail"] :is(.dashboard-continue,.region-title,.actionbar #btn-answer)::after{pointer-events:none}
+html[data-theme="lonetrail"] :is(.study-search,.notes-textarea):focus-visible{outline:2px solid var(--lt-hot);outline-offset:-2px;box-shadow:none}
+
+@media(hover:hover) and (pointer:fine){
+ html[data-theme="lonetrail"] .options .option:not(:disabled):hover{transform:translateX(2px)}
+}
+@media(max-width:900px){
+ html[data-theme="lonetrail"] .crumb{font-size:17px;letter-spacing:.02em;line-height:1.25}
+ html[data-theme="lonetrail"] #sidebar.sidebar{width:100vw;max-width:none;z-index:50}
+ html[data-theme="lonetrail"] .terminal-header{z-index:3}
+ html[data-theme="lonetrail"] .scroller::after{right:0;width:min(340px,90vw)}
+}
+@media(max-width:600px){
+ html[data-theme="lonetrail"] .dashboard-resume:hover{transform:none}
+ html[data-theme="lonetrail"] .dashboard-continue{padding:22px 18px}
+ html[data-theme="lonetrail"] .dashboard-continue::after{display:none}
+ html[data-theme="lonetrail"] .dashboard-metric{padding-left:22px}
+ html[data-theme="lonetrail"] .study-page-head>div:first-child{min-width:0}
+ html[data-theme="lonetrail"] .study-form-row .study-search{min-width:0}
+ html[data-theme="lonetrail"] .card{box-shadow:none}
+ html[data-theme="lonetrail"] .region-body{font-size:15px}
+ html[data-theme="lonetrail"] .study-panel{padding:18px 14px}
+}
+@media(hover:none){
+ html[data-theme="lonetrail"] :is(.option,.eng-option,.year-card,.dashboard-day,.dashboard-resume,.dashboard-shortcuts button,.study-button,.mastery-cell,.figures .figure,.sidebar .cloud-entry,.sidebar .theme-menu summary):hover{transform:none;filter:none}
+ html[data-theme="lonetrail"] .actionbar #btn-answer::after{display:none}
+}
+html[data-theme="lonetrail"]:has(dialog[open]) #app *,
+html[data-theme="lonetrail"]:has(dialog[open]) #app *::before,
+html[data-theme="lonetrail"]:has(dialog[open]) #app *::after{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){
+ html[data-theme="lonetrail"] *,html[data-theme="lonetrail"] *::before,html[data-theme="lonetrail"] *::after{animation:none;transition:none;scroll-behavior:auto}
+ html[data-theme="lonetrail"] :is(.option,.eng-option,.year-card,.dashboard-day,.dashboard-shortcuts button,.study-button,.mastery-cell,.figures .figure):hover{transform:none}
+ html[data-theme="lonetrail"] .actionbar #btn-answer::after{display:none}
+}
